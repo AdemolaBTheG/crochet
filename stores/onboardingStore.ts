@@ -2,48 +2,43 @@ import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import zustandStorage from "./storage";
 
-
-
+export type SkillLevel = "beginner" | "intermediate" | "advanced" | null;
+export type Goal =
+  | "learn-basics"
+  | "finish-first-project"
+  | "build-habit"
+  | null;
+export type Handedness = "right" | "left" | null;
 
 interface OnboardingState {
-  // onboarding flags
-  hasSeenStoreReview: boolean;
   isOnboardingCompleted: boolean;
-
-
-
-
-
-
-  setHasSeenStoreReview: (value: boolean) => void;
+  skillLevel: SkillLevel;
+  goal: Goal;
+  handedness: Handedness;
   setOnboardingCompleted: (completed: boolean) => void;
-
-
-  // helper to clear data after onboarding
+  setSkillLevel: (value: SkillLevel) => void;
+  setGoal: (value: Goal) => void;
+  setHandedness: (value: Handedness) => void;
+  resetOnboarding: () => void;
 }
+
+const initialState = {
+  isOnboardingCompleted: false,
+  skillLevel: null as SkillLevel,
+  goal: null as Goal,
+  handedness: null as Handedness,
+};
 
 export const useOnboardingStore = create<OnboardingState>()(
   persist(
     (set) => ({
-      // flags
-      hasSeenStoreReview: false,
-      isOnboardingCompleted: false,
-      treat: null,
-      userSettings: {
-        quitDate: null,
-        cigarettesPerDay: 0,
-        cigsPerPack: 20,
-        costPerPack: 0,
-        currencySymbol: "$",
-      },
-
-      // flag setters
-      setHasSeenStoreReview: (value) => set({ hasSeenStoreReview: value }),
+      ...initialState,
       setOnboardingCompleted: (completed) =>
         set({ isOnboardingCompleted: completed }),
-
-
-
+      setSkillLevel: (value) => set({ skillLevel: value }),
+      setGoal: (value) => set({ goal: value }),
+      setHandedness: (value) => set({ handedness: value }),
+      resetOnboarding: () => set(initialState),
     }),
     {
       name: "onboarding-storage",

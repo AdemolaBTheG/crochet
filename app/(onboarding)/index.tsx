@@ -1,10 +1,6 @@
-import React from 'react'
-import { Text, View } from 'react-native'
+import QuizScreenView from "@/components/quiz-screen";
+import { ONBOARDING_QUIZ_STEPS } from "@/constants/onboarding-quiz";
 
-export default function Index() {
-    return (
-        <View>
-            <Text>Index</Text>
-        </View>
-    )
+export default function OnboardingIndex() {
+  return <QuizScreenView steps={ONBOARDING_QUIZ_STEPS} />;
 }

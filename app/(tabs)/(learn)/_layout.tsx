@@ -1,11 +1,11 @@
 import { Stack } from "expo-router";
 
-export default function HomeLayout() {
+export default function LearnLayout() {
   return (
     <Stack>
       <Stack.Screen
         name="index"
-        options={{ title: "Home", headerLargeTitle: true }}
+        options={{ title: "Learn", headerLargeTitle: true }}
       />
     </Stack>
   );
