@@ -1,18 +1,19 @@
 {
   "expo": {
-    "name": "boilerplate",
-    "slug": "boilerplate",
+    "name": "Crochet",
+    "slug": "Crochet",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "boilerplate",
+    "scheme": "crochet",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true,
+      "icon": "./assets/images/Crochet.icon",
+      "supportsTablet": false,
       "bundleIdentifier": "com.crochet.flingex",
       "infoPlist": {
-        "NSPhotoLibraryUsageDescription": "YarnPal uses your photo library so you can import and save project inspiration, progress photos, and pattern images.",
-        "NSPhotoLibraryAddUsageDescription": "YarnPal saves exported pattern images and project snapshots to your photo library."
+        "NSPhotoLibraryUsageDescription": "Crochet uses your photo library so you can import and save project inspiration, progress photos, and pattern images.",
+        "NSPhotoLibraryAddUsageDescription": "Crochet saves exported pattern images and project snapshots to your photo library."
       }
     },
     "android": {
@@ -57,8 +58,7 @@
             "deploymentTarget": "16.2"
           }
         }
-      ],
-      "expo-widgets"
+      ]
     ],
     "experiments": {
       "typedRoutes": true,

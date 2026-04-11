@@ -71,7 +71,6 @@
     "expo-system-ui": "~55.0.15",
     "expo-video": "~55.0.15",
     "expo-web-browser": "~55.0.14",
-    "expo-widgets": "^55.0.13",
     "i18next": "^25.8.0",
     "lottie-react-native": "~7.3.4",
     "lucide-react-native": "^0.563.0",
@@ -106,6 +105,7 @@
   },
   "devDependencies": {
     "@types/react": "~19.2.10",
+    "babel-plugin-inline-import": "^3.0.0",
     "drizzle-kit": "^0.31.8",
     "eslint": "^9.25.0",
     "eslint-config-expo": "~55.0.0",

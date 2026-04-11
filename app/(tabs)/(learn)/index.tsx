@@ -1,29 +1,89 @@
-import React from "react";
-import { ScrollView, Text, View } from "react-native";
-
-const lessons = [
-  { title: "Chain Stitch", detail: "Your foundation for almost every project." },
-  { title: "Single Crochet", detail: "The easiest stitch to build confidence fast." },
-  { title: "Double Crochet", detail: "A taller stitch for scarves, blankets, and wearables." },
-  { title: "Magic Ring", detail: "Start amigurumi and circular projects cleanly." },
-  { title: "Rows and Rounds", detail: "Understand when to turn, join, and keep count." },
-];
+import { theme } from "@/constants/Theme";
+import { lessons as lessonsTable, type Lesson } from "@/db/schema";
+import { useDbStore } from "@/stores/dbStore";
+import React, { useEffect, useState } from "react";
+import { ActivityIndicator, ScrollView, Text, View } from "react-native";
 
 export default function LearnScreen() {
+  const { db } = useDbStore();
+  const [lessons, setLessons] = useState<Lesson[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    async function loadLessons() {
+      if (!db) return;
+
+      setIsLoading(true);
+
+      try {
+        const result = await db
+          .select()
+          .from(lessonsTable)
+          .orderBy(lessonsTable.sortOrder);
+
+        if (isMounted) {
+          setLessons(result);
+        }
+      } finally {
+        if (isMounted) {
+          setIsLoading(false);
+        }
+      }
+    }
+
+    void loadLessons();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [db]);
+
   return (
     <ScrollView
       contentInsetAdjustmentBehavior="automatic"
-      contentContainerStyle={{ padding: 20, gap: 16 }}
+      contentContainerStyle={{
+        padding: 20,
+        gap: 16,
+        backgroundColor: theme.colors.background,
+      }}
     >
       <View style={{ gap: 8 }}>
-        <Text selectable style={{ fontSize: 28, fontWeight: "700" }}>
+        <Text
+          selectable
+          style={{
+            fontSize: 28,
+            fontWeight: "700",
+            color: theme.colors.textPrimary,
+          }}
+        >
           Beginner path
         </Text>
-        <Text selectable style={{ fontSize: 16, lineHeight: 22, color: "#3A3A3C" }}>
+        <Text
+          selectable
+          style={{
+            fontSize: 16,
+            lineHeight: 22,
+            color: theme.colors.textSecondary,
+          }}
+        >
           Keep the MVP focused on a short sequence of lessons that gets someone
           from zero to their first finished project.
         </Text>
       </View>
+
+      {isLoading ? (
+        <View
+          style={{
+            paddingVertical: 32,
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <ActivityIndicator color={theme.colors.primary} />
+        </View>
+      ) : null}
 
       {lessons.map((lesson, index) => (
         <View
@@ -32,20 +92,33 @@ export default function LearnScreen() {
             padding: 18,
             borderRadius: 20,
             borderCurve: "continuous",
-            backgroundColor: "#FFFFFF",
+            backgroundColor: theme.colors.surface,
             borderWidth: 1,
-            borderColor: "#E5E5EA",
+            borderColor: theme.colors.border,
             gap: 6,
           }}
         >
-          <Text selectable style={{ fontSize: 14, color: "#636366" }}>
+          <Text
+            selectable
+            style={{ fontSize: 14, color: theme.colors.textSecondary }}
+          >
             Lesson {index + 1}
           </Text>
-          <Text selectable style={{ fontSize: 18, fontWeight: "600" }}>
+          <Text
+            selectable
+            style={{
+              fontSize: 18,
+              fontWeight: "600",
+              color: theme.colors.textPrimary,
+            }}
+          >
             {lesson.title}
           </Text>
-          <Text selectable style={{ color: "#636366", lineHeight: 20 }}>
-            {lesson.detail}
+          <Text
+            selectable
+            style={{ color: theme.colors.textSecondary, lineHeight: 20 }}
+          >
+            {lesson.description}
           </Text>
         </View>
       ))}

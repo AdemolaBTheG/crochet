@@ -1,109 +1,110 @@
-import { Link } from "expo-router";
-import React from "react";
-import { Pressable, ScrollView, Text, View } from "react-native";
+import { theme } from '@/constants/Theme';
+import { patternImages, type PatternImageKey } from '@/constants/pattern-images';
+import { patterns as patternsTable, type Pattern } from '@/db/schema';
+import { useDbStore } from '@/stores/dbStore';
+import { FlashList } from '@shopify/flash-list';
+import { Image } from 'expo-image';
+import { Link } from 'expo-router';
+import React, { useEffect, useState } from 'react';
+import { ActivityIndicator, Pressable, useWindowDimensions, View } from 'react-native';
 
 export default function HomeScreen() {
+  const { db } = useDbStore();
+  const { width } = useWindowDimensions();
+  const [patterns, setPatterns] = useState<Pattern[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const gridGap = 10;
+  const horizontalPadding = 16;
+  const itemWidth = Math.floor((width - horizontalPadding * 2 - gridGap) / 2);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    async function loadPatterns() {
+      if (!db) {
+        return;
+      }
+
+      setIsLoading(true);
+
+      try {
+        const result = await db.select().from(patternsTable);
+
+        if (isMounted) {
+          setPatterns(result);
+        }
+      } finally {
+        if (isMounted) {
+          setIsLoading(false);
+        }
+      }
+    }
+
+    void loadPatterns();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [db]);
+
   return (
-    <ScrollView
+    <FlashList
+      style={{ backgroundColor: theme.colors.background }}
       contentInsetAdjustmentBehavior="automatic"
-      contentContainerStyle={{ padding: 20, gap: 20 }}
-    >
-      <View
-        style={{
-          padding: 20,
-          borderRadius: 24,
-          borderCurve: "continuous",
-          backgroundColor: "#F4F8FF",
-          gap: 10,
-        }}
-      >
-        <Text selectable style={{ fontSize: 28, fontWeight: "700" }}>
-          YarnPal
-        </Text>
-        <Text selectable style={{ fontSize: 16, lineHeight: 22, color: "#3A3A3C" }}>
-          Learn your first stitches, pick a beginner project, and jump back into
-          whatever you were making without losing your place.
-        </Text>
-      </View>
+      data={patterns}
+      numColumns={2}
+      keyExtractor={(item) => item.slug}
+      contentContainerStyle={{
+        paddingHorizontal: horizontalPadding,
+        paddingTop: 16,
+        paddingBottom: 32,
+        backgroundColor: theme.colors.background,
+      }}
+      ItemSeparatorComponent={() => <View style={{ height: gridGap }} />}
+      ListEmptyComponent={
+        isLoading ? (
+          <View style={{ paddingVertical: 32, alignItems: 'center' }}>
+            <ActivityIndicator color={theme.colors.primary} />
+          </View>
+        ) : null
+      }
+      renderItem={({ item, index }) => {
+        const source = patternImages[item.coverImageKey as PatternImageKey];
+        const isLeftColumn = index % 2 === 0;
 
-      <View style={{ gap: 12 }}>
-        <Text selectable style={{ fontSize: 20, fontWeight: "700" }}>
-          Start here
-        </Text>
-        <Link href="/(tabs)/(learn)" asChild>
-          <Pressable
+        return (
+          <View
             style={{
-              padding: 18,
-              borderRadius: 20,
-              borderCurve: "continuous",
-              backgroundColor: "#FFFFFF",
-              borderWidth: 1,
-              borderColor: "#E5E5EA",
-              gap: 6,
-            }}
-          >
-            <View>
-              <Text selectable style={{ fontSize: 17, fontWeight: "600" }}>
-                Continue beginner lessons
-              </Text>
-              <Text selectable style={{ color: "#636366", lineHeight: 20 }}>
-                Learn chain stitch, single crochet, double crochet, and magic
-                ring in a simple order.
-              </Text>
-            </View>
-          </Pressable>
-        </Link>
-        <Link href="/(tabs)/(projects)" asChild>
-          <Pressable
-            style={{
-              padding: 18,
-              borderRadius: 20,
-              borderCurve: "continuous",
-              backgroundColor: "#FFFFFF",
-              borderWidth: 1,
-              borderColor: "#E5E5EA",
-              gap: 6,
-            }}
-          >
-            <View>
-              <Text selectable style={{ fontSize: 17, fontWeight: "600" }}>
-                Resume your current project
-              </Text>
-              <Text selectable style={{ color: "#636366", lineHeight: 20 }}>
-                Open your active pattern, keep count of rows and rounds, and
-                pick up exactly where you stopped.
-              </Text>
-            </View>
-          </Pressable>
-        </Link>
-      </View>
-
-      <View style={{ gap: 12 }}>
-        <Text selectable style={{ fontSize: 20, fontWeight: "700" }}>
-          MVP priorities
-        </Text>
-        <View
-          style={{
-            padding: 18,
-            borderRadius: 20,
-            borderCurve: "continuous",
-            backgroundColor: "#FFFFFF",
-            borderWidth: 1,
-            borderColor: "#E5E5EA",
-            gap: 8,
-          }}
-        >
-          <Text selectable style={{ fontSize: 16 }}>
-            1. Learn a core stitch
-          </Text>
-          <Text selectable style={{ fontSize: 16 }}>
-            2. Start a beginner pattern
-          </Text>
-          <Text selectable style={{ fontSize: 16 }}>
-            3. Track progress until it is finished
-          </Text>
-        </View>
-      </View>
-    </ScrollView>
+              width: itemWidth,
+              marginRight: isLeftColumn ? gridGap : 0,
+            }}>
+            <Link
+              href={{
+                pathname: '/(patterns)/[slug]',
+                params: { slug: item.slug },
+              }}
+              asChild>
+              <Pressable
+                style={{
+                  borderRadius: 24,
+                  borderCurve: 'continuous',
+                  overflow: 'hidden',
+                  backgroundColor: theme.colors.muted,
+                }}
+                accessibilityRole="button"
+                accessibilityLabel={`Open ${item.title} pattern`}>
+                <Link.AppleZoom>
+                  <Image
+                    source={source}
+                    contentFit="cover"
+                    style={{ width: '100%', aspectRatio: 4 / 5 }}
+                  />
+                </Link.AppleZoom>
+              </Pressable>
+            </Link>
+          </View>
+        );
+      }}
+    />
   );
 }

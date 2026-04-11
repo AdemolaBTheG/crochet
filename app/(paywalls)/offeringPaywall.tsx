@@ -34,7 +34,7 @@ export default function Paywall() {
     }, []);
 
     if (isPro) {
-        return <Redirect href="/(tabs)/(discover)" />;
+        return <Redirect href="/(tabs)/(home)" />;
     }
 
     return (
@@ -46,10 +46,10 @@ export default function Paywall() {
                     }}
                     onDismiss={() => {
                         posthog?.capture('Paywall Dismissed');
-                        router.replace("/(tabs)/(discover)");
+                        router.replace("/(tabs)/(home)");
                     }}
                     onPurchaseCompleted={async () => {
-                        router.replace("/(tabs)/(discover)");
+                        router.replace("/(tabs)/(home)");
                     }}
                 />
             ) : (

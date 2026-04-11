@@ -1,12 +1,12 @@
-import { SubscriptionProvider } from "@/context/SubscriptionContext";
-import { useAppInitialization } from "@/hooks/useAppInitialization";
-import { useSubscriptionStatus } from "@/hooks/useSubscriptionStatus";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Stack } from "expo-router";
-import { GestureHandlerRootView } from "react-native-gesture-handler";
-import { KeyboardProvider } from "react-native-keyboard-controller";
-import { enableScreens } from "react-native-screens";
-import "../global.css";
+import { SubscriptionProvider } from '@/context/SubscriptionContext';
+import { useAppInitialization } from '@/hooks/useAppInitialization';
+import { useSubscriptionStatus } from '@/hooks/useSubscriptionStatus';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Stack } from 'expo-router';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { KeyboardProvider } from 'react-native-keyboard-controller';
+import { enableScreens } from 'react-native-screens';
+import '../global.css';
 
 const queryClient = new QueryClient();
 
@@ -14,7 +14,7 @@ enableScreens();
 
 export default function RootLayout() {
   const { isReady } = useAppInitialization();
-  const subscription = useSubscriptionStatus();
+  const subscription = useSubscriptionStatus(isReady);
 
   if (!isReady) return null;
 
@@ -28,6 +28,8 @@ export default function RootLayout() {
               <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
               <Stack.Screen name="(settings)" options={{ headerShown: false }} />
               <Stack.Screen name="(onboarding)" options={{ headerShown: false }} />
+              <Stack.Screen name="(patterns)" options={{ headerShown: false }} />
+              <Stack.Screen name="(projects)" options={{ headerShown: false }} />
             </Stack>
           </KeyboardProvider>
         </QueryClientProvider>

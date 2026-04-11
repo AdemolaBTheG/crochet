@@ -61,8 +61,11 @@ export const patterns = sqliteTable(
     description: text("description"),
     difficulty: text("difficulty").notNull(),
     category: text("category"),
+    coverImageKey: text("cover_image_key").notNull(),
     estimatedMinutes: integer("estimated_minutes"),
     materialsText: text("materials_text"),
+    skillsText: text("skills_text"),
+    expectationText: text("expectation_text"),
     stepsJson: text("steps_json").notNull(),
     isPublished: integer("is_published", { mode: "boolean" })
       .notNull()

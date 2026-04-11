@@ -8,7 +8,7 @@ interface SubscriptionStatus {
   setIsPro: (isPro: boolean) => void;
 }
 
-export function useSubscriptionStatus(): SubscriptionStatus {
+export function useSubscriptionStatus(enabled = true): SubscriptionStatus {
   const [isPro, setIsPro] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -20,25 +20,50 @@ export function useSubscriptionStatus(): SubscriptionStatus {
   };
 
   useEffect(() => {
+    if (!enabled) {
+      setIsLoading(true);
+      return;
+    }
+
+    let isMounted = true;
     Purchases.addCustomerInfoUpdateListener(handleCustomerInfo);
 
-    const fetchInitalStatus = async () => {
-      setIsLoading(true); // Set loading to true while fetching
+    const fetchInitialStatus = async () => {
+      setIsLoading(true);
+
       try {
+        const configured = await Purchases.isConfigured();
+
+        if (!configured) {
+          if (isMounted) {
+            setIsPro(false);
+            setIsLoading(false);
+          }
+          return;
+        }
+
         const customerInfo = await Purchases.getCustomerInfo();
-        handleCustomerInfo(customerInfo);
+
+        if (isMounted) {
+          handleCustomerInfo(customerInfo);
+        }
       } catch (error) {
         console.error('Failed to fetch customer info:', error);
-        setIsPro(false); // Default to false on error
-        setIsLoading(false); // Set loading to false on error
+
+        if (isMounted) {
+          setIsPro(false);
+          setIsLoading(false);
+        }
       }
     };
-    fetchInitalStatus();
+
+    void fetchInitialStatus();
 
     return () => {
+      isMounted = false;
       Purchases.removeCustomerInfoUpdateListener(handleCustomerInfo);
     };
-  }, []);
+  }, [enabled]);
 
   return { setIsPro, isPro, isLoading };
 }

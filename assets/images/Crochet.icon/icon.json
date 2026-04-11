@@ -1,0 +1,36 @@
+{
+  "fill" : {
+    "solid" : "display-p3:0.96863,0.95686,0.93333,1.00000"
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "image-name" : "Kunsthandwerk mit Häkchen-Symbol.png",
+          "name" : "Kunsthandwerk mit Häkchen-Symbol",
+          "position" : {
+            "scale" : 1.4,
+            "translation-in-points" : [
+              -9.099999999999909,
+              55
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}
