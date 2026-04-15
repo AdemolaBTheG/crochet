@@ -1,0 +1,337 @@
+{
+  "common": {
+    "continue": "Weiter",
+    "preparing": "Wird vorbereitet...",
+    "filters": {
+      "all": "Alle"
+    },
+    "badges": {
+      "pro": "Pro"
+    },
+    "time": {
+      "today": "Heute",
+      "yesterday": "Gestern",
+      "daysAgo": "vor {{count}} Tagen"
+    },
+    "counter": {
+      "rounds": "{{count}} Runden",
+      "rows": "{{count}} Reihen",
+      "none": "Noch kein Zahler"
+    },
+    "steps": {
+      "progress": "{{current}}/{{total}} Schritte",
+      "stepOnly": "Schritt {{current}}",
+      "count": "{{count}} Schritte"
+    }
+  },
+  "shared": {
+    "close": "Schliessen",
+    "unlockPremium": "Premium freischalten",
+    "stepOf": "Schritt {{current}} von {{total}}"
+  },
+  "chat": {
+    "thinking": "Denke nach...",
+    "errorFallback": "Beim Erstellen der Antwort ist ein Fehler aufgetreten. Bitte versuche es erneut."
+  },
+  "tabs": {
+    "home": "Home",
+    "learn": "Lernen",
+    "projects": "Projekte"
+  },
+  "home": {
+    "sections": {
+      "activeProjects": "Aktive Projekte"
+    },
+    "accessibility": {
+      "continueProject": "{{name}} fortsetzen",
+      "showPatterns": "{{category}}-Muster anzeigen"
+    },
+    "lastWorkedPrefix": "Zuletzt bearbeitet",
+    "lastWorkedSeparator": "·"
+  },
+  "projects": {
+    "sections": {
+      "inProgress": "In Arbeit",
+      "completed": "Abgeschlossen"
+    },
+    "empty": {
+      "title": "Noch keine Projekte",
+      "subtitle": "Wahle im Home-Tab ein Muster und tippe auf Projekt starten."
+    },
+    "accessibility": {
+      "openProject": "{{name}} offnen"
+    }
+  },
+  "learn": {
+    "toolsSectionTitle": "Werkzeuge",
+    "lessonLabel": "Lektion {{index}}",
+    "actions": {
+      "open": "Offnen",
+      "unlock": "Freischalten"
+    },
+    "accessibility": {
+      "unlockTool": "{{title}} freischalten",
+      "lessonCard": "{{action}} Lektion {{title}}"
+    },
+    "empty": {
+      "title": "Noch keine Lektionen",
+      "subtitle": "Befulle die lokale Datenbank, damit der Einstiegspfad hier erscheint."
+    },
+    "tools": {
+      "row-counter": {
+        "title": "Reihenzahler",
+        "description": "Zahle Reihen, Runden und Wiederholungen, ohne den Faden zu verlieren."
+      },
+      "stitch-fixes": {
+        "title": "Maschenhilfe",
+        "description": "Schnelle Hilfe bei Rollen, ungleichmassigen Kanten, Lucken und ausgelassenen Maschen."
+      },
+      "size-calculator": {
+        "title": "Grossenrechner",
+        "description": "Schatzte Maschen- und Reihenanzahl anhand deiner Maschenprobe."
+      },
+      "identify-stitch": {
+        "title": "Masche erkennen",
+        "description": "Nutze ein Foto, um die sichtbare Masche besser zu verstehen."
+      }
+    }
+  },
+  "lessonDetail": {
+    "lesson": "Lektion",
+    "notFound": "Lektion nicht gefunden.",
+    "difficulty": "Schwierigkeit",
+    "steps": "Schritte",
+    "practice": "Praxis",
+    "practicePaceShort": "kurz",
+    "whyItMatters": "Warum das wichtig ist",
+    "commonMistakes": "Haufige Fehler",
+    "startPractice": "Praxis starten",
+    "difficultyValues": {
+      "beginner": "Anfanger",
+      "intermediate": "Mittelstufe",
+      "advanced": "Fortgeschritten"
+    }
+  },
+  "settings": {
+    "sections": {
+      "support": "Support",
+      "legal": "Rechtliches"
+    },
+    "rows": {
+      "sendFeedback": "Feedback senden",
+      "rateApp": "App bewerten",
+      "customerCenter": "Kundenbereich",
+      "terms": "Nutzungsbedingungen",
+      "privacyPolicy": "Datenschutz"
+    },
+    "premium": {
+      "title": "Premium freischalten",
+      "subtitle": "Erhalte alle Muster, Anleitungen und Kreativ-Tools, wahrend Crova wachst.",
+      "cta": "Upgrade"
+    },
+    "alerts": {
+      "customerCenterUnavailableTitle": "Kundenbereich nicht verfugbar",
+      "customerCenterUnavailableMessage": "Bitte versuche es erneut, sobald Kaufe eingerichtet sind."
+    },
+    "accessibility": {
+      "openPremiumUpgrade": "Premium-Upgrade offnen"
+    }
+  },
+  "tools": {
+    "rowCounter": {
+      "mode": {
+        "rows": "Reihen",
+        "rounds": "Runden"
+      },
+      "copy": {
+        "rows": {
+          "label": "Abgeschlossene Reihen",
+          "helper": "Ideal fur Schals, Topflappen, Maschenproben und flache Projekte."
+        },
+        "rounds": {
+          "label": "Abgeschlossene Runden",
+          "helper": "Ideal fur Granny Squares, Untersetzer, Amigurumi und runde Arbeiten."
+        }
+      },
+      "actions": {
+        "decreaseRows": "Reihen verringern",
+        "decreaseRounds": "Runden verringern",
+        "increaseRows": "Reihen erhohen",
+        "increaseRounds": "Runden erhohen",
+        "resetRows": "Reihen zurucksetzen",
+        "resetRounds": "Runden zurucksetzen"
+      }
+    },
+    "sizeCalculator": {
+      "units": {
+        "cm": "cm",
+        "in": "in"
+      },
+      "sections": {
+        "gauge": "Maschenprobe",
+        "targetSize": "Zielgrosse",
+        "estimate": "Schatzung"
+      },
+      "fields": {
+        "stitches": "Maschen",
+        "rows": "Reihen",
+        "width": "Breite",
+        "height": "Hohe"
+      },
+      "emptyHelp": "Gib Maschenprobe und Zielgrosse ein, um Maschen und Reihen zu schatzen.",
+      "disclaimer": "Dies ist eine Planungsschatzung. Prufe immer deine eigene Maschenprobe vor dem finalen Projekt."
+    },
+    "identifyStitch": {
+      "empty": {
+        "title": "Fuge ein klares Maschenfoto hinzu",
+        "subtitle": "Nutze gutes Licht und fulle den Bildausschnitt mit der Maschenstruktur."
+      },
+      "analysis": {
+        "title": "Analyse",
+        "loading": "Maschenstruktur wird mit KI gepruft...",
+        "noLikelyStitchDetected": "Ich konnte auf diesem Bild keine Hakelmasche sicher erkennen.",
+        "noLikelyStitchHint": "Versuche helleres Licht, gehe naher ran und fokussiere eine einzelne Maschenstruktur.",
+        "bestMatch": "Beste Ubereinstimmung",
+        "confidence": {
+          "high": "Hoch",
+          "medium": "Mittel",
+          "low": "Niedrig"
+        },
+        "photoReady": "Foto ist bereit. Du kannst jederzeit ein klareres Bild auswahlen.",
+        "noPhoto": "Wahle oder fotografiere ein Bild, um die wahrscheinliche Masche zu erkennen.",
+        "visibleClues": "Sichtbare Hinweise",
+        "nextSteps": "Nachste Schritte",
+        "aiResult": "KI-Ergebnis",
+        "readyForAi": "Bereit fur KI"
+      },
+      "alerts": {
+        "cameraPermissionTitle": "Kamerazugriff erforderlich",
+        "cameraPermissionMessage": "Erlaube Kamerazugriff, um ein Maschenfoto aufzunehmen.",
+        "photoPermissionTitle": "Fotozugriff erforderlich",
+        "photoPermissionMessage": "Erlaube Fotozugriff, um ein Maschenbild auszuwahlen."
+      },
+      "actions": {
+        "takePhoto": "Foto aufnehmen",
+        "choosePhoto": "Auswahlen"
+      },
+      "errors": {
+        "couldNotAnalyze": "Dieses Foto konnte nicht analysiert werden. Versuch eine hellere Nahaufnahme.",
+        "couldNotAnalyzeWithReason": "Dieses Foto konnte nicht analysiert werden: {{reason}}"
+      }
+    }
+  },
+  "patternDetail": {
+    "pattern": "Muster",
+    "opening": "Wird geoffnet...",
+    "resumeProject": "Projekt fortsetzen",
+    "startProject": "Projekt starten",
+    "projectInProgress": "Projekt in Arbeit",
+    "difficulty": "Schwierigkeit",
+    "category": "Kategorie",
+    "general": "Allgemein",
+    "time": "Zeit",
+    "minutesShort": "{{count}} Min",
+    "skillsNeeded": "Benotigte Skills",
+    "materials": "Materialien",
+    "patternOverview": "Musteruberblick",
+    "steps": "Schritte",
+    "structure": "Struktur",
+    "counters": "Zahler",
+    "basic": "einfach",
+    "whatToExpect": "Das erwartet dich",
+    "guided": "gefuhrt",
+    "counterRows": "{{count}} Reihe",
+    "counterRows_plural": "{{count}} Reihen",
+    "counterRounds": "{{count}} Runde",
+    "counterRounds_plural": "{{count}} Runden",
+    "counterRowsTarget": "{{current}} / {{target}} Reihen",
+    "counterRoundsTarget": "{{current}} / {{target}} Runden",
+    "lastWorkedToday": "Zuletzt heute bearbeitet",
+    "lastWorkedYesterday": "Zuletzt gestern bearbeitet",
+    "lastWorkedDaysAgo": "Zuletzt vor {{count}} Tagen bearbeitet",
+    "lastWorkedOnDate": "Zuletzt bearbeitet am {{date}}"
+  },
+  "projectComplete": {
+    "title": "Projekt abgeschlossen",
+    "notFound": "Projekt nicht gefunden.",
+    "stepsDone": "Schritte erledigt",
+    "counter": "Zahler",
+    "done": "Fertig",
+    "finishedJustNow": "Gerade abgeschlossen",
+    "finishedOn": "Abgeschlossen am {{date}}",
+    "backToProjects": "Zuruck zu Projekten",
+    "starting": "Startet...",
+    "makeAnother": "Weiteres erstellen"
+  },
+  "onboarding": {
+    "intro": {
+      "titlePrefix": "Lerne schneller mit einem Ablauf fur",
+      "titleAccent": "Anfanger im Hakeln",
+      "slides": {
+        "learnStitches": "Maschen lernen",
+        "finishProjects": "Projekte abschliessen",
+        "trackRows": "Jede Reihe verfolgen",
+        "buildHabit": "Routine aufbauen",
+        "stayConsistent": "Dranbleiben"
+      },
+      "rowProgress": "Reihe {{current}} / {{total}}"
+    },
+    "quiz": {
+      "stepOf": "Schritt {{current}} von {{total}}",
+      "steps": {
+        "skillLevel": {
+          "title": "Wie gut kannst du schon hakeln?",
+          "subtitle": "Wir passen Lektionen und Starter-Projekte an deinen aktuellen Stand an.",
+          "cta": "Weiter",
+          "options": {
+            "beginner": "Ich bin komplett neu",
+            "intermediate": "Ich kenne die Grundlagen",
+            "advanced": "Ich mochte schwerere Projekte"
+          }
+        },
+        "goal": {
+          "title": "Wobei sollen wir dir zuerst helfen?",
+          "subtitle": "Wahle den Hauptgrund fur Crova, damit wir dich schneller dorthin fuhren.",
+          "cta": "Weiter",
+          "options": {
+            "learnBasics": "Die wichtigsten Maschen lernen",
+            "finishFirstProject": "Mein erstes richtiges Projekt abschliessen",
+            "buildHabit": "Eine regelmassige Hakel-Routine aufbauen"
+          }
+        },
+        "handedness": {
+          "title": "Mit welcher Hand hakelst du?",
+          "subtitle": "So konnen wir den passenden Lehrwinkel zeigen, sobald links-Hand-Content verfugbar ist.",
+          "cta": "Crova starten",
+          "options": {
+            "right": "Rechtshander",
+            "left": "Linkshander"
+          }
+        }
+      }
+    },
+    "loader": {
+      "titlePreparing": "Dein Erlebnis wird vorbereitet",
+      "titleReady": "Du bist startklar.",
+      "ctaReady": "Crova starten",
+      "goalLabels": {
+        "learnBasics": "die wichtigsten Maschen",
+        "finishFirstProject": "dein erstes Projekt",
+        "buildHabit": "eine feste Hakel-Routine",
+        "default": "deinen Hakelweg"
+      },
+      "skillLabels": {
+        "beginner": "anfangerfreundlichen",
+        "intermediate": "fortgeschrittenen",
+        "advanced": "anspruchsvollen",
+        "default": "personlichen"
+      },
+      "messages": {
+        "buildingPlan": "Wir erstellen deinen {{skillLabel}} Plan...",
+        "pickingLessons": "Wir wahlen Lektionen fur {{goalLabel}}...",
+        "tracking": "Fortschrittstracking wird eingerichtet...",
+        "finalizing": "Crova Start wird finalisiert..."
+      }
+    }
+  }
+}

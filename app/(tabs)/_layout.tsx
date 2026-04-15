@@ -1,42 +1,23 @@
-import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-import { theme } from "@/constants/Theme";
-import { NativeTabs } from "expo-router/unstable-native-tabs";
+import { theme } from '@/constants/Theme';
+import { NativeTabs } from 'expo-router/unstable-native-tabs';
+import { useTranslation } from 'react-i18next';
 
 export default function TabsLayout() {
+  const { t } = useTranslation();
+
   return (
     <NativeTabs tintColor={theme.colors.primary}>
       <NativeTabs.Trigger name="(home)">
-        <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={
-            <NativeTabs.Trigger.VectorIcon
-              family={MaterialCommunityIcons}
-              name="home-variant"
-            />
-          }
-        />
+        <NativeTabs.Trigger.Label>{t('tabs.home')}</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf={'house.fill'} />
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="(learn)">
-        <NativeTabs.Trigger.Label>Learn</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={
-            <NativeTabs.Trigger.VectorIcon
-              family={MaterialCommunityIcons}
-              name="school"
-            />
-          }
-        />
+        <NativeTabs.Trigger.Label>{t('tabs.learn')}</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf={'book.fill'} />
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="(projects)">
-        <NativeTabs.Trigger.Label>Projects</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={
-            <NativeTabs.Trigger.VectorIcon
-              family={MaterialCommunityIcons}
-              name="needle"
-            />
-          }
-        />
+        <NativeTabs.Trigger.Label>{t('tabs.projects')}</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf={'scissors.circle.fill'} />
       </NativeTabs.Trigger>
     </NativeTabs>
   );

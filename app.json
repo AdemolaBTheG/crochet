@@ -12,8 +12,10 @@
       "supportsTablet": false,
       "bundleIdentifier": "com.crochet.flingex",
       "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Crochet uses your location to provide localized pattern recommendations and yarn store suggestions.",
         "NSPhotoLibraryUsageDescription": "Crochet uses your photo library so you can import and save project inspiration, progress photos, and pattern images.",
-        "NSPhotoLibraryAddUsageDescription": "Crochet saves exported pattern images and project snapshots to your photo library."
+        "NSPhotoLibraryAddUsageDescription": "Crochet saves exported pattern images and project snapshots to your photo library.",
+        "NSCameraUsageDescription": "Crochet uses your camera so you can identify stitches from a photo."
       }
     },
     "android": {
@@ -23,7 +25,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.crochet.flingex"
     },
     "web": {
       "output": "static",
@@ -52,13 +55,21 @@
       "expo-localization",
       "expo-video",
       [
+        "expo-image-picker",
+        {
+          "photosPermission": "Crochet uses your photo library so you can choose stitch photos to identify.",
+          "cameraPermission": "Crochet uses your camera so you can identify stitches from a photo."
+        }
+      ],
+      [
         "expo-build-properties",
         {
           "ios": {
             "deploymentTarget": "16.2"
           }
         }
-      ]
+      ],
+      "react-native-enriched-markdown"
     ],
     "experiments": {
       "typedRoutes": true,

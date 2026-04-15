@@ -463,6 +463,353 @@ const patternSeeds: schema.NewPattern[] = [
       },
     ]),
   },
+  {
+    slug: "cotton-face-scrubbies",
+    title: "Cotton Face Scrubbies",
+    description: "A tiny reusable round that gives beginners another fast win with increases.",
+    difficulty: "beginner",
+    category: "home",
+    coverImageKey: "cotton-face-scrubbies",
+    estimatedMinutes: 25,
+    materialsText: "Cotton yarn, 4 mm hook, yarn needle, scissors.",
+    skillsText: "Magic ring, single crochet, increasing, slip stitch joining",
+    expectationText: "A low-pressure mini project where you make a soft reusable round and practice keeping increases even.",
+    stepsJson: patternSteps([
+      {
+        type: "instruction",
+        title: "Make the center",
+        instruction: "Start with a magic ring or chain 4 and join into a loop.",
+      },
+      {
+        type: "round",
+        title: "Round 1",
+        instruction: "Work 8 single crochet into the center ring and join with a slip stitch.",
+        counterLabel: "round",
+        targetCount: 1,
+      },
+      {
+        type: "round",
+        title: "Round 2",
+        instruction: "Work 2 single crochet into each stitch around for 16 stitches total.",
+        counterLabel: "round",
+        targetCount: 2,
+      },
+      {
+        type: "round",
+        title: "Round 3",
+        instruction: "Alternate 1 single crochet, then 2 single crochet in the next stitch around.",
+        counterLabel: "round",
+        targetCount: 3,
+      },
+      {
+        type: "instruction",
+        title: "Finish the edge",
+        instruction: "Slip stitch around the edge, fasten off, and weave in the ends.",
+      },
+    ]),
+  },
+  {
+    slug: "cozy-mug-sleeve",
+    title: "Cozy Mug Sleeve",
+    description: "A small rectangle project that wraps around a mug and teaches simple finishing.",
+    difficulty: "beginner",
+    category: "home",
+    coverImageKey: "cozy-mug-sleeve",
+    estimatedMinutes: 40,
+    materialsText: "Worsted cotton yarn, 5 mm hook, yarn needle, scissors, button.",
+    skillsText: "Foundation chain, half double crochet, turning rows, button loop",
+    expectationText: "A practical rectangle that turns into a finished object with one small joining detail at the end.",
+    stepsJson: patternSteps([
+      {
+        type: "instruction",
+        title: "Foundation",
+        instruction: "Chain 12 stitches for the height of the sleeve.",
+      },
+      {
+        type: "row",
+        title: "Row 1",
+        instruction: "Half double crochet in the third chain from the hook and each chain across.",
+        counterLabel: "row",
+        targetCount: 1,
+      },
+      {
+        type: "repeat",
+        title: "Rows 2 to 18",
+        instruction: "Chain 2, turn, and half double crochet across until the sleeve wraps around your mug.",
+        counterLabel: "row",
+        targetCount: 18,
+      },
+      {
+        type: "instruction",
+        title: "Add a loop",
+        instruction: "Chain a small loop at one short edge for the button closure.",
+      },
+      {
+        type: "instruction",
+        title: "Attach the button",
+        instruction: "Sew a button to the opposite edge, fasten off, and weave in ends.",
+      },
+    ]),
+  },
+  {
+    slug: "ribbed-scrunchie",
+    title: "Ribbed Scrunchie",
+    description: "A quick wearable project made around a hair elastic with beginner-friendly repeats.",
+    difficulty: "beginner",
+    category: "wearable",
+    coverImageKey: "ribbed-scrunchie",
+    estimatedMinutes: 35,
+    materialsText: "Soft yarn, 4.5 mm hook, hair elastic, yarn needle, scissors.",
+    skillsText: "Single crochet, half double crochet, working around an elastic, joining",
+    expectationText: "A playful quick project where repetition builds confidence and the finished result feels giftable.",
+    stepsJson: patternSteps([
+      {
+        type: "instruction",
+        title: "Cover the elastic",
+        instruction: "Join yarn around the hair elastic and single crochet evenly around it.",
+      },
+      {
+        type: "round",
+        title: "Round 1",
+        instruction: "Work enough single crochet around the elastic so the band is fully covered.",
+        counterLabel: "round",
+        targetCount: 1,
+      },
+      {
+        type: "round",
+        title: "Round 2",
+        instruction: "Chain 2, then work half double crochet into each stitch around.",
+        counterLabel: "round",
+        targetCount: 2,
+      },
+      {
+        type: "round",
+        title: "Round 3",
+        instruction: "Work one more round of half double crochet for a fuller scrunchie.",
+        counterLabel: "round",
+        targetCount: 3,
+      },
+      {
+        type: "instruction",
+        title: "Finish",
+        instruction: "Slip stitch to join, fasten off, and weave the tail inside the folds.",
+      },
+    ]),
+  },
+  {
+    slug: "slim-bookmark",
+    title: "Slim Bookmark",
+    description: "A narrow row project for practicing edges, tension, and a tiny tassel finish.",
+    difficulty: "beginner",
+    category: "gift",
+    coverImageKey: "slim-bookmark",
+    estimatedMinutes: 30,
+    materialsText: "Cotton yarn, 3.5 to 4 mm hook, yarn needle, scissors.",
+    skillsText: "Foundation chain, single crochet, turning rows, tassel making",
+    expectationText: "A neat little project that rewards careful tension and gives you a finished gift in under an hour.",
+    stepsJson: patternSteps([
+      {
+        type: "instruction",
+        title: "Foundation",
+        instruction: "Chain 8 stitches for a slim bookmark width.",
+      },
+      {
+        type: "row",
+        title: "Row 1",
+        instruction: "Single crochet in the second chain from the hook and each chain across.",
+        counterLabel: "row",
+        targetCount: 1,
+      },
+      {
+        type: "repeat",
+        title: "Rows 2 to 24",
+        instruction: "Chain 1, turn, and single crochet across each row.",
+        counterLabel: "row",
+        targetCount: 24,
+      },
+      {
+        type: "instruction",
+        title: "Add a tassel",
+        instruction: "Cut a few yarn strands and attach them to one short edge.",
+      },
+      {
+        type: "instruction",
+        title: "Finish",
+        instruction: "Trim the tassel evenly and weave in the starting tail.",
+      },
+    ]),
+  },
+  {
+    slug: "tiny-heart-applique",
+    title: "Tiny Heart Applique",
+    description: "A small decorative heart for practicing shaping in one quick round.",
+    difficulty: "beginner",
+    category: "gift",
+    coverImageKey: "tiny-heart-applique",
+    estimatedMinutes: 20,
+    materialsText: "Cotton yarn, 4 mm hook, yarn needle, scissors.",
+    skillsText: "Magic ring, double crochet, treble crochet, slip stitch",
+    expectationText: "A tiny shaped motif that teaches how stitch height changes the outline of a design.",
+    stepsJson: patternSteps([
+      {
+        type: "instruction",
+        title: "Make the ring",
+        instruction: "Start with a magic ring and chain 2 to begin the heart shape.",
+      },
+      {
+        type: "round",
+        title: "Build the lobes",
+        instruction: "Work taller stitches into the ring to form the rounded top of the heart.",
+        counterLabel: "round",
+        targetCount: 1,
+      },
+      {
+        type: "instruction",
+        title: "Shape the point",
+        instruction: "Use shorter stitches, then one taller stitch at the bottom point.",
+      },
+      {
+        type: "instruction",
+        title: "Close the heart",
+        instruction: "Mirror the first side, slip stitch to close, and pull the ring tight.",
+      },
+      {
+        type: "instruction",
+        title: "Finish",
+        instruction: "Fasten off and weave the tails into the back of the heart.",
+      },
+    ]),
+  },
+  {
+    slug: "simple-flower-applique",
+    title: "Simple Flower Applique",
+    description: "A five-petal flower motif for learning repeated shaping around a center.",
+    difficulty: "beginner",
+    category: "gift",
+    coverImageKey: "simple-flower-applique",
+    estimatedMinutes: 25,
+    materialsText: "Cotton yarn, 4 mm hook, yarn needle, scissors.",
+    skillsText: "Magic ring, chain spaces, double crochet, slip stitch",
+    expectationText: "A cheerful motif that repeats the same petal sequence so shaping starts to feel predictable.",
+    stepsJson: patternSteps([
+      {
+        type: "instruction",
+        title: "Make the center",
+        instruction: "Start with a magic ring and work 10 single crochet into the center.",
+      },
+      {
+        type: "round",
+        title: "Round 1",
+        instruction: "Join the center round with a slip stitch and tighten the ring.",
+        counterLabel: "round",
+        targetCount: 1,
+      },
+      {
+        type: "repeat",
+        title: "Make five petals",
+        instruction: "Repeat chain stitches and double crochet into the same stitch to form each petal.",
+        targetCount: 5,
+      },
+      {
+        type: "instruction",
+        title: "Shape the petals",
+        instruction: "Gently tug each petal into place so the flower sits flat.",
+      },
+      {
+        type: "instruction",
+        title: "Finish",
+        instruction: "Fasten off and weave tails into the back of the flower.",
+      },
+    ]),
+  },
+  {
+    slug: "chunky-storage-basket",
+    title: "Chunky Storage Basket",
+    description: "A sturdy home project for practicing rounds, sides, and simple structure.",
+    difficulty: "intermediate",
+    category: "home",
+    coverImageKey: "chunky-storage-basket",
+    estimatedMinutes: 90,
+    materialsText: "Chunky cotton yarn, 6.5 mm hook, yarn needle, scissors.",
+    skillsText: "Magic ring, single crochet, increasing, working in back loops, rounds",
+    expectationText: "A useful home piece where you move from a flat base into upright sides and see structure take shape.",
+    stepsJson: patternSteps([
+      {
+        type: "instruction",
+        title: "Start the base",
+        instruction: "Make a magic ring and work 8 single crochet into the center.",
+      },
+      {
+        type: "round",
+        title: "Rounds 1 to 4",
+        instruction: "Increase evenly each round until the base reaches the width you want.",
+        counterLabel: "round",
+        targetCount: 4,
+      },
+      {
+        type: "round",
+        title: "Turn the side",
+        instruction: "Work one round in the back loops only to create a clean edge.",
+        counterLabel: "round",
+        targetCount: 5,
+      },
+      {
+        type: "repeat",
+        title: "Build the walls",
+        instruction: "Single crochet around without increasing until the basket is tall enough.",
+        counterLabel: "round",
+        targetCount: 10,
+      },
+      {
+        type: "instruction",
+        title: "Finish the rim",
+        instruction: "Slip stitch around the top edge, fasten off, and weave in ends.",
+      },
+    ]),
+  },
+  {
+    slug: "easy-ribbed-beanie",
+    title: "Easy Ribbed Beanie",
+    description: "A beginner-friendly wearable made from a ribbed rectangle and simple seam.",
+    difficulty: "intermediate",
+    category: "wearable",
+    coverImageKey: "easy-ribbed-beanie",
+    estimatedMinutes: 110,
+    materialsText: "Worsted yarn, 5.5 mm hook, yarn needle, scissors.",
+    skillsText: "Foundation chain, half double crochet, back loop only, seaming",
+    expectationText: "A wearable project built from simple rows, then seamed into shape so you can finish a real hat without complex shaping.",
+    stepsJson: patternSteps([
+      {
+        type: "instruction",
+        title: "Foundation",
+        instruction: "Chain enough stitches to reach from the brim to the crown of the hat.",
+      },
+      {
+        type: "row",
+        title: "Row 1",
+        instruction: "Half double crochet in the third chain from the hook and each chain across.",
+        counterLabel: "row",
+        targetCount: 1,
+      },
+      {
+        type: "repeat",
+        title: "Rows 2 to 36",
+        instruction: "Chain 2, turn, and work half double crochet in the back loop only across.",
+        counterLabel: "row",
+        targetCount: 36,
+      },
+      {
+        type: "instruction",
+        title: "Seam the side",
+        instruction: "Fold the rectangle and seam the first and last rows together.",
+      },
+      {
+        type: "instruction",
+        title: "Close the crown",
+        instruction: "Weave yarn around the top edge, pull tight, secure, and weave in ends.",
+      },
+    ]),
+  },
 ];
 
 export async function seedDatabase(db: ExpoSQLiteDatabase<typeof schema>) {
@@ -478,17 +825,10 @@ export async function seedDatabase(db: ExpoSQLiteDatabase<typeof schema>) {
       .onConflictDoNothing({ target: schema.lessons.slug });
   }
 
-  const existingPatterns = await db
-    .select({ id: schema.patterns.id })
-    .from(schema.patterns)
-    .limit(1);
-
-  if (existingPatterns.length === 0) {
-    await db
-      .insert(schema.patterns)
-      .values(patternSeeds)
-      .onConflictDoNothing({ target: schema.patterns.slug });
-  }
+  await db
+    .insert(schema.patterns)
+    .values(patternSeeds)
+    .onConflictDoNothing({ target: schema.patterns.slug });
 }
 
 export { lessonSeeds, patternSeeds };

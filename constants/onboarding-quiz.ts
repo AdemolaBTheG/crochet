@@ -1,43 +1,63 @@
-import type { QuizScreenConfig } from "@/components/quiz-screen";
+import type { QuizScreenConfig } from '@/components/quiz-screen';
+import type { TFunction } from 'i18next';
 
-export const ONBOARDING_QUIZ_STEPS: QuizScreenConfig[] = [
-  {
-    field: "skillLevel",
-    title: "What is your crochet level?",
-    subtitle:
-      "We will tune your lessons and starter projects around where you are today.",
-    ctaLabel: "Continue",
-    options: [
-      { id: "beginner", label: "I am completely new", emoji: "🧶" },
-      { id: "intermediate", label: "I know the basics", emoji: "✨" },
-      { id: "advanced", label: "I want tougher projects", emoji: "🔥" },
-    ],
-  },
-  {
-    field: "goal",
-    title: "What do you want help with first?",
-    subtitle:
-      "Pick the main reason you downloaded YarnPal so the app can guide you there faster.",
-    ctaLabel: "Continue",
-    options: [
-      { id: "learn-basics", label: "Learn the core stitches", emoji: "🪡" },
-      {
-        id: "finish-first-project",
-        label: "Finish my first real project",
-        emoji: "✅",
-      },
-      { id: "build-habit", label: "Build a steady crochet habit", emoji: "📅" },
-    ],
-  },
-  {
-    field: "handedness",
-    title: "Which hand do you crochet with?",
-    subtitle:
-      "This helps us show the right teaching angle once left-handed content is added.",
-    ctaLabel: "Start YarnPal",
-    options: [
-      { id: "right", label: "Right-handed", emoji: "👉" },
-      { id: "left", label: "Left-handed", emoji: "👈" },
-    ],
-  },
-];
+export function getOnboardingQuizSteps(t: TFunction): QuizScreenConfig[] {
+  return [
+    {
+      field: 'skillLevel',
+      title: t('onboarding.quiz.steps.skillLevel.title'),
+      subtitle: t('onboarding.quiz.steps.skillLevel.subtitle'),
+      ctaLabel: t('onboarding.quiz.steps.skillLevel.cta'),
+      options: [
+        {
+          id: 'beginner',
+          label: t('onboarding.quiz.steps.skillLevel.options.beginner'),
+          emoji: '🧶',
+        },
+        {
+          id: 'intermediate',
+          label: t('onboarding.quiz.steps.skillLevel.options.intermediate'),
+          emoji: '✨',
+        },
+        {
+          id: 'advanced',
+          label: t('onboarding.quiz.steps.skillLevel.options.advanced'),
+          emoji: '🔥',
+        },
+      ],
+    },
+    {
+      field: 'goal',
+      title: t('onboarding.quiz.steps.goal.title'),
+      subtitle: t('onboarding.quiz.steps.goal.subtitle'),
+      ctaLabel: t('onboarding.quiz.steps.goal.cta'),
+      options: [
+        {
+          id: 'learn-basics',
+          label: t('onboarding.quiz.steps.goal.options.learnBasics'),
+          emoji: '🪡',
+        },
+        {
+          id: 'finish-first-project',
+          label: t('onboarding.quiz.steps.goal.options.finishFirstProject'),
+          emoji: '✅',
+        },
+        {
+          id: 'build-habit',
+          label: t('onboarding.quiz.steps.goal.options.buildHabit'),
+          emoji: '📅',
+        },
+      ],
+    },
+    {
+      field: 'handedness',
+      title: t('onboarding.quiz.steps.handedness.title'),
+      subtitle: t('onboarding.quiz.steps.handedness.subtitle'),
+      ctaLabel: t('onboarding.quiz.steps.handedness.cta'),
+      options: [
+        { id: 'right', label: t('onboarding.quiz.steps.handedness.options.right'), emoji: '👉' },
+        { id: 'left', label: t('onboarding.quiz.steps.handedness.options.left'), emoji: '👈' },
+      ],
+    },
+  ];
+}

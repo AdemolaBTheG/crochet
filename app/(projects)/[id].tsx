@@ -1,6 +1,7 @@
 import { PressableScale } from '@/components/pressable-scale';
-import { patternImages, type PatternImageKey } from '@/constants/pattern-images';
+import type { ProjectChatStep } from '@/components/project-chat';
 import { theme } from '@/constants/Theme';
+import { useSubscription } from '@/context/SubscriptionContext';
 import {
   patterns as patternsTable,
   projects as projectsTable,
@@ -8,7 +9,9 @@ import {
   type Project,
 } from '@/db/schema';
 import { useDbStore } from '@/stores/dbStore';
-import { Host, Picker, Text as SwiftText } from '@expo/ui/swift-ui';
+
+import { Host, Text as SwiftText } from '@expo/ui/swift-ui';
+
 import {
   Animation,
   contentTransition,
@@ -16,16 +19,10 @@ import {
   foregroundStyle,
   frame,
   monospacedDigit,
-  pickerStyle,
   animation as swiftAnimation,
-  tag,
 } from '@expo/ui/swift-ui/modifiers';
 import { eq } from 'drizzle-orm';
-import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as Haptics from 'expo-haptics';
-import { Image } from 'expo-image';
-import { KeyboardAvoidingLegendList } from '@legendapp/list/keyboard';
-import { KeyboardGestureArea, KeyboardStickyView } from 'react-native-keyboard-controller';
 
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
@@ -34,7 +31,6 @@ import {
   Pressable,
   ScrollView,
   Text,
-  TextInput,
   View,
   useWindowDimensions,
   type FlatList,
@@ -56,21 +52,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-type PatternStep = {
-  type?: 'instruction' | 'row' | 'round' | 'repeat';
-  title: string;
-  instruction: string;
-  counterLabel?: string;
-  targetCount?: number;
-};
-
-type ProjectMode = 'steps' | 'chat';
-type ProjectChatMessage = {
-  id: string;
-  role: 'assistant' | 'user';
-  text: string;
-};
-
+type PatternStep = ProjectChatStep;
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 const buttonLayoutTransition = LinearTransition.duration(180);
 const stepCardLayoutTransition = LinearTransition.duration(200);
@@ -238,202 +220,6 @@ function TargetCountText({ value, label }: { value: number; label: string }) {
         Target: {value} {targetLabel}
       </SwiftText>
     </Host>
-  );
-}
-
-function ProjectModeSegmentedControl({
-  value,
-  onChange,
-}: {
-  value: ProjectMode;
-  onChange: (value: ProjectMode) => void;
-}) {
-  const pickerModifiers = useMemo(() => [pickerStyle('segmented')], []);
-  const stepsTag = useMemo(() => [tag('steps')], []);
-  const chatTag = useMemo(() => [tag('chat')], []);
-
-  return (
-    <Host matchContents={false} style={{ height: 38 }}>
-      <Picker<ProjectMode>
-        selection={value}
-        onSelectionChange={(nextValue) => {
-          triggerNavigationHaptic();
-          onChange(nextValue);
-        }}
-        modifiers={pickerModifiers}>
-        <SwiftText modifiers={stepsTag}>Steps</SwiftText>
-        <SwiftText modifiers={chatTag}>AI Chat</SwiftText>
-      </Picker>
-    </Host>
-  );
-}
-
-function ChatMessageBubble({ item }: { item: ProjectChatMessage }) {
-  const isUser = item.role === 'user';
-
-  return (
-    <View
-      style={{
-        maxWidth: '86%',
-        alignSelf: isUser ? 'flex-end' : 'flex-start',
-        paddingHorizontal: theme.spacing.md,
-        paddingVertical: theme.spacing.sm,
-        borderRadius: theme.radius.xl,
-        borderCurve: 'continuous',
-        backgroundColor: isUser ? theme.colors.primary : theme.colors.surface,
-      }}>
-      <Text
-        selectable
-        style={{
-          fontSize: theme.size.md,
-          lineHeight: theme.size.md + 7,
-          color: isUser ? theme.colors.white : theme.colors.textPrimary,
-        }}>
-        {item.text}
-      </Text>
-    </View>
-  );
-}
-
-function ProjectChatMode({
-  pattern,
-  currentStep,
-  counterLabel,
-  counterValue,
-  bottomInset,
-}: {
-  pattern: Pattern;
-  currentStep: PatternStep | null;
-  counterLabel: string | undefined;
-  counterValue: number | null;
-  bottomInset: number;
-}) {
-  const inputNativeId = 'project-ai-chat-input';
-  const [inputText, setInputText] = useState('');
-  const [sentMessages, setSentMessages] = useState<ProjectChatMessage[]>([]);
-  const contextText = currentStep
-    ? `${currentStep.title}: ${currentStep.instruction}`
-    : `Ask about ${pattern.title}.`;
-  const messages = useMemo<ProjectChatMessage[]>(
-    () => [
-      {
-        id: 'assistant-intro',
-        role: 'assistant',
-        text: 'Ask me what this step means, where to place the hook, or how to fix the shape if it looks off.',
-      },
-      {
-        id: 'assistant-context',
-        role: 'assistant',
-        text: counterLabel && counterValue !== null
-          ? `${contextText}\n\nCurrent ${counterLabel}: ${counterValue}`
-          : contextText,
-      },
-      ...sentMessages,
-    ],
-    [contextText, counterLabel, counterValue, sentMessages],
-  );
-
-  function sendMessage() {
-    const trimmed = inputText.trim();
-    if (!trimmed) return;
-
-    setSentMessages((currentMessages) => [
-      ...currentMessages,
-      {
-        id: `user-${Date.now()}`,
-        role: 'user',
-        text: trimmed,
-      },
-      {
-        id: `assistant-placeholder-${Date.now()}`,
-        role: 'assistant',
-        text: 'AI answers are the next wiring step. This chat is already scoped to your current pattern and step.',
-      },
-    ]);
-    setInputText('');
-  }
-
-  return (
-    <View style={{ flex: 1, backgroundColor: theme.colors.background }}>
-      <KeyboardGestureArea
-        interpolator="ios"
-        offset={60}
-        textInputNativeID={inputNativeId}
-        style={{ flex: 1 }}>
-        <KeyboardAvoidingLegendList
-          alignItemsAtEnd
-          contentContainerStyle={{
-            paddingHorizontal: theme.spacing.xl,
-            paddingTop: theme.spacing.lg,
-            paddingBottom: theme.spacing.lg,
-            gap: theme.spacing.sm,
-          }}
-          data={messages}
-          estimatedItemSize={82}
-          initialScrollIndex={messages.length - 1}
-          keyExtractor={(item) => item.id}
-          maintainScrollAtEnd
-          maintainVisibleContentPosition
-          renderItem={ChatMessageBubble}
-          safeAreaInsetBottom={bottomInset}
-          style={{ flex: 1, backgroundColor: theme.colors.background }}
-        />
-      </KeyboardGestureArea>
-      <KeyboardStickyView offset={{ closed: 0, opened: bottomInset }}>
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            gap: theme.spacing.sm,
-            paddingHorizontal: theme.spacing.xl,
-            paddingTop: theme.spacing.sm,
-            paddingBottom: bottomInset + theme.spacing.sm,
-            backgroundColor: theme.colors.background,
-          }}>
-          <TextInput
-            nativeID={inputNativeId}
-            value={inputText}
-            onChangeText={setInputText}
-            placeholder="Ask about this step"
-            placeholderTextColor={theme.colors.textTertiary}
-            multiline
-            style={{
-              flex: 1,
-              maxHeight: 112,
-              paddingHorizontal: theme.spacing.md,
-              paddingVertical: theme.spacing.sm,
-              borderRadius: theme.radius.xl,
-              borderCurve: 'continuous',
-              backgroundColor: theme.colors.surface,
-              color: theme.colors.textPrimary,
-              fontSize: theme.size.md,
-              lineHeight: theme.size.md + 6,
-            }}
-          />
-          <Pressable
-            onPress={sendMessage}
-            disabled={!inputText.trim()}
-            style={{
-              minWidth: 64,
-              minHeight: 44,
-              alignItems: 'center',
-              justifyContent: 'center',
-              borderRadius: theme.radius.pill,
-              backgroundColor: inputText.trim() ? theme.colors.primary : theme.colors.muted,
-            }}
-            accessibilityRole="button">
-            <Text
-              style={{
-                fontSize: theme.size.md,
-                fontWeight: theme.weight.semibold,
-                color: inputText.trim() ? theme.colors.white : theme.colors.textTertiary,
-              }}>
-              Send
-            </Text>
-          </Pressable>
-        </View>
-      </KeyboardStickyView>
-    </View>
   );
 }
 
@@ -636,6 +422,7 @@ export default function ProjectDetailScreen() {
   const insets = useSafeAreaInsets();
   const { width } = useWindowDimensions();
   const { db } = useDbStore();
+  const { isPro } = useSubscription();
   const stepListRef = useRef<FlatList<PatternStep>>(null);
   const hasPositionedStepListRef = useRef(false);
   const isProgrammaticStepScrollRef = useRef(false);
@@ -643,7 +430,6 @@ export default function ProjectDetailScreen() {
   const [pattern, setPattern] = useState<Pattern | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedStepIndex, setSelectedStepIndex] = useState(0);
-  const [activeMode, setActiveMode] = useState<ProjectMode>('steps');
   const projectId = Number(id);
 
   useEffect(() => {
@@ -707,18 +493,6 @@ export default function ProjectDetailScreen() {
       }
     },
   });
-  const projectHeaderMeta = useMemo(() => {
-    if (!project || !pattern) return '';
-
-    const isDefaultProjectName =
-      project.name.trim().toLowerCase() === pattern.title.trim().toLowerCase();
-
-    if (!isDefaultProjectName) {
-      return pattern.title;
-    }
-
-    return [pattern.category, pattern.difficulty].filter(Boolean).join(' / ');
-  }, [pattern, project]);
   const counterLabel = currentStep?.counterLabel;
   const counterValue =
     counterLabel === 'row'
@@ -837,9 +611,13 @@ export default function ProjectDetailScreen() {
     await updateProject({
       ...project,
       status: 'completed',
+      currentStepIndex: steps.length > 0 ? steps.length - 1 : project.currentStepIndex,
       completedAt: new Date(),
     });
-    router.back();
+    router.replace({
+      pathname: '/(projects)/complete/[id]',
+      params: { id: String(project.id) },
+    });
   }
 
   return (
@@ -847,14 +625,30 @@ export default function ProjectDetailScreen() {
       <Stack.Screen
         options={{
           title: project?.name ?? 'Project',
+          headerLargeTitle: false,
+          headerShadowVisible: false,
           headerStyle: {
-            backgroundColor: isLiquidGlassAvailable() ? 'transparent' : theme.colors.background,
+            backgroundColor: theme.colors.background,
           },
+          unstable_headerLeftItems: () => [
+            {
+              type: 'button' as const,
+              label: 'Close',
+              icon: { type: 'sfSymbol' as const, name: 'chevron.backward' },
+              onPress: () => router.back(),
+            },
+          ],
         }}
       />
       <View style={{ flex: 1, backgroundColor: theme.colors.background }}>
         {isLoading ? (
-          <View style={{ paddingVertical: theme.spacing['3xl'], alignItems: 'center' }}>
+          <View
+            style={{
+              flex: 1,
+              alignItems: 'center',
+              justifyContent: 'center',
+              backgroundColor: theme.colors.background,
+            }}>
             <ActivityIndicator color={theme.colors.primary} />
           </View>
         ) : null}
@@ -862,26 +656,23 @@ export default function ProjectDetailScreen() {
         {!isLoading && (!project || !pattern) ? (
           <View
             style={{
-              margin: theme.spacing.xl,
+              flex: 1,
+              justifyContent: 'center',
               padding: theme.spacing.xl,
-              borderRadius: theme.radius.xl,
-              backgroundColor: theme.colors.surface,
-              borderWidth: 1,
-              borderColor: theme.colors.border,
-              gap: theme.spacing.sm,
+              backgroundColor: theme.colors.background,
             }}>
-            <Text
-              selectable
+            <View
               style={{
-                fontSize: theme.size.lg,
-                fontWeight: theme.weight.semibold,
-                color: theme.colors.textPrimary,
+                padding: theme.spacing.lg,
+                borderRadius: theme.radius.xl,
+                backgroundColor: theme.colors.surface,
+                borderWidth: 1,
+                borderColor: theme.colors.border,
               }}>
-              Project not found
-            </Text>
-            <Text selectable style={{ color: theme.colors.textSecondary }}>
-              This project may have been deleted.
-            </Text>
+              <Text selectable style={{ color: theme.colors.textSecondary }}>
+                Project not found.
+              </Text>
+            </View>
           </View>
         ) : null}
 
@@ -890,55 +681,57 @@ export default function ProjectDetailScreen() {
             <View
               style={{
                 paddingHorizontal: theme.spacing.xl,
-                paddingTop: theme.spacing.xl,
-                paddingBottom: theme.spacing.lg,
-                gap: theme.spacing.md,
+                paddingTop: theme.spacing.sm,
+                paddingBottom: theme.spacing.sm,
+                backgroundColor: theme.colors.background,
               }}>
-              <ProjectModeSegmentedControl value={activeMode} onChange={setActiveMode} />
-              <View style={{ flexDirection: 'row', gap: theme.spacing.md, alignItems: 'center' }}>
-                <Image
-                  source={patternImages[pattern.coverImageKey as PatternImageKey]}
-                  contentFit="cover"
+              <PressableScale
+                onPress={() => {
+                  triggerNavigationHaptic();
+                  if (!isPro) {
+                    router.push('/(paywalls)');
+                    return;
+                  }
+
+                  router.push({
+                    pathname: '/(projects)/chat/[id]',
+                    params: { id: String(project.id) },
+                  });
+                }}
+                style={{
+                  paddingVertical: 16,
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  paddingHorizontal: theme.spacing.lg,
+                  borderRadius: theme.radius.pill,
+                  backgroundColor: theme.colors.primarySoft,
+                }}
+                accessibilityRole="button">
+                <Text
                   style={{
-                    width: 64,
-                    height: 80,
-                    borderRadius: theme.radius.lg,
-                  }}
-                />
-                <View style={{ flex: 1, gap: theme.spacing.xs }}>
-                  <Text
-                    selectable
-                    style={{
-                      fontSize: theme.size.xl,
-                      fontWeight: theme.weight.semibold,
-                      color: theme.colors.textPrimary,
-                    }}>
-                    {project.name}
-                  </Text>
-                  {projectHeaderMeta ? (
-                    <Text
-                      selectable
-                      style={{
-                        fontSize: theme.size.md,
-                        color: theme.colors.textSecondary,
-                      }}>
-                      {projectHeaderMeta}
-                    </Text>
-                  ) : null}
-                </View>
-              </View>
+                    fontSize: theme.size.md,
+                    fontWeight: theme.weight.semibold,
+                    color: theme.colors.primary,
+                  }}>
+                  {isPro ? 'Ask AI about this step' : 'Unlock AI help'}
+                </Text>
+              </PressableScale>
             </View>
 
-            {activeMode === 'steps' ? (
-              <ScrollView
-                contentInsetAdjustmentBehavior="automatic"
-                style={{ flex: 1, backgroundColor: theme.colors.background }}
-                contentContainerStyle={{
-                  paddingHorizontal: theme.spacing.xl,
-                  paddingBottom: insets.bottom + 128,
-                  gap: theme.spacing.lg,
-                  backgroundColor: theme.colors.background,
-                }}>
+            <ScrollView
+              contentInsetAdjustmentBehavior="automatic"
+              style={{
+                flex: 1,
+                backgroundColor: theme.colors.background,
+              }}
+              contentContainerStyle={{
+                paddingHorizontal: theme.spacing.xl,
+                paddingTop: theme.spacing.sm,
+                paddingBottom: insets.bottom + 128,
+                gap: theme.spacing.lg,
+                backgroundColor: theme.colors.background,
+              }}>
+              {steps.length > 0 ? (
                 <Animated.View
                   entering={FadeInDown.duration(180)}
                   exiting={FadeOutUp.duration(140)}
@@ -946,106 +739,101 @@ export default function ProjectDetailScreen() {
                   <StepProgressLabel currentStep={currentStepIndex + 1} totalSteps={steps.length} />
                   <ProgressBar progress={progress} animatedProgress={stepCardProgress} />
                 </Animated.View>
+              ) : null}
 
-                {steps.length > 0 ? (
-                  <Animated.FlatList
-                    ref={stepListRef}
-                    data={steps}
-                    horizontal
-                    keyExtractor={(item, index) => `${item.title}-${index}`}
-                    renderItem={({ item, index }) => (
-                      <StepInstructionCard
-                        step={item}
-                        index={index}
-                        cardWidth={stepCardWidth}
-                        snapInterval={stepCardSnapInterval}
-                        scrollX={stepCardScrollX}
-                      />
-                    )}
-                    ItemSeparatorComponent={() => <View style={{ width: stepCardGap }} />}
-                    getItemLayout={(_, index) => ({
-                      length: stepCardSnapInterval,
-                      offset: stepCardSnapInterval * index,
-                      index,
-                    })}
-                    snapToInterval={stepCardSnapInterval}
-                    snapToAlignment="start"
-                    decelerationRate="fast"
-                    scrollEventThrottle={16}
-                    showsHorizontalScrollIndicator={false}
-                    onScroll={onStepCardScroll}
-                    onMomentumScrollEnd={(event) =>
-                      void settleStepCard(event.nativeEvent.contentOffset.x)
-                    }
-                  />
-                ) : (
+              {steps.length > 0 ? (
+                <Animated.FlatList
+                  ref={stepListRef}
+                  data={steps}
+                  horizontal
+                  keyExtractor={(item, index) => `${item.title}-${index}`}
+                  renderItem={({ item, index }) => (
+                    <StepInstructionCard
+                      step={item}
+                      index={index}
+                      cardWidth={stepCardWidth}
+                      snapInterval={stepCardSnapInterval}
+                      scrollX={stepCardScrollX}
+                    />
+                  )}
+                  ItemSeparatorComponent={() => <View style={{ width: stepCardGap }} />}
+                  getItemLayout={(_, index) => ({
+                    length: stepCardSnapInterval,
+                    offset: stepCardSnapInterval * index,
+                    index,
+                  })}
+                  snapToInterval={stepCardSnapInterval}
+                  snapToAlignment="start"
+                  decelerationRate="fast"
+                  scrollEventThrottle={16}
+                  showsHorizontalScrollIndicator={false}
+                  onScroll={onStepCardScroll}
+                  onMomentumScrollEnd={(event) =>
+                    void settleStepCard(event.nativeEvent.contentOffset.x)
+                  }
+                />
+              ) : null}
+
+              {steps.length === 0 ? (
+                <View
+                  style={{
+                    padding: theme.spacing.lg,
+                    borderRadius: theme.radius.xl,
+                    backgroundColor: theme.colors.surface,
+                    borderWidth: 1,
+                    borderColor: theme.colors.border,
+                  }}>
+                  <Text selectable style={{ color: theme.colors.textSecondary }}>
+                    This project has no steps yet.
+                  </Text>
+                </View>
+              ) : null}
+
+              {counterLabel && counterValue !== null ? (
+                <Animated.View
+                  entering={FadeInDown.duration(180)}
+                  exiting={FadeOutDown.duration(140)}
+                  style={{
+                    padding: theme.spacing.lg,
+                    borderRadius: theme.radius.xl,
+                    backgroundColor: theme.colors.surface,
+                    gap: theme.spacing.md,
+                  }}>
+                  <Text
+                    selectable
+                    style={{
+                      fontSize: theme.size.md,
+                      fontWeight: theme.weight.semibold,
+                      color: theme.colors.textPrimary,
+                      textTransform: 'capitalize',
+                    }}>
+                    {counterLabel} counter
+                  </Text>
                   <View
                     style={{
-                      padding: theme.spacing.lg,
-                      borderRadius: theme.radius.xl,
-                      backgroundColor: theme.colors.surface,
-                      borderWidth: 1,
-                      borderColor: theme.colors.border,
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      gap: theme.spacing.lg,
                     }}>
-                    <Text selectable style={{ color: theme.colors.textSecondary }}>
-                      This project has no steps yet.
-                    </Text>
+                    <CounterButton
+                      label="-"
+                      onPress={() => void updateCounter(-1)}
+                      disabled={counterValue === 0}
+                    />
+                    <CounterValueText value={counterValue} />
+                    <CounterButton label="+" onPress={() => void updateCounter(1)} />
                   </View>
-                )}
-
-                {counterLabel && counterValue !== null ? (
-                  <Animated.View
-                    entering={FadeInDown.duration(180)}
-                    exiting={FadeOutDown.duration(140)}
-                    style={{
-                      padding: theme.spacing.lg,
-                      borderRadius: theme.radius.xl,
-                      backgroundColor: theme.colors.surface,
-                      gap: theme.spacing.md,
-                    }}>
-                    <Text
-                      selectable
-                      style={{
-                        fontSize: theme.size.md,
-                        fontWeight: theme.weight.semibold,
-                        color: theme.colors.textPrimary,
-                        textTransform: 'capitalize',
-                      }}>
-                      {counterLabel} counter
-                    </Text>
-                    <View
-                      style={{
-                        flexDirection: 'row',
-                        alignItems: 'center',
-                        justifyContent: 'space-between',
-                        gap: theme.spacing.lg,
-                      }}>
-                      <CounterButton
-                        label="-"
-                        onPress={() => void updateCounter(-1)}
-                        disabled={counterValue === 0}
-                      />
-                      <CounterValueText value={counterValue} />
-                      <CounterButton label="+" onPress={() => void updateCounter(1)} />
-                    </View>
-                    {currentStep.targetCount ? (
-                      <TargetCountText value={currentStep.targetCount} label={counterLabel} />
-                    ) : null}
-                  </Animated.View>
-                ) : null}
-              </ScrollView>
-            ) : (
-              <ProjectChatMode
-                pattern={pattern}
-                currentStep={currentStep}
-                counterLabel={counterLabel}
-                counterValue={counterValue}
-                bottomInset={insets.bottom}
-              />
-            )}
+                  {currentStep.targetCount ? (
+                    <TargetCountText value={currentStep.targetCount} label={counterLabel} />
+                  ) : null}
+                </Animated.View>
+              ) : null}
+            </ScrollView>
           </>
         ) : null}
-        {project && pattern && activeMode === 'steps' ? (
+
+        {project && pattern ? (
           <StepNavigationBar
             currentStepIndex={currentStepIndex}
             stepCount={steps.length}

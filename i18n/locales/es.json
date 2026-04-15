@@ -1,0 +1,337 @@
+{
+  "common": {
+    "continue": "Continuar",
+    "preparing": "Preparando...",
+    "filters": {
+      "all": "Todos"
+    },
+    "badges": {
+      "pro": "Pro"
+    },
+    "time": {
+      "today": "Hoy",
+      "yesterday": "Ayer",
+      "daysAgo": "hace {{count}} dias"
+    },
+    "counter": {
+      "rounds": "{{count}} vueltas",
+      "rows": "{{count}} filas",
+      "none": "Sin contador aun"
+    },
+    "steps": {
+      "progress": "{{current}}/{{total}} pasos",
+      "stepOnly": "Paso {{current}}",
+      "count": "{{count}} pasos"
+    }
+  },
+  "shared": {
+    "close": "Cerrar",
+    "unlockPremium": "Desbloquear Premium",
+    "stepOf": "Paso {{current}} de {{total}}"
+  },
+  "chat": {
+    "thinking": "Pensando...",
+    "errorFallback": "Hubo un problema al generar la respuesta. Intentalo de nuevo."
+  },
+  "tabs": {
+    "home": "Inicio",
+    "learn": "Aprender",
+    "projects": "Proyectos"
+  },
+  "home": {
+    "sections": {
+      "activeProjects": "Proyectos activos"
+    },
+    "accessibility": {
+      "continueProject": "Continuar {{name}}",
+      "showPatterns": "Mostrar patrones de {{category}}"
+    },
+    "lastWorkedPrefix": "Ultima sesion",
+    "lastWorkedSeparator": "·"
+  },
+  "projects": {
+    "sections": {
+      "inProgress": "En progreso",
+      "completed": "Completados"
+    },
+    "empty": {
+      "title": "Aun no hay proyectos",
+      "subtitle": "Elige un patron en Inicio y pulsa Iniciar proyecto."
+    },
+    "accessibility": {
+      "openProject": "Abrir {{name}}"
+    }
+  },
+  "learn": {
+    "toolsSectionTitle": "Herramientas",
+    "lessonLabel": "Leccion {{index}}",
+    "actions": {
+      "open": "Abrir",
+      "unlock": "Desbloquear"
+    },
+    "accessibility": {
+      "unlockTool": "Desbloquear {{title}}",
+      "lessonCard": "{{action}} leccion {{title}}"
+    },
+    "empty": {
+      "title": "Aun no hay lecciones",
+      "subtitle": "Carga la base de datos local para mostrar aqui la ruta para principiantes."
+    },
+    "tools": {
+      "row-counter": {
+        "title": "Contador de filas",
+        "description": "Cuenta filas, vueltas y repeticiones sin perder el ritmo."
+      },
+      "stitch-fixes": {
+        "title": "Arreglos de puntos",
+        "description": "Ayuda rapida para bordes desiguales, huecos, rizos y puntos perdidos."
+      },
+      "size-calculator": {
+        "title": "Calculadora de talla",
+        "description": "Estima puntos y filas a partir de tu muestra."
+      },
+      "identify-stitch": {
+        "title": "Identificar punto",
+        "description": "Usa una foto para entender el punto que estas viendo."
+      }
+    }
+  },
+  "lessonDetail": {
+    "lesson": "Leccion",
+    "notFound": "Leccion no encontrada.",
+    "difficulty": "Dificultad",
+    "steps": "Pasos",
+    "practice": "Practica",
+    "practicePaceShort": "corto",
+    "whyItMatters": "Por que importa",
+    "commonMistakes": "Errores comunes",
+    "startPractice": "Iniciar practica",
+    "difficultyValues": {
+      "beginner": "Principiante",
+      "intermediate": "Intermedio",
+      "advanced": "Avanzado"
+    }
+  },
+  "settings": {
+    "sections": {
+      "support": "Soporte",
+      "legal": "Legal"
+    },
+    "rows": {
+      "sendFeedback": "Enviar comentarios",
+      "rateApp": "Valorar la app",
+      "customerCenter": "Centro de cliente",
+      "terms": "Terminos",
+      "privacyPolicy": "Privacidad"
+    },
+    "premium": {
+      "title": "Desbloquear Premium",
+      "subtitle": "Consigue todos los patrones, guias y herramientas creativas mientras Crova crece.",
+      "cta": "Mejorar"
+    },
+    "alerts": {
+      "customerCenterUnavailableTitle": "Centro de cliente no disponible",
+      "customerCenterUnavailableMessage": "Vuelve a intentarlo cuando las compras esten configuradas."
+    },
+    "accessibility": {
+      "openPremiumUpgrade": "Abrir mejora Premium"
+    }
+  },
+  "tools": {
+    "rowCounter": {
+      "mode": {
+        "rows": "Filas",
+        "rounds": "Vueltas"
+      },
+      "copy": {
+        "rows": {
+          "label": "Filas completadas",
+          "helper": "Ideal para bufandas, panos, muestras y piezas planas."
+        },
+        "rounds": {
+          "label": "Vueltas completadas",
+          "helper": "Ideal para granny squares, posavasos, amigurumi y trabajo circular."
+        }
+      },
+      "actions": {
+        "decreaseRows": "Disminuir filas",
+        "decreaseRounds": "Disminuir vueltas",
+        "increaseRows": "Aumentar filas",
+        "increaseRounds": "Aumentar vueltas",
+        "resetRows": "Reiniciar filas",
+        "resetRounds": "Reiniciar vueltas"
+      }
+    },
+    "sizeCalculator": {
+      "units": {
+        "cm": "cm",
+        "in": "in"
+      },
+      "sections": {
+        "gauge": "Muestra",
+        "targetSize": "Tamano objetivo",
+        "estimate": "Estimacion"
+      },
+      "fields": {
+        "stitches": "Puntos",
+        "rows": "Filas",
+        "width": "Ancho",
+        "height": "Alto"
+      },
+      "emptyHelp": "Introduce tu muestra y tamano objetivo para estimar puntos y filas.",
+      "disclaimer": "Esta es una estimacion para planificar. Verifica siempre tu propia muestra."
+    },
+    "identifyStitch": {
+      "empty": {
+        "title": "Agrega una foto clara del punto",
+        "subtitle": "Usa buena luz y llena el encuadre con la textura del punto."
+      },
+      "analysis": {
+        "title": "Analisis",
+        "loading": "Revisando la textura del punto con IA...",
+        "noLikelyStitchDetected": "No pude identificar con seguridad un punto de crochet en esta imagen.",
+        "noLikelyStitchHint": "Prueba con mejor luz, acercate mas y encuadra una sola textura de punto.",
+        "bestMatch": "Mejor coincidencia",
+        "confidence": {
+          "high": "Alta",
+          "medium": "Media",
+          "low": "Baja"
+        },
+        "photoReady": "La foto esta lista. Puedes elegir otra mas clara cuando quieras.",
+        "noPhoto": "Elige o toma una foto para identificar el punto probable.",
+        "visibleClues": "Pistas visibles",
+        "nextSteps": "Siguientes pasos",
+        "aiResult": "Resultado de IA",
+        "readyForAi": "Listo para IA"
+      },
+      "alerts": {
+        "cameraPermissionTitle": "Se necesita permiso de camara",
+        "cameraPermissionMessage": "Permite acceso a la camara para tomar una foto del punto.",
+        "photoPermissionTitle": "Se necesita permiso de fotos",
+        "photoPermissionMessage": "Permite acceso a fotos para elegir una imagen del punto."
+      },
+      "actions": {
+        "takePhoto": "Tomar foto",
+        "choosePhoto": "Elegir"
+      },
+      "errors": {
+        "couldNotAnalyze": "No se pudo analizar esta foto. Prueba con un primer plano mas iluminado.",
+        "couldNotAnalyzeWithReason": "No se pudo analizar esta foto: {{reason}}"
+      }
+    }
+  },
+  "patternDetail": {
+    "pattern": "Patron",
+    "opening": "Abriendo...",
+    "resumeProject": "Reanudar proyecto",
+    "startProject": "Iniciar proyecto",
+    "projectInProgress": "Proyecto en progreso",
+    "difficulty": "Dificultad",
+    "category": "Categoria",
+    "general": "General",
+    "time": "Tiempo",
+    "minutesShort": "{{count}} min",
+    "skillsNeeded": "Habilidades necesarias",
+    "materials": "Materiales",
+    "patternOverview": "Resumen del patron",
+    "steps": "Pasos",
+    "structure": "Estructura",
+    "counters": "Contadores",
+    "basic": "basico",
+    "whatToExpect": "Que esperar",
+    "guided": "guiado",
+    "counterRows": "{{count}} fila",
+    "counterRows_plural": "{{count}} filas",
+    "counterRounds": "{{count}} vuelta",
+    "counterRounds_plural": "{{count}} vueltas",
+    "counterRowsTarget": "{{current}} / {{target}} filas",
+    "counterRoundsTarget": "{{current}} / {{target}} vueltas",
+    "lastWorkedToday": "Trabajado hoy",
+    "lastWorkedYesterday": "Trabajado ayer",
+    "lastWorkedDaysAgo": "Trabajado hace {{count}} dias",
+    "lastWorkedOnDate": "Trabajado el {{date}}"
+  },
+  "projectComplete": {
+    "title": "Proyecto completado",
+    "notFound": "Proyecto no encontrado.",
+    "stepsDone": "Pasos hechos",
+    "counter": "Contador",
+    "done": "Hecho",
+    "finishedJustNow": "Terminado ahora mismo",
+    "finishedOn": "Terminado el {{date}}",
+    "backToProjects": "Volver a Proyectos",
+    "starting": "Iniciando...",
+    "makeAnother": "Crear otro"
+  },
+  "onboarding": {
+    "intro": {
+      "titlePrefix": "Aprende mas rapido con un flujo pensado para",
+      "titleAccent": "principiantes en crochet",
+      "slides": {
+        "learnStitches": "Aprender puntos",
+        "finishProjects": "Terminar proyectos",
+        "trackRows": "Seguir cada vuelta",
+        "buildHabit": "Crear habito",
+        "stayConsistent": "Mantener constancia"
+      },
+      "rowProgress": "Vuelta {{current}} / {{total}}"
+    },
+    "quiz": {
+      "stepOf": "Paso {{current}} de {{total}}",
+      "steps": {
+        "skillLevel": {
+          "title": "Cual es tu nivel de crochet?",
+          "subtitle": "Ajustaremos tus lecciones y proyectos iniciales segun tu nivel actual.",
+          "cta": "Continuar",
+          "options": {
+            "beginner": "Soy totalmente nuevo",
+            "intermediate": "Conozco lo basico",
+            "advanced": "Quiero proyectos mas exigentes"
+          }
+        },
+        "goal": {
+          "title": "Con que quieres ayuda primero?",
+          "subtitle": "Elige la razon principal por la que descargaste Crova para guiarte mas rapido.",
+          "cta": "Continuar",
+          "options": {
+            "learnBasics": "Aprender los puntos principales",
+            "finishFirstProject": "Terminar mi primer proyecto real",
+            "buildHabit": "Crear un habito constante de crochet"
+          }
+        },
+        "handedness": {
+          "title": "Con que mano haces crochet?",
+          "subtitle": "Esto nos ayuda a mostrar el angulo correcto cuando se agregue contenido para zurdos.",
+          "cta": "Empezar Crova",
+          "options": {
+            "right": "Diestro",
+            "left": "Zurdo"
+          }
+        }
+      }
+    },
+    "loader": {
+      "titlePreparing": "Preparando tu experiencia",
+      "titleReady": "Todo listo.",
+      "ctaReady": "Empezar Crova",
+      "goalLabels": {
+        "learnBasics": "los puntos basicos",
+        "finishFirstProject": "tu primer proyecto",
+        "buildHabit": "un habito constante de crochet",
+        "default": "tu camino de crochet"
+      },
+      "skillLabels": {
+        "beginner": "para principiantes",
+        "intermediate": "intermedio",
+        "advanced": "avanzado",
+        "default": "personalizado"
+      },
+      "messages": {
+        "buildingPlan": "Creando tu plan {{skillLabel}}...",
+        "pickingLessons": "Eligiendo lecciones para {{goalLabel}}...",
+        "tracking": "Configurando el seguimiento de progreso...",
+        "finalizing": "Finalizando tu inicio en Crova..."
+      }
+    }
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "common": {
+    "continue": "Continue",
+    "preparing": "Preparing...",
+    "filters": {
+      "all": "All"
+    },
+    "badges": {
+      "pro": "Pro"
+    },
+    "time": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "daysAgo": "{{count}} days ago"
+    },
+    "counter": {
+      "rounds": "{{count}} rounds",
+      "rows": "{{count}} rows",
+      "none": "No counter yet"
+    },
+    "steps": {
+      "progress": "{{current}}/{{total}} steps",
+      "stepOnly": "Step {{current}}",
+      "count": "{{count}} steps"
+    }
+  },
+  "shared": {
+    "close": "Close",
+    "unlockPremium": "Unlock Premium",
+    "stepOf": "Step {{current}} of {{total}}"
+  },
+  "chat": {
+    "thinking": "Thinking...",
+    "errorFallback": "I hit a snag while generating a response. Please try again."
+  },
+  "tabs": {
+    "home": "Home",
+    "learn": "Learn",
+    "projects": "Projects"
+  },
+  "home": {
+    "sections": {
+      "activeProjects": "Active Projects"
+    },
+    "accessibility": {
+      "continueProject": "Continue {{name}}",
+      "showPatterns": "Show {{category}} patterns"
+    },
+    "lastWorkedPrefix": "Last worked",
+    "lastWorkedSeparator": "·"
+  },
+  "projects": {
+    "sections": {
+      "inProgress": "In progress",
+      "completed": "Completed"
+    },
+    "empty": {
+      "title": "No projects yet",
+      "subtitle": "Pick a pattern from Home and tap Start Project."
+    },
+    "accessibility": {
+      "openProject": "Open {{name}}"
+    }
+  },
+  "learn": {
+    "toolsSectionTitle": "Tools",
+    "lessonLabel": "Lesson {{index}}",
+    "actions": {
+      "open": "Open",
+      "unlock": "Unlock"
+    },
+    "accessibility": {
+      "unlockTool": "Unlock {{title}}",
+      "lessonCard": "{{action}} {{title}} lesson"
+    },
+    "empty": {
+      "title": "No lessons yet",
+      "subtitle": "Seed the local database to show the beginner path here."
+    },
+    "tools": {
+      "row-counter": {
+        "title": "Row Counter",
+        "description": "Count rows, rounds, and repeats without losing your place."
+      },
+      "stitch-fixes": {
+        "title": "Stitch Fixes",
+        "description": "Quick help for curling, uneven edges, gaps, and missed stitches."
+      },
+      "size-calculator": {
+        "title": "Size Calculator",
+        "description": "Estimate stitch and row counts from your gauge."
+      },
+      "identify-stitch": {
+        "title": "Identify Stitch",
+        "description": "Use a photo to understand the stitch you are looking at."
+      }
+    }
+  },
+  "lessonDetail": {
+    "lesson": "Lesson",
+    "notFound": "Lesson not found.",
+    "difficulty": "Difficulty",
+    "steps": "Steps",
+    "practice": "Practice",
+    "practicePaceShort": "short",
+    "whyItMatters": "Why it matters",
+    "commonMistakes": "Common mistakes",
+    "startPractice": "Start Practice",
+    "difficultyValues": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    }
+  },
+  "settings": {
+    "sections": {
+      "support": "Support",
+      "legal": "Legal"
+    },
+    "rows": {
+      "sendFeedback": "Send Feedback",
+      "rateApp": "Rate the App",
+      "customerCenter": "Customer Center",
+      "terms": "Terms",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "premium": {
+      "title": "Unlock Premium",
+      "subtitle": "Get every pattern, guide, and creative tool as Crova grows.",
+      "cta": "Upgrade"
+    },
+    "alerts": {
+      "customerCenterUnavailableTitle": "Customer center unavailable",
+      "customerCenterUnavailableMessage": "Please try again after purchases are configured."
+    },
+    "accessibility": {
+      "openPremiumUpgrade": "Open premium upgrade"
+    }
+  },
+  "tools": {
+    "rowCounter": {
+      "mode": {
+        "rows": "Rows",
+        "rounds": "Rounds"
+      },
+      "copy": {
+        "rows": {
+          "label": "Rows completed",
+          "helper": "Best for scarves, dishcloths, swatches, and flat pieces."
+        },
+        "rounds": {
+          "label": "Rounds completed",
+          "helper": "Best for granny squares, coasters, amigurumi, and circular work."
+        }
+      },
+      "actions": {
+        "decreaseRows": "Decrease rows",
+        "decreaseRounds": "Decrease rounds",
+        "increaseRows": "Increase rows",
+        "increaseRounds": "Increase rounds",
+        "resetRows": "Reset rows",
+        "resetRounds": "Reset rounds"
+      }
+    },
+    "sizeCalculator": {
+      "units": {
+        "cm": "cm",
+        "in": "in"
+      },
+      "sections": {
+        "gauge": "Gauge",
+        "targetSize": "Target size",
+        "estimate": "Estimate"
+      },
+      "fields": {
+        "stitches": "Stitches",
+        "rows": "Rows",
+        "width": "Width",
+        "height": "Height"
+      },
+      "emptyHelp": "Enter your swatch gauge and target size to estimate the stitches and rows.",
+      "disclaimer": "This is a planning estimate. Always check your own swatch before committing to a finished size."
+    },
+    "identifyStitch": {
+      "empty": {
+        "title": "Add a clear stitch photo",
+        "subtitle": "Use good lighting and fill the frame with the stitch texture."
+      },
+      "analysis": {
+        "title": "Analysis",
+        "loading": "Checking stitch texture with AI...",
+        "noLikelyStitchDetected": "I could not confidently identify a crochet stitch from this image.",
+        "noLikelyStitchHint": "Try brighter light, move closer, and frame a single stitch texture for a clearer result.",
+        "bestMatch": "Best match",
+        "confidence": {
+          "high": "High",
+          "medium": "Medium",
+          "low": "Low"
+        },
+        "photoReady": "Photo is ready. Choose a clearer photo anytime if the stitch texture is hard to see.",
+        "noPhoto": "Choose or take a photo to identify the likely stitch and get beginner-friendly clues.",
+        "visibleClues": "Visible clues",
+        "nextSteps": "Next steps",
+        "aiResult": "AI result",
+        "readyForAi": "Ready for AI"
+      },
+      "alerts": {
+        "cameraPermissionTitle": "Camera permission needed",
+        "cameraPermissionMessage": "Allow camera access to take a stitch photo.",
+        "photoPermissionTitle": "Photo permission needed",
+        "photoPermissionMessage": "Allow photo access to choose a stitch image."
+      },
+      "actions": {
+        "takePhoto": "Take Photo",
+        "choosePhoto": "Choose"
+      },
+      "errors": {
+        "couldNotAnalyze": "Could not analyze this photo. Try a brighter close-up.",
+        "couldNotAnalyzeWithReason": "Could not analyze this photo: {{reason}}"
+      }
+    }
+  },
+  "patternDetail": {
+    "pattern": "Pattern",
+    "opening": "Opening...",
+    "resumeProject": "Resume Project",
+    "startProject": "Start Project",
+    "projectInProgress": "Project in progress",
+    "difficulty": "Difficulty",
+    "category": "Category",
+    "general": "General",
+    "time": "Time",
+    "minutesShort": "{{count}} min",
+    "skillsNeeded": "Skills needed",
+    "materials": "Materials",
+    "patternOverview": "Pattern overview",
+    "steps": "Steps",
+    "structure": "Structure",
+    "counters": "Counters",
+    "basic": "basic",
+    "whatToExpect": "What to expect",
+    "guided": "guided",
+    "counterRows": "{{count}} row",
+    "counterRows_plural": "{{count}} rows",
+    "counterRounds": "{{count}} round",
+    "counterRounds_plural": "{{count}} rounds",
+    "counterRowsTarget": "{{current}} / {{target}} rows",
+    "counterRoundsTarget": "{{current}} / {{target}} rounds",
+    "lastWorkedToday": "Last worked today",
+    "lastWorkedYesterday": "Last worked yesterday",
+    "lastWorkedDaysAgo": "Last worked {{count}} days ago",
+    "lastWorkedOnDate": "Last worked {{date}}"
+  },
+  "projectComplete": {
+    "title": "Project complete",
+    "notFound": "Project not found.",
+    "stepsDone": "Steps done",
+    "counter": "Counter",
+    "done": "Done",
+    "finishedJustNow": "Finished just now",
+    "finishedOn": "Finished {{date}}",
+    "backToProjects": "Back to Projects",
+    "starting": "Starting...",
+    "makeAnother": "Make Another"
+  },
+  "onboarding": {
+    "intro": {
+      "titlePrefix": "Learn faster with a flow built for",
+      "titleAccent": "beginner crocheters",
+      "slides": {
+        "learnStitches": "Learn stitches",
+        "finishProjects": "Finish projects",
+        "trackRows": "Track each row",
+        "buildHabit": "Build your habit",
+        "stayConsistent": "Stay consistent"
+      },
+      "rowProgress": "Row {{current}} / {{total}}"
+    },
+    "quiz": {
+      "stepOf": "Step {{current}} of {{total}}",
+      "steps": {
+        "skillLevel": {
+          "title": "What is your crochet level?",
+          "subtitle": "We will tune your lessons and starter projects around where you are today.",
+          "cta": "Continue",
+          "options": {
+            "beginner": "I am completely new",
+            "intermediate": "I know the basics",
+            "advanced": "I want tougher projects"
+          }
+        },
+        "goal": {
+          "title": "What do you want help with first?",
+          "subtitle": "Pick the main reason you downloaded Crova so the app can guide you there faster.",
+          "cta": "Continue",
+          "options": {
+            "learnBasics": "Learn the core stitches",
+            "finishFirstProject": "Finish my first real project",
+            "buildHabit": "Build a steady crochet habit"
+          }
+        },
+        "handedness": {
+          "title": "Which hand do you crochet with?",
+          "subtitle": "This helps us show the right teaching angle once left-handed content is added.",
+          "cta": "Start Crova",
+          "options": {
+            "right": "Right-handed",
+            "left": "Left-handed"
+          }
+        }
+      }
+    },
+    "loader": {
+      "titlePreparing": "Preparing your experience",
+      "titleReady": "You are all set.",
+      "ctaReady": "Start Crova",
+      "goalLabels": {
+        "learnBasics": "core stitches",
+        "finishFirstProject": "your first project",
+        "buildHabit": "a steady crochet habit",
+        "default": "your crochet path"
+      },
+      "skillLabels": {
+        "beginner": "beginner-friendly",
+        "intermediate": "intermediate-ready",
+        "advanced": "advanced",
+        "default": "personalized"
+      },
+      "messages": {
+        "buildingPlan": "Building your {{skillLabel}} plan...",
+        "pickingLessons": "Picking lessons for {{goalLabel}}...",
+        "tracking": "Setting up progress tracking...",
+        "finalizing": "Finalizing your Crova start..."
+      }
+    }
+  }
+}

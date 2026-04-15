@@ -1,5 +1,7 @@
+import { FREE_ACTIVE_PROJECT_LIMIT, isPatternFree } from '@/constants/gates';
 import { patternImages, type PatternImageKey } from '@/constants/pattern-images';
 import { theme } from '@/constants/Theme';
+import { useSubscription } from '@/context/SubscriptionContext';
 import {
   patterns as patternsTable,
   projects as projectsTable,
@@ -9,6 +11,7 @@ import {
 import { useDbStore } from '@/stores/dbStore';
 import { Host, Button as SwiftUIButton } from '@expo/ui/swift-ui';
 import { buttonStyle, controlSize, disabled, tint } from '@expo/ui/swift-ui/modifiers';
+import type { NativeStackNavigationOptions } from '@react-navigation/native-stack';
 import { and, eq } from 'drizzle-orm';
 import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Image } from 'expo-image';
@@ -21,6 +24,7 @@ import {
 } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
 import React, { useEffect, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ActivityIndicator, ScrollView, Text, View, useWindowDimensions } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -286,25 +290,35 @@ function ProgressBar({ progress }: { progress: number }) {
         overflow: 'hidden',
       }}>
       <Animated.View
-        style={[{
-          width: '100%',
-          height: '100%',
-          borderRadius: theme.radius.pill,
-          backgroundColor: theme.colors.primary,
-          transformOrigin: 'left center',
-        }, animatedStyle]}
+        style={[
+          {
+            width: '100%',
+            height: '100%',
+            borderRadius: theme.radius.pill,
+            backgroundColor: theme.colors.primary,
+            transformOrigin: 'left center',
+          },
+          animatedStyle,
+        ]}
       />
     </View>
   );
 }
 
-function getProjectCounterSummary(project: Project | null, currentStep: PatternStep | null) {
+function getProjectCounterSummary(
+  project: Project | null,
+  currentStep: PatternStep | null,
+  t: (key: string, options?: Record<string, unknown>) => string,
+) {
   if (!project || !currentStep?.counterLabel) return null;
 
   if (currentStep.counterLabel === 'row') {
     const label = currentStep.targetCount
-      ? `${project.rowCount} / ${currentStep.targetCount} rows`
-      : `${project.rowCount} ${project.rowCount === 1 ? 'row' : 'rows'}`;
+      ? t('patternDetail.counterRowsTarget', {
+          current: project.rowCount,
+          target: currentStep.targetCount,
+        })
+      : t('patternDetail.counterRows', { count: project.rowCount });
 
     return {
       icon: 'list.number' as const,
@@ -314,8 +328,11 @@ function getProjectCounterSummary(project: Project | null, currentStep: PatternS
 
   if (currentStep.counterLabel === 'round') {
     const label = currentStep.targetCount
-      ? `${project.roundCount} / ${currentStep.targetCount} rounds`
-      : `${project.roundCount} ${project.roundCount === 1 ? 'round' : 'rounds'}`;
+      ? t('patternDetail.counterRoundsTarget', {
+          current: project.roundCount,
+          target: currentStep.targetCount,
+        })
+      : t('patternDetail.counterRounds', { count: project.roundCount });
 
     return {
       icon: 'arrow.triangle.2.circlepath' as const,
@@ -326,7 +343,10 @@ function getProjectCounterSummary(project: Project | null, currentStep: PatternS
   return null;
 }
 
-function getLastWorkedText(updatedAt: Date | null) {
+function getLastWorkedText(
+  updatedAt: Date | null,
+  t: (key: string, options?: Record<string, unknown>) => string,
+) {
   if (!updatedAt) return null;
 
   const today = new Date();
@@ -339,17 +359,22 @@ function getLastWorkedText(updatedAt: Date | null) {
   ).getTime();
   const dayDiff = Math.round((startOfToday - startOfUpdated) / 86_400_000);
 
-  if (dayDiff === 0) return 'Last worked today';
-  if (dayDiff === 1) return 'Last worked yesterday';
-  if (dayDiff > 1 && dayDiff < 7) return `Last worked ${dayDiff} days ago`;
+  if (dayDiff === 0) return t('patternDetail.lastWorkedToday');
+  if (dayDiff === 1) return t('patternDetail.lastWorkedYesterday');
+  if (dayDiff > 1 && dayDiff < 7) return t('patternDetail.lastWorkedDaysAgo', { count: dayDiff });
 
-  return `Last worked ${updatedDate.toLocaleDateString(undefined, {
-    month: 'short',
-    day: 'numeric',
-  })}`;
+  return t('patternDetail.lastWorkedOnDate', {
+    date: updatedDate.toLocaleDateString(undefined, {
+      month: 'short',
+      day: 'numeric',
+    }),
+  });
 }
 
-function getFlowLabel(steps: PatternStep[]) {
+function getFlowLabel(
+  steps: PatternStep[],
+  t: (key: string, options?: Record<string, unknown>) => string,
+) {
   const maxRounds = Math.max(
     0,
     ...steps
@@ -363,19 +388,21 @@ function getFlowLabel(steps: PatternStep[]) {
       .map((step) => step.targetCount ?? 1),
   );
 
-  if (maxRounds > 0) return `${maxRounds} rounds`;
-  if (maxRows > 0) return `${maxRows} rows`;
+  if (maxRounds > 0) return t('patternDetail.counterRounds', { count: maxRounds });
+  if (maxRows > 0) return t('patternDetail.counterRows', { count: maxRows });
 
-  return 'guided';
+  return t('patternDetail.guided');
 }
 
 export default function PatternDetailScreen() {
+  const { t } = useTranslation();
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const router = useRouter();
   const insets = useSafeAreaInsets();
   usePreventZoomTransitionDismissal();
   const { width } = useWindowDimensions();
   const { db } = useDbStore();
+  const { isPro } = useSubscription();
   const [pattern, setPattern] = useState<Pattern | null>(null);
   const [activeProject, setActiveProject] = useState<Project | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -444,26 +471,44 @@ export default function PatternDetailScreen() {
     () => steps.filter((step) => typeof step.targetCount === 'number').length,
     [steps],
   );
-  const flowLabel = useMemo(() => getFlowLabel(steps), [steps]);
+  const flowLabel = useMemo(() => getFlowLabel(steps, t), [steps, t]);
   const expectationText = pattern?.expectationText ?? pattern?.description;
   const activeProjectProgress =
     activeProject && steps.length > 0 ? (activeProject.currentStepIndex + 1) / steps.length : 0;
   const activeProjectStep = activeProject
     ? (steps[Math.min(activeProject.currentStepIndex, Math.max(steps.length - 1, 0))] ?? null)
     : null;
-  const activeProjectCounterSummary = getProjectCounterSummary(activeProject, activeProjectStep);
-  const activeProjectLastWorkedText = getLastWorkedText(activeProject?.updatedAt ?? null);
+  const activeProjectCounterSummary = getProjectCounterSummary(activeProject, activeProjectStep, t);
+  const activeProjectLastWorkedText = getLastWorkedText(activeProject?.updatedAt ?? null, t);
+  const isPatternLocked = !!pattern && !isPro && !isPatternFree(pattern);
+
+  useEffect(() => {
+    if (!isPatternLocked) return;
+
+    router.replace('/(paywalls)');
+  }, [isPatternLocked, router]);
+
   const ctaLabel = isStartingProject
-    ? 'Opening...'
-    : activeProject
-      ? 'Resume Project'
-      : 'Start Project';
-  const stackOptions = useMemo(
+    ? t('patternDetail.opening')
+    : isPatternLocked
+      ? t('shared.unlockPremium')
+      : activeProject
+        ? t('patternDetail.resumeProject')
+        : t('patternDetail.startProject');
+  const stackOptions = useMemo<NativeStackNavigationOptions>(
     () => ({
-      title: pattern?.title ?? 'Pattern',
+      title: pattern?.title ?? t('patternDetail.pattern'),
       headerTransparent: liquidGlassAvailable,
+      unstable_headerLeftItems: () => [
+        {
+          type: 'button' as const,
+          label: t('shared.close'),
+          icon: { type: 'sfSymbol' as const, name: 'chevron.backward' },
+          onPress: () => router.back(),
+        },
+      ],
     }),
-    [liquidGlassAvailable, pattern?.title],
+    [liquidGlassAvailable, pattern?.title, router, t],
   );
   const ctaModifiers = useMemo(
     () => [
@@ -477,6 +522,11 @@ export default function PatternDetailScreen() {
 
   async function handleStartProject() {
     if (!db || !pattern || isStartingProject) return;
+
+    if (isPatternLocked) {
+      router.push('/(paywalls)');
+      return;
+    }
 
     setIsStartingProject(true);
 
@@ -494,6 +544,19 @@ export default function PatternDetailScreen() {
       }
 
       if (!project) {
+        if (!isPro) {
+          const activeProjects = await db
+            .select({ id: projectsTable.id })
+            .from(projectsTable)
+            .where(eq(projectsTable.status, 'active'))
+            .limit(FREE_ACTIVE_PROJECT_LIMIT);
+
+          if (activeProjects.length >= FREE_ACTIVE_PROJECT_LIMIT) {
+            router.push('/(paywalls)');
+            return;
+          }
+        }
+
         const createdProject = await db
           .insert(projectsTable)
           .values({
@@ -582,7 +645,7 @@ export default function PatternDetailScreen() {
                       fontWeight: theme.weight.semibold,
                       color: theme.colors.textPrimary,
                     }}>
-                    Project in progress
+                    {t('patternDetail.projectInProgress')}
                   </Text>
                   <View
                     style={{
@@ -599,8 +662,10 @@ export default function PatternDetailScreen() {
                         fontWeight: theme.weight.semibold,
                         color: theme.colors.textPrimary,
                       }}>
-                      Step {Math.min(activeProject.currentStepIndex + 1, steps.length)} of{' '}
-                      {steps.length}
+                      {t('shared.stepOf', {
+                        current: Math.min(activeProject.currentStepIndex + 1, steps.length),
+                        total: steps.length,
+                      })}
                     </Text>
                     <ProgressBar progress={activeProjectProgress} />
                     {activeProjectCounterSummary ? (
@@ -663,20 +728,20 @@ export default function PatternDetailScreen() {
               <View style={{ flexDirection: 'row', gap: metaGap, justifyContent: 'center' }}>
                 <MetaStatCard
                   icon="dial.medium.fill"
-                  label="Difficulty"
+                  label={t('patternDetail.difficulty')}
                   value={pattern.difficulty}
                   size={metaCardSize}
                 />
                 <MetaStatCard
                   icon="square.grid.2x2.fill"
-                  label="Category"
-                  value={pattern.category ?? 'General'}
+                  label={t('patternDetail.category')}
+                  value={pattern.category ?? t('patternDetail.general')}
                   size={metaCardSize}
                 />
                 <MetaStatCard
                   icon="clock.fill"
-                  label="Time"
-                  value={`${pattern.estimatedMinutes} min`}
+                  label={t('patternDetail.time')}
+                  value={t('patternDetail.minutesShort', { count: pattern.estimatedMinutes ?? 0 })}
                   size={metaCardSize}
                 />
               </View>
@@ -690,7 +755,7 @@ export default function PatternDetailScreen() {
                       fontWeight: theme.weight.semibold,
                       color: theme.colors.textPrimary,
                     }}>
-                    Skills needed
+                    {t('patternDetail.skillsNeeded')}
                   </Text>
                   <View
                     style={{
@@ -716,7 +781,7 @@ export default function PatternDetailScreen() {
                     fontWeight: theme.weight.semibold,
                     color: theme.colors.textPrimary,
                   }}>
-                  Materials
+                  {t('patternDetail.materials')}
                 </Text>
                 <View
                   style={{
@@ -741,7 +806,7 @@ export default function PatternDetailScreen() {
                     fontWeight: theme.weight.semibold,
                     color: theme.colors.textPrimary,
                   }}>
-                  Pattern overview
+                  {t('patternDetail.patternOverview')}
                 </Text>
                 <View
                   style={{
@@ -751,11 +816,13 @@ export default function PatternDetailScreen() {
                     borderRadius: theme.radius.xl,
                   }}>
                   <View style={{ flexDirection: 'row', gap: theme.spacing.xs + 2 }}>
-                    <OverviewStat label="Steps" value={`${steps.length}`} />
-                    <OverviewStat label="Structure" value={flowLabel} />
+                    <OverviewStat label={t('patternDetail.steps')} value={`${steps.length}`} />
+                    <OverviewStat label={t('patternDetail.structure')} value={flowLabel} />
                     <OverviewStat
-                      label="Counters"
-                      value={trackedStepCount > 0 ? `${trackedStepCount}` : 'basic'}
+                      label={t('patternDetail.counters')}
+                      value={
+                        trackedStepCount > 0 ? `${trackedStepCount}` : t('patternDetail.basic')
+                      }
                     />
                   </View>
 
@@ -767,7 +834,7 @@ export default function PatternDetailScreen() {
                         fontWeight: theme.weight.semibold,
                         color: theme.colors.textPrimary,
                       }}>
-                      What to expect
+                      {t('patternDetail.whatToExpect')}
                     </Text>
                     <Text
                       selectable

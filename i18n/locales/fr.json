@@ -1,0 +1,337 @@
+{
+  "common": {
+    "continue": "Continuer",
+    "preparing": "Preparation...",
+    "filters": {
+      "all": "Tous"
+    },
+    "badges": {
+      "pro": "Pro"
+    },
+    "time": {
+      "today": "Aujourd'hui",
+      "yesterday": "Hier",
+      "daysAgo": "il y a {{count}} jours"
+    },
+    "counter": {
+      "rounds": "{{count}} tours",
+      "rows": "{{count}} rangs",
+      "none": "Pas encore de compteur"
+    },
+    "steps": {
+      "progress": "{{current}}/{{total}} etapes",
+      "stepOnly": "Etape {{current}}",
+      "count": "{{count}} etapes"
+    }
+  },
+  "shared": {
+    "close": "Fermer",
+    "unlockPremium": "Debloquer Premium",
+    "stepOf": "Etape {{current}} sur {{total}}"
+  },
+  "chat": {
+    "thinking": "Reflexion...",
+    "errorFallback": "Un probleme est survenu pendant la generation de la reponse. Reessaie."
+  },
+  "tabs": {
+    "home": "Accueil",
+    "learn": "Apprendre",
+    "projects": "Projets"
+  },
+  "home": {
+    "sections": {
+      "activeProjects": "Projets en cours"
+    },
+    "accessibility": {
+      "continueProject": "Continuer {{name}}",
+      "showPatterns": "Afficher les modeles {{category}}"
+    },
+    "lastWorkedPrefix": "Derniere session",
+    "lastWorkedSeparator": "·"
+  },
+  "projects": {
+    "sections": {
+      "inProgress": "En cours",
+      "completed": "Termines"
+    },
+    "empty": {
+      "title": "Aucun projet",
+      "subtitle": "Choisis un modele depuis Accueil puis appuie sur Demarrer le projet."
+    },
+    "accessibility": {
+      "openProject": "Ouvrir {{name}}"
+    }
+  },
+  "learn": {
+    "toolsSectionTitle": "Outils",
+    "lessonLabel": "Lecon {{index}}",
+    "actions": {
+      "open": "Ouvrir",
+      "unlock": "Debloquer"
+    },
+    "accessibility": {
+      "unlockTool": "Debloquer {{title}}",
+      "lessonCard": "{{action}} la lecon {{title}}"
+    },
+    "empty": {
+      "title": "Aucune lecon",
+      "subtitle": "Ajoute des donnees locales pour afficher le parcours debutant ici."
+    },
+    "tools": {
+      "row-counter": {
+        "title": "Compteur de rangs",
+        "description": "Compte les rangs, les tours et les repetitions sans perdre le fil."
+      },
+      "stitch-fixes": {
+        "title": "Corrections de mailles",
+        "description": "Aide rapide pour les bords irreguliers, trous, mailles ratees et enroulement."
+      },
+      "size-calculator": {
+        "title": "Calculateur de taille",
+        "description": "Estime le nombre de mailles et de rangs a partir de ton echantillon."
+      },
+      "identify-stitch": {
+        "title": "Identifier une maille",
+        "description": "Utilise une photo pour comprendre la maille observee."
+      }
+    }
+  },
+  "lessonDetail": {
+    "lesson": "Lecon",
+    "notFound": "Lecon introuvable.",
+    "difficulty": "Difficulte",
+    "steps": "Etapes",
+    "practice": "Pratique",
+    "practicePaceShort": "court",
+    "whyItMatters": "Pourquoi c'est important",
+    "commonMistakes": "Erreurs frequentes",
+    "startPractice": "Commencer la pratique",
+    "difficultyValues": {
+      "beginner": "Debutant",
+      "intermediate": "Intermediaire",
+      "advanced": "Avance"
+    }
+  },
+  "settings": {
+    "sections": {
+      "support": "Support",
+      "legal": "Mentions legales"
+    },
+    "rows": {
+      "sendFeedback": "Envoyer un avis",
+      "rateApp": "Noter l'application",
+      "customerCenter": "Centre client",
+      "terms": "Conditions",
+      "privacyPolicy": "Confidentialite"
+    },
+    "premium": {
+      "title": "Debloquer Premium",
+      "subtitle": "Accede a tous les modeles, guides et outils creatifs a mesure que Crova evolue.",
+      "cta": "Passer a Premium"
+    },
+    "alerts": {
+      "customerCenterUnavailableTitle": "Centre client indisponible",
+      "customerCenterUnavailableMessage": "Reessaie une fois les achats configures."
+    },
+    "accessibility": {
+      "openPremiumUpgrade": "Ouvrir l'upgrade Premium"
+    }
+  },
+  "tools": {
+    "rowCounter": {
+      "mode": {
+        "rows": "Rangs",
+        "rounds": "Tours"
+      },
+      "copy": {
+        "rows": {
+          "label": "Rangs termines",
+          "helper": "Ideal pour echarpes, lingettes, echantillons et pieces plates."
+        },
+        "rounds": {
+          "label": "Tours termines",
+          "helper": "Ideal pour granny squares, dessous de verre, amigurumi et ouvrages circulaires."
+        }
+      },
+      "actions": {
+        "decreaseRows": "Diminuer les rangs",
+        "decreaseRounds": "Diminuer les tours",
+        "increaseRows": "Augmenter les rangs",
+        "increaseRounds": "Augmenter les tours",
+        "resetRows": "Reinitialiser les rangs",
+        "resetRounds": "Reinitialiser les tours"
+      }
+    },
+    "sizeCalculator": {
+      "units": {
+        "cm": "cm",
+        "in": "po"
+      },
+      "sections": {
+        "gauge": "Echantillon",
+        "targetSize": "Taille cible",
+        "estimate": "Estimation"
+      },
+      "fields": {
+        "stitches": "Mailles",
+        "rows": "Rangs",
+        "width": "Largeur",
+        "height": "Hauteur"
+      },
+      "emptyHelp": "Saisis ton echantillon et la taille cible pour estimer les mailles et les rangs.",
+      "disclaimer": "Ceci est une estimation de planification. Verifie toujours ton propre echantillon."
+    },
+    "identifyStitch": {
+      "empty": {
+        "title": "Ajoute une photo nette de la maille",
+        "subtitle": "Utilise un bon eclairage et remplis le cadre avec la texture de la maille."
+      },
+      "analysis": {
+        "title": "Analyse",
+        "loading": "Analyse de la texture avec l'IA...",
+        "noLikelyStitchDetected": "Je n'ai pas pu identifier avec certitude une maille de crochet sur cette image.",
+        "noLikelyStitchHint": "Essaie une lumiere plus forte, rapproche-toi et cadre une seule texture de maille.",
+        "bestMatch": "Meilleure correspondance",
+        "confidence": {
+          "high": "Elevee",
+          "medium": "Moyenne",
+          "low": "Faible"
+        },
+        "photoReady": "Photo prete. Tu peux choisir une photo plus nette a tout moment.",
+        "noPhoto": "Choisis ou prends une photo pour identifier la maille probable.",
+        "visibleClues": "Indices visibles",
+        "nextSteps": "Prochaines etapes",
+        "aiResult": "Resultat IA",
+        "readyForAi": "Pret pour l'IA"
+      },
+      "alerts": {
+        "cameraPermissionTitle": "Autorisation camera requise",
+        "cameraPermissionMessage": "Autorise la camera pour prendre une photo de maille.",
+        "photoPermissionTitle": "Autorisation photos requise",
+        "photoPermissionMessage": "Autorise l'acces aux photos pour choisir une image."
+      },
+      "actions": {
+        "takePhoto": "Prendre une photo",
+        "choosePhoto": "Choisir"
+      },
+      "errors": {
+        "couldNotAnalyze": "Impossible d'analyser cette photo. Essaie un gros plan plus lumineux.",
+        "couldNotAnalyzeWithReason": "Impossible d'analyser cette photo : {{reason}}"
+      }
+    }
+  },
+  "patternDetail": {
+    "pattern": "Modele",
+    "opening": "Ouverture...",
+    "resumeProject": "Reprendre le projet",
+    "startProject": "Demarrer le projet",
+    "projectInProgress": "Projet en cours",
+    "difficulty": "Difficulte",
+    "category": "Categorie",
+    "general": "General",
+    "time": "Temps",
+    "minutesShort": "{{count}} min",
+    "skillsNeeded": "Competences necessaires",
+    "materials": "Materiel",
+    "patternOverview": "Apercu du modele",
+    "steps": "Etapes",
+    "structure": "Structure",
+    "counters": "Compteurs",
+    "basic": "basique",
+    "whatToExpect": "A quoi t'attendre",
+    "guided": "guide",
+    "counterRows": "{{count}} rang",
+    "counterRows_plural": "{{count}} rangs",
+    "counterRounds": "{{count}} tour",
+    "counterRounds_plural": "{{count}} tours",
+    "counterRowsTarget": "{{current}} / {{target}} rangs",
+    "counterRoundsTarget": "{{current}} / {{target}} tours",
+    "lastWorkedToday": "Travaille aujourd'hui",
+    "lastWorkedYesterday": "Travaille hier",
+    "lastWorkedDaysAgo": "Travaille il y a {{count}} jours",
+    "lastWorkedOnDate": "Travaille le {{date}}"
+  },
+  "projectComplete": {
+    "title": "Projet termine",
+    "notFound": "Projet introuvable.",
+    "stepsDone": "Etapes terminees",
+    "counter": "Compteur",
+    "done": "Termine",
+    "finishedJustNow": "Termine a l'instant",
+    "finishedOn": "Termine le {{date}}",
+    "backToProjects": "Retour aux projets",
+    "starting": "Demarrage...",
+    "makeAnother": "En creer un autre"
+  },
+  "onboarding": {
+    "intro": {
+      "titlePrefix": "Apprends plus vite avec un parcours pense pour",
+      "titleAccent": "les debutants au crochet",
+      "slides": {
+        "learnStitches": "Apprendre les mailles",
+        "finishProjects": "Terminer des projets",
+        "trackRows": "Suivre chaque rang",
+        "buildHabit": "Creer une routine",
+        "stayConsistent": "Rester regulier"
+      },
+      "rowProgress": "Rang {{current}} / {{total}}"
+    },
+    "quiz": {
+      "stepOf": "Etape {{current}} sur {{total}}",
+      "steps": {
+        "skillLevel": {
+          "title": "Quel est ton niveau en crochet ?",
+          "subtitle": "Nous adaptons tes lecons et projets debutants a ton niveau actuel.",
+          "cta": "Continuer",
+          "options": {
+            "beginner": "Je debute completement",
+            "intermediate": "Je connais les bases",
+            "advanced": "Je veux des projets plus avances"
+          }
+        },
+        "goal": {
+          "title": "Que veux-tu faire en premier ?",
+          "subtitle": "Choisis la raison principale de ton telechargement de Crova pour avancer plus vite.",
+          "cta": "Continuer",
+          "options": {
+            "learnBasics": "Apprendre les mailles de base",
+            "finishFirstProject": "Terminer mon premier vrai projet",
+            "buildHabit": "Creer une habitude reguliere de crochet"
+          }
+        },
+        "handedness": {
+          "title": "Avec quelle main crochetes-tu ?",
+          "subtitle": "Cela nous aide a afficher le bon angle d'apprentissage quand le contenu gaucher sera ajoute.",
+          "cta": "Demarrer Crova",
+          "options": {
+            "right": "Droitier",
+            "left": "Gaucher"
+          }
+        }
+      }
+    },
+    "loader": {
+      "titlePreparing": "Preparation de ton experience",
+      "titleReady": "Tout est pret.",
+      "ctaReady": "Demarrer Crova",
+      "goalLabels": {
+        "learnBasics": "les mailles de base",
+        "finishFirstProject": "ton premier projet",
+        "buildHabit": "une habitude reguliere de crochet",
+        "default": "ton parcours crochet"
+      },
+      "skillLabels": {
+        "beginner": "debutant",
+        "intermediate": "intermediaire",
+        "advanced": "avance",
+        "default": "personnalise"
+      },
+      "messages": {
+        "buildingPlan": "Creation de ton plan {{skillLabel}}...",
+        "pickingLessons": "Selection des lecons pour {{goalLabel}}...",
+        "tracking": "Configuration du suivi de progression...",
+        "finalizing": "Finalisation de ton demarrage Crova..."
+      }
+    }
+  }
+}

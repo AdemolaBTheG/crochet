@@ -6,35 +6,48 @@ import de from './locales/de.json';
 import en from './locales/en.json';
 import es from './locales/es.json';
 import fr from './locales/fr.json';
-import jp from './locales/jp.json';
-import zh from './locales/zh.json';
+
+const SUPPORTED_LANGUAGES = ['en', 'de', 'fr', 'es'] as const;
+
+type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
 const resources = {
-    en: { translation: en },
-    jp: { translation: jp },
-    de: { translation: de },
-    fr: { translation: fr },
-    es: { translation: es },
-    zh: { translation: zh },
-};
+  en: { translation: en },
+  de: { translation: de },
+  fr: { translation: fr },
+  es: { translation: es },
+} as const;
 
-const getLocale = () => {
-    const locale = Localization.getLocales()[0].languageCode;
-    if (locale && resources.hasOwnProperty(locale)) {
-        return locale;
-    }
-    return 'en';
-};
+function getDeviceLanguage(): SupportedLanguage {
+  const locales = Localization.getLocales();
+  const candidate = locales[0]?.languageCode?.toLowerCase();
 
-i18n
-    .use(initReactI18next)
-    .init({
-        resources,
-        lng: getLocale(),
-        fallbackLng: 'en',
-        interpolation: {
-            escapeValue: false,
-        },
-    });
+  if (candidate && SUPPORTED_LANGUAGES.includes(candidate as SupportedLanguage)) {
+    return candidate as SupportedLanguage;
+  }
+
+  return 'en';
+}
+
+export const defaultNS = 'translation';
+
+export function changeAppLanguage(language: SupportedLanguage) {
+  void i18n.changeLanguage(language);
+}
+
+if (!i18n.isInitialized) {
+  i18n.use(initReactI18next).init({
+    resources,
+    lng: getDeviceLanguage(),
+    fallbackLng: 'en',
+    supportedLngs: [...SUPPORTED_LANGUAGES],
+    nonExplicitSupportedLngs: true,
+    defaultNS,
+    interpolation: {
+      escapeValue: false,
+    },
+    returnNull: false,
+  });
+}
 
 export default i18n;

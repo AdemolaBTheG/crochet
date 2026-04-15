@@ -1,8 +1,8 @@
-# YarnPal Project Content
+# Crova Project Content
 
 ## Product Summary
 
-YarnPal is a beginner-friendly crochet app focused on helping users learn core stitches, start simple projects, and track progress without losing their place.
+Crova is a beginner-friendly crochet app focused on helping users learn core stitches, start simple projects, and track progress without losing their place.
 
 For the MVP, the product should center on one core loop:
 
@@ -10,7 +10,7 @@ For the MVP, the product should center on one core loop:
 
 ## MVP Goal
 
-Build the smallest version of YarnPal that helps a first-time crocheter go from zero knowledge to completing a simple project with confidence.
+Build the smallest version of Crova that helps a first-time crocheter go from zero knowledge to completing a simple project with confidence.
 
 ## Core MVP Features
 
@@ -167,7 +167,7 @@ This keeps navigation simple and matches the main user journey.
 
 ## Product Positioning
 
-YarnPal should feel like:
+Crova should feel like:
 
 - A beginner crochet teacher
 - A project companion
@@ -177,4 +177,4 @@ It should not try to be an all-in-one crafting platform in the first version.
 
 ## Short Product Statement
 
-YarnPal helps beginners learn crochet step by step, start simple projects, and keep track of every row so they can finish with confidence.
+Crova helps beginners learn crochet step by step, start simple projects, and keep track of every row so they can finish with confidence.

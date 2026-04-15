@@ -1,6 +1,5 @@
-import QuizScreenView from "@/components/quiz-screen";
-import { ONBOARDING_QUIZ_STEPS } from "@/constants/onboarding-quiz";
+import { Nutrients } from '@/components/alma/routes/nutrients';
 
-export default function OnboardingIndex() {
-  return <QuizScreenView steps={ONBOARDING_QUIZ_STEPS} />;
+export default function Index() {
+  return <Nutrients />;
 }

@@ -1,17 +1,32 @@
-import { theme } from "@/constants/Theme";
+import { theme } from '@/constants/Theme';
 import {
   useOnboardingStore,
   type Goal,
   type Handedness,
   type SkillLevel,
-} from "@/stores/onboardingStore";
-import * as Haptics from "expo-haptics";
-import { router, type Href } from "expo-router";
-import { useEffect, useState } from "react";
-import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
-
-export type QuizField = "skillLevel" | "goal" | "handedness";
+} from '@/stores/onboardingStore';
+import { Host, Text as SwiftText } from '@expo/ui/swift-ui';
+import {
+  Animation,
+  contentTransition,
+  font,
+  foregroundStyle,
+  monospacedDigit,
+  animation as swiftAnimation,
+} from '@expo/ui/swift-ui/modifiers';
+import * as Haptics from 'expo-haptics';
+import { router, type Href } from 'expo-router';
+import { useEffect, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import Animated, {
+  interpolateColor,
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+export type QuizField = 'skillLevel' | 'goal' | 'handedness';
 
 export type QuizOption = {
   id: NonNullable<SkillLevel> | NonNullable<Goal> | NonNullable<Handedness>;
@@ -26,8 +41,102 @@ export type QuizScreenConfig = {
   ctaLabel: string;
   options: QuizOption[];
 };
+const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
+const AnimatedText = Animated.createAnimatedComponent(Text);
+type QuizValue = QuizOption['id'] | null;
 
-type QuizValue = QuizOption["id"] | null;
+function QuizOptionCard({
+  option,
+  isSelected,
+  onSelect,
+}: {
+  option: QuizOption;
+  isSelected: boolean;
+  onSelect: (value: QuizOption['id']) => void;
+}) {
+  const scale = useSharedValue(1);
+  const selectionProgress = useSharedValue(isSelected ? 1 : 0);
+
+  useEffect(() => {
+    selectionProgress.value = withTiming(isSelected ? 1 : 0);
+  }, [isSelected, selectionProgress]);
+
+  const cardAnimatedStyle = useAnimatedStyle(() => ({
+    transform: [{ scale: scale.value }],
+    backgroundColor: interpolateColor(
+      selectionProgress.value,
+      [0, 1],
+      [theme.colors.surface, theme.colors.primarySoft],
+    ),
+    borderColor: interpolateColor(
+      selectionProgress.value,
+      [0, 1],
+      [theme.colors.border, theme.colors.primaryBorder],
+    ),
+  }));
+
+  const emojiWrapAnimatedStyle = useAnimatedStyle(() => ({
+    backgroundColor: interpolateColor(
+      selectionProgress.value,
+      [0, 1],
+      [theme.colors.muted, theme.colors.whiteSoft],
+    ),
+  }));
+
+  const labelAnimatedStyle = useAnimatedStyle(() => ({
+    color: interpolateColor(
+      selectionProgress.value,
+      [0, 1],
+      [theme.colors.textPrimary, theme.colors.primary],
+    ),
+  }));
+
+  return (
+    <AnimatedPressable
+      onPressIn={() => {
+        scale.value = withTiming(0.95);
+      }}
+      onPressOut={() => {
+        scale.value = withTiming(1);
+        onSelect(option.id);
+      }}
+      style={[styles.optionCard, cardAnimatedStyle]}>
+      <Text style={styles.emoji}>{option.emoji}</Text>
+      <AnimatedText selectable style={[styles.optionLabel, labelAnimatedStyle]}>
+        {option.label}
+      </AnimatedText>
+    </AnimatedPressable>
+  );
+}
+
+function StepProgressLabel({
+  currentStep,
+  totalSteps,
+}: {
+  currentStep: number;
+  totalSteps: number;
+}) {
+  const { t } = useTranslation();
+
+  const labelModifiers = useMemo(
+    () => [
+      font({ size: theme.size.md, weight: 'semibold', design: 'rounded' }),
+      foregroundStyle(theme.colors.textSecondary),
+      monospacedDigit(),
+      contentTransition('numericText'),
+      swiftAnimation(Animation.easeInOut({ duration: 0.2 }), currentStep),
+    ],
+    [currentStep],
+  );
+
+  return (
+    <Host matchContents useViewportSizeMeasurement>
+      <SwiftText modifiers={labelModifiers}>
+        {t('onboarding.quiz.stepOf', { current: currentStep, total: totalSteps })}
+      </SwiftText>
+    </Host>
+  );
+}
 
 function getStoredValue(
   field: QuizField,
@@ -35,21 +144,21 @@ function getStoredValue(
     skillLevel: SkillLevel;
     goal: Goal;
     handedness: Handedness;
-  }
+  },
 ): QuizValue {
   switch (field) {
-    case "skillLevel":
+    case 'skillLevel':
       return values.skillLevel;
-    case "goal":
+    case 'goal':
       return values.goal;
-    case "handedness":
+    case 'handedness':
       return values.handedness;
   }
 }
 
 export default function QuizScreenView({
   steps,
-  completeHref = "/(tabs)/(home)",
+  completeHref = '/(tabs)/(home)',
 }: {
   steps: QuizScreenConfig[];
   completeHref?: Href;
@@ -76,7 +185,7 @@ export default function QuizScreenView({
         skillLevel,
         goal,
         handedness,
-      })
+      }),
     );
   }, [currentStep.field, goal, handedness, skillLevel]);
 
@@ -84,13 +193,13 @@ export default function QuizScreenView({
     if (!value) return;
 
     switch (field) {
-      case "skillLevel":
+      case 'skillLevel':
         setSkillLevel(value as NonNullable<SkillLevel>);
         break;
-      case "goal":
+      case 'goal':
         setGoal(value as NonNullable<Goal>);
         break;
-      case "handedness":
+      case 'handedness':
         setHandedness(value as NonNullable<Handedness>);
         break;
     }
@@ -118,107 +227,93 @@ export default function QuizScreenView({
   }
 
   return (
-    <ScrollView
-      contentInsetAdjustmentBehavior="automatic"
-      contentContainerStyle={{
-        paddingTop: insets.top + theme.spacing.xl,
-        paddingBottom: insets.bottom + theme.spacing["3xl"],
-        paddingHorizontal: theme.spacing.lg,
-        gap: theme.spacing.xl,
-        flexGrow: 1,
-        backgroundColor: theme.colors.background,
-      }}
-    >
-      <View style={styles.progressTrack}>
-        <View style={[styles.progressFill, { width: `${progress * 100}%` }]} />
-      </View>
+    <View style={styles.screen}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentInsetAdjustmentBehavior="automatic"
+        contentContainerStyle={{
+          paddingTop: insets.top,
+          paddingHorizontal: theme.spacing.lg,
+          paddingBottom: insets.bottom + 104,
+          gap: theme.spacing.xl,
+          flexGrow: 1,
+        }}>
+        <View style={styles.progressTrack}>
+          <View style={[styles.progressFill, { width: `${progress * 100}%` }]} />
+        </View>
 
-      <View style={{ gap: theme.spacing.sm }}>
-        <Text selectable style={styles.eyebrow}>
-          Step {stepIndex + 1} of {steps.length}
-        </Text>
-        <Text selectable style={styles.title}>
-          {currentStep.title}
-        </Text>
-        <Text selectable style={styles.subtitle}>
-          {currentStep.subtitle}
-        </Text>
-      </View>
+        <View style={{ gap: theme.spacing.sm }}>
+          <StepProgressLabel currentStep={stepIndex + 1} totalSteps={steps.length} />
+          <Text selectable style={styles.title}>
+            {currentStep.title}
+          </Text>
+          <Text selectable style={styles.subtitle}>
+            {currentStep.subtitle}
+          </Text>
+        </View>
 
-      <View style={styles.optionsContainer}>
-        {currentStep.options.map((option) => {
-          const isSelected = selected === option.id;
+        <View style={styles.optionsContainer}>
+          {currentStep.options.map((option) => {
+            const isSelected = selected === option.id;
 
-          return (
-            <Pressable
-              key={option.id}
-              onPress={() => handleSelect(option.id)}
-              style={[
-                styles.optionCard,
-                isSelected && styles.optionCardSelected,
-              ]}
-            >
-              <View
-                style={[
-                  styles.emojiWrap,
-                  isSelected && styles.emojiWrapSelected,
-                ]}
-              >
-                <Text style={styles.emoji}>{option.emoji}</Text>
-              </View>
-              <Text
-                selectable
-                style={[
-                  styles.optionLabel,
-                  isSelected && styles.optionLabelSelected,
-                ]}
-              >
-                {option.label}
-              </Text>
-            </Pressable>
-          );
-        })}
-      </View>
+            return (
+              <QuizOptionCard
+                key={option.id}
+                option={option}
+                isSelected={isSelected}
+                onSelect={handleSelect}
+              />
+            );
+          })}
+        </View>
+      </ScrollView>
 
-      <View style={{ flex: 1 }} />
-
-      <Pressable
-        disabled={!selected}
-        onPress={handleContinue}
+      <View
+        pointerEvents="box-none"
         style={[
-          styles.ctaButton,
-          !selected && styles.ctaButtonDisabled,
-        ]}
-      >
-        <Text selectable style={styles.ctaLabel}>
-          {currentStep.ctaLabel}
-        </Text>
-      </Pressable>
-    </ScrollView>
+          styles.floatingCtaContainer,
+          {
+            paddingHorizontal: theme.spacing.lg,
+            paddingBottom: insets.bottom + theme.spacing.md,
+          },
+        ]}>
+        <Pressable
+          disabled={!selected}
+          onPress={handleContinue}
+          style={[styles.ctaButton, !selected && styles.ctaButtonDisabled]}>
+          <Text selectable style={styles.ctaLabel}>
+            {currentStep.ctaLabel}
+          </Text>
+        </Pressable>
+      </View>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
+  screen: {
+    flex: 1,
+  },
   progressTrack: {
     height: 8,
     borderRadius: theme.radius.pill,
-    borderCurve: "continuous",
+    borderCurve: 'continuous',
     backgroundColor: theme.colors.muted,
-    overflow: "hidden",
+    overflow: 'hidden',
   },
   progressFill: {
-    height: "100%",
+    height: '100%',
     backgroundColor: theme.colors.primary,
   },
   eyebrow: {
     fontSize: theme.size.sm,
     fontWeight: theme.weight.semibold,
     color: theme.colors.textSecondary,
-    textTransform: "uppercase",
+    textTransform: 'uppercase',
     letterSpacing: 0.6,
   },
   title: {
-    fontSize: theme.size["3xl"],
+    fontSize: theme.size['3xl'],
     lineHeight: 38,
     fontWeight: theme.weight.bold,
     color: theme.colors.textPrimary,
@@ -232,51 +327,37 @@ const styles = StyleSheet.create({
     gap: theme.spacing.md,
   },
   optionCard: {
-    flexDirection: "row",
-    alignItems: "center",
+    flexDirection: 'row',
+    alignItems: 'center',
     gap: theme.spacing.md,
     padding: theme.spacing.lg,
-    borderRadius: theme.radius.xl,
-    borderCurve: "continuous",
-    backgroundColor: theme.colors.surface,
+    borderRadius: theme.radius.lg,
+    borderCurve: 'continuous',
     borderWidth: 1,
-    borderColor: theme.colors.border,
-  },
-  optionCardSelected: {
-    backgroundColor: theme.colors.primarySoft,
-    borderColor: theme.colors.primaryBorder,
   },
   emojiWrap: {
     width: 44,
     height: 44,
     borderRadius: theme.radius.md,
-    borderCurve: "continuous",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: theme.colors.muted,
-  },
-  emojiWrapSelected: {
-    backgroundColor: theme.colors.whiteSoft,
+    borderCurve: 'continuous',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   emoji: {
-    fontSize: 22,
+    fontSize: theme.size['2xl'],
   },
   optionLabel: {
     flex: 1,
     fontSize: theme.size.lg,
     lineHeight: 22,
     fontWeight: theme.weight.semibold,
-    color: theme.colors.textPrimary,
-  },
-  optionLabelSelected: {
-    color: theme.colors.primary,
   },
   ctaButton: {
     minHeight: 56,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
     borderRadius: theme.radius.xl,
-    borderCurve: "continuous",
+    borderCurve: 'continuous',
     backgroundColor: theme.colors.primary,
   },
   ctaButtonDisabled: {
@@ -286,5 +367,11 @@ const styles = StyleSheet.create({
     fontSize: theme.size.lg,
     fontWeight: theme.weight.semibold,
     color: theme.colors.white,
+  },
+  floatingCtaContainer: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: 0,
   },
 });
