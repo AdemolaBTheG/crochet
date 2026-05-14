@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "984480406673",
+    "project_id": "crochet-3cdb0",
+    "storage_bucket": "crochet-3cdb0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984480406673:android:8efcd00e8b9cf778773330",
+        "android_client_info": {
+          "package_name": "com.crochet.flingex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSVv8443430pz-IWlEEYnsP2NlVdeFhVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

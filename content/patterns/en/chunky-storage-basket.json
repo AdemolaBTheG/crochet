@@ -1,0 +1,14 @@
+{
+  "title": "Chunky Storage Basket",
+  "description": "A sturdy home project for practicing rounds, sides, and simple structure.",
+  "materials": ["Chunky cotton yarn", "6.5 mm hook", "yarn needle", "scissors"],
+  "skills": ["Magic ring", "single crochet", "increasing", "working in back loops", "rounds"],
+  "expectationText": "A useful home piece where you move from a flat base into upright sides and see structure take shape.",
+  "steps": [
+    { "type": "instruction", "title": "Start the base", "instruction": "Make a magic ring and work 8 single crochet into the center." },
+    { "type": "round", "title": "Rounds 1 to 4", "instruction": "Increase evenly each round until the base reaches the width you want.", "counterLabel": "round", "targetCount": 4 },
+    { "type": "round", "title": "Turn the side", "instruction": "Work one round in the back loops only to create a clean edge.", "counterLabel": "round", "targetCount": 5 },
+    { "type": "repeat", "title": "Build the walls", "instruction": "Single crochet around without increasing until the basket is tall enough.", "counterLabel": "round", "targetCount": 10 },
+    { "type": "instruction", "title": "Finish the rim", "instruction": "Slip stitch around the top edge, fasten off, and weave in ends." }
+  ]
+}

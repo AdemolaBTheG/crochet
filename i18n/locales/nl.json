@@ -1,0 +1,423 @@
+{
+  "common": {
+    "continue": "Doorgaan",
+    "preparing": "Voorbereiden...",
+    "filters": {
+      "all": "Alle"
+    },
+    "badges": {
+      "pro": "Pro"
+    },
+    "time": {
+      "today": "Vandaag",
+      "yesterday": "Gisteren",
+      "daysAgo": "{{count}} dagen geleden"
+    },
+    "counter": {
+      "rounds": "{{count}} rondes",
+      "rows": "{{count}} rijen",
+      "none": "Nog geen teller"
+    },
+    "steps": {
+      "progress": "{{current}}/{{total}} stappen",
+      "stepOnly": "Stap {{current}}",
+      "count": "{{count}} stappen"
+    }
+  },
+  "shared": {
+    "close": "Sluiten",
+    "unlockPremium": "Ontgrendel Premium",
+    "stepOf": "Stap {{current}} van {{total}}"
+  },
+  "chat": {
+    "thinking": "Denken...",
+    "errorFallback": "Ik stuitte op een probleem terwijl ik een reactie genereerde. Probeer het opnieuw."
+  },
+  "tabs": {
+    "home": "Thuis",
+    "learn": "Leren",
+    "projects": "Projecten"
+  },
+  "home": {
+    "sections": {
+      "activeProjects": "Actieve projecten"
+    },
+    "accessibility": {
+      "continueProject": "Ga door met {{name}}",
+      "showPatterns": "Toon {{category}} patronen"
+    },
+    "lastWorkedPrefix": "Laatst gewerkt",
+    "lastWorkedSeparator": "·"
+  },
+  "projects": {
+    "sections": {
+      "inProgress": "In uitvoering",
+      "completed": "Voltooid"
+    },
+    "empty": {
+      "title": "Nog geen projecten",
+      "subtitle": "Kies een patroon uit Home en tik op Project starten."
+    },
+    "accessibility": {
+      "openProject": "Open {{name}}"
+    }
+  },
+  "learn": {
+    "toolsSectionTitle": "Hulpmiddelen",
+    "lessonLabel": "Les {{index}}",
+    "actions": {
+      "open": "Open",
+      "unlock": "Ontgrendelen"
+    },
+    "accessibility": {
+      "unlockTool": "Ontgrendel {{title}}",
+      "lessonCard": "{{action}} {{title}} les"
+    },
+    "empty": {
+      "title": "Nog geen lessen",
+      "subtitle": "Vul de lokale database om hier het beginnerspad te tonen."
+    },
+    "tools": {
+      "row-counter": {
+        "title": "Rijteller",
+        "description": "Tel rijen, rondes en herhalingen zonder je plaats te verliezen."
+      },
+      "stitch-fixes": {
+        "title": "Steekoplossingen",
+        "description": "Snelle hulp bij omkrullen, ongelijke randen, gaten en gemiste steken."
+      },
+      "size-calculator": {
+        "title": "Maatcalculator",
+        "description": "Schat het aantal steken en rijen op uw meter."
+      },
+      "identify-stitch": {
+        "title": "Identificeer steek",
+        "description": "Gebruik een foto om te begrijpen naar welke steek u kijkt."
+      }
+    }
+  },
+  "lessonDetail": {
+    "lesson": "Les",
+    "notFound": "Les niet gevonden.",
+    "difficulty": "Moeilijkheidsgraad",
+    "steps": "Stappen",
+    "practice": "Oefening",
+    "practicePaceShort": "kort",
+    "whyItMatters": "Waarom het ertoe doet",
+    "commonMistakes": "Veel voorkomende fouten",
+    "startPractice": "Begin met oefenen",
+    "difficultyValues": {
+      "beginner": "Beginner",
+      "intermediate": "Tussenliggend",
+      "advanced": "Geavanceerd"
+    }
+  },
+  "settings": {
+    "sections": {
+      "support": "Ondersteuning",
+      "legal": "Juridisch"
+    },
+    "rows": {
+      "sendFeedback": "Feedback verzenden",
+      "rateApp": "Beoordeel de app",
+      "customerCenter": "Klantencentrum",
+      "terms": "Voorwaarden",
+      "privacyPolicy": "Privacybeleid"
+    },
+    "premium": {
+      "title": "Ontgrendel Premium",
+      "subtitle": "Ontvang alle patronen, handleidingen en creatieve hulpmiddelen naarmate Crova groeit.",
+      "cta": "Upgraden"
+    },
+    "alerts": {
+      "customerCenterUnavailableTitle": "Klantencentrum niet beschikbaar",
+      "customerCenterUnavailableMessage": "Probeer het opnieuw nadat de aankopen zijn geconfigureerd."
+    },
+    "accessibility": {
+      "openPremiumUpgrade": "Open premium-upgrade"
+    }
+  },
+  "tools": {
+    "rowCounter": {
+      "mode": {
+        "rows": "Rijen",
+        "rounds": "Rondes"
+      },
+      "copy": {
+        "rows": {
+          "label": "Rijen voltooid",
+          "helper": "Het beste voor sjaals, vaatdoeken, stalen en platte stukken."
+        },
+        "rounds": {
+          "label": "Rondes voltooid",
+          "helper": "Ideaal voor granny squares, onderzetters, amigurumi en cirkelvormig werk."
+        }
+      },
+      "actions": {
+        "decreaseRows": "Rijen verkleinen",
+        "decreaseRounds": "Rondes verminderen",
+        "increaseRows": "Rijen vergroten",
+        "increaseRounds": "Verhoog het aantal rondes",
+        "resetRows": "Rijen opnieuw instellen",
+        "resetRounds": "Rondes opnieuw instellen"
+      }
+    },
+    "sizeCalculator": {
+      "units": {
+        "cm": "cm",
+        "in": "in"
+      },
+      "sections": {
+        "gauge": "Graadmeter",
+        "targetSize": "Doelgrootte",
+        "estimate": "Schatting"
+      },
+      "fields": {
+        "stitches": "Steken",
+        "rows": "Rijen",
+        "width": "Breedte",
+        "height": "Hoogte"
+      },
+      "emptyHelp": "Voer uw staaldikte en doelgrootte in om de steken en rijen te schatten.",
+      "disclaimer": "Dit is een planningsinschatting. Controleer altijd uw eigen staal voordat u een definitieve maat kiest."
+    },
+    "identifyStitch": {
+      "empty": {
+        "title": "Voeg een duidelijke steekfoto toe",
+        "subtitle": "Gebruik goede verlichting en vul het frame met de steektextuur."
+      },
+      "analysis": {
+        "title": "Analyse",
+        "loading": "Steektextuur controleren met AI...",
+        "noLikelyStitchDetected": "Ik kon op deze afbeelding niet met zekerheid een haaksteek identificeren.",
+        "noLikelyStitchHint": "Probeer helderder licht, ga dichterbij staan ​​en kader een enkele steek in voor een duidelijker resultaat.",
+        "bestMatch": "Beste wedstrijd",
+        "confidence": {
+          "high": "Hoog",
+          "medium": "Medium",
+          "low": "Laag"
+        },
+        "photoReady": "Foto is klaar. Kies op elk gewenst moment een duidelijkere foto als de steekstructuur moeilijk te zien is.",
+        "noPhoto": "Kies of maak een foto om de waarschijnlijke steek te identificeren en beginnersvriendelijke aanwijzingen te krijgen.",
+        "visibleClues": "Zichtbare aanwijzingen",
+        "nextSteps": "Volgende stappen",
+        "aiResult": "AI-resultaat",
+        "readyForAi": "Klaar voor AI"
+      },
+      "alerts": {
+        "cameraPermissionTitle": "Cameratoestemming vereist",
+        "cameraPermissionMessage": "Geef cameratoegang om een ​​steekfoto te maken.",
+        "photoPermissionTitle": "Fototoestemming vereist",
+        "photoPermissionMessage": "Geef toegang tot foto's om een ​​steekafbeelding te kiezen."
+      },
+      "actions": {
+        "takePhoto": "Maak een foto",
+        "choosePhoto": "Kiezen"
+      },
+      "errors": {
+        "couldNotAnalyze": "Kan deze foto niet analyseren. Probeer een helderdere close-up.",
+        "couldNotAnalyzeWithReason": "Kan deze foto niet analyseren: {{reason}}"
+      }
+    }
+  },
+  "patternDetail": {
+    "pattern": "Patroon",
+    "opening": "Opening...",
+    "resumeProject": "Project hervatten",
+    "startProject": "Project starten",
+    "projectInProgress": "Project in uitvoering",
+    "difficulty": "Moeilijkheidsgraad",
+    "category": "Categorie",
+    "general": "Algemeen",
+    "time": "Tijd",
+    "minutesShort": "{{count}} min",
+    "skillsNeeded": "Vaardigheden nodig",
+    "materials": "Materialen",
+    "patternOverview": "Patroonoverzicht",
+    "steps": "Stappen",
+    "structure": "Structuur",
+    "counters": "Tellers",
+    "basic": "eenvoudig",
+    "whatToExpect": "Wat te verwachten",
+    "guided": "begeleid",
+    "counterRows": "{{count}} rij",
+    "counterRows_plural": "{{count}} rijen",
+    "counterRounds": "{{count}} ronde",
+    "counterRounds_plural": "{{count}} rondes",
+    "counterRowsTarget": "{{current}} / {{target}} rijen",
+    "counterRoundsTarget": "{{current}} / {{target}} rondes",
+    "lastWorkedToday": "Vandaag voor het laatst gewerkt",
+    "lastWorkedYesterday": "Gisteren voor het laatst gewerkt",
+    "lastWorkedDaysAgo": "Laatst gewerkt {{count}} dagen geleden",
+    "lastWorkedOnDate": "Laatst gewerkt {{date}}"
+  },
+  "projectComplete": {
+    "title": "Project voltooid",
+    "notFound": "Project niet gevonden.",
+    "stepsDone": "Stappen gedaan",
+    "counter": "Balie",
+    "done": "Klaar",
+    "finishedJustNow": "Zojuist klaar",
+    "finishedOn": "Klaar {{date}}",
+    "backToProjects": "Terug naar Projecten",
+    "starting": "Beginnen...",
+    "makeAnother": "Maak er nog een"
+  },
+  "onboarding": {
+    "intro": {
+      "titlePrefix": "Leer sneller met een flow die daarvoor is ontwikkeld",
+      "titleAccent": "beginnende haaksters",
+      "slides": {
+        "learnStitches": "Leer steken",
+        "finishProjects": "Projecten afronden",
+        "trackRows": "Volg elke rij",
+        "buildHabit": "Bouw je gewoonte op",
+        "stayConsistent": "Blijf consistent"
+      },
+      "rowProgress": "Rij {{current}} / {{total}}"
+    },
+    "quiz": {
+      "stepOf": "Stap {{current}} van {{total}}",
+      "steps": {
+        "skillLevel": {
+          "title": "Wat is jouw haakniveau?",
+          "subtitle": "Wij stemmen uw lessen en startprojecten af ​​op waar u nu staat.",
+          "cta": "Doorgaan",
+          "options": {
+            "beginner": "Ik ben helemaal nieuw",
+            "intermediate": "Ik ken de basis",
+            "advanced": "Ik wil uitdagendere projecten"
+          }
+        },
+        "goal": {
+          "title": "Waar wil je eerst hulp bij?",
+          "subtitle": "Kies de belangrijkste reden waarom u Crova heeft gedownload, zodat de app u er sneller naartoe kan leiden.",
+          "cta": "Doorgaan",
+          "options": {
+            "learnBasics": "Leer de kernsteken",
+            "finishFirstProject": "Maak mijn eerste echte project af",
+            "buildHabit": "Bouw een vaste haakgewoonte op"
+          }
+        },
+        "handedness": {
+          "title": "Met welke hand haak jij?",
+          "subtitle": "Dit helpt ons de juiste leerhoek te tonen zodra linkshandige inhoud wordt toegevoegd.",
+          "cta": "Begin Crova",
+          "options": {
+            "right": "Rechtshandig",
+            "left": "Linkshandig"
+          }
+        }
+      }
+    },
+    "loader": {
+      "titlePreparing": "Je ervaring voorbereiden",
+      "titleReady": "Je bent helemaal klaar.",
+      "ctaPreview": "Probeer een snelle demo",
+      "ctaReady": "Begin Crova",
+      "summaryEyebrow": "Gepersonaliseerde start",
+      "summarySubtitle": "We hebben je eerste stappen afgestemd op je niveau, focus en voorkeuren.",
+      "summaryCardTitle": "Jouw startprofiel",
+      "summaryCardSubtitle": "Dit is het pad waarmee Crova zal beginnen op basis van wat u ons hebt verteld.",
+      "summaryLabels": {
+        "skillLevel": "Ervaring",
+        "goal": "Focus",
+        "handedness": "Handigheid"
+      },
+      "summaryFallbacks": {
+        "skillLevel": "Gepersonaliseerd",
+        "goal": "Jouw haakpad",
+        "handedness": "Standaardinstelling"
+      },
+      "nextTitle": "Wat gebeurt er daarna",
+      "goalLabels": {
+        "learnBasics": "de basissteken",
+        "finishFirstProject": "je eerste project",
+        "buildHabit": "een vaste haakgewoonte",
+        "default": "jouw haakpad"
+      },
+      "skillLabels": {
+        "beginner": "beginnersvriendelijk",
+        "intermediate": "voor gevorderde beginners",
+        "advanced": "geavanceerd",
+        "default": "gepersonaliseerd"
+      },
+      "messages": {
+        "buildingPlan": "Uw {{skillLabel}}-plan samenstellen...",
+        "pickingLessons": "Lessen kiezen voor {{goalLabel}}...",
+        "tracking": "Voortgangsregistratie instellen...",
+        "finalizing": "Je Crova-start voltooien..."
+      },
+      "nextSteps": {
+        "skillLevel": {
+          "beginner": "Je begint met korte, stapsgewijze lessen die het tempo laagdrempelig houden.",
+          "intermediate": "Je krijgt een korte opfrissing en gaat daarna meteen door naar begeleide oefening.",
+          "advanced": "Je springt in veeleisendere patronen en dieper technisch werk.",
+          "default": "Je begint met een persoonlijk lestraject afgestemd op jouw niveau."
+        },
+        "goal": {
+          "learnBasics": "Je eerste lessen zullen zich richten op de kernsteken en hoe ze in elkaar passen.",
+          "finishFirstProject": "Uw plan zal u zo snel mogelijk naar een eerste voltooid project leiden.",
+          "buildHabit": "Uw plan geeft de voorkeur aan lichtere sessies die gemakkelijker consistent te herhalen zijn.",
+          "default": "Uw plan zal zich richten op de uitkomst die voor u het belangrijkst is."
+        },
+        "tracking": "Tools voor het bijhouden van rijen en voortgang zijn vanaf dag één gereed."
+      }
+    },
+    "demo": {
+      "eyebrow": "Snel oefenen",
+      "title": "Probeer hoe Crova lesgeeft",
+      "subtitle": "Een kleine begeleide les voor {{skillLabel}} gericht op {{goalLabel}}.",
+      "stepLabel": "Stap {{current}}",
+      "chips": {
+        "duration": "Minder dan 30 seconden",
+        "handedness": "{{value}} opgeslagen"
+      },
+      "actions": {
+        "previous": "Vorig",
+        "next": "Volgende stap",
+        "finish": "Zie mijn plan"
+      },
+      "skillAudience": {
+        "beginner": "beginners",
+        "intermediate": "haaksters die de basis kennen",
+        "advanced": "haaksters klaar voor een uitdaging",
+        "default": "haaksters"
+      },
+      "goalFocus": {
+        "learnBasics": "kernsteken leren",
+        "finishFirstProject": "een eerste project afronden",
+        "buildHabit": "het opbouwen van een vaste gewoonte",
+        "default": "je ritme vinden"
+      },
+      "cards": {
+        "one": {
+          "title": "Begin met één duidelijke beweging"
+        },
+        "two": {
+          "title": "Blijf gesynchroniseerd met elke stap"
+        },
+        "three": {
+          "title": "Blijf streven naar een echt resultaat"
+        }
+      },
+      "stepBodies": {
+        "skill": {
+          "beginner": "We vertragen de les en houden de beweging eenvoudig, zodat je je maar op één ding tegelijk kunt concentreren.",
+          "intermediate": "We houden de uitleg kort en brengen je naar de begeleide praktijk zonder het tempo te vertragen.",
+          "advanced": "We houden de begeleiding lichter, zodat je snel kunt bewegen en meer tijd kunt besteden aan doen dan aan lezen.",
+          "default": "We stemmen het lestempo af op jouw niveau, zodat de begeleiding nuttig aanvoelt in plaats van repetitief."
+        },
+        "progress": "De voortgang blijft zichtbaar terwijl u beweegt, zodat u altijd weet wat er daarna komt en waar u was gebleven.",
+        "goal": {
+          "learnBasics": "Je pad zal zich eerst concentreren op de kernsteken, omdat dat de snelste manier is om vertrouwen op te bouwen.",
+          "finishFirstProject": "Je pad zal blijven evolueren naar een voltooid project, zodat de praktijk iets tastbaars wordt.",
+          "buildHabit": "Jouw pad zal de voorkeur geven aan korte overwinningen die gemakkelijk te herhalen zijn, dus het voelt natuurlijk om morgen terug te komen.",
+          "default": "Jouw pad blijft gericht op het resultaat dat voor jou het belangrijkst is."
+        }
+      },
+      "note": "Dit is hetzelfde begeleide, stapsgewijze ritme dat u tijdens uw eerste Crova-lessen zult gebruiken."
+    }
+  }
+}
+

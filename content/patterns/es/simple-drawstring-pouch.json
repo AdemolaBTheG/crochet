@@ -1,0 +1,15 @@
+{
+  "title": "Bolsa con cordón simple",
+  "description": "Una pequeña bolsa tejida desde una base redonda hacia lados rectos con un cordón de cadenetas.",
+  "materials": ["Hilo de algodón", "Ganchillo 4,5 mm", "Marcador de puntos", "Aguja lanera", "Tijeras"],
+  "skills": ["Anillo mágico", "Punto bajo", "Aumentos", "Trabajar en vueltas", "Cadeneta de base"],
+  "expectationText": "Un pequeño contenedor útil que enseña la transición de una base circular plana a lados verticales simples.",
+  "steps": [
+    { "type": "instruction", "title": "Comenzar la base", "instruction": "Haz un anillo mágico o 4 cadenetas y une en un círculo." },
+    { "type": "round", "title": "Vuelta 1", "instruction": "Haz 8 puntos bajos en el centro y marca el primer punto.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "repeat", "title": "Vueltas 2 a 4", "instruction": "Aumenta uniformemente en cada vuelta hasta que la base sea suficientemente ancha para una bolsa pequeña.", "counterLabel": "round", "targetCount": 4 },
+    { "type": "repeat", "title": "Vueltas 5 a 14", "instruction": "Haz puntos bajos alrededor sin aumentar para formar los lados.", "counterLabel": "round", "targetCount": 14 },
+    { "type": "instruction", "title": "Hacer el cordón", "instruction": "Haz una cadeneta lo suficientemente larga para rodear la abertura de la bolsa y pásala por los espacios cerca del borde superior." },
+    { "type": "instruction", "title": "Terminar", "instruction": "Haz pequeños nudos en los extremos del cordón, remata y esconde las hebras restantes." }
+  ]
+}

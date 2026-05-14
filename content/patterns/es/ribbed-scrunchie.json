@@ -1,0 +1,14 @@
+{
+  "title": "Scrunchie acanalado",
+  "description": "Un proyecto rápido y ponible hecho alrededor de un elástico para el cabello con repeticiones aptas para principiantes.",
+  "materials": ["Hilo suave", "Ganchillo 4,5 mm", "Elástico para cabello", "Aguja lanera", "Tijeras"],
+  "skills": ["Punto bajo", "Medio punto alto", "Tejer alrededor de un elástico", "Unión"],
+  "expectationText": "Un proyecto rápido y divertido donde la repetición construye confianza y el resultado final se siente como un regalo.",
+  "steps": [
+    { "type": "instruction", "title": "Cubrir el elástico", "instruction": "Une el hilo alrededor del elástico y haz puntos bajos uniformemente a su alrededor." },
+    { "type": "round", "title": "Vuelta 1", "instruction": "Haz suficientes puntos bajos alrededor del elástico para que la banda quede completamente cubierta.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Vuelta 2", "instruction": "2 cadenetas, luego haz medios puntos altos en cada punto alrededor.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Vuelta 3", "instruction": "Haz una vuelta más de medios puntos altos para un scrunchie más lleno.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Terminar", "instruction": "Une con punto deslizado, remata y esconde la hebra dentro de los pliegues." }
+  ]
+}

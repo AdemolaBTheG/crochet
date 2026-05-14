@@ -1,7 +1,7 @@
 import { theme } from '@/constants/Theme';
 import { isLessonFree } from '@/constants/gates';
 import { useSubscription } from '@/context/SubscriptionContext';
-import { lessons as lessonsTable, type Lesson } from '@/db/schema';
+import { resolveLessonTranslations, type ResolvedLesson } from '@/db/translations';
 import { useDbStore } from '@/stores/dbStore';
 import { selectionAsync } from 'expo-haptics';
 import { Link, router } from 'expo-router';
@@ -26,10 +26,6 @@ import Animated, {
   type SharedValue,
 } from 'react-native-reanimated';
 
-type LessonContent = {
-  steps?: unknown[];
-};
-
 type ToolItem = {
   id: string;
   title: string;
@@ -47,28 +43,28 @@ const toolItems: ToolItem[] = [
     id: 'row-counter',
     title: 'Row Counter',
     description: 'Count rows, rounds, and repeats without losing your place.',
-    icon: 'number',
+    icon: { ios: 'number', android: 'format_list_numbered', web: 'format_list_numbered' },
     href: '/(tools)/row-counter',
   },
   {
     id: 'stitch-fixes',
     title: 'Stitch Fixes',
     description: 'Quick help for curling, uneven edges, gaps, and missed stitches.',
-    icon: 'bandage',
+    icon: { ios: 'bandage', android: 'medical_services', web: 'medical_services' },
     href: '/(tools)/stitch-fixes',
   },
   {
     id: 'size-calculator',
     title: 'Size Calculator',
     description: 'Estimate stitch and row counts from your gauge.',
-    icon: 'ruler',
+    icon: { ios: 'ruler', android: 'straighten', web: 'straighten' },
     href: '/(tools)/size-calculator',
   },
   {
     id: 'identify-stitch',
     title: 'Identify Stitch',
     description: 'Use a photo to understand the stitch you are looking at.',
-    icon: 'camera.viewfinder',
+    icon: { ios: 'camera.viewfinder', android: 'photo_camera', web: 'photo_camera' },
     href: '/(tools)/identify-stitch',
   },
 ];
@@ -81,15 +77,8 @@ function getToolDescription(id: string, t: (key: string) => string) {
   return t(`learn.tools.${id}.description`);
 }
 
-function getLessonStepCount(content: string | null) {
-  if (!content) return 0;
-
-  try {
-    const parsed = JSON.parse(content) as LessonContent;
-    return Array.isArray(parsed.steps) ? parsed.steps.length : 0;
-  } catch {
-    return 0;
-  }
+function getLessonStepCount(lesson: ResolvedLesson) {
+  return Array.isArray(lesson.content.steps) ? lesson.content.steps.length : 0;
 }
 
 function formatDifficulty(difficulty: string) {
@@ -200,7 +189,7 @@ function LessonCard({
   scrollX,
   isLocked,
 }: {
-  lesson: Lesson;
+  lesson: ResolvedLesson;
   index: number;
   cardWidth: number;
   snapInterval: number;
@@ -208,7 +197,7 @@ function LessonCard({
   isLocked: boolean;
 }) {
   const { t } = useTranslation();
-  const stepCount = getLessonStepCount(lesson.content);
+  const stepCount = getLessonStepCount(lesson);
   const animatedStyle = useAnimatedStyle(() => {
     const inputRange = [
       (index - 1) * snapInterval,
@@ -365,7 +354,7 @@ function LessonCard({
               backgroundColor: theme.colors.primary,
             }}>
             <SymbolView
-              name="play.fill"
+              name={{ ios: 'play.fill', android: 'play_arrow', web: 'play_arrow' }}
               size={15}
               weight="bold"
               tintColor={theme.colors.white}
@@ -401,11 +390,11 @@ function LessonCard({
 }
 
 export default function LearnScreen() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { db } = useDbStore();
   const { isPro } = useSubscription();
   const { width } = useWindowDimensions();
-  const [lessons, setLessons] = useState<Lesson[]>([]);
+  const [lessons, setLessons] = useState<ResolvedLesson[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const cardWidth = Math.min(300, width - theme.spacing.xl * 2);
   const cardGap = theme.spacing.md;
@@ -429,7 +418,7 @@ export default function LearnScreen() {
       setIsLoading(true);
 
       try {
-        const result = await db.select().from(lessonsTable).orderBy(lessonsTable.sortOrder);
+        const result = await resolveLessonTranslations(db, i18n.language);
 
         if (isMounted) {
           setLessons(result);
@@ -446,9 +435,9 @@ export default function LearnScreen() {
     return () => {
       isMounted = false;
     };
-  }, [db]);
+  }, [db, i18n.language]);
 
-  const renderLesson: ListRenderItem<Lesson> = ({ item, index }) => (
+  const renderLesson: ListRenderItem<ResolvedLesson> = ({ item, index }) => (
     <LessonCard
       lesson={item}
       index={index}

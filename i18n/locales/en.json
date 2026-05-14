@@ -313,7 +313,23 @@
     "loader": {
       "titlePreparing": "Preparing your experience",
       "titleReady": "You are all set.",
+      "ctaPreview": "Try a quick demo",
       "ctaReady": "Start Crova",
+      "summaryEyebrow": "Personalized start",
+      "summarySubtitle": "We tuned your first steps around your level, focus, and setup.",
+      "summaryCardTitle": "Your setup",
+      "summaryCardSubtitle": "This is the path Crova will start with based on what you told us.",
+      "summaryLabels": {
+        "skillLevel": "Experience",
+        "goal": "Focus",
+        "handedness": "Handedness"
+      },
+      "summaryFallbacks": {
+        "skillLevel": "Personalized",
+        "goal": "Your crochet path",
+        "handedness": "Standard setup"
+      },
+      "nextTitle": "What happens next",
       "goalLabels": {
         "learnBasics": "core stitches",
         "finishFirstProject": "your first project",
@@ -331,7 +347,76 @@
         "pickingLessons": "Picking lessons for {{goalLabel}}...",
         "tracking": "Setting up progress tracking...",
         "finalizing": "Finalizing your Crova start..."
+      },
+      "nextSteps": {
+        "skillLevel": {
+          "beginner": "You will start with short, step-by-step lessons that keep the pace approachable.",
+          "intermediate": "You will get a quick refresh, then move into guided practice right away.",
+          "advanced": "You will jump into more demanding patterns and deeper technique work.",
+          "default": "You will start with a personalized lesson path matched to your level."
+        },
+        "goal": {
+          "learnBasics": "Your first lessons will focus on the core stitches and how they fit together.",
+          "finishFirstProject": "Your plan will steer you toward a first finished project as quickly as possible.",
+          "buildHabit": "Your plan will favor lighter sessions that are easier to repeat consistently.",
+          "default": "Your plan will focus on the outcome that matters most to you."
+        },
+        "tracking": "Row tracking and progress tools will be ready from day one."
       }
+    },
+    "demo": {
+      "eyebrow": "Quick practice",
+      "title": "Try how Crova teaches",
+      "subtitle": "A tiny guided lesson for {{skillLabel}} focused on {{goalLabel}}.",
+      "stepLabel": "Step {{current}}",
+      "chips": {
+        "duration": "Under 30 seconds",
+        "handedness": "{{value}} saved"
+      },
+      "actions": {
+        "previous": "Previous",
+        "next": "Next step",
+        "finish": "See my plan"
+      },
+      "skillAudience": {
+        "beginner": "beginners",
+        "intermediate": "crocheters who know the basics",
+        "advanced": "crocheters ready for a challenge",
+        "default": "crocheters"
+      },
+      "goalFocus": {
+        "learnBasics": "learning core stitches",
+        "finishFirstProject": "finishing a first project",
+        "buildHabit": "building a steady habit",
+        "default": "finding your rhythm"
+      },
+      "cards": {
+        "one": {
+          "title": "Start with one clear motion"
+        },
+        "two": {
+          "title": "Stay in sync with each step"
+        },
+        "three": {
+          "title": "Keep moving toward a real outcome"
+        }
+      },
+      "stepBodies": {
+        "skill": {
+          "beginner": "We slow the lesson down and keep the movement simple, so you only focus on one thing at a time.",
+          "intermediate": "We keep the explanation short and move you into guided practice without dragging the pace.",
+          "advanced": "We keep the guidance lighter, so you can move quickly and spend more time doing than reading.",
+          "default": "We match the lesson pace to your level, so the guidance feels useful instead of repetitive."
+        },
+        "progress": "Progress stays visible while you move, so you always know what comes next and where you left off.",
+        "goal": {
+          "learnBasics": "Your path will focus on the core stitches first, because that is the fastest way to build confidence.",
+          "finishFirstProject": "Your path will keep pushing toward a finished project, so the practice turns into something tangible.",
+          "buildHabit": "Your path will favor short wins that are easy to repeat, so it feels natural to come back tomorrow.",
+          "default": "Your path will stay centered on the result that matters most to you."
+        }
+      },
+      "note": "This is the same guided, step-by-step rhythm you will use in your first Crova lessons."
     }
   }
 }

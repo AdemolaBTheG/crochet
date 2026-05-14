@@ -1,0 +1,44 @@
+{
+  "title": "Eenvoudig vaatdoekje",
+  "description": "Een praktisch vierkant project voor het leren van rijen en het opbouwen van een gelijkmatige spanning.",
+  "materials": [
+    "Katoenen garen",
+    "5 mm haak",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Stichting keten",
+    "enkel haakwerk",
+    "rijen draaien",
+    "uiteinden weven"
+  ],
+  "expectationText": "Een stabiel rij-voor-rij-project voor het oefenen van gelijkmatige spanning, zuivere randen en het ritme van het draaien van uw werk.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fundering",
+      "instruction": "21 steken lossen."
+    },
+    {
+      "type": "row",
+      "title": "Rij 1",
+      "instruction": "Enkele haak in de tweede ketting vanaf de haak en elke ketting eroverheen.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Rijen 2 tot en met 18",
+      "instruction": "1 losse, keer en haak een vaste in elke steek.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Hecht af en weef beide uiteinden in."
+    }
+  ]
+}
+

@@ -1,0 +1,15 @@
+{
+  "title": "Pochette à cordon simple",
+  "description": "Un petit sac travaillé d'une base ronde vers des côtés droits avec un cordon en mailles en l'air.",
+  "materials": ["Fil de coton", "Crochet 4,5 mm", "Marqueur de maille", "Aiguille à laine", "Ciseaux"],
+  "skills": ["Anneau magique", "Maille serrée", "Augmentations", "Travailler en tours", "Chaînette de base"],
+  "expectationText": "Un petit contenant utile qui enseigne le passage d'une base circulaire plate à des côtés droits simples.",
+  "steps": [
+    { "type": "instruction", "title": "Commencer la base", "instruction": "Faites un anneau magique ou 4 mailles en l'air et assemblez en boucle." },
+    { "type": "round", "title": "Tour 1", "instruction": "Faites 8 mailles serrées dans le centre et marquez la première maille.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "repeat", "title": "Tours 2 à 4", "instruction": "Augmentez régulièrement à chaque tour jusqu'à ce que la base soit assez large pour une petite pochette.", "counterLabel": "round", "targetCount": 4 },
+    { "type": "repeat", "title": "Tours 5 à 14", "instruction": "Faites des mailles serrées tout autour sans augmenter pour former les côtés.", "counterLabel": "round", "targetCount": 14 },
+    { "type": "instruction", "title": "Faire le cordon", "instruction": "Faites une chaînette assez longue pour faire le tour de l'ouverture de la pochette, puis passez-la dans les espaces près du bord supérieur." },
+    { "type": "instruction", "title": "Finir", "instruction": "Faites de petits nœuds aux extrémités du cordon, arrêtez le fil et rentrez les fils restants." }
+  ]
+}

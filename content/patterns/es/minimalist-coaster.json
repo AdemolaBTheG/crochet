@@ -1,0 +1,14 @@
+{
+  "title": "Posavasos minimalista",
+  "description": "Un proyecto redondo rápido para aprender vueltas, unión y repetición simple de puntos.",
+  "materials": ["Hilo de algodón", "ganchillo de 4 a 5 mm", "aguja lanera", "tijeras"],
+  "skills": ["Anillo mágico", "punto bajo", "punto raso", "trabajar en vueltas"],
+  "expectationText": "Un proyecto rápido en redondo donde practicas construir un círculo plano, unir limpiamente y terminar algo útil en una sesión corta.",
+  "steps": [
+    { "type": "instruction", "title": "Hacer el anillo central", "instruction": "Comienza con un anillo mágico o 4 cadenetas unidas en un lazo." },
+    { "type": "round", "title": "Vuelta 1", "instruction": "Haz 8 puntos bajos en el anillo y une con un punto raso.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Vuelta 2", "instruction": "Haz 2 puntos bajos en cada punto, 16 puntos en total.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Vuelta 3", "instruction": "Alterna 1 punto bajo, luego 2 puntos bajos en el siguiente punto alrededor.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Terminar", "instruction": "Une con punto raso, remata y esconde la hebra." }
+  ]
+}

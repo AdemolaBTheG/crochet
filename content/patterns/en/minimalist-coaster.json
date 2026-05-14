@@ -1,0 +1,14 @@
+{
+  "title": "Minimalist Coaster",
+  "description": "A fast circular project for learning rounds, joining, and simple stitch repetition.",
+  "materials": ["Cotton yarn", "4 to 5 mm hook", "yarn needle", "scissors"],
+  "skills": ["Magic ring", "single crochet", "slip stitch", "working in rounds"],
+  "expectationText": "A quick round project where you practice building a flat circle, joining neatly, and finishing something useful in one short sitting.",
+  "steps": [
+    { "type": "instruction", "title": "Make a center ring", "instruction": "Start with a magic ring or chain 4 and join into a loop." },
+    { "type": "round", "title": "Round 1", "instruction": "Work 8 single crochet into the ring and join with a slip stitch.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Round 2", "instruction": "Work 2 single crochet into each stitch around for 16 stitches total.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Round 3", "instruction": "Alternate 1 single crochet, then 2 single crochet in the next stitch around.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Finish", "instruction": "Slip stitch to join, fasten off, and weave in the end." }
+  ]
+}

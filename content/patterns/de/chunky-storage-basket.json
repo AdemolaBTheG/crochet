@@ -1,0 +1,14 @@
+{
+  "title": "Dicker Aufbewahrungskorb",
+  "description": "Ein robustes Heim-Projekt zum Üben von Runden, Seiten und einfacher Struktur.",
+  "materials": ["Dickes Baumwollgarn", "6,5 mm Häkelnadel", "Sticknadel", "Schere"],
+  "skills": ["Magischer Ring", "Feste Masche", "Zunahmen", "In hintere Maschenglieder häkeln", "Runden"],
+  "expectationText": "Ein nützliches Heimstück, bei dem du von einem flachen Boden zu aufrechten Seiten übergehst und siehst, wie Struktur entsteht.",
+  "steps": [
+    { "type": "instruction", "title": "Den Boden beginnen", "instruction": "Mache einen magischen Ring und häkle 8 feste Maschen in die Mitte." },
+    { "type": "round", "title": "Runden 1 bis 4", "instruction": "Nimm in jeder Runde gleichmäßig zu, bis der Boden die gewünschte Breite erreicht.", "counterLabel": "round", "targetCount": 4 },
+    { "type": "round", "title": "Die Seite wenden", "instruction": "Häkle eine Runde nur in die hinteren Maschenglieder, um eine saubere Kante zu erzeugen.", "counterLabel": "round", "targetCount": 5 },
+    { "type": "repeat", "title": "Die Wände aufbauen", "instruction": "Häkle feste Maschen rundherum ohne Zunahmen, bis der Korb hoch genug ist.", "counterLabel": "round", "targetCount": 10 },
+    { "type": "instruction", "title": "Den Rand fertigstellen", "instruction": "Häkle Kettmaschen um die obere Kante, vernähe den Faden und webe die Enden ein." }
+  ]
+}

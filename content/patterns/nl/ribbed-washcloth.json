@@ -1,0 +1,51 @@
+{
+  "title": "Geribbeld washandje",
+  "description": "Een eenvoudig vierkant dat de oefening met alleen de achterste lus verandert in een nuttige structuurstof.",
+  "materials": [
+    "Katoenen garen",
+    "5 mm haak",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Stichting keten",
+    "half stokje",
+    "alleen achterste lus",
+    "rijen draaien"
+  ],
+  "expectationText": "Een praktisch project op staalformaat waarbij de ribbels snel duidelijk zichtbaar zijn, zodat de techniek klikt voordat je overgaat op wearables.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fundering",
+      "instruction": "19 steken lossen."
+    },
+    {
+      "type": "row",
+      "title": "Rij 1",
+      "instruction": "Half stokje in de derde losse vanaf de haaknaald en elke losse overdwars.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Rij 2",
+      "instruction": "2 losse, keer, en haak een half stokje in de achterste lus, alleen overdwars.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Rijen 3 t/m 16",
+      "instruction": "Ga verder met het haken van 2 lossen, keer en haak een half stokje in de achterste lus, alleen overdwars.",
+      "counterLabel": "row",
+      "targetCount": 16
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Hecht af en weef beide uiteinden netjes weg."
+    }
+  ]
+}
+

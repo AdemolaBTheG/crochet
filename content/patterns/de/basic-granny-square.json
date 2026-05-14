@@ -1,0 +1,14 @@
+{
+  "title": "Klassisches Granny Square",
+  "description": "Ein klassisches Häkelmotiv, das Stäbchengruppen und Ecken lehrt.",
+  "materials": ["Kammgarn", "5 mm Nadel", "Wollnadel", "Schere"],
+  "skills": ["Magischer Ring", "Stäbchen", "Luftmaschen-Zwischenräume", "Kettmaschen verbinden"],
+  "expectationText": "Ein klassisches Motiv, das Ecken, Gruppen und Rundenstruktur vermittelt, ohne in ein riesiges Projekt einzusteigen.",
+  "steps": [
+    { "type": "instruction", "title": "Mittelring", "instruction": "Mache einen magischen Ring oder 4 Luftmaschen und schließe zur Schlaufe." },
+    { "type": "round", "title": "Runde 1", "instruction": "Mache 4 Granny-Gruppen durch Luftmaschen-Zwischenräume getrennt und schließe zum Quadrat.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Runde 2", "instruction": "Kettmasche zum Eck-Zwischenraum, baue die nächste Schicht Granny-Gruppen auf und forme Ecken mit Luftmaschen-Zwischenräumen.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Runde 3", "instruction": "Wiederhole Granny-Gruppen entlang der Seiten und Ecken, bis das Quadrat die gewünschte Größe erreicht.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Fertigstellen", "instruction": "Runde schließen, abketten und Fäden vernähen." }
+  ]
+}

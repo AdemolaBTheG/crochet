@@ -1,0 +1,14 @@
+{
+  "title": "Slim Bookmark",
+  "description": "A narrow row project for practicing edges, tension, and a tiny tassel finish.",
+  "materials": ["Cotton yarn", "3.5 to 4 mm hook", "yarn needle", "scissors"],
+  "skills": ["Foundation chain", "single crochet", "turning rows", "tassel making"],
+  "expectationText": "A neat little project that rewards careful tension and gives you a finished gift in under an hour.",
+  "steps": [
+    { "type": "instruction", "title": "Foundation", "instruction": "Chain 8 stitches for a slim bookmark width." },
+    { "type": "row", "title": "Row 1", "instruction": "Single crochet in the second chain from the hook and each chain across.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Rows 2 to 24", "instruction": "Chain 1, turn, and single crochet across each row.", "counterLabel": "row", "targetCount": 24 },
+    { "type": "instruction", "title": "Add a tassel", "instruction": "Cut a few yarn strands and attach them to one short edge." },
+    { "type": "instruction", "title": "Finish", "instruction": "Trim the tassel evenly and weave in the starting tail." }
+  ]
+}

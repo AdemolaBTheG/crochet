@@ -1,0 +1,14 @@
+{
+  "title": "Petite applique cœur",
+  "description": "Un petit cœur décoratif pour pratiquer le façonnage en un tour rapide.",
+  "materials": ["Fil de coton", "Crochet 4 mm", "Aiguille à laine", "Ciseaux"],
+  "skills": ["Anneau magique", "Bride", "Triple bride", "Point coulé"],
+  "expectationText": "Un petit motif façonné qui enseigne comment la hauteur des mailles change le contour d'un dessin.",
+  "steps": [
+    { "type": "instruction", "title": "Faire l'anneau", "instruction": "Commencez par un anneau magique et faites 2 mailles en l'air pour débuter la forme de cœur." },
+    { "type": "round", "title": "Former les lobes", "instruction": "Faites des mailles plus hautes dans l'anneau pour former le dessus arrondi du cœur.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "instruction", "title": "Former la pointe", "instruction": "Utilisez des mailles plus courtes, puis une maille plus haute à la pointe inférieure." },
+    { "type": "instruction", "title": "Fermer le cœur", "instruction": "Reproduisez en miroir le premier côté, fermez avec un point coulé et serrez l'anneau." },
+    { "type": "instruction", "title": "Finir", "instruction": "Arrêtez le fil et rentrez les fils à l'arrière du cœur." }
+  ]
+}

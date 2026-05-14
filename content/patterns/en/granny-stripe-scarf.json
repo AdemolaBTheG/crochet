@@ -1,0 +1,14 @@
+{
+  "title": "Granny Stripe Scarf",
+  "description": "An easy scarf built from repeating cluster groups and chain spaces.",
+  "materials": ["Soft worsted yarn", "5.5 mm hook", "yarn needle", "scissors"],
+  "skills": ["Foundation chain", "double crochet", "chain spaces", "turning rows"],
+  "expectationText": "A long repeat project where you stop counting individual stitches and start reading spaces and clusters instead.",
+  "steps": [
+    { "type": "instruction", "title": "Foundation", "instruction": "Chain 27 stitches or any multiple of 3 plus 3 for a wider scarf." },
+    { "type": "row", "title": "Row 1", "instruction": "Work groups of 3 double crochet with skipped spaces between them to begin the granny stripe layout.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "row", "title": "Row 2", "instruction": "Chain 3, turn, and work the next groups into the spaces between the clusters from the previous row.", "counterLabel": "row", "targetCount": 2 },
+    { "type": "repeat", "title": "Rows 3 to 24", "instruction": "Repeat the same cluster placement into each chain space across the row until the scarf reaches your preferred length.", "counterLabel": "row", "targetCount": 24 },
+    { "type": "instruction", "title": "Finish", "instruction": "Fasten off, weave in ends, and add fringe only if you want extra texture." }
+  ]
+}

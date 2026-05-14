@@ -1,0 +1,19 @@
+{
+  "title": "Nœud coulant et tenue du crochet",
+  "description": "Installez confortablement votre fil et votre crochet avant de faire votre premier point.",
+  "content": {
+    "summary": "Apprenez à faire un nœud coulant et à tenir le crochet et le fil sans lutter contre la tension.",
+    "whyItMatters": "Chaque projet de crochet commence ici. Un démarrage fluide rend chaque point plus facile.",
+    "steps": [
+      "Enroulez le fil sur lui-même pour faire une boucle.",
+      "Tirez un brin à travers la boucle pour créer le nœud coulant.",
+      "Serrez doucement le nœud sur le crochet pour qu'il puisse encore glisser.",
+      "Entraînez-vous à tenir le crochet et à guider le fil avec une tension régulière."
+    ],
+    "practice": "Faites et défaites le nœud coulant trois fois jusqu'à ce que cela devienne facile.",
+    "commonMistakes": [
+      "Trop serrer le nœud sur le crochet.",
+      "Saisir le fil si fermement que le crochet ne peut plus bouger."
+    ]
+  }
+}

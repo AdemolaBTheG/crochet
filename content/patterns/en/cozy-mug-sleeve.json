@@ -1,0 +1,14 @@
+{
+  "title": "Cozy Mug Sleeve",
+  "description": "A small rectangle project that wraps around a mug and teaches simple finishing.",
+  "materials": ["Worsted cotton yarn", "5 mm hook", "yarn needle", "scissors", "button"],
+  "skills": ["Foundation chain", "half double crochet", "turning rows", "button loop"],
+  "expectationText": "A practical rectangle that turns into a finished object with one small joining detail at the end.",
+  "steps": [
+    { "type": "instruction", "title": "Foundation", "instruction": "Chain 12 stitches for the height of the sleeve." },
+    { "type": "row", "title": "Row 1", "instruction": "Half double crochet in the third chain from the hook and each chain across.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Rows 2 to 18", "instruction": "Chain 2, turn, and half double crochet across until the sleeve wraps around your mug.", "counterLabel": "row", "targetCount": 18 },
+    { "type": "instruction", "title": "Add a loop", "instruction": "Chain a small loop at one short edge for the button closure." },
+    { "type": "instruction", "title": "Attach the button", "instruction": "Sew a button to the opposite edge, fasten off, and weave in ends." }
+  ]
+}

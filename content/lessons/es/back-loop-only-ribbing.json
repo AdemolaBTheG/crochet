@@ -1,0 +1,19 @@
+{
+  "title": "Punto elástico en hebra trasera",
+  "description": "Crea elasticidad y crestas visibles trabajando en una sola hebra en lugar de ambas.",
+  "content": {
+    "summary": "El crochet en hebra trasera cambia la textura del tejido y crea un aspecto acanalado limpio.",
+    "whyItMatters": "Esta técnica se usa en gorros, puños y prendas básicas texturizadas donde la elasticidad y la dirección importan.",
+    "steps": [
+      "Encuentra las dos hebras superiores de un punto e identifica la hebra trasera, la más alejada de ti.",
+      "Inserta el ganchillo solo debajo de esa hebra trasera en lugar de ambas.",
+      "Trabaja el punto normalmente manteniendo el borde relajado.",
+      "Repite a lo largo de la fila para construir crestas uniformes."
+    ],
+    "practice": "Trabaja dos filas cortas en puntos normales, luego dos filas solo en la hebra trasera y compara la textura.",
+    "commonMistakes": [
+      "Agarrar sin querer ambas hebras por costumbre.",
+      "Apretar demasiado y hacer el elástico rígido en lugar de flexible."
+    ]
+  }
+}

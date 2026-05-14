@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "272881633799",
+    "project_id": "brainnotes-31862",
+    "storage_bucket": "brainnotes-31862.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272881633799:android:52ee18fc5785583ccab8a2",
+        "android_client_info": {
+          "package_name": "com.crochet.flingex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzY5HDn0NDntLqqIOpGgdf0K1j-EmbKYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272881633799:android:b3a0acae8ebe1c79cab8a2",
+        "android_client_info": {
+          "package_name": "com.flingex.brainnotes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzY5HDn0NDntLqqIOpGgdf0K1j-EmbKYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

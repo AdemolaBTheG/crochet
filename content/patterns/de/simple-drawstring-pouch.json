@@ -1,0 +1,15 @@
+{
+  "title": "Einfaches Kordelzug-Beutelchen",
+  "description": "Ein kleines Täschchen, das von einem runden Boden in gerade Seiten übergeht mit einem gehäkelten Kordelzug.",
+  "materials": ["Baumwollgarn", "4,5 mm Häkelnadel", "Maschenmarkierer", "Sticknadel", "Schere"],
+  "skills": ["Magischer Ring", "Feste Masche", "Zunahmen", "In Runden arbeiten", "Luftmaschenanschlag"],
+  "expectationText": "Ein nützlicher kleiner Behälter, der den Übergang von einem flachen runden Boden zu einfachen aufrechten Seiten lehrt.",
+  "steps": [
+    { "type": "instruction", "title": "Den Boden beginnen", "instruction": "Mache einen magischen Ring oder 4 Luftmaschen und verbinde sie zu einem Kreis." },
+    { "type": "round", "title": "Runde 1", "instruction": "Häkle 8 feste Maschen in die Mitte und markiere die erste Masche.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "repeat", "title": "Runden 2 bis 4", "instruction": "Nimm in jeder Runde gleichmäßig zu, bis der Boden breit genug für ein kleines Täschchen ist.", "counterLabel": "round", "targetCount": 4 },
+    { "type": "repeat", "title": "Runden 5 bis 14", "instruction": "Häkle feste Maschen rundherum ohne Zunahmen, um die Seiten aufzubauen.", "counterLabel": "round", "targetCount": 14 },
+    { "type": "instruction", "title": "Den Kordelzug machen", "instruction": "Häkle eine Kordel, die lang genug ist, um die Taschenöffnung zu umwickeln, und webe sie dann durch die Zwischenräume nahe der oberen Kante." },
+    { "type": "instruction", "title": "Fertigstellen", "instruction": "Mache kleine Knoten an den Kordelenden, vernähe den Faden und webe die restlichen Enden ein." }
+  ]
+}

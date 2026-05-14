@@ -1,0 +1,14 @@
+{
+  "title": "Funda acogedora para taza",
+  "description": "Un pequeño proyecto rectangular que envuelve una taza y enseña acabados simples.",
+  "materials": ["Hilo de algodón worsted", "Ganchillo 5 mm", "Aguja lanera", "Tijeras", "Botón"],
+  "skills": ["Cadeneta de base", "Medio punto alto", "Hileras de vuelta", "Ojal para botón"],
+  "expectationText": "Un rectángulo práctico que se convierte en un objeto terminado con un pequeño detalle de unión al final.",
+  "steps": [
+    { "type": "instruction", "title": "Base", "instruction": "Haz 12 cadenetas para la altura de la funda." },
+    { "type": "row", "title": "Hilera 1", "instruction": "Medio punto alto en la tercera cadeneta desde el ganchillo y en cada cadeneta siguiente.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Hileras 2 a 18", "instruction": "2 cadenetas, gira y haz medios puntos altos hasta que la funda envuelva tu taza.", "counterLabel": "row", "targetCount": 18 },
+    { "type": "instruction", "title": "Añadir un ojal", "instruction": "Haz un pequeño ojal de cadenetas en un borde corto para el cierre del botón." },
+    { "type": "instruction", "title": "Coser el botón", "instruction": "Cose un botón en el borde opuesto, remata y esconde las hebras." }
+  ]
+}

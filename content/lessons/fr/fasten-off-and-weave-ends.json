@@ -1,0 +1,19 @@
+{
+  "title": "Arrêter et rentrer les fils",
+  "description": "Terminez les projets proprement pour qu'ils restent solides après lavage et usage.",
+  "content": {
+    "summary": "Arrêter le fil et rentrer les brins est l'étape finale qui donne une sensation de finition.",
+    "whyItMatters": "Un projet n'est pas fini tant que les fils ne sont pas sécurisés et bien rangés.",
+    "steps": [
+      "Coupez le fil en laissant une longueur.",
+      "Passez complètement le brin dans la dernière boucle.",
+      "Enfilez le brin sur une aiguille à laine.",
+      "Tissez le brin à travers les mailles voisines dans plus d'une direction."
+    ],
+    "practice": "Arrêtez un échantillon et rentrez les deux brins proprement.",
+    "commonMistakes": [
+      "Laisser des brins trop courts.",
+      "Tisser en ligne droite uniquement, ce qui peut se desserrer avec le temps."
+    ]
+  }
+}

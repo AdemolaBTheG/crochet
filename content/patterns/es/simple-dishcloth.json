@@ -1,0 +1,13 @@
+{
+  "title": "Paño sencillo",
+  "description": "Un proyecto cuadrado práctico para aprender filas y dominar la tensión uniforme.",
+  "materials": ["Hilo de algodón", "ganchillo de 5 mm", "aguja lanera", "tijeras"],
+  "skills": ["Cadeneta base", "punto bajo", "filas de ida y vuelta", "esconder hebras"],
+  "expectationText": "Un proyecto de filas constante para practicar la tensión uniforme, bordes limpios y el ritmo de girar tu labor.",
+  "steps": [
+    { "type": "instruction", "title": "Base", "instruction": "Haz 21 cadenetas." },
+    { "type": "row", "title": "Fila 1", "instruction": "Punto bajo en la segunda cadeneta desde el ganchillo y en cada cadeneta.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Filas 2 a 18", "instruction": "1 cadeneta, gira, y haz punto bajo en cada punto.", "counterLabel": "row", "targetCount": 18 },
+    { "type": "instruction", "title": "Terminar", "instruction": "Remata y esconde ambas hebras." }
+  ]
+}

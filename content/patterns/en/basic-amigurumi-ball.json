@@ -1,0 +1,15 @@
+{
+  "title": "Basic Amigurumi Ball",
+  "description": "A small stuffed sphere for practicing increases, decreases, and working in continuous rounds.",
+  "materials": ["Worsted yarn", "4 mm hook", "stitch marker", "stuffing", "yarn needle", "scissors"],
+  "skills": ["Magic ring", "single crochet", "increasing", "decreasing", "working in rounds"],
+  "expectationText": "A compact shaping project where increases build the curve, straight rounds add height, and decreases close the form.",
+  "steps": [
+    { "type": "instruction", "title": "Start the center", "instruction": "Make a magic ring and place a stitch marker in the first stitch of each round." },
+    { "type": "round", "title": "Round 1", "instruction": "Work 6 single crochet into the ring and pull the center closed.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "repeat", "title": "Rounds 2 to 4", "instruction": "Increase evenly each round until the piece starts to cup into a rounded shape.", "counterLabel": "round", "targetCount": 4 },
+    { "type": "repeat", "title": "Rounds 5 to 7", "instruction": "Single crochet around without increasing to build the middle of the ball.", "counterLabel": "round", "targetCount": 7 },
+    { "type": "repeat", "title": "Rounds 8 to 10", "instruction": "Decrease evenly each round, adding stuffing before the opening gets too small.", "counterLabel": "round", "targetCount": 10 },
+    { "type": "instruction", "title": "Close", "instruction": "Fasten off, thread the tail through the final stitches, pull closed, and hide the end inside." }
+  ]
+}

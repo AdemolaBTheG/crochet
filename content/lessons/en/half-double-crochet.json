@@ -1,0 +1,18 @@
+{
+  "title": "Half Double Crochet",
+  "description": "A versatile stitch that works up faster than single crochet but stays easy to read.",
+  "content": {
+    "summary": "Half double crochet sits between single and double crochet in height and speed.",
+    "whyItMatters": "It is ideal for scarves, simple garments, and soft, flexible fabric.",
+    "steps": [
+      "Yarn over before inserting the hook.",
+      "Insert the hook into the next stitch and pull up a loop.",
+      "Yarn over and pull through all three loops on the hook."
+    ],
+    "practice": "Work 2 rows of 12 half double crochet stitches.",
+    "commonMistakes": [
+      "Forgetting the first yarn over.",
+      "Pulling through two loops instead of all three."
+    ]
+  }
+}

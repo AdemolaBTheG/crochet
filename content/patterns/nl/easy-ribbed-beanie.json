@@ -1,0 +1,49 @@
+{
+  "title": "Gemakkelijke geribbelde muts",
+  "description": "Een beginnersvriendelijke wearable gemaakt van een geribbelde rechthoek en eenvoudige naad.",
+  "materials": [
+    "Kamgaren",
+    "5,5 mm haak",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Stichting keten",
+    "half stokje",
+    "alleen achterste lus",
+    "naden"
+  ],
+  "expectationText": "Een draagbaar project opgebouwd uit eenvoudige rijen en vervolgens in vorm genaaid, zodat je een echte hoed kunt afwerken zonder ingewikkelde vormgeving.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fundering",
+      "instruction": "Maak voldoende steken om van de rand tot de kruin van de hoed te reiken."
+    },
+    {
+      "type": "row",
+      "title": "Rij 1",
+      "instruction": "Half stokje in de derde losse vanaf de haaknaald en elke losse overdwars.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Rijen 2 tot en met 36",
+      "instruction": "2 losse, keer, en haak een half stokje in de achterste lus, alleen overdwars.",
+      "counterLabel": "row",
+      "targetCount": 36
+    },
+    {
+      "type": "instruction",
+      "title": "Naai de zijkant",
+      "instruction": "Vouw de rechthoek en naai de eerste en laatste rij aan elkaar."
+    },
+    {
+      "type": "instruction",
+      "title": "Sluit de kroon",
+      "instruction": "Weef garen rond de bovenrand, trek strak aan, zet vast en weef de uiteinden in."
+    }
+  ]
+}
+

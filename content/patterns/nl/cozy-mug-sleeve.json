@@ -1,0 +1,50 @@
+{
+  "title": "Gezellige mok mouw",
+  "description": "Een klein rechthoekig project dat om een ​​mok wordt gewikkeld en een eenvoudige afwerking leert.",
+  "materials": [
+    "Kamgaren van katoen",
+    "5 mm haak",
+    "wolnaald",
+    "schaar",
+    "knop"
+  ],
+  "skills": [
+    "Stichting keten",
+    "half stokje",
+    "rijen draaien",
+    "knoop lus"
+  ],
+  "expectationText": "Een praktische rechthoek die verandert in een afgewerkt object met aan het uiteinde een klein verbindingsdetail.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fundering",
+      "instruction": "12 steken lossen voor de hoogte van de mouw."
+    },
+    {
+      "type": "row",
+      "title": "Rij 1",
+      "instruction": "Half stokje in de derde losse vanaf de haaknaald en elke losse overdwars.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Rijen 2 tot en met 18",
+      "instruction": "2 losse, keer en haak een half stokje totdat de mouw om je mok wikkelt.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Voeg een lus toe",
+      "instruction": "Maak een klein lusje aan één korte kant voor de knoopsluiting."
+    },
+    {
+      "type": "instruction",
+      "title": "Bevestig de knop",
+      "instruction": "Naai een knoop aan de tegenoverliggende rand, hecht af en weef de uiteinden weg."
+    }
+  ]
+}
+

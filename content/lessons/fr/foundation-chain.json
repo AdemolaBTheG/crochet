@@ -1,0 +1,19 @@
+{
+  "title": "Chaînette de base",
+  "description": "Réalisez la chaînette de départ utilisée pour les rangs, écharpes, lavettes et bien plus.",
+  "content": {
+    "summary": "Apprenez le mouvement du jeté et créez des mailles en l'air régulières.",
+    "whyItMatters": "La chaînette de base détermine la largeur de nombreux projets débutants.",
+    "steps": [
+      "Commencez par un nœud coulant sur le crochet.",
+      "Faites un jeté d'arrière en avant.",
+      "Passez le fil à travers la boucle sur le crochet.",
+      "Répétez jusqu'à ce que votre chaînette soit régulière."
+    ],
+    "practice": "Faites deux fois une chaînette de 15 mailles et comparez leur régularité.",
+    "commonMistakes": [
+      "Faire des mailles si serrées que le crochet ne peut plus passer.",
+      "Tordre la chaînette et perdre le repère entre l'avant et l'arrière des mailles."
+    ]
+  }
+}

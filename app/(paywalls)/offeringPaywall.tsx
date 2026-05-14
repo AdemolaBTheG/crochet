@@ -1,4 +1,5 @@
 import { useSubscription } from "@/context/SubscriptionContext";
+import { logFirebaseEvent } from '@/services/firebaseAnalytics';
 import { Redirect, router } from "expo-router";
 import { usePostHog } from 'posthog-react-native';
 import React, { useEffect } from "react";
@@ -13,6 +14,7 @@ export default function Paywall() {
 
     useEffect(() => {
         posthog?.capture('Paywall Viewed', { source: 'onboarding' });
+        void logFirebaseEvent('paywall_view', { source: 'offering' });
     }, [posthog]);
 
     useEffect(() => {

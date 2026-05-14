@@ -1,0 +1,19 @@
+{
+  "title": "Cadencia base",
+  "description": "Haz la cadeneta inicial utilizada para filas, bufandas, paños y más.",
+  "content": {
+    "summary": "Aprende el movimiento de lazada y crea cadenetas uniformes.",
+    "whyItMatters": "La cadeneta base determina el ancho de muchos proyectos para principiantes.",
+    "steps": [
+      "Comienza con un nudo corredizo en el ganchillo.",
+      "Haz una lazada de atrás hacia adelante.",
+      "Pasa el hilo por el lazo del ganchillo.",
+      "Repite hasta que tu cadeneta se vea uniforme."
+    ],
+    "practice": "Haz dos veces una cadeneta de 15 puntos y compara qué tan uniformes se ven.",
+    "commonMistakes": [
+      "Hacer cadenetas tan apretadas que el ganchillo no pueda pasar después.",
+      "Torcer la cadeneta y perder el frente y el reverso de los puntos."
+    ]
+  }
+}

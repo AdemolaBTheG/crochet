@@ -1,0 +1,51 @@
+{
+  "title": "Katoenen gezichtsscrubbies",
+  "description": "Een kleine herbruikbare ronde die beginners nog een snelle overwinning met verhogingen oplevert.",
+  "materials": [
+    "Katoenen garen",
+    "4 mm haak",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Magische ring",
+    "enkel haakwerk",
+    "toenemend",
+    "slipsteek verbinden"
+  ],
+  "expectationText": "Een miniproject met lage druk waarbij je een zachte, herbruikbare ronde maakt en oefent om de verhogingen gelijkmatig te houden.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Maak het midden",
+      "instruction": "Begin met een magische ring of ketting van 4 en sluit deze aan tot een lus."
+    },
+    {
+      "type": "round",
+      "title": "Ronde 1",
+      "instruction": "Haak 8 vasten in de middelste ring en sluit af met een halve vaste.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Ronde 2",
+      "instruction": "Haak 2 vasten in elke steek, voor een totaal van 16 steken.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Ronde 3",
+      "instruction": "Wissel 1 vaste af en vervolgens 2 vasten in de volgende steek.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "instruction",
+      "title": "Maak de rand af",
+      "instruction": "Haal de steek langs de rand, hecht af en weef de uiteinden in."
+    }
+  ]
+}
+

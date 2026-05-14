@@ -1,0 +1,14 @@
+{
+  "title": "Panier de rangement épais",
+  "description": "Un projet maison solide pour pratiquer les tours, les côtés et la structure simple.",
+  "materials": ["Fil coton épais", "Crochet 6,5 mm", "Aiguille à laine", "Ciseaux"],
+  "skills": ["Anneau magique", "Maille serrée", "Augmentations", "Travailler dans les brins arrière", "Tours"],
+  "expectationText": "Un objet utile pour la maison où vous passez d'une base plate à des côtés droits et voyez la structure prendre forme.",
+  "steps": [
+    { "type": "instruction", "title": "Commencer la base", "instruction": "Faites un anneau magique et faites 8 mailles serrées dans le centre." },
+    { "type": "round", "title": "Tours 1 à 4", "instruction": "Augmentez régulièrement à chaque tour jusqu'à ce que la base atteigne la largeur souhaitée.", "counterLabel": "round", "targetCount": 4 },
+    { "type": "round", "title": "Former le côté", "instruction": "Faites un tour dans les brins arrière uniquement pour créer un bord net.", "counterLabel": "round", "targetCount": 5 },
+    { "type": "repeat", "title": "Monter les parois", "instruction": "Faites des mailles serrées tout autour sans augmenter jusqu'à ce que le panier soit assez haut.", "counterLabel": "round", "targetCount": 10 },
+    { "type": "instruction", "title": "Finir le bord", "instruction": "Faites un point coulé autour du bord supérieur, arrêtez le fil et rentrez les fils." }
+  ]
+}

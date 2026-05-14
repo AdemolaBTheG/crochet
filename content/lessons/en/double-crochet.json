@@ -1,0 +1,19 @@
+{
+  "title": "Double Crochet",
+  "description": "Build taller stitches for airy fabric and classic granny-square clusters.",
+  "content": {
+    "summary": "Double crochet is tall, rhythmic, and one of the most important stitches to master.",
+    "whyItMatters": "You need it for granny squares, shawls, scarves, and many decorative patterns.",
+    "steps": [
+      "Yarn over before inserting the hook.",
+      "Insert the hook and pull up a loop.",
+      "Yarn over and pull through two loops.",
+      "Yarn over and pull through the final two loops."
+    ],
+    "practice": "Work 2 rows of 10 double crochet stitches.",
+    "commonMistakes": [
+      "Pulling through all loops at once.",
+      "Forgetting the turning-chain height at the start of a row."
+    ]
+  }
+}

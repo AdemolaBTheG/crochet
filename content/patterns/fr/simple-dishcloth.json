@@ -1,0 +1,13 @@
+{
+  "title": "Lavette simple",
+  "description": "Un projet carré pratique pour apprendre les rangs et maîtriser la tension régulière.",
+  "materials": ["Fil de coton", "crochet 5 mm", "aiguille à laine", "ciseaux"],
+  "skills": ["Chaînette de base", "maille serrée", "rangs tournants", "rentrer les fils"],
+  "expectationText": "Un projet en rangs régulier pour pratiquer la tension uniforme, les bords nets et le rythme de retournement de votre ouvrage.",
+  "steps": [
+    { "type": "instruction", "title": "Fondation", "instruction": "Faites 21 mailles en l'air." },
+    { "type": "row", "title": "Rang 1", "instruction": "Maille serrée dans la deuxième maille en l'air depuis le crochet et dans chaque maille en l'air suivante.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Rangs 2 à 18", "instruction": "1 maille en l'air, tournez, et faites une maille serrée dans chaque maille.", "counterLabel": "row", "targetCount": 18 },
+    { "type": "instruction", "title": "Finition", "instruction": "Arrêtez le fil et rentrez les deux brins." }
+  ]
+}

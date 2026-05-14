@@ -1,0 +1,14 @@
+{
+  "title": "Almohadillas faciales de algodón",
+  "description": "Un pequeño círculo reutilizable que da a los principiantes otra victoria rápida con aumentos.",
+  "materials": ["Hilo de algodón", "Ganchillo 4 mm", "Aguja lanera", "Tijeras"],
+  "skills": ["Anillo mágico", "Punto bajo", "Aumentos", "Unión con punto deslizado"],
+  "expectationText": "Un mini proyecto sin presión donde haces un círculo suave y reutilizable y practicas mantener los aumentos uniformes.",
+  "steps": [
+    { "type": "instruction", "title": "Hacer el centro", "instruction": "Comienza con un anillo mágico o 4 cadenetas y une en un círculo." },
+    { "type": "round", "title": "Vuelta 1", "instruction": "Haz 8 puntos bajos en el anillo central y une con un punto deslizado.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Vuelta 2", "instruction": "Haz 2 puntos bajos en cada punto alrededor para un total de 16 puntos.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Vuelta 3", "instruction": "Alterna 1 punto bajo, luego 2 puntos bajos en el siguiente punto alrededor.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Terminar el borde", "instruction": "Haz punto deslizado alrededor del borde, remata y esconde las hebras." }
+  ]
+}

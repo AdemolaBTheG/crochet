@@ -1,0 +1,14 @@
+{
+  "title": "Baumwoll-Gesichtspads",
+  "description": "Eine kleine wiederverwendbare Runde, die Anfängern mit Zunahmen einen weiteren schnellen Erfolg gibt.",
+  "materials": ["Baumwollgarn", "4 mm Häkelnadel", "Sticknadel", "Schere"],
+  "skills": ["Magischer Ring", "Feste Masche", "Zunahmen", "Kettmasche verbinden"],
+  "expectationText": "Ein druckfreies Mini-Projekt, bei dem du eine weiche wiederverwendbare Runde machst und gleichmäßige Zunahmen übst.",
+  "steps": [
+    { "type": "instruction", "title": "Die Mitte machen", "instruction": "Beginne mit einem magischen Ring oder 4 Luftmaschen und verbinde sie zu einem Kreis." },
+    { "type": "round", "title": "Runde 1", "instruction": "Häkle 8 feste Maschen in den Mittelring und verbinde mit einer Kettmasche.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Runde 2", "instruction": "Häkle 2 feste Maschen in jede Masche rundherum für insgesamt 16 Maschen.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Runde 3", "instruction": "Abwechselnd 1 feste Masche, dann 2 feste Maschen in die nächste Masche rundherum häkeln.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Die Kante fertigstellen", "instruction": "Häkle Kettmaschen um die Kante, vernähe den Faden und webe die Enden ein." }
+  ]
+}

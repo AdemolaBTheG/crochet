@@ -1,0 +1,14 @@
+{
+  "title": "Gerippter Scrunchie",
+  "description": "Ein schnelles tragbares Projekt, das um ein Haargummi gearbeitet wird mit anfängerfreundlichen Wiederholungen.",
+  "materials": ["Weiches Garn", "4,5 mm Häkelnadel", "Haargummi", "Sticknadel", "Schere"],
+  "skills": ["Feste Masche", "Halbes Stäbchen", "Um ein Gummiband häkeln", "Verbinden"],
+  "expectationText": "Ein spielerisches schnelles Projekt, bei dem Wiederholung Selbstvertrauen aufbaut und das fertige Ergebnis schenkbar wirkt.",
+  "steps": [
+    { "type": "instruction", "title": "Das Gummiband umhäkeln", "instruction": "Befestige das Garn um das Haargummi und häkle feste Maschen gleichmäßig darum herum." },
+    { "type": "round", "title": "Runde 1", "instruction": "Arbeite genug feste Maschen um das Gummiband, damit das Band vollständig bedeckt ist.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Runde 2", "instruction": "2 Luftmaschen, dann halbe Stäbchen in jede Masche rundherum häkeln.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Runde 3", "instruction": "Häkle eine weitere Runde halbe Stäbchen für einen volleren Scrunchie.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Fertigstellen", "instruction": "Mit Kettmasche verbinden, Faden vernähen und den Restfaden in die Falten einweben." }
+  ]
+}

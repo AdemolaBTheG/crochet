@@ -1,0 +1,52 @@
+{
+  "title": "Stevige opbergmand",
+  "description": "Een stevig thuisproject voor het oefenen van rondes, zijkanten en eenvoudige structuur.",
+  "materials": [
+    "Grof katoengaren",
+    "6,5 mm haak",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Magische ring",
+    "enkel haakwerk",
+    "toenemend",
+    "werken in achterste lussen",
+    "rondes"
+  ],
+  "expectationText": "Een handig huisstuk waarbij je van een vlakke basis naar rechtopstaande zijkanten gaat en de structuur vorm ziet krijgen.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Begin met de basis",
+      "instruction": "Maak een magische ring en haak 8 vasten in het midden."
+    },
+    {
+      "type": "round",
+      "title": "Rondes 1 t/m 4",
+      "instruction": "Verhoog elke ronde gelijkmatig totdat de basis de gewenste breedte heeft bereikt.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "round",
+      "title": "Draai de zijkant",
+      "instruction": "Haak één toer alleen in de achterste lussen om een ​​nette rand te creëren.",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "repeat",
+      "title": "Bouw de muren",
+      "instruction": "Vaste rond zonder te meerderen tot de mand hoog genoeg is.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Maak de rand af",
+      "instruction": "Zet de steek rond de bovenrand, hecht af en weef de uiteinden weg."
+    }
+  ]
+}
+

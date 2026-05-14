@@ -1,0 +1,14 @@
+{
+  "title": "Diadema acanalada",
+  "description": "Un rectángulo elástico y ponible hecho con hileras de solo hebra trasera y una costura simple.",
+  "materials": ["Lana worsted suave", "Ganchillo 5 mm", "Aguja lanera", "Tijeras"],
+  "skills": ["Cadeneta de base", "Medio punto alto", "Solo hebra trasera", "Hileras de vuelta", "Costura"],
+  "expectationText": "Una versión ponible de la práctica de acanalado donde el rectángulo terminado se convierte en algo útil con una unión limpia.",
+  "steps": [
+    { "type": "instruction", "title": "Base", "instruction": "Haz suficientes cadenetas para el ancho de la diadema, generalmente de 10 a 14 puntos." },
+    { "type": "row", "title": "Hilera 1", "instruction": "Medio punto alto en la tercera cadeneta desde el ganchillo y en cada cadeneta siguiente.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Hileras 2 a 32", "instruction": "2 cadenetas, gira y haz medios puntos altos solo en la hebra trasera en cada hilera.", "counterLabel": "row", "targetCount": 32 },
+    { "type": "instruction", "title": "Verificar el ajuste", "instruction": "Envuelve la tira alrededor de tu cabeza con un poco de estiramiento y añade o quita hileras si es necesario." },
+    { "type": "instruction", "title": "Unir", "instruction": "Cose los bordes cortos juntos, remata y esconde las hebras en el acanalado." }
+  ]
+}

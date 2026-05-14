@@ -1,0 +1,14 @@
+{
+  "title": "Marque-page fin",
+  "description": "Un projet étroit en rangs pour pratiquer les bords, la tension et une petite finition à pompon.",
+  "materials": ["Fil de coton", "Crochet 3,5 à 4 mm", "Aiguille à laine", "Ciseaux"],
+  "skills": ["Chaînette de base", "Maille serrée", "Rangs tournants", "Fabrication de pompon"],
+  "expectationText": "Un petit projet soigné qui récompense une tension soignée et vous donne un cadeau fini en moins d'une heure.",
+  "steps": [
+    { "type": "instruction", "title": "Fondation", "instruction": "Faites 8 mailles en l'air pour une largeur de marque-page fine." },
+    { "type": "row", "title": "Rang 1", "instruction": "Maille serrée dans la deuxième maille en l'air depuis le crochet et dans chaque maille suivante.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Rangs 2 à 24", "instruction": "1 maille en l'air, tournez et faites des mailles serrées sur chaque rang.", "counterLabel": "row", "targetCount": 24 },
+    { "type": "instruction", "title": "Ajouter un pompon", "instruction": "Coupez quelques brins de fil et attachez-les à un bord court." },
+    { "type": "instruction", "title": "Finir", "instruction": "Égalisez le pompon et rentrez le fil de début." }
+  ]
+}

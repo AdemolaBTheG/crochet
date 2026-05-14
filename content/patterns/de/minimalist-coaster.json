@@ -1,0 +1,14 @@
+{
+  "title": "Minimalistischer Untersetzer",
+  "description": "Ein schnelles rundes Projekt zum Üben von Runden, Verbinden und einfachen Stichwiederholungen.",
+  "materials": ["Baumwollgarn", "4 bis 5 mm Nadel", "Wollnadel", "Schere"],
+  "skills": ["Magischer Ring", "feste Maschen", "Kettmaschen", "In Runden arbeiten"],
+  "expectationText": "Ein schnelles Rundenprojekt, bei dem du übst, einen flachen Kreis zu bauen, sauber zu verbinden und in einer kurzen Sitzung etwas Nützliches fertigzustellen.",
+  "steps": [
+    { "type": "instruction", "title": "Mittelring machen", "instruction": "Beginne mit einem magischen Ring oder 4 Luftmaschen und schließe zur Schlaufe." },
+    { "type": "round", "title": "Runde 1", "instruction": "Häkle 8 feste Maschen in den Ring und schließe mit einer Kettmasche.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Runde 2", "instruction": "Häkle 2 feste Maschen in jede Masche, insgesamt 16 Maschen.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Runde 3", "instruction": "Wechsle ab: 1 feste Masche, dann 2 feste Maschen in die nächste Masche rundherum.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Fertigstellen", "instruction": "Mit Kettmasche verbinden, abketten und das Ende vernähen." }
+  ]
+}

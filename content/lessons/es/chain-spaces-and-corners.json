@@ -1,0 +1,19 @@
+{
+  "title": "Espacios de cadeneta y esquinas",
+  "description": "Usa espacios de cadeneta para crear huecos, esquinas y puntos de inserción fáciles para puntos más altos.",
+  "content": {
+    "summary": "Los espacios de cadeneta crean estructura en motivos y filas caladas al darte un espacio donde trabajar en lugar de solo un bucle superior.",
+    "whyItMatters": "Proyectos estilo granny, flores y muchos patrones decorativos dependen de leer y usar espacios de cadeneta correctamente.",
+    "steps": [
+      "Teje algunos puntos de cadeneta para crear un hueco entre grupos de puntos.",
+      "En la siguiente fila o vuelta, coloca los puntos en el espacio de cadeneta en lugar de forzarlos en cada cadeneta individual.",
+      "Usa espacios de cadeneta más grandes en las esquinas para que el tejido pueda girar limpiamente.",
+      "Busca el hueco abierto en sí, no solo los bucles superiores, al decidir dónde colocar el siguiente grupo."
+    ],
+    "practice": "Haz una pequeña muestra con espacios de cadeneta entre grupos de puntos y repite una fila más en esos espacios.",
+    "commonMistakes": [
+      "Trabajar en el punto equivocado al lado del hueco en lugar de en el espacio de cadeneta real.",
+      "Hacer espacios de esquina demasiado apretados, lo que hace que los motivos se doblen hacia adentro."
+    ]
+  }
+}

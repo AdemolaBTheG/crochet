@@ -1,0 +1,19 @@
+{
+  "title": "Feste Maschen",
+  "description": "Lerne den nützlichsten Anfängerstich für kompaktes, stabiles Gewebe.",
+  "content": {
+    "summary": "Steche die Nadel ein, hole einen Faden und vervollständige einen einfachen Stich mit zwei Schlaufen auf der Nadel.",
+    "whyItMatters": "Feste Maschen sind ein Kernstich für Untersetzer, Amigurumi, Spültücher und Ränder.",
+    "steps": [
+      "Steche die Nadel in die nächste Masche ein.",
+      "Mache einen Umschlag und ziehe eine Schlaufe hoch.",
+      "Mache einen weiteren Umschlag und ziehe ihn durch beide Schlaufen.",
+      "Wiederhole über die ganze Reihe."
+    ],
+    "practice": "Häkle 3 Reihen mit je 10 festen Maschen.",
+    "commonMistakes": [
+      "Versehentlich die letzte Masche der Reihe auslassen.",
+      "Ohne es zu merken zusätzliche Maschen an den Rändern hinzufügen."
+    ]
+  }
+}

@@ -1,11 +1,16 @@
+import { logFirebaseEvent } from '@/services/firebaseAnalytics';
 import { router } from 'expo-router';
 import { usePostHog } from 'posthog-react-native';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View } from 'react-native';
 import RevenueCatUI from 'react-native-purchases-ui';
 
 export default function Paywall() {
   const posthog = usePostHog();
+
+  useEffect(() => {
+    void logFirebaseEvent('paywall_view', { source: 'onboarding' });
+  }, []);
 
   return (
     <View style={{ flex: 1 }}>

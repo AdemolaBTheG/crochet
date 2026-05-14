@@ -1,0 +1,19 @@
+{
+  "title": "Punto bajo",
+  "description": "Aprende el punto para principiantes más útil para un tejido compacto y resistente.",
+  "content": {
+    "summary": "Inserta el ganchillo, toma una lazada y completa un punto simple con dos lazos en el ganchillo.",
+    "whyItMatters": "El punto bajo es un punto clave para posavasos, amigurumi, paños y bordes.",
+    "steps": [
+      "Inserta el ganchillo en el siguiente punto.",
+      "Haz una lazada y saca un bucle.",
+      "Haz otra lazada y pásala por ambos bucles.",
+      "Repite a lo largo de la fila."
+    ],
+    "practice": "Trabaja 3 filas de 10 puntos bajos.",
+    "commonMistakes": [
+      "Saltarse sin querer el último punto de la fila.",
+      "Añadir puntos extra en los bordes sin darse cuenta."
+    ]
+  }
+}

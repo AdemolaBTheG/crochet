@@ -1,0 +1,14 @@
+{
+  "title": "Bonnet côtelé facile",
+  "description": "Un bonnet adapté aux débutants fabriqué à partir d'un rectangle côtelé et d'une simple couture.",
+  "materials": ["Fil worsted", "Crochet 5,5 mm", "Aiguille à laine", "Ciseaux"],
+  "skills": ["Chaînette de base", "Demi-bride", "Brins arrière uniquement", "Couture"],
+  "expectationText": "Un projet portable construit à partir de rangs simples, puis cousu en forme pour que vous puissiez finir un vrai bonnet sans façonnage complexe.",
+  "steps": [
+    { "type": "instruction", "title": "Fondation", "instruction": "Faites assez de mailles en l'air pour aller du bord à la couronne du bonnet." },
+    { "type": "row", "title": "Rang 1", "instruction": "Demi-bride dans la troisième maille en l'air depuis le crochet et dans chaque maille suivante.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Rangs 2 à 36", "instruction": "2 mailles en l'air, tournez et faites des demi-brides dans le brin arrière uniquement sur tout le rang.", "counterLabel": "row", "targetCount": 36 },
+    { "type": "instruction", "title": "Coudre le côté", "instruction": "Pliez le rectangle et cousez ensemble le premier et le dernier rang." },
+    { "type": "instruction", "title": "Fermer la couronne", "instruction": "Passez le fil autour du bord supérieur, serrez fermement, fixez et rentrez les fils." }
+  ]
+}

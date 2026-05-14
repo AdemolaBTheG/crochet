@@ -1,9 +1,18 @@
 import { theme } from '@/constants/Theme';
+import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Stack } from 'expo-router';
-
 export default function ProjectsStackLayout() {
   return (
-    <Stack>
+    <Stack
+      screenOptions={{
+        headerTransparent: isLiquidGlassAvailable(),
+        headerStyle: {
+          backgroundColor: isLiquidGlassAvailable() ? 'transparent' : theme.colors.background,
+        },
+        contentStyle: {
+          backgroundColor: theme.colors.background,
+        },
+      }}>
       <Stack.Screen name="[id]" />
       <Stack.Screen
         name="chat/[id]"
@@ -11,9 +20,6 @@ export default function ProjectsStackLayout() {
           title: 'Ask AI',
           presentation: 'modal',
           headerLargeTitle: false,
-          headerStyle: {
-            backgroundColor: theme.colors.background,
-          },
         }}
       />
       <Stack.Screen
@@ -21,9 +27,6 @@ export default function ProjectsStackLayout() {
         options={{
           title: 'Project complete',
           headerLargeTitle: false,
-          headerStyle: {
-            backgroundColor: theme.colors.background,
-          },
         }}
       />
     </Stack>

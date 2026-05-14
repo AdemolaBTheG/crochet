@@ -1,0 +1,52 @@
+{
+  "title": "Geribbelde scrunchie",
+  "description": "Een snel draagbaar project gemaakt rond een haarelastiek met beginnersvriendelijke herhalingen.",
+  "materials": [
+    "Zacht garen",
+    "4,5 mm haak",
+    "haar elastisch",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Enkel haakwerk",
+    "half stokje",
+    "rond een elastiek werken",
+    "meedoen"
+  ],
+  "expectationText": "Een speels, snel project waarbij herhaling vertrouwen schept en het eindresultaat een geschenk is.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Bedek het elastiek",
+      "instruction": "Verbind het garen rond het haarelastiek en haak gelijkmatig eromheen."
+    },
+    {
+      "type": "round",
+      "title": "Ronde 1",
+      "instruction": "Haak voldoende vasten rond het elastiek zodat de band volledig bedekt is.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Ronde 2",
+      "instruction": "2 losse, haak dan een half stokje in elke steek rondom.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Ronde 3",
+      "instruction": "Haak nog een toer van een half stokje voor een vollere scrunchie.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Slipsteek om te verbinden, hecht af en weef de staart binnen de plooien."
+    }
+  ]
+}
+

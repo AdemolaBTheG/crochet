@@ -1,0 +1,15 @@
+{
+  "title": "Pelota amigurumi básica",
+  "description": "Una pequeña esfera rellena para practicar aumentos, disminuciones y trabajo en vueltas continuas.",
+  "materials": ["Lana worsted", "Ganchillo 4 mm", "Marcador de puntos", "Relleno", "Aguja lanera", "Tijeras"],
+  "skills": ["Anillo mágico", "Punto bajo", "Aumentos", "Disminuciones", "Trabajar en vueltas"],
+  "expectationText": "Un proyecto compacto de modelado donde los aumentos construyen la curva, las vueltas rectas añaden altura y las disminuciones cierran la forma.",
+  "steps": [
+    { "type": "instruction", "title": "Comenzar el centro", "instruction": "Haz un anillo mágico y coloca un marcador de puntos en el primer punto de cada vuelta." },
+    { "type": "round", "title": "Vuelta 1", "instruction": "Haz 6 puntos bajos en el anillo y cierra el centro tirando.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "repeat", "title": "Vueltas 2 a 4", "instruction": "Aumenta uniformemente en cada vuelta hasta que la pieza comience a curvarse en una forma redondeada.", "counterLabel": "round", "targetCount": 4 },
+    { "type": "repeat", "title": "Vueltas 5 a 7", "instruction": "Haz puntos bajos alrededor sin aumentar para construir el medio de la pelota.", "counterLabel": "round", "targetCount": 7 },
+    { "type": "repeat", "title": "Vueltas 8 a 10", "instruction": "Disminuye uniformemente en cada vuelta, añadiendo relleno antes de que la abertura se vuelva demasiado pequeña.", "counterLabel": "round", "targetCount": 10 },
+    { "type": "instruction", "title": "Cerrar", "instruction": "Remata, pasa la hebra por los últimos puntos, cierra tirando y esconde el extremo dentro." }
+  ]
+}

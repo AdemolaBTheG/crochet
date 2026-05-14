@@ -1,0 +1,14 @@
+{
+  "title": "Chouchou côtelé",
+  "description": "Un projet rapide à porter réalisé autour d'un élastique à cheveux avec des répétitions adaptées aux débutants.",
+  "materials": ["Fil doux", "Crochet 4,5 mm", "Élastique à cheveux", "Aiguille à laine", "Ciseaux"],
+  "skills": ["Maille serrée", "Demi-bride", "Crocheter autour d'un élastique", "Assemblage"],
+  "expectationText": "Un projet rapide et ludique où la répétition renforce la confiance et le résultat final fait un joli cadeau.",
+  "steps": [
+    { "type": "instruction", "title": "Couvrir l'élastique", "instruction": "Attachez le fil autour de l'élastique et faites des mailles serrées régulièrement tout autour." },
+    { "type": "round", "title": "Tour 1", "instruction": "Faites assez de mailles serrées autour de l'élastique pour que le bandeau soit entièrement couvert.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Tour 2", "instruction": "2 mailles en l'air, puis faites des demi-brides dans chaque maille tout autour.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Tour 3", "instruction": "Faites un tour supplémentaire de demi-brides pour un chouchou plus volumineux.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Finir", "instruction": "Assemblez avec un point coulé, arrêtez le fil et cachez le fil restant dans les plis." }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Einfaches Spültuch",
+  "description": "Ein praktisches quadratisches Projekt zum Üben von Reihen und gleichmäßiger Spannung.",
+  "materials": ["Baumwollgarn", "5 mm Nadel", "Wollnadel", "Schere"],
+  "skills": ["Luftmaschenkette", "feste Maschen", "Wendereihen", "Fäden vernähen"],
+  "expectationText": "Ein gleichmäßiges Reihenprojekt zum Üben von gleichmäßiger Spannung, sauberen Kanten und dem Rhythmus des Wendens deiner Arbeit.",
+  "steps": [
+    { "type": "instruction", "title": "Grundlage", "instruction": "Schlage 21 Luftmaschen an." },
+    { "type": "row", "title": "Reihe 1", "instruction": "Häkle feste Maschen ab der zweiten Luftmasche von der Nadel aus.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Reihen 2 bis 18", "instruction": "1 Luftmasche, wenden, und feste Maschen in jede Masche häkeln.", "counterLabel": "row", "targetCount": 18 },
+    { "type": "instruction", "title": "Fertigstellen", "instruction": "Abketten und beide Fadenenden vernähen." }
+  ]
+}

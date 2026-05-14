@@ -15,6 +15,13 @@
       "when": 1775830419428,
       "tag": "0001_flat_inertia",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1777228800000,
+      "tag": "0002_keen_iron_lad",
+      "breakpoints": true
     }
   ]
 }

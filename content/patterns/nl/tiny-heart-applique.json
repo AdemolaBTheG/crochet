@@ -1,0 +1,47 @@
+{
+  "title": "Kleine hart stoffen",
+  "description": "Een klein decoratief hart om in één snelle ronde te oefenen met vormen.",
+  "materials": [
+    "Katoenen garen",
+    "4 mm haak",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Magische ring",
+    "stokjes",
+    "driedubbel gehaakt",
+    "slipsteek"
+  ],
+  "expectationText": "Een klein gevormd motief dat leert hoe de steekhoogte de omtrek van een ontwerp verandert.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Maak de ring",
+      "instruction": "Begin met een magische ring en ketting 2 om de hartvorm te beginnen."
+    },
+    {
+      "type": "round",
+      "title": "Bouw de lobben",
+      "instruction": "Werk grotere steken in de ring om de ronde bovenkant van het hart te vormen.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "instruction",
+      "title": "Vorm het punt",
+      "instruction": "Gebruik kortere steken en vervolgens een langere steek op het onderste punt."
+    },
+    {
+      "type": "instruction",
+      "title": "Sluit het hart",
+      "instruction": "Spiegel de eerste kant, naai vast om te sluiten en trek de ring strak."
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Hecht af en weef de staartjes in de achterkant van het hart."
+    }
+  ]
+}
+

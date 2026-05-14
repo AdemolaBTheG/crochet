@@ -33,3 +33,27 @@ Photorealistic product photo of a handmade chunky crochet storage basket in natu
 ## easy-ribbed-beanie
 
 Photorealistic product photo of a handmade ribbed crochet beanie in soft forest green yarn, folded brim, placed on a neutral wool coat or cream fabric, visible back-loop ribbing texture, cozy winter accessory styling, soft natural light, portrait 4:5, no text, no watermark.
+
+## round-trivet
+
+Photorealistic product photo of a handmade round crochet trivet in thick natural cotton yarn, slightly larger and sturdier than a coaster, flat even circular shaping visible, placed on a light wood kitchen table with a warm ceramic dish nearby, clean modern home styling, soft daylight, portrait 4:5, no text, no watermark.
+
+## granny-stripe-scarf
+
+Photorealistic product photo of a handmade crochet granny stripe scarf in warm rust, cream, and muted blush yarn, long soft drape with visible open cluster rows and chain spaces, styled loosely on a neutral linen background, cozy editorial accessory mood, soft natural light, portrait 4:5, no text, no watermark.
+
+## ribbed-washcloth
+
+Photorealistic product photo of a handmade ribbed crochet washcloth in soft cream cotton yarn, clear back-loop-only ridges visible across a neat square, folded slightly on a bathroom counter beside a ceramic soap dish, calm minimal spa styling, natural window light, portrait 4:5, no text, no watermark.
+
+## basic-amigurumi-ball
+
+Photorealistic product photo of a small handmade crochet amigurumi ball in soft sage green yarn, round stuffed shape with tight single crochet stitches and a tiny yarn tail tucked away, placed on warm off-white fabric with minimal craft tools nearby, clean modern handmade styling, soft natural light, portrait 4:5, no text, no watermark.
+
+## ribbed-headband
+
+Photorealistic product photo of a handmade ribbed crochet headband in deep berry yarn, wide stretchy band with visible back-loop ribbing and a clean seam hidden at the back, styled flat on neutral linen with subtle winter accessory details, soft daylight, portrait 4:5, no text, no watermark.
+
+## simple-drawstring-pouch
+
+Photorealistic product photo of a small handmade crochet drawstring pouch in muted teal cotton yarn, round base and upright sides with a simple chained drawstring threaded near the top, placed on a light wooden surface with a few small notions beside it, clean giftable craft aesthetic, soft natural light, portrait 4:5, no text, no watermark.

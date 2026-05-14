@@ -1,3 +1,4 @@
+import { NavigationHeaderAction } from '@/components/navigation-header-action';
 import { PressableScale } from '@/components/pressable-scale';
 import type { ProjectChatStep } from '@/components/project-chat';
 import { theme } from '@/constants/Theme';
@@ -8,10 +9,9 @@ import {
   type Pattern,
   type Project,
 } from '@/db/schema';
+import { resolvePatternTranslation, type ResolvedPattern } from '@/db/translations';
 import { useDbStore } from '@/stores/dbStore';
-
 import { Host, Text as SwiftText } from '@expo/ui/swift-ui';
-
 import {
   Animation,
   contentTransition,
@@ -23,11 +23,12 @@ import {
 } from '@expo/ui/swift-ui/modifiers';
 import { eq } from 'drizzle-orm';
 import * as Haptics from 'expo-haptics';
-
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   ActivityIndicator,
+  Platform,
   Pressable,
   ScrollView,
   Text,
@@ -161,6 +162,7 @@ function StepProgressLabel({
   currentStep: number;
   totalSteps: number;
 }) {
+  const isIOS = process.env.EXPO_OS === 'ios';
   const labelModifiers = useMemo(
     () => [
       font({ size: theme.size.md, weight: 'semibold', design: 'rounded' }),
@@ -173,16 +175,36 @@ function StepProgressLabel({
     [currentStep],
   );
 
+  if (isIOS) {
+    return (
+      <Host matchContents style={{ width: 86, height: 24, alignSelf: 'flex-end' }}>
+        <SwiftText modifiers={labelModifiers}>
+          {currentStep}/{totalSteps} steps
+        </SwiftText>
+      </Host>
+    );
+  }
+
   return (
-    <Host matchContents style={{ width: 86, height: 24, alignSelf: 'flex-end' }}>
-      <SwiftText modifiers={labelModifiers}>
+    <View style={{ width: 86, height: 24, alignSelf: 'flex-end' }}>
+      <Text
+        selectable={false}
+        style={{
+          minWidth: 82,
+          fontSize: theme.size.md,
+          fontWeight: theme.weight.semibold,
+          color: theme.colors.textSecondary,
+          fontVariant: ['tabular-nums'],
+          textAlign: 'right',
+        }}>
         {currentStep}/{totalSteps} steps
-      </SwiftText>
-    </Host>
+      </Text>
+    </View>
   );
 }
 
 function CounterValueText({ value }: { value: number }) {
+  const isIOS = process.env.EXPO_OS === 'ios';
   const counterModifiers = useMemo(
     () => [
       font({ size: theme.size['3xl'], weight: 'bold', design: 'rounded' }),
@@ -194,14 +216,33 @@ function CounterValueText({ value }: { value: number }) {
     [value],
   );
 
+  if (isIOS) {
+    return (
+      <Host matchContents={false} style={{ width: 104, height: 48 }}>
+        <SwiftText modifiers={counterModifiers}>{value.toString()}</SwiftText>
+      </Host>
+    );
+  }
+
   return (
-    <Host matchContents={false} style={{ width: 104, height: 48 }}>
-      <SwiftText modifiers={counterModifiers}>{value.toString()}</SwiftText>
-    </Host>
+    <View style={{ width: 104, height: 48 }}>
+      <Text
+        selectable={false}
+        style={{
+          fontSize: theme.size['3xl'],
+          fontWeight: theme.weight.bold,
+          color: theme.colors.textPrimary,
+          fontVariant: ['tabular-nums'],
+          textAlign: 'center',
+        }}>
+        {value.toString()}
+      </Text>
+    </View>
   );
 }
 
 function TargetCountText({ value, label }: { value: number; label: string }) {
+  const isIOS = process.env.EXPO_OS === 'ios';
   const targetLabel = `${label}${value === 1 ? '' : 's'}`;
   const targetModifiers = useMemo(
     () => [
@@ -214,12 +255,30 @@ function TargetCountText({ value, label }: { value: number; label: string }) {
     [value],
   );
 
+  if (isIOS) {
+    return (
+      <Host matchContents={false} style={{ width: 148, height: 24, alignSelf: 'center' }}>
+        <SwiftText modifiers={targetModifiers}>
+          Target: {value} {targetLabel}
+        </SwiftText>
+      </Host>
+    );
+  }
+
   return (
-    <Host matchContents={false} style={{ width: 148, height: 24, alignSelf: 'center' }}>
-      <SwiftText modifiers={targetModifiers}>
+    <View style={{ width: 148, height: 24, alignSelf: 'center' }}>
+      <Text
+        selectable={false}
+        style={{
+          fontSize: theme.size.md,
+          fontWeight: theme.weight.regular,
+          color: theme.colors.textSecondary,
+          fontVariant: ['tabular-nums'],
+          textAlign: 'center',
+        }}>
         Target: {value} {targetLabel}
-      </SwiftText>
-    </Host>
+      </Text>
+    </View>
   );
 }
 
@@ -423,11 +482,13 @@ export default function ProjectDetailScreen() {
   const { width } = useWindowDimensions();
   const { db } = useDbStore();
   const { isPro } = useSubscription();
+  const { i18n } = useTranslation();
   const stepListRef = useRef<FlatList<PatternStep>>(null);
   const hasPositionedStepListRef = useRef(false);
   const isProgrammaticStepScrollRef = useRef(false);
   const [project, setProject] = useState<Project | null>(null);
-  const [pattern, setPattern] = useState<Pattern | null>(null);
+  const [pattern, setPattern] = useState<ResolvedPattern | null>(null);
+  const [patternBase, setPatternBase] = useState<Pattern | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedStepIndex, setSelectedStepIndex] = useState(0);
   const projectId = Number(id);
@@ -455,9 +516,22 @@ export default function ProjectDetailScreen() {
               .limit(1)
           : [];
 
-        if (isMounted) {
+        const patternRow = patternResult[0] ?? null;
+
+        if (isMounted && patternRow) {
+          const resolved = await resolvePatternTranslation(
+            db,
+            patternRow,
+            i18n.language,
+          );
           setProject(projectRow);
-          setPattern(patternResult[0] ?? null);
+          setPattern(resolved);
+          setPatternBase(patternRow);
+          setSelectedStepIndex(projectRow?.currentStepIndex ?? 0);
+        } else if (isMounted) {
+          setProject(projectRow);
+          setPattern(null);
+          setPatternBase(null);
           setSelectedStepIndex(projectRow?.currentStepIndex ?? 0);
         }
       } finally {
@@ -472,9 +546,9 @@ export default function ProjectDetailScreen() {
     return () => {
       isMounted = false;
     };
-  }, [db, projectId]);
+  }, [db, projectId, i18n.language]);
 
-  const steps = useMemo(() => parseSteps(pattern?.stepsJson ?? null), [pattern]);
+  const steps = pattern?.steps ?? [];
   const currentStepIndex = Math.min(selectedStepIndex, Math.max(steps.length - 1, 0));
   const currentStep = steps[currentStepIndex] ?? null;
   const progress = steps.length > 0 ? (currentStepIndex + 1) / steps.length : 0;
@@ -630,14 +704,26 @@ export default function ProjectDetailScreen() {
           headerStyle: {
             backgroundColor: theme.colors.background,
           },
-          unstable_headerLeftItems: () => [
-            {
-              type: 'button' as const,
-              label: 'Close',
-              icon: { type: 'sfSymbol' as const, name: 'chevron.backward' },
-              onPress: () => router.back(),
-            },
-          ],
+          ...(Platform.OS === 'ios'
+            ? {
+                unstable_headerLeftItems: () => [
+                  {
+                    type: 'button' as const,
+                    label: 'Close',
+                    icon: { type: 'sfSymbol' as const, name: 'chevron.backward' },
+                    onPress: () => router.back(),
+                  },
+                ],
+              }
+            : {
+                headerLeft: () => (
+                  <NavigationHeaderAction
+                    label="Close"
+                    icon="chevron-left"
+                    onPress={() => router.back()}
+                  />
+                ),
+              }),
         }}
       />
       <View style={{ flex: 1, backgroundColor: theme.colors.background }}>

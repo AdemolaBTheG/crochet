@@ -26,7 +26,7 @@ export function useSubscriptionStatus(enabled = true): SubscriptionStatus {
     }
 
     let isMounted = true;
-    Purchases.addCustomerInfoUpdateListener(handleCustomerInfo);
+    let hasListener = false;
 
     const fetchInitialStatus = async () => {
       setIsLoading(true);
@@ -41,6 +41,9 @@ export function useSubscriptionStatus(enabled = true): SubscriptionStatus {
           }
           return;
         }
+
+        Purchases.addCustomerInfoUpdateListener(handleCustomerInfo);
+        hasListener = true;
 
         const customerInfo = await Purchases.getCustomerInfo();
 
@@ -61,7 +64,9 @@ export function useSubscriptionStatus(enabled = true): SubscriptionStatus {
 
     return () => {
       isMounted = false;
-      Purchases.removeCustomerInfoUpdateListener(handleCustomerInfo);
+      if (hasListener) {
+        Purchases.removeCustomerInfoUpdateListener(handleCustomerInfo);
+      }
     };
   }, [enabled]);
 

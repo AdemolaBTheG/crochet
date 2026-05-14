@@ -87,7 +87,7 @@ function SettingsSectionCard({ rows }: { rows: SettingsRow[] }) {
             </View>
 
             <SymbolView
-              name="chevron.forward"
+              name={{ ios: 'chevron.forward', android: 'chevron_right', web: 'chevron_right' }}
               size={15}
               weight="semibold"
               tintColor={theme.colors.textTertiary}
@@ -132,7 +132,7 @@ export default function SettingsScreen() {
           {
             id: 'feedback',
             label: t('settings.rows.sendFeedback'),
-            icon: 'envelope.fill',
+            icon: { ios: 'envelope.fill', android: 'mail', web: 'mail' },
             onPress: () => {
               void Linking.openURL(`mailto:${supportEmail}`);
             },
@@ -140,7 +140,7 @@ export default function SettingsScreen() {
           {
             id: 'rate-app',
             label: t('settings.rows.rateApp'),
-            icon: 'star.fill',
+            icon: { ios: 'star.fill', android: 'star', web: 'star' },
             onPress: () => {
               void askForReview({ source: 'settings', force: true });
             },
@@ -148,7 +148,7 @@ export default function SettingsScreen() {
           {
             id: 'customer-center',
             label: t('settings.rows.customerCenter'),
-            icon: 'questionmark.circle.fill',
+            icon: { ios: 'questionmark.circle.fill', android: 'help', web: 'help' },
             onPress: () => {
               void openCustomerCenter();
             },
@@ -163,7 +163,7 @@ export default function SettingsScreen() {
           {
             id: 'terms',
             label: t('settings.rows.terms'),
-            icon: 'doc.text.fill',
+            icon: { ios: 'doc.text.fill', android: 'description', web: 'description' },
             onPress: () => {
               void Linking.openURL(termsUrl);
             },
@@ -171,7 +171,7 @@ export default function SettingsScreen() {
           {
             id: 'privacy',
             label: t('settings.rows.privacyPolicy'),
-            icon: 'lock.fill',
+            icon: { ios: 'lock.fill', android: 'lock', web: 'lock' },
             onPress: () => {
               void Linking.openURL(privacyUrl);
             },
@@ -217,7 +217,7 @@ export default function SettingsScreen() {
                   gap: theme.spacing.md,
                 }}>
                 <SymbolView
-                  name="sparkles"
+                  name={{ ios: 'sparkles', android: 'auto_awesome', web: 'auto_awesome' }}
                   size={32}
                   weight="semibold"
                   tintColor={theme.colors.white}

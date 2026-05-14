@@ -1,0 +1,19 @@
+{
+  "title": "Aumentos y disminuciones",
+  "description": "Da forma al tejido de crochet añadiendo o quitando puntos sin perder la cuenta.",
+  "content": {
+    "summary": "Aprende a hacer dos puntos en un mismo espacio para aumentar, y a combinar puntos para disminuir.",
+    "whyItMatters": "Dar forma te permite construir círculos planos, formas redondas y piezas mejor ajustadas en lugar de solo rectángulos planos.",
+    "steps": [
+      "Para aumentar, trabaja dos puntos en el mismo punto o espacio.",
+      "Para disminuir en punto bajo, inserta en el siguiente punto, saca un bucle, inserta en el punto siguiente, saca un bucle, luego haz una lazada y pásala por todos los bucles.",
+      "Cuenta los puntos al final de cada fila o vuelta para que la forma sea intencional.",
+      "Coloca los aumentos de manera uniforme para que el tejido quede plano en lugar de ondularse."
+    ],
+    "practice": "Haz una muestra con aumentos emparejados y otra con disminuciones simples, luego cuenta los puntos después de cada fila.",
+    "commonMistakes": [
+      "Aumentar en lugares aleatorios y deformar el tejido sin querer.",
+      "Olvidar dónde empezó la disminución y perder un punto de la cuenta."
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Trabajar en filas",
+  "description": "Aprende cuándo girar tu labor y cómo mantener constante el número de puntos.",
+  "content": {
+    "summary": "Las filas te enseñan a girar la labor, usar cadenetas de giro y evitar crecer o encoger sin querer.",
+    "whyItMatters": "Los paños y bufandas dependen de filas estables y bordes uniformes.",
+    "steps": [
+      "Termina una fila y haz las cadenetas de giro correctas.",
+      "Gira la labor para que la parte trasera quede frente a ti.",
+      "Comienza la siguiente fila en el punto correcto para ese tipo de punto.",
+      "Cuenta los puntos al final de cada fila."
+    ],
+    "practice": "Haz una muestra de 5 filas y cuenta los puntos después de cada fila.",
+    "commonMistakes": [
+      "Trabajar sin querer en las cadenetas de giro.",
+      "Saltarse el último punto del borde."
+    ]
+  }
+}

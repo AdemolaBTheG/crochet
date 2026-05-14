@@ -1,0 +1,14 @@
+{
+  "title": "Cotton Face Scrubbies",
+  "description": "A tiny reusable round that gives beginners another fast win with increases.",
+  "materials": ["Cotton yarn", "4 mm hook", "yarn needle", "scissors"],
+  "skills": ["Magic ring", "single crochet", "increasing", "slip stitch joining"],
+  "expectationText": "A low-pressure mini project where you make a soft reusable round and practice keeping increases even.",
+  "steps": [
+    { "type": "instruction", "title": "Make the center", "instruction": "Start with a magic ring or chain 4 and join into a loop." },
+    { "type": "round", "title": "Round 1", "instruction": "Work 8 single crochet into the center ring and join with a slip stitch.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Round 2", "instruction": "Work 2 single crochet into each stitch around for 16 stitches total.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Round 3", "instruction": "Alternate 1 single crochet, then 2 single crochet in the next stitch around.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Finish the edge", "instruction": "Slip stitch around the edge, fasten off, and weave in the ends." }
+  ]
+}

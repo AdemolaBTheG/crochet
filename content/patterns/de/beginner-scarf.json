@@ -1,0 +1,13 @@
+{
+  "title": "Anfängerschal",
+  "description": "Ein langes, wiederholendes Projekt, das Reihenzählen wirklich nützlich macht.",
+  "materials": ["Weiches Kammgarn", "5,5 mm Nadel", "Wollnadel", "Schere"],
+  "skills": ["Luftmaschenkette", "halbe Stäbchen", "Wendereihen", "Reihen zählen"],
+  "expectationText": "Ein längeres Wiederholprojekt, bei dem die App dir hilft, auf Kurs zu bleiben, ohne jede Reihe von vorne neu zu zählen.",
+  "steps": [
+    { "type": "instruction", "title": "Grundlage", "instruction": "Schlage 26 Luftmaschen an." },
+    { "type": "row", "title": "Reihe 1", "instruction": "Halbe Stäbchen ab der dritten Luftmasche von der Nadel aus häkeln.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Reihen 2 bis 40", "instruction": "2 Luftmaschen, wenden, und halbe Stäbchen über die Reihe häkeln.", "counterLabel": "row", "targetCount": 40 },
+    { "type": "instruction", "title": "Fertigstellen", "instruction": "Abketten, Fäden vernähen und bei Bedarf leicht spannen." }
+  ]
+}

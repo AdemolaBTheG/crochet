@@ -1,0 +1,58 @@
+{
+  "title": "Eenvoudig zakje met trekkoord",
+  "description": "Een kleine tas die van een ronde basis naar rechte zijkanten werkte met een trekkoord met ketting.",
+  "materials": [
+    "Katoenen garen",
+    "4,5 mm haak",
+    "steekmarkering",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Magische ring",
+    "enkel haakwerk",
+    "toenemend",
+    "in rondes werken",
+    "funderingsketen"
+  ],
+  "expectationText": "Een handige kleine container die de beweging van een platte, ronde basis naar eenvoudige rechtopstaande zijkanten leert.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Begin met de basis",
+      "instruction": "Maak een magische ring of ketting van 4 en sluit deze aan tot een lus."
+    },
+    {
+      "type": "round",
+      "title": "Ronde 1",
+      "instruction": "Haak 8 vasten in het midden en markeer de eerste steek.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Rondes 2 t/m 4",
+      "instruction": "Verhoog elke ronde gelijkmatig totdat de basis breed genoeg is voor een klein zakje.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "repeat",
+      "title": "Rounds 5 to 14",
+      "instruction": "Vaste rond zonder te meerderen om de zijkanten op te bouwen.",
+      "counterLabel": "round",
+      "targetCount": 14
+    },
+    {
+      "type": "instruction",
+      "title": "Maak het trekkoord",
+      "instruction": "Maak een ketting van een koord dat lang genoeg is om rond de opening van het zakje te wikkelen, en vlecht het dan door de ruimtes aan de bovenrand."
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Maak kleine knoopjes aan de uiteinden van het trekkoord, hecht af en weef de resterende staarten erin."
+    }
+  ]
+}
+

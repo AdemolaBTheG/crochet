@@ -1,0 +1,19 @@
+{
+  "title": "Foundation Chain",
+  "description": "Make the starting chain used for rows, scarves, dishcloths, and more.",
+  "content": {
+    "summary": "Learn the yarn-over motion and create even chain stitches.",
+    "whyItMatters": "The foundation chain determines the width of many beginner projects.",
+    "steps": [
+      "Start with a slip knot on the hook.",
+      "Yarn over from back to front.",
+      "Pull the yarn through the loop on the hook.",
+      "Repeat until your chain length looks even."
+    ],
+    "practice": "Chain 15 stitches twice and compare how even they look.",
+    "commonMistakes": [
+      "Making chains so tight the hook cannot pass through them later.",
+      "Twisting the chain and losing the front vs back of the stitches."
+    ]
+  }
+}

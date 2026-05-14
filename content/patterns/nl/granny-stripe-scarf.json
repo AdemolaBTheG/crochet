@@ -1,0 +1,51 @@
+{
+  "title": "Oma gestreepte sjaal",
+  "description": "Een gemakkelijke sjaal opgebouwd uit herhalende clustergroepen en kettingruimtes.",
+  "materials": [
+    "Zacht kamgaren",
+    "5,5 mm haak",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Stichting keten",
+    "stokjes",
+    "kettingruimtes",
+    "rijen draaien"
+  ],
+  "expectationText": "Een lang herhaalproject waarbij je stopt met het tellen van individuele steken en in plaats daarvan spaties en clusters gaat lezen.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fundering",
+      "instruction": "Maak een ketting van 27 steken of een veelvoud van 3 plus 3 voor een bredere sjaal."
+    },
+    {
+      "type": "row",
+      "title": "Rij 1",
+      "instruction": "Werk groepen van 3 stokjes met overgeslagen ruimtes ertussen om te beginnen met de granny-streepindeling.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Rij 2",
+      "instruction": "3 lossen, keer en werk de volgende groepen in de ruimtes tussen de clusters van de vorige rij.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Rijen 3 t/m 24",
+      "instruction": "Herhaal dezelfde clusterplaatsing in elke kettingruimte in de rij totdat de sjaal de gewenste lengte heeft bereikt.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Hecht af, weef de uiteinden in en voeg alleen franjes toe als je extra textuur wilt."
+    }
+  ]
+}
+

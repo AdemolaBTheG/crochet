@@ -1,0 +1,19 @@
+{
+  "title": "Increasing and Decreasing",
+  "description": "Shape crochet fabric by adding or removing stitches without losing count.",
+  "content": {
+    "summary": "Learn how to make two stitches in one space to increase, and combine stitches to decrease.",
+    "whyItMatters": "Shaping lets you build flat circles, rounded forms, and neater fitted pieces instead of only flat rectangles.",
+    "steps": [
+      "To increase, work two stitches into the same stitch or space.",
+      "To decrease in single crochet, insert into the next stitch, pull up a loop, insert into the following stitch, pull up a loop, then yarn over and pull through all loops.",
+      "Count stitches at the end of each row or round so shaping stays intentional.",
+      "Practice placing increases evenly so the fabric stays flat instead of ruffling."
+    ],
+    "practice": "Make one swatch with paired increases and one swatch with simple decreases, then count the stitches after each row.",
+    "commonMistakes": [
+      "Increasing in random places and accidentally warping the fabric.",
+      "Forgetting where the decrease started and dropping a stitch from the count."
+    ]
+  }
+}

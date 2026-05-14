@@ -1,5 +1,7 @@
 import { FREE_ACTIVE_PROJECT_LIMIT, isPatternFree } from '@/constants/gates';
 import { patternImages, type PatternImageKey } from '@/constants/pattern-images';
+import { NavigationHeaderAction } from '@/components/navigation-header-action';
+import { PressableScale } from '@/components/pressable-scale';
 import { theme } from '@/constants/Theme';
 import { useSubscription } from '@/context/SubscriptionContext';
 import {
@@ -8,6 +10,11 @@ import {
   type Pattern,
   type Project,
 } from '@/db/schema';
+import {
+  resolvePatternTranslation,
+  type ResolvedPattern,
+} from '@/db/translations';
+import { logFirebaseEvent } from '@/services/firebaseAnalytics';
 import { useDbStore } from '@/stores/dbStore';
 import { Host, Button as SwiftUIButton } from '@expo/ui/swift-ui';
 import { buttonStyle, controlSize, disabled, tint } from '@expo/ui/swift-ui/modifiers';
@@ -25,7 +32,14 @@ import {
 import { SymbolView } from 'expo-symbols';
 import React, { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ActivityIndicator, ScrollView, Text, View, useWindowDimensions } from 'react-native';
+import {
+  ActivityIndicator,
+  Platform,
+  ScrollView,
+  Text,
+  View,
+  useWindowDimensions,
+} from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -135,33 +149,23 @@ function MetaStatCard({
   );
 }
 
-function parseMaterials(materialsText: string | null) {
-  if (!materialsText) return [];
-
-  return materialsText
-    .split(',')
-    .map((item) => item.trim().replace(/\.$/, ''))
-    .filter(Boolean);
-}
-
-function parseSkills(skillsText: string | null) {
-  if (!skillsText) return [];
-
-  return skillsText
-    .split(',')
-    .map((item) => item.trim().replace(/\.$/, ''))
-    .filter(Boolean);
-}
-
 function getMaterialIcon(material: string): React.ComponentProps<typeof SymbolView>['name'] {
   const value = material.toLowerCase();
 
-  if (value.includes('yarn')) return 'circle.hexagongrid.fill';
-  if (value.includes('hook')) return 'wrench.adjustable.fill';
-  if (value.includes('needle')) return 'pin.fill';
-  if (value.includes('scissors')) return 'scissors';
+  if (value.includes('yarn')) {
+    return { ios: 'circle.hexagongrid.fill', android: 'deployed_code', web: 'deployed_code' };
+  }
+  if (value.includes('hook')) {
+    return { ios: 'wrench.adjustable.fill', android: 'construction', web: 'construction' };
+  }
+  if (value.includes('needle')) {
+    return { ios: 'pin.fill', android: 'push_pin', web: 'push_pin' };
+  }
+  if (value.includes('scissors')) {
+    return { ios: 'scissors', android: 'content_cut', web: 'content_cut' };
+  }
 
-  return 'basket.fill';
+  return { ios: 'basket.fill', android: 'shopping_basket', web: 'shopping_basket' };
 }
 
 function MaterialPill({ material }: { material: string }) {
@@ -321,7 +325,11 @@ function getProjectCounterSummary(
       : t('patternDetail.counterRows', { count: project.rowCount });
 
     return {
-      icon: 'list.number' as const,
+      icon: {
+        ios: 'list.number',
+        android: 'format_list_numbered',
+        web: 'format_list_numbered',
+      } as const,
       label,
     };
   }
@@ -335,7 +343,7 @@ function getProjectCounterSummary(
       : t('patternDetail.counterRounds', { count: project.roundCount });
 
     return {
-      icon: 'arrow.triangle.2.circlepath' as const,
+      icon: { ios: 'arrow.triangle.2.circlepath', android: 'sync', web: 'sync' } as const,
       label,
     };
   }
@@ -395,7 +403,7 @@ function getFlowLabel(
 }
 
 export default function PatternDetailScreen() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const router = useRouter();
   const insets = useSafeAreaInsets();
@@ -403,7 +411,8 @@ export default function PatternDetailScreen() {
   const { width } = useWindowDimensions();
   const { db } = useDbStore();
   const { isPro } = useSubscription();
-  const [pattern, setPattern] = useState<Pattern | null>(null);
+  const [pattern, setPattern] = useState<ResolvedPattern | null>(null);
+  const [patternBase, setPatternBase] = useState<Pattern | null>(null);
   const [activeProject, setActiveProject] = useState<Project | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [isStartingProject, setIsStartingProject] = useState(false);
@@ -439,9 +448,19 @@ export default function PatternDetailScreen() {
               .limit(1)
           : [];
 
-        if (isMounted) {
-          setPattern(patternRow);
+        if (isMounted && patternRow) {
+          const resolved = await resolvePatternTranslation(
+            db,
+            patternRow,
+            i18n.language,
+          );
+          setPattern(resolved);
+          setPatternBase(patternRow);
           setActiveProject(projectResult[0] ?? null);
+        } else if (isMounted) {
+          setPattern(null);
+          setPatternBase(null);
+          setActiveProject(null);
         }
       } finally {
         if (isMounted) {
@@ -455,18 +474,11 @@ export default function PatternDetailScreen() {
     return () => {
       isMounted = false;
     };
-  }, [db, slug]);
+  }, [db, slug, i18n.language]);
 
-  const steps = useMemo(() => {
-    if (!pattern) return [];
-    try {
-      return JSON.parse(pattern.stepsJson) as PatternStep[];
-    } catch {
-      return [];
-    }
-  }, [pattern]);
-  const materials = useMemo(() => parseMaterials(pattern?.materialsText ?? null), [pattern]);
-  const skills = useMemo(() => parseSkills(pattern?.skillsText ?? null), [pattern]);
+  const steps = pattern?.steps ?? [];
+  const materials = pattern?.materials ?? [];
+  const skills = pattern?.skills ?? [];
   const trackedStepCount = useMemo(
     () => steps.filter((step) => typeof step.targetCount === 'number').length,
     [steps],
@@ -499,14 +511,26 @@ export default function PatternDetailScreen() {
     () => ({
       title: pattern?.title ?? t('patternDetail.pattern'),
       headerTransparent: liquidGlassAvailable,
-      unstable_headerLeftItems: () => [
-        {
-          type: 'button' as const,
-          label: t('shared.close'),
-          icon: { type: 'sfSymbol' as const, name: 'chevron.backward' },
-          onPress: () => router.back(),
-        },
-      ],
+      ...(Platform.OS === 'ios'
+        ? {
+            unstable_headerLeftItems: () => [
+              {
+                type: 'button' as const,
+                label: t('shared.close'),
+                icon: { type: 'sfSymbol' as const, name: 'chevron.backward' },
+                onPress: () => router.back(),
+              },
+            ],
+          }
+        : {
+            headerLeft: () => (
+              <NavigationHeaderAction
+                label={t('shared.close')}
+                icon="chevron-left"
+                onPress={() => router.back()}
+              />
+            ),
+          }),
     }),
     [liquidGlassAvailable, pattern?.title, router, t],
   );
@@ -567,6 +591,15 @@ export default function PatternDetailScreen() {
           .returning();
 
         project = createdProject[0] ?? null;
+
+        if (project) {
+          void logFirebaseEvent('project_start', {
+            pattern_slug: pattern.slug,
+            pattern_title: pattern.title,
+            difficulty: pattern.difficulty,
+            category: pattern.category ?? null,
+          });
+        }
       }
 
       if (!project) return;
@@ -704,7 +737,11 @@ export default function PatternDetailScreen() {
                           marginTop: activeProjectCounterSummary ? 0 : theme.spacing.xs,
                         }}>
                         <SymbolView
-                          name="clock.arrow.circlepath"
+                          name={{
+                            ios: 'clock.arrow.circlepath',
+                            android: 'history',
+                            web: 'history',
+                          }}
                           size={14}
                           weight="semibold"
                           tintColor={theme.colors.textTertiary}
@@ -727,19 +764,19 @@ export default function PatternDetailScreen() {
 
               <View style={{ flexDirection: 'row', gap: metaGap, justifyContent: 'center' }}>
                 <MetaStatCard
-                  icon="dial.medium.fill"
+                  icon={{ ios: 'dial.medium.fill', android: 'tune', web: 'tune' }}
                   label={t('patternDetail.difficulty')}
                   value={pattern.difficulty}
                   size={metaCardSize}
                 />
                 <MetaStatCard
-                  icon="square.grid.2x2.fill"
+                  icon={{ ios: 'square.grid.2x2.fill', android: 'grid_view', web: 'grid_view' }}
                   label={t('patternDetail.category')}
                   value={pattern.category ?? t('patternDetail.general')}
                   size={metaCardSize}
                 />
                 <MetaStatCard
-                  icon="clock.fill"
+                  icon={{ ios: 'clock.fill', android: 'schedule', web: 'schedule' }}
                   label={t('patternDetail.time')}
                   value={t('patternDetail.minutesShort', { count: pattern.estimatedMinutes ?? 0 })}
                   size={metaCardSize}
@@ -853,21 +890,59 @@ export default function PatternDetailScreen() {
         </ScrollView>
 
         {pattern ? (
-          <Host
-            matchContents={false}
-            style={{
-              position: 'absolute',
-              bottom: insets.bottom + 24,
-              left: (width - ctaWidth) / 2,
-              width: ctaWidth,
-              height: 56,
-            }}>
-            <SwiftUIButton
-              label={ctaLabel}
-              onPress={() => void handleStartProject()}
-              modifiers={ctaModifiers}
-            />
-          </Host>
+          process.env.EXPO_OS === 'ios' ? (
+            <Host
+              matchContents={false}
+              style={{
+                position: 'absolute',
+                bottom: insets.bottom + 24,
+                left: (width - ctaWidth) / 2,
+                width: ctaWidth,
+                height: 56,
+              }}>
+              <SwiftUIButton
+                label={ctaLabel}
+                onPress={() => void handleStartProject()}
+                modifiers={ctaModifiers}
+              />
+            </Host>
+          ) : (
+            <View
+              style={{
+                position: 'absolute',
+                bottom: insets.bottom + 24,
+                left: (width - ctaWidth) / 2,
+                width: ctaWidth,
+                height: 56,
+              }}>
+              <PressableScale
+                disabled={isStartingProject}
+                onPress={() => void handleStartProject()}
+                accessibilityRole="button"
+                accessibilityLabel={ctaLabel}
+                style={{
+                  flex: 1,
+                  minHeight: 56,
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  paddingHorizontal: theme.spacing.lg,
+                  borderRadius: theme.radius.pill,
+                  backgroundColor: isStartingProject ? theme.colors.muted : theme.colors.primary,
+                }}>
+                <Text
+                  selectable={false}
+                  style={{
+                    fontSize: theme.size.md,
+                    fontWeight: theme.weight.semibold,
+                    color: isStartingProject
+                      ? theme.colors.textTertiary
+                      : theme.colors.white,
+                  }}>
+                  {ctaLabel}
+                </Text>
+              </PressableScale>
+            </View>
+          )
         ) : null}
       </View>
     </>

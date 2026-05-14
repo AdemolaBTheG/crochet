@@ -44,34 +44,97 @@ function parseDecimal(value: string) {
 
 function UnitPicker({ unit, onChange }: { unit: Unit; onChange: (unit: Unit) => void }) {
   const { t } = useTranslation();
+  const isIOS = process.env.EXPO_OS === 'ios';
+
+  if (isIOS) {
+    return (
+      <Host matchContents useViewportSizeMeasurement>
+        <Picker<Unit>
+          selection={unit}
+          onSelectionChange={onChange}
+          modifiers={[pickerStyle('segmented')]}>
+          <SwiftText modifiers={[tag('cm')]}>{t('tools.sizeCalculator.units.cm')}</SwiftText>
+          <SwiftText modifiers={[tag('in')]}>{t('tools.sizeCalculator.units.in')}</SwiftText>
+        </Picker>
+      </Host>
+    );
+  }
 
   return (
-    <Host matchContents useViewportSizeMeasurement>
-      <Picker<Unit>
-        selection={unit}
-        onSelectionChange={onChange}
-        modifiers={[pickerStyle('segmented')]}>
-        <SwiftText modifiers={[tag('cm')]}>{t('tools.sizeCalculator.units.cm')}</SwiftText>
-        <SwiftText modifiers={[tag('in')]}>{t('tools.sizeCalculator.units.in')}</SwiftText>
-      </Picker>
-    </Host>
+    <View
+      style={{
+        flexDirection: 'row',
+        gap: theme.spacing.xs,
+        padding: theme.spacing.xs,
+        borderRadius: theme.radius.pill,
+        backgroundColor: theme.colors.muted,
+      }}>
+      {([
+        { value: 'cm', label: t('tools.sizeCalculator.units.cm') },
+        { value: 'in', label: t('tools.sizeCalculator.units.in') },
+      ] as const).map((option) => {
+        const isSelected = option.value === unit;
+
+        return (
+          <Animated.Pressable
+            key={option.value}
+            onPress={() => onChange(option.value)}
+            style={{
+              flex: 1,
+              minHeight: 40,
+              paddingHorizontal: theme.spacing.md,
+              borderRadius: theme.radius.pill,
+              alignItems: 'center',
+              justifyContent: 'center',
+              backgroundColor: isSelected ? theme.colors.primary : 'transparent',
+            }}>
+            <Text
+              selectable={false}
+              style={{
+                fontSize: theme.size.md,
+                fontWeight: theme.weight.semibold,
+                color: isSelected ? theme.colors.white : theme.colors.textSecondary,
+              }}>
+              {option.label}
+            </Text>
+          </Animated.Pressable>
+        );
+      })}
+    </View>
   );
 }
 
 function AnimatedResultNumber({ value }: { value: number }) {
+  const isIOS = process.env.EXPO_OS === 'ios';
+
+  if (isIOS) {
+    return (
+      <Host matchContents={{ vertical: true, horizontal: true }}>
+        <SwiftText
+          modifiers={[
+            font({ size: 34, weight: 'black', design: 'rounded' }),
+            monospacedDigit(),
+            foregroundStyle(theme.colors.textPrimary),
+            contentTransition('numericText'),
+            animation(Animation.spring({ duration: 0.28, bounce: 0.14 }), value),
+          ]}>
+          {value}
+        </SwiftText>
+      </Host>
+    );
+  }
+
   return (
-    <Host matchContents={{ vertical: true, horizontal: true }}>
-      <SwiftText
-        modifiers={[
-          font({ size: 34, weight: 'black', design: 'rounded' }),
-          monospacedDigit(),
-          foregroundStyle(theme.colors.textPrimary),
-          contentTransition('numericText'),
-          animation(Animation.spring({ duration: 0.28, bounce: 0.14 }), value),
-        ]}>
-        {value}
-      </SwiftText>
-    </Host>
+    <Text
+      selectable={false}
+      style={{
+        fontSize: 34,
+        fontWeight: theme.weight.black,
+        color: theme.colors.textPrimary,
+        fontVariant: ['tabular-nums'],
+      }}>
+      {value}
+    </Text>
   );
 }
 

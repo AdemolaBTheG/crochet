@@ -1,0 +1,14 @@
+{
+  "title": "Basic Granny Square",
+  "description": "A classic crochet motif that teaches double crochet clusters and corners.",
+  "materials": ["Worsted yarn", "5 mm hook", "yarn needle", "scissors"],
+  "skills": ["Magic ring", "double crochet", "chain spaces", "slip stitch joining"],
+  "expectationText": "A classic motif that teaches corners, clusters, and round structure without jumping into a huge project.",
+  "steps": [
+    { "type": "instruction", "title": "Center ring", "instruction": "Create a magic ring or chain 4 and join into a loop." },
+    { "type": "round", "title": "Round 1", "instruction": "Make 4 granny clusters separated by chain spaces and join to close the square.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Round 2", "instruction": "Slip stitch to a corner space, build the next layer of granny clusters, and form corners with chain spaces.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Round 3", "instruction": "Repeat granny clusters along the sides and corners until the square reaches the size you want.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Finish", "instruction": "Join the round, fasten off, and weave in ends." }
+  ]
+}

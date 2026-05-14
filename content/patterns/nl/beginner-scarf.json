@@ -1,0 +1,44 @@
+{
+  "title": "Beginnerssjaal",
+  "description": "Een lang, repetitief project dat het volgen van rijen echt nuttig maakt.",
+  "materials": [
+    "Zacht kamgaren",
+    "5,5 mm haak",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Stichting keten",
+    "half stokje",
+    "rijen draaien",
+    "rij tellen"
+  ],
+  "expectationText": "Een langer herhaalproject waarbij de app je helpt op het goede spoor te blijven zonder elke rij helemaal opnieuw te moeten vertellen.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fundering",
+      "instruction": "26 steken lossen."
+    },
+    {
+      "type": "row",
+      "title": "Rij 1",
+      "instruction": "Half stokje in de derde losse vanaf de haaknaald en elke losse overdwars.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Rijen 2 tot en met 40",
+      "instruction": "2 losse, keer en haak een half stokje over elke rij.",
+      "counterLabel": "row",
+      "targetCount": 40
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Hecht af, weef de uiteinden weg en blokkeer indien nodig lichtjes."
+    }
+  ]
+}
+

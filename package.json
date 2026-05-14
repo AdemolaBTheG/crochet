@@ -11,7 +11,8 @@
     "lint": "expo lint",
     "clean": "rm -rf node_modules .expo && npm install",
     "generate": "npx drizzle-kit generate",
-    "rename": "node scripts/rename.js"
+    "rename": "node scripts/rename.js",
+    "validate-translations": "node scripts/validate-translations.js"
   },
   "reanimated": {
     "staticFeatureFlags": {
@@ -20,17 +21,15 @@
   },
   "overrides": {
     "framer-motion": "^11.0.0",
-    "zeego": {
-      "@react-native-menu/menu": "^2.0.0"
-    },
     "expo-dev-launcher": "55.0.25"
   },
   "dependencies": {
     "@expo/ui": "~55.0.11",
     "@expo/vector-icons": "^15.0.3",
     "@legendapp/list": "^2.0.19",
+    "@react-native-firebase/analytics": "^24.0.0",
+    "@react-native-firebase/app": "^24.0.0",
     "@react-native-masked-view/masked-view": "0.3.2",
-    "@react-native-menu/menu": "^1.2.2",
     "@react-navigation/bottom-tabs": "^7.4.0",
     "@react-navigation/elements": "^2.6.3",
     "@react-navigation/native": "^7.1.8",
@@ -86,8 +85,6 @@
     "react-native-enriched-markdown": "^0.4.1",
     "react-native-fast-confetti": "^1.1.1",
     "react-native-gesture-handler": "~2.30.0",
-    "react-native-ios-context-menu": "^3.2.1",
-    "react-native-ios-utilities": "^5.2.0",
     "react-native-keyboard-controller": "1.20.7",
     "react-native-mmkv": "^4.1.0",
     "react-native-nitro-modules": "^0.33.2",
@@ -103,7 +100,6 @@
     "react-native-worklets": "0.7.2",
     "react-native-worklets-core": "^1.6.3",
     "uniwind": "^1.2.2",
-    "zeego": "^3.0.6",
     "zustand": "^5.0.9"
   },
   "devDependencies": {

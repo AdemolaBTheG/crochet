@@ -1,0 +1,19 @@
+{
+  "title": "Trabajar en vueltas",
+  "description": "Aprende a construir círculos y motivos sin perder el sitio.",
+  "content": {
+    "summary": "Las vueltas se construyen alrededor de un punto central y a menudo se unen o marcan al final.",
+    "whyItMatters": "Posavasos y granny squares necesitan una estructura de vueltas limpia y fácil de seguir.",
+    "steps": [
+      "Crea un anillo central o un lazo de cadeneta.",
+      "Coloca puntos alrededor del centro.",
+      "Une la vuelta con un punto raso o continúa en espiral.",
+      "Sigue atentamente el primer punto de cada vuelta."
+    ],
+    "practice": "Haz dos círculos de práctica con 6 a 12 puntos en redondo.",
+    "commonMistakes": [
+      "Perder el inicio de la vuelta.",
+      "Añadir puntos de manera desigual y deformar el círculo."
+    ]
+  }
+}

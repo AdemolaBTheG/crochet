@@ -313,7 +313,23 @@
     "loader": {
       "titlePreparing": "Preparando tu experiencia",
       "titleReady": "Todo listo.",
+      "ctaPreview": "Probar una demo corta",
       "ctaReady": "Empezar Crova",
+      "summaryEyebrow": "Inicio personalizado",
+      "summarySubtitle": "Ajustamos tus primeros pasos segun tu nivel, enfoque y configuracion.",
+      "summaryCardTitle": "Tu configuracion",
+      "summaryCardSubtitle": "Asi empezara Crova contigo segun lo que nos contaste.",
+      "summaryLabels": {
+        "skillLevel": "Experiencia",
+        "goal": "Enfoque",
+        "handedness": "Mano dominante"
+      },
+      "summaryFallbacks": {
+        "skillLevel": "Personalizado",
+        "goal": "Tu camino en crochet",
+        "handedness": "Configuracion estandar"
+      },
+      "nextTitle": "Lo que sigue",
       "goalLabels": {
         "learnBasics": "los puntos basicos",
         "finishFirstProject": "tu primer proyecto",
@@ -331,7 +347,76 @@
         "pickingLessons": "Eligiendo lecciones para {{goalLabel}}...",
         "tracking": "Configurando el seguimiento de progreso...",
         "finalizing": "Finalizando tu inicio en Crova..."
+      },
+      "nextSteps": {
+        "skillLevel": {
+          "beginner": "Empezaras con lecciones cortas y guiadas paso a paso para mantener un ritmo accesible.",
+          "intermediate": "Tendras un repaso rapido y luego pasaras enseguida a practica guiada.",
+          "advanced": "Entraras directamente en patrones mas exigentes y trabajo tecnico mas profundo.",
+          "default": "Empezaras con un camino de aprendizaje personalizado para tu nivel."
+        },
+        "goal": {
+          "learnBasics": "Tus primeras lecciones se centraran en los puntos esenciales y como se conectan entre si.",
+          "finishFirstProject": "Tu plan te llevara a un primer proyecto terminado lo antes posible.",
+          "buildHabit": "Tu plan priorizara sesiones mas ligeras que resulten faciles de repetir con constancia.",
+          "default": "Tu plan se centrara en el resultado que mas te importa."
+        },
+        "tracking": "El contador de vueltas y las herramientas de progreso estaran listas desde el primer dia."
       }
+    },
+    "demo": {
+      "eyebrow": "Practica rapida",
+      "title": "Asi ensena Crova",
+      "subtitle": "Una mini leccion guiada para {{skillLabel}} centrada en {{goalLabel}}.",
+      "stepLabel": "Paso {{current}}",
+      "chips": {
+        "duration": "Menos de 30 segundos",
+        "handedness": "{{value}} guardado"
+      },
+      "actions": {
+        "previous": "Anterior",
+        "next": "Siguiente paso",
+        "finish": "Ver mi plan"
+      },
+      "skillAudience": {
+        "beginner": "principiantes",
+        "intermediate": "personas que ya conocen lo basico",
+        "advanced": "personas listas para un reto",
+        "default": "personas que hacen crochet"
+      },
+      "goalFocus": {
+        "learnBasics": "aprender los puntos clave",
+        "finishFirstProject": "terminar un primer proyecto",
+        "buildHabit": "crear un habito constante",
+        "default": "encontrar tu ritmo"
+      },
+      "cards": {
+        "one": {
+          "title": "Empieza con un movimiento claro"
+        },
+        "two": {
+          "title": "Sigue el ritmo paso a paso"
+        },
+        "three": {
+          "title": "Avanza hacia un resultado real"
+        }
+      },
+      "stepBodies": {
+        "skill": {
+          "beginner": "Bajamos el ritmo y simplificamos el movimiento para que solo tengas que concentrarte en una cosa a la vez.",
+          "intermediate": "Mantenemos la explicacion corta y te llevamos rapido a la practica guiada sin frenar el ritmo.",
+          "advanced": "Mantenemos la guia mas ligera para que avances rapido y pases mas tiempo haciendo que leyendo.",
+          "default": "Ajustamos el ritmo de la leccion a tu nivel para que la guia se sienta util y no repetitiva."
+        },
+        "progress": "El progreso permanece visible mientras avanzas, para que siempre sepas que sigue y donde lo dejaste.",
+        "goal": {
+          "learnBasics": "Tu camino empezara por los puntos esenciales, porque es la forma mas rapida de ganar confianza.",
+          "finishFirstProject": "Tu camino empujara hacia un primer proyecto terminado, para que la practica se convierta en algo tangible.",
+          "buildHabit": "Tu camino dara prioridad a pequenas victorias faciles de repetir, para que volver manana se sienta natural.",
+          "default": "Tu camino seguira centrado en el resultado que mas te importa."
+        }
+      },
+      "note": "Este es el mismo ritmo guiado paso a paso que usaras en tus primeras lecciones de Crova."
     }
   }
 }

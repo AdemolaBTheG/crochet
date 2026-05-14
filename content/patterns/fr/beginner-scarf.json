@@ -1,0 +1,13 @@
+{
+  "title": "Écharpe débutant",
+  "description": "Un long projet répétitif qui rend le comptage de rangs vraiment utile.",
+  "materials": ["Fil peigné doux", "crochet 5,5 mm", "aiguille à laine", "ciseaux"],
+  "skills": ["Chaînette de base", "demi-bride", "rangs tournants", "comptage de rangs"],
+  "expectationText": "Un long projet répétitif où l'application vous aide à rester sur la bonne voie sans avoir à recompter chaque rang depuis le début.",
+  "steps": [
+    { "type": "instruction", "title": "Fondation", "instruction": "Faites 26 mailles en l'air." },
+    { "type": "row", "title": "Rang 1", "instruction": "Demi-bride dans la troisième maille en l'air depuis le crochet et dans chaque maille suivante.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Rangs 2 à 40", "instruction": "2 mailles en l'air, tournez, et faites une demi-bride dans chaque maille du rang.", "counterLabel": "row", "targetCount": 40 },
+    { "type": "instruction", "title": "Finition", "instruction": "Arrêtez le fil, rentrez les brins et bloquez légèrement si nécessaire." }
+  ]
+}

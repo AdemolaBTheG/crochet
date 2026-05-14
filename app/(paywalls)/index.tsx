@@ -1,9 +1,14 @@
+import { logFirebaseEvent } from '@/services/firebaseAnalytics';
 import { router } from 'expo-router';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View } from 'react-native';
 import RevenueCatUI from 'react-native-purchases-ui';
 
 export default function Paywall() {
+    useEffect(() => {
+        void logFirebaseEvent('paywall_view', { source: 'default' });
+    }, []);
+
     return (
         <View style={{ flex: 1 }}>
             <RevenueCatUI.Paywall

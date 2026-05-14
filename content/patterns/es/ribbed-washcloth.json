@@ -1,0 +1,14 @@
+{
+  "title": "Toallita acanalada",
+  "description": "Un cuadrado simple que convierte la práctica de hebra trasera en un tejido texturizado útil.",
+  "materials": ["Hilo de algodón", "Ganchillo 5 mm", "Aguja lanera", "Tijeras"],
+  "skills": ["Cadeneta de base", "Medio punto alto", "Solo hebra trasera", "Hileras de vuelta"],
+  "expectationText": "Un proyecto práctico del tamaño de una muestra donde el acanalado se nota rápidamente, para que la técnica se asiente antes de pasar a prendas ponibles.",
+  "steps": [
+    { "type": "instruction", "title": "Base", "instruction": "Haz 19 cadenetas." },
+    { "type": "row", "title": "Hilera 1", "instruction": "Medio punto alto en la tercera cadeneta desde el ganchillo y en cada cadeneta siguiente.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "row", "title": "Hilera 2", "instruction": "2 cadenetas, gira y haz medios puntos altos solo en la hebra trasera en toda la hilera.", "counterLabel": "row", "targetCount": 2 },
+    { "type": "repeat", "title": "Hileras 3 a 16", "instruction": "Continúa haciendo 2 cadenetas, gira y haz medios puntos altos solo en la hebra trasera en toda la hilera.", "counterLabel": "row", "targetCount": 16 },
+    { "type": "instruction", "title": "Terminar", "instruction": "Remata y esconde ambas hebras cuidadosamente." }
+  ]
+}

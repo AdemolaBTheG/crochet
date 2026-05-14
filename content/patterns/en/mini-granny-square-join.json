@@ -1,0 +1,14 @@
+{
+  "title": "Mini Granny Square Join Project",
+  "description": "Turn four granny squares into one small finished project so the user completes something real.",
+  "materials": ["Worsted yarn", "5 mm hook", "yarn needle", "scissors"],
+  "skills": ["Granny squares", "slip stitch joining", "seaming", "weaving ends"],
+  "expectationText": "A small finishing project where you turn separate squares into one piece and practice simple joining with confidence.",
+  "steps": [
+    { "type": "repeat", "title": "Make four squares", "instruction": "Complete the basic granny square pattern four times.", "targetCount": 4 },
+    { "type": "instruction", "title": "Arrange the squares", "instruction": "Lay the four squares in a 2 by 2 layout with the right sides facing up." },
+    { "type": "instruction", "title": "Join the first seam", "instruction": "Use slip stitch or whip stitch to join the top two squares." },
+    { "type": "instruction", "title": "Join the second seam", "instruction": "Join the bottom two squares, then connect the rows together." },
+    { "type": "instruction", "title": "Finish", "instruction": "Weave in all ends and lightly shape the finished piece." }
+  ]
+}

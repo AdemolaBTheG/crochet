@@ -1,0 +1,51 @@
+{
+  "title": "Ronde onderzetter",
+  "description": "Een dikkere platte cirkel die voortbouwt op achtbaanvaardigheden en je een bruikbaarder afgewerkt formaat geeft.",
+  "materials": [
+    "Dik katoenen garen",
+    "5,5 tot 6 mm haak",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Magische ring",
+    "enkel haakwerk",
+    "toenemend",
+    "slipsteek verbinden"
+  ],
+  "expectationText": "Een stevige platte ronde waarbij je oefent, neemt zelfs langer toe zonder dat het project te snel repetitief wordt.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Maak de middelste ring",
+      "instruction": "Begin met een magische ring of ketting van 4 en sluit deze aan tot een lus."
+    },
+    {
+      "type": "round",
+      "title": "Ronde 1",
+      "instruction": "Haak 8 vasten in de ring en sluit af met een halve vaste.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Ronde 2",
+      "instruction": "Haak 2 vasten in elke steek, voor een totaal van 16 steken.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Rondes 3 t/m 5",
+      "instruction": "Vermeerder elke toer gelijkmatig door 2 vasten in één steek te spreiden, zodat de cirkel plat blijft.",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Zet de steek vast om te verbinden, hecht af en weef het uiteinde stevig vast."
+    }
+  ]
+}
+

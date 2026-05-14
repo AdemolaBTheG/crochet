@@ -1,0 +1,19 @@
+{
+  "title": "Punto alto",
+  "description": "Construye puntos más altos para un tejido aireado y grupos clásicos de granny square.",
+  "content": {
+    "summary": "El punto alto es alto, rítmico y uno de los puntos más importantes que debes dominar.",
+    "whyItMatters": "Lo necesitas para granny squares, chales, bufandas y muchos patrones decorativos.",
+    "steps": [
+      "Haz una lazada antes de insertar el ganchillo.",
+      "Inserta y saca un bucle.",
+      "Haz una lazada y pásala por dos bucles.",
+      "Haz una lazada y pásala por los dos últimos bucles."
+    ],
+    "practice": "Trabaja 2 filas de 10 puntos altos.",
+    "commonMistakes": [
+      "Pasar por todos los bucles a la vez.",
+      "Olvidar la altura de las cadenetas de giro al comienzo de la fila."
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "title": "Geribbelde hoofdband",
+  "description": "Een rekbare, draagbare rechthoek met alleen rijen aan de achterkant en een eenvoudige naad.",
+  "materials": [
+    "Zacht kamgaren",
+    "5 mm haak",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Stichting keten",
+    "half stokje",
+    "alleen achterste lus",
+    "rijen draaien",
+    "naden"
+  ],
+  "expectationText": "Een draagbare versie van ribbeloefeningen waarbij de voltooide rechthoek iets nuttigs wordt met één zuivere verbinding.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fundering",
+      "instruction": "Maak voldoende steken vast voor de breedte van de hoofdband, meestal 10 tot 14 steken."
+    },
+    {
+      "type": "row",
+      "title": "Rij 1",
+      "instruction": "Half stokje in de derde losse vanaf de haaknaald en elke losse overdwars.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Rijen 2 tot en met 32",
+      "instruction": "2 losse, keer en haak een half stokje in de achterste lus, alleen over elke rij.",
+      "counterLabel": "row",
+      "targetCount": 32
+    },
+    {
+      "type": "instruction",
+      "title": "Controleer de pasvorm",
+      "instruction": "Wikkel de strip met een lichte rek rond uw hoofd en voeg indien nodig rijen toe of verwijder deze."
+    },
+    {
+      "type": "instruction",
+      "title": "Meedoen",
+      "instruction": "Naai de korte randen aan elkaar, hecht af en vlecht de staarten in de ribbels."
+    }
+  ]
+}
+

@@ -1,0 +1,14 @@
+{
+  "title": "Easy Ribbed Beanie",
+  "description": "A beginner-friendly wearable made from a ribbed rectangle and simple seam.",
+  "materials": ["Worsted yarn", "5.5 mm hook", "yarn needle", "scissors"],
+  "skills": ["Foundation chain", "half double crochet", "back loop only", "seaming"],
+  "expectationText": "A wearable project built from simple rows, then seamed into shape so you can finish a real hat without complex shaping.",
+  "steps": [
+    { "type": "instruction", "title": "Foundation", "instruction": "Chain enough stitches to reach from the brim to the crown of the hat." },
+    { "type": "row", "title": "Row 1", "instruction": "Half double crochet in the third chain from the hook and each chain across.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Rows 2 to 36", "instruction": "Chain 2, turn, and work half double crochet in the back loop only across.", "counterLabel": "row", "targetCount": 36 },
+    { "type": "instruction", "title": "Seam the side", "instruction": "Fold the rectangle and seam the first and last rows together." },
+    { "type": "instruction", "title": "Close the crown", "instruction": "Weave yarn around the top edge, pull tight, secure, and weave in ends." }
+  ]
+}

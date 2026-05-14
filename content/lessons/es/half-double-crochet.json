@@ -1,0 +1,18 @@
+{
+  "title": "Medio punto alto",
+  "description": "Un punto versátil que se trabaja más rápido que el punto bajo pero sigue siendo fácil de leer.",
+  "content": {
+    "summary": "El medio punto alto se sitúa entre el punto bajo y el punto alto en altura y velocidad.",
+    "whyItMatters": "Ideal para bufandas, prendas simples y tejido suave y flexible.",
+    "steps": [
+      "Haz una lazada antes de insertar el ganchillo.",
+      "Inserta el ganchillo en el siguiente punto y saca un bucle.",
+      "Haz una lazada y pásala por los tres bucles del ganchillo."
+    ],
+    "practice": "Trabaja 2 filas de 12 medios puntos altos.",
+    "commonMistakes": [
+      "Olvidar la primera lazada.",
+      "Pasar por dos bucles en lugar de los tres."
+    ]
+  }
+}

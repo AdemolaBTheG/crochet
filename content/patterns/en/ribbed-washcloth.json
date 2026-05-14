@@ -1,0 +1,14 @@
+{
+  "title": "Ribbed Washcloth",
+  "description": "A simple square that turns back-loop-only practice into a useful textured fabric.",
+  "materials": ["Cotton yarn", "5 mm hook", "yarn needle", "scissors"],
+  "skills": ["Foundation chain", "half double crochet", "back loop only", "turning rows"],
+  "expectationText": "A practical swatch-sized project where the ribbing is obvious fast, so the technique clicks before you move on to wearables.",
+  "steps": [
+    { "type": "instruction", "title": "Foundation", "instruction": "Chain 19 stitches." },
+    { "type": "row", "title": "Row 1", "instruction": "Half double crochet in the third chain from the hook and each chain across.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "row", "title": "Row 2", "instruction": "Chain 2, turn, and work half double crochet in the back loop only across.", "counterLabel": "row", "targetCount": 2 },
+    { "type": "repeat", "title": "Rows 3 to 16", "instruction": "Continue chaining 2, turning, and working half double crochet in the back loop only across.", "counterLabel": "row", "targetCount": 16 },
+    { "type": "instruction", "title": "Finish", "instruction": "Fasten off and weave in both ends neatly." }
+  ]
+}

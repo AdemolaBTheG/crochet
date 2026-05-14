@@ -1,0 +1,14 @@
+{
+  "title": "Simple Flower Applique",
+  "description": "A five-petal flower motif for learning repeated shaping around a center.",
+  "materials": ["Cotton yarn", "4 mm hook", "yarn needle", "scissors"],
+  "skills": ["Magic ring", "chain spaces", "double crochet", "slip stitch"],
+  "expectationText": "A cheerful motif that repeats the same petal sequence so shaping starts to feel predictable.",
+  "steps": [
+    { "type": "instruction", "title": "Make the center", "instruction": "Start with a magic ring and work 10 single crochet into the center." },
+    { "type": "round", "title": "Round 1", "instruction": "Join the center round with a slip stitch and tighten the ring.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "repeat", "title": "Make five petals", "instruction": "Repeat chain stitches and double crochet into the same stitch to form each petal.", "targetCount": 5 },
+    { "type": "instruction", "title": "Shape the petals", "instruction": "Gently tug each petal into place so the flower sits flat." },
+    { "type": "instruction", "title": "Finish", "instruction": "Fasten off and weave tails into the back of the flower." }
+  ]
+}

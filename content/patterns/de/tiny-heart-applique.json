@@ -1,0 +1,14 @@
+{
+  "title": "Kleine Herz-Applikation",
+  "description": "Ein kleines dekoratives Herz zum Üben von Formgebung in einer schnellen Runde.",
+  "materials": ["Baumwollgarn", "4 mm Häkelnadel", "Sticknadel", "Schere"],
+  "skills": ["Magischer Ring", "Stäbchen", "Doppelstäbchen", "Kettmasche"],
+  "expectationText": "Ein winziges geformtes Motiv, das lehrt, wie die Maschenhöhe den Umriss eines Designs verändert.",
+  "steps": [
+    { "type": "instruction", "title": "Den Ring machen", "instruction": "Beginne mit einem magischen Ring und häkle 2 Luftmaschen, um die Herzform zu beginnen." },
+    { "type": "round", "title": "Die Rundungen formen", "instruction": "Häkle höhere Maschen in den Ring, um die abgerundete Oberseite des Herzens zu formen.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "instruction", "title": "Die Spitze formen", "instruction": "Verwende kürzere Maschen, dann eine höhere Masche an der unteren Spitze." },
+    { "type": "instruction", "title": "Das Herz schließen", "instruction": "Spiegle die erste Seite, mit Kettmasche schließen und den Ring festziehen." },
+    { "type": "instruction", "title": "Fertigstellen", "instruction": "Faden vernähen und die Enden in die Rückseite des Herzens einweben." }
+  ]
+}

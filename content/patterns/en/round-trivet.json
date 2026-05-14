@@ -1,0 +1,14 @@
+{
+  "title": "Round Trivet",
+  "description": "A thicker flat circle that builds on coaster skills and gives you a more useful finished size.",
+  "materials": ["Thick cotton yarn", "5.5 to 6 mm hook", "yarn needle", "scissors"],
+  "skills": ["Magic ring", "single crochet", "increasing", "slip stitch joining"],
+  "expectationText": "A sturdy flat round where you practice even increases for longer without the project getting repetitive too fast.",
+  "steps": [
+    { "type": "instruction", "title": "Make the center ring", "instruction": "Start with a magic ring or chain 4 and join into a loop." },
+    { "type": "round", "title": "Round 1", "instruction": "Work 8 single crochet into the ring and join with a slip stitch.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Round 2", "instruction": "Work 2 single crochet into each stitch around for 16 stitches total.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "repeat", "title": "Rounds 3 to 5", "instruction": "Increase evenly each round by spacing out 2 single crochet in one stitch so the circle stays flat.", "counterLabel": "round", "targetCount": 5 },
+    { "type": "instruction", "title": "Finish", "instruction": "Slip stitch to join, fasten off, and weave in the end securely." }
+  ]
+}

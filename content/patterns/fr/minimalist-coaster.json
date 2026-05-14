@@ -1,0 +1,14 @@
+{
+  "title": "Dessous de verre minimaliste",
+  "description": "Un projet rond rapide pour apprendre les tours, la fermeture et la répétition simple de points.",
+  "materials": ["Fil de coton", "crochet 4 à 5 mm", "aiguille à laine", "ciseaux"],
+  "skills": ["Anneau magique", "maille serrée", "maille coulée", "travailler en tours"],
+  "expectationText": "Un projet rond rapide où vous vous entraînez à construire un cercle plat, à joindre proprement et à finir quelque chose d'utile en une courte séance.",
+  "steps": [
+    { "type": "instruction", "title": "Faire l'anneau central", "instruction": "Commencez par un anneau magique ou 4 mailles en l'air fermées en boucle." },
+    { "type": "round", "title": "Tour 1", "instruction": "Faites 8 mailles serrées dans l'anneau et fermez par une maille coulée.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Tour 2", "instruction": "Faites 2 mailles serrées dans chaque maille pour un total de 16 mailles.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Tour 3", "instruction": "Alternez 1 maille serrée, puis 2 mailles serrées dans la maille suivante tout autour.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Finition", "instruction": "Fermez par une maille coulée, arrêtez le fil et rentrez le brin." }
+  ]
+}

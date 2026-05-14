@@ -1,0 +1,19 @@
+{
+  "title": "Stäbchen",
+  "description": "Baue höhere Stiche für luftiges Gewebe und klassische Granny-Square-Gruppen.",
+  "content": {
+    "summary": "Stäbchen sind hoch, rhythmisch und einer der wichtigsten Stiche, die man beherrschen sollte.",
+    "whyItMatters": "Du brauchst sie für Granny Squares, Tücher, Schals und viele dekorative Muster.",
+    "steps": [
+      "Mache einen Umschlag, bevor du die Nadel einstichst.",
+      "Steche ein und ziehe eine Schlaufe hoch.",
+      "Mache einen Umschlag und ziehe ihn durch zwei Schlaufen.",
+      "Mache einen Umschlag und ziehe ihn durch die letzten zwei Schlaufen."
+    ],
+    "practice": "Häkle 2 Reihen mit je 10 Stäbchen.",
+    "commonMistakes": [
+      "Alle Schlaufen auf einmal durchziehen.",
+      "Die Höhe der Wendeluftmaschen am Reihenanfang vergessen."
+    ]
+  }
+}

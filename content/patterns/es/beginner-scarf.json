@@ -1,0 +1,13 @@
+{
+  "title": "Bufanda para principiantes",
+  "description": "Un proyecto largo y repetitivo que hace que contar filas sea realmente útil.",
+  "materials": ["Hilo peinado suave", "ganchillo de 5,5 mm", "aguja lanera", "tijeras"],
+  "skills": ["Cadeneta base", "medio punto alto", "filas de ida y vuelta", "contar filas"],
+  "expectationText": "Un proyecto largo y repetitivo donde la app te ayuda a seguir el ritmo sin tener que recontar cada fila desde cero.",
+  "steps": [
+    { "type": "instruction", "title": "Base", "instruction": "Haz 26 cadenetas." },
+    { "type": "row", "title": "Fila 1", "instruction": "Medio punto alto en la tercera cadeneta desde el ganchillo y en cada cadeneta.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Filas 2 a 40", "instruction": "2 cadenetas, gira, y haz medio punto alto en cada punto de la fila.", "counterLabel": "row", "targetCount": 40 },
+    { "type": "instruction", "title": "Terminar", "instruction": "Remata, esconde las hebras y bloquea ligeramente si es necesario." }
+  ]
+}

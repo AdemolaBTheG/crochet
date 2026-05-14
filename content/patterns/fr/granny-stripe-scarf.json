@@ -1,0 +1,14 @@
+{
+  "title": "Écharpe à rayures granny",
+  "description": "Une écharpe facile construite à partir de groupes de brides répétés et d'espaces de mailles en l'air.",
+  "materials": ["Fil worsted doux", "Crochet 5,5 mm", "Aiguille à laine", "Ciseaux"],
+  "skills": ["Chaînette de base", "Bride", "Espaces de mailles en l'air", "Rangs tournants"],
+  "expectationText": "Un long projet à répétition où vous arrêtez de compter les mailles individuelles et commencez à lire les espaces et les groupes.",
+  "steps": [
+    { "type": "instruction", "title": "Fondation", "instruction": "Faites 27 mailles en l'air ou un multiple de 3 plus 3 pour une écharpe plus large." },
+    { "type": "row", "title": "Rang 1", "instruction": "Faites des groupes de 3 brides avec des espaces sautés entre eux pour commencer la disposition à rayures granny.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "row", "title": "Rang 2", "instruction": "3 mailles en l'air, tournez et faites les groupes suivants dans les espaces entre les groupes du rang précédent.", "counterLabel": "row", "targetCount": 2 },
+    { "type": "repeat", "title": "Rangs 3 à 24", "instruction": "Répétez le même placement de groupes dans chaque espace de maille en l'air jusqu'à ce que l'écharpe atteigne la longueur souhaitée.", "counterLabel": "row", "targetCount": 24 },
+    { "type": "instruction", "title": "Finir", "instruction": "Arrêtez le fil, rentrez les fils et ajoutez des franges seulement si vous voulez plus de texture." }
+  ]
+}

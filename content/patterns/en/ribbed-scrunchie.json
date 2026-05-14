@@ -1,0 +1,14 @@
+{
+  "title": "Ribbed Scrunchie",
+  "description": "A quick wearable project made around a hair elastic with beginner-friendly repeats.",
+  "materials": ["Soft yarn", "4.5 mm hook", "hair elastic", "yarn needle", "scissors"],
+  "skills": ["Single crochet", "half double crochet", "working around an elastic", "joining"],
+  "expectationText": "A playful quick project where repetition builds confidence and the finished result feels giftable.",
+  "steps": [
+    { "type": "instruction", "title": "Cover the elastic", "instruction": "Join yarn around the hair elastic and single crochet evenly around it." },
+    { "type": "round", "title": "Round 1", "instruction": "Work enough single crochet around the elastic so the band is fully covered.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Round 2", "instruction": "Chain 2, then work half double crochet into each stitch around.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Round 3", "instruction": "Work one more round of half double crochet for a fuller scrunchie.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Finish", "instruction": "Slip stitch to join, fasten off, and weave the tail inside the folds." }
+  ]
+}

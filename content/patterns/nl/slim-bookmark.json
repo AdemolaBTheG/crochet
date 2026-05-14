@@ -1,0 +1,49 @@
+{
+  "title": "Slanke bladwijzer",
+  "description": "Een smal rijproject voor het oefenen van randen, spanning en een kleine kwastjesafwerking.",
+  "materials": [
+    "Katoenen garen",
+    "3,5 tot 4 mm haak",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Stichting keten",
+    "enkel haakwerk",
+    "rijen draaien",
+    "kwastjes maken"
+  ],
+  "expectationText": "Een leuk klein project dat zorgvuldige spanning beloont en je binnen een uur een voltooid cadeau geeft.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fundering",
+      "instruction": "Maak 8 steken los voor een smalle bladwijzerbreedte."
+    },
+    {
+      "type": "row",
+      "title": "Rij 1",
+      "instruction": "Vaste in de tweede ketting vanaf de haaknaald en elke ketting eroverheen.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Rijen 2 tot en met 24",
+      "instruction": "1 losse, keer en haak een vaste over elke rij.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Voeg een kwastje toe",
+      "instruction": "Knip een paar draadjes garen af ​​en bevestig ze aan een korte rand."
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Knip de kwast gelijkmatig af en weef de startstaart erin."
+    }
+  ]
+}
+

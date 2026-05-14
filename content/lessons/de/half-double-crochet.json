@@ -1,0 +1,18 @@
+{
+  "title": "Halbe Stäbchen",
+  "description": "Ein vielseitiger Stich, der schneller als feste Maschen ist, aber gut lesbar bleibt.",
+  "content": {
+    "summary": "Halbe Stäbchen liegen in Höhe und Tempo zwischen festen Maschen und Stäbchen.",
+    "whyItMatters": "Ideal für Schals, einfache Kleidungsstücke und weiches, flexibles Gewebe.",
+    "steps": [
+      "Mache einen Umschlag, bevor du die Nadel einstichst.",
+      "Steche in die nächste Masche ein und ziehe eine Schlaufe hoch.",
+      "Mache einen Umschlag und ziehe ihn durch alle drei Schlaufen auf der Nadel."
+    ],
+    "practice": "Häkle 2 Reihen mit je 12 halben Stäbchen.",
+    "commonMistakes": [
+      "Den ersten Umschlag vergessen.",
+      "Durch zwei Schlaufen ziehen statt durch alle drei."
+    ]
+  }
+}

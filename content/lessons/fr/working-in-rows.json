@@ -1,0 +1,19 @@
+{
+  "title": "Travailler en rangs",
+  "description": "Apprenez quand tourner votre ouvrage et comment garder un nombre de mailles constant.",
+  "content": {
+    "summary": "Les rangs vous apprennent à tourner l'ouvrage, utiliser les mailles en l'air tournantes et éviter les variations involontaires.",
+    "whyItMatters": "Les lavettes et écharpes dépendent de rangs réguliers et de bords nets.",
+    "steps": [
+      "Terminez un rang et faites les mailles en l'air tournantes correctes.",
+      "Tournez l'ouvrage pour que l'envers soit face à vous.",
+      "Commencez le rang suivant dans la bonne maille pour ce type de point.",
+      "Comptez les mailles à la fin de chaque rang."
+    ],
+    "practice": "Faites un échantillon de 5 rangs et comptez les mailles après chaque rang.",
+    "commonMistakes": [
+      "Travailler accidentellement dans les mailles en l'air tournantes.",
+      "Sauter la dernière maille du bord."
+    ]
+  }
+}

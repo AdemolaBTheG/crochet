@@ -1,0 +1,46 @@
+{
+  "title": "Mini Granny Square sluit zich aan bij project",
+  "description": "Verander vier granny squares in één klein voltooid project, zodat de gebruiker iets echts voltooit.",
+  "materials": [
+    "Kamgaren",
+    "5 mm haak",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Granny-vierkanten",
+    "slipsteek verbinden",
+    "naden",
+    "uiteinden weven"
+  ],
+  "expectationText": "Een klein afwerkingsproject waarbij je afzonderlijke vierkanten tot één stuk maakt en met vertrouwen oefent met het eenvoudig verbinden.",
+  "steps": [
+    {
+      "type": "repeat",
+      "title": "Maak vier vierkanten",
+      "instruction": "Voltooi het basisgranny square-patroon vier keer.",
+      "targetCount": 4
+    },
+    {
+      "type": "instruction",
+      "title": "Schik de vierkanten",
+      "instruction": "Leg de vier vierkanten in een lay-out van 2 bij 2 met de goede kanten naar boven."
+    },
+    {
+      "type": "instruction",
+      "title": "Verbind de eerste naad",
+      "instruction": "Gebruik een halve vaste of zweepsteek om de bovenste twee vierkanten met elkaar te verbinden."
+    },
+    {
+      "type": "instruction",
+      "title": "Verbind de tweede naad",
+      "instruction": "Verbind de onderste twee vierkanten en verbind vervolgens de rijen met elkaar."
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Weef alle uiteinden in en vorm het voltooide stuk lichtjes."
+    }
+  ]
+}
+

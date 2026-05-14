@@ -1,0 +1,14 @@
+{
+  "title": "Lingettes visage en coton",
+  "description": "Un petit rond réutilisable qui donne aux débutants une autre victoire rapide avec les augmentations.",
+  "materials": ["Fil de coton", "Crochet 4 mm", "Aiguille à laine", "Ciseaux"],
+  "skills": ["Anneau magique", "Maille serrée", "Augmentations", "Assemblage au point coulé"],
+  "expectationText": "Un mini-projet sans pression où vous fabriquez un rond doux et réutilisable et pratiquez des augmentations régulières.",
+  "steps": [
+    { "type": "instruction", "title": "Faire le centre", "instruction": "Commencez par un anneau magique ou 4 mailles en l'air et assemblez en boucle." },
+    { "type": "round", "title": "Tour 1", "instruction": "Faites 8 mailles serrées dans l'anneau central et assemblez avec un point coulé.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Tour 2", "instruction": "Faites 2 mailles serrées dans chaque maille tout autour pour un total de 16 mailles.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Tour 3", "instruction": "Alternez 1 maille serrée, puis 2 mailles serrées dans la maille suivante tout autour.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Finir le bord", "instruction": "Faites un point coulé autour du bord, arrêtez le fil et rentrez les fils." }
+  ]
+}

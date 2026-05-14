@@ -1,0 +1,14 @@
+{
+  "title": "Granny square básico",
+  "description": "Un motivo de crochet clásico que enseña grupos de punto alto y esquinas.",
+  "materials": ["Hilo peinado", "ganchillo de 5 mm", "aguja lanera", "tijeras"],
+  "skills": ["Anillo mágico", "punto alto", "espacios de cadeneta", "unión con punto raso"],
+  "expectationText": "Un motivo clásico que enseña esquinas, grupos y estructura en vueltas sin meterse en un proyecto enorme.",
+  "steps": [
+    { "type": "instruction", "title": "Anillo central", "instruction": "Crea un anillo mágico o 4 cadenetas unidas en un lazo." },
+    { "type": "round", "title": "Vuelta 1", "instruction": "Haz 4 grupos granny separados por espacios de cadeneta y une para cerrar el cuadrado.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Vuelta 2", "instruction": "Punto raso hasta un espacio de esquina, construye la siguiente capa de grupos granny y forma esquinas con espacios de cadeneta.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Vuelta 3", "instruction": "Repite grupos granny a lo largo de los lados y esquinas hasta que el cuadrado alcance el tamaño deseado.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Terminar", "instruction": "Une la vuelta, remata y esconde las hebras." }
+  ]
+}

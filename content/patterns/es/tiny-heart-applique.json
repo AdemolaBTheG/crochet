@@ -1,0 +1,14 @@
+{
+  "title": "Pequeño aplique de corazón",
+  "description": "Un pequeño corazón decorativo para practicar el modelado en una vuelta rápida.",
+  "materials": ["Hilo de algodón", "Ganchillo 4 mm", "Aguja lanera", "Tijeras"],
+  "skills": ["Anillo mágico", "Punto alto", "Punto alto doble", "Punto deslizado"],
+  "expectationText": "Un pequeño motivo modelado que enseña cómo la altura del punto cambia el contorno de un diseño.",
+  "steps": [
+    { "type": "instruction", "title": "Hacer el anillo", "instruction": "Comienza con un anillo mágico y haz 2 cadenetas para iniciar la forma de corazón." },
+    { "type": "round", "title": "Formar los lóbulos", "instruction": "Haz puntos más altos en el anillo para formar la parte superior redondeada del corazón.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "instruction", "title": "Formar la punta", "instruction": "Usa puntos más cortos, luego un punto más alto en la punta inferior." },
+    { "type": "instruction", "title": "Cerrar el corazón", "instruction": "Refleja el primer lado, cierra con punto deslizado y aprieta el anillo." },
+    { "type": "instruction", "title": "Terminar", "instruction": "Remata y esconde las hebras en la parte trasera del corazón." }
+  ]
+}

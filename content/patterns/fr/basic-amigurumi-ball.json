@@ -1,0 +1,15 @@
+{
+  "title": "Boule amigurumi basique",
+  "description": "Une petite sphère rembourrée pour pratiquer les augmentations, les diminutions et le travail en tours continus.",
+  "materials": ["Fil worsted", "Crochet 4 mm", "Marqueur de maille", "Rembourrage", "Aiguille à laine", "Ciseaux"],
+  "skills": ["Anneau magique", "Maille serrée", "Augmentations", "Diminutions", "Travailler en tours"],
+  "expectationText": "Un projet de façonnage compact où les augmentations construisent la courbe, les tours droits ajoutent de la hauteur et les diminutions ferment la forme.",
+  "steps": [
+    { "type": "instruction", "title": "Commencer le centre", "instruction": "Faites un anneau magique et placez un marqueur de maille dans la première maille de chaque tour." },
+    { "type": "round", "title": "Tour 1", "instruction": "Faites 6 mailles serrées dans l'anneau et fermez le centre en tirant.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "repeat", "title": "Tours 2 à 4", "instruction": "Augmentez régulièrement à chaque tour jusqu'à ce que la pièce commence à former une courbe arrondie.", "counterLabel": "round", "targetCount": 4 },
+    { "type": "repeat", "title": "Tours 5 à 7", "instruction": "Faites des mailles serrées tout autour sans augmenter pour former le milieu de la boule.", "counterLabel": "round", "targetCount": 7 },
+    { "type": "repeat", "title": "Tours 8 à 10", "instruction": "Diminuez régulièrement à chaque tour en ajoutant du rembourrage avant que l'ouverture ne devienne trop petite.", "counterLabel": "round", "targetCount": 10 },
+    { "type": "instruction", "title": "Fermer", "instruction": "Arrêtez le fil, passez le fil restant dans les dernières mailles, serrez et cachez le fil à l'intérieur." }
+  ]
+}

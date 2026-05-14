@@ -16,7 +16,8 @@ import {
 } from '@expo/ui/swift-ui/modifiers';
 import * as Haptics from 'expo-haptics';
 import { router, type Href } from 'expo-router';
-import { useEffect, useMemo, useState } from 'react';
+import { SymbolView } from 'expo-symbols';
+import { type ComponentProps, useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, {
@@ -27,11 +28,12 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 export type QuizField = 'skillLevel' | 'goal' | 'handedness';
+type QuizOptionIcon = ComponentProps<typeof SymbolView>['name'];
 
 export type QuizOption = {
   id: NonNullable<SkillLevel> | NonNullable<Goal> | NonNullable<Handedness>;
   label: string;
-  emoji: string;
+  icon: QuizOptionIcon;
 };
 
 export type QuizScreenConfig = {
@@ -75,19 +77,19 @@ function QuizOptionCard({
     ),
   }));
 
-  const emojiWrapAnimatedStyle = useAnimatedStyle(() => ({
-    backgroundColor: interpolateColor(
-      selectionProgress.value,
-      [0, 1],
-      [theme.colors.muted, theme.colors.whiteSoft],
-    ),
-  }));
-
   const labelAnimatedStyle = useAnimatedStyle(() => ({
     color: interpolateColor(
       selectionProgress.value,
       [0, 1],
       [theme.colors.textPrimary, theme.colors.primary],
+    ),
+  }));
+
+  const iconWrapAnimatedStyle = useAnimatedStyle(() => ({
+    backgroundColor: interpolateColor(
+      selectionProgress.value,
+      [0, 1],
+      [theme.colors.muted, theme.colors.primarySoft],
     ),
   }));
 
@@ -101,7 +103,15 @@ function QuizOptionCard({
         onSelect(option.id);
       }}
       style={[styles.optionCard, cardAnimatedStyle]}>
-      <Text style={styles.emoji}>{option.emoji}</Text>
+      <Animated.View style={[styles.iconWrap, iconWrapAnimatedStyle]}>
+        <SymbolView
+          name={option.icon}
+          size={22}
+          weight="semibold"
+          tintColor={isSelected ? theme.colors.primary : theme.colors.textSecondary}
+          fallback={<View style={styles.iconFallback} />}
+        />
+      </Animated.View>
       <AnimatedText selectable style={[styles.optionLabel, labelAnimatedStyle]}>
         {option.label}
       </AnimatedText>
@@ -117,6 +127,7 @@ function StepProgressLabel({
   totalSteps: number;
 }) {
   const { t } = useTranslation();
+  const isIOS = process.env.EXPO_OS === 'ios';
 
   const labelModifiers = useMemo(
     () => [
@@ -129,12 +140,27 @@ function StepProgressLabel({
     [currentStep],
   );
 
+  if (isIOS) {
+    return (
+      <Host matchContents useViewportSizeMeasurement>
+        <SwiftText modifiers={labelModifiers}>
+          {t('onboarding.quiz.stepOf', { current: currentStep, total: totalSteps })}
+        </SwiftText>
+      </Host>
+    );
+  }
+
   return (
-    <Host matchContents useViewportSizeMeasurement>
-      <SwiftText modifiers={labelModifiers}>
-        {t('onboarding.quiz.stepOf', { current: currentStep, total: totalSteps })}
-      </SwiftText>
-    </Host>
+    <Text
+      selectable={false}
+      style={{
+        fontSize: theme.size.md,
+        fontWeight: theme.weight.semibold,
+        color: theme.colors.textSecondary,
+        fontVariant: ['tabular-nums'],
+      }}>
+      {t('onboarding.quiz.stepOf', { current: currentStep, total: totalSteps })}
+    </Text>
   );
 }
 
@@ -335,7 +361,7 @@ const styles = StyleSheet.create({
     borderCurve: 'continuous',
     borderWidth: 1,
   },
-  emojiWrap: {
+  iconWrap: {
     width: 44,
     height: 44,
     borderRadius: theme.radius.md,
@@ -343,8 +369,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  emoji: {
-    fontSize: theme.size['2xl'],
+  iconFallback: {
+    width: 22,
+    height: 22,
   },
   optionLabel: {
     flex: 1,

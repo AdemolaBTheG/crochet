@@ -1,0 +1,14 @@
+{
+  "title": "Granny Streifen Schal",
+  "description": "Ein einfacher Schal, der aus sich wiederholenden Büschelgruppen und Luftmaschenbögen aufgebaut ist.",
+  "materials": ["Weiches Worsted Garn", "5,5 mm Häkelnadel", "Sticknadel", "Schere"],
+  "skills": ["Luftmaschenanschlag", "Stäbchen", "Luftmaschenbögen", "Wendereihen"],
+  "expectationText": "Ein langes Wiederholungsprojekt, bei dem du aufhörst, einzelne Maschen zu zählen, und stattdessen Zwischenräume und Büschel liest.",
+  "steps": [
+    { "type": "instruction", "title": "Anschlag", "instruction": "Schlage 27 Luftmaschen oder ein Vielfaches von 3 plus 3 für einen breiteren Schal an." },
+    { "type": "row", "title": "Reihe 1", "instruction": "Häkle Gruppen von 3 Stäbchen mit übersprungenen Zwischenräumen dazwischen, um das Granny-Streifen-Layout zu beginnen.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "row", "title": "Reihe 2", "instruction": "3 Luftmaschen, wenden und die nächsten Gruppen in die Zwischenräume zwischen den Büscheln der vorherigen Reihe häkeln.", "counterLabel": "row", "targetCount": 2 },
+    { "type": "repeat", "title": "Reihen 3 bis 24", "instruction": "Wiederhole die gleiche Büschelplatzierung in jeden Luftmaschenbogen über die Reihe, bis der Schal deine gewünschte Länge erreicht.", "counterLabel": "row", "targetCount": 24 },
+    { "type": "instruction", "title": "Fertigstellen", "instruction": "Faden vernähen, Enden einweben und nur dann Fransen hinzufügen, wenn du zusätzliche Textur möchtest." }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Rematar y esconder hebras",
+  "description": "Termina los proyectos limpiamente para que se mantengan seguros tras el lavado y el uso.",
+  "content": {
+    "summary": "Rematar y esconder las hebras es el paso final que hace que el trabajo se sienta completo.",
+    "whyItMatters": "Un proyecto no está terminado hasta que los cabos de hilo están seguros y ordenados.",
+    "steps": [
+      "Corta el hilo dejando un cabo.",
+      "Pasa el cabo completamente por el último bucle.",
+      "Enhebra el cabo en una aguja lanera.",
+      "Teje el cabo a través de los puntos cercanos en más de una dirección."
+    ],
+    "practice": "Remata una muestra y esconde ambos cabos ordenadamente.",
+    "commonMistakes": [
+      "Dejar cabos demasiado cortos.",
+      "Tejer en una sola línea recta, lo que puede soltarse con el tiempo."
+    ]
+  }
+}

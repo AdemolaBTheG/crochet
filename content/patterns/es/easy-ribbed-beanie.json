@@ -1,0 +1,14 @@
+{
+  "title": "Gorro acanalado fácil",
+  "description": "Un gorro apto para principiantes hecho de un rectángulo acanalado y una costura simple.",
+  "materials": ["Lana worsted", "Ganchillo 5,5 mm", "Aguja lanera", "Tijeras"],
+  "skills": ["Cadeneta de base", "Medio punto alto", "Solo hebra trasera", "Costura"],
+  "expectationText": "Un proyecto ponible construido a partir de hileras simples, luego cosido en forma para que puedas terminar un gorro real sin modelado complejo.",
+  "steps": [
+    { "type": "instruction", "title": "Base", "instruction": "Haz suficientes cadenetas para alcanzar desde el borde hasta la coronilla del gorro." },
+    { "type": "row", "title": "Hilera 1", "instruction": "Medio punto alto en la tercera cadeneta desde el ganchillo y en cada cadeneta siguiente.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Hileras 2 a 36", "instruction": "2 cadenetas, gira y haz medios puntos altos solo en la hebra trasera en cada hilera.", "counterLabel": "row", "targetCount": 36 },
+    { "type": "instruction", "title": "Coser el lado", "instruction": "Dobla el rectángulo y cose la primera y la última hilera juntas." },
+    { "type": "instruction", "title": "Cerrar la coronilla", "instruction": "Pasa el hilo alrededor del borde superior, aprieta firmemente, asegura y esconde las hebras." }
+  ]
+}

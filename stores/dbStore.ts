@@ -20,31 +20,6 @@ function ensurePatternContentColumns(expoDb: ExpoDatabase) {
     if (!columnNames.has("expectation_text")) {
         expoDb.execSync("ALTER TABLE `patterns` ADD `expectation_text` text;");
     }
-
-    expoDb.execSync(`
-        UPDATE patterns
-        SET
-            skills_text = CASE slug
-            WHEN 'minimalist-coaster' THEN 'Magic ring, single crochet, slip stitch, working in rounds'
-            WHEN 'simple-dishcloth' THEN 'Foundation chain, single crochet, turning rows, weaving ends'
-            WHEN 'beginner-scarf' THEN 'Foundation chain, half double crochet, turning rows, row counting'
-            WHEN 'basic-granny-square' THEN 'Magic ring, double crochet, chain spaces, slip stitch joining'
-            WHEN 'mini-granny-square-join' THEN 'Granny squares, slip stitch joining, seaming, weaving ends'
-            ELSE skills_text
-        END,
-            expectation_text = CASE slug
-            WHEN 'minimalist-coaster' THEN 'A quick round project where you practice building a flat circle, joining neatly, and finishing something useful in one short sitting.'
-            WHEN 'simple-dishcloth' THEN 'A steady row-by-row project for practicing even tension, clean edges, and the rhythm of turning your work.'
-            WHEN 'beginner-scarf' THEN 'A longer repeat project where the app helps you stay on track without recounting every row from scratch.'
-            WHEN 'basic-granny-square' THEN 'A classic motif that teaches corners, clusters, and round structure without jumping into a huge project.'
-            WHEN 'mini-granny-square-join' THEN 'A small finishing project where you turn separate squares into one piece and practice simple joining with confidence.'
-            ELSE expectation_text
-        END
-        WHERE skills_text IS NULL
-            OR skills_text = ''
-            OR expectation_text IS NULL
-            OR expectation_text = '';
-    `);
 }
 
 interface DatabaseState {

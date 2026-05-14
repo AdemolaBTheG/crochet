@@ -1,0 +1,19 @@
+{
+  "title": "Abketten und Fäden vernähen",
+  "description": "Schließe Projekte sauber ab, damit sie auch nach dem Waschen sicher bleiben.",
+  "content": {
+    "summary": "Abketten und Fäden vernähen ist der letzte Schritt, der die Arbeit vollendet wirken lässt.",
+    "whyItMatters": "Ein Projekt ist erst fertig, wenn die Garnenden sicher und ordentlich verstaut sind.",
+    "steps": [
+      "Schneide das Garn ab und lasse ein Ende stehen.",
+      "Ziehe das Ende vollständig durch die letzte Schlaufe.",
+      "Fädle das Ende auf eine Wollnadel.",
+      "Webe das Ende in mehr als einer Richtung durch nahegelegene Maschen."
+    ],
+    "practice": "Kette eine Probe ab und vernähe beide Enden ordentlich.",
+    "commonMistakes": [
+      "Zu kurze Fadenenden lassen.",
+      "Nur in einer geraden Linie vernähen, was sich mit der Zeit lösen kann."
+    ]
+  }
+}

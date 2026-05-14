@@ -1,7 +1,9 @@
+import { PressableScale } from '@/components/pressable-scale';
 import { theme } from '@/constants/Theme';
 import { isLessonFree } from '@/constants/gates';
 import { useSubscription } from '@/context/SubscriptionContext';
 import { lessons as lessonsTable, type Lesson } from '@/db/schema';
+import { resolveLessonTranslation, type ResolvedLesson } from '@/db/translations';
 import { useDbStore } from '@/stores/dbStore';
 import { Host, Button as SwiftUIButton } from '@expo/ui/swift-ui';
 import { buttonStyle, controlSize, tint } from '@expo/ui/swift-ui/modifiers';
@@ -15,23 +17,6 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ActivityIndicator, ScrollView, Text, View, useWindowDimensions } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-type LessonContent = {
-  summary?: string;
-  whyItMatters?: string;
-  steps?: string[];
-  practice?: string;
-  commonMistakes?: string[];
-};
-
-function parseLessonContent(content: string | null): LessonContent {
-  if (!content) return {};
-
-  try {
-    return JSON.parse(content) as LessonContent;
-  } catch {
-    return {};
-  }
-}
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
@@ -193,14 +178,14 @@ function formatDifficulty(
 }
 
 export default function LessonDetailScreen() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const router = useRouter();
   const { db } = useDbStore();
   const { isPro } = useSubscription();
   const { width } = useWindowDimensions();
   const insets = useSafeAreaInsets();
-  const [lesson, setLesson] = useState<Lesson | null>(null);
+  const [lesson, setLesson] = useState<ResolvedLesson | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const contentPadding = theme.spacing.xl;
   const metaGap = theme.spacing.sm;
@@ -223,8 +208,17 @@ export default function LessonDetailScreen() {
           .where(eq(lessonsTable.slug, slug))
           .limit(1);
 
-        if (isMounted) {
-          setLesson(result[0] ?? null);
+        const baseLesson = result[0] ?? null;
+
+        if (isMounted && baseLesson) {
+          const resolved = await resolveLessonTranslation(
+            db,
+            baseLesson,
+            i18n.language,
+          );
+          setLesson(resolved);
+        } else if (isMounted) {
+          setLesson(null);
         }
       } finally {
         if (isMounted) {
@@ -238,7 +232,7 @@ export default function LessonDetailScreen() {
     return () => {
       isMounted = false;
     };
-  }, [db, slug]);
+  }, [db, slug, i18n.language]);
 
   useEffect(() => {
     if (!lesson || isPro || isLessonFree(lesson)) return;
@@ -246,9 +240,9 @@ export default function LessonDetailScreen() {
     router.replace('/(paywalls)');
   }, [isPro, lesson, router]);
 
-  const content = useMemo(() => parseLessonContent(lesson?.content ?? null), [lesson]);
-  const steps = content.steps ?? [];
-  const mistakes = content.commonMistakes ?? [];
+  const content = lesson?.content;
+  const steps = content?.steps ?? [];
+  const mistakes = content?.commonMistakes ?? [];
   const ctaModifiers = useMemo(
     () => [
       buttonStyle(liquidGlassAvailable ? 'glassProminent' : 'borderedProminent'),
@@ -306,32 +300,36 @@ export default function LessonDetailScreen() {
                     lineHeight: theme.size.lg + 6,
                     color: theme.colors.textSecondary,
                   }}>
-                  {content.summary ?? lesson.description}
+                  {content?.summary ?? lesson.description}
                 </Text>
               </View>
 
               <View style={{ flexDirection: 'row', gap: metaGap, justifyContent: 'center' }}>
                 <MetaStatCard
-                  icon="dial.medium.fill"
+                  icon={{ ios: 'dial.medium.fill', android: 'tune', web: 'tune' }}
                   label={t('lessonDetail.difficulty')}
                   value={formatDifficulty(lesson.difficulty, t)}
                   size={metaCardSize}
                 />
                 <MetaStatCard
-                  icon="list.number"
+                  icon={{
+                    ios: 'list.number',
+                    android: 'format_list_numbered',
+                    web: 'format_list_numbered',
+                  }}
                   label={t('lessonDetail.steps')}
                   value={`${steps.length}`}
                   size={metaCardSize}
                 />
                 <MetaStatCard
-                  icon="clock.fill"
+                  icon={{ ios: 'clock.fill', android: 'schedule', web: 'schedule' }}
                   label={t('lessonDetail.practice')}
                   value={t('lessonDetail.practicePaceShort')}
                   size={metaCardSize}
                 />
               </View>
 
-              {content.whyItMatters ? (
+              {content?.whyItMatters ? (
                 <View style={{ gap: theme.spacing.sm + 2 }}>
                   <SectionTitle>{t('lessonDetail.whyItMatters')}</SectionTitle>
                   <WhiteCard>
@@ -363,7 +361,7 @@ export default function LessonDetailScreen() {
                 </View>
               ) : null}
 
-              {content.practice ? (
+              {content?.practice ? (
                 <View style={{ gap: theme.spacing.sm + 2 }}>
                   <SectionTitle>{t('lessonDetail.practice')}</SectionTitle>
                   <WhiteCard>
@@ -396,22 +394,57 @@ export default function LessonDetailScreen() {
           ) : null}
         </ScrollView>
 
-        {lesson && content.practice ? (
-          <Host
-            matchContents={false}
-            style={{
-              position: 'absolute',
-              bottom: insets.bottom + 24,
-              left: (width - ctaWidth) / 2,
-              width: ctaWidth,
-              height: 56,
-            }}>
-            <SwiftUIButton
-              label={t('lessonDetail.startPractice')}
-              onPress={handleStartPractice}
-              modifiers={ctaModifiers}
-            />
-          </Host>
+        {lesson && content?.practice ? (
+          process.env.EXPO_OS === 'ios' ? (
+            <Host
+              matchContents={false}
+              style={{
+                position: 'absolute',
+                bottom: insets.bottom + 24,
+                left: (width - ctaWidth) / 2,
+                width: ctaWidth,
+                height: 56,
+              }}>
+              <SwiftUIButton
+                label={t('lessonDetail.startPractice')}
+                onPress={handleStartPractice}
+                modifiers={ctaModifiers}
+              />
+            </Host>
+          ) : (
+            <View
+              style={{
+                position: 'absolute',
+                bottom: insets.bottom + 24,
+                left: (width - ctaWidth) / 2,
+                width: ctaWidth,
+                height: 56,
+              }}>
+              <PressableScale
+                onPress={handleStartPractice}
+                accessibilityRole="button"
+                accessibilityLabel={t('lessonDetail.startPractice')}
+                style={{
+                  flex: 1,
+                  minHeight: 56,
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  paddingHorizontal: theme.spacing.lg,
+                  borderRadius: theme.radius.pill,
+                  backgroundColor: theme.colors.primary,
+                }}>
+                <Text
+                  selectable={false}
+                  style={{
+                    fontSize: theme.size.md,
+                    fontWeight: theme.weight.semibold,
+                    color: theme.colors.white,
+                  }}>
+                  {t('lessonDetail.startPractice')}
+                </Text>
+              </PressableScale>
+            </View>
+          )
         ) : null}
       </View>
     </>

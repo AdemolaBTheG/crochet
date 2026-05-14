@@ -1,0 +1,14 @@
+{
+  "title": "Marcapáginas delgado",
+  "description": "Un proyecto estrecho en hileras para practicar bordes, tensión y un pequeño acabado con borla.",
+  "materials": ["Hilo de algodón", "Ganchillo 3,5 a 4 mm", "Aguja lanera", "Tijeras"],
+  "skills": ["Cadeneta de base", "Punto bajo", "Hileras de vuelta", "Confección de borlas"],
+  "expectationText": "Un pequeño proyecto ordenado que recompensa la tensión cuidadosa y te da un regalo terminado en menos de una hora.",
+  "steps": [
+    { "type": "instruction", "title": "Base", "instruction": "Haz 8 cadenetas para un ancho de marcapáginas delgado." },
+    { "type": "row", "title": "Hilera 1", "instruction": "Punto bajo en la segunda cadeneta desde el ganchillo y en cada cadeneta siguiente.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Hileras 2 a 24", "instruction": "1 cadeneta, gira y haz puntos bajos en cada hilera.", "counterLabel": "row", "targetCount": 24 },
+    { "type": "instruction", "title": "Añadir una borla", "instruction": "Corta algunos hilos y átalos a un borde corto." },
+    { "type": "instruction", "title": "Terminar", "instruction": "Recorta la borla uniformemente y esconde la hebra inicial." }
+  ]
+}

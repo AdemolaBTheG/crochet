@@ -1,0 +1,51 @@
+{
+  "title": "Minimalistische onderzetter",
+  "description": "Een snel rondproject voor het leren van rondes, samenvoegen en eenvoudige steekherhaling.",
+  "materials": [
+    "Katoenen garen",
+    "4 tot 5 mm haak",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Magische ring",
+    "enkel haakwerk",
+    "slipsteek",
+    "in rondes werken"
+  ],
+  "expectationText": "Een snel rond project waarbij je oefent met het bouwen van een platte cirkel, het netjes samenvoegen en het afwerken van iets nuttigs in één korte zitting.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Maak een middenring",
+      "instruction": "Begin met een magische ring of ketting van 4 en sluit deze aan tot een lus."
+    },
+    {
+      "type": "round",
+      "title": "Ronde 1",
+      "instruction": "Haak 8 vasten in de ring en sluit af met een halve vaste.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Ronde 2",
+      "instruction": "Haak 2 vasten in elke steek, voor een totaal van 16 steken.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Ronde 3",
+      "instruction": "Wissel 1 vaste af en vervolgens 2 vasten in de volgende steek.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Slipsteek om samen te voegen, af te hechten en aan het einde te weven."
+    }
+  ]
+}
+

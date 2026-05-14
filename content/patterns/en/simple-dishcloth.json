@@ -1,0 +1,13 @@
+{
+  "title": "Simple Dishcloth",
+  "description": "A practical square project for learning rows and building even tension.",
+  "materials": ["Cotton yarn", "5 mm hook", "yarn needle", "scissors"],
+  "skills": ["Foundation chain", "single crochet", "turning rows", "weaving ends"],
+  "expectationText": "A steady row-by-row project for practicing even tension, clean edges, and the rhythm of turning your work.",
+  "steps": [
+    { "type": "instruction", "title": "Foundation", "instruction": "Chain 21 stitches." },
+    { "type": "row", "title": "Row 1", "instruction": "Single crochet into the second chain from the hook and each chain across.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Rows 2 to 18", "instruction": "Chain 1, turn, and single crochet in each stitch across.", "counterLabel": "row", "targetCount": 18 },
+    { "type": "instruction", "title": "Finish", "instruction": "Fasten off and weave in both ends." }
+  ]
+}

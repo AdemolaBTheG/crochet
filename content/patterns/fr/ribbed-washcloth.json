@@ -1,0 +1,14 @@
+{
+  "title": "Gant de toilette côtelé",
+  "description": "Un carré simple qui transforme la pratique des brins arrière en un tissu texturé utile.",
+  "materials": ["Fil de coton", "Crochet 5 mm", "Aiguille à laine", "Ciseaux"],
+  "skills": ["Chaînette de base", "Demi-bride", "Brins arrière uniquement", "Rangs tournants"],
+  "expectationText": "Un projet pratique de la taille d'un échantillon où le côtelé devient vite évident, pour que la technique soit assimilée avant de passer aux vêtements.",
+  "steps": [
+    { "type": "instruction", "title": "Fondation", "instruction": "Faites 19 mailles en l'air." },
+    { "type": "row", "title": "Rang 1", "instruction": "Demi-bride dans la troisième maille en l'air depuis le crochet et dans chaque maille suivante.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "row", "title": "Rang 2", "instruction": "2 mailles en l'air, tournez et faites des demi-brides dans le brin arrière uniquement sur tout le rang.", "counterLabel": "row", "targetCount": 2 },
+    { "type": "repeat", "title": "Rangs 3 à 16", "instruction": "Continuez à faire 2 mailles en l'air, tournez et faites des demi-brides dans le brin arrière uniquement sur tout le rang.", "counterLabel": "row", "targetCount": 16 },
+    { "type": "instruction", "title": "Finir", "instruction": "Arrêtez le fil et rentrez soigneusement les deux fils." }
+  ]
+}

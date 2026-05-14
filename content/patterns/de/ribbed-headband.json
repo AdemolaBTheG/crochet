@@ -1,0 +1,14 @@
+{
+  "title": "Geripptes Stirnband",
+  "description": "Ein dehnbares tragbares Rechteck, das mit Reihen nur in hintere Maschenglieder und einer einfachen Naht hergestellt wird.",
+  "materials": ["Weiches Worsted Garn", "5 mm Häkelnadel", "Sticknadel", "Schere"],
+  "skills": ["Luftmaschenanschlag", "Halbes Stäbchen", "Nur hinteres Maschenglied", "Wendereihen", "Nähen"],
+  "expectationText": "Eine tragbare Version der Rippenübung, bei der das fertige Rechteck mit einer sauberen Verbindung zu etwas Nützlichem wird.",
+  "steps": [
+    { "type": "instruction", "title": "Anschlag", "instruction": "Schlage genug Luftmaschen für die Breite des Stirnbands an, normalerweise 10 bis 14 Maschen." },
+    { "type": "row", "title": "Reihe 1", "instruction": "Halbes Stäbchen in die dritte Luftmasche von der Nadel und in jede weitere Luftmasche.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Reihen 2 bis 32", "instruction": "2 Luftmaschen, wenden und halbe Stäbchen nur in das hintere Maschenglied über jede Reihe häkeln.", "counterLabel": "row", "targetCount": 32 },
+    { "type": "instruction", "title": "Die Passform prüfen", "instruction": "Wickle den Streifen mit leichter Dehnung um deinen Kopf und füge Reihen hinzu oder entferne sie bei Bedarf." },
+    { "type": "instruction", "title": "Verbinden", "instruction": "Nähe die kurzen Kanten zusammen, vernähe den Faden und webe die Enden in die Rippung ein." }
+  ]
+}

@@ -69,14 +69,6 @@ async function ensureCameraPermission() {
   return nextPermission.granted;
 }
 
-async function ensureLibraryPermission() {
-  const currentPermission = await ImagePicker.getMediaLibraryPermissionsAsync();
-  if (currentPermission.granted) return true;
-
-  const nextPermission = await ImagePicker.requestMediaLibraryPermissionsAsync();
-  return nextPermission.granted;
-}
-
 function ActionButton({
   title,
   icon,
@@ -150,7 +142,7 @@ function EmptyPreview() {
           backgroundColor: theme.colors.primarySoft,
         }}>
         <SymbolView
-          name="camera.viewfinder"
+          name={{ ios: 'camera.viewfinder', android: 'photo_camera', web: 'photo_camera' }}
           size={30}
           weight="semibold"
           tintColor={theme.colors.primary}
@@ -665,15 +657,6 @@ export default function IdentifyStitchScreen() {
   async function choosePhoto() {
     void Haptics.selectionAsync();
 
-    const hasPermission = await ensureLibraryPermission();
-    if (!hasPermission) {
-      Alert.alert(
-        t('tools.identifyStitch.alerts.photoPermissionTitle'),
-        t('tools.identifyStitch.alerts.photoPermissionMessage'),
-      );
-      return;
-    }
-
     const result = await ImagePicker.launchImageLibraryAsync({
       mediaTypes: ['images'],
       allowsEditing: true,
@@ -724,13 +707,13 @@ export default function IdentifyStitchScreen() {
         <View style={{ flexDirection: 'row', gap: theme.spacing.md }}>
           <ActionButton
             title={t('tools.identifyStitch.actions.takePhoto')}
-            icon="camera.fill"
+            icon={{ ios: 'camera.fill', android: 'photo_camera', web: 'photo_camera' }}
             onPress={takePhoto}
             variant="primary"
           />
           <ActionButton
             title={t('tools.identifyStitch.actions.choosePhoto')}
-            icon="photo.on.rectangle"
+            icon={{ ios: 'photo.on.rectangle', android: 'photo_library', web: 'photo_library' }}
             onPress={choosePhoto}
             variant="secondary"
           />

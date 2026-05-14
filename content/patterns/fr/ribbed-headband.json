@@ -1,0 +1,14 @@
+{
+  "title": "Bandeau côtelé",
+  "description": "Un rectangle extensible à porter réalisé avec des rangs en brins arrière uniquement et une simple couture.",
+  "materials": ["Fil worsted doux", "Crochet 5 mm", "Aiguille à laine", "Ciseaux"],
+  "skills": ["Chaînette de base", "Demi-bride", "Brins arrière uniquement", "Rangs tournants", "Couture"],
+  "expectationText": "Une version portable de la pratique des côtes où le rectangle fini devient quelque chose d'utile avec une seule jointure nette.",
+  "steps": [
+    { "type": "instruction", "title": "Fondation", "instruction": "Faites assez de mailles en l'air pour la largeur du bandeau, généralement 10 à 14 mailles." },
+    { "type": "row", "title": "Rang 1", "instruction": "Demi-bride dans la troisième maille en l'air depuis le crochet et dans chaque maille suivante.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Rangs 2 à 32", "instruction": "2 mailles en l'air, tournez et faites des demi-brides dans le brin arrière uniquement sur chaque rang.", "counterLabel": "row", "targetCount": 32 },
+    { "type": "instruction", "title": "Vérifier l'ajustement", "instruction": "Enroulez la bande autour de votre tête avec une légère tension et ajoutez ou retirez des rangs si nécessaire." },
+    { "type": "instruction", "title": "Assembler", "instruction": "Cousez les bords courts ensemble, arrêtez le fil et rentrez les fils dans les côtes." }
+  ]
+}

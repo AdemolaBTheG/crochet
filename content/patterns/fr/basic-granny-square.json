@@ -1,0 +1,14 @@
+{
+  "title": "Granny square classique",
+  "description": "Un motif de crochet classique qui enseigne les groupes de brides et les coins.",
+  "materials": ["Fil peigné", "crochet 5 mm", "aiguille à laine", "ciseaux"],
+  "skills": ["Anneau magique", "bride", "espaces de chaînette", "fermeture en maille coulée"],
+  "expectationText": "Un motif classique qui enseigne les coins, les groupes et la structure en tours sans se lancer dans un énorme projet.",
+  "steps": [
+    { "type": "instruction", "title": "Anneau central", "instruction": "Créez un anneau magique ou 4 mailles en l'air fermées en boucle." },
+    { "type": "round", "title": "Tour 1", "instruction": "Faites 4 groupes granny séparés par des espaces de chaînette et fermez pour former le carré.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Tour 2", "instruction": "Maille coulée jusqu'à un espace de coin, construisez la couche suivante de groupes granny et formez les coins avec des espaces de chaînette.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Tour 3", "instruction": "Répétez les groupes granny le long des côtés et des coins jusqu'à ce que le carré atteigne la taille souhaitée.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Finition", "instruction": "Fermez le tour, arrêtez le fil et rentrez les brins." }
+  ]
+}

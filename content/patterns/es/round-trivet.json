@@ -1,0 +1,14 @@
+{
+  "title": "Salvamanteles redondo",
+  "description": "Un círculo plano más grueso que amplía las habilidades del posavasos y te da un tamaño terminado más útil.",
+  "materials": ["Hilo de algodón grueso", "Ganchillo 5,5 a 6 mm", "Aguja lanera", "Tijeras"],
+  "skills": ["Anillo mágico", "Punto bajo", "Aumentos", "Unión con punto deslizado"],
+  "expectationText": "Un círculo plano y resistente donde prácticas aumentos uniformes por más tiempo sin que el proyecto se vuelva repetitivo demasiado rápido.",
+  "steps": [
+    { "type": "instruction", "title": "Hacer el anillo central", "instruction": "Comienza con un anillo mágico o 4 cadenetas y une en un círculo." },
+    { "type": "round", "title": "Vuelta 1", "instruction": "Haz 8 puntos bajos en el anillo y une con un punto deslizado.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Vuelta 2", "instruction": "Haz 2 puntos bajos en cada punto alrededor para un total de 16 puntos.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "repeat", "title": "Vueltas 3 a 5", "instruction": "Aumenta uniformemente en cada vuelta espaciando 2 puntos bajos en un punto para que el círculo se mantenga plano.", "counterLabel": "round", "targetCount": 5 },
+    { "type": "instruction", "title": "Terminar", "instruction": "Une con punto deslizado, remata y esconde la hebra firmemente." }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Côtes en brin arrière seulement",
+  "description": "Créez de l'élasticité et des côtes visibles en travaillant dans un seul brin au lieu des deux.",
+  "content": {
+    "summary": "Le crochet en brin arrière change la texture du tissu et donne un joli effet côtelé.",
+    "whyItMatters": "Cette technique est utilisée pour les bonnets, poignets et basiques texturés où l'élasticité et la direction comptent.",
+    "steps": [
+      "Trouvez les deux brins supérieurs d'une maille et identifiez le brin arrière, le plus éloigné de vous.",
+      "Piquez le crochet uniquement sous ce brin arrière au lieu des deux brins.",
+      "Travaillez la maille normalement tout en gardant le bord détendu.",
+      "Répétez sur tout le rang pour construire des côtes régulières."
+    ],
+    "practice": "Faites deux rangs courts en mailles normales, puis deux rangs en brin arrière seulement et comparez la texture.",
+    "commonMistakes": [
+      "Attraper accidentellement les deux brins par habitude.",
+      "Trop serrer et rendre les côtes rigides au lieu de flexibles."
+    ]
+  }
+}

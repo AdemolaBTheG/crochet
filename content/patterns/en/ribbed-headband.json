@@ -1,0 +1,14 @@
+{
+  "title": "Ribbed Headband",
+  "description": "A stretchy wearable rectangle made with back-loop-only rows and a simple seam.",
+  "materials": ["Soft worsted yarn", "5 mm hook", "yarn needle", "scissors"],
+  "skills": ["Foundation chain", "half double crochet", "back loop only", "turning rows", "seaming"],
+  "expectationText": "A wearable version of ribbing practice where the finished rectangle becomes something useful with one clean join.",
+  "steps": [
+    { "type": "instruction", "title": "Foundation", "instruction": "Chain enough stitches for the width of the headband, usually 10 to 14 stitches." },
+    { "type": "row", "title": "Row 1", "instruction": "Half double crochet in the third chain from the hook and each chain across.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Rows 2 to 32", "instruction": "Chain 2, turn, and work half double crochet in the back loop only across each row.", "counterLabel": "row", "targetCount": 32 },
+    { "type": "instruction", "title": "Check the fit", "instruction": "Wrap the strip around your head with slight stretch and add or remove rows if needed." },
+    { "type": "instruction", "title": "Join", "instruction": "Seam the short edges together, fasten off, and weave the tails into the ribbing." }
+  ]
+}

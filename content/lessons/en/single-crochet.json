@@ -1,0 +1,19 @@
+{
+  "title": "Single Crochet",
+  "description": "Learn the most useful beginner stitch for compact, sturdy fabric.",
+  "content": {
+    "summary": "Insert the hook, pull up a loop, and complete a simple stitch with two loops on the hook.",
+    "whyItMatters": "Single crochet is a core stitch used in coasters, amigurumi, dishcloths, and borders.",
+    "steps": [
+      "Insert the hook into the next stitch.",
+      "Yarn over and pull up a loop.",
+      "Yarn over again and pull through both loops.",
+      "Repeat across the row."
+    ],
+    "practice": "Work 3 rows of 10 single crochet stitches.",
+    "commonMistakes": [
+      "Accidentally skipping the last stitch in the row.",
+      "Adding extra stitches at the edges without noticing."
+    ]
+  }
+}

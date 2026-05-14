@@ -1,0 +1,14 @@
+{
+  "title": "Tiny Heart Applique",
+  "description": "A small decorative heart for practicing shaping in one quick round.",
+  "materials": ["Cotton yarn", "4 mm hook", "yarn needle", "scissors"],
+  "skills": ["Magic ring", "double crochet", "treble crochet", "slip stitch"],
+  "expectationText": "A tiny shaped motif that teaches how stitch height changes the outline of a design.",
+  "steps": [
+    { "type": "instruction", "title": "Make the ring", "instruction": "Start with a magic ring and chain 2 to begin the heart shape." },
+    { "type": "round", "title": "Build the lobes", "instruction": "Work taller stitches into the ring to form the rounded top of the heart.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "instruction", "title": "Shape the point", "instruction": "Use shorter stitches, then one taller stitch at the bottom point." },
+    { "type": "instruction", "title": "Close the heart", "instruction": "Mirror the first side, slip stitch to close, and pull the ring tight." },
+    { "type": "instruction", "title": "Finish", "instruction": "Fasten off and weave the tails into the back of the heart." }
+  ]
+}

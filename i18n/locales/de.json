@@ -313,7 +313,23 @@
     "loader": {
       "titlePreparing": "Dein Erlebnis wird vorbereitet",
       "titleReady": "Du bist startklar.",
+      "ctaPreview": "Kurze Demo ansehen",
       "ctaReady": "Crova starten",
+      "summaryEyebrow": "Personlicher Start",
+      "summarySubtitle": "Wir richten deine ersten Schritte nach deinem Niveau, Fokus und Setup aus.",
+      "summaryCardTitle": "Dein Setup",
+      "summaryCardSubtitle": "So startet Crova mit dir, basierend auf deinen Antworten.",
+      "summaryLabels": {
+        "skillLevel": "Erfahrung",
+        "goal": "Fokus",
+        "handedness": "Handigkeit"
+      },
+      "summaryFallbacks": {
+        "skillLevel": "Personalisiert",
+        "goal": "Dein Hakelweg",
+        "handedness": "Standard-Setup"
+      },
+      "nextTitle": "Was als Nächstes passiert",
       "goalLabels": {
         "learnBasics": "die wichtigsten Maschen",
         "finishFirstProject": "dein erstes Projekt",
@@ -331,7 +347,76 @@
         "pickingLessons": "Wir wahlen Lektionen fur {{goalLabel}}...",
         "tracking": "Fortschrittstracking wird eingerichtet...",
         "finalizing": "Crova Start wird finalisiert..."
+      },
+      "nextSteps": {
+        "skillLevel": {
+          "beginner": "Du startest mit kurzen Schritt-fur-Schritt-Lektionen in einem ruhigen Tempo.",
+          "intermediate": "Du bekommst eine kurze Auffrischung und gehst dann direkt in gefuhrte Praxis uber.",
+          "advanced": "Du steigst direkt in anspruchsvollere Muster und tiefere Technikarbeit ein.",
+          "default": "Du startest mit einem personlichen Lernpfad passend zu deinem Niveau."
+        },
+        "goal": {
+          "learnBasics": "Deine ersten Lektionen konzentrieren sich auf die wichtigsten Maschen und wie sie zusammenpassen.",
+          "finishFirstProject": "Dein Plan fuhrt dich so schnell wie moglich zu einem ersten fertigen Projekt.",
+          "buildHabit": "Dein Plan setzt auf leichtere Einheiten, die sich leichter regelmassig wiederholen lassen.",
+          "default": "Dein Plan richtet sich nach dem Ergebnis, das dir am wichtigsten ist."
+        },
+        "tracking": "Reihenzahler und Fortschritts-Tools sind ab dem ersten Tag bereit."
       }
+    },
+    "demo": {
+      "eyebrow": "Kurze Praxis",
+      "title": "So fuhrt dich Crova",
+      "subtitle": "Eine kurze gefuhrte Probe fur {{skillLabel}} mit Fokus auf {{goalLabel}}.",
+      "stepLabel": "Schritt {{current}}",
+      "chips": {
+        "duration": "Unter 30 Sekunden",
+        "handedness": "{{value}} gespeichert"
+      },
+      "actions": {
+        "previous": "Zuruck",
+        "next": "Nächster Schritt",
+        "finish": "Meinen Plan ansehen"
+      },
+      "skillAudience": {
+        "beginner": "Anfanger",
+        "intermediate": "Hakler mit Grundlagen",
+        "advanced": "Hakler, die eine Herausforderung wollen",
+        "default": "Hakler"
+      },
+      "goalFocus": {
+        "learnBasics": "die wichtigsten Maschen lernen",
+        "finishFirstProject": "ein erstes Projekt abschliessen",
+        "buildHabit": "eine feste Routine aufbauen",
+        "default": "deinen Rhythmus finden"
+      },
+      "cards": {
+        "one": {
+          "title": "Starte mit einer klaren Bewegung"
+        },
+        "two": {
+          "title": "Bleib mit jedem Schritt im Takt"
+        },
+        "three": {
+          "title": "Bewege dich auf ein echtes Ergebnis zu"
+        }
+      },
+      "stepBodies": {
+        "skill": {
+          "beginner": "Wir verlangsamen die Lektion und halten die Bewegung einfach, damit du dich immer nur auf eine Sache konzentrierst.",
+          "intermediate": "Wir halten die Erklarung kurz und bringen dich ohne Tempoverlust direkt in gefuhrte Praxis.",
+          "advanced": "Wir halten die Anleitung leichter, damit du schneller ins Tun kommst und weniger lesen musst.",
+          "default": "Wir passen das Tempo an dein Niveau an, damit sich die Anleitung hilfreich statt wiederholend anfuhlt."
+        },
+        "progress": "Der Fortschritt bleibt sichtbar, damit du immer weisst, was als Nächstes kommt und wo du aufgehort hast.",
+        "goal": {
+          "learnBasics": "Dein Weg startet mit den wichtigsten Maschen, weil das am schnellsten Sicherheit aufbaut.",
+          "finishFirstProject": "Dein Weg drangt auf ein erstes fertiges Projekt, damit die Praxis in etwas Greifbares ubergeht.",
+          "buildHabit": "Dein Weg setzt auf kleine Erfolge, die sich leicht wiederholen lassen, damit du morgen gern weitermachst.",
+          "default": "Dein Weg bleibt auf das Ergebnis ausgerichtet, das dir am wichtigsten ist."
+        }
+      },
+      "note": "Das ist derselbe gefuhrte Schritt-fur-Schritt-Rhythmus, den du auch in deinen ersten Crova Lektionen nutzen wirst."
     }
   }
 }

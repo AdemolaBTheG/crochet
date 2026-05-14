@@ -3,14 +3,14 @@ import { theme } from '@/constants/Theme';
 import { usePremiumGate } from '@/hooks/usePremiumGate';
 import { Host, Picker, Text as SwiftText } from '@expo/ui/swift-ui';
 import {
-    Animation,
-    animation,
-    contentTransition,
-    font,
-    foregroundStyle,
-    monospacedDigit,
-    pickerStyle,
-    tag,
+  Animation,
+  animation,
+  contentTransition,
+  font,
+  foregroundStyle,
+  monospacedDigit,
+  pickerStyle,
+  tag,
 } from '@expo/ui/swift-ui/modifiers';
 import * as Haptics from 'expo-haptics';
 import { SymbolView } from 'expo-symbols';
@@ -29,35 +29,100 @@ function CounterModePicker({
   onChange: (counter: CounterKind) => void;
 }) {
   const { t } = useTranslation();
+  const isIOS = process.env.EXPO_OS === 'ios';
+
+  if (isIOS) {
+    return (
+      <Host matchContents useViewportSizeMeasurement>
+        <Picker<CounterKind>
+          selection={activeCounter}
+          onSelectionChange={onChange}
+          modifiers={[pickerStyle('segmented')]}>
+          <SwiftText modifiers={[tag('rows')]}>{t('tools.rowCounter.mode.rows')}</SwiftText>
+          <SwiftText modifiers={[tag('rounds')]}>{t('tools.rowCounter.mode.rounds')}</SwiftText>
+        </Picker>
+      </Host>
+    );
+  }
 
   return (
-    <Host matchContents useViewportSizeMeasurement>
-      <Picker<CounterKind>
-        selection={activeCounter}
-        onSelectionChange={onChange}
-        modifiers={[pickerStyle('segmented')]}>
-        <SwiftText modifiers={[tag('rows')]}>{t('tools.rowCounter.mode.rows')}</SwiftText>
-        <SwiftText modifiers={[tag('rounds')]}>{t('tools.rowCounter.mode.rounds')}</SwiftText>
-      </Picker>
-    </Host>
+    <View
+      style={{
+        flexDirection: 'row',
+        gap: theme.spacing.xs,
+        padding: theme.spacing.xs,
+        borderRadius: theme.radius.pill,
+        backgroundColor: theme.colors.muted,
+      }}>
+      {([
+        { value: 'rows', label: t('tools.rowCounter.mode.rows') },
+        { value: 'rounds', label: t('tools.rowCounter.mode.rounds') },
+      ] as const).map((option) => {
+        const isSelected = option.value === activeCounter;
+
+        return (
+          <PressableScale
+            key={option.value}
+            onPress={() => onChange(option.value)}
+            style={{
+              flex: 1,
+              minHeight: 40,
+              paddingHorizontal: theme.spacing.md,
+              borderRadius: theme.radius.pill,
+              alignItems: 'center',
+              justifyContent: 'center',
+              backgroundColor: isSelected ? theme.colors.primary : 'transparent',
+            }}>
+            <Text
+              selectable={false}
+              style={{
+                fontSize: theme.size.md,
+                fontWeight: theme.weight.semibold,
+                color: isSelected ? theme.colors.white : theme.colors.textSecondary,
+              }}>
+              {option.label}
+            </Text>
+          </PressableScale>
+        );
+      })}
+    </View>
   );
 }
 
 function NumericCount({ value }: { value: number }) {
+  const isIOS = process.env.EXPO_OS === 'ios';
+
+  if (isIOS) {
+    return (
+      <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+        <Host matchContents useViewportSizeMeasurement>
+          <SwiftText
+            modifiers={[
+              font({ size: 76, weight: 'black', design: 'rounded' }),
+              monospacedDigit(),
+              foregroundStyle(theme.colors.textPrimary),
+              contentTransition('numericText'),
+              animation(Animation.spring({ duration: 0.28, bounce: 0.18 }), value),
+            ]}>
+            {value}
+          </SwiftText>
+        </Host>
+      </View>
+    );
+  }
+
   return (
     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-      <Host matchContents useViewportSizeMeasurement>
-        <SwiftText
-          modifiers={[
-            font({ size: 76, weight: 'black', design: 'rounded' }),
-            monospacedDigit(),
-            foregroundStyle(theme.colors.textPrimary),
-            contentTransition('numericText'),
-            animation(Animation.spring({ duration: 0.28, bounce: 0.18 }), value),
-          ]}>
-          {value}
-        </SwiftText>
-      </Host>
+      <Text
+        selectable={false}
+        style={{
+          fontSize: 76,
+          fontWeight: theme.weight.black,
+          color: theme.colors.textPrimary,
+          fontVariant: ['tabular-nums'],
+        }}>
+        {value}
+      </Text>
     </View>
   );
 }
@@ -234,13 +299,13 @@ export default function RowCounterScreen() {
         <View style={{ flexDirection: 'row', gap: theme.spacing.md }}>
           <CounterButton
             label={decreaseLabel}
-            icon="minus"
+            icon={{ ios: 'minus', android: 'remove', web: 'remove' }}
             onPress={() => updateActiveCounter(-1)}
             variant="secondary"
           />
           <CounterButton
             label={increaseLabel}
-            icon="plus"
+            icon={{ ios: 'plus', android: 'add', web: 'add' }}
             onPress={() => updateActiveCounter(1)}
             variant="primary"
           />

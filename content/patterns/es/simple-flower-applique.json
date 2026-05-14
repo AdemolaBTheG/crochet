@@ -1,0 +1,14 @@
+{
+  "title": "Aplique de flor simple",
+  "description": "Un motivo de flor de cinco pétalos para aprender el modelado repetido alrededor de un centro.",
+  "materials": ["Hilo de algodón", "Ganchillo 4 mm", "Aguja lanera", "Tijeras"],
+  "skills": ["Anillo mágico", "Espacios de cadeneta", "Punto alto", "Punto deslizado"],
+  "expectationText": "Un motivo alegre que repite la misma secuencia de pétalos para que el modelado se vuelva predecible.",
+  "steps": [
+    { "type": "instruction", "title": "Hacer el centro", "instruction": "Comienza con un anillo mágico y haz 10 puntos bajos en el centro." },
+    { "type": "round", "title": "Vuelta 1", "instruction": "Une la vuelta central con un punto deslizado y aprieta el anillo.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "repeat", "title": "Hacer cinco pétalos", "instruction": "Repite cadenetas y puntos altos en el mismo punto para formar cada pétalo.", "targetCount": 5 },
+    { "type": "instruction", "title": "Dar forma a los pétalos", "instruction": "Coloca suavemente cada pétalo en su lugar para que la flor quede plana." },
+    { "type": "instruction", "title": "Terminar", "instruction": "Remata y esconde las hebras en la parte trasera de la flor." }
+  ]
+}

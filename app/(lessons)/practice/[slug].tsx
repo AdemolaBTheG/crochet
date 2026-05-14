@@ -2,6 +2,8 @@ import { theme } from '@/constants/Theme';
 import { isLessonFree } from '@/constants/gates';
 import { useSubscription } from '@/context/SubscriptionContext';
 import { lessons as lessonsTable, type Lesson } from '@/db/schema';
+import { resolveLessonTranslation, type ResolvedLesson } from '@/db/translations';
+import { logFirebaseEvent } from '@/services/firebaseAnalytics';
 import { useDbStore } from '@/stores/dbStore';
 import { askForReview } from '@/utils/review';
 import { Host, Text as SwiftText } from '@expo/ui/swift-ui';
@@ -19,6 +21,7 @@ import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as Haptics from 'expo-haptics';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   ActivityIndicator,
   Pressable,
@@ -44,12 +47,6 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-type LessonContent = {
-  summary?: string;
-  steps?: string[];
-  practice?: string;
-};
-
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 const buttonLayoutTransition = LinearTransition.duration(180);
 const stepCardLayoutTransition = LinearTransition.duration(200);
@@ -59,16 +56,6 @@ const previousButtonExiting = FadeOutRight.duration(140);
 function triggerNavigationHaptic() {
   if (process.env.EXPO_OS === 'ios') {
     void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-  }
-}
-
-function parseLessonContent(content: string | null): LessonContent {
-  if (!content) return {};
-
-  try {
-    return JSON.parse(content) as LessonContent;
-  } catch {
-    return {};
   }
 }
 
@@ -108,6 +95,7 @@ function StepProgressLabel({
   currentStep: number;
   totalSteps: number;
 }) {
+  const isIOS = process.env.EXPO_OS === 'ios';
   const labelModifiers = useMemo(
     () => [
       font({ size: theme.size.md, weight: 'semibold', design: 'rounded' }),
@@ -120,15 +108,34 @@ function StepProgressLabel({
     [currentStep],
   );
 
+  if (isIOS) {
+    return (
+      <Host
+        matchContents
+        useViewportSizeMeasurement
+        style={{ width: 86, height: 24, alignSelf: 'flex-end' }}>
+        <SwiftText modifiers={labelModifiers}>
+          {currentStep}/{totalSteps} steps
+        </SwiftText>
+      </Host>
+    );
+  }
+
   return (
-    <Host
-      matchContents
-      useViewportSizeMeasurement
-      style={{ width: 86, height: 24, alignSelf: 'flex-end' }}>
-      <SwiftText modifiers={labelModifiers}>
+    <View style={{ width: 86, height: 24, alignSelf: 'flex-end' }}>
+      <Text
+        selectable={false}
+        style={{
+          minWidth: 82,
+          fontSize: theme.size.md,
+          fontWeight: theme.weight.semibold,
+          color: theme.colors.textSecondary,
+          fontVariant: ['tabular-nums'],
+          textAlign: 'right',
+        }}>
         {currentStep}/{totalSteps} steps
-      </SwiftText>
-    </Host>
+      </Text>
+    </View>
   );
 }
 
@@ -323,10 +330,11 @@ export default function LessonPracticeScreen() {
   const { width } = useWindowDimensions();
   const { db } = useDbStore();
   const { isPro } = useSubscription();
+  const { i18n } = useTranslation();
   const stepListRef = useRef<FlatList<string>>(null);
   const hasPositionedStepListRef = useRef(false);
   const isProgrammaticStepScrollRef = useRef(false);
-  const [lesson, setLesson] = useState<Lesson | null>(null);
+  const [resolvedLesson, setResolvedLesson] = useState<ResolvedLesson | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedStepIndex, setSelectedStepIndex] = useState(0);
 
@@ -345,10 +353,19 @@ export default function LessonPracticeScreen() {
           .where(eq(lessonsTable.slug, slug))
           .limit(1);
 
-        if (isMounted) {
-          setLesson(result[0] ?? null);
+        const baseLesson = result[0] ?? null;
+
+        if (isMounted && baseLesson) {
+          const resolved = await resolveLessonTranslation(
+            db,
+            baseLesson,
+            i18n.language,
+          );
+          setResolvedLesson(resolved);
           setSelectedStepIndex(0);
           hasPositionedStepListRef.current = false;
+        } else if (isMounted) {
+          setResolvedLesson(null);
         }
       } finally {
         if (isMounted) {
@@ -362,16 +379,16 @@ export default function LessonPracticeScreen() {
     return () => {
       isMounted = false;
     };
-  }, [db, slug]);
+  }, [db, slug, i18n.language]);
 
   useEffect(() => {
-    if (!lesson || isPro || isLessonFree(lesson)) return;
+    if (!resolvedLesson || isPro || isLessonFree(resolvedLesson)) return;
 
     router.replace('/(paywalls)');
-  }, [isPro, lesson, router]);
+  }, [isPro, resolvedLesson, router]);
 
-  const content = useMemo(() => parseLessonContent(lesson?.content ?? null), [lesson]);
-  const steps = content.steps ?? [];
+  const steps = resolvedLesson?.content.steps ?? [];
+  const content = resolvedLesson?.content;
   const currentStepIndex = Math.min(selectedStepIndex, Math.max(steps.length - 1, 0));
   const progress = steps.length > 0 ? (currentStepIndex + 1) / steps.length : 0;
   const stepCardGap = theme.spacing.md;
@@ -445,6 +462,14 @@ export default function LessonPracticeScreen() {
   }
 
   async function finishPractice() {
+    if (resolvedLesson) {
+      void logFirebaseEvent('lesson_complete', {
+        lesson_slug: resolvedLesson.slug,
+        lesson_title: resolvedLesson.title,
+        difficulty: resolvedLesson.difficulty,
+      });
+    }
+
     await askForReview({ source: 'lesson-practice-complete' });
     router.back();
   }
@@ -453,7 +478,7 @@ export default function LessonPracticeScreen() {
     <>
       <Stack.Screen
         options={{
-          title: lesson?.title ? `${lesson.title} Practice` : 'Practice',
+          title: resolvedLesson?.title ? `${resolvedLesson.title} Practice` : 'Practice',
           headerLargeTitle: false,
           headerShadowVisible: false,
           headerTransparent: isLiquidGlassAvailable(),
@@ -475,7 +500,7 @@ export default function LessonPracticeScreen() {
           </View>
         ) : null}
 
-        {!isLoading && !lesson ? (
+        {!isLoading && !resolvedLesson ? (
           <View
             style={{
               flex: 1,
@@ -498,7 +523,7 @@ export default function LessonPracticeScreen() {
           </View>
         ) : null}
 
-        {lesson ? (
+        {resolvedLesson ? (
           <ScrollView
             contentInsetAdjustmentBehavior="automatic"
             style={{
@@ -570,7 +595,7 @@ export default function LessonPracticeScreen() {
           </ScrollView>
         ) : null}
 
-        {lesson ? (
+        {resolvedLesson ? (
           <PracticeNavigationBar
             currentStepIndex={currentStepIndex}
             stepCount={steps.length}

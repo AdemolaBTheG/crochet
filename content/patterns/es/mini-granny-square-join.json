@@ -1,0 +1,14 @@
+{
+  "title": "Proyecto de unión de mini cuadrados granny",
+  "description": "Convierte cuatro cuadrados granny en un pequeño proyecto terminado para que el usuario complete algo real.",
+  "materials": ["Lana worsted", "Ganchillo 5 mm", "Aguja lanera", "Tijeras"],
+  "skills": ["Cuadrados granny", "Unión con punto deslizado", "Costura", "Esconder hebras"],
+  "expectationText": "Un pequeño proyecto de acabado donde conviertes cuadrados separados en una sola pieza y practicas la unión simple con confianza.",
+  "steps": [
+    { "type": "repeat", "title": "Hacer cuatro cuadrados", "instruction": "Completa el patrón de cuadrado granny básico cuatro veces.", "targetCount": 4 },
+    { "type": "instruction", "title": "Colocar los cuadrados", "instruction": "Coloca los cuatro cuadrados en una cuadrícula de 2 por 2 con el lado derecho hacia arriba." },
+    { "type": "instruction", "title": "Unir la primera costura", "instruction": "Usa punto deslizado o punto de sobrehilado para unir los dos cuadrados superiores." },
+    { "type": "instruction", "title": "Unir la segunda costura", "instruction": "Une los dos cuadrados inferiores y luego conecta las filas entre sí." },
+    { "type": "instruction", "title": "Terminar", "instruction": "Esconde todas las hebras y da forma suavemente a la pieza terminada." }
+  ]
+}

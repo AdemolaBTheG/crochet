@@ -1,0 +1,51 @@
+{
+  "title": "Basis Granny Square",
+  "description": "Een klassiek haakmotief dat dubbele haakclusters en hoeken leert.",
+  "materials": [
+    "Kamgaren",
+    "5 mm haak",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Magische ring",
+    "stokjes",
+    "kettingruimtes",
+    "slipsteek verbinden"
+  ],
+  "expectationText": "Een klassiek motief dat hoeken, clusters en ronde structuur leert zonder in een groot project te springen.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Middelste ring",
+      "instruction": "Maak een magische ring of ketting van 4 en sluit deze aan tot een lus."
+    },
+    {
+      "type": "round",
+      "title": "Ronde 1",
+      "instruction": "Maak 4 granny-clusters, gescheiden door kettingvakken, en sluit ze samen om het vierkant te sluiten.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Ronde 2",
+      "instruction": "Schuif de steek naar een hoekruimte, bouw de volgende laag granny-clusters en vorm hoeken met kettingruimtes.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Ronde 3",
+      "instruction": "Herhaal granny-clusters langs de zijkanten en hoeken totdat het vierkant de gewenste grootte heeft bereikt.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Sluit de toer aan, hecht af en weef de uiteinden weg."
+    }
+  ]
+}
+

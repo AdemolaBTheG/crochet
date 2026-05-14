@@ -1,0 +1,14 @@
+{
+  "title": "Einfache Blumen-Applikation",
+  "description": "Ein fünfblättriges Blumenmotiv zum Lernen wiederholter Formgebung um ein Zentrum.",
+  "materials": ["Baumwollgarn", "4 mm Häkelnadel", "Sticknadel", "Schere"],
+  "skills": ["Magischer Ring", "Luftmaschenbögen", "Stäbchen", "Kettmasche"],
+  "expectationText": "Ein fröhliches Motiv, das die gleiche Blütenblatt-Sequenz wiederholt, sodass die Formgebung vorhersehbar wird.",
+  "steps": [
+    { "type": "instruction", "title": "Die Mitte machen", "instruction": "Beginne mit einem magischen Ring und häkle 10 feste Maschen in die Mitte." },
+    { "type": "round", "title": "Runde 1", "instruction": "Verbinde die Mittelrunde mit einer Kettmasche und ziehe den Ring fest.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "repeat", "title": "Fünf Blütenblätter machen", "instruction": "Wiederhole Luftmaschen und Stäbchen in dieselbe Masche, um jedes Blütenblatt zu formen.", "targetCount": 5 },
+    { "type": "instruction", "title": "Die Blütenblätter formen", "instruction": "Ziehe jedes Blütenblatt vorsichtig in Position, sodass die Blume flach liegt." },
+    { "type": "instruction", "title": "Fertigstellen", "instruction": "Faden vernähen und die Enden in die Rückseite der Blume einweben." }
+  ]
+}

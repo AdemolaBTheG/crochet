@@ -1,0 +1,14 @@
+{
+  "title": "Cesta de almacenaje gruesa",
+  "description": "Un proyecto hogareño resistente para practicar vueltas, lados y estructura simple.",
+  "materials": ["Hilo de algodón grueso", "Ganchillo 6,5 mm", "Aguja lanera", "Tijeras"],
+  "skills": ["Anillo mágico", "Punto bajo", "Aumentos", "Tejer en hebra trasera", "Vueltas"],
+  "expectationText": "Una pieza útil para el hogar donde pasas de una base plana a lados verticales y ves cómo la estructura toma forma.",
+  "steps": [
+    { "type": "instruction", "title": "Comenzar la base", "instruction": "Haz un anillo mágico y haz 8 puntos bajos en el centro." },
+    { "type": "round", "title": "Vueltas 1 a 4", "instruction": "Aumenta uniformemente en cada vuelta hasta que la base alcance el ancho deseado.", "counterLabel": "round", "targetCount": 4 },
+    { "type": "round", "title": "Formar el lado", "instruction": "Haz una vuelta solo en las hebras traseras para crear un borde limpio.", "counterLabel": "round", "targetCount": 5 },
+    { "type": "repeat", "title": "Construir las paredes", "instruction": "Haz puntos bajos alrededor sin aumentar hasta que la cesta tenga suficiente altura.", "counterLabel": "round", "targetCount": 10 },
+    { "type": "instruction", "title": "Terminar el borde", "instruction": "Haz punto deslizado alrededor del borde superior, remata y esconde las hebras." }
+  ]
+}

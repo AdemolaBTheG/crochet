@@ -1,0 +1,13 @@
+{
+  "title": "Beginner Scarf",
+  "description": "A long, repetitive project that makes row tracking genuinely useful.",
+  "materials": ["Soft worsted yarn", "5.5 mm hook", "yarn needle", "scissors"],
+  "skills": ["Foundation chain", "half double crochet", "turning rows", "row counting"],
+  "expectationText": "A longer repeat project where the app helps you stay on track without recounting every row from scratch.",
+  "steps": [
+    { "type": "instruction", "title": "Foundation", "instruction": "Chain 26 stitches." },
+    { "type": "row", "title": "Row 1", "instruction": "Half double crochet in the third chain from the hook and each chain across.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Rows 2 to 40", "instruction": "Chain 2, turn, and work half double crochet across each row.", "counterLabel": "row", "targetCount": 40 },
+    { "type": "instruction", "title": "Finish", "instruction": "Fasten off, weave in ends, and block lightly if needed." }
+  ]
+}

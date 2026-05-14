@@ -1,0 +1,19 @@
+{
+  "title": "Augmentations et diminutions",
+  "description": "Façonnez le tissu au crochet en ajoutant ou enlevant des mailles sans perdre le compte.",
+  "content": {
+    "summary": "Apprenez à faire deux mailles dans un même espace pour augmenter, et à combiner des mailles pour diminuer.",
+    "whyItMatters": "Le façonnage permet de construire des cercles plats, des formes arrondies et des pièces mieux ajustées plutôt que de simples rectangles.",
+    "steps": [
+      "Pour augmenter, travaillez deux mailles dans la même maille ou le même espace.",
+      "Pour diminuer en maille serrée, piquez dans la maille suivante, ramenez une boucle, piquez dans la maille suivante, ramenez une boucle, puis faites un jeté et passez-le à travers toutes les boucles.",
+      "Comptez les mailles à la fin de chaque rang ou tour pour que le façonnage reste intentionnel.",
+      "Placez les augmentations de façon régulière pour que le tissu reste plat au lieu d'onduler."
+    ],
+    "practice": "Faites un échantillon avec des augmentations par paires et un autre avec des diminutions simples, puis comptez les mailles après chaque rang.",
+    "commonMistakes": [
+      "Augmenter à des endroits aléatoires et déformer le tissu.",
+      "Oublier où la diminution a commencé et perdre une maille du compte."
+    ]
+  }
+}

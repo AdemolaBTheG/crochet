@@ -1,0 +1,14 @@
+{
+  "title": "Manchon à tasse confortable",
+  "description": "Un petit projet rectangulaire qui s'enroule autour d'une tasse et enseigne les finitions simples.",
+  "materials": ["Fil coton worsted", "Crochet 5 mm", "Aiguille à laine", "Ciseaux", "Bouton"],
+  "skills": ["Chaînette de base", "Demi-bride", "Rangs tournants", "Boutonnière"],
+  "expectationText": "Un rectangle pratique qui se transforme en objet fini avec un petit détail d'assemblage à la fin.",
+  "steps": [
+    { "type": "instruction", "title": "Fondation", "instruction": "Faites 12 mailles en l'air pour la hauteur du manchon." },
+    { "type": "row", "title": "Rang 1", "instruction": "Demi-bride dans la troisième maille en l'air depuis le crochet et dans chaque maille suivante.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Rangs 2 à 18", "instruction": "2 mailles en l'air, tournez et faites des demi-brides jusqu'à ce que le manchon s'enroule autour de votre tasse.", "counterLabel": "row", "targetCount": 18 },
+    { "type": "instruction", "title": "Ajouter une boucle", "instruction": "Faites une petite boucle en mailles en l'air sur un bord court pour la fermeture du bouton." },
+    { "type": "instruction", "title": "Coudre le bouton", "instruction": "Cousez un bouton sur le bord opposé, arrêtez le fil et rentrez les fils." }
+  ]
+}

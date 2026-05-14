@@ -13,6 +13,7 @@ export default function OnboardingLayout() {
       <Stack.Screen name="index" options={{ headerShown: false }} />
       <Stack.Screen name="questions" options={{ headerShown: false }} />
       <Stack.Screen name="loader" options={{ headerShown: false }} />
+      <Stack.Screen name="demo" options={{ headerShown: false }} />
     </Stack>
   );
 }

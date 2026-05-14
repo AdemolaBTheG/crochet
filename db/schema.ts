@@ -9,6 +9,10 @@ import {
 
 const now = sql`(unixepoch() * 1000)`;
 
+export type SupportedLanguage = 'en' | 'de' | 'fr' | 'es' | 'nl';
+
+export const SUPPORTED_LANGUAGES = ['en', 'de', 'fr', 'es', 'nl'] as const;
+
 export const userProfile = sqliteTable("user_profile", {
   id: integer("id").primaryKey({ autoIncrement: true }),
   skillLevel: text("skill_level"),
@@ -84,6 +88,51 @@ export const patterns = sqliteTable(
   ]
 );
 
+export const lessonTranslations = sqliteTable(
+  "lesson_translations",
+  {
+    id: integer("id").primaryKey({ autoIncrement: true }),
+    lessonId: integer("lesson_id")
+      .notNull()
+      .references(() => lessons.id, { onDelete: "cascade" }),
+    locale: text("locale", { enum: SUPPORTED_LANGUAGES }).notNull(),
+    title: text("title").notNull(),
+    description: text("description"),
+    contentJson: text("content_json").notNull(),
+  },
+  (table) => [
+    uniqueIndex("lesson_translations_lesson_locale_unique").on(
+      table.lessonId,
+      table.locale,
+    ),
+    index("lesson_translations_lesson_id_idx").on(table.lessonId),
+  ],
+);
+
+export const patternTranslations = sqliteTable(
+  "pattern_translations",
+  {
+    id: integer("id").primaryKey({ autoIncrement: true }),
+    patternId: integer("pattern_id")
+      .notNull()
+      .references(() => patterns.id, { onDelete: "cascade" }),
+    locale: text("locale", { enum: SUPPORTED_LANGUAGES }).notNull(),
+    title: text("title").notNull(),
+    description: text("description"),
+    materialsJson: text("materials_json"),
+    skillsJson: text("skills_json"),
+    expectationText: text("expectation_text"),
+    stepsJson: text("steps_json").notNull(),
+  },
+  (table) => [
+    uniqueIndex("pattern_translations_pattern_locale_unique").on(
+      table.patternId,
+      table.locale,
+    ),
+    index("pattern_translations_pattern_id_idx").on(table.patternId),
+  ],
+);
+
 export const projects = sqliteTable(
   "projects",
   {
@@ -118,8 +167,14 @@ export type NewUserProfile = InferInsertModel<typeof userProfile>;
 export type Lesson = InferSelectModel<typeof lessons>;
 export type NewLesson = InferInsertModel<typeof lessons>;
 
+export type LessonTranslation = InferSelectModel<typeof lessonTranslations>;
+export type NewLessonTranslation = InferInsertModel<typeof lessonTranslations>;
+
 export type Pattern = InferSelectModel<typeof patterns>;
 export type NewPattern = InferInsertModel<typeof patterns>;
+
+export type PatternTranslation = InferSelectModel<typeof patternTranslations>;
+export type NewPatternTranslation = InferInsertModel<typeof patternTranslations>;
 
 export type Project = InferSelectModel<typeof projects>;
 export type NewProject = InferInsertModel<typeof projects>;

@@ -1,0 +1,19 @@
+{
+  "title": "Anillo mágico",
+  "description": "Comienza proyectos circulares con un centro cerrado en lugar de un agujero visible.",
+  "content": {
+    "summary": "El anillo mágico te da un centro ajustable para granny squares y motivos redondos.",
+    "whyItMatters": "Hace que los proyectos circulares se vean más limpios y terminados.",
+    "steps": [
+      "Enrolla el hilo en un anillo suelto alrededor de tus dedos.",
+      "Inserta el ganchillo a través del anillo y saca un bucle.",
+      "Haz una cadeneta para asegurar el anillo.",
+      "Teje puntos en el anillo, luego tira del cabo para cerrar el centro."
+    ],
+    "practice": "Haz tres anillos mágicos y cierra cada uno por completo.",
+    "commonMistakes": [
+      "Asegurar el anillo demasiado flojo antes de tejer en él.",
+      "Tirar del cabo antes de que haya suficientes puntos anclados."
+    ]
+  }
+}

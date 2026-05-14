@@ -1,0 +1,48 @@
+{
+  "title": "Eenvoudige bloemapplicatie",
+  "description": "Een bloemmotief met vijf bloemblaadjes om herhaalde vormen rond een centrum te leren.",
+  "materials": [
+    "Katoenen garen",
+    "4 mm haak",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Magische ring",
+    "kettingruimtes",
+    "stokjes",
+    "slipsteek"
+  ],
+  "expectationText": "Een vrolijk motief dat dezelfde reeks bloemblaadjes herhaalt, zodat de vormgeving voorspelbaar begint te worden.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Maak het midden",
+      "instruction": "Begin met een magische ring en haak 10 vasten in het midden."
+    },
+    {
+      "type": "round",
+      "title": "Ronde 1",
+      "instruction": "Verbind de middelste ronde met een halve vaste en trek de ring vast.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Maak vijf bloemblaadjes",
+      "instruction": "Herhaal de lossen en haak dubbel in dezelfde steek om elk bloemblad te vormen.",
+      "targetCount": 5
+    },
+    {
+      "type": "instruction",
+      "title": "Vorm de bloemblaadjes",
+      "instruction": "Trek elk bloemblad voorzichtig op zijn plaats, zodat de bloem plat ligt."
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Hecht af en weef staartjes in de achterkant van de bloem."
+    }
+  ]
+}
+

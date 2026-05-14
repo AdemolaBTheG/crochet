@@ -1,0 +1,14 @@
+{
+  "title": "Bufanda de rayas granny",
+  "description": "Una bufanda fácil construida a partir de grupos repetidos de puntos altos y espacios de cadeneta.",
+  "materials": ["Lana worsted suave", "Ganchillo 5,5 mm", "Aguja lanera", "Tijeras"],
+  "skills": ["Cadeneta de base", "Punto alto", "Espacios de cadeneta", "Hileras de vuelta"],
+  "expectationText": "Un proyecto largo de repetición donde dejas de contar puntos individuales y empiezas a leer espacios y grupos.",
+  "steps": [
+    { "type": "instruction", "title": "Base", "instruction": "Haz 27 cadenetas o un múltiplo de 3 más 3 para una bufanda más ancha." },
+    { "type": "row", "title": "Hilera 1", "instruction": "Haz grupos de 3 puntos altos con espacios saltados entre ellos para comenzar el diseño de rayas granny.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "row", "title": "Hilera 2", "instruction": "3 cadenetas, gira y haz los siguientes grupos en los espacios entre los grupos de la hilera anterior.", "counterLabel": "row", "targetCount": 2 },
+    { "type": "repeat", "title": "Hileras 3 a 24", "instruction": "Repite la misma colocación de grupos en cada espacio de cadeneta hasta que la bufanda alcance el largo deseado.", "counterLabel": "row", "targetCount": 24 },
+    { "type": "instruction", "title": "Terminar", "instruction": "Remata, esconde las hebras y añade flecos solo si quieres textura adicional." }
+  ]
+}

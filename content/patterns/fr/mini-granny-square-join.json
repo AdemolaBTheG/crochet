@@ -1,0 +1,14 @@
+{
+  "title": "Projet d'assemblage de mini carrés granny",
+  "description": "Transformez quatre carrés granny en un petit projet fini pour que l'utilisateur accomplisse quelque chose de réel.",
+  "materials": ["Laine worsted", "Crochet 5 mm", "Aiguille à laine", "Ciseaux"],
+  "skills": ["Carrés granny", "Assemblage au point coulé", "Couture", "Rentrer les fils"],
+  "expectationText": "Un petit projet de finition où vous transformez des carrés séparés en une seule pièce et pratiquez l'assemblage simple avec confiance.",
+  "steps": [
+    { "type": "repeat", "title": "Faire quatre carrés", "instruction": "Complétez le patron de carré granny de base quatre fois.", "targetCount": 4 },
+    { "type": "instruction", "title": "Disposer les carrés", "instruction": "Disposez les quatre carrés en une grille 2 par 2 avec l'endroit vers le haut." },
+    { "type": "instruction", "title": "Assembler la première couture", "instruction": "Utilisez le point coulé ou le point de surfil pour assembler les deux carrés du haut." },
+    { "type": "instruction", "title": "Assembler la deuxième couture", "instruction": "Assemblez les deux carrés du bas, puis reliez les rangées ensemble." },
+    { "type": "instruction", "title": "Finir", "instruction": "Rentrez tous les fils et mettez légèrement en forme la pièce finie." }
+  ]
+}

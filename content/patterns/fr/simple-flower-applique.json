@@ -1,0 +1,14 @@
+{
+  "title": "Applique fleur simple",
+  "description": "Un motif de fleur à cinq pétales pour apprendre le façonnage répété autour d'un centre.",
+  "materials": ["Fil de coton", "Crochet 4 mm", "Aiguille à laine", "Ciseaux"],
+  "skills": ["Anneau magique", "Espaces de mailles en l'air", "Bride", "Point coulé"],
+  "expectationText": "Un motif joyeux qui répète la même séquence de pétales pour que le façonnage devienne prévisible.",
+  "steps": [
+    { "type": "instruction", "title": "Faire le centre", "instruction": "Commencez par un anneau magique et faites 10 mailles serrées dans le centre." },
+    { "type": "round", "title": "Tour 1", "instruction": "Assemblez le tour central avec un point coulé et serrez l'anneau.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "repeat", "title": "Faire cinq pétales", "instruction": "Répétez des mailles en l'air et des brides dans la même maille pour former chaque pétale.", "targetCount": 5 },
+    { "type": "instruction", "title": "Façonner les pétales", "instruction": "Tirez doucement chaque pétale en place pour que la fleur repose à plat." },
+    { "type": "instruction", "title": "Finir", "instruction": "Arrêtez le fil et rentrez les fils à l'arrière de la fleur." }
+  ]
+}

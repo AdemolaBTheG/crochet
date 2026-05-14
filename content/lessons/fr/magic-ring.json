@@ -1,0 +1,19 @@
+{
+  "title": "Anneau magique",
+  "description": "Commencez les projets circulaires avec un centre bien fermé au lieu d'un trou visible.",
+  "content": {
+    "summary": "L'anneau magique vous donne un centre ajustable pour les granny squares et motifs ronds.",
+    "whyItMatters": "Il rend les projets circulaires plus nets et plus finis.",
+    "steps": [
+      "Enroulez le fil en un anneau lâche autour de vos doigts.",
+      "Piquez le crochet dans l'anneau et ramenez une boucle.",
+      "Faites une maille en l'air pour sécuriser l'anneau.",
+      "Travaillez des mailles dans l'anneau, puis tirez le brin pour fermer le centre."
+    ],
+    "practice": "Faites trois anneaux magiques et fermez chacun complètement.",
+    "commonMistakes": [
+      "Sécuriser l'anneau trop lâchement avant d'y piquer.",
+      "Tirer le brin avant d'avoir ancré suffisamment de mailles."
+    ]
+  }
+}

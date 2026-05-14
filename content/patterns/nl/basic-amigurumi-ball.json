@@ -1,0 +1,61 @@
+{
+  "title": "Basis Amigurumi Bal",
+  "description": "Een kleine gevulde bol voor het oefenen van meerderingen, minderingen en het werken in doorlopende rondes.",
+  "materials": [
+    "Kamgaren",
+    "4 mm haak",
+    "steekmarkering",
+    "vulling",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Magische ring",
+    "enkel haakwerk",
+    "toenemend",
+    "afnemend",
+    "in rondes werken"
+  ],
+  "expectationText": "Een compact vormgevingsproject waarbij verhogingen de curve opbouwen, rechte ronden hoogte toevoegen en afnamen de vorm sluiten.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Begin met het centrum",
+      "instruction": "Maak een magische ring en plaats een steekmarkering in de eerste steek van elke toer."
+    },
+    {
+      "type": "round",
+      "title": "Ronde 1",
+      "instruction": "Haak 6 vasten in de ring en trek het midden dicht.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Rondes 2 t/m 4",
+      "instruction": "Verhoog elke ronde gelijkmatig totdat het stuk een ronde vorm begint te krijgen.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "repeat",
+      "title": "Rondes 5 t/m 7",
+      "instruction": "Vaste rond zonder meerderen om het midden van de bal te maken.",
+      "counterLabel": "round",
+      "targetCount": 7
+    },
+    {
+      "type": "repeat",
+      "title": "Rondes 8 tot en met 10",
+      "instruction": "Verminder elke ronde gelijkmatig en voeg vulling toe voordat de opening te klein wordt.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Afwerken",
+      "instruction": "Hecht af, rijg de staart door de laatste steken, trek hem dicht en verstop het uiteinde erin."
+    }
+  ]
+}
+

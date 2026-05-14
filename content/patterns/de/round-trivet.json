@@ -1,0 +1,14 @@
+{
+  "title": "Runder Untersetzer",
+  "description": "Ein dickerer flacher Kreis, der auf Untersetzer-Fähigkeiten aufbaut und dir eine nützlichere fertige Größe gibt.",
+  "materials": ["Dickes Baumwollgarn", "5,5 bis 6 mm Häkelnadel", "Sticknadel", "Schere"],
+  "skills": ["Magischer Ring", "Feste Masche", "Zunahmen", "Kettmasche verbinden"],
+  "expectationText": "Eine stabile flache Runde, bei der du gleichmäßige Zunahmen länger übst, ohne dass das Projekt zu schnell eintönig wird.",
+  "steps": [
+    { "type": "instruction", "title": "Den Mittelring machen", "instruction": "Beginne mit einem magischen Ring oder 4 Luftmaschen und verbinde sie zu einem Kreis." },
+    { "type": "round", "title": "Runde 1", "instruction": "Häkle 8 feste Maschen in den Ring und verbinde mit einer Kettmasche.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Runde 2", "instruction": "Häkle 2 feste Maschen in jede Masche rundherum für insgesamt 16 Maschen.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "repeat", "title": "Runden 3 bis 5", "instruction": "Nimm in jeder Runde gleichmäßig zu, indem du 2 feste Maschen in eine Masche verteilst, damit der Kreis flach bleibt.", "counterLabel": "round", "targetCount": 5 },
+    { "type": "instruction", "title": "Fertigstellen", "instruction": "Mit Kettmasche verbinden, Faden vernähen und das Ende sicher einweben." }
+  ]
+}

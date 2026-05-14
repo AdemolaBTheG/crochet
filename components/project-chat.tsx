@@ -321,7 +321,7 @@ export function ProjectChat({
               <ActivityIndicator size="small" color={theme.colors.white} />
             ) : (
               <SymbolView
-                name="paperplane.fill"
+                name={{ ios: 'paperplane.fill', android: 'send', web: 'send' }}
                 size={20}
                 tintColor={theme.colors.white}
                 fallback={<View style={{ width: 20, height: 20 }} />}

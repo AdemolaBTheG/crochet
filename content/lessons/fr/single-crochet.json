@@ -1,0 +1,19 @@
+{
+  "title": "Maille serrée",
+  "description": "Apprenez le point débutant le plus utile pour un tissu compact et solide.",
+  "content": {
+    "summary": "Piquez le crochet, ramenez une boucle et terminez un point simple avec deux boucles sur le crochet.",
+    "whyItMatters": "La maille serrée est un point essentiel utilisé pour les dessous de verre, amigurumis, lavettes et bordures.",
+    "steps": [
+      "Piquez le crochet dans la maille suivante.",
+      "Faites un jeté et ramenez une boucle.",
+      "Faites un autre jeté et passez-le à travers les deux boucles.",
+      "Répétez sur tout le rang."
+    ],
+    "practice": "Travaillez 3 rangs de 10 mailles serrées.",
+    "commonMistakes": [
+      "Sauter accidentellement la dernière maille du rang.",
+      "Ajouter des mailles supplémentaires sur les bords sans s'en rendre compte."
+    ]
+  }
+}

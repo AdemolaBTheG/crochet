@@ -1,0 +1,14 @@
+{
+  "title": "Einfache gerippte Mütze",
+  "description": "Eine anfängerfreundliche tragbare Mütze aus einem gerippten Rechteck und einfacher Naht.",
+  "materials": ["Worsted Garn", "5,5 mm Häkelnadel", "Sticknadel", "Schere"],
+  "skills": ["Luftmaschenanschlag", "Halbes Stäbchen", "Nur hinteres Maschenglied", "Nähen"],
+  "expectationText": "Ein tragbares Projekt, das aus einfachen Reihen aufgebaut und dann in Form genäht wird, sodass du eine echte Mütze ohne komplexe Formgebung fertigstellen kannst.",
+  "steps": [
+    { "type": "instruction", "title": "Anschlag", "instruction": "Schlage genug Luftmaschen an, um vom Bund bis zum Oberkopf der Mütze zu reichen." },
+    { "type": "row", "title": "Reihe 1", "instruction": "Halbes Stäbchen in die dritte Luftmasche von der Nadel und in jede weitere Luftmasche.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Reihen 2 bis 36", "instruction": "2 Luftmaschen, wenden und halbe Stäbchen nur in das hintere Maschenglied über die Reihe häkeln.", "counterLabel": "row", "targetCount": 36 },
+    { "type": "instruction", "title": "Die Seite zusammennähen", "instruction": "Falte das Rechteck und nähe die erste und letzte Reihe zusammen." },
+    { "type": "instruction", "title": "Den Oberkopf schließen", "instruction": "Webe Garn um die obere Kante, ziehe es fest, sichere es und webe die Enden ein." }
+  ]
+}

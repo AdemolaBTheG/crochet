@@ -1,0 +1,14 @@
+{
+  "title": "Dessous de plat rond",
+  "description": "Un cercle plat plus épais qui s'appuie sur les compétences du dessous de verre et vous donne une taille finie plus utile.",
+  "materials": ["Fil coton épais", "Crochet 5,5 à 6 mm", "Aiguille à laine", "Ciseaux"],
+  "skills": ["Anneau magique", "Maille serrée", "Augmentations", "Assemblage au point coulé"],
+  "expectationText": "Un rond plat et solide où vous pratiquez les augmentations régulières plus longtemps sans que le projet ne devienne trop répétitif.",
+  "steps": [
+    { "type": "instruction", "title": "Faire l'anneau central", "instruction": "Commencez par un anneau magique ou 4 mailles en l'air et assemblez en boucle." },
+    { "type": "round", "title": "Tour 1", "instruction": "Faites 8 mailles serrées dans l'anneau et assemblez avec un point coulé.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Tour 2", "instruction": "Faites 2 mailles serrées dans chaque maille tout autour pour un total de 16 mailles.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "repeat", "title": "Tours 3 à 5", "instruction": "Augmentez régulièrement à chaque tour en espaçant 2 mailles serrées dans une maille pour que le cercle reste plat.", "counterLabel": "round", "targetCount": 5 },
+    { "type": "instruction", "title": "Finir", "instruction": "Assemblez avec un point coulé, arrêtez le fil et rentrez le fil solidement." }
+  ]
+}

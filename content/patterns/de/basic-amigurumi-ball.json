@@ -1,0 +1,15 @@
+{
+  "title": "Einfacher Amigurumi-Ball",
+  "description": "Eine kleine gefüllte Kugel zum Üben von Zunahmen, Abnahmen und Arbeiten in fortlaufenden Runden.",
+  "materials": ["Worsted Garn", "4 mm Häkelnadel", "Maschenmarkierer", "Füllmaterial", "Sticknadel", "Schere"],
+  "skills": ["Magischer Ring", "Feste Masche", "Zunahmen", "Abnahmen", "In Runden arbeiten"],
+  "expectationText": "Ein kompaktes Formprojekt, bei dem Zunahmen die Kurve aufbauen, gerade Runden Höhe hinzufügen und Abnahmen die Form schließen.",
+  "steps": [
+    { "type": "instruction", "title": "Die Mitte beginnen", "instruction": "Mache einen magischen Ring und setze einen Maschenmarkierer in die erste Masche jeder Runde." },
+    { "type": "round", "title": "Runde 1", "instruction": "Häkle 6 feste Maschen in den Ring und ziehe die Mitte fest.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "repeat", "title": "Runden 2 bis 4", "instruction": "Nimm in jeder Runde gleichmäßig zu, bis das Stück beginnt, sich in eine runde Form zu wölben.", "counterLabel": "round", "targetCount": 4 },
+    { "type": "repeat", "title": "Runden 5 bis 7", "instruction": "Häkle feste Maschen rundherum ohne Zunahmen, um die Mitte des Balls aufzubauen.", "counterLabel": "round", "targetCount": 7 },
+    { "type": "repeat", "title": "Runden 8 bis 10", "instruction": "Nimm in jeder Runde gleichmäßig ab und füge Füllmaterial hinzu, bevor die Öffnung zu klein wird.", "counterLabel": "round", "targetCount": 10 },
+    { "type": "instruction", "title": "Schließen", "instruction": "Faden vernähen, den Restfaden durch die letzten Maschen fädeln, festziehen und das Ende innen verstecken." }
+  ]
+}

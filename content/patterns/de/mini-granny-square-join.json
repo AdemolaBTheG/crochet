@@ -1,0 +1,14 @@
+{
+  "title": "Mini Granny Square Verbindungsprojekt",
+  "description": "Verbinde vier Granny Squares zu einem kleinen fertigen Projekt.",
+  "materials": ["Kammgarn", "5 mm Nadel", "Wollnadel", "Schere"],
+  "skills": ["Granny Squares", "Kettmaschen verbinden", "Zusammennähen", "Fäden vernähen"],
+  "expectationText": "Ein kleines Abschlussprojekt, bei dem du separate Quadrate zu einem Stück verbindest und einfaches Zusammenfügen mit Selbstvertrauen übst.",
+  "steps": [
+    { "type": "repeat", "title": "Vier Quadrate machen", "instruction": "Vervollständige das klassische Granny Square Muster viermal.", "targetCount": 4 },
+    { "type": "instruction", "title": "Quadrate anordnen", "instruction": "Lege die vier Quadrate in einem 2x2-Layout mit der rechten Seite nach oben aus." },
+    { "type": "instruction", "title": "Erste Naht verbinden", "instruction": "Verwende Kettmaschen oder Überwendlingsstich, um die oberen beiden Quadrate zu verbinden." },
+    { "type": "instruction", "title": "Zweite Naht verbinden", "instruction": "Verbinde die unteren beiden Quadrate und verbinde dann die Reihen miteinander." },
+    { "type": "instruction", "title": "Fertigstellen", "instruction": "Alle Fäden vernähen und das fertige Stück leicht in Form bringen." }
+  ]
+}

@@ -7,6 +7,7 @@ import {
   type Project,
 } from '@/db/schema';
 import { useDbStore } from '@/stores/dbStore';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FlashList, type ListRenderItem } from '@shopify/flash-list';
 import { desc, eq } from 'drizzle-orm';
 import { Image } from 'expo-image';
@@ -14,7 +15,6 @@ import { Link, useFocusEffect } from 'expo-router';
 import React, { useCallback, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ActivityIndicator, Pressable, Text, View } from 'react-native';
-
 type ProjectListItem = Project & {
   pattern: Pattern | null;
 };
@@ -279,10 +279,14 @@ export default function ProjectsScreen() {
               padding: theme.spacing.xl,
               borderRadius: theme.radius.xl,
               backgroundColor: theme.colors.surface,
-              borderWidth: 1,
-              borderColor: theme.colors.border,
               gap: theme.spacing.sm,
+              alignItems: 'center',
             }}>
+            <MaterialCommunityIcons
+              name="scissors-cutting"
+              size={48}
+              color={theme.colors.textSecondary}
+            />
             <Text
               selectable
               style={{

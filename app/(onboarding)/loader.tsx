@@ -1,152 +1,270 @@
 import { theme } from '@/constants/Theme';
-import { useOnboardingStore } from '@/stores/onboardingStore';
+import {
+  useOnboardingStore,
+  type Goal,
+  type Handedness,
+  type SkillLevel,
+} from '@/stores/onboardingStore';
 import * as Haptics from 'expo-haptics';
 import { router } from 'expo-router';
-import { useEffect, useMemo, useState } from 'react';
+import { SymbolView } from 'expo-symbols';
+import { type ComponentProps, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
-import Animated, {
-    FadeIn,
-    FadeOut,
-    LinearTransition,
-    interpolate,
-    useAnimatedStyle,
-    useSharedValue,
-    withRepeat,
-    withTiming,
-} from 'react-native-reanimated';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-const STEP_DURATION_MS = 900;
+type SymbolName = ComponentProps<typeof SymbolView>['name'];
 
-function LoadingPulse() {
-  const progress = useSharedValue(0);
+type SummaryRow = {
+  id: string;
+  label: string;
+  value: string;
+  icon: SymbolName;
+};
 
-  useEffect(() => {
-    progress.value = withRepeat(withTiming(1, { duration: 1200 }), -1, false);
-  }, [progress]);
+type NextStep = {
+  id: string;
+  text: string;
+};
 
-  const outerRingStyle = useAnimatedStyle(() => {
-    const p = progress.value;
-    return {
-      transform: [{ scale: interpolate(p, [0, 1], [0.72, 1.28]) }],
-      opacity: interpolate(p, [0, 1], [0.48, 0]),
-    };
-  });
-
-  const innerRingStyle = useAnimatedStyle(() => {
-    const p = (progress.value + 0.5) % 1;
-    return {
-      transform: [{ scale: interpolate(p, [0, 1], [0.72, 1.28]) }],
-      opacity: interpolate(p, [0, 1], [0.34, 0]),
-    };
-  });
-
+function SummaryIcon({ name }: { name: SymbolName }) {
   return (
-    <View style={styles.loaderWrap}>
-      <Animated.View style={[styles.loaderRing, outerRingStyle]} />
-      <Animated.View style={[styles.loaderRing, innerRingStyle]} />
-      <View style={styles.loaderCore} />
+    <View style={styles.summaryIconWrap}>
+      <SymbolView
+        name={name}
+        size={20}
+        weight="semibold"
+        tintColor={theme.colors.primary}
+        fallback={<View style={styles.iconFallback} />}
+      />
     </View>
   );
+}
+
+function getSkillLabel(skillLevel: SkillLevel, t: (key: string) => string) {
+  switch (skillLevel) {
+    case 'beginner':
+      return t('onboarding.quiz.steps.skillLevel.options.beginner');
+    case 'intermediate':
+      return t('onboarding.quiz.steps.skillLevel.options.intermediate');
+    case 'advanced':
+      return t('onboarding.quiz.steps.skillLevel.options.advanced');
+    default:
+      return t('onboarding.loader.summaryFallbacks.skillLevel');
+  }
+}
+
+function getGoalLabel(goal: Goal, t: (key: string) => string) {
+  switch (goal) {
+    case 'learn-basics':
+      return t('onboarding.quiz.steps.goal.options.learnBasics');
+    case 'finish-first-project':
+      return t('onboarding.quiz.steps.goal.options.finishFirstProject');
+    case 'build-habit':
+      return t('onboarding.quiz.steps.goal.options.buildHabit');
+    default:
+      return t('onboarding.loader.summaryFallbacks.goal');
+  }
+}
+
+function getHandednessLabel(handedness: Handedness, t: (key: string) => string) {
+  switch (handedness) {
+    case 'right':
+      return t('onboarding.quiz.steps.handedness.options.right');
+    case 'left':
+      return t('onboarding.quiz.steps.handedness.options.left');
+    default:
+      return t('onboarding.loader.summaryFallbacks.handedness');
+  }
+}
+
+function getSkillStep(skillLevel: SkillLevel, t: (key: string) => string) {
+  switch (skillLevel) {
+    case 'beginner':
+      return t('onboarding.loader.nextSteps.skillLevel.beginner');
+    case 'intermediate':
+      return t('onboarding.loader.nextSteps.skillLevel.intermediate');
+    case 'advanced':
+      return t('onboarding.loader.nextSteps.skillLevel.advanced');
+    default:
+      return t('onboarding.loader.nextSteps.skillLevel.default');
+  }
+}
+
+function getGoalStep(goal: Goal, t: (key: string) => string) {
+  switch (goal) {
+    case 'learn-basics':
+      return t('onboarding.loader.nextSteps.goal.learnBasics');
+    case 'finish-first-project':
+      return t('onboarding.loader.nextSteps.goal.finishFirstProject');
+    case 'build-habit':
+      return t('onboarding.loader.nextSteps.goal.buildHabit');
+    default:
+      return t('onboarding.loader.nextSteps.goal.default');
+  }
 }
 
 export default function Loader() {
   const insets = useSafeAreaInsets();
   const { t } = useTranslation();
-  const { goal, skillLevel, setOnboardingCompleted } = useOnboardingStore();
-  const [messageIndex, setMessageIndex] = useState(0);
-  const [isReady, setIsReady] = useState(false);
-
-  const messages = useMemo(() => {
-    const goalLabel =
-      goal === 'learn-basics'
-        ? t('onboarding.loader.goalLabels.learnBasics')
-        : goal === 'finish-first-project'
-          ? t('onboarding.loader.goalLabels.finishFirstProject')
-          : goal === 'build-habit'
-            ? t('onboarding.loader.goalLabels.buildHabit')
-            : t('onboarding.loader.goalLabels.default');
-
-    const skillLabel =
-      skillLevel === 'beginner'
-        ? t('onboarding.loader.skillLabels.beginner')
-        : skillLevel === 'intermediate'
-          ? t('onboarding.loader.skillLabels.intermediate')
-          : skillLevel === 'advanced'
-            ? t('onboarding.loader.skillLabels.advanced')
-            : t('onboarding.loader.skillLabels.default');
-
-    return [
-      t('onboarding.loader.messages.buildingPlan', { skillLabel }),
-      t('onboarding.loader.messages.pickingLessons', { goalLabel }),
-      t('onboarding.loader.messages.tracking'),
-      t('onboarding.loader.messages.finalizing'),
-    ];
-  }, [goal, skillLevel, t]);
+  const { goal, skillLevel, handedness } = useOnboardingStore();
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setMessageIndex((prev) => {
-        if (prev >= messages.length - 1) {
-          clearInterval(timer);
-          setIsReady(true);
-          void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-          return prev;
-        }
+    void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+  }, []);
 
-        return prev + 1;
-      });
-    }, STEP_DURATION_MS);
+  const summaryRows = useMemo<SummaryRow[]>(
+    () => [
+      {
+        id: 'skillLevel',
+        label: t('onboarding.loader.summaryLabels.skillLevel'),
+        value: getSkillLabel(skillLevel, t),
+        icon: { ios: 'sparkles', android: 'auto_awesome', web: 'auto_awesome' },
+      },
+      {
+        id: 'goal',
+        label: t('onboarding.loader.summaryLabels.goal'),
+        value: getGoalLabel(goal, t),
+        icon: { ios: 'flag.fill', android: 'flag', web: 'flag' },
+      },
+      {
+        id: 'handedness',
+        label: t('onboarding.loader.summaryLabels.handedness'),
+        value: getHandednessLabel(handedness, t),
+        icon: { ios: 'arrow.left.and.right.circle.fill', android: 'swap_horiz', web: 'swap_horiz' },
+      },
+    ],
+    [goal, handedness, skillLevel, t],
+  );
 
-    return () => clearInterval(timer);
-  }, [messages.length]);
+  const nextSteps = useMemo<NextStep[]>(
+    () => [
+      {
+        id: 'skillLevel',
+        text: getSkillStep(skillLevel, t),
+      },
+      {
+        id: 'goal',
+        text: getGoalStep(goal, t),
+      },
+      {
+        id: 'tracking',
+        text: t('onboarding.loader.nextSteps.tracking'),
+      },
+    ],
+    [goal, skillLevel, t],
+  );
 
   function handleContinue() {
     void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    setOnboardingCompleted(true);
-    router.replace('/(paywalls)/onboardingPaywall');
+    router.push('/(onboarding)/demo');
   }
 
   return (
     <View style={styles.screen}>
-      <View style={styles.content}>
-        {!isReady ? <LoadingPulse /> : null}
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentInsetAdjustmentBehavior="automatic"
+        contentContainerStyle={{
+          paddingTop: insets.top,
+          paddingHorizontal: theme.spacing.lg,
+          paddingBottom: insets.bottom + 104,
+          gap: theme.spacing.xl,
+          flexGrow: 1,
+        }}>
+        <Animated.View entering={FadeInDown.duration(220)} style={styles.hero}>
+          <View style={styles.heroBadge}>
+            <SymbolView
+              name={{ ios: 'checkmark.circle.fill', android: 'task_alt', web: 'task_alt' }}
+              size={28}
+              weight="semibold"
+              tintColor={theme.colors.primary}
+              fallback={<View style={styles.heroIconFallback} />}
+            />
+          </View>
 
-        <Animated.View entering={FadeIn.duration(220)} layout={LinearTransition.duration(180)}>
-          <Text style={styles.title}>
-            {isReady ? t('onboarding.loader.titleReady') : t('onboarding.loader.titlePreparing')}
-          </Text>
+          <View style={styles.heroTextWrap}>
+            <Text selectable style={styles.eyebrow}>
+              {t('onboarding.loader.summaryEyebrow')}
+            </Text>
+            <Text selectable style={styles.title}>
+              {t('onboarding.loader.titleReady')}
+            </Text>
+            <Text selectable style={styles.subtitle}>
+              {t('onboarding.loader.summarySubtitle')}
+            </Text>
+          </View>
         </Animated.View>
 
-        <View style={styles.messageWrap}>
-          <Animated.Text
-            key={messageIndex}
-            entering={FadeIn.duration(220)}
-            exiting={FadeOut.duration(180)}
-            style={styles.message}>
-            {messages[messageIndex]}
-          </Animated.Text>
-        </View>
+        <Animated.View entering={FadeInDown.delay(70).duration(220)} style={styles.card}>
+          <View style={styles.cardHeader}>
+            <Text selectable style={styles.cardTitle}>
+              {t('onboarding.loader.summaryCardTitle')}
+            </Text>
+            <Text selectable style={styles.cardSubtitle}>
+              {t('onboarding.loader.summaryCardSubtitle')}
+            </Text>
+          </View>
 
-        <View style={styles.progressTrack}>
-          <Animated.View
-            layout={LinearTransition.duration(250)}
-            style={[
-              styles.progressFill,
-              { width: `${((messageIndex + 1) / messages.length) * 100}%` },
-            ]}
-          />
-        </View>
-      </View>
+          <View style={styles.rowsWrap}>
+            {summaryRows.map((row, index) => (
+              <View key={row.id}>
+                <View style={styles.summaryRow}>
+                  <SummaryIcon name={row.icon} />
+                  <View style={styles.rowTextWrap}>
+                    <Text selectable style={styles.rowLabel}>
+                      {row.label}
+                    </Text>
+                    <Text selectable style={styles.rowValue}>
+                      {row.value}
+                    </Text>
+                  </View>
+                </View>
+                {index < summaryRows.length - 1 ? <View style={styles.separator} /> : null}
+              </View>
+            ))}
+          </View>
+        </Animated.View>
 
-      <View style={[styles.footer, { paddingBottom: insets.bottom + theme.spacing.md }]}>
-        <Pressable
-          disabled={!isReady}
-          onPress={handleContinue}
-          style={[styles.ctaButton, !isReady && styles.ctaButtonDisabled]}>
-          <Text style={styles.ctaLabel}>
-            {isReady ? t('onboarding.loader.ctaReady') : t('common.preparing')}
+        <Animated.View entering={FadeInDown.delay(120).duration(220)} style={styles.card}>
+          <Text selectable style={styles.cardTitle}>
+            {t('onboarding.loader.nextTitle')}
+          </Text>
+
+          <View style={styles.nextStepsWrap}>
+            {nextSteps.map((step) => (
+              <View key={step.id} style={styles.nextStepRow}>
+                <View style={styles.nextStepIconWrap}>
+                  <SymbolView
+                    name={{ ios: 'checkmark', android: 'check', web: 'check' }}
+                    size={14}
+                    weight="bold"
+                    tintColor={theme.colors.primary}
+                    fallback={<View style={styles.nextStepIconFallback} />}
+                  />
+                </View>
+                <Text selectable style={styles.nextStepText}>
+                  {step.text}
+                </Text>
+              </View>
+            ))}
+          </View>
+        </Animated.View>
+      </ScrollView>
+
+      <View
+        pointerEvents="box-none"
+        style={[
+          styles.footer,
+          {
+            paddingHorizontal: theme.spacing.lg,
+            paddingBottom: insets.bottom + theme.spacing.md,
+          },
+        ]}>
+        <Pressable onPress={handleContinue} style={styles.ctaButton}>
+          <Text selectable style={styles.ctaLabel}>
+            {t('onboarding.loader.ctaPreview')}
           </Text>
         </Pressable>
       </View>
@@ -159,75 +277,159 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: theme.colors.background,
   },
-  content: {
-    flex: 1,
-    justifyContent: 'center',
+  hero: {
     gap: theme.spacing.lg,
-    paddingHorizontal: theme.spacing.xl,
   },
-  title: {
-    fontSize: theme.size['2xl'],
-    lineHeight: 34,
-    fontWeight: theme.weight.bold,
-    color: theme.colors.textPrimary,
-    textAlign: 'center',
-  },
-  loaderWrap: {
-    alignSelf: 'center',
-    width: 94,
-    height: 94,
+  heroBadge: {
+    width: 64,
+    height: 64,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  loaderRing: {
-    position: 'absolute',
-    width: 94,
-    height: 94,
-    borderRadius: 999,
-    borderWidth: 6,
-    borderColor: theme.colors.primary,
-  },
-  loaderCore: {
-    width: 32,
-    height: 32,
-    borderRadius: 999,
-    backgroundColor: theme.colors.primary,
-    opacity: 0.9,
-  },
-  messageWrap: {
-    minHeight: 28,
-    justifyContent: 'center',
-  },
-  message: {
-    fontSize: theme.size.lg,
-    color: theme.colors.textSecondary,
-    textAlign: 'center',
-  },
-  progressTrack: {
-    height: 8,
-    borderRadius: theme.radius.pill,
+    borderRadius: 20,
     borderCurve: 'continuous',
-    backgroundColor: theme.colors.muted,
-    overflow: 'hidden',
+    backgroundColor: theme.colors.primarySoft,
+    borderWidth: 1,
+    borderColor: theme.colors.primaryBorder,
   },
-  progressFill: {
-    height: '100%',
-    backgroundColor: theme.colors.primary,
+  heroIconFallback: {
+    width: 28,
+    height: 28,
+  },
+  heroTextWrap: {
+    gap: theme.spacing.sm,
+  },
+  eyebrow: {
+    fontSize: theme.size.sm,
+    fontWeight: theme.weight.semibold,
+    color: theme.colors.textSecondary,
+    textTransform: 'uppercase',
+    letterSpacing: 0.6,
+  },
+  title: {
+    fontSize: theme.size['3xl'],
+    lineHeight: 38,
+    fontWeight: theme.weight.bold,
+    color: theme.colors.textPrimary,
+  },
+  subtitle: {
+    fontSize: theme.size.lg,
+    lineHeight: 24,
+    color: theme.colors.textSecondary,
+  },
+  card: {
+    gap: theme.spacing.lg,
+    padding: theme.spacing.lg,
+    borderRadius: theme.radius.xl,
+    borderCurve: 'continuous',
+    borderWidth: 1,
+    borderColor: theme.colors.border,
+    backgroundColor: theme.colors.surface,
+    boxShadow: '0 10px 24px rgba(0, 0, 0, 0.06)',
+  },
+  cardHeader: {
+    gap: theme.spacing.xs,
+  },
+  cardTitle: {
+    fontSize: theme.size.xl,
+    lineHeight: 28,
+    fontWeight: theme.weight.bold,
+    color: theme.colors.textPrimary,
+  },
+  cardSubtitle: {
+    fontSize: theme.size.md,
+    lineHeight: 20,
+    color: theme.colors.textSecondary,
+  },
+  rowsWrap: {
+    overflow: 'hidden',
+    borderRadius: theme.radius.lg,
+    borderCurve: 'continuous',
+    backgroundColor: theme.colors.background,
+    borderWidth: 1,
+    borderColor: theme.colors.border,
+  },
+  summaryRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: theme.spacing.md,
+    paddingVertical: theme.spacing.md,
+    paddingHorizontal: theme.spacing.md,
+  },
+  summaryIconWrap: {
+    width: 40,
+    height: 40,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: theme.radius.md,
+    borderCurve: 'continuous',
+    backgroundColor: theme.colors.primarySoft,
+  },
+  iconFallback: {
+    width: 20,
+    height: 20,
+  },
+  rowTextWrap: {
+    flex: 1,
+    gap: 2,
+  },
+  rowLabel: {
+    fontSize: theme.size.sm,
+    fontWeight: theme.weight.medium,
+    color: theme.colors.textSecondary,
+  },
+  rowValue: {
+    fontSize: theme.size.lg,
+    lineHeight: 22,
+    fontWeight: theme.weight.semibold,
+    color: theme.colors.textPrimary,
+  },
+  separator: {
+    height: 1,
+    marginLeft: 68,
+    backgroundColor: theme.colors.border,
+  },
+  nextStepsWrap: {
+    gap: theme.spacing.md,
+  },
+  nextStepRow: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: theme.spacing.md,
+  },
+  nextStepIconWrap: {
+    width: 24,
+    height: 24,
+    marginTop: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: theme.radius.pill,
+    borderWidth: 1,
+    borderColor: theme.colors.primaryBorder,
+    backgroundColor: theme.colors.primarySoft,
+  },
+  nextStepIconFallback: {
+    width: 14,
+    height: 14,
+  },
+  nextStepText: {
+    flex: 1,
+    fontSize: theme.size.md,
+    lineHeight: 22,
+    color: theme.colors.textPrimary,
   },
   footer: {
-    paddingHorizontal: theme.spacing.lg,
-    paddingTop: theme.spacing.md,
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: 0,
   },
   ctaButton: {
     minHeight: 56,
+    alignItems: 'center',
+    justifyContent: 'center',
     borderRadius: theme.radius.xl,
     borderCurve: 'continuous',
     backgroundColor: theme.colors.primary,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  ctaButtonDisabled: {
-    backgroundColor: theme.colors.textTertiary,
   },
   ctaLabel: {
     fontSize: theme.size.lg,
