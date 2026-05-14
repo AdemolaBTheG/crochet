@@ -8,6 +8,7 @@
     "scheme": "crochet",
     "userInterfaceStyle": "automatic",
     "ios": {
+      "googleServicesFile": "./GoogleService-Info.plist",
       "icon": "./assets/images/Crochet.icon",
       "supportsTablet": false,
       "bundleIdentifier": "com.crochet.flingex",
@@ -30,9 +31,7 @@
       },
       "predictiveBackGestureEnabled": false,
       "package": "com.crochet.flingex",
-      "permissions": [
-        "com.google.android.gms.permission.AD_ID"
-      ],
+      "permissions": ["com.google.android.gms.permission.AD_ID"],
       "blockedPermissions": [
         "android.permission.READ_MEDIA_IMAGES",
         "android.permission.READ_MEDIA_VIDEO",
@@ -81,7 +80,8 @@
         {
           "ios": {
             "deploymentTarget": "16.2",
-            "useFrameworks": "static"
+            "useFrameworks": "static",
+            "buildReactNativeFromSource": true
           }
         }
       ]

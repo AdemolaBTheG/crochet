@@ -1,65 +1,34 @@
+import {
+  CounterButton,
+  CounterValueText,
+  ProgressBar,
+  StepInstructionCard,
+  StepNavigationBar,
+  StepProgressLabel,
+  TargetCountText,
+  triggerNavigationHaptic,
+} from '@/components/project-step-flow';
+import type { ProjectChatStep } from '@/components/project-chat';
 import { theme } from '@/constants/Theme';
 import { logFirebaseEvent } from '@/services/firebaseAnalytics';
 import {
   useOnboardingStore,
   type Goal,
-  type Handedness,
   type SkillLevel,
 } from '@/stores/onboardingStore';
 import * as Haptics from 'expo-haptics';
 import { router } from 'expo-router';
-import { SymbolView } from 'expo-symbols';
-import { type ComponentProps, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
-import Animated, { FadeInDown } from 'react-native-reanimated';
+import { FlatList, ScrollView, Text, View, useWindowDimensions } from 'react-native';
+import Animated, {
+  FadeInDown,
+  FadeOutDown,
+  useAnimatedScrollHandler,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-
-type SymbolName = ComponentProps<typeof SymbolView>['name'];
-
-type DemoCard = {
-  id: string;
-  title: string;
-  body: string;
-  icon: SymbolName;
-};
-
-function getSkillAudience(skillLevel: SkillLevel, t: (key: string) => string) {
-  switch (skillLevel) {
-    case 'beginner':
-      return t('onboarding.demo.skillAudience.beginner');
-    case 'intermediate':
-      return t('onboarding.demo.skillAudience.intermediate');
-    case 'advanced':
-      return t('onboarding.demo.skillAudience.advanced');
-    default:
-      return t('onboarding.demo.skillAudience.default');
-  }
-}
-
-function getGoalFocus(goal: Goal, t: (key: string) => string) {
-  switch (goal) {
-    case 'learn-basics':
-      return t('onboarding.demo.goalFocus.learnBasics');
-    case 'finish-first-project':
-      return t('onboarding.demo.goalFocus.finishFirstProject');
-    case 'build-habit':
-      return t('onboarding.demo.goalFocus.buildHabit');
-    default:
-      return t('onboarding.demo.goalFocus.default');
-  }
-}
-
-function getHandednessChip(handedness: Handedness, t: (key: string, options?: Record<string, unknown>) => string) {
-  const value =
-    handedness === 'left'
-      ? t('onboarding.quiz.steps.handedness.options.left')
-      : handedness === 'right'
-        ? t('onboarding.quiz.steps.handedness.options.right')
-        : t('onboarding.loader.summaryFallbacks.handedness');
-
-  return t('onboarding.demo.chips.handedness', { value });
-}
 
 function getSkillStepBody(skillLevel: SkillLevel, t: (key: string) => string) {
   switch (skillLevel) {
@@ -87,378 +56,227 @@ function getGoalStepBody(goal: Goal, t: (key: string) => string) {
   }
 }
 
-function DemoChip({ icon, label }: { icon: SymbolName; label: string }) {
-  return (
-    <View style={styles.chip}>
-      <SymbolView
-        name={icon}
-        size={14}
-        weight="semibold"
-        tintColor={theme.colors.primary}
-        fallback={<View style={styles.chipIconFallback} />}
-      />
-      <Text selectable={false} style={styles.chipLabel}>
-        {label}
-      </Text>
-    </View>
-  );
-}
-
-function ProgressLabel({
-  currentStep,
-  totalSteps,
-}: {
-  currentStep: number;
-  totalSteps: number;
-}) {
-  const { t } = useTranslation();
-
-  return (
-    <Text selectable={false} style={styles.progressLabel}>
-      {t('shared.stepOf', { current: currentStep, total: totalSteps })}
-    </Text>
-  );
-}
-
 export default function OnboardingDemoScreen() {
   const insets = useSafeAreaInsets();
+  const { width } = useWindowDimensions();
   const { t } = useTranslation();
-  const { skillLevel, goal, handedness, setOnboardingCompleted } = useOnboardingStore();
-  const [stepIndex, setStepIndex] = useState(0);
+  const { skillLevel, goal, setOnboardingCompleted } = useOnboardingStore();
+  const stepListRef = useRef<FlatList<ProjectChatStep>>(null);
+  const hasPositionedStepListRef = useRef(false);
+  const isProgrammaticStepScrollRef = useRef(false);
+  const [selectedStepIndex, setSelectedStepIndex] = useState(0);
+  const [demoRowCount, setDemoRowCount] = useState(2);
 
-  const cards = useMemo<DemoCard[]>(
+  const steps = useMemo<ProjectChatStep[]>(
     () => [
       {
-        id: 'one',
+        type: 'instruction',
         title: t('onboarding.demo.cards.one.title'),
-        body: getSkillStepBody(skillLevel, t),
-        icon: { ios: '1.circle.fill', android: 'filter_1', web: 'filter_1' },
+        instruction: getSkillStepBody(skillLevel, t),
       },
       {
-        id: 'two',
+        type: 'row',
         title: t('onboarding.demo.cards.two.title'),
-        body: t('onboarding.demo.stepBodies.progress'),
-        icon: { ios: '2.circle.fill', android: 'filter_2', web: 'filter_2' },
+        instruction: t('onboarding.demo.stepBodies.progress'),
+        counterLabel: 'row',
+        targetCount: 4,
       },
       {
-        id: 'three',
+        type: 'instruction',
         title: t('onboarding.demo.cards.three.title'),
-        body: getGoalStepBody(goal, t),
-        icon: { ios: '3.circle.fill', android: 'filter_3', web: 'filter_3' },
+        instruction: getGoalStepBody(goal, t),
       },
     ],
     [goal, skillLevel, t],
   );
 
-  const currentCard = cards[stepIndex];
-  const progress = (stepIndex + 1) / cards.length;
-  const isLastStep = stepIndex === cards.length - 1;
+  const currentStepIndex = Math.min(selectedStepIndex, Math.max(steps.length - 1, 0));
+  const currentStep = steps[currentStepIndex] ?? null;
+  const progress = steps.length > 0 ? (currentStepIndex + 1) / steps.length : 0;
+  const stepCardGap = theme.spacing.md;
+  const stepCardWidth = width - theme.spacing.xl * 2;
+  const stepCardSnapInterval = stepCardWidth + stepCardGap;
+  const stepCardScrollX = useSharedValue(currentStepIndex * stepCardSnapInterval);
+  const stepCardProgress = useSharedValue(progress);
+  const onStepCardScroll = useAnimatedScrollHandler({
+    onScroll: (event) => {
+      stepCardScrollX.value = event.contentOffset.x;
 
-  function goPrevious() {
-    if (stepIndex === 0) return;
-    void Haptics.selectionAsync();
-    setStepIndex((value) => value - 1);
+      if (steps.length > 0) {
+        const rawIndex = event.contentOffset.x / stepCardSnapInterval;
+        stepCardProgress.value = Math.max(0, Math.min(1, (rawIndex + 1) / steps.length));
+      }
+    },
+  });
+  const counterLabel = currentStep?.counterLabel;
+  const counterValue = counterLabel === 'row' ? demoRowCount : null;
+
+  useEffect(() => {
+    if (steps.length === 0) return;
+
+    const nextOffset = currentStepIndex * stepCardSnapInterval;
+    stepCardScrollX.value = nextOffset;
+    stepCardProgress.value = withTiming((currentStepIndex + 1) / steps.length, { duration: 220 });
+    stepListRef.current?.scrollToOffset({
+      offset: nextOffset,
+      animated: hasPositionedStepListRef.current,
+    });
+    hasPositionedStepListRef.current = true;
+  }, [currentStepIndex, stepCardProgress, stepCardScrollX, stepCardSnapInterval, steps.length]);
+
+  async function goToStepIndex(nextIndex: number, animated = true) {
+    if (steps.length === 0) return;
+
+    const clampedIndex = Math.max(0, Math.min(steps.length - 1, nextIndex));
+    if (clampedIndex === currentStepIndex) return;
+
+    const nextOffset = clampedIndex * stepCardSnapInterval;
+    isProgrammaticStepScrollRef.current = true;
+    setSelectedStepIndex(clampedIndex);
+    stepListRef.current?.scrollToOffset({
+      offset: nextOffset,
+      animated,
+    });
+    stepCardScrollX.value = withTiming(nextOffset, { duration: 240 });
+    stepCardProgress.value = withTiming((clampedIndex + 1) / steps.length, { duration: 240 });
+    setTimeout(() => {
+      isProgrammaticStepScrollRef.current = false;
+    }, 500);
   }
 
-  function goNext() {
+  async function settleStepCard(offsetX: number) {
+    if (steps.length === 0) return;
+    if (isProgrammaticStepScrollRef.current) return;
+
+    const nextIndex = Math.max(
+      0,
+      Math.min(steps.length - 1, Math.round(offsetX / stepCardSnapInterval)),
+    );
+
+    if (nextIndex === currentStepIndex) return;
+
+    triggerNavigationHaptic();
+    setSelectedStepIndex(nextIndex);
+  }
+
+  function updateCounter(delta: number) {
     void Haptics.selectionAsync();
+    setDemoRowCount((value) => Math.max(0, value + delta));
+  }
 
-    if (isLastStep) {
-      void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-      setOnboardingCompleted(true);
-      void logFirebaseEvent('onboarding_complete', {
-        goal: goal ?? null,
-        skill_level: skillLevel ?? null,
-      });
-      router.replace('/(paywalls)/onboardingPaywall');
-      return;
-    }
-
-    setStepIndex((value) => value + 1);
+  async function finishDemo() {
+    void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+    setOnboardingCompleted(true);
+    void logFirebaseEvent('onboarding_complete', {
+      goal: goal ?? null,
+      skill_level: skillLevel ?? null,
+    });
+    router.replace('/(paywalls)/onboardingPaywall');
   }
 
   return (
-    <View style={styles.screen}>
+    <View style={{ flex: 1, backgroundColor: theme.colors.background }}>
       <ScrollView
-        showsVerticalScrollIndicator={false}
         contentInsetAdjustmentBehavior="automatic"
+        style={{
+          flex: 1,
+          backgroundColor: theme.colors.background,
+        }}
         contentContainerStyle={{
-          paddingTop: insets.top,
-          paddingHorizontal: theme.spacing.lg,
-          paddingBottom: insets.bottom + 132,
-          gap: theme.spacing.xl,
-          flexGrow: 1,
+          paddingHorizontal: theme.spacing.xl,
+          paddingTop: insets.top + theme.spacing.sm,
+          paddingBottom: insets.bottom + 128,
+          gap: theme.spacing.lg,
+          backgroundColor: theme.colors.background,
         }}>
-        <View style={styles.hero}>
-          <Text selectable style={styles.eyebrow}>
-            {t('onboarding.demo.eyebrow')}
-          </Text>
-          <Text selectable style={styles.title}>
-            {t('onboarding.demo.title')}
-          </Text>
-          <Text selectable style={styles.subtitle}>
-            {t('onboarding.demo.subtitle', {
-              skillLabel: getSkillAudience(skillLevel, t),
-              goalLabel: getGoalFocus(goal, t),
+        {steps.length > 0 ? (
+          <Animated.View entering={FadeInDown.duration(180)} style={{ gap: theme.spacing.md }}>
+            <StepProgressLabel currentStep={currentStepIndex + 1} totalSteps={steps.length} />
+            <ProgressBar progress={progress} animatedProgress={stepCardProgress} />
+          </Animated.View>
+        ) : null}
+
+        {steps.length > 0 ? (
+          <Animated.FlatList
+            ref={stepListRef}
+            data={steps}
+            horizontal
+            keyExtractor={(item, index) => `${item.title}-${index}`}
+            renderItem={({ item, index }) => (
+              <StepInstructionCard
+                step={item}
+                index={index}
+                cardWidth={stepCardWidth}
+                snapInterval={stepCardSnapInterval}
+                scrollX={stepCardScrollX}
+              />
+            )}
+            ItemSeparatorComponent={() => <View style={{ width: stepCardGap }} />}
+            getItemLayout={(_, index) => ({
+              length: stepCardSnapInterval,
+              offset: stepCardSnapInterval * index,
+              index,
             })}
-          </Text>
+            snapToInterval={stepCardSnapInterval}
+            snapToAlignment="start"
+            decelerationRate="fast"
+            scrollEventThrottle={16}
+            showsHorizontalScrollIndicator={false}
+            onScroll={onStepCardScroll}
+            onMomentumScrollEnd={(event) => void settleStepCard(event.nativeEvent.contentOffset.x)}
+          />
+        ) : null}
 
-          <View style={styles.chipsWrap}>
-            <DemoChip
-              icon={{ ios: 'clock.fill', android: 'schedule', web: 'schedule' }}
-              label={t('onboarding.demo.chips.duration')}
-            />
-            <DemoChip
-              icon={{ ios: 'hand.raised.fill', android: 'back_hand', web: 'back_hand' }}
-              label={getHandednessChip(handedness, t)}
-            />
-          </View>
-        </View>
-
-        <View style={styles.progressSection}>
-          <ProgressLabel currentStep={stepIndex + 1} totalSteps={cards.length} />
-          <View style={styles.progressTrack}>
-            <View style={[styles.progressFill, { width: `${progress * 100}%` }]} />
-          </View>
-        </View>
-
-        <Animated.View
-          key={currentCard.id}
-          entering={FadeInDown.duration(220)}
-          style={styles.card}>
-          <View style={styles.cardIconWrap}>
-            <SymbolView
-              name={currentCard.icon}
-              size={30}
-              weight="semibold"
-              tintColor={theme.colors.primary}
-              fallback={<View style={styles.cardIconFallback} />}
-            />
-          </View>
-
-          <View style={styles.cardTextWrap}>
-            <Text selectable style={styles.cardStepLabel}>
-              {t('onboarding.demo.stepLabel', { current: stepIndex + 1 })}
+        {counterLabel && counterValue !== null ? (
+          <Animated.View
+            entering={FadeInDown.duration(180)}
+            exiting={FadeOutDown.duration(140)}
+            style={{
+              padding: theme.spacing.lg,
+              borderRadius: theme.radius.xl,
+              backgroundColor: theme.colors.surface,
+              gap: theme.spacing.md,
+            }}>
+            <Text
+              selectable
+              style={{
+                fontSize: theme.size.md,
+                fontWeight: theme.weight.semibold,
+                color: theme.colors.textPrimary,
+                textTransform: 'capitalize',
+              }}>
+              {counterLabel} counter
             </Text>
-            <Text selectable style={styles.cardTitle}>
-              {currentCard.title}
-            </Text>
-            <Text selectable style={styles.cardBody}>
-              {currentCard.body}
-            </Text>
-          </View>
-        </Animated.View>
-
-        <View style={styles.noteCard}>
-          <Text selectable style={styles.noteText}>
-            {t('onboarding.demo.note')}
-          </Text>
-        </View>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                gap: theme.spacing.lg,
+              }}>
+              <CounterButton
+                label="-"
+                onPress={() => updateCounter(-1)}
+                disabled={counterValue === 0}
+              />
+              <CounterValueText value={counterValue} />
+              <CounterButton label="+" onPress={() => updateCounter(1)} />
+            </View>
+            {currentStep?.targetCount ? (
+              <TargetCountText value={currentStep.targetCount} label={counterLabel} />
+            ) : null}
+          </Animated.View>
+        ) : null}
       </ScrollView>
 
-      <View
-        pointerEvents="box-none"
-        style={[
-          styles.footer,
-          {
-            paddingHorizontal: theme.spacing.lg,
-            paddingBottom: insets.bottom + theme.spacing.md,
-          },
-        ]}>
-        <View style={styles.footerActions}>
-          {stepIndex > 0 ? (
-            <Pressable onPress={goPrevious} style={styles.secondaryButton}>
-              <Text selectable style={styles.secondaryButtonLabel}>
-                {t('onboarding.demo.actions.previous')}
-              </Text>
-            </Pressable>
-          ) : null}
-
-          <Pressable
-            onPress={goNext}
-            style={[styles.primaryButton, stepIndex === 0 && styles.primaryButtonFullWidth]}>
-            <Text selectable style={styles.primaryButtonLabel}>
-              {isLastStep ? t('onboarding.demo.actions.finish') : t('onboarding.demo.actions.next')}
-            </Text>
-          </Pressable>
-        </View>
-      </View>
+      <StepNavigationBar
+        currentStepIndex={currentStepIndex}
+        stepCount={steps.length}
+        bottomInset={insets.bottom}
+        onPrevious={() => void goToStepIndex(currentStepIndex - 1)}
+        onNext={() => void goToStepIndex(currentStepIndex + 1)}
+        onComplete={() => void finishDemo()}
+      />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    backgroundColor: theme.colors.background,
-  },
-  hero: {
-    gap: theme.spacing.sm,
-  },
-  eyebrow: {
-    fontSize: theme.size.sm,
-    fontWeight: theme.weight.semibold,
-    color: theme.colors.textSecondary,
-    textTransform: 'uppercase',
-    letterSpacing: 0.6,
-  },
-  title: {
-    fontSize: theme.size['3xl'],
-    lineHeight: 38,
-    fontWeight: theme.weight.bold,
-    color: theme.colors.textPrimary,
-  },
-  subtitle: {
-    fontSize: theme.size.lg,
-    lineHeight: 24,
-    color: theme.colors.textSecondary,
-  },
-  chipsWrap: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: theme.spacing.sm,
-    paddingTop: theme.spacing.sm,
-  },
-  chip: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: theme.spacing.xs,
-    paddingVertical: theme.spacing.sm,
-    paddingHorizontal: theme.spacing.md,
-    borderRadius: theme.radius.pill,
-    borderCurve: 'continuous',
-    backgroundColor: theme.colors.primarySoft,
-    borderWidth: 1,
-    borderColor: theme.colors.primaryBorder,
-  },
-  chipIconFallback: {
-    width: 14,
-    height: 14,
-  },
-  chipLabel: {
-    fontSize: theme.size.sm,
-    fontWeight: theme.weight.semibold,
-    color: theme.colors.primary,
-  },
-  progressSection: {
-    gap: theme.spacing.sm,
-  },
-  progressLabel: {
-    fontSize: theme.size.md,
-    fontWeight: theme.weight.semibold,
-    color: theme.colors.textSecondary,
-    fontVariant: ['tabular-nums'],
-  },
-  progressTrack: {
-    height: 8,
-    borderRadius: theme.radius.pill,
-    borderCurve: 'continuous',
-    backgroundColor: theme.colors.muted,
-    overflow: 'hidden',
-  },
-  progressFill: {
-    height: '100%',
-    backgroundColor: theme.colors.primary,
-  },
-  card: {
-    padding: theme.spacing.xl,
-    gap: theme.spacing.lg,
-    borderRadius: theme.radius.xl,
-    borderCurve: 'continuous',
-    backgroundColor: theme.colors.surface,
-    borderWidth: 1,
-    borderColor: theme.colors.border,
-    boxShadow: '0 10px 24px rgba(0, 0, 0, 0.06)',
-  },
-  cardIconWrap: {
-    width: 64,
-    height: 64,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 20,
-    borderCurve: 'continuous',
-    backgroundColor: theme.colors.primarySoft,
-    borderWidth: 1,
-    borderColor: theme.colors.primaryBorder,
-  },
-  cardIconFallback: {
-    width: 30,
-    height: 30,
-  },
-  cardTextWrap: {
-    gap: theme.spacing.sm,
-  },
-  cardStepLabel: {
-    fontSize: theme.size.sm,
-    fontWeight: theme.weight.semibold,
-    color: theme.colors.primary,
-    textTransform: 'uppercase',
-    letterSpacing: 0.5,
-  },
-  cardTitle: {
-    fontSize: theme.size['2xl'],
-    lineHeight: 32,
-    fontWeight: theme.weight.bold,
-    color: theme.colors.textPrimary,
-  },
-  cardBody: {
-    fontSize: theme.size.lg,
-    lineHeight: 26,
-    color: theme.colors.textSecondary,
-  },
-  noteCard: {
-    padding: theme.spacing.lg,
-    borderRadius: theme.radius.xl,
-    borderCurve: 'continuous',
-    backgroundColor: theme.colors.muted,
-    borderWidth: 1,
-    borderColor: theme.colors.border,
-  },
-  noteText: {
-    fontSize: theme.size.md,
-    lineHeight: 22,
-    color: theme.colors.textSecondary,
-  },
-  footer: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    bottom: 0,
-  },
-  footerActions: {
-    flexDirection: 'row',
-    gap: theme.spacing.md,
-  },
-  secondaryButton: {
-    minHeight: 56,
-    paddingHorizontal: theme.spacing.lg,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: theme.radius.xl,
-    borderCurve: 'continuous',
-    backgroundColor: theme.colors.muted,
-  },
-  secondaryButtonLabel: {
-    fontSize: theme.size.lg,
-    fontWeight: theme.weight.semibold,
-    color: theme.colors.textSecondary,
-  },
-  primaryButton: {
-    flex: 1,
-    minHeight: 56,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: theme.radius.xl,
-    borderCurve: 'continuous',
-    backgroundColor: theme.colors.primary,
-  },
-  primaryButtonFullWidth: {
-    flex: undefined,
-    width: '100%',
-  },
-  primaryButtonLabel: {
-    fontSize: theme.size.lg,
-    fontWeight: theme.weight.semibold,
-    color: theme.colors.white,
-  },
-});

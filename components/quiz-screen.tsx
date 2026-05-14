@@ -21,6 +21,11 @@ import { type ComponentProps, useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, {
+  FadeInDown,
+  FadeInRight,
+  FadeOutLeft,
+  FadeOutUp,
+  LinearTransition,
   interpolateColor,
   useAnimatedStyle,
   useSharedValue,
@@ -46,6 +51,7 @@ export type QuizScreenConfig = {
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 const AnimatedText = Animated.createAnimatedComponent(Text);
 type QuizValue = QuizOption['id'] | null;
+const optionLayoutTransition = LinearTransition.duration(180);
 
 function QuizOptionCard({
   option,
@@ -204,6 +210,7 @@ export default function QuizScreenView({
 
   const currentStep = steps[stepIndex];
   const progress = (stepIndex + 1) / steps.length;
+  const progressValue = useSharedValue(progress);
 
   useEffect(() => {
     setSelected(
@@ -214,6 +221,14 @@ export default function QuizScreenView({
       }),
     );
   }, [currentStep.field, goal, handedness, skillLevel]);
+
+  useEffect(() => {
+    progressValue.value = withTiming(progress, { duration: 240 });
+  }, [progress, progressValue]);
+
+  const progressFillAnimatedStyle = useAnimatedStyle(() => ({
+    transform: [{ scaleX: progressValue.value }],
+  }));
 
   function persistAnswer(field: QuizField, value: QuizValue) {
     if (!value) return;
@@ -265,33 +280,44 @@ export default function QuizScreenView({
           flexGrow: 1,
         }}>
         <View style={styles.progressTrack}>
-          <View style={[styles.progressFill, { width: `${progress * 100}%` }]} />
+          <Animated.View style={[styles.progressFill, progressFillAnimatedStyle]} />
         </View>
 
-        <View style={{ gap: theme.spacing.sm }}>
-          <StepProgressLabel currentStep={stepIndex + 1} totalSteps={steps.length} />
-          <Text selectable style={styles.title}>
-            {currentStep.title}
-          </Text>
-          <Text selectable style={styles.subtitle}>
-            {currentStep.subtitle}
-          </Text>
-        </View>
+        <Animated.View
+          key={currentStep.field}
+          entering={FadeInRight.duration(220)}
+          exiting={FadeOutLeft.duration(180)}
+          style={{ gap: theme.spacing.xl }}>
+          <View style={{ gap: theme.spacing.sm }}>
+            <StepProgressLabel currentStep={stepIndex + 1} totalSteps={steps.length} />
+            <Text selectable style={styles.title}>
+              {currentStep.title}
+            </Text>
+            <Text selectable style={styles.subtitle}>
+              {currentStep.subtitle}
+            </Text>
+          </View>
 
-        <View style={styles.optionsContainer}>
-          {currentStep.options.map((option) => {
-            const isSelected = selected === option.id;
+          <View style={styles.optionsContainer}>
+            {currentStep.options.map((option, index) => {
+              const isSelected = selected === option.id;
 
-            return (
-              <QuizOptionCard
-                key={option.id}
-                option={option}
-                isSelected={isSelected}
-                onSelect={handleSelect}
-              />
-            );
-          })}
-        </View>
+              return (
+                <Animated.View
+                  key={option.id}
+                  layout={optionLayoutTransition}
+                  entering={FadeInDown.duration(220).delay(index * 45)}
+                  exiting={FadeOutUp.duration(140)}>
+                  <QuizOptionCard
+                    option={option}
+                    isSelected={isSelected}
+                    onSelect={handleSelect}
+                  />
+                </Animated.View>
+              );
+            })}
+          </View>
+        </Animated.View>
       </ScrollView>
 
       <View
@@ -307,9 +333,14 @@ export default function QuizScreenView({
           disabled={!selected}
           onPress={handleContinue}
           style={[styles.ctaButton, !selected && styles.ctaButtonDisabled]}>
-          <Text selectable style={styles.ctaLabel}>
+          <Animated.Text
+            key={currentStep.field}
+            entering={FadeInDown.duration(180)}
+            exiting={FadeOutUp.duration(120)}
+            selectable
+            style={styles.ctaLabel}>
             {currentStep.ctaLabel}
-          </Text>
+          </Animated.Text>
         </Pressable>
       </View>
     </View>
@@ -328,8 +359,10 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   progressFill: {
+    width: '100%',
     height: '100%',
     backgroundColor: theme.colors.primary,
+    transformOrigin: 'left center',
   },
   eyebrow: {
     fontSize: theme.size.sm,
