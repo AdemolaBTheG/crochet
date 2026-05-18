@@ -11,7 +11,7 @@ export default function TabsLayout() {
 
   return (
     <NativeTabs tintColor={theme.colors.primary}>
-      <NativeTabs.Trigger name="(home)/index">
+      <NativeTabs.Trigger name="(home)">
         <NativeTabs.Trigger.Label>{t('tabs.home')}</NativeTabs.Trigger.Label>
         {isIOS ? (
           <NativeTabs.Trigger.Icon sf={{ default: 'house', selected: 'house.fill' }} />
@@ -19,7 +19,7 @@ export default function TabsLayout() {
           <Icon src={<VectorIcon family={MaterialIcons} name="home" />} />
         )}
       </NativeTabs.Trigger>
-      <NativeTabs.Trigger name="(learn)/index">
+      <NativeTabs.Trigger name="(learn)">
         <NativeTabs.Trigger.Label>{t('tabs.learn')}</NativeTabs.Trigger.Label>
         {isIOS ? (
           <NativeTabs.Trigger.Icon sf={{ default: 'book', selected: 'book.fill' }} />
@@ -27,7 +27,7 @@ export default function TabsLayout() {
           <Icon src={<VectorIcon family={MaterialIcons} name="menu-book" />} />
         )}
       </NativeTabs.Trigger>
-      <NativeTabs.Trigger name="(projects)/index">
+      <NativeTabs.Trigger name="(projects)">
         <NativeTabs.Trigger.Label>{t('tabs.projects')}</NativeTabs.Trigger.Label>
         {isIOS ? (
           <NativeTabs.Trigger.Icon sf={{ default: 'scissors', selected: 'scissors.circle.fill' }} />

@@ -1,4 +1,5 @@
 import { useSubscription } from "@/context/SubscriptionContext";
+import { theme } from '@/constants/Theme';
 import { logFirebaseEvent } from '@/services/firebaseAnalytics';
 import { Redirect, router } from "expo-router";
 import { usePostHog } from 'posthog-react-native';
@@ -10,7 +11,7 @@ export default function Paywall() {
     const posthog = usePostHog();
     const [promoOffering, setPromoOffering] =
         React.useState<PurchasesOffering | null>(null);
-    const { isPro } = useSubscription();
+    const { isLoading, isPro } = useSubscription();
 
     useEffect(() => {
         posthog?.capture('Paywall Viewed', { source: 'onboarding' });
@@ -34,6 +35,20 @@ export default function Paywall() {
         };
         fetchOfferings();
     }, []);
+
+    if (isLoading) {
+        return (
+            <View
+                style={{
+                    flex: 1,
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backgroundColor: theme.colors.background,
+                }}>
+                <ActivityIndicator color={theme.colors.primary} />
+            </View>
+        );
+    }
 
     if (isPro) {
         return <Redirect href="/(tabs)/(home)" />;

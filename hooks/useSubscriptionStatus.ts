@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Purchases, { CustomerInfo } from 'react-native-purchases';
 import { ENTITLEMENT_ID } from '../constants/Subscriptions';
 
@@ -12,21 +12,25 @@ export function useSubscriptionStatus(enabled = true): SubscriptionStatus {
   const [isPro, setIsPro] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
-  const handleCustomerInfo = (customerInfo: CustomerInfo) => {
-    const isProActive = !!customerInfo.entitlements.active[ENTITLEMENT_ID];
-
+  const applyCustomerInfo = useCallback((customerInfo?: CustomerInfo | null) => {
+    const isProActive = !!customerInfo?.entitlements.active?.[ENTITLEMENT_ID];
     setIsPro(isProActive);
-    setIsLoading(false); // Set loading to false after fetching customer info
-  };
+    setIsLoading(false);
+  }, []);
 
   useEffect(() => {
     if (!enabled) {
+      setIsPro(false);
       setIsLoading(true);
       return;
     }
 
     let isMounted = true;
     let hasListener = false;
+    const handleCustomerInfo = (customerInfo: CustomerInfo) => {
+      if (!isMounted) return;
+      applyCustomerInfo(customerInfo);
+    };
 
     const fetchInitialStatus = async () => {
       setIsLoading(true);
@@ -48,7 +52,7 @@ export function useSubscriptionStatus(enabled = true): SubscriptionStatus {
         const customerInfo = await Purchases.getCustomerInfo();
 
         if (isMounted) {
-          handleCustomerInfo(customerInfo);
+          applyCustomerInfo(customerInfo);
         }
       } catch (error) {
         console.error('Failed to fetch customer info:', error);
@@ -68,7 +72,7 @@ export function useSubscriptionStatus(enabled = true): SubscriptionStatus {
         Purchases.removeCustomerInfoUpdateListener(handleCustomerInfo);
       }
     };
-  }, [enabled]);
+  }, [applyCustomerInfo, enabled]);
 
   return { setIsPro, isPro, isLoading };
 }
