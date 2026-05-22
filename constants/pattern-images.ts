@@ -1,4 +1,6 @@
 export const patternImages = {
+  "amigurumi-whale": require("@/assets/images/patterns/amigurumi-whale.png"),
+  "basic-baby-blanket": require("@/assets/images/patterns/basic-baby-blanket.png"),
   "minimalist-coaster": require("@/assets/images/patterns/minimalist-coaster.png"),
   "round-trivet": require("@/assets/images/patterns/round-trivet.png"),
   "simple-dishcloth": require("@/assets/images/patterns/simple-dishcloth.png"),
@@ -6,6 +8,7 @@ export const patternImages = {
   "beginner-scarf": require("@/assets/images/patterns/beginner-scarf.png"),
   "granny-stripe-scarf": require("@/assets/images/patterns/granny-stripe-scarf.png"),
   "basic-granny-square": require("@/assets/images/patterns/basic-granny-square.png"),
+  "granny-square-tote": require("@/assets/images/patterns/granny-square-tote.png"),
   "mini-granny-square-join": require("@/assets/images/patterns/mini-granny-square-join.png"),
   "cotton-face-scrubbies": require("@/assets/images/patterns/cotton-face-scrubbies.png"),
   "basic-amigurumi-ball": require("@/assets/images/patterns/basic-amigurumi-ball.png"),
@@ -13,6 +16,7 @@ export const patternImages = {
   "ribbed-scrunchie": require("@/assets/images/patterns/ribbed-scrunchie.png"),
   "slim-bookmark": require("@/assets/images/patterns/slim-bookmark.png"),
   "simple-drawstring-pouch": require("@/assets/images/patterns/simple-drawstring-pouch.png"),
+  "mesh-market-bag": require("@/assets/images/patterns/mesh-market-bag.png"),
   "tiny-heart-applique": require("@/assets/images/patterns/tiny-heart-applique.png"),
   "simple-flower-applique": require("@/assets/images/patterns/simple-flower-applique.png"),
   "chunky-storage-basket": require("@/assets/images/patterns/chunky-storage-basket.png"),

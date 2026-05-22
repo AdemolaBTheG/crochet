@@ -1,0 +1,59 @@
+{
+  "title": "Amigurumi walvis",
+  "description": "Een vriendelijke kleine walvis die voortbouwt op de basisbal met eenvoudige vormgeving.",
+  "materials": [
+    "Worsted garen",
+    "4 mm haaknaald",
+    "steekmarkeerder",
+    "vulling",
+    "veiligheidsogen",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Magische ring",
+    "vasten",
+    "meerderen",
+    "onzichtbare mindering",
+    "in het rond werken"
+  ],
+  "expectationText": "Een beginnersvriendelijk knuffelproject waarbij rondes tellen en nette minderingen belangrijk zijn, zonder dat de vorm te ingewikkeld wordt.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Lichaam beginnen",
+      "instruction": "Begin met een magische ring en markeer de eerste steek van elke toer."
+    },
+    {
+      "type": "repeat",
+      "title": "Lichaam vergroten",
+      "instruction": "Meerderen gelijkmatig in de eerste toeren tot het lijf een ondiepe kom vormt.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "repeat",
+      "title": "Rechte toeren haken",
+      "instruction": "Haak zonder meerderingen verder om de hoofdlengte van het lichaam op te bouwen.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "instruction",
+      "title": "Ogen en vulling toevoegen",
+      "instruction": "Plaats de ogen voordat de opening te klein wordt en begin daarna lichtjes te vullen."
+    },
+    {
+      "type": "repeat",
+      "title": "Staartkant vormen",
+      "instruction": "Gebruik onzichtbare minderingen om het lichaam netjes te sluiten.",
+      "counterLabel": "round",
+      "targetCount": 11
+    },
+    {
+      "type": "instruction",
+      "title": "Vin en staart",
+      "instruction": "Naai of haak eenvoudige zijvinnen en een staart, sluit daarna de opening en werk het uiteinde weg."
+    }
+  ]
+}

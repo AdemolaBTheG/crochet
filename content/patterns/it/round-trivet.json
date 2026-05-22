@@ -1,0 +1,50 @@
+{
+  "title": "Sottopentola rotondo",
+  "description": "Un cerchio piatto più spesso che si basa sulle abilità del sottobicchiere e ti offre una dimensione finale più utile.",
+  "materials": [
+    "Filato di cotone spesso",
+    "Gancio da 5,5 a 6 mm",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Anello magico",
+    "uncinetto singolo",
+    "in aumento",
+    "unione di punti bassissimi"
+  ],
+  "expectationText": "Un robusto piatto rotondo dove esercitarsi aumenta anche più a lungo senza che il progetto diventi ripetitivo troppo velocemente.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Realizza l'anello centrale",
+      "instruction": "Inizia con un anello magico o una catena 4 e unisciti in un anello."
+    },
+    {
+      "type": "round",
+      "title": "Giro 1",
+      "instruction": "Lavora 8 maglie basse nell'anello e uniscile con una maglia bassissima.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Turno 2",
+      "instruction": "Lavora 2 maglie basse in ogni maglia attorno per un totale di 16 maglie.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Turni dal 3 al 5",
+      "instruction": "Aumentare in modo uniforme su ogni giro distanziando 2 maglie basse in una maglia in modo che il cerchio rimanga piatto.",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Fai un punto bassissimo per unire, allacciare e intrecciare saldamente la fine."
+    }
+  ]
+}

@@ -1,6 +1,9 @@
 import backLoopOnlyRibbing from "./back-loop-only-ribbing.json";
 import chainSpacesAndCorners from "./chain-spaces-and-corners.json";
 import doubleCrochet from "./double-crochet.json";
+import joiningGrannySquares from "./joining-granny-squares.json";
+import invisibleDecreaseForAmigurumi from "./invisible-decrease-for-amigurumi.json";
+import colorChanges from "./color-changes.json";
 import fastenOffAndWeaveEnds from "./fasten-off-and-weave-ends.json";
 import foundationChain from "./foundation-chain.json";
 import halfDoubleCrochet from "./half-double-crochet.json";
@@ -28,6 +31,9 @@ const lessonContentMap: Record<string, LessonContent> = {
   "back-loop-only-ribbing": backLoopOnlyRibbing as LessonContent,
   "chain-spaces-and-corners": chainSpacesAndCorners as LessonContent,
   "double-crochet": doubleCrochet as LessonContent,
+  "joining-granny-squares": joiningGrannySquares as LessonContent,
+  "invisible-decrease-for-amigurumi": invisibleDecreaseForAmigurumi as LessonContent,
+  "color-changes": colorChanges as LessonContent,
   "fasten-off-and-weave-ends": fastenOffAndWeaveEnds as LessonContent,
   "foundation-chain": foundationChain as LessonContent,
   "half-double-crochet": halfDoubleCrochet as LessonContent,

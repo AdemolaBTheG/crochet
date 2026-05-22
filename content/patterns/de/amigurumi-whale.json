@@ -1,0 +1,59 @@
+{
+  "title": "Amigurumi-Wal",
+  "description": "Ein freundlicher kleiner Wal, der auf dem Grundball aufbaut und einfache Formgebung erweitert.",
+  "materials": [
+    "Kammgarn",
+    "4-mm-Haekelnadel",
+    "Maschenmarkierer",
+    "Fuellwatte",
+    "Sicherheitsaugen",
+    "Wollnadel",
+    "Schere"
+  ],
+  "skills": [
+    "Magischer Ring",
+    "feste Maschen",
+    "Zunahmen",
+    "unsichtbare Abnahmen",
+    "in Runden arbeiten"
+  ],
+  "expectationText": "Ein einsteigerfreundliches Figurenprojekt, bei dem Rundenzahl und saubere Abnahmen wichtig sind, die Form aber trotzdem gut beherrschbar bleibt.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Koerper beginnen",
+      "instruction": "Starte mit einem magischen Ring und markiere die erste Masche jeder Runde."
+    },
+    {
+      "type": "repeat",
+      "title": "Koerper erweitern",
+      "instruction": "Nimm in den ersten Runden gleichmaessig zu, bis der Koerper sich zu einer flachen Schale formt.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "repeat",
+      "title": "Gerade Runden arbeiten",
+      "instruction": "Haekle ohne Zunahmen weiter, um die Hauptlaenge des Koerpers aufzubauen.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "instruction",
+      "title": "Augen und Fuellung",
+      "instruction": "Setze die Augen ein, bevor die Oeffnung zu klein wird, und beginne dann locker zu fuellen."
+    },
+    {
+      "type": "repeat",
+      "title": "Heck formen",
+      "instruction": "Nutze unsichtbare Abnahmen, um den Koerper sauber zu verjüngen.",
+      "counterLabel": "round",
+      "targetCount": 11
+    },
+    {
+      "type": "instruction",
+      "title": "Flossen und Schwanz",
+      "instruction": "Naehe oder haekle einfache Seitenflossen und einen Schwanz an, schliesse dann die Oeffnung und verberge das Endfaedchen."
+    }
+  ]
+}

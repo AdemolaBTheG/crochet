@@ -3,7 +3,7 @@ const path = require("path");
 
 const LESSONS_DIR = path.join(__dirname, "..", "content", "lessons");
 const PATTERNS_DIR = path.join(__dirname, "..", "content", "patterns");
-const LOCALES = ["en", "de", "fr", "es", "nl"];
+const LOCALES = ["en", "de", "fr", "es", "nl", "it", "ja"];
 
 const LESSON_SLUGS = [
   "slip-knot-and-hold",
@@ -19,6 +19,9 @@ const LESSON_SLUGS = [
   "increasing-and-decreasing",
   "chain-spaces-and-corners",
   "back-loop-only-ribbing",
+  "color-changes",
+  "joining-granny-squares",
+  "invisible-decrease-for-amigurumi",
 ];
 
 const PATTERN_SLUGS = [
@@ -41,6 +44,10 @@ const PATTERN_SLUGS = [
   "basic-amigurumi-ball",
   "ribbed-headband",
   "simple-drawstring-pouch",
+  "granny-square-tote",
+  "mesh-market-bag",
+  "basic-baby-blanket",
+  "amigurumi-whale",
 ];
 
 const REQUIRED_LESSON_KEYS = ["title", "description", "content"];

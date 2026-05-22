@@ -1,0 +1,15 @@
+{
+  "title": "Amigurumi Whale",
+  "description": "A friendly stuffed whale that builds on the basic ball with simple shaping and finishing.",
+  "materials": ["Worsted yarn", "4 mm hook", "stitch marker", "stuffing", "safety eyes", "yarn needle", "scissors"],
+  "skills": ["Magic ring", "single crochet", "increasing", "invisible decrease", "working in rounds"],
+  "expectationText": "A beginner toy project where round counting and clean decreases matter, but the shaping still stays approachable.",
+  "steps": [
+    { "type": "instruction", "title": "Begin the body", "instruction": "Start with a magic ring and place a marker in the first stitch of each round." },
+    { "type": "repeat", "title": "Increase the body", "instruction": "Increase evenly over the first rounds until the body forms a shallow cup.", "counterLabel": "round", "targetCount": 4 },
+    { "type": "repeat", "title": "Work even rounds", "instruction": "Single crochet around without increasing to build the main body length.", "counterLabel": "round", "targetCount": 8 },
+    { "type": "instruction", "title": "Add eyes and stuffing", "instruction": "Insert the eyes before the opening gets too tight, then begin stuffing lightly." },
+    { "type": "repeat", "title": "Shape the tail end", "instruction": "Use invisible decreases to taper the body while keeping the stitches smooth.", "counterLabel": "round", "targetCount": 11 },
+    { "type": "instruction", "title": "Finish the fins and tail", "instruction": "Sew or crochet simple side fins and a tail shape, then close the final opening and hide the end." }
+  ]
+}

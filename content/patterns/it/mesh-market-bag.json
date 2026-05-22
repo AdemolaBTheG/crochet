@@ -1,0 +1,54 @@
+{
+  "title": "Borsa del mercato a maglie",
+  "description": "Una borsa aperta leggera che crea sicurezza con gli spazi di catena e le sezioni ripetute.",
+  "materials": [
+    "Filato di cotone",
+    "Gancio da 5mm",
+    "segnapunti",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Catena di fondazione",
+    "doppio uncinetto",
+    "spazi di catena",
+    "lavorando a turni"
+  ],
+  "expectationText": "Un progetto pratico con progressi visibili, in cui semplici ripetizioni di mesh si trasformano rapidamente in qualcosa di utilizzabile.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Inizia la base",
+      "instruction": "Lavorare una base ovale o rettangolare corta e posizionare un segnapunti all'inizio di ogni giro."
+    },
+    {
+      "type": "repeat",
+      "title": "Costruisci la maglia",
+      "instruction": "Lavorare gli spazi di catenelle e i punti di ancoraggio in modo uniforme per creare un tessuto aperto.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "repeat",
+      "title": "Aggiungi altezza",
+      "instruction": "Continua la ripetizione della maglia finché il corpo della borsa non raggiunge una dimensione comoda per tutti i giorni.",
+      "counterLabel": "round",
+      "targetCount": 14
+    },
+    {
+      "type": "instruction",
+      "title": "Modella le maniglie",
+      "instruction": "Salta le sezioni relative alle aperture delle maniglie, quindi collegale con lunghe catenelle nel giro successivo."
+    },
+    {
+      "type": "instruction",
+      "title": "Rinforza la parte superiore",
+      "instruction": "Lavora uno o due giri solidi attorno all'apertura e ai manici in modo che la borsa sembri più robusta."
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Allacciare, intrecciare le estremità e allungare leggermente la borsa con le mani in modo che la rete si apra in modo uniforme."
+    }
+  ]
+}

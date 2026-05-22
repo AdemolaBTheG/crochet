@@ -1,0 +1,54 @@
+{
+  "title": "Net boodschappentas",
+  "description": "Een lichte open tas die vertrouwen opbouwt met lossenbogen en herhalingen.",
+  "materials": [
+    "Katoengaren",
+    "5 mm haaknaald",
+    "steekmarkeerder",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Lossenketting",
+    "stokjes",
+    "lossenbogen",
+    "in het rond werken"
+  ],
+  "expectationText": "Een praktisch project met zichtbaar resultaat, waarbij simpele mesh-herhalingen snel iets bruikbaars worden.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Basis beginnen",
+      "instruction": "Haak een korte ovale of rechthoekige bodem en markeer het begin van elke toer."
+    },
+    {
+      "type": "repeat",
+      "title": "Net opbouwen",
+      "instruction": "Werk lossenbogen en ankersteken gelijkmatig om een open structuur te maken.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "repeat",
+      "title": "Hoogte toevoegen",
+      "instruction": "Ga door met het netpatroon tot de tas een prettige dagelijkse hoogte heeft.",
+      "counterLabel": "round",
+      "targetCount": 14
+    },
+    {
+      "type": "instruction",
+      "title": "Hengsels vormen",
+      "instruction": "Laat openingen voor de hengsels en overbrug die in de volgende toer met lange lossen."
+    },
+    {
+      "type": "instruction",
+      "title": "Bovenrand verstevigen",
+      "instruction": "Werk een of twee dichte toeren rond de opening en hengsels zodat de tas steviger wordt."
+    },
+    {
+      "type": "instruction",
+      "title": "Afwerken",
+      "instruction": "Knip de draad af, werk de uiteinden weg en trek het net voorzichtig open zodat alles gelijk valt."
+    }
+  ]
+}

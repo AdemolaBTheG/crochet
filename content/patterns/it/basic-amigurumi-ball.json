@@ -1,0 +1,60 @@
+{
+  "title": "Palla Amigurumi base",
+  "description": "Una piccola sfera imbottita per esercitarsi negli aumenti, nelle diminuzioni e nel lavorare in giri continui.",
+  "materials": [
+    "Filato pettinato",
+    "Gancio da 4 mm",
+    "segnapunti",
+    "ripieno",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Anello magico",
+    "uncinetto singolo",
+    "in aumento",
+    "decrescente",
+    "lavorando a turni"
+  ],
+  "expectationText": "Un progetto di modellatura compatto in cui gli aumenti costruiscono la curva, i arrotondamenti diritti aggiungono altezza e le diminuzioni chiudono la forma.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Inizia il centro",
+      "instruction": "Crea un anello magico e posiziona un segnapunti nella prima maglia di ogni giro."
+    },
+    {
+      "type": "round",
+      "title": "Giro 1",
+      "instruction": "Lavora 6 maglie basse nell'anello e chiudi il centro.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Turni dal 2 al 4",
+      "instruction": "Aumentare in modo uniforme ad ogni giro finché il pezzo non inizia a formare una forma arrotondata.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "repeat",
+      "title": "Turni dal 5 al 7",
+      "instruction": "Maglia bassa attorno senza aumentare per costruire il centro della pallina.",
+      "counterLabel": "round",
+      "targetCount": 7
+    },
+    {
+      "type": "repeat",
+      "title": "Turni dall'8 al 10",
+      "instruction": "Diminuire uniformemente ad ogni giro, aggiungendo il ripieno prima che l'apertura diventi troppo piccola.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Vicino",
+      "instruction": "Affrancare, infilare la coda nelle maglie finali, chiudere e nascondere l'estremità all'interno."
+    }
+  ]
+}

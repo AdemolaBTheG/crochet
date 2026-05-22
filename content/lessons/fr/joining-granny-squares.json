@@ -1,0 +1,19 @@
+{
+  "title": "Assembler des granny squares",
+  "description": "Assemble des granny squares termines en une piece plus grande avec des coutures propres et regulieres.",
+  "content": {
+    "summary": "Apprends a aligner les coins, faire correspondre le nombre de mailles et joindre les carrés sans les deformer.",
+    "whyItMatters": "Beaucoup de couvertures, sacs et coussins pour debutants sont simplement de petits motifs bien assembles. C est l assemblage qui les rend finis.",
+    "steps": [
+      "Pose les carrés a plat et aligne d abord les coins.",
+      "Choisis une methode de jonction comme la couture, la maille coulée ou la maille serree selon l effet souhaite.",
+      "Assemble une couture a la fois et verifie regulierement que les mailles correspondent de chaque cote.",
+      "Lisse la couture avec les doigts et rentre les fils avant de continuer l assemblage."
+    ],
+    "practice": "Fais deux petits granny squares et assemble un cote avec une couture puis un autre avec des mailles coulées pour comparer.",
+    "commonMistakes": [
+      "Assembler les mauvais coins et obtenir une disposition tordue.",
+      "Tirer trop fort sur la couture et faire gondoler le bord."
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Lavorare in righe",
+  "description": "Scopri quando girare il lavoro e come mantenere costante il conteggio dei punti.",
+  "content": {
+    "summary": "Le file ti insegnano a girare il lavoro, a usare le catene di rotazione ed evitare di crescere o restringersi accidentalmente.",
+    "whyItMatters": "Strofinacci e sciarpe dipendono da un numero costante di file e da bordi coerenti.",
+    "steps": [
+      "Termina una riga e realizza la catena di svolta corretta.",
+      "Gira il lavoro in modo che il retro sia rivolto verso di te.",
+      "Inizia la riga successiva con il punto corretto per quel tipo di punto.",
+      "Contare le maglie alla fine di ogni riga."
+    ],
+    "practice": "Crea un campione di 5 righe e conta i punti dopo ogni riga.",
+    "commonMistakes": [
+      "Intervento accidentale sulla catena di tornitura.",
+      "Saltare l'ultima maglia del bordo."
+    ]
+  }
+}

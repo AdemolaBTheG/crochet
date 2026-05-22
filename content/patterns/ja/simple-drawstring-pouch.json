@@ -1,0 +1,57 @@
+{
+  "title": "シンプル巾着ポーチ",
+  "description": "小さなバッグは、丸いベースから直線的な側面に向かってチェーンの引き紐が付いています。",
+  "materials": [
+    "綿糸",
+    "4.5mmフック",
+    "ステッチマーカー",
+    "糸針",
+    "はさみ"
+  ],
+  "skills": [
+    "魔法の指輪",
+    "単一かぎ針編み",
+    "増加する",
+    "ラウンドで作業する",
+    "基礎チェーン"
+  ],
+  "expectationText": "平らな円形のベースから単純な直立した側面への移動を教える便利な小さなコンテナです。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "ベースを開始します",
+      "instruction": "魔法のリングまたはチェーン4を作り、輪につなぎます。"
+    },
+    {
+      "type": "round",
+      "title": "ラウンド1",
+      "instruction": "中央に8片編みをして、最初の目に印を付けます。",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "第2ラウンドから第4ラウンドまで",
+      "instruction": "ベースが小さなポーチに十分な幅になるまで、ラウンドごとに均等に増やします。",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "repeat",
+      "title": "第5ラウンドから第14ラウンドまで",
+      "instruction": "サイドを構築するために増やさずに周囲を一重かぎ針編みします。",
+      "counterLabel": "round",
+      "targetCount": 14
+    },
+    {
+      "type": "instruction",
+      "title": "巾着を作ります",
+      "instruction": "ポーチの開口部を包み込むのに十分な長さのコードをチェーンにし、上端近くのスペースに編み込みます。"
+    },
+    {
+      "type": "instruction",
+      "title": "仕上げる",
+      "instruction": "巾着の端に小さな結び目を作り、留めて、残りの尾を織り込みます。"
+    }
+  ]
+}

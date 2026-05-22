@@ -1,0 +1,50 @@
+{
+  "title": "Sciarpa a righe della nonna",
+  "description": "Una sciarpa semplice costruita ripetendo gruppi di grappoli e spazi di catenelle.",
+  "materials": [
+    "Filato pettinato morbido",
+    "Gancio da 5,5 mm",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Catena di fondazione",
+    "doppio uncinetto",
+    "spazi di catena",
+    "girando le file"
+  ],
+  "expectationText": "Un lungo progetto ripetuto in cui smetti di contare i singoli punti e inizi invece a leggere spazi e gruppi.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fondazione",
+      "instruction": "Fai 27 catenelle o qualsiasi multiplo di 3 più 3 per una sciarpa più ampia."
+    },
+    {
+      "type": "row",
+      "title": "Riga 1",
+      "instruction": "Lavora in gruppi di 3 maglie alte saltando gli spazi tra di loro per iniziare il layout a strisce della nonna.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Riga 2",
+      "instruction": "Fai 3 catenelle, gira e lavora i gruppi successivi negli spazi tra i mazzi della riga precedente.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Righe da 3 a 24",
+      "instruction": "Ripeti lo stesso posizionamento del grappolo in ogni arco di catenelle lungo la riga finché la sciarpa non raggiunge la lunghezza che preferisci.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Allacciare, intrecciare le estremità e aggiungere la frangia solo se si desidera una consistenza extra."
+    }
+  ]
+}

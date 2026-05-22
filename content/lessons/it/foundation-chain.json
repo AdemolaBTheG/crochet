@@ -1,0 +1,19 @@
+{
+  "title": "Catena di fondazione",
+  "description": "Realizza la catenella iniziale da utilizzare per file, sciarpe, strofinacci e altro ancora.",
+  "content": {
+    "summary": "Impara il movimento del gettato e crea catenelle uniformi.",
+    "whyItMatters": "La catena di fondazione determina la larghezza di molti progetti per principianti.",
+    "steps": [
+      "Inizia con un nodo scorsoio sul gancio.",
+      "Filati da dietro a davanti.",
+      "Tirare il filo attraverso l'occhiello sull'uncinetto.",
+      "Ripeti finché la lunghezza della catena non appare uniforme."
+    ],
+    "practice": "Fai 15 maglie a catenella due volte e confronta come appaiono uniformi.",
+    "commonMistakes": [
+      "Rendere le catene così strette che il gancio non possa attraversarle successivamente.",
+      "Attorcigliare la catenella e perdere le maglie davanti vs dietro."
+    ]
+  }
+}

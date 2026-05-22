@@ -1,0 +1,56 @@
+{
+  "title": "Basis babydeken",
+  "description": "Een zacht herhaalproject bedoeld voor rustige rijen en eenvoudig voortgang bijhouden.",
+  "materials": [
+    "Zacht worsted garen",
+    "5 mm haaknaald",
+    "steekmarkeerders",
+    "wolnaald",
+    "schaar"
+  ],
+  "skills": [
+    "Lossenketting",
+    "stokjes",
+    "in rijen werken",
+    "kleurwissels"
+  ],
+  "expectationText": "Een langer comfortproject waarbij eenvoudige rijen uitgroeien tot een cadeaude waardige deken zonder lastige vormgeving.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Breedte opzetten",
+      "instruction": "Haak een lossenketting op babydeken-breedte en tel zorgvuldig na voor de eerste rij."
+    },
+    {
+      "type": "row",
+      "title": "Rij 1",
+      "instruction": "Werk de opzetrij gelijkmatig en markeer indien nodig de eerste en laatste steek.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Rijen 2 tot 20",
+      "instruction": "Herhaal het hoofdpatroon en controleer de zijkanten om de paar rijen zodat de deken rechthoekig blijft.",
+      "counterLabel": "row",
+      "targetCount": 20
+    },
+    {
+      "type": "repeat",
+      "title": "Rijen 21 tot 40",
+      "instruction": "Werk verder in de hoogte en wissel alleen van kleur aan het einde van een rij als je zachte strepen wilt.",
+      "counterLabel": "row",
+      "targetCount": 40
+    },
+    {
+      "type": "instruction",
+      "title": "Rand haken",
+      "instruction": "Werk een eenvoudige rand rond alle vier de zijden om de randen netjes af te maken."
+    },
+    {
+      "type": "instruction",
+      "title": "Afwerken",
+      "instruction": "Werk de draadeinden weg en leg de deken plat om te controleren dat de rand mooi vlak ligt."
+    }
+  ]
+}

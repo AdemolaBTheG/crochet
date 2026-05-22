@@ -1,0 +1,19 @@
+{
+  "title": "Diminution invisible pour amigurumi",
+  "description": "Mets en forme des pieces rembourrees avec une diminution qui se fond mieux dans le tissu.",
+  "content": {
+    "summary": "Apprends a diminuer dans les brins avant pour obtenir un resultat plus discret qu une diminution classique.",
+    "whyItMatters": "Les amigurumis paraissent beaucoup plus soignes quand les diminutions ne ressortent pas. C est une technique simple avec un gros impact visuel.",
+    "steps": [
+      "Passe le crochet dans le brin avant de la maille suivante puis dans le brin avant de la maille d apres.",
+      "Fais un jeté et tire-le a travers les deux brins avant.",
+      "Fais un nouveau jeté et termine la diminution en le passant dans les boucles restantes.",
+      "Travaille calmement avec une tension reguliere pour garder une forme lisse."
+    ],
+    "practice": "Fais un petit tour avec des diminutions classiques puis un autre avec des diminutions invisibles et compare la surface.",
+    "commonMistakes": [
+      "Piquer dans les deux brins au lieu du brin avant et creer une diminution plus epaisse.",
+      "Sauter une maille apres une diminution et perdre le compte."
+    ]
+  }
+}

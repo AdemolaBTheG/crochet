@@ -1,0 +1,59 @@
+{
+  "title": "Baleine amigurumi",
+  "description": "Une petite baleine sympathique qui reprend la balle de base avec une mise en forme simple.",
+  "materials": [
+    "Laine worsted",
+    "crochet 4 mm",
+    "marqueur de mailles",
+    "rembourrage",
+    "yeux de securite",
+    "aiguille a laine",
+    "ciseaux"
+  ],
+  "skills": [
+    "Anneau magique",
+    "mailles serrées",
+    "augmentations",
+    "diminution invisible",
+    "travail en rond"
+  ],
+  "expectationText": "Un projet de peluche accessible aux debutants ou le comptage des tours et les diminutions propres comptent, sans rendre la forme trop difficile.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Commencer le corps",
+      "instruction": "Demarre avec un anneau magique et marque la premiere maille de chaque tour."
+    },
+    {
+      "type": "repeat",
+      "title": "Agrandir le corps",
+      "instruction": "Augmente regulierement pendant les premiers tours jusqu a former une petite coupe arrondie.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "repeat",
+      "title": "Faire les tours droits",
+      "instruction": "Crochete sans augmentation pour construire la longueur principale du corps.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "instruction",
+      "title": "Ajouter yeux et rembourrage",
+      "instruction": "Place les yeux avant que l ouverture ne devienne trop petite puis commence a rembourrer legerement."
+    },
+    {
+      "type": "repeat",
+      "title": "Former la queue",
+      "instruction": "Utilise des diminutions invisibles pour refermer le corps de maniere lisse.",
+      "counterLabel": "round",
+      "targetCount": 11
+    },
+    {
+      "type": "instruction",
+      "title": "Nageoires et queue",
+      "instruction": "Couds ou crochete des nageoires simples et une queue, puis ferme l ouverture et cache le fil final."
+    }
+  ]
+}

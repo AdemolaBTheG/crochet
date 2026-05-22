@@ -1,0 +1,51 @@
+{
+  "title": "Borsa tote quadrata Granny",
+  "description": "Unisci i classici Granny Squares in un semplice borsone che sembra più consistente di un campione da allenamento.",
+  "materials": [
+    "Filato pettinato",
+    "Gancio da 5mm",
+    "ago da filo",
+    "forbici",
+    "segnapunti"
+  ],
+  "skills": [
+    "Piazze della nonna",
+    "unendosi ai Granny Squares",
+    "cambiamenti di colore",
+    "estremità della tessitura"
+  ],
+  "expectationText": "Un progetto modulare in cui i quadrati ripetuti si trasformano in una borsa finita, offrendo all'utente un chiaro vantaggio per la pratica del motivo.",
+  "steps": [
+    {
+      "type": "repeat",
+      "title": "Realizza i quadrati",
+      "instruction": "Lavora 8 Granny Squares in uno o due colori e intreccia le code più corte man mano che procedi.",
+      "targetCount": 8
+    },
+    {
+      "type": "instruction",
+      "title": "Blocca e organizza",
+      "instruction": "Disponi i quadrati in due pannelli da quattro in modo che gli angoli e la disposizione dei colori rimangano coerenti."
+    },
+    {
+      "type": "instruction",
+      "title": "Unisciti a ciascun pannello",
+      "instruction": "Unisci i quadrati pannello per pannello, facendo combaciare gli angoli prima di lavorare ogni cucitura."
+    },
+    {
+      "type": "instruction",
+      "title": "Assembla la borsa",
+      "instruction": "Unisci i due pannelli lungo i lati e sul fondo, lasciando aperto il bordo superiore."
+    },
+    {
+      "type": "instruction",
+      "title": "Aggiungi le maniglie",
+      "instruction": "Lavora all'uncinetto o cuci due semplici maniglie sul bordo superiore e rinforza la base di ciascuna maniglia."
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Intreccia le estremità rimanenti e controlla che il bordo superiore e i manici si sentano bene anche prima di usare la borsa."
+    }
+  ]
+}

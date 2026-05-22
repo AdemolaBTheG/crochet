@@ -1,0 +1,49 @@
+{
+  "title": "Manica per tazza accogliente",
+  "description": "Un piccolo progetto rettangolare che avvolge una tazza e insegna a rifinire in modo semplice.",
+  "materials": [
+    "Filato di cotone pettinato",
+    "Gancio da 5mm",
+    "ago da filo",
+    "forbici",
+    "pulsante"
+  ],
+  "skills": [
+    "Catena di fondazione",
+    "mezza maglia alta",
+    "girando le file",
+    "anello per bottoni"
+  ],
+  "expectationText": "Un pratico rettangolo che si trasforma in un oggetto finito con un piccolo dettaglio di unione all'estremità.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fondazione",
+      "instruction": "Fai 12 catenelle per l'altezza della manica."
+    },
+    {
+      "type": "row",
+      "title": "Riga 1",
+      "instruction": "Mezza maglia alta nella terza catenella dall'uncinetto e in ogni catenella trasversale.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Righe da 2 a 18",
+      "instruction": "Fai 2 catenelle, gira e fai mezza maglia alta finché la manica non si avvolge attorno alla tazza.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Aggiungi un ciclo",
+      "instruction": "Realizza un piccolo anello su un bordo corto per la chiusura con bottoni."
+    },
+    {
+      "type": "instruction",
+      "title": "Attacca il pulsante",
+      "instruction": "Cuci un bottone sul bordo opposto, chiudilo e intreccia le estremità."
+    }
+  ]
+}

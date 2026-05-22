@@ -1,0 +1,46 @@
+{
+  "title": "小さなハートのアップリケ",
+  "description": "1 回の簡単なラウンドで形を整える練習用の小さな装飾的なハート。",
+  "materials": [
+    "綿糸",
+    "4mmフック",
+    "糸針",
+    "はさみ"
+  ],
+  "skills": [
+    "魔法の指輪",
+    "二重かぎ針編み",
+    "高音かぎ針編み",
+    "スリップステッチ"
+  ],
+  "expectationText": "ステッチの高さがデザインの輪郭をどのように変えるかを教える小さな形のモチーフ。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "指輪を作る",
+      "instruction": "マジックリングとチェーン2から始めて、ハートの形を始めます。"
+    },
+    {
+      "type": "round",
+      "title": "ローブを構築する",
+      "instruction": "リングに高めのステッチを入れて、丸いハートの上部を形成します。",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "instruction",
+      "title": "ポイントの形を整える",
+      "instruction": "短いステッチを使用し、次に下の点で 1 つの高いステッチを使用します。"
+    },
+    {
+      "type": "instruction",
+      "title": "心を閉じて",
+      "instruction": "最初の面をミラーリングし、スリップステッチで閉じ、リングをしっかりと引っ張ります。"
+    },
+    {
+      "type": "instruction",
+      "title": "仕上げる",
+      "instruction": "留めて尾をハートの後ろに織り込みます。"
+    }
+  ]
+}

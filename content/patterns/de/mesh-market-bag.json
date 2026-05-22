@@ -1,0 +1,54 @@
+{
+  "title": "Netz-Einkaufstasche",
+  "description": "Eine leichte offene Tasche, die Sicherheit mit Luftmaschenboegen und Wiederholungen aufbaut.",
+  "materials": [
+    "Baumwollgarn",
+    "5-mm-Haekelnadel",
+    "Maschenmarkierer",
+    "Wollnadel",
+    "Schere"
+  ],
+  "skills": [
+    "Luftmaschenkette",
+    "Stäbchen",
+    "Luftmaschenboegen",
+    "in Runden arbeiten"
+  ],
+  "expectationText": "Ein praktisches Projekt mit sichtbarem Fortschritt, bei dem einfache Netz-Wiederholungen schnell in etwas Nutzbares uebergehen.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Boden beginnen",
+      "instruction": "Haekle einen kurzen ovalen oder rechteckigen Boden und markiere den Rundenanfang."
+    },
+    {
+      "type": "repeat",
+      "title": "Netz aufbauen",
+      "instruction": "Arbeite Luftmaschenboegen und Verankerungsmaschen gleichmaessig, damit ein offenes Gewebe entsteht.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "repeat",
+      "title": "Hoehe geben",
+      "instruction": "Wiederhole das Netzmuster, bis der Taschenkörper eine alltagstaugliche Hoehe erreicht.",
+      "counterLabel": "round",
+      "targetCount": 14
+    },
+    {
+      "type": "instruction",
+      "title": "Henkel formen",
+      "instruction": "Lass Abschnitte fuer die Griffe frei und ueberbruecke sie in der naechsten Runde mit langen Luftmaschen."
+    },
+    {
+      "type": "instruction",
+      "title": "Obere Kante verstaerken",
+      "instruction": "Arbeite ein oder zwei feste Runden um Oeffnung und Henkel, damit die Tasche stabiler wird."
+    },
+    {
+      "type": "instruction",
+      "title": "Fertigstellen",
+      "instruction": "Faden abschneiden, Enden vernähen und die Tasche leicht in Form ziehen, damit sich das Netz gleichmaessig oeffnet."
+    }
+  ]
+}

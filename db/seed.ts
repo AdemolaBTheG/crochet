@@ -2,11 +2,15 @@ import deLessonContentMap from "@/content/lessons/de";
 import enLessonContentMap from "@/content/lessons/en";
 import esLessonContentMap from "@/content/lessons/es";
 import frLessonContentMap from "@/content/lessons/fr";
+import itLessonContentMap from "@/content/lessons/it";
+import jaLessonContentMap from "@/content/lessons/ja";
 import nlLessonContentMap from "@/content/lessons/nl";
 import dePatternContentMap from "@/content/patterns/de";
 import enPatternContentMap from "@/content/patterns/en";
 import esPatternContentMap from "@/content/patterns/es";
 import frPatternContentMap from "@/content/patterns/fr";
+import itPatternContentMap from "@/content/patterns/it";
+import jaPatternContentMap from "@/content/patterns/ja";
 import nlPatternContentMap from "@/content/patterns/nl";
 import * as schema from "@/db/schema";
 import type { ExpoSQLiteDatabase } from "drizzle-orm/expo-sqlite";
@@ -25,6 +29,9 @@ const lessonSlugs = [
   "increasing-and-decreasing",
   "chain-spaces-and-corners",
   "back-loop-only-ribbing",
+  "color-changes",
+  "joining-granny-squares",
+  "invisible-decrease-for-amigurumi",
 ];
 
 const lessonMetadata: Record<
@@ -44,6 +51,9 @@ const lessonMetadata: Record<
   "increasing-and-decreasing": { sortOrder: 11, difficulty: "beginner", videoUrl: null },
   "chain-spaces-and-corners": { sortOrder: 12, difficulty: "beginner", videoUrl: null },
   "back-loop-only-ribbing": { sortOrder: 13, difficulty: "beginner", videoUrl: null },
+  "color-changes": { sortOrder: 14, difficulty: "beginner", videoUrl: null },
+  "joining-granny-squares": { sortOrder: 15, difficulty: "beginner", videoUrl: null },
+  "invisible-decrease-for-amigurumi": { sortOrder: 16, difficulty: "beginner", videoUrl: null },
 };
 
 const lessonContentMaps = {
@@ -52,6 +62,8 @@ const lessonContentMaps = {
   fr: frLessonContentMap,
   es: esLessonContentMap,
   nl: nlLessonContentMap,
+  it: itLessonContentMap,
+  ja: jaLessonContentMap,
 } as const;
 
 const patternSlugs = [
@@ -74,6 +86,10 @@ const patternSlugs = [
   "basic-amigurumi-ball",
   "ribbed-headband",
   "simple-drawstring-pouch",
+  "granny-square-tote",
+  "mesh-market-bag",
+  "basic-baby-blanket",
+  "amigurumi-whale",
 ];
 
 const patternMetadata: Record<
@@ -199,6 +215,30 @@ const patternMetadata: Record<
     coverImageKey: "simple-drawstring-pouch",
     estimatedMinutes: 80,
   },
+  "granny-square-tote": {
+    difficulty: "beginner",
+    category: "gift",
+    coverImageKey: "granny-square-tote",
+    estimatedMinutes: 150,
+  },
+  "mesh-market-bag": {
+    difficulty: "beginner",
+    category: "gift",
+    coverImageKey: "mesh-market-bag",
+    estimatedMinutes: 120,
+  },
+  "basic-baby-blanket": {
+    difficulty: "beginner",
+    category: "home",
+    coverImageKey: "basic-baby-blanket",
+    estimatedMinutes: 240,
+  },
+  "amigurumi-whale": {
+    difficulty: "beginner",
+    category: "toy",
+    coverImageKey: "amigurumi-whale",
+    estimatedMinutes: 90,
+  },
 };
 
 const patternContentMaps = {
@@ -207,6 +247,8 @@ const patternContentMaps = {
   fr: frPatternContentMap,
   es: esPatternContentMap,
   nl: nlPatternContentMap,
+  it: itPatternContentMap,
+  ja: jaPatternContentMap,
 } as const;
 
 export async function seedDatabase(db: ExpoSQLiteDatabase<typeof schema>) {
@@ -263,7 +305,7 @@ export async function seedDatabase(db: ExpoSQLiteDatabase<typeof schema>) {
       const lessonId = lessonIdBySlug.get(slug);
       if (!lessonId) continue;
 
-      const content = localeContentMap[slug];
+      const content = localeContentMap[slug] ?? enLessonContentMap[slug];
       if (!content) continue;
 
       lessonTranslationRows.push({
@@ -299,7 +341,7 @@ export async function seedDatabase(db: ExpoSQLiteDatabase<typeof schema>) {
       const patternId = patternIdBySlug.get(slug);
       if (!patternId) continue;
 
-      const content = localeContentMap[slug];
+      const content = localeContentMap[slug] ?? enPatternContentMap[slug];
       if (!content) continue;
 
       patternTranslationRows.push({

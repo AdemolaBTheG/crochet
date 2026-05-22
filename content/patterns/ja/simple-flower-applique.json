@@ -1,0 +1,47 @@
+{
+  "title": "シンプルなお花のアップリケ",
+  "description": "中心を中心に繰り返し造形を学ぶための5枚の花びらの花のモチーフ。",
+  "materials": [
+    "綿糸",
+    "4mmフック",
+    "糸針",
+    "はさみ"
+  ],
+  "skills": [
+    "魔法の指輪",
+    "チェーンスペース",
+    "二重かぎ針編み",
+    "スリップステッチ"
+  ],
+  "expectationText": "同じ花びらのシーケンスを繰り返す陽気なモチーフなので、形を作るのが予測しやすいと感じられます。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "中心を作る",
+      "instruction": "マジックリングから始めて、中央に10本の片編みをします。"
+    },
+    {
+      "type": "round",
+      "title": "ラウンド1",
+      "instruction": "センターラウンドをスリップステッチでつなぎ、リングを締めます。",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "花びらを5枚作ります",
+      "instruction": "チェーンステッチと二重かぎ針編みを繰り返して、それぞれの花びらを形成します。",
+      "targetCount": 5
+    },
+    {
+      "type": "instruction",
+      "title": "花びらの形を整える",
+      "instruction": "花が平らになるように、各花びらを所定の位置にそっと引っ張ります。"
+    },
+    {
+      "type": "instruction",
+      "title": "仕上げる",
+      "instruction": "留めて花の後ろに尾を織り込みます。"
+    }
+  ]
+}

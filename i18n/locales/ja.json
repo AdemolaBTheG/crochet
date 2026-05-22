@@ -1,0 +1,422 @@
+{
+  "common": {
+    "continue": "続く",
+    "preparing": "準備中...",
+    "filters": {
+      "all": "全て"
+    },
+    "badges": {
+      "pro": "プロ"
+    },
+    "time": {
+      "today": "今日",
+      "yesterday": "昨日",
+      "daysAgo": "{{count}}日前"
+    },
+    "counter": {
+      "rounds": "{{count}} ラウンド",
+      "rows": "{{count}}行",
+      "none": "まだカウンターはありません"
+    },
+    "steps": {
+      "progress": "{{current}}/{{total}} ステップ",
+      "stepOnly": "ステップ {{current}}",
+      "count": "{{count}} ステップ"
+    }
+  },
+  "shared": {
+    "close": "近い",
+    "unlockPremium": "プレミアムのロックを解除する",
+    "stepOf": "ステップ {{current}}/{{total}}"
+  },
+  "chat": {
+    "thinking": "考え...",
+    "errorFallback": "レスポンスを出しながら根掛かりをヒット。もう一度試してください。"
+  },
+  "tabs": {
+    "home": "家",
+    "learn": "学ぶ",
+    "projects": "プロジェクト"
+  },
+  "home": {
+    "sections": {
+      "activeProjects": "アクティブなプロジェクト"
+    },
+    "accessibility": {
+      "continueProject": "{{name}} を続ける",
+      "showPatterns": "{{category}} パターンを表示"
+    },
+    "lastWorkedPrefix": "最後に作業したのは",
+    "lastWorkedSeparator": "·"
+  },
+  "projects": {
+    "sections": {
+      "inProgress": "進行中",
+      "completed": "完了"
+    },
+    "empty": {
+      "title": "まだプロジェクトはありません",
+      "subtitle": "ホームからパターンを選択し、「プロジェクトの開始」をタップします。"
+    },
+    "accessibility": {
+      "openProject": "{{name}} を開く"
+    }
+  },
+  "learn": {
+    "toolsSectionTitle": "ツール",
+    "lessonLabel": "レッスン{{index}}",
+    "actions": {
+      "open": "開ける",
+      "unlock": "ロックを解除する"
+    },
+    "accessibility": {
+      "unlockTool": "{{title}}のロックを解除する",
+      "lessonCard": "{{action}} {{title}} レッスン"
+    },
+    "empty": {
+      "title": "まだレッスンはありません",
+      "subtitle": "ローカル データベースをシードして、ここに初心者向けのパスを表示します。"
+    },
+    "tools": {
+      "row-counter": {
+        "title": "行カウンター",
+        "description": "位置を失うことなく、行、ラウンド、繰り返しを数えます。"
+      },
+      "stitch-fixes": {
+        "title": "ステッチの修正",
+        "description": "カール、不均一なエッジ、隙間、縫い目のミスを素早く解決します。"
+      },
+      "size-calculator": {
+        "title": "サイズ計算機",
+        "description": "ゲージからステッチと行数を推定します。"
+      },
+      "identify-stitch": {
+        "title": "ステッチの識別",
+        "description": "写真を使用して、見ているステッチを理解してください。"
+      }
+    }
+  },
+  "lessonDetail": {
+    "lesson": "レッスン",
+    "notFound": "レッスンが見つかりませんでした。",
+    "difficulty": "困難",
+    "steps": "ステップ",
+    "practice": "練習する",
+    "practicePaceShort": "短い",
+    "whyItMatters": "なぜそれが重要なのか",
+    "commonMistakes": "よくある間違い",
+    "startPractice": "練習を始める",
+    "difficultyValues": {
+      "beginner": "初心者",
+      "intermediate": "中級",
+      "advanced": "高度な"
+    }
+  },
+  "settings": {
+    "sections": {
+      "support": "サポート",
+      "legal": "法律上の"
+    },
+    "rows": {
+      "sendFeedback": "フィードバックを送信する",
+      "rateApp": "アプリを評価する",
+      "customerCenter": "カスタマーセンター",
+      "terms": "条項",
+      "privacyPolicy": "プライバシーポリシー"
+    },
+    "premium": {
+      "title": "プレミアムのロックを解除する",
+      "subtitle": "Crova の成長に合わせて、あらゆるパターン、ガイド、クリエイティブ ツールを入手してください。",
+      "cta": "アップグレード"
+    },
+    "alerts": {
+      "customerCenterUnavailableTitle": "カスタマーセンターが利用不可",
+      "customerCenterUnavailableMessage": "購入を設定した後、もう一度お試しください。"
+    },
+    "accessibility": {
+      "openPremiumUpgrade": "プレミアムアップグレードを開く"
+    }
+  },
+  "tools": {
+    "rowCounter": {
+      "mode": {
+        "rows": "行",
+        "rounds": "ラウンド"
+      },
+      "copy": {
+        "rows": {
+          "label": "完了した行",
+          "helper": "スカーフ、ふきん、見本、平らな部分に最適です。"
+        },
+        "rounds": {
+          "label": "完了したラウンド",
+          "helper": "グラニースクエア、コースター、あみぐるみ、サークル作品などに最適です。"
+        }
+      },
+      "actions": {
+        "decreaseRows": "行を減らす",
+        "decreaseRounds": "ラウンドを減らす",
+        "increaseRows": "行を増やす",
+        "increaseRounds": "ラウンドを増やす",
+        "resetRows": "行をリセット",
+        "resetRounds": "ラウンドをリセットする"
+      }
+    },
+    "sizeCalculator": {
+      "units": {
+        "cm": "cm",
+        "in": "で"
+      },
+      "sections": {
+        "gauge": "ゲージ",
+        "targetSize": "ターゲットサイズ",
+        "estimate": "見積もり"
+      },
+      "fields": {
+        "stitches": "ステッチ",
+        "rows": "行",
+        "width": "幅",
+        "height": "身長"
+      },
+      "emptyHelp": "スウォッチゲージとターゲットサイズを入力して、ステッチと列を見積もります。",
+      "disclaimer": "これは計画的な見積もりです。完成サイズを決定する前に、必ず自分の見本を確認してください。"
+    },
+    "identifyStitch": {
+      "empty": {
+        "title": "クリアステッチの写真を追加",
+        "subtitle": "適切な照明を使用し、フレームをステッチ テクスチャで埋めます。"
+      },
+      "analysis": {
+        "title": "分析",
+        "loading": "AIでステッチの質感をチェック中...",
+        "noLikelyStitchDetected": "この画像からはかぎ針編みの編み目を自信を持って特定することはできませんでした。",
+        "noLikelyStitchHint": "より鮮明な結果を得るには、より明るい光を試し、近くに移動し、単一のステッチ テクスチャをフレームに収めます。",
+        "bestMatch": "ベストマッチ",
+        "confidence": {
+          "high": "高い",
+          "medium": "中くらい",
+          "low": "低い"
+        },
+        "photoReady": "写真の準備ができました。ステッチの質感が見えにくい場合は、いつでも鮮明な写真を選択してください。",
+        "noPhoto": "選択するか写真を撮って、可能性のあるステッチを特定し、初心者向けのヒントを入手します。",
+        "visibleClues": "目に見える手がかり",
+        "nextSteps": "次のステップ",
+        "aiResult": "AI結果",
+        "readyForAi": "AI の準備ができています"
+      },
+      "alerts": {
+        "cameraPermissionTitle": "カメラの許可が必要です",
+        "cameraPermissionMessage": "ステッチ写真を撮影するためにカメラへのアクセスを許可します。",
+        "photoPermissionTitle": "写真の許可が必要です",
+        "photoPermissionMessage": "ステッチ画像を選択するための写真へのアクセスを許可します。"
+      },
+      "actions": {
+        "takePhoto": "写真を撮る",
+        "choosePhoto": "選ぶ"
+      },
+      "errors": {
+        "couldNotAnalyze": "この写真を分析できませんでした。より明るくクローズアップしてみてください。",
+        "couldNotAnalyzeWithReason": "この写真を分析できませんでした: {{reason}}"
+      }
+    }
+  },
+  "patternDetail": {
+    "pattern": "パターン",
+    "opening": "オープニング...",
+    "resumeProject": "プロジェクトを再開する",
+    "startProject": "プロジェクトの開始",
+    "projectInProgress": "進行中のプロジェクト",
+    "difficulty": "困難",
+    "category": "カテゴリ",
+    "general": "一般的な",
+    "time": "時間",
+    "minutesShort": "{{count}}分",
+    "skillsNeeded": "必要なスキル",
+    "materials": "材料",
+    "patternOverview": "パターンの概要",
+    "steps": "ステップ",
+    "structure": "構造",
+    "counters": "カウンター",
+    "basic": "基本的な",
+    "whatToExpect": "何を期待するか",
+    "guided": "導かれた",
+    "counterRows": "{{count}}行",
+    "counterRows_plural": "{{count}}行",
+    "counterRounds": "{{count}} ラウンド",
+    "counterRounds_plural": "{{count}} ラウンド",
+    "counterRowsTarget": "{{current}} / {{target}} 行",
+    "counterRoundsTarget": "{{current}} / {{target}} ラウンド",
+    "lastWorkedToday": "今日最後に勤務しました",
+    "lastWorkedYesterday": "最後に働いたのは昨日です",
+    "lastWorkedDaysAgo": "最後に作業したのは{{count}}日前です",
+    "lastWorkedOnDate": "最後に作業したのは {{date}}"
+  },
+  "projectComplete": {
+    "title": "プロジェクトが完了しました",
+    "notFound": "プロジェクトが見つかりません。",
+    "stepsDone": "完了した手順",
+    "counter": "カウンタ",
+    "done": "終わり",
+    "finishedJustNow": "たった今終了しました",
+    "finishedOn": "{{date}} を完了しました",
+    "backToProjects": "プロジェクトに戻る",
+    "starting": "起動...",
+    "makeAnother": "別のものを作る"
+  },
+  "onboarding": {
+    "intro": {
+      "titlePrefix": "構築されたフローでより速く学習できます",
+      "titleAccent": "かぎ針編み初心者",
+      "slides": {
+        "learnStitches": "ステッチを学ぶ",
+        "finishProjects": "プロジェクトを終了する",
+        "trackRows": "各行を追跡する",
+        "buildHabit": "習慣を築く",
+        "stayConsistent": "一貫性を保つ"
+      },
+      "rowProgress": "行 {{current}} / {{total}}"
+    },
+    "quiz": {
+      "stepOf": "ステップ {{current}}/{{total}}",
+      "steps": {
+        "skillLevel": {
+          "title": "かぎ針編みのレベルはどれくらいですか？",
+          "subtitle": "私たちはあなたの現在の状況に合わせてレッスンとスタータープロジェクトを調整します。",
+          "cta": "続く",
+          "options": {
+            "beginner": "私は全くの初心者です",
+            "intermediate": "基本的なことは知っています",
+            "advanced": "もっと厳しいプロジェクトが欲しい"
+          }
+        },
+        "goal": {
+          "title": "まず何から助けてほしいですか?",
+          "subtitle": "Crova をダウンロードした主な理由を選択してください。これにより、アプリがより迅速にそこに到達できるようになります。",
+          "cta": "続く",
+          "options": {
+            "learnBasics": "コアステッチを学ぶ",
+            "finishFirstProject": "初めての実際のプロジェクトを完了する",
+            "buildHabit": "安定したかぎ針編みの習慣を身につける"
+          }
+        },
+        "handedness": {
+          "title": "どちらの手でかぎ針編みをしますか？",
+          "subtitle": "これは、左手用のコンテンツが追加されたときに、正しい指導角度を示すのに役立ちます。",
+          "cta": "Crovaを起動する",
+          "options": {
+            "right": "右利き",
+            "left": "左利き"
+          }
+        }
+      }
+    },
+    "loader": {
+      "titlePreparing": "体験の準備",
+      "titleReady": "準備は完了です。",
+      "ctaPreview": "簡単なデモを試してみる",
+      "ctaReady": "Crovaを起動する",
+      "summaryEyebrow": "パーソナライズされたスタート",
+      "summarySubtitle": "私たちはあなたのレベル、集中力、セットアップを中心に最初のステップを調整しました。",
+      "summaryCardTitle": "あなたのセットアップ",
+      "summaryCardSubtitle": "これが、あなたが私たちに話した内容に基づいて Crova が開始する道です。",
+      "summaryLabels": {
+        "skillLevel": "経験",
+        "goal": "集中",
+        "handedness": "利き手"
+      },
+      "summaryFallbacks": {
+        "skillLevel": "パーソナライズされた",
+        "goal": "あなたのかぎ針編みの道",
+        "handedness": "標準セットアップ"
+      },
+      "nextTitle": "次に何が起こるか",
+      "goalLabels": {
+        "learnBasics": "コアステッチ",
+        "finishFirstProject": "あなたの最初のプロジェクト",
+        "buildHabit": "安定したかぎ針編みの習慣",
+        "default": "あなたのかぎ針編みの道"
+      },
+      "skillLabels": {
+        "beginner": "初心者に優しい",
+        "intermediate": "中級者向け",
+        "advanced": "高度な",
+        "default": "パーソナライズされた"
+      },
+      "messages": {
+        "buildingPlan": "{{skillLabel}} 計画を作成しています...",
+        "pickingLessons": "{{goalLabel}} のレッスンを選択しています...",
+        "tracking": "進行状況の追跡を設定しています...",
+        "finalizing": "Crova の起動を完了しています..."
+      },
+      "nextSteps": {
+        "skillLevel": {
+          "beginner": "無理のないペースで、ステップバイステップの短いレッスンから始めます。",
+          "intermediate": "簡単にリフレッシュして、すぐにガイド付きの練習に移ります。",
+          "advanced": "より要求の厳しいパターンやより深いテクニックの作業に飛び込むことになります。",
+          "default": "あなたのレベルに合わせた個別のレッスンパスから始めます。"
+        },
+        "goal": {
+          "learnBasics": "最初のレッスンでは、コアステッチとそれらがどのように組み合わされるかに焦点を当てます。",
+          "finishFirstProject": "計画を立てれば、できるだけ早く最初のプロジェクトを完成させることができます。",
+          "buildHabit": "あなたの計画では、継続的に繰り返しやすい軽いセッションが優先されます。",
+          "default": "あなたの計画は、あなたにとって最も重要な結果に焦点を当てます。"
+        },
+        "tracking": "行追跡ツールと進行状況ツールは初日から使用できるようになります。"
+      }
+    },
+    "demo": {
+      "eyebrow": "簡単な練習",
+      "title": "Crovaの教え方を試してみる",
+      "subtitle": "{{skillLabel}} 向けの小さなガイド付きレッスンは、{{goalLabel}} に焦点を当てています。",
+      "stepLabel": "ステップ {{current}}",
+      "chips": {
+        "duration": "30秒未満",
+        "handedness": "{{value}} を保存しました"
+      },
+      "actions": {
+        "previous": "前の",
+        "next": "次のステップ",
+        "finish": "私の計画を見てください"
+      },
+      "skillAudience": {
+        "beginner": "初心者",
+        "intermediate": "基本を知っているかぎ針編み職人",
+        "advanced": "かぎ針編み者たちは挑戦の準備ができています",
+        "default": "かぎ針編み"
+      },
+      "goalFocus": {
+        "learnBasics": "コアステッチを学ぶ",
+        "finishFirstProject": "最初のプロジェクトを終える",
+        "buildHabit": "着実な習慣を築く",
+        "default": "自分のリズムを見つける"
+      },
+      "cards": {
+        "one": {
+          "title": "1 つの明確な動作から始めます"
+        },
+        "two": {
+          "title": "各ステップの同期を保つ"
+        },
+        "three": {
+          "title": "本当の結果に向かって進み続ける"
+        }
+      },
+      "stepBodies": {
+        "skill": {
+          "beginner": "レッスンの速度を落とし、動きをシンプルに保つので、一度に 1 つのことだけに集中できます。",
+          "intermediate": "説明を短くし、ペースを引きずることなくガイド付きの実践に移していきます。",
+          "advanced": "ガイダンスは軽量に保たれているため、素早く移動して、読むよりも作業に多くの時間を費やすことができます。",
+          "default": "あなたのレベルに合わせてレッスンのペースを調整するので、ガイダンスは繰り返しではなく役に立つと感じられます。"
+        },
+        "progress": "移動中も進行状況が表示されるため、次に何が起こるか、どこで中断したかを常に把握できます。",
+        "goal": {
+          "learnBasics": "それが自信を築く最も早い方法であるため、最初にコアステッチに焦点を当てて進みます。",
+          "finishFirstProject": "完成したプロジェクトに向けてあなたの道は進み続けるので、練習が具体的なものになります。",
+          "buildHabit": "あなたの道は、繰り返しやすい短期勝利を好むので、明日戻ってくるのは自然なことだと感じます。",
+          "default": "あなたの道は、あなたにとって最も重要な結果を中心にして進みます。"
+        }
+      },
+      "note": "これは、Crova の最初のレッスンで使用するものと同じ、ガイド付きのステップバイステップのリズムです。"
+    }
+  }
+}

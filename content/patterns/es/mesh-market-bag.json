@@ -1,0 +1,54 @@
+{
+  "title": "Bolsa de malla",
+  "description": "Una bolsa ligera y abierta que da seguridad con espacios de cadenas y repeticiones.",
+  "materials": [
+    "Hilo de algodon",
+    "ganchillo de 5 mm",
+    "marcador de puntos",
+    "aguja lanera",
+    "tijeras"
+  ],
+  "skills": [
+    "Cadeneta",
+    "punto alto",
+    "espacios de cadenas",
+    "trabajar en redondo"
+  ],
+  "expectationText": "Un proyecto practico con progreso visible, donde repeticiones simples de malla se convierten rapido en algo util.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Empieza la base",
+      "instruction": "Teje una base ovalada o rectangular corta y marca el inicio de cada vuelta."
+    },
+    {
+      "type": "repeat",
+      "title": "Construye la malla",
+      "instruction": "Trabaja espacios de cadenas y puntos de anclaje de forma pareja para crear un tejido abierto.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "repeat",
+      "title": "Da altura",
+      "instruction": "Continua el motivo de malla hasta que el cuerpo de la bolsa tenga una altura comoda.",
+      "counterLabel": "round",
+      "targetCount": 14
+    },
+    {
+      "type": "instruction",
+      "title": "Forma las asas",
+      "instruction": "Deja espacios para las asas y puentéalos con cadenas largas en la vuelta siguiente."
+    },
+    {
+      "type": "instruction",
+      "title": "Refuerza el borde",
+      "instruction": "Haz una o dos vueltas solidas alrededor de la abertura y las asas para dar estabilidad."
+    },
+    {
+      "type": "instruction",
+      "title": "Termina",
+      "instruction": "Corta el hilo, remata las hebras y abre la malla suavemente con las manos para igualarla."
+    }
+  ]
+}

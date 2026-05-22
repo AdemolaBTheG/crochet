@@ -1,0 +1,15 @@
+{
+  "title": "Mesh Market Bag",
+  "description": "A lightweight open bag that builds confidence with chain spaces and repeat sections.",
+  "materials": ["Cotton yarn", "5 mm hook", "stitch marker", "yarn needle", "scissors"],
+  "skills": ["Foundation chain", "double crochet", "chain spaces", "working in rounds"],
+  "expectationText": "A practical project with visible progress, where simple mesh repeats quickly turn into something usable.",
+  "steps": [
+    { "type": "instruction", "title": "Start the base", "instruction": "Crochet a short oval or rectangle base and place a marker at the start of each round." },
+    { "type": "repeat", "title": "Build the mesh", "instruction": "Work chain spaces and anchor stitches evenly around to create an open fabric.", "counterLabel": "round", "targetCount": 8 },
+    { "type": "repeat", "title": "Add height", "instruction": "Continue the mesh repeat until the bag body reaches a comfortable everyday size.", "counterLabel": "round", "targetCount": 14 },
+    { "type": "instruction", "title": "Shape the handles", "instruction": "Skip sections for the handle openings, then bridge them with long chains on the next round." },
+    { "type": "instruction", "title": "Reinforce the top", "instruction": "Work one or two solid rounds around the opening and handles so the bag feels sturdier." },
+    { "type": "instruction", "title": "Finish", "instruction": "Fasten off, weave in the ends, and stretch the bag lightly with your hands so the mesh opens evenly." }
+  ]
+}

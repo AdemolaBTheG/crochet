@@ -1,4 +1,8 @@
 import basicAmigurumiBall from "./basic-amigurumi-ball.json";
+import meshMarketBag from "./mesh-market-bag.json";
+import grannySquareTote from "./granny-square-tote.json";
+import basicBabyBlanket from "./basic-baby-blanket.json";
+import amigurumiWhale from "./amigurumi-whale.json";
 import basicGrannySquare from "./basic-granny-square.json";
 import beginnerScarf from "./beginner-scarf.json";
 import chunkyStorageBasket from "./chunky-storage-basket.json";
@@ -37,6 +41,10 @@ type PatternContent = {
 
 const patternContentMap: Record<string, PatternContent> = {
   "basic-amigurumi-ball": basicAmigurumiBall as PatternContent,
+  "mesh-market-bag": meshMarketBag as PatternContent,
+  "granny-square-tote": grannySquareTote as PatternContent,
+  "basic-baby-blanket": basicBabyBlanket as PatternContent,
+  "amigurumi-whale": amigurumiWhale as PatternContent,
   "basic-granny-square": basicGrannySquare as PatternContent,
   "beginner-scarf": beginnerScarf as PatternContent,
   "chunky-storage-basket": chunkyStorageBasket as PatternContent,

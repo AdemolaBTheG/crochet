@@ -1,0 +1,56 @@
+{
+  "title": "Couverture bebe basique",
+  "description": "Un projet de couverture doux et repetitif pense pour des rangs reguliers et un suivi simple.",
+  "materials": [
+    "Laine worsted douce",
+    "crochet 5 mm",
+    "marqueurs de mailles",
+    "aiguille a laine",
+    "ciseaux"
+  ],
+  "skills": [
+    "Chaine de base",
+    "brides",
+    "travail en rangs",
+    "changements de couleur"
+  ],
+  "expectationText": "Un projet long et confortable dans lequel des rangs simples deviennent une couverture prete a offrir sans mise en forme complexe.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Faire la chaine",
+      "instruction": "Crochete une chaine a la largeur d une couverture bebe et recompte-la soigneusement avant le premier rang."
+    },
+    {
+      "type": "row",
+      "title": "Rang 1",
+      "instruction": "Travaille le rang de mise en place regulierement et marque la premiere et la derniere maille si besoin.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Rangs 2 a 20",
+      "instruction": "Repete le point principal et verifie les bords toutes les quelques rangees pour garder un rectangle net.",
+      "counterLabel": "row",
+      "targetCount": 20
+    },
+    {
+      "type": "repeat",
+      "title": "Rangs 21 a 40",
+      "instruction": "Continue en hauteur et change de couleur seulement en fin de rang si tu veux des rayures douces.",
+      "counterLabel": "row",
+      "targetCount": 40
+    },
+    {
+      "type": "instruction",
+      "title": "Ajouter la bordure",
+      "instruction": "Travaille une bordure simple autour des quatre cotes pour nettoyer les contours."
+    },
+    {
+      "type": "instruction",
+      "title": "Terminer",
+      "instruction": "Rentre les fils et etale la couverture pour verifier que la bordure reste bien a plat."
+    }
+  ]
+}

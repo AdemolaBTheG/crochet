@@ -1,0 +1,50 @@
+{
+  "title": "ミニマリストコースター",
+  "description": "ラウンド、接合、簡単なステッチの繰り返しを学ぶための高速循環プロジェクト。",
+  "materials": [
+    "綿糸",
+    "4～5mmフック",
+    "糸針",
+    "はさみ"
+  ],
+  "skills": [
+    "魔法の指輪",
+    "単一かぎ針編み",
+    "スリップステッチ",
+    "ラウンドで作業する"
+  ],
+  "expectationText": "平らな円を構築し、きれいに結合し、短時間で役立つものを完成させる練習をするクイックラウンド プロジェクトです。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "センターリングを作ります",
+      "instruction": "魔法のリングまたはチェーン 4 から始めて、ループにつなぎます。"
+    },
+    {
+      "type": "round",
+      "title": "ラウンド1",
+      "instruction": "リングに8片編みをして、スリップステッチでつなぎます。",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "ラウンド2",
+      "instruction": "各ステッチに2つのシングルかぎ針編みをして、合計16ステッチを作ります。",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "ラウンド3",
+      "instruction": "1つのシングルかぎ針編みを交互に編み、次に次のステッチで2つのシングルかぎ針編みをします。",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "instruction",
+      "title": "仕上げる",
+      "instruction": "スリップステッチで繋ぎ、留めて、最後に編み込みます。"
+    }
+  ]
+}

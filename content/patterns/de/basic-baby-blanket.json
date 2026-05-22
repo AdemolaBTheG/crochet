@@ -1,0 +1,56 @@
+{
+  "title": "Einfache Babydecke",
+  "description": "Ein weiches, wiederholbares Deckenprojekt fuer gleichmaessige Reihen und unkompliziertes Fortschrittstracking.",
+  "materials": [
+    "Weiches Kammgarn",
+    "5-mm-Haekelnadel",
+    "Maschenmarkierer",
+    "Wollnadel",
+    "Schere"
+  ],
+  "skills": [
+    "Luftmaschenkette",
+    "Stäbchen",
+    "in Reihen arbeiten",
+    "Farbwechsel"
+  ],
+  "expectationText": "Ein laengeres Komfortprojekt, bei dem einfache Reihen schrittweise zu einer verschenkbaren Decke werden, ohne komplizierte Formgebung.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Breite anschlagen",
+      "instruction": "Haekle eine Luftmaschenkette in Babydecken-Breite und zaehle sie vor der ersten Reihe genau nach."
+    },
+    {
+      "type": "row",
+      "title": "Reihe 1",
+      "instruction": "Arbeite die Einrichtungsreihe gleichmaessig und markiere bei Bedarf die erste und letzte Masche.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Reihen 2 bis 20",
+      "instruction": "Wiederhole das Hauptmuster und kontrolliere die Kanten regelmaessig, damit die Decke rechteckig bleibt.",
+      "counterLabel": "row",
+      "targetCount": 20
+    },
+    {
+      "type": "repeat",
+      "title": "Reihen 21 bis 40",
+      "instruction": "Arbeite weiter in der Hoehe und wechsle Farben nur am Reihenende, wenn du sanfte Streifen moechtest.",
+      "counterLabel": "row",
+      "targetCount": 40
+    },
+    {
+      "type": "instruction",
+      "title": "Rand haekeln",
+      "instruction": "Arbeite einen einfachen Rand um alle vier Seiten, um die Kanten sauber abzuschliessen."
+    },
+    {
+      "type": "instruction",
+      "title": "Fertigstellen",
+      "instruction": "Vernähe die Enden und lege die Decke flach hin, um zu pruefen, dass der Rand glatt sitzt."
+    }
+  ]
+}

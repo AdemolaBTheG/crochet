@@ -1,0 +1,19 @@
+{
+  "title": "Changements de couleur",
+  "description": "Change de couleur proprement pour que les rayures et motifs paraissent nets et volontaires.",
+  "content": {
+    "summary": "Apprends a terminer le dernier jeté d une maille avec une nouvelle couleur pour obtenir une transition propre.",
+    "whyItMatters": "Les changements de couleur ouvrent la voie aux rayures, aux projets granny et aux petits details decoratifs sans improvisation au mauvais moment.",
+    "steps": [
+      "Travaille la maille jusqu a la derniere boucle a fermer.",
+      "Laisse l ancienne couleur, prends la nouvelle et fais-la passer pour terminer la maille.",
+      "Continue avec la nouvelle couleur en gardant les fils hors de la zone de travail.",
+      "Pour les rayures, change de couleur en fin de rang ou ne porte le fil que lorsqu il restera cache."
+    ],
+    "practice": "Crochete un petit echantillon de deux rangs dans une couleur puis change de couleur deux fois de facon controlee.",
+    "commonMistakes": [
+      "Changer de couleur apres avoir termine la maille et laisser apparaitre un point de l ancienne couleur.",
+      "Trop serrer la premiere maille apres le changement et froncer la jonction."
+    ]
+  }
+}

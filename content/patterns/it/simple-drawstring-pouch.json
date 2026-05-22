@@ -1,0 +1,57 @@
+{
+  "title": "Custodia semplice con coulisse",
+  "description": "Una piccola borsa lavorata da una base rotonda a lati dritti con coulisse incatenata.",
+  "materials": [
+    "Filato di cotone",
+    "Gancio da 4,5 mm",
+    "segnapunti",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Anello magico",
+    "uncinetto singolo",
+    "in aumento",
+    "lavorando a turni",
+    "catena di fondazione"
+  ],
+  "expectationText": "Un utile piccolo contenitore che insegna il passaggio da una base piatta e circolare a semplici sponde verticali.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Inizia la base",
+      "instruction": "Crea un anello magico o una catena 4 e uniscilo in un anello."
+    },
+    {
+      "type": "round",
+      "title": "Giro 1",
+      "instruction": "Lavora 8 maglie basse al centro e segna la prima maglia.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Turni dal 2 al 4",
+      "instruction": "Aumentare uniformemente ad ogni giro finché la base non sarà sufficientemente larga per un piccolo sacchetto.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "repeat",
+      "title": "Turni dal 5 al 14",
+      "instruction": "Maglia bassa attorno senza aumentare per costruire i lati.",
+      "counterLabel": "round",
+      "targetCount": 14
+    },
+    {
+      "type": "instruction",
+      "title": "Realizza il cordoncino",
+      "instruction": "Crea una corda abbastanza lunga da avvolgerla attorno all'apertura della busta, quindi intrecciala negli spazi vicino al bordo superiore."
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Fai dei piccoli nodi alle estremità dei cordoncini, chiudili e intreccia le code rimanenti."
+    }
+  ]
+}

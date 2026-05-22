@@ -1,0 +1,51 @@
+{
+  "title": "分厚い収納バスケット",
+  "description": "ラウンド、サイド、シンプルな構造を練習するための頑丈なホームプロジェクト。",
+  "materials": [
+    "太い綿糸",
+    "6.5mmフック",
+    "糸針",
+    "はさみ"
+  ],
+  "skills": [
+    "魔法の指輪",
+    "単一かぎ針編み",
+    "増加する",
+    "バックループで作業する",
+    "ラウンド"
+  ],
+  "expectationText": "平らなベースから直立した側面に移動し、構造が形になっていくのを確認する便利なホームピースです。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "ベースを開始します",
+      "instruction": "マジックリングを作り、中央に8つの片編みを編みます。"
+    },
+    {
+      "type": "round",
+      "title": "第1ラウンドから第4ラウンドまで",
+      "instruction": "ベースが希望の幅に達するまで、ラウンドごとに均等に増やします。",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "round",
+      "title": "横を向く",
+      "instruction": "きれいなエッジを作成するために、バックループのみを 1 周作業します。",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "repeat",
+      "title": "壁を建てる",
+      "instruction": "バスケットが十分な高さになるまで、増やさずに一周かぎ針編みします。",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "リムを仕上げる",
+      "instruction": "上端の周りをスリップステッチして留め、端を織り込みます。"
+    }
+  ]
+}

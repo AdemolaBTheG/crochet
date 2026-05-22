@@ -1,0 +1,48 @@
+{
+  "title": "Segnalibro sottile",
+  "description": "Un progetto a fila stretta per esercitarsi su bordi, tensione e una piccola finitura con nappa.",
+  "materials": [
+    "Filato di cotone",
+    "Gancio da 3,5 a 4 mm",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Catena di fondazione",
+    "uncinetto singolo",
+    "girando le file",
+    "realizzazione di nappe"
+  ],
+  "expectationText": "Un piccolo progetto accurato che premia la tensione attenta e ti dà un regalo finito in meno di un'ora.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fondazione",
+      "instruction": "Catena 8 punti per una larghezza sottile del segnalibro."
+    },
+    {
+      "type": "row",
+      "title": "Riga 1",
+      "instruction": "Maglia bassa nella seconda catenella dall'uncinetto e in ogni catenella trasversale.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Righe da 2 a 24",
+      "instruction": "Fai 1 catenella, gira e lavora una maglia bassa su ogni riga.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Aggiungi una nappa",
+      "instruction": "Taglia alcuni fili di filo e attaccali a un lato corto."
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Taglia la nappa in modo uniforme e intreccia la coda iniziale."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "title": "Sac filet",
+  "description": "Un sac leger et ajoure qui donne confiance avec les arceaux de mailles en l air et les repetitions.",
+  "materials": [
+    "Coton",
+    "crochet 5 mm",
+    "marqueur de mailles",
+    "aiguille a laine",
+    "ciseaux"
+  ],
+  "skills": [
+    "Chaine de base",
+    "brides",
+    "arceaux de mailles en l air",
+    "travail en rond"
+  ],
+  "expectationText": "Un projet pratique a progression visible, ou des repetitions simples se transforment vite en un sac utile.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Commencer la base",
+      "instruction": "Crochete une petite base ovale ou rectangulaire et marque le debut de chaque tour."
+    },
+    {
+      "type": "repeat",
+      "title": "Construire le filet",
+      "instruction": "Travaille les arceaux et les points d attache regulierement pour creer une maille ouverte.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "repeat",
+      "title": "Donner de la hauteur",
+      "instruction": "Continue la repetition du filet jusqu a obtenir une hauteur confortable pour le quotidien.",
+      "counterLabel": "round",
+      "targetCount": 14
+    },
+    {
+      "type": "instruction",
+      "title": "Former les anses",
+      "instruction": "Laisse des espaces pour les anses puis relie-les avec de longues chaines au tour suivant."
+    },
+    {
+      "type": "instruction",
+      "title": "Renforcer le haut",
+      "instruction": "Travaille un ou deux tours pleins autour de l ouverture et des anses pour solidifier le sac."
+    },
+    {
+      "type": "instruction",
+      "title": "Terminer",
+      "instruction": "Coupe le fil, rentre les extremites et etire legerement le filet avec les mains pour l egaliser."
+    }
+  ]
+}

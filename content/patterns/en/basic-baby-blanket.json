@@ -1,0 +1,15 @@
+{
+  "title": "Basic Baby Blanket",
+  "description": "A soft repetitive blanket project designed for steady rows and easy progress tracking.",
+  "materials": ["Soft worsted yarn", "5 mm hook", "stitch markers", "yarn needle", "scissors"],
+  "skills": ["Foundation chain", "double crochet", "working in rows", "color changes"],
+  "expectationText": "A longer-form comfort project that turns simple repeated rows into a gift-ready blanket without introducing difficult shaping.",
+  "steps": [
+    { "type": "instruction", "title": "Chain the width", "instruction": "Make a foundation chain wide enough for a baby blanket and count carefully before the first row." },
+    { "type": "row", "title": "Row 1", "instruction": "Work the setup row evenly across and mark the first and last stitches if edge counting is still new.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "repeat", "title": "Rows 2 to 20", "instruction": "Repeat the main stitch pattern, checking the edges every few rows so the blanket stays rectangular.", "counterLabel": "row", "targetCount": 20 },
+    { "type": "repeat", "title": "Rows 21 to 40", "instruction": "Continue building height and change colors only at the end of a row if you want soft stripes.", "counterLabel": "row", "targetCount": 40 },
+    { "type": "instruction", "title": "Add the border", "instruction": "Work a simple border around all four sides to tidy the edges and corners." },
+    { "type": "instruction", "title": "Finish", "instruction": "Weave in the ends and lay the blanket flat to check that the border sits smoothly." }
+  ]
+}

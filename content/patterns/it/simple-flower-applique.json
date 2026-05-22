@@ -1,0 +1,47 @@
+{
+  "title": "Semplice applicazione floreale",
+  "description": "Un motivo floreale a cinque petali per imparare a modellare ripetutamente attorno a un centro.",
+  "materials": [
+    "Filato di cotone",
+    "Gancio da 4 mm",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Anello magico",
+    "spazi di catena",
+    "doppio uncinetto",
+    "punto bassissimo"
+  ],
+  "expectationText": "Un motivo allegro che ripete la stessa sequenza di petali in modo che la modellatura inizi a sembrare prevedibile.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fai il centro",
+      "instruction": "Inizia con un anello magico e lavora 10 punti bassi al centro."
+    },
+    {
+      "type": "round",
+      "title": "Giro 1",
+      "instruction": "Unisci il giro centrale con un punto bassissimo e stringi l'anello.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Crea cinque petali",
+      "instruction": "Ripeti le catenelle e le maglie alte nella stessa maglia per formare ogni petalo.",
+      "targetCount": 5
+    },
+    {
+      "type": "instruction",
+      "title": "Dai forma ai petali",
+      "instruction": "Tira delicatamente ogni petalo in posizione in modo che il fiore sia piatto."
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Allacciare e intrecciare le code nella parte posteriore del fiore."
+    }
+  ]
+}

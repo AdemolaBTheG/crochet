@@ -1,0 +1,51 @@
+{
+  "title": "Cesto portaoggetti grosso",
+  "description": "Un robusto progetto domestico per esercitarsi su tondi, lati e struttura semplice.",
+  "materials": [
+    "Filato di cotone grosso",
+    "Gancio da 6,5 ​​mm",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Anello magico",
+    "uncinetto singolo",
+    "in aumento",
+    "lavorando in loop posteriori",
+    "giri"
+  ],
+  "expectationText": "Un utile pezzo per la casa in cui si passa da una base piatta a lati verticali e si vede la struttura prendere forma.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Inizia la base",
+      "instruction": "Crea un anello magico e lavora 8 punti bassi al centro."
+    },
+    {
+      "type": "round",
+      "title": "Turni da 1 a 4",
+      "instruction": "Aumenta in modo uniforme ogni giro finché la base non raggiunge la larghezza desiderata.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "round",
+      "title": "Girare la parte",
+      "instruction": "Lavorare un giro solo negli anelli dietro per creare un bordo pulito.",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "repeat",
+      "title": "Costruisci i muri",
+      "instruction": "Maglia bassa attorno senza aumentare finché il cestino non sarà abbastanza alto.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Finisci il bordo",
+      "instruction": "Fai una maglia bassissima attorno al bordo superiore, chiudi la cucitura e intreccia le estremità."
+    }
+  ]
+}

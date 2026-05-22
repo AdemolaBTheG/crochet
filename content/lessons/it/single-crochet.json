@@ -1,0 +1,19 @@
+{
+  "title": "Uncinetto singolo",
+  "description": "Impara il punto per principianti più utile per un tessuto compatto e robusto.",
+  "content": {
+    "summary": "Inserisci l'uncinetto, tira su un anello e completa un punto semplice con due anelli sull'uncinetto.",
+    "whyItMatters": "L'uncinetto singolo è un punto centrale utilizzato nei sottobicchieri, negli amigurumi, negli strofinacci e nei bordi.",
+    "steps": [
+      "Inserisci l'uncinetto nella maglia successiva.",
+      "Filati e fai un cappio.",
+      "Filati ancora e fai passare entrambi gli anelli.",
+      "Ripeti su tutta la riga."
+    ],
+    "practice": "Lavora 3 file da 10 maglie basse.",
+    "commonMistakes": [
+      "Saltare accidentalmente l'ultimo punto della riga.",
+      "Aggiungere punti extra ai bordi senza accorgersene."
+    ]
+  }
+}

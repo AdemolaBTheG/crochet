@@ -6,9 +6,11 @@ import de from './locales/de.json';
 import en from './locales/en.json';
 import es from './locales/es.json';
 import fr from './locales/fr.json';
+import it from './locales/it.json';
+import ja from './locales/ja.json';
 import nl from './locales/nl.json';
 
-const SUPPORTED_LANGUAGES = ['en', 'de', 'fr', 'es', 'nl'] as const;
+const SUPPORTED_LANGUAGES = ['en', 'de', 'fr', 'es', 'nl', 'it', 'ja'] as const;
 
 type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number];
 
@@ -18,6 +20,8 @@ const resources = {
   fr: { translation: fr },
   es: { translation: es },
   nl: { translation: nl },
+  it: { translation: it },
+  ja: { translation: ja },
 } as const;
 
 function getDeviceLanguage(): SupportedLanguage {

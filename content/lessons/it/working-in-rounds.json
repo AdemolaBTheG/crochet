@@ -1,0 +1,19 @@
+{
+  "title": "Lavorare a turni",
+  "description": "Impara a costruire cerchi e motivi senza perdere il posto.",
+  "content": {
+    "summary": "I giri sono costruiti attorno a un punto centrale e spesso uniti o contrassegnati alla fine.",
+    "whyItMatters": "Sottobicchieri e Granny Square dipendono da una struttura rotonda pulita e facile da seguire.",
+    "steps": [
+      "Crea un anello centrale o un anello di catena.",
+      "Posiziona i punti attorno al centro.",
+      "Unisci il giro con una maglia bassissima o continua a spirale.",
+      "Segui attentamente il primo punto di ogni giro."
+    ],
+    "practice": "Fai due cerchi di pratica con da 6 a 12 maglie in tondo.",
+    "commonMistakes": [
+      "Perdere l'inizio del girone.",
+      "Aggiungere punti in modo non uniforme e deformare il cerchio."
+    ]
+  }
+}

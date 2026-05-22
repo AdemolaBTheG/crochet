@@ -1,0 +1,50 @@
+{
+  "title": "Scrubbie viso in cotone",
+  "description": "Un piccolo round riutilizzabile che offre ai principianti un'altra vittoria veloce con aumenti.",
+  "materials": [
+    "Filato di cotone",
+    "Gancio da 4 mm",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Anello magico",
+    "uncinetto singolo",
+    "in aumento",
+    "unione di punti bassissimi"
+  ],
+  "expectationText": "Un mini progetto a bassa pressione in cui realizzi un morbido tondo riutilizzabile e fai pratica a mantenere gli aumenti uniformi.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fai il centro",
+      "instruction": "Inizia con un anello magico o una catena 4 e unisciti in un anello."
+    },
+    {
+      "type": "round",
+      "title": "Giro 1",
+      "instruction": "Lavora 8 maglie basse nell'anello centrale e uniscile con una maglia bassissima.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Turno 2",
+      "instruction": "Lavora 2 maglie basse in ogni maglia attorno per un totale di 16 maglie.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Turno 3",
+      "instruction": "Alternare 1 maglia bassa, poi 2 maglie basse nella maglia successiva.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "instruction",
+      "title": "Rifinisci il bordo",
+      "instruction": "Fai una maglia bassissima attorno al bordo, chiudi la cucitura e intreccia le estremità."
+    }
+  ]
+}

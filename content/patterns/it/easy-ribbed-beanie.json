@@ -1,0 +1,48 @@
+{
+  "title": "Berretto a coste facile",
+  "description": "Un capo indossabile adatto ai principianti, realizzato con un rettangolo a coste e una cucitura semplice.",
+  "materials": [
+    "Filato pettinato",
+    "Gancio da 5,5 mm",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Catena di fondazione",
+    "mezza maglia alta",
+    "solo anello posteriore",
+    "cucitura"
+  ],
+  "expectationText": "Un progetto indossabile costruito con semplici file, poi cucite per dare forma in modo da poter rifinire un vero cappello senza modellature complesse.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fondazione",
+      "instruction": "Catenella abbastanza punti per arrivare dall'orlo alla corona del cappello."
+    },
+    {
+      "type": "row",
+      "title": "Riga 1",
+      "instruction": "Mezza maglia alta nella terza catenella dall'uncinetto e in ogni catenella trasversale.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Righe da 2 a 36",
+      "instruction": "Fai 2 catenelle, gira e lavora mezza maglia alta nel filo dietro solo attraverso.",
+      "counterLabel": "row",
+      "targetCount": 36
+    },
+    {
+      "type": "instruction",
+      "title": "Cuci il lato",
+      "instruction": "Piega il rettangolo e cuci insieme la prima e l'ultima riga."
+    },
+    {
+      "type": "instruction",
+      "title": "Chiudere la corona",
+      "instruction": "Intreccia il filo attorno al bordo superiore, stringilo, fissalo e intreccia le estremità."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Unir granny squares",
+  "description": "Une granny squares terminados en una pieza mas grande con costuras limpias y alineadas.",
+  "content": {
+    "summary": "Aprende a alinear esquinas, igualar el numero de puntos y unir cuadrados sin torcerlos ni tensarlos.",
+    "whyItMatters": "Muchas mantas, bolsos y cojines para principiantes son solo motivos pequeños bien unidos. Esa union es lo que los hace sentirse terminados.",
+    "steps": [
+      "Coloca los cuadrados planos y alinea primero las esquinas.",
+      "Elige un metodo de union como costura, punto deslizado o punto bajo segun el acabado que quieras.",
+      "Une una costura a la vez y comprueba que los puntos coincidan en ambos lados.",
+      "Al terminar una union, acomoda la costura con los dedos y remata las hebras antes de continuar."
+    ],
+    "practice": "Haz dos granny squares pequeños y une un lado con costura y otro con punto deslizado para comparar.",
+    "commonMistakes": [
+      "Unir esquinas que no corresponden y terminar con el diseño torcido.",
+      "Tensar demasiado la costura y hacer que el borde se ondule."
+    ]
+  }
+}

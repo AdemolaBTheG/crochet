@@ -1,0 +1,49 @@
+{
+  "title": "コージーマグスリーブ",
+  "description": "マグカップを包み込み、簡単な仕上げを教える小さな長方形のプロジェクト。",
+  "materials": [
+    "梳毛綿糸",
+    "5mmフック",
+    "糸針",
+    "はさみ",
+    "ボタン"
+  ],
+  "skills": [
+    "基礎チェーン",
+    "半二重かぎ針編み",
+    "列を変える",
+    "ボタンループ"
+  ],
+  "expectationText": "実用的な長方形で、最後に小さな結合ディテールが 1 つ付いて完成したオブジェクトになります。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "財団",
+      "instruction": "袖の高さに合わせてチェーン12針。"
+    },
+    {
+      "type": "row",
+      "title": "行1",
+      "instruction": "フックから3番目のチェーンと各チェーンを横に半分二重かぎ針編みします。",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "2行目から18行目",
+      "instruction": "チェーン2を回して、スリーブがマグカップに巻き付くまで半分二重かぎ針編みします。",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "ループを追加する",
+      "instruction": "ボタンを閉じるために、一方の短い端に小さなループをチェーンします。"
+    },
+    {
+      "type": "instruction",
+      "title": "ボタンを付ける",
+      "instruction": "反対側の端にボタンを縫い付けて留め、端を織り込みます。"
+    }
+  ]
+}

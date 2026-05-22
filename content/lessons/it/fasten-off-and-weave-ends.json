@@ -1,0 +1,19 @@
+{
+  "title": "Allacciare e intrecciare le estremità",
+  "description": "Termina i progetti in modo pulito in modo che rimangano al sicuro dopo il lavaggio e l'uso.",
+  "content": {
+    "summary": "Allacciare e intrecciare le estremità è il passaggio finale che fa sembrare il lavoro completo.",
+    "whyItMatters": "Un progetto non è finito finché le code del filo non sono sicure e ordinate.",
+    "steps": [
+      "Tagliare il filo lasciando una coda.",
+      "Tirare completamente la coda attraverso l'ultimo anello.",
+      "Infila la coda su un ago da filo.",
+      "Intreccia la coda attraverso i punti vicini in più di una direzione."
+    ],
+    "practice": "Affrancare un campione e intrecciare bene entrambe le code.",
+    "commonMistakes": [
+      "Lasciare le code troppo corte.",
+      "Tessitura solo in linea retta, che può allentarsi nel tempo."
+    ]
+  }
+}

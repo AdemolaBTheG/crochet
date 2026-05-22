@@ -1,0 +1,51 @@
+{
+  "title": "Granny-square tas",
+  "description": "Verbind klassieke granny squares tot een eenvoudige tas die veel echter voelt dan een proeflapje.",
+  "materials": [
+    "Worsted garen",
+    "5 mm haaknaald",
+    "wolnaald",
+    "schaar",
+    "steekmarkeerders"
+  ],
+  "skills": [
+    "Granny squares",
+    "granny squares verbinden",
+    "kleurwissels",
+    "draadeinden wegwerken"
+  ],
+  "expectationText": "Een modulair project waarbij herhaalde squares uitgroeien tot een afgewerkte tas en motiefoefening direct belonen.",
+  "steps": [
+    {
+      "type": "repeat",
+      "title": "Squares haken",
+      "instruction": "Haak 8 granny squares in een of twee kleuren en werk korte draadeinden meteen weg.",
+      "targetCount": 8
+    },
+    {
+      "type": "instruction",
+      "title": "Blokken en leggen",
+      "instruction": "Leg de squares in twee panelen van vier zodat hoeken en kleurverdeling netjes overeenkomen."
+    },
+    {
+      "type": "instruction",
+      "title": "Panelen verbinden",
+      "instruction": "Verbind de squares per paneel en laat de hoeken eerst op elkaar aansluiten."
+    },
+    {
+      "type": "instruction",
+      "title": "Tas opbouwen",
+      "instruction": "Verbind de twee panelen langs de zijkanten en bodem en laat de bovenkant open."
+    },
+    {
+      "type": "instruction",
+      "title": "Hengsels toevoegen",
+      "instruction": "Haak of naai twee eenvoudige hengsels aan de bovenrand en verstevig elk aanhechtingspunt goed."
+    },
+    {
+      "type": "instruction",
+      "title": "Afwerken",
+      "instruction": "Werk de resterende draadeinden weg en controleer of bovenrand en hengsels gelijkmatig zitten."
+    }
+  ]
+}

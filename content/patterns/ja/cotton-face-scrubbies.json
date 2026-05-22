@@ -1,0 +1,50 @@
+{
+  "title": "コットンフェイススクラビー",
+  "description": "再利用可能な小さなラウンドで、初心者に増量すればすぐに勝利を収めることができます。",
+  "materials": [
+    "綿糸",
+    "4mmフック",
+    "糸針",
+    "はさみ"
+  ],
+  "skills": [
+    "魔法の指輪",
+    "単一かぎ針編み",
+    "増加する",
+    "スリップステッチ接合"
+  ],
+  "expectationText": "ソフトで再利用可能なラウンドを作成し、均等な増加を維持する練習をする、低プレッシャーのミニ プロジェクトです。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "中心を作る",
+      "instruction": "魔法のリングまたはチェーン 4 から始めて、ループにつなぎます。"
+    },
+    {
+      "type": "round",
+      "title": "ラウンド1",
+      "instruction": "センターリングに8片編みをして、スリップステッチでつなぎます。",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "ラウンド2",
+      "instruction": "各ステッチに2つのシングルかぎ針編みをして、合計16ステッチを作ります。",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "ラウンド3",
+      "instruction": "1つのシングルかぎ針編みを交互に編み、次に次のステッチで2つのシングルかぎ針編みをします。",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "instruction",
+      "title": "エッジを仕上げる",
+      "instruction": "端の周りをスリップステッチで留め、端を織り込みます。"
+    }
+  ]
+}

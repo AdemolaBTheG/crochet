@@ -1,0 +1,49 @@
+{
+  "title": "Fascia a coste",
+  "description": "Un rettangolo elastico e indossabile realizzato con file di solo passante posteriore e una cucitura semplice.",
+  "materials": [
+    "Filato pettinato morbido",
+    "Gancio da 5mm",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Catena di fondazione",
+    "mezza maglia alta",
+    "solo anello posteriore",
+    "girando le file",
+    "cucitura"
+  ],
+  "expectationText": "Una versione indossabile della pratica delle nervature in cui il rettangolo finito diventa qualcosa di utile con una giuntura pulita.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fondazione",
+      "instruction": "Catenella abbastanza maglie per la larghezza della fascia, solitamente da 10 a 14 maglie."
+    },
+    {
+      "type": "row",
+      "title": "Riga 1",
+      "instruction": "Mezza maglia alta nella terza catenella dall'uncinetto e in ogni catenella trasversale.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Righe da 2 a 32",
+      "instruction": "Fai 2 catenelle, gira e lavora mezza maglia alta solo nel filo dietro su ogni riga.",
+      "counterLabel": "row",
+      "targetCount": 32
+    },
+    {
+      "type": "instruction",
+      "title": "Controlla la vestibilità",
+      "instruction": "Avvolgi la striscia attorno alla testa con un leggero allungamento e aggiungi o rimuovi righe se necessario."
+    },
+    {
+      "type": "instruction",
+      "title": "Giuntura",
+      "instruction": "Cuci insieme i bordi corti, chiudi e intreccia le code nelle coste."
+    }
+  ]
+}

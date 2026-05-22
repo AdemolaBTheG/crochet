@@ -1,0 +1,59 @@
+{
+  "title": "Ballena amigurumi",
+  "description": "Una ballena pequeña y amable que parte de la bola basica y añade forma sencilla.",
+  "materials": [
+    "Hilo worsted",
+    "ganchillo de 4 mm",
+    "marcador de puntos",
+    "relleno",
+    "ojos de seguridad",
+    "aguja lanera",
+    "tijeras"
+  ],
+  "skills": [
+    "Anillo magico",
+    "punto bajo",
+    "aumentos",
+    "disminucion invisible",
+    "trabajar en redondo"
+  ],
+  "expectationText": "Un proyecto de amigurumi apto para principiantes donde contar vueltas y disminuir limpio importa, pero la forma sigue siendo manejable.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Empieza el cuerpo",
+      "instruction": "Comienza con un anillo magico y marca el primer punto de cada vuelta."
+    },
+    {
+      "type": "repeat",
+      "title": "Aumenta el cuerpo",
+      "instruction": "Haz aumentos regulares en las primeras vueltas hasta formar una copa suave.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "repeat",
+      "title": "Teje vueltas rectas",
+      "instruction": "Trabaja en redondo sin aumentos para formar el largo principal del cuerpo.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "instruction",
+      "title": "Coloca ojos y relleno",
+      "instruction": "Pon los ojos antes de que la abertura sea demasiado pequeña y empieza a rellenar con suavidad."
+    },
+    {
+      "type": "repeat",
+      "title": "Forma la cola",
+      "instruction": "Usa disminuciones invisibles para cerrar el cuerpo sin perder suavidad.",
+      "counterLabel": "round",
+      "targetCount": 11
+    },
+    {
+      "type": "instruction",
+      "title": "Aletas y cola",
+      "instruction": "Cose o teje aletas simples y la cola, luego cierra la abertura y esconde la hebra final."
+    }
+  ]
+}

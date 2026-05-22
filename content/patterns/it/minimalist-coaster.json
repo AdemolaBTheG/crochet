@@ -1,0 +1,50 @@
+{
+  "title": "Sottobicchiere minimalista",
+  "description": "Un progetto circolare veloce per imparare giri, unire e semplici ripetizioni di punti.",
+  "materials": [
+    "Filato di cotone",
+    "Gancio da 4 a 5 mm",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Anello magico",
+    "uncinetto singolo",
+    "punto bassissimo",
+    "lavorando a turni"
+  ],
+  "expectationText": "Un rapido progetto circolare in cui ti eserciti a costruire un cerchio piatto, unendolo in modo ordinato e finendo qualcosa di utile in una breve seduta.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Crea un anello centrale",
+      "instruction": "Inizia con un anello magico o una catena 4 e unisciti in un anello."
+    },
+    {
+      "type": "round",
+      "title": "Giro 1",
+      "instruction": "Lavora 8 maglie basse nell'anello e uniscile con una maglia bassissima.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Turno 2",
+      "instruction": "Lavora 2 maglie basse in ogni maglia attorno per un totale di 16 maglie.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Turno 3",
+      "instruction": "Alternare 1 maglia bassa, poi 2 maglie basse nella maglia successiva.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Maglia bassissima per unire, allacciare e intrecciare alla fine."
+    }
+  ]
+}

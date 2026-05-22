@@ -1,0 +1,59 @@
+{
+  "title": "Balena Amigurumi",
+  "description": "Una simpatica balena di peluche che si basa sulla palla base con forme e finiture semplici.",
+  "materials": [
+    "Filato pettinato",
+    "Gancio da 4 mm",
+    "segnapunti",
+    "ripieno",
+    "occhi di sicurezza",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Anello magico",
+    "uncinetto singolo",
+    "in aumento",
+    "diminuzione invisibile",
+    "lavorando a turni"
+  ],
+  "expectationText": "Un progetto di giocattolo per principianti in cui il conteggio dei giri e le diminuzioni pulite contano, ma la modellatura rimane comunque accessibile.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Inizia il corpo",
+      "instruction": "Inizia con un anello magico e posiziona un segnapunti nella prima maglia di ogni giro."
+    },
+    {
+      "type": "repeat",
+      "title": "Aumentare il corpo",
+      "instruction": "Aumentare in modo uniforme durante i primi giri finché il corpo non forma una coppa poco profonda.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "repeat",
+      "title": "Lavora anche in tondo",
+      "instruction": "Maglia bassa attorno senza aumentare per costruire la lunghezza del corpo principale.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "instruction",
+      "title": "Aggiungi gli occhi e il ripieno",
+      "instruction": "Inserite gli occhi prima che l'apertura diventi troppo stretta, quindi iniziate a farcire leggermente."
+    },
+    {
+      "type": "repeat",
+      "title": "Modella la coda",
+      "instruction": "Usa diminuzioni invisibili per affusolare il corpo mantenendo i punti lisci.",
+      "counterLabel": "round",
+      "targetCount": 11
+    },
+    {
+      "type": "instruction",
+      "title": "Finisci le pinne e la coda",
+      "instruction": "Cuci o lavora all'uncinetto delle semplici pinne laterali e la forma della coda, quindi chiudi l'apertura finale e nascondi l'estremità."
+    }
+  ]
+}

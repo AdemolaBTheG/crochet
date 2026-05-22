@@ -1,0 +1,60 @@
+{
+  "title": "基本のあみぐるみボール",
+  "description": "練習用の小さなぬいぐるみの球体は、増加、減少、および連続ラウンドでの作業を練習します。",
+  "materials": [
+    "梳毛糸",
+    "4mmフック",
+    "ステッチマーカー",
+    "詰め物",
+    "糸針",
+    "はさみ"
+  ],
+  "skills": [
+    "魔法の指輪",
+    "単一かぎ針編み",
+    "増加する",
+    "減少する",
+    "ラウンドで作業する"
+  ],
+  "expectationText": "増加させると曲線が構築され、直線的なラウンドが高さを増し、減少させるとフォームに近づくコンパクトな成形プロジェクトです。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "センターを始める",
+      "instruction": "マジックリングを作り、各ラウンドの最初のステッチにステッチマーカーを置きます。"
+    },
+    {
+      "type": "round",
+      "title": "ラウンド1",
+      "instruction": "6つの片編みをリングに入れ、中央を引っ張って閉じます。",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "第2ラウンドから第4ラウンドまで",
+      "instruction": "ピースが丸い形にカップ状になり始めるまで、ラウンドごとに均等に増やします。",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "repeat",
+      "title": "第5ラウンドから第7ラウンドまで",
+      "instruction": "増やさずに一重かぎ針編みでボールの中央を作ります。",
+      "counterLabel": "round",
+      "targetCount": 7
+    },
+    {
+      "type": "repeat",
+      "title": "第8ラウンドから第10ラウンドまで",
+      "instruction": "各ラウンドで均等に減らし、開口部が小さくなりすぎる前に詰め物を追加します。",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "近い",
+      "instruction": "留めて、尻尾を最後のステッチに通し、引っ張って閉じ、端を内側に隠します。"
+    }
+  ]
+}

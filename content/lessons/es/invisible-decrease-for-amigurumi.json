@@ -1,0 +1,19 @@
+{
+  "title": "Disminucion invisible para amigurumi",
+  "description": "Da forma a piezas rellenas con una disminucion que se integra mejor en el tejido.",
+  "content": {
+    "summary": "Aprende a disminuir tomando solo las hebras delanteras para lograr un acabado mas limpio.",
+    "whyItMatters": "Los amigurumis se ven mucho mejor cuando las disminuciones no resaltan. Es una de las tecnicas que mas mejora el acabado desde el inicio.",
+    "steps": [
+      "Inserta el ganchillo en la hebra delantera del siguiente punto y luego en la hebra delantera del punto posterior.",
+      "Toma hilo y pasalo por ambas hebras delanteras.",
+      "Vuelve a tomar hilo y pasalo por las lazadas restantes para cerrar la disminucion.",
+      "Trabaja con calma y con una tension pareja para que la forma quede suave."
+    ],
+    "practice": "Haz una vuelta corta con disminuciones normales y otra con disminuciones invisibles para comparar la textura.",
+    "commonMistakes": [
+      "Entrar por ambas hebras en lugar de solo por la delantera y crear una disminucion mas gruesa.",
+      "Saltar el siguiente punto despues de disminuir y perder la cuenta."
+    ]
+  }
+}

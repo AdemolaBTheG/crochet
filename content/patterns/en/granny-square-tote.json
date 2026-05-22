@@ -1,0 +1,15 @@
+{
+  "title": "Granny Square Tote",
+  "description": "Join classic granny squares into a simple carryall that feels more substantial than a practice swatch.",
+  "materials": ["Worsted yarn", "5 mm hook", "yarn needle", "scissors", "stitch markers"],
+  "skills": ["Granny squares", "joining granny squares", "color changes", "weaving ends"],
+  "expectationText": "A modular project where repeated squares turn into a finished bag, giving the user a clear payoff for motif practice.",
+  "steps": [
+    { "type": "repeat", "title": "Make the squares", "instruction": "Crochet 8 granny squares in one or two colors and weave in the shortest tails as you go.", "targetCount": 8 },
+    { "type": "instruction", "title": "Block and arrange", "instruction": "Lay the squares flat in two panels of four so the corners and color layout stay consistent." },
+    { "type": "instruction", "title": "Join each panel", "instruction": "Join the squares panel by panel, matching the corners before working each seam." },
+    { "type": "instruction", "title": "Assemble the tote", "instruction": "Join the two panels along the sides and bottom, leaving the top edge open." },
+    { "type": "instruction", "title": "Add the handles", "instruction": "Crochet or seam two simple handles to the top edge and reinforce the base of each handle." },
+    { "type": "instruction", "title": "Finish", "instruction": "Weave in the remaining ends and check that the top edge and handles feel even before using the tote." }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Color Changes",
+  "description": "Switch yarn colors cleanly so stripes and motifs look intentional instead of messy.",
+  "content": {
+    "summary": "Learn to finish the final yarn-over of a stitch with a new color and carry on without a bulky jump.",
+    "whyItMatters": "Color changes unlock stripes, granny projects, and decorative details without forcing the user to improvise at the exact moment the pattern gets interesting.",
+    "steps": [
+      "Work the stitch until the last yarn-over is still waiting on the hook.",
+      "Drop the old color, pull the new color through to finish the stitch, and tighten both tails gently.",
+      "Continue crocheting with the new color and keep the tails out of the working path.",
+      "If the pattern is striped, cut and rejoin when the jump would show, or carry the yarn only when it stays hidden."
+    ],
+    "practice": "Crochet a short swatch of two rows in one color, then switch colors at the start of the next row and repeat twice.",
+    "commonMistakes": [
+      "Changing colors after finishing the stitch, which creates a visible dot of the old color.",
+      "Pulling the first stitch too tight and making the join pucker."
+    ]
+  }
+}

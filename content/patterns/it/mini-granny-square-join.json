@@ -1,0 +1,45 @@
+{
+  "title": "Mini Granny Square Partecipa al progetto",
+  "description": "Trasforma quattro Granny Square in un piccolo progetto finito in modo che l'utente possa completare qualcosa di reale.",
+  "materials": [
+    "Filato pettinato",
+    "Gancio da 5mm",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Piazze della nonna",
+    "unione di punti bassissimi",
+    "cucitura",
+    "estremità della tessitura"
+  ],
+  "expectationText": "Un piccolo progetto di finitura in cui trasformi i quadrati separati in un unico pezzo e ti eserciti a unirli con sicurezza.",
+  "steps": [
+    {
+      "type": "repeat",
+      "title": "Crea quattro quadrati",
+      "instruction": "Completa lo schema base del Granny Square quattro volte.",
+      "targetCount": 4
+    },
+    {
+      "type": "instruction",
+      "title": "Disporre i quadrati",
+      "instruction": "Disporre i quattro quadrati in una disposizione 2 per 2 con il lato destro rivolto verso l'alto."
+    },
+    {
+      "type": "instruction",
+      "title": "Unisciti alla prima cucitura",
+      "instruction": "Usa il punto bassissimo o il punto sopraggitto per unire i due quadrati superiori."
+    },
+    {
+      "type": "instruction",
+      "title": "Unisciti alla seconda cucitura",
+      "instruction": "Unisci i due quadrati inferiori, quindi collega le righe insieme."
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Intrecciare tutte le estremità e modellare leggermente il pezzo finito."
+    }
+  ]
+}

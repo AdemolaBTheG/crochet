@@ -1,0 +1,50 @@
+{
+  "title": "Piazza della Nonna di base",
+  "description": "Un classico motivo all'uncinetto che insegna grappoli e angoli a doppio uncinetto.",
+  "materials": [
+    "Filato pettinato",
+    "Gancio da 5mm",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Anello magico",
+    "doppio uncinetto",
+    "spazi di catena",
+    "unione di punti bassissimi"
+  ],
+  "expectationText": "Un motivo classico che insegna angoli, gruppi e struttura rotonda senza lanciarsi in un progetto enorme.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Anello centrale",
+      "instruction": "Crea un anello magico o una catena 4 e uniscilo in un anello."
+    },
+    {
+      "type": "round",
+      "title": "Giro 1",
+      "instruction": "Formare 4 grappoli separati da archi di catenelle e unirli per chiudere il quadrato.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Turno 2",
+      "instruction": "Fai un punto bassissimo su uno spazio d'angolo, costruisci lo strato successivo di grappoli di nonna e forma gli angoli con spazi di catenelle.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Turno 3",
+      "instruction": "Ripeti i grappoli lungo i lati e gli angoli finché il quadrato non raggiunge la dimensione desiderata.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Unisci il giro, chiudi e intreccia le estremità."
+    }
+  ]
+}

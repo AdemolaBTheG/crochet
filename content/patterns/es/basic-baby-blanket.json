@@ -1,0 +1,56 @@
+{
+  "title": "Manta basica para bebe",
+  "description": "Un proyecto suave y repetitivo pensado para vueltas rectas y seguimiento sencillo del progreso.",
+  "materials": [
+    "Hilo suave worsted",
+    "ganchillo de 5 mm",
+    "marcadores",
+    "aguja lanera",
+    "tijeras"
+  ],
+  "skills": [
+    "Cadeneta",
+    "punto alto",
+    "trabajar en filas",
+    "cambios de color"
+  ],
+  "expectationText": "Un proyecto largo y comodo donde filas simples terminan convirtiendose en una manta lista para regalar sin requerir forma compleja.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Haz la cadeneta base",
+      "instruction": "Teje una cadeneta con el ancho de una manta de bebe y cuenta bien antes de empezar la primera fila."
+    },
+    {
+      "type": "row",
+      "title": "Fila 1",
+      "instruction": "Trabaja la fila de preparacion de forma uniforme y marca el primer y ultimo punto si hace falta.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Filas 2 a 20",
+      "instruction": "Repite el punto principal y revisa los bordes cada pocas filas para mantener el rectangulo parejo.",
+      "counterLabel": "row",
+      "targetCount": 20
+    },
+    {
+      "type": "repeat",
+      "title": "Filas 21 a 40",
+      "instruction": "Sigue ganando altura y cambia de color solo al final de una fila si quieres rayas suaves.",
+      "counterLabel": "row",
+      "targetCount": 40
+    },
+    {
+      "type": "instruction",
+      "title": "Haz el borde",
+      "instruction": "Trabaja un borde simple alrededor de los cuatro lados para ordenar las esquinas."
+    },
+    {
+      "type": "instruction",
+      "title": "Termina",
+      "instruction": "Remata las hebras y extiende la manta para comprobar que el borde quede liso."
+    }
+  ]
+}

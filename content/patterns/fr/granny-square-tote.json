@@ -1,0 +1,51 @@
+{
+  "title": "Sac granny square",
+  "description": "Assemble des granny squares classiques en un sac simple qui semble plus abouti qu un simple echantillon.",
+  "materials": [
+    "Laine worsted",
+    "crochet 5 mm",
+    "aiguille a laine",
+    "ciseaux",
+    "marqueurs de mailles"
+  ],
+  "skills": [
+    "Granny squares",
+    "assemblage de granny squares",
+    "changements de couleur",
+    "rentrer les fils"
+  ],
+  "expectationText": "Un projet modulaire dans lequel des carrés repetes deviennent un sac termine et donnent un vrai but a la pratique des motifs.",
+  "steps": [
+    {
+      "type": "repeat",
+      "title": "Crocheter les carrés",
+      "instruction": "Crochete 8 granny squares en une ou deux couleurs et rentre les petits fils au fur et a mesure.",
+      "targetCount": 8
+    },
+    {
+      "type": "instruction",
+      "title": "Bloquer et organiser",
+      "instruction": "Dispose les carrés en deux panneaux de quatre pour garder des coins et des couleurs coherents."
+    },
+    {
+      "type": "instruction",
+      "title": "Assembler chaque panneau",
+      "instruction": "Assemble les carrés panneau par panneau en faisant d abord correspondre les coins."
+    },
+    {
+      "type": "instruction",
+      "title": "Monter le sac",
+      "instruction": "Assemble les deux panneaux sur les cotes et le fond en laissant le haut ouvert."
+    },
+    {
+      "type": "instruction",
+      "title": "Ajouter les anses",
+      "instruction": "Crochete ou couds deux anses simples sur le bord superieur et renforce bien leur base."
+    },
+    {
+      "type": "instruction",
+      "title": "Terminer",
+      "instruction": "Rentre les fils restants et verifie que le bord superieur et les anses sont reguliers."
+    }
+  ]
+}

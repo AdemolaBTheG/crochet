@@ -1,0 +1,51 @@
+{
+  "title": "Granny-Square-Tasche",
+  "description": "Verbinde klassische Granny Squares zu einer einfachen Tasche, die sich deutlich echter anfuehlt als nur ein Uebungsstueck.",
+  "materials": [
+    "Kammgarn",
+    "5-mm-Haekelnadel",
+    "Wollnadel",
+    "Schere",
+    "Maschenmarkierer"
+  ],
+  "skills": [
+    "Granny Squares",
+    "Squares verbinden",
+    "Farbwechsel",
+    "Enden vernähen"
+  ],
+  "expectationText": "Ein modulares Projekt, bei dem wiederholte Squares zu einer fertigen Tasche werden und Motivarbeit direkt belohnen.",
+  "steps": [
+    {
+      "type": "repeat",
+      "title": "Squares haekeln",
+      "instruction": "Haekle 8 Granny Squares in ein oder zwei Farben und vernähe kurze Enden direkt mit.",
+      "targetCount": 8
+    },
+    {
+      "type": "instruction",
+      "title": "Spannen und auslegen",
+      "instruction": "Lege die Squares in zwei Bahnen zu je vier Teilen aus, damit Ecken und Farben sauber zusammenpassen."
+    },
+    {
+      "type": "instruction",
+      "title": "Bahnen verbinden",
+      "instruction": "Verbinde die Squares Bahn fuer Bahn und gleiche zuerst immer die Ecken an."
+    },
+    {
+      "type": "instruction",
+      "title": "Tasche zusammensetzen",
+      "instruction": "Verbinde beide Flaechen an Seiten und Boden und lasse die obere Kante offen."
+    },
+    {
+      "type": "instruction",
+      "title": "Henkel anbringen",
+      "instruction": "Haekle oder naehe zwei einfache Henkel an die obere Kante und sichere ihre Ansatzpunkte gut."
+    },
+    {
+      "type": "instruction",
+      "title": "Fertigstellen",
+      "instruction": "Vernähe die restlichen Enden und pruefe, dass obere Kante und Henkel gleichmaessig sitzen."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "title": "丸五徳",
+  "description": "コースターのスキルを活かした厚みのある平らな円で、より便利な完成サイズが得られます。",
+  "materials": [
+    "太い綿糸",
+    "5.5～6mmフック",
+    "糸針",
+    "はさみ"
+  ],
+  "skills": [
+    "魔法の指輪",
+    "単一かぎ針編み",
+    "増加する",
+    "スリップステッチ接合"
+  ],
+  "expectationText": "プロジェクトの繰り返しが速すぎることなく、より長く練習できる頑丈なフラットラウンドです。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "センターリングを作ります",
+      "instruction": "魔法のリングまたはチェーン 4 から始めて、ループにつなぎます。"
+    },
+    {
+      "type": "round",
+      "title": "ラウンド1",
+      "instruction": "リングに8片編みをして、スリップステッチでつなぎます。",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "ラウンド2",
+      "instruction": "各ステッチに2つのシングルかぎ針編みをして、合計16ステッチを作ります。",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "第3ラウンドから第5ラウンドまで",
+      "instruction": "円が平らになるように、1つのステッチに2つの単一かぎ針編みの間隔をあけて、各ラウンドを均等に増やします。",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "instruction",
+      "title": "仕上げる",
+      "instruction": "スリップステッチで結合し、留めて、最後にしっかりと織り込みます。"
+    }
+  ]
+}

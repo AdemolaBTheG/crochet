@@ -1,0 +1,19 @@
+{
+  "title": "Crescente e decrescente",
+  "description": "Modella il tessuto all'uncinetto aggiungendo o rimuovendo punti senza perdere il conto.",
+  "content": {
+    "summary": "Impara come realizzare due punti in uno spazio per aumentare e combinare i punti per diminuire.",
+    "whyItMatters": "La modellatura ti consente di creare cerchi piatti, forme arrotondate e pezzi adattati più ordinati anziché solo rettangoli piatti.",
+    "steps": [
+      "Per aumentare, lavorare due maglie nella stessa maglia o nello stesso spazio.",
+      "Per diminuire in una maglia bassa, inserirla nella maglia successiva, sollevare un anello, inserirla nella maglia successiva, sollevare un anello, quindi gettare il filo e passare attraverso tutti gli anelli.",
+      "Conta i punti alla fine di ogni riga o giro in modo che la modellatura rimanga intenzionale.",
+      "Esercitarsi nel posizionamento aumenta in modo uniforme in modo che il tessuto rimanga piatto invece di incresparsi."
+    ],
+    "practice": "Crea un campione con aumenti accoppiati e un campione con diminuzioni semplici, quindi conta i punti dopo ogni riga.",
+    "commonMistakes": [
+      "Aumentare in punti casuali e deformare accidentalmente il tessuto.",
+      "Dimenticare dove è iniziata la diminuzione e eliminare una maglia dal conteggio."
+    ]
+  }
+}

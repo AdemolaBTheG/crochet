@@ -1,0 +1,46 @@
+{
+  "title": "Applicazione a cuore minuscolo",
+  "description": "Un piccolo cuore decorativo per esercitarsi a modellare in un giro veloce.",
+  "materials": [
+    "Filato di cotone",
+    "Gancio da 4 mm",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Anello magico",
+    "doppio uncinetto",
+    "maglia alta",
+    "punto bassissimo"
+  ],
+  "expectationText": "Un minuscolo motivo sagomato che insegna come l'altezza del punto modifica il contorno di un disegno.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Realizza l'anello",
+      "instruction": "Inizia con un anello magico e fai 2 catenelle per iniziare la forma del cuore."
+    },
+    {
+      "type": "round",
+      "title": "Costruisci i lobi",
+      "instruction": "Lavora maglie più alte nell'anello per formare la parte superiore arrotondata del cuore.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "instruction",
+      "title": "Dai forma al punto",
+      "instruction": "Usa punti più corti, poi un punto più alto nel punto in basso."
+    },
+    {
+      "type": "instruction",
+      "title": "Chiudi il cuore",
+      "instruction": "Specchia il primo lato, fai un punto bassissimo per chiudere e stringi bene l'anello."
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Allacciare e intrecciare le code nella parte posteriore del cuore."
+    }
+  ]
+}

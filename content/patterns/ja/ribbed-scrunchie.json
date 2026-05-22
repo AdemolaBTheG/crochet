@@ -1,0 +1,51 @@
+{
+  "title": "リブシュシュ",
+  "description": "ヘアゴムを中心に作られた、初心者向けの繰り返しやすい簡単なウェアラブル プロジェクトです。",
+  "materials": [
+    "柔らかい糸",
+    "4.5mmフック",
+    "ヘアゴム",
+    "糸針",
+    "はさみ"
+  ],
+  "skills": [
+    "片かぎ針編み",
+    "半二重かぎ針編み",
+    "エラスティックの周りで作業する",
+    "接合"
+  ],
+  "expectationText": "繰り返すことで自信がつき、完成した結果は贈り物にふさわしいと感じる、遊び心のある簡単なプロジェクトです。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "ゴムをカバーする",
+      "instruction": "ヘアゴムの周りに毛糸をつなぎ、均等に片編みします。"
+    },
+    {
+      "type": "round",
+      "title": "ラウンド1",
+      "instruction": "バンドが完全に覆われるように、ゴムの周りに十分な一本かぎ針編みを編みます。",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "ラウンド2",
+      "instruction": "2をチェーンし、周囲の各編み目に半二重かぎ針編みをします。",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "ラウンド3",
+      "instruction": "さらにもう1周半二重かぎ針編みをして、ふっくらとしたシュシュを作ります。",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "instruction",
+      "title": "仕上げる",
+      "instruction": "スリップステッチで結合し、留めて、折り目の内側に尾を織り込みます。"
+    }
+  ]
+}

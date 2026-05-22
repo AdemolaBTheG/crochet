@@ -1,0 +1,56 @@
+{
+  "title": "Coperta per bambini di base",
+  "description": "Un progetto morbido e ripetitivo progettato per file stabili e un facile monitoraggio dei progressi.",
+  "materials": [
+    "Filato pettinato morbido",
+    "Gancio da 5mm",
+    "segnapunti",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Catena di fondazione",
+    "doppio uncinetto",
+    "lavorando in file",
+    "cambiamenti di colore"
+  ],
+  "expectationText": "Un progetto di comfort di forma più lunga che trasforma semplici righe ripetute in una coperta pronta per il regalo senza introdurre forme difficili.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Incatena la larghezza",
+      "instruction": "Crea una catenella di fondazione abbastanza larga per una coperta da bambino e conta attentamente prima della prima riga."
+    },
+    {
+      "type": "row",
+      "title": "Riga 1",
+      "instruction": "Lavora la riga di installazione in modo uniforme e segna il primo e l'ultimo punto se il conteggio dei bordi è ancora nuovo.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Righe da 2 a 20",
+      "instruction": "Ripeti il ​​motivo principale, controllando i bordi ogni poche righe in modo che la coperta rimanga rettangolare.",
+      "counterLabel": "row",
+      "targetCount": 20
+    },
+    {
+      "type": "repeat",
+      "title": "Righe da 21 a 40",
+      "instruction": "Continua ad aumentare l'altezza e cambia i colori solo alla fine della riga se vuoi strisce morbide.",
+      "counterLabel": "row",
+      "targetCount": 40
+    },
+    {
+      "type": "instruction",
+      "title": "Aggiungi il bordo",
+      "instruction": "Lavora un bordo semplice attorno a tutti e quattro i lati per riordinare i bordi e gli angoli."
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Intreccia le estremità e stendi la coperta per verificare che il bordo sia liscio."
+    }
+  ]
+}

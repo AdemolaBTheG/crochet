@@ -1,0 +1,43 @@
+{
+  "title": "Strofinaccio semplice",
+  "description": "Un pratico progetto quadrato per imparare a filare e creare tensione uniforme.",
+  "materials": [
+    "Filato di cotone",
+    "Gancio da 5mm",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Catena di fondazione",
+    "uncinetto singolo",
+    "girando le file",
+    "estremità della tessitura"
+  ],
+  "expectationText": "Un progetto costante riga per riga per praticare la tensione uniforme, i bordi netti e il ritmo di rotazione del tuo lavoro.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fondazione",
+      "instruction": "Catenina 21 maglie."
+    },
+    {
+      "type": "row",
+      "title": "Riga 1",
+      "instruction": "Maglia bassa nella seconda catenella dall'uncinetto e in ogni catenella trasversale.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Righe da 2 a 18",
+      "instruction": "Fai 1 catenella, gira e lavora una maglia bassa in ogni maglia trasversale.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Allacciare e intrecciare entrambe le estremità."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "title": "Bolso de granny squares",
+  "description": "Une granny squares clasicos en un bolso sencillo que se siente mas real que una simple muestra.",
+  "materials": [
+    "Hilo worsted",
+    "ganchillo de 5 mm",
+    "aguja lanera",
+    "tijeras",
+    "marcadores"
+  ],
+  "skills": [
+    "Granny squares",
+    "unir granny squares",
+    "cambios de color",
+    "rematar hebras"
+  ],
+  "expectationText": "Un proyecto modular donde cuadrados repetidos se convierten en un bolso terminado y recompensan la practica de motivos.",
+  "steps": [
+    {
+      "type": "repeat",
+      "title": "Teje los cuadrados",
+      "instruction": "Teje 8 granny squares en uno o dos colores y remata las hebras cortas mientras avanzas.",
+      "targetCount": 8
+    },
+    {
+      "type": "instruction",
+      "title": "Bloquea y organiza",
+      "instruction": "Coloca los cuadrados en dos paneles de cuatro para mantener esquinas y colores alineados."
+    },
+    {
+      "type": "instruction",
+      "title": "Une cada panel",
+      "instruction": "Une los cuadrados panel por panel, haciendo coincidir primero las esquinas."
+    },
+    {
+      "type": "instruction",
+      "title": "Monta el bolso",
+      "instruction": "Une ambos paneles por los laterales y la base, dejando la parte superior abierta."
+    },
+    {
+      "type": "instruction",
+      "title": "Añade las asas",
+      "instruction": "Teje o cose dos asas sencillas en el borde superior y refuerza bien cada punto de union."
+    },
+    {
+      "type": "instruction",
+      "title": "Termina",
+      "instruction": "Remata las hebras restantes y revisa que el borde superior y las asas queden parejos."
+    }
+  ]
+}

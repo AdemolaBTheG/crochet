@@ -9,9 +9,9 @@ import {
 
 const now = sql`(unixepoch() * 1000)`;
 
-export type SupportedLanguage = 'en' | 'de' | 'fr' | 'es' | 'nl';
+export type SupportedLanguage = 'en' | 'de' | 'fr' | 'es' | 'nl' | 'it' | 'ja';
 
-export const SUPPORTED_LANGUAGES = ['en', 'de', 'fr', 'es', 'nl'] as const;
+export const SUPPORTED_LANGUAGES = ['en', 'de', 'fr', 'es', 'nl', 'it', 'ja'] as const;
 
 export const userProfile = sqliteTable("user_profile", {
   id: integer("id").primaryKey({ autoIncrement: true }),

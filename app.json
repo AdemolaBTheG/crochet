@@ -2,7 +2,7 @@
   "expo": {
     "name": "Crochet",
     "slug": "Crochet",
-    "version": "1.0.1",
+    "version": "1.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "crochet",
@@ -73,8 +73,6 @@
         }
       ],
 
-      "react-native-enriched-markdown",
-      "@react-native-firebase/app",
       [
         "expo-build-properties",
         {

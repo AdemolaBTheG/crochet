@@ -1,0 +1,51 @@
+{
+  "title": "Elastico a coste",
+  "description": "Un progetto indossabile rapidamente realizzato attorno a un elastico per capelli con ripetizioni adatte ai principianti.",
+  "materials": [
+    "Filato morbido",
+    "Gancio da 4,5 mm",
+    "capelli elastici",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Uncinetto singolo",
+    "mezza maglia alta",
+    "lavorando attorno ad un elastico",
+    "unendosi"
+  ],
+  "expectationText": "Un progetto veloce e giocoso in cui la ripetizione crea fiducia e il risultato finale sembra regalabile.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Copri l'elastico",
+      "instruction": "Unisci il filo attorno all'elastico per capelli e lavora una maglia bassa uniformemente attorno ad esso."
+    },
+    {
+      "type": "round",
+      "title": "Giro 1",
+      "instruction": "Lavorare abbastanza maglie basse attorno all'elastico in modo che la fascia sia completamente coperta.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Turno 2",
+      "instruction": "Fai 2 catenelle, poi lavora mezza maglia alta in ogni maglia attorno.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Turno 3",
+      "instruction": "Lavora un altro giro di mezza maglia alta per un elastico più pieno.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Fai un punto bassissimo per unire, affrancare e intrecciare la coda all'interno delle pieghe."
+    }
+  ]
+}

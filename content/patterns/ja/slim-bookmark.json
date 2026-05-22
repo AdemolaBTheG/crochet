@@ -1,0 +1,48 @@
+{
+  "title": "スリムブックマーク",
+  "description": "エッジ、テンション、小さなタッセル仕上げを練習するための狭い列のプロジェクト。",
+  "materials": [
+    "綿糸",
+    "3.5～4mmフック",
+    "糸針",
+    "はさみ"
+  ],
+  "skills": [
+    "基礎チェーン",
+    "単一かぎ針編み",
+    "列を変える",
+    "タッセル作り"
+  ],
+  "expectationText": "慎重な緊張感に報いる、きちんとした小さなプロジェクトで、1 時間以内に完成したギフトが手に入ります。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "財団",
+      "instruction": "しおり幅をスリムにするチェーン8針。"
+    },
+    {
+      "type": "row",
+      "title": "行1",
+      "instruction": "フックから 2 番目のチェーンと両端の各チェーンを 1 つずつ編みます。",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "2行目から24行目",
+      "instruction": "チェーン 1、ターン、各列にわたって単一かぎ針編みします。",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "タッセルを追加する",
+      "instruction": "糸を数本カットし、片方の短い端に取り付けます。"
+    },
+    {
+      "type": "instruction",
+      "title": "仕上げる",
+      "instruction": "タッセルを均等に切り取り、開始尾部分を織り込みます。"
+    }
+  ]
+}

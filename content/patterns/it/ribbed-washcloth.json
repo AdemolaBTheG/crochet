@@ -1,0 +1,50 @@
+{
+  "title": "Panno a coste",
+  "description": "Un semplice quadrato che trasforma la pratica del solo giro posteriore in un utile tessuto strutturato.",
+  "materials": [
+    "Filato di cotone",
+    "Gancio da 5mm",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Catena di fondazione",
+    "mezza maglia alta",
+    "solo anello posteriore",
+    "girando le file"
+  ],
+  "expectationText": "Un pratico progetto in formato campione in cui le nervature sono evidenti e veloci, quindi la tecnica scatta prima di passare ai dispositivi indossabili.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fondazione",
+      "instruction": "Catenina 19 maglie."
+    },
+    {
+      "type": "row",
+      "title": "Riga 1",
+      "instruction": "Mezza maglia alta nella terza catenella dall'uncinetto e in ogni catenella trasversale.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Riga 2",
+      "instruction": "Fai 2 catenelle, gira e lavora mezza maglia alta nel filo dietro solo attraverso.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Righe da 3 a 16",
+      "instruction": "Continuare a catenellare 2 catenelle, girare e lavorare mezza maglia alta nel filo dietro solo attraverso.",
+      "counterLabel": "row",
+      "targetCount": 16
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Allacciare e intrecciare bene entrambe le estremità."
+    }
+  ]
+}

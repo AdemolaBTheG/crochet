@@ -1,0 +1,422 @@
+{
+  "common": {
+    "continue": "Continuare",
+    "preparing": "Preparazione...",
+    "filters": {
+      "all": "Tutto"
+    },
+    "badges": {
+      "pro": "Pro"
+    },
+    "time": {
+      "today": "Oggi",
+      "yesterday": "Ieri",
+      "daysAgo": "{{count}} giorni fa"
+    },
+    "counter": {
+      "rounds": "{{count}} giri",
+      "rows": "{{count}} righe",
+      "none": "Nessun contatore ancora"
+    },
+    "steps": {
+      "progress": "{{current}}/{{total}} passi",
+      "stepOnly": "Passaggio {{current}}",
+      "count": "{{count}} passi"
+    }
+  },
+  "shared": {
+    "close": "Vicino",
+    "unlockPremium": "Sblocca Premium",
+    "stepOf": "Passaggio {{current}} di {{total}}"
+  },
+  "chat": {
+    "thinking": "Pensiero...",
+    "errorFallback": "Ho riscontrato un intoppo durante la generazione di una risposta. Per favore riprova."
+  },
+  "tabs": {
+    "home": "Casa",
+    "learn": "Imparare",
+    "projects": "Progetti"
+  },
+  "home": {
+    "sections": {
+      "activeProjects": "Progetti attivi"
+    },
+    "accessibility": {
+      "continueProject": "Continua {{name}}",
+      "showPatterns": "Mostra modelli {{category}}"
+    },
+    "lastWorkedPrefix": "L'ultima volta ha funzionato",
+    "lastWorkedSeparator": "·"
+  },
+  "projects": {
+    "sections": {
+      "inProgress": "In corso",
+      "completed": "Completato"
+    },
+    "empty": {
+      "title": "Nessun progetto ancora",
+      "subtitle": "Scegli un modello da Home e tocca Avvia progetto."
+    },
+    "accessibility": {
+      "openProject": "Apri {{name}}"
+    }
+  },
+  "learn": {
+    "toolsSectionTitle": "Utensili",
+    "lessonLabel": "Lezione {{index}}",
+    "actions": {
+      "open": "Aprire",
+      "unlock": "Sbloccare"
+    },
+    "accessibility": {
+      "unlockTool": "Sblocca {{title}}",
+      "lessonCard": "{{action}} {{title}} lezione"
+    },
+    "empty": {
+      "title": "Nessuna lezione ancora",
+      "subtitle": "Semina il database locale per mostrare qui il percorso per principianti."
+    },
+    "tools": {
+      "row-counter": {
+        "title": "Contatore di righe",
+        "description": "Conta righe, giri e ripetizioni senza perdere la posizione."
+      },
+      "stitch-fixes": {
+        "title": "Correzioni dei punti",
+        "description": "Aiuto rapido per arricciature, bordi irregolari, spazi vuoti e punti saltati."
+      },
+      "size-calculator": {
+        "title": "Calcolatore delle dimensioni",
+        "description": "Stima il numero di punti e di righe dal tuo calibro."
+      },
+      "identify-stitch": {
+        "title": "Identificare il punto",
+        "description": "Usa una foto per capire il punto che stai guardando."
+      }
+    }
+  },
+  "lessonDetail": {
+    "lesson": "Lezione",
+    "notFound": "Lezione non trovata.",
+    "difficulty": "Difficoltà",
+    "steps": "Passi",
+    "practice": "Pratica",
+    "practicePaceShort": "corto",
+    "whyItMatters": "Perché è importante",
+    "commonMistakes": "Errori comuni",
+    "startPractice": "Inizia la pratica",
+    "difficultyValues": {
+      "beginner": "Principiante",
+      "intermediate": "Intermedio",
+      "advanced": "Avanzato"
+    }
+  },
+  "settings": {
+    "sections": {
+      "support": "Supporto",
+      "legal": "Legale"
+    },
+    "rows": {
+      "sendFeedback": "Invia feedback",
+      "rateApp": "Valuta l'app",
+      "customerCenter": "Centro clienti",
+      "terms": "Termini",
+      "privacyPolicy": "politica sulla riservatezza"
+    },
+    "premium": {
+      "title": "Sblocca Premium",
+      "subtitle": "Ottieni ogni modello, guida e strumento creativo man mano che Crova cresce.",
+      "cta": "Aggiornamento"
+    },
+    "alerts": {
+      "customerCenterUnavailableTitle": "Centro clienti non disponibile",
+      "customerCenterUnavailableMessage": "Riprova dopo aver configurato gli acquisti."
+    },
+    "accessibility": {
+      "openPremiumUpgrade": "Apri l'aggiornamento premium"
+    }
+  },
+  "tools": {
+    "rowCounter": {
+      "mode": {
+        "rows": "Righe",
+        "rounds": "Turni"
+      },
+      "copy": {
+        "rows": {
+          "label": "Righe completate",
+          "helper": "Ideale per sciarpe, strofinacci, campioni e pezzi piatti."
+        },
+        "rounds": {
+          "label": "Turni completati",
+          "helper": "Ideale per Granny Squares, sottobicchieri, amigurumi e lavori circolari."
+        }
+      },
+      "actions": {
+        "decreaseRows": "Diminuire le righe",
+        "decreaseRounds": "Diminuire i giri",
+        "increaseRows": "Aumenta le righe",
+        "increaseRounds": "Aumenta i giri",
+        "resetRows": "Reimposta righe",
+        "resetRounds": "Reimposta i turni"
+      }
+    },
+    "sizeCalculator": {
+      "units": {
+        "cm": "cm",
+        "in": "In"
+      },
+      "sections": {
+        "gauge": "Misura",
+        "targetSize": "Dimensione obiettivo",
+        "estimate": "Stima"
+      },
+      "fields": {
+        "stitches": "Punti",
+        "rows": "Righe",
+        "width": "Larghezza",
+        "height": "Altezza"
+      },
+      "emptyHelp": "Inserisci il tuo campione campione e la dimensione target per stimare i punti e le righe.",
+      "disclaimer": "Questa è una stima di pianificazione. Controlla sempre il tuo campione prima di impegnarti in una taglia finita."
+    },
+    "identifyStitch": {
+      "empty": {
+        "title": "Aggiungi una foto con punti trasparenti",
+        "subtitle": "Usa una buona illuminazione e riempi la cornice con la trama del punto."
+      },
+      "analysis": {
+        "title": "Analisi",
+        "loading": "Controllo della trama del punto con l'intelligenza artificiale...",
+        "noLikelyStitchDetected": "Non sono riuscito a identificare con sicurezza un punto all'uncinetto da questa immagine.",
+        "noLikelyStitchHint": "Prova una luce più intensa, avvicinati e inquadra una trama a punto singolo per un risultato più nitido.",
+        "bestMatch": "Migliore abbinamento",
+        "confidence": {
+          "high": "Alto",
+          "medium": "Medio",
+          "low": "Basso"
+        },
+        "photoReady": "La foto è pronta. Scegli una foto più chiara in qualsiasi momento se la trama del punto è difficile da vedere.",
+        "noPhoto": "Scegli o scatta una foto per identificare il probabile punto e ottenere indizi adatti ai principianti.",
+        "visibleClues": "Indizi visibili",
+        "nextSteps": "Prossimi passi",
+        "aiResult": "Risultato dell'IA",
+        "readyForAi": "Pronto per l'intelligenza artificiale"
+      },
+      "alerts": {
+        "cameraPermissionTitle": "È necessaria l'autorizzazione della fotocamera",
+        "cameraPermissionMessage": "Consenti l'accesso alla fotocamera per scattare una foto con punti.",
+        "photoPermissionTitle": "È necessaria l'autorizzazione per la foto",
+        "photoPermissionMessage": "Consenti l'accesso alle foto per scegliere un'immagine punto."
+      },
+      "actions": {
+        "takePhoto": "Scatta foto",
+        "choosePhoto": "Scegliere"
+      },
+      "errors": {
+        "couldNotAnalyze": "Impossibile analizzare questa foto. Prova un primo piano più luminoso.",
+        "couldNotAnalyzeWithReason": "Impossibile analizzare questa foto: {{reason}}"
+      }
+    }
+  },
+  "patternDetail": {
+    "pattern": "Modello",
+    "opening": "Apertura...",
+    "resumeProject": "Riprendi il progetto",
+    "startProject": "Avvia progetto",
+    "projectInProgress": "Progetto in corso",
+    "difficulty": "Difficoltà",
+    "category": "Categoria",
+    "general": "Generale",
+    "time": "Tempo",
+    "minutesShort": "{{count}} min",
+    "skillsNeeded": "Competenze necessarie",
+    "materials": "Materiali",
+    "patternOverview": "Panoramica del modello",
+    "steps": "Passi",
+    "structure": "Struttura",
+    "counters": "Contatori",
+    "basic": "di base",
+    "whatToExpect": "Cosa aspettarsi",
+    "guided": "guidato",
+    "counterRows": "{{count}} riga",
+    "counterRows_plural": "{{count}} righe",
+    "counterRounds": "{{count}} rotondo",
+    "counterRounds_plural": "{{count}} giri",
+    "counterRowsTarget": "{{current}} / {{target}} righe",
+    "counterRoundsTarget": "{{current}} / {{target}} giri",
+    "lastWorkedToday": "L'ultima volta ha funzionato oggi",
+    "lastWorkedYesterday": "L'ultima volta ha funzionato ieri",
+    "lastWorkedDaysAgo": "L'ultima volta ha funzionato {{count}} giorni fa",
+    "lastWorkedOnDate": "L'ultima volta ha funzionato {{date}}"
+  },
+  "projectComplete": {
+    "title": "Progetto completato",
+    "notFound": "Progetto non trovato.",
+    "stepsDone": "Passi fatti",
+    "counter": "Contatore",
+    "done": "Fatto",
+    "finishedJustNow": "Ho finito proprio adesso",
+    "finishedOn": "Finito {{date}}",
+    "backToProjects": "Torna a Progetti",
+    "starting": "Di partenza...",
+    "makeAnother": "Creane un altro"
+  },
+  "onboarding": {
+    "intro": {
+      "titlePrefix": "Impara più velocemente con un flusso creato per",
+      "titleAccent": "uncinetto principiante",
+      "slides": {
+        "learnStitches": "Impara i punti",
+        "finishProjects": "Completare i progetti",
+        "trackRows": "Tieni traccia di ogni riga",
+        "buildHabit": "Costruisci la tua abitudine",
+        "stayConsistent": "Rimani coerente"
+      },
+      "rowProgress": "Riga {{current}} / {{total}}"
+    },
+    "quiz": {
+      "stepOf": "Passaggio {{current}} di {{total}}",
+      "steps": {
+        "skillLevel": {
+          "title": "Qual è il tuo livello all'uncinetto?",
+          "subtitle": "Perfetteremo le tue lezioni e i tuoi progetti iniziali in base al punto in cui ti trovi oggi.",
+          "cta": "Continuare",
+          "options": {
+            "beginner": "Sono completamente nuovo",
+            "intermediate": "Conosco le basi",
+            "advanced": "Voglio progetti più difficili"
+          }
+        },
+        "goal": {
+          "title": "Per cosa vuoi aiuto prima?",
+          "subtitle": "Scegli il motivo principale per cui hai scaricato Crova in modo che l'app possa guidarti lì più velocemente.",
+          "cta": "Continuare",
+          "options": {
+            "learnBasics": "Impara i punti centrali",
+            "finishFirstProject": "Finisci il mio primo vero progetto",
+            "buildHabit": "Costruisci un'abitudine costante all'uncinetto"
+          }
+        },
+        "handedness": {
+          "title": "Con quale mano lavori all'uncinetto?",
+          "subtitle": "Questo ci aiuta a mostrare il giusto angolo di insegnamento una volta aggiunto il contenuto per mancini.",
+          "cta": "Inizia Crova",
+          "options": {
+            "right": "Destro",
+            "left": "Mancino"
+          }
+        }
+      }
+    },
+    "loader": {
+      "titlePreparing": "Preparare la tua esperienza",
+      "titleReady": "È tutto pronto.",
+      "ctaPreview": "Prova una demo veloce",
+      "ctaReady": "Inizia Crova",
+      "summaryEyebrow": "Inizio personalizzato",
+      "summarySubtitle": "Abbiamo ottimizzato i tuoi primi passi in base al tuo livello, concentrazione e configurazione.",
+      "summaryCardTitle": "La tua configurazione",
+      "summaryCardSubtitle": "Questo è il percorso che Crova inizierà in base a quanto ci hai raccontato.",
+      "summaryLabels": {
+        "skillLevel": "Esperienza",
+        "goal": "Messa a fuoco",
+        "handedness": "Manualità"
+      },
+      "summaryFallbacks": {
+        "skillLevel": "Personalizzato",
+        "goal": "Il tuo percorso all'uncinetto",
+        "handedness": "Configurazione standard"
+      },
+      "nextTitle": "Cosa succede dopo",
+      "goalLabels": {
+        "learnBasics": "punti centrali",
+        "finishFirstProject": "il tuo primo progetto",
+        "buildHabit": "un'abitudine costante all'uncinetto",
+        "default": "il tuo percorso all'uncinetto"
+      },
+      "skillLabels": {
+        "beginner": "adatto ai principianti",
+        "intermediate": "pronto per l'intermedio",
+        "advanced": "avanzato",
+        "default": "personalizzato"
+      },
+      "messages": {
+        "buildingPlan": "Creazione del tuo piano {{skillLabel}}...",
+        "pickingLessons": "Scelta delle lezioni per {{goalLabel}}...",
+        "tracking": "Impostazione del monitoraggio dei progressi in corso...",
+        "finalizing": "Finalizzazione dell'avvio di Crova..."
+      },
+      "nextSteps": {
+        "skillLevel": {
+          "beginner": "Inizierai con lezioni brevi e passo passo che mantengono il ritmo accessibile.",
+          "intermediate": "Riceverai un rapido aggiornamento, quindi passerai subito alla pratica guidata.",
+          "advanced": "Passerai a modelli più impegnativi e a un lavoro tecnico più profondo.",
+          "default": "Inizierai con un percorso di lezioni personalizzato adatto al tuo livello."
+        },
+        "goal": {
+          "learnBasics": "Le tue prime lezioni si concentreranno sui punti principali e su come si incastrano tra loro.",
+          "finishFirstProject": "Il tuo piano ti guiderà verso un primo progetto finito il più rapidamente possibile.",
+          "buildHabit": "Il tuo piano favorirà sessioni più leggere che sono più facili da ripetere in modo coerente.",
+          "default": "Il tuo piano si concentrerà sul risultato che conta di più per te."
+        },
+        "tracking": "Gli strumenti di monitoraggio e avanzamento delle righe saranno pronti fin dal primo giorno."
+      }
+    },
+    "demo": {
+      "eyebrow": "Pratica veloce",
+      "title": "Prova come insegna Crova",
+      "subtitle": "Una piccola lezione guidata per {{skillLabel}} incentrata su {{goalLabel}}.",
+      "stepLabel": "Passaggio {{current}}",
+      "chips": {
+        "duration": "Meno di 30 secondi",
+        "handedness": "{{value}} salvato"
+      },
+      "actions": {
+        "previous": "Precedente",
+        "next": "Prossimo passo",
+        "finish": "Vedi il mio piano"
+      },
+      "skillAudience": {
+        "beginner": "principianti",
+        "intermediate": "uncinetto che conoscono le basi",
+        "advanced": "crocheters pronti per una sfida",
+        "default": "uncinetto"
+      },
+      "goalFocus": {
+        "learnBasics": "imparare i punti fondamentali",
+        "finishFirstProject": "terminare un primo progetto",
+        "buildHabit": "costruire un'abitudine costante",
+        "default": "trovare il tuo ritmo"
+      },
+      "cards": {
+        "one": {
+          "title": "Inizia con un movimento chiaro"
+        },
+        "two": {
+          "title": "Rimani sincronizzato con ogni passaggio"
+        },
+        "three": {
+          "title": "Continua a muoverti verso un risultato reale"
+        }
+      },
+      "stepBodies": {
+        "skill": {
+          "beginner": "Rallentiamo la lezione e manteniamo il movimento semplice, in modo che tu possa concentrarti solo su una cosa alla volta.",
+          "intermediate": "Manteniamo la spiegazione breve e ti avviciniamo alla pratica guidata senza rallentare il ritmo.",
+          "advanced": "Manteniamo la guida più leggera, così puoi muoverti rapidamente e dedicare più tempo a fare che a leggere.",
+          "default": "Abbiniamo il ritmo della lezione al tuo livello, quindi la guida sembra utile anziché ripetitiva."
+        },
+        "progress": "I progressi rimangono visibili mentre ti muovi, così sai sempre cosa verrà dopo e dove ti eri interrotto.",
+        "goal": {
+          "learnBasics": "Il tuo percorso si concentrerà innanzitutto sui punti fondamentali, perché questo è il modo più veloce per acquisire sicurezza.",
+          "finishFirstProject": "Il tuo percorso continuerà a spingerti verso un progetto finito, affinché la pratica si trasformi in qualcosa di tangibile.",
+          "buildHabit": "Il tuo percorso favorirà vittorie brevi facili da ripetere, quindi è naturale tornare domani.",
+          "default": "Il tuo percorso rimarrà centrato sul risultato che più conta per te."
+        }
+      },
+      "note": "Questo è lo stesso ritmo guidato, passo dopo passo, che utilizzerai nelle tue prime lezioni con Crova."
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "title": "リブ付き手ぬぐい",
+  "description": "バックループのみの練習を便利なテクスチャー生地に変えるシンプルな正方形。",
+  "materials": [
+    "綿糸",
+    "5mmフック",
+    "糸針",
+    "はさみ"
+  ],
+  "skills": [
+    "基礎チェーン",
+    "半二重かぎ針編み",
+    "バックループのみ",
+    "列を変える"
+  ],
+  "expectationText": "リブがすぐに明らかな実用的な見本サイズのプロジェクトなので、ウェアラブルに移る前にテクニックを習得できます。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "財団",
+      "instruction": "チェーン19針。"
+    },
+    {
+      "type": "row",
+      "title": "行1",
+      "instruction": "フックから3番目のチェーンと各チェーンを横に半分二重かぎ針編みします。",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "行 2",
+      "instruction": "2をチェーンして回して、後ろのループのみを横切るように半二重かぎ針編みをします。",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "3行目から16行目",
+      "instruction": "2をチェーンして回転させ、後ろのループのみを横に編むだけの半二重かぎ針編みを続けます。",
+      "counterLabel": "row",
+      "targetCount": 16
+    },
+    {
+      "type": "instruction",
+      "title": "仕上げる",
+      "instruction": "留めて両端をきれいに編み込みます。"
+    }
+  ]
+}

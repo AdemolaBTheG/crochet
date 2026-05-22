@@ -1,0 +1,43 @@
+{
+  "title": "Sciarpa per principianti",
+  "description": "Un progetto lungo e ripetitivo che rende il tracciamento delle righe davvero utile.",
+  "materials": [
+    "Filato pettinato morbido",
+    "Gancio da 5,5 mm",
+    "ago da filo",
+    "forbici"
+  ],
+  "skills": [
+    "Catena di fondazione",
+    "mezza maglia alta",
+    "girando le file",
+    "conteggio delle righe"
+  ],
+  "expectationText": "Un progetto che si ripete più a lungo in cui l'app ti aiuta a rimanere sul pezzo senza dover ripetere ogni riga da zero.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Fondazione",
+      "instruction": "Catenina 26 maglie."
+    },
+    {
+      "type": "row",
+      "title": "Riga 1",
+      "instruction": "Mezza maglia alta nella terza catenella dall'uncinetto e in ogni catenella trasversale.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "repeat",
+      "title": "Righe da 2 a 40",
+      "instruction": "Fai 2 catenelle, gira e lavora mezza maglia alta su ogni riga.",
+      "counterLabel": "row",
+      "targetCount": 40
+    },
+    {
+      "type": "instruction",
+      "title": "Fine",
+      "instruction": "Allacciare, intrecciare le estremità e bloccare leggermente se necessario."
+    }
+  ]
+}
