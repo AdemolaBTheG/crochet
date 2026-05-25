@@ -1,0 +1,422 @@
+{
+  "common": {
+    "continue": "계속하다",
+    "preparing": "준비 중...",
+    "filters": {
+      "all": "모두"
+    },
+    "badges": {
+      "pro": "찬성"
+    },
+    "time": {
+      "today": "오늘",
+      "yesterday": "어제",
+      "daysAgo": "{{count}}일 전"
+    },
+    "counter": {
+      "rounds": "{{count}} 라운드",
+      "rows": "{{count}} 행",
+      "none": "아직 카운터가 없습니다"
+    },
+    "steps": {
+      "progress": "{{current}}/{{total}}걸음",
+      "stepOnly": "{{current}} 단계",
+      "count": "{{count}}걸음"
+    }
+  },
+  "shared": {
+    "close": "닫다",
+    "unlockPremium": "프리미엄 잠금 해제",
+    "stepOf": "{{total}}의 {{current}} 단계"
+  },
+  "chat": {
+    "thinking": "생각...",
+    "errorFallback": "응답을 생성하는 동안 문제가 발생했습니다. 다시 시도해 주세요."
+  },
+  "tabs": {
+    "home": "집",
+    "learn": "배우다",
+    "projects": "프로젝트"
+  },
+  "home": {
+    "sections": {
+      "activeProjects": "활성 프로젝트"
+    },
+    "accessibility": {
+      "continueProject": "계속 {{name}}",
+      "showPatterns": "{{category}} 패턴 표시"
+    },
+    "lastWorkedPrefix": "마지막으로 일한",
+    "lastWorkedSeparator": "·"
+  },
+  "projects": {
+    "sections": {
+      "inProgress": "진행중",
+      "completed": "완전한"
+    },
+    "empty": {
+      "title": "아직 프로젝트가 없습니다.",
+      "subtitle": "홈에서 패턴을 선택하고 프로젝트 시작을 탭하세요."
+    },
+    "accessibility": {
+      "openProject": "{{name}} 열기"
+    }
+  },
+  "learn": {
+    "toolsSectionTitle": "도구",
+    "lessonLabel": "수업 {{index}}",
+    "actions": {
+      "open": "열려 있는",
+      "unlock": "터놓다"
+    },
+    "accessibility": {
+      "unlockTool": "{{title}} 잠금 해제",
+      "lessonCard": "{{action}} {{title}} 수업"
+    },
+    "empty": {
+      "title": "아직 수업이 없습니다.",
+      "subtitle": "여기에 초보자 경로를 표시하려면 로컬 데이터베이스를 시드하세요."
+    },
+    "tools": {
+      "row-counter": {
+        "title": "행 카운터",
+        "description": "자리를 잃지 않고 행, 라운드 및 반복을 계산합니다."
+      },
+      "stitch-fixes": {
+        "title": "스티치 수정",
+        "description": "컬링, 고르지 못한 가장자리, 틈새 및 스티치 누락에 대한 빠른 도움말입니다."
+      },
+      "size-calculator": {
+        "title": "크기 계산기",
+        "description": "게이지에서 스티치와 행 수를 추정합니다."
+      },
+      "identify-stitch": {
+        "title": "스티치 식별",
+        "description": "보고 있는 스티치를 이해하려면 사진을 사용하십시오."
+      }
+    }
+  },
+  "lessonDetail": {
+    "lesson": "수업",
+    "notFound": "강의를 찾을 수 없습니다.",
+    "difficulty": "어려움",
+    "steps": "단계",
+    "practice": "관행",
+    "practicePaceShort": "짧은",
+    "whyItMatters": "왜 중요한가요?",
+    "commonMistakes": "일반적인 실수",
+    "startPractice": "연습 시작",
+    "difficultyValues": {
+      "beginner": "초보자",
+      "intermediate": "중급",
+      "advanced": "고급의"
+    }
+  },
+  "settings": {
+    "sections": {
+      "support": "지원하다",
+      "legal": "합법적인"
+    },
+    "rows": {
+      "sendFeedback": "피드백 보내기",
+      "rateApp": "앱 평가",
+      "customerCenter": "고객센터",
+      "terms": "자귀",
+      "privacyPolicy": "개인 정보 보호 정책"
+    },
+    "premium": {
+      "title": "프리미엄 잠금 해제",
+      "subtitle": "Crova가 성장함에 따라 모든 패턴, 가이드 및 창의적인 도구를 얻으세요.",
+      "cta": "치받이"
+    },
+    "alerts": {
+      "customerCenterUnavailableTitle": "고객센터 이용 불가",
+      "customerCenterUnavailableMessage": "구매를 구성한 후 다시 시도해 주세요."
+    },
+    "accessibility": {
+      "openPremiumUpgrade": "오픈 프리미엄 업그레이드"
+    }
+  },
+  "tools": {
+    "rowCounter": {
+      "mode": {
+        "rows": "행",
+        "rounds": "라운드"
+      },
+      "copy": {
+        "rows": {
+          "label": "완료된 행",
+          "helper": "스카프, 행주, 견본, 평면 조각에 가장 적합합니다."
+        },
+        "rounds": {
+          "label": "라운드 완료",
+          "helper": "그래니 스퀘어, 코스터, 아미구루미, 원형 작업에 가장 적합합니다."
+        }
+      },
+      "actions": {
+        "decreaseRows": "행 감소",
+        "decreaseRounds": "라운드 감소",
+        "increaseRows": "행 늘리기",
+        "increaseRounds": "라운드 증가",
+        "resetRows": "행 재설정",
+        "resetRounds": "라운드 재설정"
+      }
+    },
+    "sizeCalculator": {
+      "units": {
+        "cm": "센티미터",
+        "in": "~에"
+      },
+      "sections": {
+        "gauge": "계량기",
+        "targetSize": "대상 크기",
+        "estimate": "추정"
+      },
+      "fields": {
+        "stitches": "스티치",
+        "rows": "행",
+        "width": "너비",
+        "height": "키"
+      },
+      "emptyHelp": "스티치와 행을 추정하려면 견본 게이지와 대상 크기를 입력하세요.",
+      "disclaimer": "기획견적입니다. 완성된 크기를 결정하기 전에 항상 자신의 견본을 확인하십시오."
+    },
+    "identifyStitch": {
+      "empty": {
+        "title": "선명한 스티치 사진 추가",
+        "subtitle": "좋은 조명을 사용하고 스티치 질감으로 프레임을 채우세요."
+      },
+      "analysis": {
+        "title": "분석",
+        "loading": "AI로 스티치 질감 확인…",
+        "noLikelyStitchDetected": "나는 이 이미지에서 크로셰 스티치를 자신 있게 식별할 수 없었습니다.",
+        "noLikelyStitchHint": "더 밝은 빛을 시도하고 더 가까이 다가가서 단일 스티치 텍스처를 프레임하여 더 선명한 결과를 얻으세요.",
+        "bestMatch": "최고의 일치",
+        "confidence": {
+          "high": "높은",
+          "medium": "중간",
+          "low": "낮은"
+        },
+        "photoReady": "사진이 준비되었습니다. 스티치 질감이 잘 보이지 않으면 언제든지 더 선명한 사진을 선택하세요.",
+        "noPhoto": "사진을 선택하거나 찍어서 가능한 스티치를 식별하고 초보자에게 친숙한 단서를 얻으세요.",
+        "visibleClues": "눈에 보이는 단서",
+        "nextSteps": "다음 단계",
+        "aiResult": "AI 결과",
+        "readyForAi": "AI를 위한 준비"
+      },
+      "alerts": {
+        "cameraPermissionTitle": "카메라 권한이 필요합니다",
+        "cameraPermissionMessage": "스티치 사진을 찍으려면 카메라 액세스를 허용하세요.",
+        "photoPermissionTitle": "사진 권한이 필요합니다",
+        "photoPermissionMessage": "스티치 이미지를 선택하려면 사진 액세스를 허용하세요."
+      },
+      "actions": {
+        "takePhoto": "사진 찍기",
+        "choosePhoto": "선택하다"
+      },
+      "errors": {
+        "couldNotAnalyze": "이 사진을 분석할 수 없습니다. 좀 더 밝게 클로즈업해 보세요.",
+        "couldNotAnalyzeWithReason": "이 사진을 분석할 수 없습니다: {{reason}}"
+      }
+    }
+  },
+  "patternDetail": {
+    "pattern": "무늬",
+    "opening": "열기...",
+    "resumeProject": "프로젝트 재개",
+    "startProject": "프로젝트 시작",
+    "projectInProgress": "프로젝트 진행 중",
+    "difficulty": "어려움",
+    "category": "범주",
+    "general": "일반적인",
+    "time": "시간",
+    "minutesShort": "{{count}}분",
+    "skillsNeeded": "필요한 기술",
+    "materials": "재료",
+    "patternOverview": "패턴 개요",
+    "steps": "단계",
+    "structure": "구조",
+    "counters": "카운터",
+    "basic": "기초적인",
+    "whatToExpect": "무엇을 기대해야 할까요?",
+    "guided": "안내됨",
+    "counterRows": "{{count}} 행",
+    "counterRows_plural": "{{count}} 행",
+    "counterRounds": "{{count}} 라운드",
+    "counterRounds_plural": "{{count}} 라운드",
+    "counterRowsTarget": "{{current}} / {{target}} 행",
+    "counterRoundsTarget": "{{current}} / {{target}} 라운드",
+    "lastWorkedToday": "오늘 마지막으로 근무함",
+    "lastWorkedYesterday": "어제 마지막으로 일했어요",
+    "lastWorkedDaysAgo": "{{count}}일 전에 마지막으로 작업했습니다.",
+    "lastWorkedOnDate": "마지막 작업 날짜: {{date}}"
+  },
+  "projectComplete": {
+    "title": "프로젝트 완료",
+    "notFound": "프로젝트를 찾을 수 없습니다.",
+    "stepsDone": "완료된 단계",
+    "counter": "계수기",
+    "done": "완료",
+    "finishedJustNow": "지금 막 끝났어요",
+    "finishedOn": "{{date}} 완료됨",
+    "backToProjects": "프로젝트로 돌아가기",
+    "starting": "시작 중...",
+    "makeAnother": "또 만들어 보세요"
+  },
+  "onboarding": {
+    "intro": {
+      "titlePrefix": "위해 구축된 흐름으로 더 빠르게 학습하세요.",
+      "titleAccent": "초보자 크로 셰 뜨개질",
+      "slides": {
+        "learnStitches": "스티치 배우기",
+        "finishProjects": "프로젝트 완료",
+        "trackRows": "각 행 추적",
+        "buildHabit": "습관을 기르세요",
+        "stayConsistent": "일관성 유지"
+      },
+      "rowProgress": "행 {{current}} / {{total}}"
+    },
+    "quiz": {
+      "stepOf": "{{total}}의 {{current}} 단계",
+      "steps": {
+        "skillLevel": {
+          "title": "당신의 뜨개질 수준은 무엇입니까?",
+          "subtitle": "우리는 귀하의 현재 위치에 맞게 수업과 시작 프로젝트를 조정할 것입니다.",
+          "cta": "계속하다",
+          "options": {
+            "beginner": "나는 완전히 새로운 사람이다",
+            "intermediate": "나는 기본적인 것을 알고 있다",
+            "advanced": "나는 더 힘든 프로젝트를 원한다"
+          }
+        },
+        "goal": {
+          "title": "먼저 어떤 도움을 받고 싶으신가요?",
+          "subtitle": "앱이 더 빠르게 안내할 수 있도록 Crova를 다운로드한 주된 이유를 선택하세요.",
+          "cta": "계속하다",
+          "options": {
+            "learnBasics": "핵심 스티치를 배워보세요",
+            "finishFirstProject": "내 첫 번째 실제 프로젝트를 완료하세요",
+            "buildHabit": "꾸준한 크로셰 습관을 기르세요"
+          }
+        },
+        "handedness": {
+          "title": "어느 손으로 뜨개질을 하시나요?",
+          "subtitle": "이는 왼손잡이 콘텐츠가 추가되면 올바른 교육 각도를 표시하는 데 도움이 됩니다.",
+          "cta": "크로바 시작하기",
+          "options": {
+            "right": "오른손잡이",
+            "left": "왼손잡이"
+          }
+        }
+      }
+    },
+    "loader": {
+      "titlePreparing": "체험 준비하기",
+      "titleReady": "모든 준비가 완료되었습니다.",
+      "ctaPreview": "빠른 데모를 사용해 보세요",
+      "ctaReady": "크로바 시작하기",
+      "summaryEyebrow": "맞춤형 시작",
+      "summarySubtitle": "레벨, 초점, 설정에 관한 첫 번째 단계를 조정했습니다.",
+      "summaryCardTitle": "귀하의 설정",
+      "summaryCardSubtitle": "이것이 귀하가 알려주신 내용을 바탕으로 Crova가 시작할 경로입니다.",
+      "summaryLabels": {
+        "skillLevel": "경험",
+        "goal": "집중하다",
+        "handedness": "손재주"
+      },
+      "summaryFallbacks": {
+        "skillLevel": "맞춤형",
+        "goal": "당신의 크로셰 길",
+        "handedness": "표준 설정"
+      },
+      "nextTitle": "다음에 무슨 일이 일어날까요?",
+      "goalLabels": {
+        "learnBasics": "코어 스티치",
+        "finishFirstProject": "당신의 첫 번째 프로젝트",
+        "buildHabit": "꾸준한 크로셰 습관",
+        "default": "너의 뜨개질 길"
+      },
+      "skillLabels": {
+        "beginner": "초보자 친화적",
+        "intermediate": "중급 준비",
+        "advanced": "고급의",
+        "default": "개인화된"
+      },
+      "messages": {
+        "buildingPlan": "{{skillLabel}} 계획을 세우는 중...",
+        "pickingLessons": "{{goalLabel}} 수업 선택 중...",
+        "tracking": "진행 상황 추적 설정 중...",
+        "finalizing": "Crova 시작을 마무리하는 중..."
+      },
+      "nextSteps": {
+        "skillLevel": {
+          "beginner": "접근 가능한 속도를 유지하는 짧은 단계별 수업으로 시작합니다.",
+          "intermediate": "빠르게 새로 고침을 받은 후 즉시 안내식 실습으로 이동합니다.",
+          "advanced": "당신은 더 까다로운 패턴과 더 깊은 기술 작업에 뛰어들게 될 것입니다.",
+          "default": "귀하의 수준에 맞는 맞춤형 수업 경로로 시작됩니다."
+        },
+        "goal": {
+          "learnBasics": "첫 번째 수업에서는 핵심 스티치와 스티치가 어떻게 결합되는지에 중점을 둘 것입니다.",
+          "finishFirstProject": "귀하의 계획은 가능한 한 빨리 첫 번째 완성된 프로젝트를 향해 귀하를 이끌 것입니다.",
+          "buildHabit": "귀하의 계획은 지속적으로 반복하기 쉬운 가벼운 세션을 선호할 것입니다.",
+          "default": "귀하의 계획은 귀하에게 가장 중요한 결과에 중점을 둘 것입니다."
+        },
+        "tracking": "행 추적 및 진행 도구는 첫날부터 준비됩니다."
+      }
+    },
+    "demo": {
+      "eyebrow": "빠른 연습",
+      "title": "Crova가 가르치는 방법을 시도해 보세요",
+      "subtitle": "{{goalLabel}}에 초점을 맞춘 {{skillLabel}}을 위한 작은 안내 수업입니다.",
+      "stepLabel": "{{current}} 단계",
+      "chips": {
+        "duration": "30초 이내",
+        "handedness": "{{value}} 저장됨"
+      },
+      "actions": {
+        "previous": "이전의",
+        "next": "다음 단계",
+        "finish": "내 계획 보기"
+      },
+      "skillAudience": {
+        "beginner": "초보자",
+        "intermediate": "기본을 아는 코바늘뜨기",
+        "advanced": "도전할 준비가 된 크로셰 뜨개질",
+        "default": "크로 셰 뜨개질"
+      },
+      "goalFocus": {
+        "learnBasics": "핵심 스티치 배우기",
+        "finishFirstProject": "첫 번째 프로젝트를 마무리하다",
+        "buildHabit": "꾸준한 습관 만들기",
+        "default": "당신의 리듬을 찾아"
+      },
+      "cards": {
+        "one": {
+          "title": "하나의 명확한 동작으로 시작"
+        },
+        "two": {
+          "title": "각 단계의 동기화를 유지하세요"
+        },
+        "three": {
+          "title": "실제 결과를 향해 계속 전진하세요"
+        }
+      },
+      "stepBodies": {
+        "skill": {
+          "beginner": "우리는 수업 속도를 늦추고 동작을 단순하게 유지하므로 한 번에 한 가지에만 집중할 수 있습니다.",
+          "intermediate": "우리는 설명을 짧게 유지하고 속도를 늦추지 않고 안내에 따라 실습하도록 안내합니다.",
+          "advanced": "우리는 지침을 더 가볍게 유지하여 빠르게 움직일 수 있고 읽는 것보다 더 많은 시간을 할애할 수 있습니다.",
+          "default": "우리는 귀하의 레벨에 맞춰 수업 속도를 조정하므로 지침이 반복적이지 않고 유용하다고 느껴집니다."
+        },
+        "progress": "이동하는 동안 진행 상황이 계속 표시되므로 다음에 무엇이 올지, 어디에서 중단했는지 항상 알 수 있습니다.",
+        "goal": {
+          "learnBasics": "당신의 길은 핵심 스티치에 먼저 초점을 맞추게 될 것입니다. 그것이 자신감을 키우는 가장 빠른 방법이기 때문입니다.",
+          "finishFirstProject": "당신의 길은 완성된 프로젝트를 향해 계속해서 나아가게 될 것이므로 실천은 실질적인 것으로 변합니다.",
+          "buildHabit": "당신의 길은 반복하기 쉬운 짧은 승리를 선호할 것이므로 내일 다시 돌아오는 것이 자연스럽게 느껴집니다.",
+          "default": "당신의 길은 당신에게 가장 중요한 결과에 집중될 것입니다."
+        }
+      },
+      "note": "이는 첫 번째 Crova 레슨에서 사용하게 될 것과 동일한 단계별 안내 리듬입니다."
+    }
+  }
+}

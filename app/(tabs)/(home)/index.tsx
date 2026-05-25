@@ -8,10 +8,10 @@ import {
   type Pattern,
   type Project,
 } from '@/db/schema';
+import { tap, warn } from '@/services/haptics';
 import { useDbStore } from '@/stores/dbStore';
 import { FlashList } from '@shopify/flash-list';
 import { desc, eq } from 'drizzle-orm';
-import { selectionAsync } from 'expo-haptics';
 import { Image } from 'expo-image';
 import { Link, router, useFocusEffect } from 'expo-router';
 import React, { useCallback, useState } from 'react';
@@ -101,6 +101,9 @@ function ActiveProjectCard({ project, width }: { project: ActiveProject; width: 
       }}
       asChild>
       <Pressable
+        onPress={() => {
+          tap();
+        }}
         style={{
           width,
           flexDirection: 'row',
@@ -275,7 +278,7 @@ function CategoryChips({
           <Pressable
             key={category}
             onPress={() => {
-              selectionAsync();
+              tap();
               onSelectCategory(category);
             }}
             style={{
@@ -418,14 +421,15 @@ export default function HomeScreen() {
         const isLocked = !isPro && !isPatternFree(item);
         const card = (
           <Pressable
-            onPress={
-              isLocked
-                ? () => {
-                    void selectionAsync();
-                    router.push('/(paywalls)');
-                  }
-                : undefined
-            }
+            onPress={() => {
+              if (isLocked) {
+                warn();
+                router.push('/(paywalls)');
+                return;
+              }
+
+              tap();
+            }}
             style={{
               borderRadius: 24,
               borderCurve: 'continuous',

@@ -1,0 +1,19 @@
+{
+  "title": "Aumentando e diminuindo",
+  "description": "Dê forma ao tecido de crochê adicionando ou removendo pontos sem perder a conta.",
+  "content": {
+    "summary": "Aprenda a fazer dois pontos em um espaço para aumentar e combinar pontos para diminuir.",
+    "whyItMatters": "A modelagem permite criar círculos planos, formas arredondadas e peças ajustadas de maneira mais organizada, em vez de apenas retângulos planos.",
+    "steps": [
+      "Para aumentar, trabalhe dois pontos no mesmo ponto ou espaço.",
+      "Para diminuir no ponto baixo, insira no próximo ponto, puxe uma laçada, insira no ponto seguinte, puxe uma laçada, depois passe o fio e passe por todas as laçadas.",
+      "Conte os pontos no final de cada carreira ou rodada para que a modelagem permaneça intencional.",
+      "Pratique colocar os aumentos uniformemente para que o tecido fique plano em vez de babado."
+    ],
+    "practice": "Faça uma amostra com aumentos emparelhados e uma amostra com diminuições simples e conte os pontos após cada carreira.",
+    "commonMistakes": [
+      "Aumentando em lugares aleatórios e deformando acidentalmente o tecido.",
+      "Esquecer onde começou a diminuição e retirar um ponto da contagem."
+    ]
+  }
+}

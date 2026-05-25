@@ -1,0 +1,50 @@
+{
+  "title": "Grundläggande Granny Square",
+  "description": "Ett klassiskt virkmotiv som lär ut dubbelvirkade kluster och hörn.",
+  "materials": [
+    "Kamgarn",
+    "5 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Magisk ring",
+    "dubbelvirkning",
+    "kedjeutrymmen",
+    "smygfogning"
+  ],
+  "expectationText": "Ett klassiskt motiv som lär ut hörn, kluster och rund struktur utan att hoppa in i ett stort projekt.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Mittring",
+      "instruction": "Skapa en magisk ring eller kedja 4 och gå ihop till en slinga."
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 1",
+      "instruction": "Gör 4 mormorskluster åtskilda av kedjemellanrum och gå samman för att stänga torget.",
+      "counterLabel": "runda",
+      "targetCount": 1
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 2",
+      "instruction": "Sätt sy till ett hörnutrymme, bygg nästa lager av mormorskluster och forma hörn med kedjemellanrum.",
+      "counterLabel": "runda",
+      "targetCount": 2
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 3",
+      "instruction": "Upprepa mormorskluster längs sidorna och hörnen tills fyrkanten når den storlek du vill ha.",
+      "counterLabel": "runda",
+      "targetCount": 3
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Gå runt, fäst av och väv in ändarna."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "title": "Baleia Amigurumi",
+  "description": "Uma simpática baleia de pelúcia que se baseia na bola básica com modelagem e acabamento simples.",
+  "materials": [
+    "Fio penteado",
+    "gancho de 4 mm",
+    "marcador de ponto",
+    "recheio",
+    "olhos de segurança",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Anel mágico",
+    "crochê simples",
+    "aumentando",
+    "diminuição invisível",
+    "trabalhando em rodadas"
+  ],
+  "expectationText": "Um projeto de brinquedo para iniciantes em que a contagem redonda e a limpeza diminuem a importância, mas a modelagem ainda permanece acessível.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Comece o corpo",
+      "instruction": "Comece com um anel mágico e coloque um marcador no primeiro ponto de cada volta."
+    },
+    {
+      "type": "repita",
+      "title": "Aumentar o corpo",
+      "instruction": "Aumente uniformemente nas primeiras rodadas até que o corpo forme uma xícara rasa.",
+      "counterLabel": "redondo",
+      "targetCount": 4
+    },
+    {
+      "type": "repita",
+      "title": "Trabalhe em rodadas uniformes",
+      "instruction": "Faça um ponto baixo sem aumentar para construir o comprimento do corpo principal.",
+      "counterLabel": "redondo",
+      "targetCount": 8
+    },
+    {
+      "type": "instrução",
+      "title": "Adicione olhos e recheio",
+      "instruction": "Insira os olhos antes que a abertura fique muito apertada e comece a encher levemente."
+    },
+    {
+      "type": "repita",
+      "title": "Dê forma à extremidade da cauda",
+      "instruction": "Use diminuições invisíveis para afunilar o corpo enquanto mantém os pontos lisos.",
+      "counterLabel": "redondo",
+      "targetCount": 11
+    },
+    {
+      "type": "instrução",
+      "title": "Termine as barbatanas e a cauda",
+      "instruction": "Costure ou faça barbatanas laterais simples e um formato de cauda, ​​depois feche a abertura final e esconda a ponta."
+    }
+  ]
+}

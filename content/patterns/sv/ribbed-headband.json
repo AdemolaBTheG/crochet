@@ -1,0 +1,49 @@
+{
+  "title": "Ribbstickat pannband",
+  "description": "En stretchig, bärbar rektangel gjord med rader med endast bakre öglor och en enkel söm.",
+  "materials": [
+    "Mjukt kamgarn",
+    "5 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Foundation kedja",
+    "halv dubbelvirkad",
+    "endast bakre slinga",
+    "vända rader",
+    "sömmar"
+  ],
+  "expectationText": "En bärbar version av ribbning där den färdiga rektangeln blir något användbart med en ren sammanfogning.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Grund",
+      "instruction": "Kedja tillräckligt med stygn för pannbandets bredd, vanligtvis 10 till 14 stygn."
+    },
+    {
+      "type": "rad",
+      "title": "Rad 1",
+      "instruction": "Halva dubbelvirka i den tredje kedjan från nålen och varje kedja tvärs över.",
+      "counterLabel": "rad",
+      "targetCount": 1
+    },
+    {
+      "type": "upprepa",
+      "title": "Rad 2 till 32",
+      "instruction": "Kedja 2, vänd och virka en halv dubbelvirkning i bakre maskbågen endast över varje varv.",
+      "counterLabel": "rad",
+      "targetCount": 32
+    },
+    {
+      "type": "instruktion",
+      "title": "Kontrollera passformen",
+      "instruction": "Linda remsan runt huvudet med lätt stretch och lägg till eller ta bort rader om det behövs."
+    },
+    {
+      "type": "instruktion",
+      "title": "Ansluta sig till",
+      "instruction": "Sy ihop kortkanterna, fäst av och väv in svansarna i resåren."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Ponto deslizante e união",
+  "description": "Use o ponto baixíssimo para mover com precisão, unir círculos e finalizar as bordas de maneira limpa.",
+  "content": {
+    "summary": "O ponto baixíssimo é curto e simples, mas é essencial para unir voltas e orlas.",
+    "whyItMatters": "Você precisa disso para montanhas-russas, quadrados de vovó e qualquer projeto trabalhado em redondo.",
+    "steps": [
+      "Insira a agulha no ponto ou espaço.",
+      "Passe o fio e puxe o ponto e a laçada da agulha de uma só vez.",
+      "Use o ponto baixíssimo para unir o final de uma rodada ao primeiro ponto."
+    ],
+    "practice": "Faça uma corrente curta, junte-a em um anel e pratique o ponto baixíssimo ao redor dela.",
+    "commonMistakes": [
+      "Puxando os pontos baixíssimos com muita força.",
+      "Unindo ao ponto errado e mudando o início da rodada."
+    ]
+  }
+}

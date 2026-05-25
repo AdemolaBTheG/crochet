@@ -1,0 +1,57 @@
+{
+  "title": "Bolsa simples com cordão",
+  "description": "Uma pequena bolsa trabalhada a partir de uma base redonda em lados retos com um cordão de corrente.",
+  "materials": [
+    "Fio de algodão",
+    "Gancho de 4,5 mm",
+    "marcador de ponto",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Anel mágico",
+    "crochê simples",
+    "aumentando",
+    "trabalhando em rodadas",
+    "cadeia de fundação"
+  ],
+  "expectationText": "Um pequeno recipiente útil que ensina a passar de uma base circular plana para lados verticais simples.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Comece a base",
+      "instruction": "Faça um anel mágico ou corrente 4 e junte-o em um laço."
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 1",
+      "instruction": "Faça 8 pontos baixos no centro e marque o primeiro ponto.",
+      "counterLabel": "redondo",
+      "targetCount": 1
+    },
+    {
+      "type": "repita",
+      "title": "Rodadas 2 a 4",
+      "instruction": "Aumente uniformemente a cada rodada até que a base seja larga o suficiente para uma pequena bolsa.",
+      "counterLabel": "redondo",
+      "targetCount": 4
+    },
+    {
+      "type": "repita",
+      "title": "Rodadas 5 a 14",
+      "instruction": "Faça um ponto baixo sem aumentar para construir as laterais.",
+      "counterLabel": "redondo",
+      "targetCount": 14
+    },
+    {
+      "type": "instrução",
+      "title": "Faça o cordão",
+      "instruction": "Amarre um cordão longo o suficiente para envolver a abertura da bolsa e passe-o pelos espaços próximos à borda superior."
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Dê pequenos nós nas pontas do cordão, prenda e teça as pontas restantes."
+    }
+  ]
+}

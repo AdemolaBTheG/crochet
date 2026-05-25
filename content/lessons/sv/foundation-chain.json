@@ -1,0 +1,19 @@
+{
+  "title": "Foundation kedja",
+  "description": "Gör startkedjan som används för rader, halsdukar, disktrasor och mer.",
+  "content": {
+    "summary": "Lär dig garnets rörelser och skapa jämna kedjestygn.",
+    "whyItMatters": "Grundkedjan bestämmer bredden på många nybörjarprojekt.",
+    "steps": [
+      "Börja med en slipknut på kroken.",
+      "Ett garn bakifrån och fram.",
+      "Dra garnet genom öglan på kroken.",
+      "Upprepa tills din kedjelängd ser jämn ut."
+    ],
+    "practice": "Kedja 15 stygn två gånger och jämför hur jämna de ser ut.",
+    "commonMistakes": [
+      "Att göra kedjor så spända att kroken inte kan passera genom dem senare.",
+      "Vrida kedjan och tappa fram och baksida av stygnen."
+    ]
+  }
+}

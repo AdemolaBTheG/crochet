@@ -1,0 +1,49 @@
+{
+  "title": "Manga de caneca aconchegante",
+  "description": "Um pequeno projeto retangular que envolve uma caneca e ensina acabamento simples.",
+  "materials": [
+    "Fio de algodão penteado",
+    "gancho de 5 mm",
+    "agulha de fio",
+    "tesoura",
+    "botão"
+  ],
+  "skills": [
+    "Cadeia de fundação",
+    "meio crochê duplo",
+    "virando linhas",
+    "laço de botão"
+  ],
+  "expectationText": "Um prático retângulo que se transforma em um objeto acabado com um pequeno detalhe de união na extremidade.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Fundação",
+      "instruction": "Corrente 12 pontos para a altura da manga."
+    },
+    {
+      "type": "linha",
+      "title": "Linha 1",
+      "instruction": "Meio ponto alto duplo na terceira corrente a partir da agulha e em cada corrente.",
+      "counterLabel": "linha",
+      "targetCount": 1
+    },
+    {
+      "type": "repita",
+      "title": "Linhas 2 a 18",
+      "instruction": "Faça 2 correntes, vire e faça meio ponto alto até que a manga envolva sua caneca.",
+      "counterLabel": "linha",
+      "targetCount": 18
+    },
+    {
+      "type": "instrução",
+      "title": "Adicionar um loop",
+      "instruction": "Faça um pequeno laço em uma borda curta para fechar o botão."
+    },
+    {
+      "type": "instrução",
+      "title": "Anexe o botão",
+      "instruction": "Costure um botão na borda oposta, prenda e costure as pontas."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Smukła zakładka",
+  "description": "Projekt z wąskimi rzędami do ćwiczenia krawędzi, napięcia i wykończenia drobnym frędzlem.",
+  "materials": [
+    "Przędza bawełniana",
+    "Hak 3,5 do 4 mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Łańcuch fundamentowy",
+    "pojedynczy szydełko",
+    "obracanie rzędów",
+    "robienie frędzli"
+  ],
+  "expectationText": "Zgrabny mały projekt, który nagradza staranne napięcie i daje gotowy prezent w niecałą godzinę.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Fundacja",
+      "instruction": "Łańcuszek 8 ściegów, aby uzyskać niewielką szerokość zakładki."
+    },
+    {
+      "type": "wiersz",
+      "title": "Rząd 1",
+      "instruction": "Oczko ścisłe w drugim łańcuszku od szydełka i w poprzek każdego łańcuszka.",
+      "counterLabel": "wiersz",
+      "targetCount": 1
+    },
+    {
+      "type": "powtarzać",
+      "title": "Rzędy od 2 do 24",
+      "instruction": "Zrób 1 łańcuszek, obróć i wykonaj oczko ścisłe w każdym rzędzie.",
+      "counterLabel": "wiersz",
+      "targetCount": 24
+    },
+    {
+      "type": "instrukcja",
+      "title": "Dodaj frędzel",
+      "instruction": "Odetnij kilka nitek włóczki i przymocuj je do jednego krótkiego brzegu."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Przytnij równomiernie frędzel i wpleć ogon początkowy."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Crochet",
+    "NSLocationWhenInUseUsageDescription": "Crochet gebruikt uw locatie om gelokaliseerde patroonaanbevelingen en suggesties voor garenwinkels te geven.",
+    "NSPhotoLibraryUsageDescription": "Crochet gebruikt uw fotobibliotheek, zodat u projectinspiratie, voortgangsfoto's en patroonafbeeldingen kunt importeren en opslaan.",
+    "NSPhotoLibraryAddUsageDescription": "Crochet slaat geëxporteerde patroonafbeeldingen en project-snapshots op in uw fotobibliotheek.",
+    "NSCameraUsageDescription": "Crochet gebruikt uw camera zodat u steken op een foto kunt identificeren."
+  },
+  "android": {
+    "app_name": "Crochet"
+  }
+}

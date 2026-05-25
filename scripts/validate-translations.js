@@ -3,7 +3,7 @@ const path = require("path");
 
 const LESSONS_DIR = path.join(__dirname, "..", "content", "lessons");
 const PATTERNS_DIR = path.join(__dirname, "..", "content", "patterns");
-const LOCALES = ["en", "de", "fr", "es", "nl", "it", "ja"];
+const LOCALES = ["en", "de", "fr", "es", "nl", "it", "ja", "ko", "pt-BR", "pl", "sv"];
 
 const LESSON_SLUGS = [
   "slip-knot-and-hold",

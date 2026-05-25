@@ -4,14 +4,22 @@ import esLessonContentMap from "@/content/lessons/es";
 import frLessonContentMap from "@/content/lessons/fr";
 import itLessonContentMap from "@/content/lessons/it";
 import jaLessonContentMap from "@/content/lessons/ja";
+import koLessonContentMap from "@/content/lessons/ko";
 import nlLessonContentMap from "@/content/lessons/nl";
+import plLessonContentMap from "@/content/lessons/pl";
+import ptBrLessonContentMap from "@/content/lessons/pt-BR";
+import svLessonContentMap from "@/content/lessons/sv";
 import dePatternContentMap from "@/content/patterns/de";
 import enPatternContentMap from "@/content/patterns/en";
 import esPatternContentMap from "@/content/patterns/es";
 import frPatternContentMap from "@/content/patterns/fr";
 import itPatternContentMap from "@/content/patterns/it";
 import jaPatternContentMap from "@/content/patterns/ja";
+import koPatternContentMap from "@/content/patterns/ko";
 import nlPatternContentMap from "@/content/patterns/nl";
+import plPatternContentMap from "@/content/patterns/pl";
+import ptBrPatternContentMap from "@/content/patterns/pt-BR";
+import svPatternContentMap from "@/content/patterns/sv";
 import * as schema from "@/db/schema";
 import type { ExpoSQLiteDatabase } from "drizzle-orm/expo-sqlite";
 
@@ -64,6 +72,10 @@ const lessonContentMaps = {
   nl: nlLessonContentMap,
   it: itLessonContentMap,
   ja: jaLessonContentMap,
+  ko: koLessonContentMap,
+  "pt-BR": ptBrLessonContentMap,
+  pl: plLessonContentMap,
+  sv: svLessonContentMap,
 } as const;
 
 const patternSlugs = [
@@ -249,6 +261,10 @@ const patternContentMaps = {
   nl: nlPatternContentMap,
   it: itPatternContentMap,
   ja: jaPatternContentMap,
+  ko: koPatternContentMap,
+  "pt-BR": ptBrPatternContentMap,
+  pl: plPatternContentMap,
+  sv: svPatternContentMap,
 } as const;
 
 export async function seedDatabase(db: ExpoSQLiteDatabase<typeof schema>) {

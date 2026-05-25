@@ -1,0 +1,50 @@
+{
+  "title": "Granny Stripe Scarf",
+  "description": "En enkel halsduk byggd av återkommande klustergrupper och kedjeutrymmen.",
+  "materials": [
+    "Mjukt kamgarn",
+    "5,5 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Foundation kedja",
+    "dubbelvirkning",
+    "kedjeutrymmen",
+    "vända rader"
+  ],
+  "expectationText": "Ett långt upprepningsprojekt där du slutar räkna enskilda stygn och börjar läsa mellanrum och kluster istället.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Grund",
+      "instruction": "Kedja 27 stygn eller valfri multipel av 3 plus 3 för en bredare halsduk."
+    },
+    {
+      "type": "rad",
+      "title": "Rad 1",
+      "instruction": "Arbetsgrupper om 3 dubbelvirkade med överhoppade mellanrum mellan dem för att börja layouten med mormorsränder.",
+      "counterLabel": "rad",
+      "targetCount": 1
+    },
+    {
+      "type": "rad",
+      "title": "Rad 2",
+      "instruction": "Kedja 3, vänd och arbeta in nästa grupper i utrymmena mellan klustren från föregående rad.",
+      "counterLabel": "rad",
+      "targetCount": 2
+    },
+    {
+      "type": "upprepa",
+      "title": "Rad 3 till 24",
+      "instruction": "Upprepa samma klusterplacering i varje kedjeutrymme över raden tills halsduken når önskad längd.",
+      "counterLabel": "rad",
+      "targetCount": 24
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Fäst av, väv in ändarna och lägg bara fransar om du vill ha extra textur."
+    }
+  ]
+}

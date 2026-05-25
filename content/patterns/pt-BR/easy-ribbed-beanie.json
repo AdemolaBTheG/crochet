@@ -1,0 +1,48 @@
+{
+  "title": "Gorro com nervuras fácil",
+  "description": "Um wearable para iniciantes feito de um retângulo com nervuras e costura simples.",
+  "materials": [
+    "Fio penteado",
+    "Gancho de 5,5 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Cadeia de fundação",
+    "meio crochê duplo",
+    "apenas loop traseiro",
+    "costura"
+  ],
+  "expectationText": "Um projeto usável construído a partir de fileiras simples e depois moldado para que você possa finalizar um chapéu de verdade sem modelagens complexas.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Fundação",
+      "instruction": "Faça pontos suficientes para ir da aba até a coroa do chapéu."
+    },
+    {
+      "type": "linha",
+      "title": "Linha 1",
+      "instruction": "Meio ponto alto duplo na terceira corrente a partir da agulha e em cada corrente.",
+      "counterLabel": "linha",
+      "targetCount": 1
+    },
+    {
+      "type": "repita",
+      "title": "Linhas 2 a 36",
+      "instruction": "Corrente 2, vire e faça meio ponto alto duplo na alça de trás apenas transversalmente.",
+      "counterLabel": "linha",
+      "targetCount": 36
+    },
+    {
+      "type": "instrução",
+      "title": "Costure a lateral",
+      "instruction": "Dobre o retângulo e costure a primeira e a última carreira."
+    },
+    {
+      "type": "instrução",
+      "title": "Feche a coroa",
+      "instruction": "Passe o fio ao redor da borda superior, puxe bem, prenda e teça nas pontas."
+    }
+  ]
+}

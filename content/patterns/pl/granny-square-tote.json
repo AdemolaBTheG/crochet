@@ -1,0 +1,51 @@
+{
+  "title": "Babcia Kwadratowa Torba",
+  "description": "Połącz klasyczne babcine kwadraty w prostą torebkę, która wydaje się bardziej solidna niż próbka do ćwiczeń.",
+  "materials": [
+    "Przędza czesankowa",
+    "Hak 5 mm",
+    "igła do przędzy",
+    "nożyczki",
+    "znaczniki ściegów"
+  ],
+  "skills": [
+    "Babcine kwadraty",
+    "dołączając do kwadratów babci",
+    "zmiany koloru",
+    "tkanie się kończy"
+  ],
+  "expectationText": "Projekt modułowy, w którym powtarzające się kwadraty zamieniają się w gotową torbę, dając użytkownikowi wyraźną nagrodę za ćwiczenie motywu.",
+  "steps": [
+    {
+      "type": "powtarzać",
+      "title": "Zrób kwadraty",
+      "instruction": "Zrób na szydełku 8 babcinych kwadratów w jednym lub dwóch kolorach i w miarę upływu czasu przeplataj najkrótsze ogony.",
+      "targetCount": 8
+    },
+    {
+      "type": "instrukcja",
+      "title": "Blokuj i aranżuj",
+      "instruction": "Ułóż kwadraty płasko w dwóch panelach po cztery, aby rogi i układ kolorów pozostały spójne."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Dołącz do każdego panelu",
+      "instruction": "Połącz kwadraty panel po panelu, dopasowując rogi przed wykonaniem każdego szwu."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Złóż torbę",
+      "instruction": "Połącz dwa panele wzdłuż boków i dołu, pozostawiając górną krawędź otwartą."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Dodaj uchwyty",
+      "instruction": "Zrób na szydełku lub zszyj dwa proste uchwyty do górnej krawędzi i wzmocnij podstawę każdego uchwytu."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Wpleć pozostałe końce i sprawdź, czy górna krawędź i uchwyty są wyczuwalne jeszcze przed użyciem torby."
+    }
+  ]
+}

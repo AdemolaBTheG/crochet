@@ -1,5 +1,6 @@
 import { PressableScale } from '@/components/pressable-scale';
 import { theme } from '@/constants/Theme';
+import { softAdvance } from '@/services/haptics';
 import { Host, Text as SwiftText } from '@expo/ui/swift-ui';
 import {
   Animation,
@@ -10,7 +11,6 @@ import {
   monospacedDigit,
   animation as swiftAnimation,
 } from '@expo/ui/swift-ui/modifiers';
-import * as Haptics from 'expo-haptics';
 import React, { useEffect, useMemo } from 'react';
 import { Pressable, Text, View } from 'react-native';
 import Animated, {
@@ -34,9 +34,7 @@ const previousButtonEntering = FadeInLeft.duration(180);
 const previousButtonExiting = FadeOutRight.duration(140);
 
 export function triggerNavigationHaptic() {
-  if (process.env.EXPO_OS === 'ios') {
-    void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-  }
+  softAdvance();
 }
 
 export function CounterButton({

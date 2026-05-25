@@ -1,0 +1,50 @@
+{
+  "title": "Babciny szalik w paski",
+  "description": "Prosty szalik zbudowany z powtarzających się grup skupień i łańcuszków.",
+  "materials": [
+    "Miękka przędza czesankowa",
+    "Hak 5,5mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Łańcuch fundamentowy",
+    "podwójne szydełko",
+    "przestrzenie łańcuchowe",
+    "obracanie rzędów"
+  ],
+  "expectationText": "Długi, powtarzalny projekt, w którym przestajesz liczyć pojedyncze oczka i zamiast tego zaczynasz czytać spacje i grupy.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Fundacja",
+      "instruction": "Zrób łańcuszek 27 oczek lub dowolną wielokrotność 3 plus 3, aby uzyskać szerszy szalik."
+    },
+    {
+      "type": "wiersz",
+      "title": "Rząd 1",
+      "instruction": "Pracuj w grupach po 3 słupki z pominiętymi odstępami między nimi, aby rozpocząć układ babcinych pasków.",
+      "counterLabel": "wiersz",
+      "targetCount": 1
+    },
+    {
+      "type": "wiersz",
+      "title": "Rząd 2",
+      "instruction": "Zrób 3 łańcuszek, obróć i przerabiaj kolejne grupy w przestrzenie pomiędzy pęczkami z poprzedniego rzędu.",
+      "counterLabel": "wiersz",
+      "targetCount": 2
+    },
+    {
+      "type": "powtarzać",
+      "title": "Rzędy od 3 do 24",
+      "instruction": "Powtarzaj to samo umieszczanie klastrów w każdym miejscu łańcuszka w rzędzie, aż szalik osiągnie preferowaną długość.",
+      "counterLabel": "wiersz",
+      "targetCount": 24
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Zapnij, spleć na końcach i dodaj frędzle tylko wtedy, gdy chcesz uzyskać dodatkową teksturę."
+    }
+  ]
+}

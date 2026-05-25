@@ -1,0 +1,12 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Crochet",
+    "NSLocationWhenInUseUsageDescription": "Crochet はあなたの位置情報を使用して、ローカライズされたパターンの推奨事項と糸ストアの提案を提供します。",
+    "NSPhotoLibraryUsageDescription": "Crochet は写真ライブラリを使用するので、プロジェクトのインスピレーション、進捗状況の写真、パターン画像をインポートして保存できます。",
+    "NSPhotoLibraryAddUsageDescription": "Crochet は、エクスポートされたパターン画像とプロジェクトのスナップショットを写真ライブラリに保存します。",
+    "NSCameraUsageDescription": "Crochet はカメラを使用して、写真からステッチを識別できます。"
+  },
+  "android": {
+    "app_name": "Crochet"
+  }
+}

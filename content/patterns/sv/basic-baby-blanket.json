@@ -1,0 +1,56 @@
+{
+  "title": "Basic babyfilt",
+  "description": "Ett mjukt repetitivt filtprojekt designat för stadiga rader och enkel framstegsspårning.",
+  "materials": [
+    "Mjukt kamgarn",
+    "5 mm krok",
+    "stygnmarkörer",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Foundation kedja",
+    "dubbelvirkning",
+    "arbetar i rader",
+    "färgförändringar"
+  ],
+  "expectationText": "Ett komfortprojekt i längre form som förvandlar enkla upprepade rader till en presentklar filt utan att introducera svår formning.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Kedja bredden",
+      "instruction": "Gör en foundationkedja bred nog för en babyfilt och räkna noga före första raden."
+    },
+    {
+      "type": "rad",
+      "title": "Rad 1",
+      "instruction": "Sticka uppställningsraden jämnt över och markera första och sista maskorna om kanträkningen fortfarande är ny.",
+      "counterLabel": "rad",
+      "targetCount": 1
+    },
+    {
+      "type": "upprepa",
+      "title": "Rad 2 till 20",
+      "instruction": "Upprepa huvudsömmönstret, kontrollera kanterna med några få rader så att filten förblir rektangulär.",
+      "counterLabel": "rad",
+      "targetCount": 20
+    },
+    {
+      "type": "upprepa",
+      "title": "Rad 21 till 40",
+      "instruction": "Fortsätt bygghöjd och byt färg endast i slutet av en rad om du vill ha mjuka ränder.",
+      "counterLabel": "rad",
+      "targetCount": 40
+    },
+    {
+      "type": "instruktion",
+      "title": "Lägg till kanten",
+      "instruction": "Arbeta en enkel bård runt alla fyra sidorna för att snygga till kanterna och hörnen."
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Väv in ändarna och lägg filten platt för att kontrollera att bården sitter smidigt."
+    }
+  ]
+}

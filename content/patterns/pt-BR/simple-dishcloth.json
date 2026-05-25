@@ -1,0 +1,43 @@
+{
+  "title": "Pano de prato simples",
+  "description": "Um projeto quadrado prático para aprender linhas e criar tensão uniforme.",
+  "materials": [
+    "Fio de algodão",
+    "gancho de 5 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Cadeia de fundação",
+    "crochê simples",
+    "virando linhas",
+    "tecendo pontas"
+  ],
+  "expectationText": "Um projeto constante linha por linha para praticar tensão uniforme, bordas limpas e o ritmo de rotação do seu trabalho.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Fundação",
+      "instruction": "Corrente 21 pontos."
+    },
+    {
+      "type": "linha",
+      "title": "Linha 1",
+      "instruction": "Faça um ponto baixo na segunda corrente a partir da agulha e em cada corrente.",
+      "counterLabel": "linha",
+      "targetCount": 1
+    },
+    {
+      "type": "repita",
+      "title": "Linhas 2 a 18",
+      "instruction": "Corrente 1, volta e ponto baixo em cada ponto transversal.",
+      "counterLabel": "linha",
+      "targetCount": 18
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Arremate e costure nas duas pontas."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Mini Granny Square Gå med i projektet",
+  "description": "Förvandla fyra mormorsrutor till ett litet färdigt projekt så att användaren slutför något riktigt.",
+  "materials": [
+    "Kamgarn",
+    "5 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Mormors rutor",
+    "smygfogning",
+    "sömmar",
+    "vävändar"
+  ],
+  "expectationText": "Ett litet efterbehandlingsprojekt där du förvandlar separata rutor till ett stycke och övar på enkel fogning med tillförsikt.",
+  "steps": [
+    {
+      "type": "upprepa",
+      "title": "Gör fyra rutor",
+      "instruction": "Slutför det grundläggande mormors kvadratmönstret fyra gånger.",
+      "targetCount": 4
+    },
+    {
+      "type": "instruktion",
+      "title": "Ordna rutorna",
+      "instruction": "Lägg de fyra rutorna i en 2 gånger 2 layout med höger sida uppåt."
+    },
+    {
+      "type": "instruktion",
+      "title": "Sätt ihop den första sömmen",
+      "instruction": "Använd slipstygn eller pisksöm för att sammanfoga de två översta rutorna."
+    },
+    {
+      "type": "instruktion",
+      "title": "Sätt ihop den andra sömmen",
+      "instruction": "Förena de två nedre rutorna och koppla sedan samman raderna."
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Väv i alla ändar och forma det färdiga stycket lätt."
+    }
+  ]
+}

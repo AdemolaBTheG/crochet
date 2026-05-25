@@ -1,0 +1,19 @@
+{
+  "title": "Łańcuch Fundacji",
+  "description": "Wykorzystaj łańcuch początkowy do rzędów, szali, ścierek do naczyń i nie tylko.",
+  "content": {
+    "summary": "Naucz się ruchu narzutów i twórz równe oczka łańcuszkowe.",
+    "whyItMatters": "Łańcuch fundamentowy określa szerokość wielu początkujących projektów.",
+    "steps": [
+      "Zacznij od węzła poślizgowego na haczyku.",
+      "Przerabiaj od tyłu do przodu.",
+      "Przeciągnij nić przez pętelkę na szydełku.",
+      "Powtarzaj, aż długość łańcucha będzie równa."
+    ],
+    "practice": "Zrób łańcuszek 15 oczek dwa razy i porównaj ich równy wygląd.",
+    "commonMistakes": [
+      "Łańcuchy tak napięte, że hak nie będzie mógł przez nie później przejść.",
+      "Skręcenie łańcuszka i utrata przodu i tyłu ściegów."
+    ]
+  }
+}

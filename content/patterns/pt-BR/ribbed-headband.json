@@ -1,0 +1,49 @@
+{
+  "title": "Tiara com nervuras",
+  "description": "Um retângulo elástico para vestir feito com fileiras apenas de laço traseiro e uma costura simples.",
+  "materials": [
+    "Fio penteado macio",
+    "gancho de 5 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Cadeia de fundação",
+    "meio crochê duplo",
+    "apenas loop traseiro",
+    "virando linhas",
+    "costura"
+  ],
+  "expectationText": "Uma versão vestível da prática de nervuras onde o retângulo acabado se torna algo útil com uma junção limpa.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Fundação",
+      "instruction": "Faça pontos suficientes para a largura da faixa, geralmente de 10 a 14 pontos."
+    },
+    {
+      "type": "linha",
+      "title": "Linha 1",
+      "instruction": "Meio ponto alto duplo na terceira corrente a partir da agulha e em cada corrente.",
+      "counterLabel": "linha",
+      "targetCount": 1
+    },
+    {
+      "type": "repita",
+      "title": "Linhas 2 a 32",
+      "instruction": "Corrente 2, vire e faça meio ponto alto duplo na alça de trás apenas em cada carreira.",
+      "counterLabel": "linha",
+      "targetCount": 32
+    },
+    {
+      "type": "instrução",
+      "title": "Verifique o ajuste",
+      "instruction": "Enrole a tira em volta da cabeça com um leve estiramento e adicione ou remova linhas, se necessário."
+    },
+    {
+      "type": "instrução",
+      "title": "Juntar",
+      "instruction": "Costure as bordas curtas, prenda e entrelace as pontas nas nervuras."
+    }
+  ]
+}

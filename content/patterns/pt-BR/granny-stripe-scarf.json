@@ -1,0 +1,50 @@
+{
+  "title": "Lenço listrado de vovó",
+  "description": "Um lenço fácil construído a partir de grupos repetidos e espaços de cadeia.",
+  "materials": [
+    "Fio penteado macio",
+    "Gancho de 5,5 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Cadeia de fundação",
+    "crochê duplo",
+    "espaços de cadeia",
+    "virando linhas"
+  ],
+  "expectationText": "Um projeto de repetição longa onde você para de contar pontos individuais e começa a ler espaços e clusters.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Fundação",
+      "instruction": "Corrente 27 pontos ou qualquer múltiplo de 3 mais 3 para um lenço mais largo."
+    },
+    {
+      "type": "linha",
+      "title": "Linha 1",
+      "instruction": "Trabalhe grupos de 3 pontos altos duplos com espaços saltados entre eles para iniciar o layout da listra da vovó.",
+      "counterLabel": "linha",
+      "targetCount": 1
+    },
+    {
+      "type": "linha",
+      "title": "Linha 2",
+      "instruction": "Cadeia 3, vire e trabalhe os próximos grupos nos espaços entre os grupos da linha anterior.",
+      "counterLabel": "linha",
+      "targetCount": 2
+    },
+    {
+      "type": "repita",
+      "title": "Linhas 3 a 24",
+      "instruction": "Repita a mesma colocação do cluster em cada espaço da corrente ao longo da linha até que o lenço atinja o comprimento preferido.",
+      "counterLabel": "linha",
+      "targetCount": 24
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Aperte, costure nas pontas e adicione franja apenas se quiser textura extra."
+    }
+  ]
+}

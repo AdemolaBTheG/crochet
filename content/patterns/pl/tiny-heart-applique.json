@@ -1,0 +1,46 @@
+{
+  "title": "Aplikacja z małym sercem",
+  "description": "Małe dekoracyjne serce do ćwiczenia kształtowania w jednej szybkiej rundzie.",
+  "materials": [
+    "Przędza bawełniana",
+    "Hak 4 mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Magiczny pierścień",
+    "podwójne szydełko",
+    "potrójny szydełko",
+    "ścieg poślizgowy"
+  ],
+  "expectationText": "Mały motyw w kształcie, który uczy, jak wysokość ściegu zmienia kontur projektu.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Zrób pierścionek",
+      "instruction": "Zacznij od magicznego pierścienia i łańcuszka 2, aby rozpocząć kształt serca."
+    },
+    {
+      "type": "okrągły",
+      "title": "Zbuduj płaty",
+      "instruction": "Przerobić wyższe oczka w pierścień podstawy, aby utworzyć zaokrągloną górę serca.",
+      "counterLabel": "okrągły",
+      "targetCount": 1
+    },
+    {
+      "type": "instrukcja",
+      "title": "Kształtuj punkt",
+      "instruction": "Użyj krótszych ściegów, a następnie jednego wyższego oczka w dolnym punkcie."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Zamknij serce",
+      "instruction": "Odbij lustrzanie pierwszą stronę, zsuń oczko, aby zamknąć i mocno zaciągnij pierścień."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Zapnij i wpleć ogony z tyłu serca."
+    }
+  ]
+}

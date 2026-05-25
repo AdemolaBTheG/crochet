@@ -1,0 +1,50 @@
+{
+  "title": "Bawełniane peelingi do twarzy",
+  "description": "Mała runda wielokrotnego użytku, która daje początkującym kolejną szybką wygraną dzięki wzrostom.",
+  "materials": [
+    "Przędza bawełniana",
+    "Hak 4 mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Magiczny pierścień",
+    "pojedynczy szydełko",
+    "wzrastający",
+    "łączenie ściegiem poślizgowym"
+  ],
+  "expectationText": "Niskociśnieniowy mini projekt, w którym tworzysz miękki nabój wielokrotnego użytku i ćwiczysz utrzymywanie równomiernych wzrostów.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Zrób środek",
+      "instruction": "Zacznij od magicznego pierścienia lub łańcucha 4 i połącz w pętlę."
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 1",
+      "instruction": "Przerobić 8 słupków ścisłych w środkowy pierścień i połączyć oczkiem zamykającym.",
+      "counterLabel": "okrągły",
+      "targetCount": 1
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 2",
+      "instruction": "Przerobić 2 oczka ścisłe w każde oczko, co daje w sumie 16 oczek.",
+      "counterLabel": "okrągły",
+      "targetCount": 2
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 3",
+      "instruction": "Naprzemiennie 1 oczko ścisłe, następnie 2 oczka ścisłe w następne oczko.",
+      "counterLabel": "okrągły",
+      "targetCount": 3
+    },
+    {
+      "type": "instrukcja",
+      "title": "Zakończ krawędź",
+      "instruction": "Zdjąć oczko wokół krawędzi, zakończyć i przeplatać na końcach."
+    }
+  ]
+}

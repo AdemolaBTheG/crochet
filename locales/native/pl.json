@@ -1,0 +1,12 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Crochet",
+    "NSLocationWhenInUseUsageDescription": "Crochet wykorzystuje Twoją lokalizację, aby wyświetlać rekomendacje lokalnych wzorów i sugestie dotyczące sklepów z włóczką.",
+    "NSPhotoLibraryUsageDescription": "Crochet korzysta z Twojej biblioteki zdjęć, dzięki czemu możesz importować i zapisywać inspiracje projektowe, zdjęcia postępów i obrazy wzorów.",
+    "NSPhotoLibraryAddUsageDescription": "Szydełko zapisuje wyeksportowane obrazy wzorów i migawki projektów do biblioteki zdjęć.",
+    "NSCameraUsageDescription": "Szydełko korzysta z aparatu, dzięki czemu możesz zidentyfikować ściegi na zdjęciu."
+  },
+  "android": {
+    "app_name": "Crochet"
+  }
+}

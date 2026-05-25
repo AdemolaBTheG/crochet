@@ -1,0 +1,50 @@
+{
+  "title": "Montanha-russa minimalista",
+  "description": "Um projeto circular rápido para aprender rodadas, unir e repetir pontos simples.",
+  "materials": [
+    "Fio de algodão",
+    "Gancho de 4 a 5 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Anel mágico",
+    "crochê simples",
+    "ponto baixíssimo",
+    "trabalhando em rodadas"
+  ],
+  "expectationText": "Um projeto rápido e redondo onde você pratica a construção de um círculo plano, unindo-o perfeitamente e finalizando algo útil em uma curta sessão.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Faça um anel central",
+      "instruction": "Comece com um anel mágico ou corrente 4 e junte-o em um laço."
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 1",
+      "instruction": "Faça 8 pontos baixos no anel e junte com ponto baixíssimo.",
+      "counterLabel": "redondo",
+      "targetCount": 1
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 2",
+      "instruction": "Faça 2 pontos baixos em cada ponto ao redor, totalizando 16 pontos.",
+      "counterLabel": "redondo",
+      "targetCount": 2
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 3",
+      "instruction": "Alterne 1 ponto baixo e depois 2 pontos baixos no próximo ponto.",
+      "counterLabel": "redondo",
+      "targetCount": 3
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Ponto baixíssimo para unir, prender e tecer no final."
+    }
+  ]
+}

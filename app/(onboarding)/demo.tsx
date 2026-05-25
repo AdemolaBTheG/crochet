@@ -11,12 +11,12 @@ import {
 import type { ProjectChatStep } from '@/components/project-chat';
 import { theme } from '@/constants/Theme';
 import { logFirebaseEvent } from '@/services/firebaseAnalytics';
+import { complete, tap } from '@/services/haptics';
 import {
   useOnboardingStore,
   type Goal,
   type SkillLevel,
 } from '@/stores/onboardingStore';
-import * as Haptics from 'expo-haptics';
 import { router } from 'expo-router';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -160,12 +160,12 @@ export default function OnboardingDemoScreen() {
   }
 
   function updateCounter(delta: number) {
-    void Haptics.selectionAsync();
+    tap();
     setDemoRowCount((value) => Math.max(0, value + delta));
   }
 
   async function finishDemo() {
-    void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+    complete();
     setOnboardingCompleted(true);
     void logFirebaseEvent('onboarding_complete', {
       goal: goal ?? null,

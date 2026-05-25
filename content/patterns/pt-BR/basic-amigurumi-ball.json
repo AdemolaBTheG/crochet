@@ -1,0 +1,60 @@
+{
+  "title": "Bola Amigurumi Básica",
+  "description": "Uma pequena esfera recheada para praticar aumentos, diminuições e trabalhar em voltas contínuas.",
+  "materials": [
+    "Fio penteado",
+    "gancho de 4 mm",
+    "marcador de ponto",
+    "recheio",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Anel mágico",
+    "crochê simples",
+    "aumentando",
+    "diminuindo",
+    "trabalhando em rodadas"
+  ],
+  "expectationText": "Um projeto de modelagem compacto onde os aumentos constroem a curva, os arredondamentos retos adicionam altura e as diminuições fecham a forma.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Comece o centro",
+      "instruction": "Faça um anel mágico e coloque um marcador de ponto no primeiro ponto de cada volta."
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 1",
+      "instruction": "Faça 6 pontos baixos no anel e feche o centro.",
+      "counterLabel": "redondo",
+      "targetCount": 1
+    },
+    {
+      "type": "repita",
+      "title": "Rodadas 2 a 4",
+      "instruction": "Aumente uniformemente a cada rodada até que a peça comece a formar um formato arredondado.",
+      "counterLabel": "redondo",
+      "targetCount": 4
+    },
+    {
+      "type": "repita",
+      "title": "Rodadas 5 a 7",
+      "instruction": "Faça um ponto baixo sem aumentar para construir o meio da bola.",
+      "counterLabel": "redondo",
+      "targetCount": 7
+    },
+    {
+      "type": "repita",
+      "title": "Rodadas 8 a 10",
+      "instruction": "Diminua uniformemente a cada rodada, adicionando recheio antes que a abertura fique muito pequena.",
+      "counterLabel": "redondo",
+      "targetCount": 10
+    },
+    {
+      "type": "instrução",
+      "title": "Fechar",
+      "instruction": "Arremate, passe a cauda pelos pontos finais, feche e esconda a ponta para dentro."
+    }
+  ]
+}

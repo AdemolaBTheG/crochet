@@ -1,0 +1,47 @@
+{
+  "title": "Enkel blomapplikation",
+  "description": "Ett fembladigt blommotiv för att lära sig upprepad formning runt ett centrum.",
+  "materials": [
+    "Bomullsgarn",
+    "4 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Magisk ring",
+    "kedjeutrymmen",
+    "dubbelvirkning",
+    "slipsöm"
+  ],
+  "expectationText": "Ett muntert motiv som upprepar samma kronbladssekvens så formningen börjar kännas förutsägbar.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Gör centrum",
+      "instruction": "Börja med en magisk ring och virka 10 fastmaskor in i mitten."
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 1",
+      "instruction": "Gå i mittvarvet med en smygmaska ​​och dra åt ringen.",
+      "counterLabel": "runda",
+      "targetCount": 1
+    },
+    {
+      "type": "upprepa",
+      "title": "Gör fem kronblad",
+      "instruction": "Upprepa luftmaskor och virka i samma maska ​​för att bilda varje kronblad.",
+      "targetCount": 5
+    },
+    {
+      "type": "instruktion",
+      "title": "Forma kronbladen",
+      "instruction": "Dra försiktigt varje kronblad på plats så att blomman sitter plant."
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Fäst av och väv svansarna på baksidan av blomman."
+    }
+  ]
+}

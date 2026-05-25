@@ -1,0 +1,51 @@
+{
+  "title": "Cesta de armazenamento robusta",
+  "description": "Um projeto de casa robusto para praticar rodadas, laterais e estrutura simples.",
+  "materials": [
+    "Fio de algodão grosso",
+    "Gancho de 6,5 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Anel mágico",
+    "crochê simples",
+    "aumentando",
+    "trabalhando em loops traseiros",
+    "rodadas"
+  ],
+  "expectationText": "Uma peça útil para casa onde você passa de uma base plana para lados verticais e vê a estrutura tomar forma.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Comece a base",
+      "instruction": "Faça um anel mágico e faça 8 pontos baixos no centro."
+    },
+    {
+      "type": "redondo",
+      "title": "Rodadas 1 a 4",
+      "instruction": "Aumente uniformemente a cada rodada até que a base atinja a largura desejada.",
+      "counterLabel": "redondo",
+      "targetCount": 4
+    },
+    {
+      "type": "redondo",
+      "title": "Vire o lado",
+      "instruction": "Tricotar uma carreira apenas nas alças de trás para criar uma orla limpa.",
+      "counterLabel": "redondo",
+      "targetCount": 5
+    },
+    {
+      "type": "repita",
+      "title": "Construa as paredes",
+      "instruction": "Faça um ponto baixo sem aumentar até que a cesta esteja alta o suficiente.",
+      "counterLabel": "redondo",
+      "targetCount": 10
+    },
+    {
+      "type": "instrução",
+      "title": "Finalize o aro",
+      "instruction": "Faça pontos baixíssimos ao redor da borda superior, prenda e costure nas pontas."
+    }
+  ]
+}

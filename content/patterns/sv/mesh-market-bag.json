@@ -1,0 +1,54 @@
+{
+  "title": "Mesh Market Bag",
+  "description": "En lätt öppen väska som skapar självförtroende med kedjeutrymmen och upprepade sektioner.",
+  "materials": [
+    "Bomullsgarn",
+    "5 mm krok",
+    "stygnmarkör",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Foundation kedja",
+    "dubbelvirkning",
+    "kedjeutrymmen",
+    "arbetar i omgångar"
+  ],
+  "expectationText": "Ett praktiskt projekt med synliga framsteg, där enkla meshupprepningar snabbt förvandlas till något användbart.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Starta basen",
+      "instruction": "Virka en kort oval eller rektangelbas och placera en markör i början av varje varv."
+    },
+    {
+      "type": "upprepa",
+      "title": "Bygg nätet",
+      "instruction": "Arbeta kedjemellanrum och fäststygn jämnt runt för att skapa ett öppet tyg.",
+      "counterLabel": "runda",
+      "targetCount": 8
+    },
+    {
+      "type": "upprepa",
+      "title": "Lägg till höjd",
+      "instruction": "Fortsätt nätupprepningen tills väskan når en bekväm vardagsstorlek.",
+      "counterLabel": "runda",
+      "targetCount": 14
+    },
+    {
+      "type": "instruktion",
+      "title": "Forma handtagen",
+      "instruction": "Hoppa över sektioner för handtagsöppningarna och överbrygga dem sedan med långa kedjor på nästa varv."
+    },
+    {
+      "type": "instruktion",
+      "title": "Förstärk toppen",
+      "instruction": "Arbeta en eller två rejäla varv runt öppningen och handtagen så att väskan känns stadigare."
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Fäst av, väv i ändarna och sträck ut väskan lätt med händerna så att nätet öppnar sig jämnt."
+    }
+  ]
+}

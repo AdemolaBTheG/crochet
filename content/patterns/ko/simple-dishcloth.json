@@ -1,0 +1,43 @@
+{
+  "title": "간단한 행주",
+  "description": "행을 학습하고 고른 긴장감을 형성할 수 있는 실용적인 정사각형 프로젝트입니다.",
+  "materials": [
+    "방적사",
+    "5mm 후크",
+    "실바늘",
+    "가위"
+  ],
+  "skills": [
+    "기초 체인",
+    "싱글 크로셰",
+    "줄 돌리기",
+    "직조 끝"
+  ],
+  "expectationText": "고른 긴장감, 깔끔한 엣지, 작업 회전의 리듬을 연습하기 위한 꾸준한 행 단위 프로젝트입니다.",
+  "steps": [
+    {
+      "type": "지침",
+      "title": "기반",
+      "instruction": "체인 21바늘."
+    },
+    {
+      "type": "열",
+      "title": "행 1",
+      "instruction": "후크와 각 체인에서 두 번째 체인으로 단일 크로 셰 뜨개질을하십시오.",
+      "counterLabel": "열",
+      "targetCount": 1
+    },
+    {
+      "type": "반복하다",
+      "title": "2~18행",
+      "instruction": "체인 1, 회전 및 각 스티치의 단일 크로 셰 뜨개질.",
+      "counterLabel": "열",
+      "targetCount": 18
+    },
+    {
+      "type": "지침",
+      "title": "마치다",
+      "instruction": "고정하고 양쪽 끝을 엮습니다."
+    }
+  ]
+}

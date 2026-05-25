@@ -2,7 +2,7 @@
   "expo": {
     "name": "Crochet",
     "slug": "Crochet",
-    "version": "1.1",
+    "version": "1.3",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "crochet",
@@ -42,6 +42,19 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
+    "locales": {
+      "en": "./locales/native/en.json",
+      "de": "./locales/native/de.json",
+      "fr": "./locales/native/fr.json",
+      "es": "./locales/native/es.json",
+      "nl": "./locales/native/nl.json",
+      "it": "./locales/native/it.json",
+      "ja": "./locales/native/ja.json",
+      "ko": "./locales/native/ko.json",
+      "pt-BR": "./locales/native/pt-BR.json",
+      "pl": "./locales/native/pl.json",
+      "sv": "./locales/native/sv.json"
+    },
     "plugins": [
       "expo-router",
       [
@@ -62,7 +75,15 @@
       "expo-sharing",
       "expo-sqlite",
       "expo-web-browser",
-      "expo-localization",
+      [
+        "expo-localization",
+        {
+          "supportedLocales": {
+            "ios": ["en", "de", "fr", "es", "nl", "it", "ja", "ko", "pt-BR", "pl", "sv"],
+            "android": ["en", "de", "fr", "es", "nl", "it", "ja", "ko", "pt-BR", "pl", "sv"]
+          }
+        }
+      ],
       "expo-video",
       [
         "expo-image-picker",

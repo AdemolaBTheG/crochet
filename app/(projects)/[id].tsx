@@ -19,9 +19,9 @@ import {
   type Project,
 } from '@/db/schema';
 import { resolvePatternTranslation, type ResolvedPattern } from '@/db/translations';
+import { cta, tap, warn } from '@/services/haptics';
 import { useDbStore } from '@/stores/dbStore';
 import { eq } from 'drizzle-orm';
-import * as Haptics from 'expo-haptics';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -180,7 +180,7 @@ export default function ProjectDetailScreen() {
   }
 
   async function updateCounter(delta: number) {
-    Haptics.selectionAsync();
+    tap();
     if (!project || !counterLabel) return;
 
     if (counterLabel === 'row') {
@@ -332,21 +332,28 @@ export default function ProjectDetailScreen() {
 
         {project && pattern ? (
           <>
-            <View
+            <ScrollView
+              contentInsetAdjustmentBehavior="automatic"
               style={{
+                flex: 1,
+                backgroundColor: theme.colors.background,
+              }}
+              contentContainerStyle={{
                 paddingHorizontal: theme.spacing.xl,
                 paddingTop: theme.spacing.sm,
-                paddingBottom: theme.spacing.sm,
+                paddingBottom: insets.bottom + 128,
+                gap: theme.spacing.lg,
                 backgroundColor: theme.colors.background,
               }}>
               <PressableScale
                 onPress={() => {
-                  triggerNavigationHaptic();
                   if (!isPro) {
+                    warn();
                     router.push('/(paywalls)');
                     return;
                   }
 
+                  cta();
                   router.push({
                     pathname: '/(projects)/chat/[id]',
                     params: { id: String(project.id) },
@@ -370,21 +377,7 @@ export default function ProjectDetailScreen() {
                   {isPro ? 'Ask AI about this step' : 'Unlock AI help'}
                 </Text>
               </PressableScale>
-            </View>
 
-            <ScrollView
-              contentInsetAdjustmentBehavior="automatic"
-              style={{
-                flex: 1,
-                backgroundColor: theme.colors.background,
-              }}
-              contentContainerStyle={{
-                paddingHorizontal: theme.spacing.xl,
-                paddingTop: theme.spacing.sm,
-                paddingBottom: insets.bottom + 128,
-                gap: theme.spacing.lg,
-                backgroundColor: theme.colors.background,
-              }}>
               {steps.length > 0 ? (
                 <Animated.View
                   entering={FadeInDown.duration(180)}

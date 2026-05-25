@@ -1,0 +1,59 @@
+{
+  "title": "Wieloryb Amigurumi",
+  "description": "Przyjazny wypchany wieloryb, który opiera się na podstawowej piłce z prostym kształtem i wykończeniem.",
+  "materials": [
+    "Przędza czesankowa",
+    "Hak 4 mm",
+    "znacznik ściegu",
+    "farsz",
+    "bezpieczne oczy",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Magiczny pierścień",
+    "pojedynczy szydełko",
+    "wzrastający",
+    "niewidoczny spadek",
+    "pracując w rundach"
+  ],
+  "expectationText": "Projekt zabawki dla początkujących, w którym liczenie rund i czyszczenie zmniejszają materię, ale kształtowanie nadal pozostaje przystępne.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Zacznij od ciała",
+      "instruction": "Zacznij od magicznego pierścienia i umieść znacznik w pierwszym oczku każdej rundy."
+    },
+    {
+      "type": "powtarzać",
+      "title": "Zwiększ ciało",
+      "instruction": "Zwiększaj równomiernie w pierwszych okrążeniach, aż korpus utworzy płytką miseczkę.",
+      "counterLabel": "okrągły",
+      "targetCount": 4
+    },
+    {
+      "type": "powtarzać",
+      "title": "Przerabiaj równe okrążenia",
+      "instruction": "Pojedynczy szydełko bez dodawania oczek, aby zbudować główną długość korpusu.",
+      "counterLabel": "okrągły",
+      "targetCount": 8
+    },
+    {
+      "type": "instrukcja",
+      "title": "Dodać oczy i farsz",
+      "instruction": "Włóż oczy, zanim otwór będzie zbyt ciasny, a następnie rozpocznij lekkie nadziewanie."
+    },
+    {
+      "type": "powtarzać",
+      "title": "Uformuj koniec ogona",
+      "instruction": "Użyj niewidocznych zamknięć, aby zwęzić korpus, zachowując jednocześnie gładkość szwów.",
+      "counterLabel": "okrągły",
+      "targetCount": 11
+    },
+    {
+      "type": "instrukcja",
+      "title": "Zakończ płetwy i ogon",
+      "instruction": "Zszyj lub szydełku proste płetwy boczne i kształt ogona, a następnie zamknij ostatni otwór i ukryj koniec."
+    }
+  ]
+}

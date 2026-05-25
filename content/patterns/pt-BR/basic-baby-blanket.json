@@ -1,0 +1,56 @@
+{
+  "title": "Cobertor Básico para Bebê",
+  "description": "Um projeto de manta repetitiva e suave projetado para linhas constantes e fácil acompanhamento do progresso.",
+  "materials": [
+    "Fio penteado macio",
+    "gancho de 5 mm",
+    "marcadores de pontos",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Cadeia de fundação",
+    "crochê duplo",
+    "trabalhando em filas",
+    "mudanças de cor"
+  ],
+  "expectationText": "Um projeto de conforto de formato mais longo que transforma fileiras simples e repetidas em um cobertor pronto para presente, sem introduzir modelagens difíceis.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Encadeie a largura",
+      "instruction": "Faça uma corrente de base larga o suficiente para um cobertor de bebê e conte cuidadosamente antes da primeira linha."
+    },
+    {
+      "type": "linha",
+      "title": "Linha 1",
+      "instruction": "Trabalhe a carreira de configuração uniformemente e marque o primeiro e o último ponto se a contagem das bordas ainda for nova.",
+      "counterLabel": "linha",
+      "targetCount": 1
+    },
+    {
+      "type": "repita",
+      "title": "Linhas 2 a 20",
+      "instruction": "Repita o padrão de ponto principal, verificando as bordas a cada poucas carreiras para que a manta permaneça retangular.",
+      "counterLabel": "linha",
+      "targetCount": 20
+    },
+    {
+      "type": "repita",
+      "title": "Linhas 21 a 40",
+      "instruction": "Continue aumentando a altura e mude as cores apenas no final de uma linha se quiser listras suaves.",
+      "counterLabel": "linha",
+      "targetCount": 40
+    },
+    {
+      "type": "instrução",
+      "title": "Adicione a borda",
+      "instruction": "Trabalhe uma borda simples em todos os quatro lados para arrumar as bordas e cantos."
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Entrelace as pontas e estenda o cobertor para verificar se a borda fica bem assentada."
+    }
+  ]
+}

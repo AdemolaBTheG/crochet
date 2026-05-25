@@ -1,0 +1,43 @@
+{
+  "title": "Nybörjarscarf",
+  "description": "Ett långt, repetitivt projekt som gör radspårning verkligen användbart.",
+  "materials": [
+    "Mjukt kamgarn",
+    "5,5 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Foundation kedja",
+    "halv dubbelvirkad",
+    "vända rader",
+    "radräkning"
+  ],
+  "expectationText": "Ett längre upprepningsprojekt där appen hjälper dig att hålla dig på rätt spår utan att återberätta varje rad från början.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Grund",
+      "instruction": "Kedja 26 stygn."
+    },
+    {
+      "type": "rad",
+      "title": "Rad 1",
+      "instruction": "Halva dubbelvirka i den tredje kedjan från nålen och varje kedja tvärs över.",
+      "counterLabel": "rad",
+      "targetCount": 1
+    },
+    {
+      "type": "upprepa",
+      "title": "Rad 2 till 40",
+      "instruction": "Kedja 2, vänd och virka en halv dubbelvirkning över varje varv.",
+      "counterLabel": "rad",
+      "targetCount": 40
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Fäst av, väv in ändarna och blockera lätt om det behövs."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Podstawowa piłka amigurumi",
+  "description": "Mała wypchana kula do ćwiczenia zwiększania, zmniejszania i pracy w ciągłych rundach.",
+  "materials": [
+    "Przędza czesankowa",
+    "Hak 4 mm",
+    "znacznik ściegu",
+    "farsz",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Magiczny pierścień",
+    "pojedynczy szydełko",
+    "wzrastający",
+    "malejące",
+    "pracując w rundach"
+  ],
+  "expectationText": "Kompaktowy projekt kształtujący, w którym wzrosty budują krzywiznę, proste zaokrąglenia dodają wysokości, a zmniejszają kształt.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Uruchom centrum",
+      "instruction": "Zrób magiczny pierścień i umieść znacznik ściegu w pierwszym oczku każdej rundy."
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 1",
+      "instruction": "Przerobić 6 oczek ścisłych w pierścień podstawy i zaciągnąć środek.",
+      "counterLabel": "okrągły",
+      "targetCount": 1
+    },
+    {
+      "type": "powtarzać",
+      "title": "Rundy od 2 do 4",
+      "instruction": "Dodawaj równomiernie w każdym okrążeniu, aż element zacznie się zwijać i przybiera zaokrąglony kształt.",
+      "counterLabel": "okrągły",
+      "targetCount": 4
+    },
+    {
+      "type": "powtarzać",
+      "title": "Rundy od 5 do 7",
+      "instruction": "Pojedynczy szydełko bez dodawania oczek, aby zbudować środek kulki.",
+      "counterLabel": "okrągły",
+      "targetCount": 7
+    },
+    {
+      "type": "powtarzać",
+      "title": "Rundy od 8 do 10",
+      "instruction": "Zamykać równomiernie w każdym okrążeniu, dodając farsz, zanim otwór stanie się za mały.",
+      "counterLabel": "okrągły",
+      "targetCount": 10
+    },
+    {
+      "type": "instrukcja",
+      "title": "Zamknąć",
+      "instruction": "Zapiąć, przeciągnąć ogon przez ostatnie oczka, zamknąć i schować koniec do środka."
+    }
+  ]
+}

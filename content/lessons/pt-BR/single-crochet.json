@@ -1,0 +1,19 @@
+{
+  "title": "Crochê Único",
+  "description": "Aprenda o ponto iniciante mais útil para tecidos compactos e resistentes.",
+  "content": {
+    "summary": "Insira a agulha, puxe uma laçada e complete um ponto simples com duas laçadas na agulha.",
+    "whyItMatters": "O crochê simples é um ponto central usado em porta-copos, amigurumi, panos de prato e bordas.",
+    "steps": [
+      "Insira a agulha no próximo ponto.",
+      "Passe o fio e puxe um laço.",
+      "Enrole novamente e passe pelas duas alças.",
+      "Repita em toda a linha."
+    ],
+    "practice": "Tricotar 3 carreiras de 10 pontos de crochê simples.",
+    "commonMistakes": [
+      "Pular acidentalmente o último ponto da carreira.",
+      "Adicionando pontos extras nas bordas sem perceber."
+    ]
+  }
+}

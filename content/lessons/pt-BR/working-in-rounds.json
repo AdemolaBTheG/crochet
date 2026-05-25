@@ -1,0 +1,19 @@
+{
+  "title": "Trabalhando em rodadas",
+  "description": "Aprenda a construir círculos e motivos sem perder o lugar.",
+  "content": {
+    "summary": "As rodadas são construídas em torno de um ponto central e geralmente unidas ou marcadas no final.",
+    "whyItMatters": "As bases para copos e os quadrados da vovó dependem de uma estrutura redonda limpa e fácil de seguir.",
+    "steps": [
+      "Crie um anel central ou laço de corrente.",
+      "Coloque pontos ao redor do centro.",
+      "Junte-se à rodada com um ponto baixíssimo ou continue em espiral.",
+      "Acompanhe o primeiro ponto de cada rodada com cuidado."
+    ],
+    "practice": "Faça dois círculos de prática com 6 a 12 pontos redondos.",
+    "commonMistakes": [
+      "Perdendo o início da rodada.",
+      "Adicionando pontos de forma desigual e deformando o círculo."
+    ]
+  }
+}

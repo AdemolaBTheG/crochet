@@ -1,0 +1,19 @@
+{
+  "title": "Nó deslizante e segurando seu gancho",
+  "description": "Prepare o fio e a agulha confortavelmente antes de fazer o primeiro ponto.",
+  "content": {
+    "summary": "Aprenda a fazer um nó corrediço e segurar a agulha e o fio sem lutar contra a tensão.",
+    "whyItMatters": "Todo projeto de crochê começa aqui. Uma configuração suave torna cada ponto mais fácil.",
+    "steps": [
+      "Enrole o fio sobre si mesmo para fazer uma laçada.",
+      "Puxe uma mecha pelo laço para criar o nó corrediço.",
+      "Aperte o nó suavemente no gancho para que ele ainda possa deslizar.",
+      "Pratique segurar a agulha e guiar o fio com tensão uniforme."
+    ],
+    "practice": "Faça e remova o nó corrediço três vezes até ficar fácil.",
+    "commonMistakes": [
+      "Puxando o nó muito apertado no gancho.",
+      "Agarrando o fio com tanta força que a agulha não consegue se mover."
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "title": "Prążkowany Scrunchie",
+  "description": "Szybki projekt do noszenia, wykonany wokół gumki do włosów, z powtórzeniami przyjaznymi dla początkujących.",
+  "materials": [
+    "Miękka przędza",
+    "Hak 4,5mm",
+    "włosy elastyczne",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Pojedynczy szydełko",
+    "pół szydełka",
+    "pracując wokół gumki",
+    "łączący"
+  ],
+  "expectationText": "Zabawny, szybki projekt, w którym powtarzanie buduje pewność siebie, a końcowy efekt nadaje się na prezent.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Zakryj gumkę",
+      "instruction": "Połącz przędzę wokół gumki włosów i równomiernie szydełko wokół niej."
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 1",
+      "instruction": "Przerobić tyle pojedynczych szydełek wokół gumki, aby obszycie było całkowicie zakryte.",
+      "counterLabel": "okrągły",
+      "targetCount": 1
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 2",
+      "instruction": "Wykonaj 2 oczka łańcuszka, następnie przerób pół słupka w każde oczko.",
+      "counterLabel": "okrągły",
+      "targetCount": 2
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 3",
+      "instruction": "Aby uzyskać pełniejszy scrunchie, wykonaj jeszcze jedno okrążenie półsłupka.",
+      "counterLabel": "okrągły",
+      "targetCount": 3
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Zsunąć oczko, aby je połączyć, zapiąć i wplecić ogon w fałdy."
+    }
+  ]
+}

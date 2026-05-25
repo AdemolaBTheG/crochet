@@ -1,0 +1,45 @@
+{
+  "title": "Projeto de adesão à Mini Granny Square",
+  "description": "Transforme quatro quadrados de vovó em um pequeno projeto finalizado para que o usuário conclua algo real.",
+  "materials": [
+    "Fio penteado",
+    "gancho de 5 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Quadrados da vovó",
+    "junção de ponto baixíssimo",
+    "costura",
+    "tecendo pontas"
+  ],
+  "expectationText": "Um pequeno projeto de acabamento onde você transforma quadrados separados em uma única peça e pratica a união simples com confiança.",
+  "steps": [
+    {
+      "type": "repita",
+      "title": "Faça quatro quadrados",
+      "instruction": "Complete o padrão básico do quadrado da vovó quatro vezes.",
+      "targetCount": 4
+    },
+    {
+      "type": "instrução",
+      "title": "Organize os quadrados",
+      "instruction": "Disponha os quatro quadrados em um layout 2 por 2, com os lados direitos voltados para cima."
+    },
+    {
+      "type": "instrução",
+      "title": "Junte-se à primeira costura",
+      "instruction": "Use ponto baixíssimo ou ponto chicote para unir os dois quadrados superiores."
+    },
+    {
+      "type": "instrução",
+      "title": "Junte-se à segunda costura",
+      "instruction": "Junte os dois quadrados inferiores e conecte as linhas."
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Tecer em todas as pontas e modelar levemente a peça acabada."
+    }
+  ]
+}

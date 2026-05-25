@@ -1,8 +1,8 @@
 import { theme } from '@/constants/Theme';
 import type { Pattern } from '@/db/schema';
+import { cta, warn } from '@/services/haptics';
 import { askProjectChat, askStitchFixes, type AiChatMessage } from '@/services/ai';
 import { LegendList } from '@legendapp/list';
-import { impactAsync, ImpactFeedbackStyle } from 'expo-haptics';
 import { SymbolView } from 'expo-symbols';
 import React, { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -179,7 +179,7 @@ export function ProjectChat({
   async function sendMessage() {
     if (!trimmedInput || isSending) return;
 
-    void impactAsync(ImpactFeedbackStyle.Light);
+    cta();
 
     const now = Date.now();
     const userMessage: ProjectChatMessage = {
@@ -222,6 +222,7 @@ export function ProjectChat({
         },
       ]);
     } catch (error) {
+      warn();
       console.warn('AI chat request failed', error);
       setSentMessages((currentMessages) => [
         ...currentMessages,
@@ -233,7 +234,6 @@ export function ProjectChat({
         },
       ]);
     } finally {
-      impactAsync(ImpactFeedbackStyle.Light);
       setIsSending(false);
     }
   }

@@ -1,0 +1,422 @@
+{
+  "common": {
+    "continue": "Kontynuować",
+    "preparing": "Przygotowanie...",
+    "filters": {
+      "all": "Wszystko"
+    },
+    "badges": {
+      "pro": "Zawodowiec"
+    },
+    "time": {
+      "today": "Dzisiaj",
+      "yesterday": "Wczoraj",
+      "daysAgo": "{{count}} dni temu"
+    },
+    "counter": {
+      "rounds": "{{count}} rund",
+      "rows": "{{count}} wierszy",
+      "none": "Jeszcze nie ma licznika"
+    },
+    "steps": {
+      "progress": "{{current}}/{{total}} kroków",
+      "stepOnly": "Krok {{current}}",
+      "count": "{{count}} kroków"
+    }
+  },
+  "shared": {
+    "close": "Zamknąć",
+    "unlockPremium": "Odblokuj Premium",
+    "stepOf": "Krok {{current}} z {{total}}"
+  },
+  "chat": {
+    "thinking": "Myślący...",
+    "errorFallback": "Podczas generowania odpowiedzi natknąłem się na przeszkodę. Spróbuj ponownie."
+  },
+  "tabs": {
+    "home": "Dom",
+    "learn": "Uczyć się",
+    "projects": "Projektowanie"
+  },
+  "home": {
+    "sections": {
+      "activeProjects": "Aktywne projekty"
+    },
+    "accessibility": {
+      "continueProject": "Kontynuuj {{name}}",
+      "showPatterns": "Pokaż {{category}} wzorce"
+    },
+    "lastWorkedPrefix": "Ostatnio pracował",
+    "lastWorkedSeparator": "·"
+  },
+  "projects": {
+    "sections": {
+      "inProgress": "W toku",
+      "completed": "Zakończony"
+    },
+    "empty": {
+      "title": "Nie ma jeszcze żadnych projektów",
+      "subtitle": "Wybierz wzór ze strony głównej i dotknij opcji Rozpocznij projekt."
+    },
+    "accessibility": {
+      "openProject": "Otwórz {{name}}"
+    }
+  },
+  "learn": {
+    "toolsSectionTitle": "Narzędzia",
+    "lessonLabel": "Lekcja {{index}}",
+    "actions": {
+      "open": "Otwarte",
+      "unlock": "Odblokować"
+    },
+    "accessibility": {
+      "unlockTool": "Odblokuj {{title}}",
+      "lessonCard": "{{action}} {{title}} lekcja"
+    },
+    "empty": {
+      "title": "Nie ma jeszcze żadnych lekcji",
+      "subtitle": "Zaszczep lokalną bazę danych, aby pokazać tutaj ścieżkę dla początkujących."
+    },
+    "tools": {
+      "row-counter": {
+        "title": "Licznik wierszy",
+        "description": "Licz rzędy, okrążenia i powtórzenia, nie tracąc miejsca."
+      },
+      "stitch-fixes": {
+        "title": "Poprawki ściegów",
+        "description": "Szybka pomoc w przypadku zawijania się, nierównych krawędzi, przerw i brakujących ściegów."
+      },
+      "size-calculator": {
+        "title": "Kalkulator rozmiaru",
+        "description": "Oszacuj liczbę ściegów i rzędów na podstawie miernika."
+      },
+      "identify-stitch": {
+        "title": "Zidentyfikuj Stich",
+        "description": "Użyj zdjęcia, aby zrozumieć ścieg, na który patrzysz."
+      }
+    }
+  },
+  "lessonDetail": {
+    "lesson": "Lekcja",
+    "notFound": "Nie znaleziono lekcji.",
+    "difficulty": "Trudność",
+    "steps": "Kroki",
+    "practice": "Praktyka",
+    "practicePaceShort": "krótki",
+    "whyItMatters": "Dlaczego to ma znaczenie",
+    "commonMistakes": "Typowe błędy",
+    "startPractice": "Rozpocznij praktykę",
+    "difficultyValues": {
+      "beginner": "Początkujący",
+      "intermediate": "Mediator",
+      "advanced": "Zaawansowany"
+    }
+  },
+  "settings": {
+    "sections": {
+      "support": "Wsparcie",
+      "legal": "Prawny"
+    },
+    "rows": {
+      "sendFeedback": "Wyślij opinię",
+      "rateApp": "Oceń aplikację",
+      "customerCenter": "Centrum Klienta",
+      "terms": "Warunki",
+      "privacyPolicy": "Polityka prywatności"
+    },
+    "premium": {
+      "title": "Odblokuj Premium",
+      "subtitle": "Zdobądź każdy wzór, przewodnik i kreatywne narzędzie w miarę rozwoju Crova.",
+      "cta": "Aktualizacja"
+    },
+    "alerts": {
+      "customerCenterUnavailableTitle": "Centrum obsługi klienta niedostępne",
+      "customerCenterUnavailableMessage": "Spróbuj ponownie po skonfigurowaniu zakupów."
+    },
+    "accessibility": {
+      "openPremiumUpgrade": "Otwórz aktualizację premium"
+    }
+  },
+  "tools": {
+    "rowCounter": {
+      "mode": {
+        "rows": "Wydziwianie",
+        "rounds": "Rundy"
+      },
+      "copy": {
+        "rows": {
+          "label": "Rzędy uzupełnione",
+          "helper": "Najlepsze do szali, ścierek do naczyń, próbek i płaskich kawałków."
+        },
+        "rounds": {
+          "label": "Rundy zakończone",
+          "helper": "Najlepsze do kwadratów babci, podstawek, amigurumi i pracy okrężnej."
+        }
+      },
+      "actions": {
+        "decreaseRows": "Zmniejsz rzędy",
+        "decreaseRounds": "Zmniejsz liczbę rund",
+        "increaseRows": "Zwiększ rzędy",
+        "increaseRounds": "Zwiększ liczbę rund",
+        "resetRows": "Zresetuj wiersze",
+        "resetRounds": "Resetuj rundy"
+      }
+    },
+    "sizeCalculator": {
+      "units": {
+        "cm": "cm",
+        "in": "W"
+      },
+      "sections": {
+        "gauge": "Miernik",
+        "targetSize": "Rozmiar docelowy",
+        "estimate": "Oszacować"
+      },
+      "fields": {
+        "stitches": "Ściegi",
+        "rows": "Wydziwianie",
+        "width": "Szerokość",
+        "height": "Wysokość"
+      },
+      "emptyHelp": "Wprowadź grubość próbki i rozmiar docelowy, aby oszacować liczbę oczek i rzędów.",
+      "disclaimer": "To jest szacunkowy plan. Zawsze sprawdź własną próbkę przed podjęciem decyzji o ostatecznym rozmiarze."
+    },
+    "identifyStitch": {
+      "empty": {
+        "title": "Dodaj wyraźne zdjęcie ściegu",
+        "subtitle": "Użyj dobrego oświetlenia i wypełnij ramkę teksturą ściegu."
+      },
+      "analysis": {
+        "title": "Analiza",
+        "loading": "Sprawdzanie tekstury ściegu za pomocą AI...",
+        "noLikelyStitchDetected": "Nie mogłem z całą pewnością zidentyfikować ściegu szydełkowego na podstawie tego obrazu.",
+        "noLikelyStitchHint": "Wypróbuj jaśniejsze światło, podejdź bliżej i wykadruj teksturę pojedynczego ściegu, aby uzyskać wyraźniejszy efekt.",
+        "bestMatch": "Najlepszy mecz",
+        "confidence": {
+          "high": "Wysoki",
+          "medium": "Średni",
+          "low": "Niski"
+        },
+        "photoReady": "Zdjęcie jest gotowe. Wybierz wyraźniejsze zdjęcie w dowolnym momencie, jeśli tekstura ściegu jest słabo widoczna.",
+        "noPhoto": "Wybierz lub zrób zdjęcie, aby zidentyfikować prawdopodobny ścieg i uzyskać wskazówki przyjazne dla początkujących.",
+        "visibleClues": "Widoczne wskazówki",
+        "nextSteps": "Kolejne kroki",
+        "aiResult": "Wynik AI",
+        "readyForAi": "Gotowy na sztuczną inteligencję"
+      },
+      "alerts": {
+        "cameraPermissionTitle": "Wymagane pozwolenie na kamerę",
+        "cameraPermissionMessage": "Zezwól na dostęp aparatu, aby zrobić zdjęcie ściegu.",
+        "photoPermissionTitle": "Potrzebne pozwolenie na zdjęcie",
+        "photoPermissionMessage": "Zezwól na dostęp do zdjęć, aby wybrać obraz ściegu."
+      },
+      "actions": {
+        "takePhoto": "Zrób zdjęcie",
+        "choosePhoto": "Wybierać"
+      },
+      "errors": {
+        "couldNotAnalyze": "Nie można przeanalizować tego zdjęcia. Spróbuj jaśniejszego zbliżenia.",
+        "couldNotAnalyzeWithReason": "Nie można przeanalizować tego zdjęcia: {{reason}}"
+      }
+    }
+  },
+  "patternDetail": {
+    "pattern": "Wzór",
+    "opening": "Otwór...",
+    "resumeProject": "Wznów projekt",
+    "startProject": "Rozpocznij projekt",
+    "projectInProgress": "Projekt w toku",
+    "difficulty": "Trudność",
+    "category": "Kategoria",
+    "general": "Ogólny",
+    "time": "Czas",
+    "minutesShort": "{{count}} min",
+    "skillsNeeded": "Potrzebne umiejętności",
+    "materials": "Przybory",
+    "patternOverview": "Przegląd wzorów",
+    "steps": "Kroki",
+    "structure": "Struktura",
+    "counters": "Liczniki",
+    "basic": "podstawowy",
+    "whatToExpect": "Czego się spodziewać",
+    "guided": "prowadzony",
+    "counterRows": "{{count}} wiersz",
+    "counterRows_plural": "{{count}} wierszy",
+    "counterRounds": "{{count}} okrągły",
+    "counterRounds_plural": "{{count}} rund",
+    "counterRowsTarget": "{{current}} / {{target}} wierszy",
+    "counterRoundsTarget": "{{current}} / {{target}} rund",
+    "lastWorkedToday": "Ostatnia praca dzisiaj",
+    "lastWorkedYesterday": "Ostatnio pracowałem wczoraj",
+    "lastWorkedDaysAgo": "Ostatnia praca była {{count}} dni temu",
+    "lastWorkedOnDate": "Ostatnia praca {{date}}"
+  },
+  "projectComplete": {
+    "title": "Projekt ukończony",
+    "notFound": "Nie znaleziono projektu.",
+    "stepsDone": "Wykonane kroki",
+    "counter": "Lada",
+    "done": "Zrobione",
+    "finishedJustNow": "Właśnie skończyłem",
+    "finishedOn": "Zakończono {{date}}",
+    "backToProjects": "Powrót do Projektów",
+    "starting": "Startowy...",
+    "makeAnother": "Zrób kolejny"
+  },
+  "onboarding": {
+    "intro": {
+      "titlePrefix": "Ucz się szybciej dzięki przepływowi stworzonemu z myślą o",
+      "titleAccent": "początkujące szydełko",
+      "slides": {
+        "learnStitches": "Naucz się ściegów",
+        "finishProjects": "Zakończ projekty",
+        "trackRows": "Śledź każdy wiersz",
+        "buildHabit": "Zbuduj swój nawyk",
+        "stayConsistent": "Zachowaj spójność"
+      },
+      "rowProgress": "Wiersz {{current}} / {{total}}"
+    },
+    "quiz": {
+      "stepOf": "Krok {{current}} z {{total}}",
+      "steps": {
+        "skillLevel": {
+          "title": "Jaki jest Twój poziom szydełkowania?",
+          "subtitle": "Dostosujemy Twoje lekcje i projekty początkowe do miejsca, w którym jesteś dzisiaj.",
+          "cta": "Kontynuować",
+          "options": {
+            "beginner": "Jestem zupełnie nowy",
+            "intermediate": "Znam podstawy",
+            "advanced": "Chcę trudniejszych projektów"
+          }
+        },
+        "goal": {
+          "title": "W czym chcesz najpierw uzyskać pomoc?",
+          "subtitle": "Wybierz główny powód, dla którego pobrałeś Crovę, aby aplikacja mogła Cię tam szybciej poprowadzić.",
+          "cta": "Kontynuować",
+          "options": {
+            "learnBasics": "Naucz się podstawowych ściegów",
+            "finishFirstProject": "Ukończ mój pierwszy prawdziwy projekt",
+            "buildHabit": "Zbuduj stały nawyk szydełkowania"
+          }
+        },
+        "handedness": {
+          "title": "Którą ręką szydełkujesz?",
+          "subtitle": "Pomaga nam to pokazać właściwy kąt nauczania po dodaniu treści dla leworęcznych.",
+          "cta": "Uruchom Crovę",
+          "options": {
+            "right": "Praworęczny",
+            "left": "Leworęczny"
+          }
+        }
+      }
+    },
+    "loader": {
+      "titlePreparing": "Przygotowanie doświadczenia",
+      "titleReady": "Wszystko gotowe.",
+      "ctaPreview": "Wypróbuj szybkie demo",
+      "ctaReady": "Uruchom Crovę",
+      "summaryEyebrow": "Spersonalizowany start",
+      "summarySubtitle": "Dostosowaliśmy Twoje pierwsze kroki do Twojego poziomu, skupienia i konfiguracji.",
+      "summaryCardTitle": "Twoja konfiguracja",
+      "summaryCardSubtitle": "To jest ścieżka, od której Crova zacznie, w oparciu o to, co nam powiedziałeś.",
+      "summaryLabels": {
+        "skillLevel": "Doświadczenie",
+        "goal": "Centrum",
+        "handedness": "Ręczność"
+      },
+      "summaryFallbacks": {
+        "skillLevel": "Spersonalizowane",
+        "goal": "Twoja szydełkowa ścieżka",
+        "handedness": "Konfiguracja standardowa"
+      },
+      "nextTitle": "Co stanie się dalej",
+      "goalLabels": {
+        "learnBasics": "ściegi rdzeniowe",
+        "finishFirstProject": "Twój pierwszy projekt",
+        "buildHabit": "stały nawyk szydełkowania",
+        "default": "Twoja szydełkowa ścieżka"
+      },
+      "skillLabels": {
+        "beginner": "przyjazny dla początkujących",
+        "intermediate": "średnio-gotowy",
+        "advanced": "zaawansowany",
+        "default": "spersonalizowane"
+      },
+      "messages": {
+        "buildingPlan": "Tworzenie planu {{skillLabel}}...",
+        "pickingLessons": "Wybieram lekcje dla {{goalLabel}}...",
+        "tracking": "Konfiguruję śledzenie postępu...",
+        "finalizing": "Finalizowanie startu Crova..."
+      },
+      "nextSteps": {
+        "skillLevel": {
+          "beginner": "Zaczniesz od krótkich lekcji krok po kroku, utrzymując przystępne tempo.",
+          "intermediate": "Otrzymasz szybkie odświeżenie, a następnie od razu przejdziesz do praktyki prowadzonej.",
+          "advanced": "Wskoczysz w bardziej wymagające wzory i głębszą pracę techniczną.",
+          "default": "Rozpoczniesz od spersonalizowanej ścieżki lekcji dopasowanej do Twojego poziomu."
+        },
+        "goal": {
+          "learnBasics": "Twoje pierwsze lekcje skupią się na podstawowych ściegach i ich dopasowaniu do siebie.",
+          "finishFirstProject": "Twój plan poprowadzi Cię do pierwszego ukończonego projektu tak szybko, jak to możliwe.",
+          "buildHabit": "Twój plan będzie preferował lżejsze sesje, które łatwiej będzie konsekwentnie powtarzać.",
+          "default": "Twój plan będzie skupiał się na wyniku, który jest dla Ciebie najważniejszy."
+        },
+        "tracking": "Narzędzia do śledzenia wierszy i postępu będą gotowe od pierwszego dnia."
+      }
+    },
+    "demo": {
+      "eyebrow": "Szybka praktyka",
+      "title": "Spróbuj, jak uczy Crova",
+      "subtitle": "Mała lekcja z przewodnikiem dla {{skillLabel}} skupiająca się na {{goalLabel}}.",
+      "stepLabel": "Krok {{current}}",
+      "chips": {
+        "duration": "Poniżej 30 sekund",
+        "handedness": "{{value}} zapisano"
+      },
+      "actions": {
+        "previous": "Poprzedni",
+        "next": "Następny krok",
+        "finish": "Zobacz mój plan"
+      },
+      "skillAudience": {
+        "beginner": "początkujący",
+        "intermediate": "szydełkarki, które znają podstawy",
+        "advanced": "szydełkarze gotowi na wyzwanie",
+        "default": "szydełko"
+      },
+      "goalFocus": {
+        "learnBasics": "nauka podstawowych ściegów",
+        "finishFirstProject": "ukończenie pierwszego projektu",
+        "buildHabit": "budowanie stałego nawyku",
+        "default": "odnalezienie swojego rytmu"
+      },
+      "cards": {
+        "one": {
+          "title": "Zacznij od jednego wyraźnego ruchu"
+        },
+        "two": {
+          "title": "Bądź na bieżąco z każdym krokiem"
+        },
+        "three": {
+          "title": "Dąż do prawdziwego rezultatu"
+        }
+      },
+      "stepBodies": {
+        "skill": {
+          "beginner": "Spowalniamy lekcję i utrzymujemy, że ruch jest prosty, więc skupiasz się tylko na jednej rzeczy na raz.",
+          "intermediate": "Wyjaśniamy krótko i przenosimy Cię do praktyki prowadzonej bez nadmiernego przyspieszania.",
+          "advanced": "Staramy się, aby wskazówki były lżejsze, dzięki czemu możesz szybko się poruszać i spędzać więcej czasu na robieniu niż na czytaniu.",
+          "default": "Dopasowujemy tempo lekcji do Twojego poziomu, dzięki czemu wskazówki wydają się przydatne, a nie powtarzalne."
+        },
+        "progress": "Postęp pozostaje widoczny, gdy się poruszasz, więc zawsze wiesz, co będzie dalej i gdzie przerwałeś.",
+        "goal": {
+          "learnBasics": "Twoja ścieżka skupi się najpierw na ściegach rdzenia, ponieważ jest to najszybszy sposób na budowanie pewności siebie.",
+          "finishFirstProject": "Twoja droga będzie prowadziła do ukończonego projektu, więc praktyka zamieni się w coś namacalnego.",
+          "buildHabit": "Twoja ścieżka będzie sprzyjać krótkim zwycięstwom, które łatwo będzie powtórzyć, więc naturalny będzie powrót jutro.",
+          "default": "Twoja ścieżka pozostanie skupiona na wyniku, który jest dla Ciebie najważniejszy."
+        }
+      },
+      "note": "Jest to ten sam prowadzony, krok po kroku rytm, którego będziesz używać na pierwszych lekcjach Crova."
+    }
+  }
+}

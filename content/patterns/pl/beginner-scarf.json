@@ -1,0 +1,43 @@
+{
+  "title": "Szalik dla początkujących",
+  "description": "Długi, powtarzalny projekt, dzięki któremu śledzenie wierszy jest naprawdę przydatne.",
+  "materials": [
+    "Miękka przędza czesankowa",
+    "Hak 5,5mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Łańcuch fundamentowy",
+    "pół szydełka",
+    "obracanie rzędów",
+    "liczenie wierszy"
+  ],
+  "expectationText": "Dłuższy, powtarzalny projekt, w którym aplikacja pomaga Ci utrzymać dobrą formę bez konieczności przeliczania każdego wiersza od zera.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Fundacja",
+      "instruction": "Łańcuszek 26 oczek."
+    },
+    {
+      "type": "wiersz",
+      "title": "Rząd 1",
+      "instruction": "Półsłupek w trzecim łańcuszku od szydełka i w poprzek każdego łańcuszka.",
+      "counterLabel": "wiersz",
+      "targetCount": 1
+    },
+    {
+      "type": "powtarzać",
+      "title": "Rzędy od 2 do 40",
+      "instruction": "Zrób 2 oczka łańcuszka, obróć i przerób półsłupek w każdym rzędzie.",
+      "counterLabel": "wiersz",
+      "targetCount": 40
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Zapiąć, splecić na końcach i w razie potrzeby lekko zablokować."
+    }
+  ]
+}

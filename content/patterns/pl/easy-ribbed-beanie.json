@@ -1,0 +1,48 @@
+{
+  "title": "Łatwa czapka ze ściągaczem",
+  "description": "Przyjazny dla początkujących model do noszenia, wykonany z prążkowanego prostokąta i prostego szwu.",
+  "materials": [
+    "Przędza czesankowa",
+    "Hak 5,5mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Łańcuch fundamentowy",
+    "pół szydełka",
+    "tylko pętla tylna",
+    "zszywanie"
+  ],
+  "expectationText": "Projekt do noszenia, zbudowany z prostych rzędów, a następnie zszyty w kształt, dzięki czemu można wykończyć prawdziwy kapelusz bez skomplikowanego kształtowania.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Fundacja",
+      "instruction": "Zszyj tyle oczek, aby sięgały od ronda do czubka kapelusza."
+    },
+    {
+      "type": "wiersz",
+      "title": "Rząd 1",
+      "instruction": "Półsłupek w trzecim łańcuszku od szydełka i w poprzek każdego łańcuszka.",
+      "counterLabel": "wiersz",
+      "targetCount": 1
+    },
+    {
+      "type": "powtarzać",
+      "title": "Wiersze od 2 do 36",
+      "instruction": "Zrób 2 łańcuszek, obróć i przerób półsłupek w tylnej pętelce tylko w poprzek.",
+      "counterLabel": "wiersz",
+      "targetCount": 36
+    },
+    {
+      "type": "instrukcja",
+      "title": "Zszyj bok",
+      "instruction": "Złóż prostokąt i zszyj ze sobą pierwszy i ostatni rząd."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Zamknij koronę",
+      "instruction": "Owiń przędzę wokół górnej krawędzi, zaciśnij mocno, zabezpiecz i splot na końcach."
+    }
+  ]
+}

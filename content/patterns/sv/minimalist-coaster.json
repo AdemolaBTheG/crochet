@@ -1,0 +1,50 @@
+{
+  "title": "Minimalistisk Coaster",
+  "description": "Ett snabbt cirkulärt projekt för inlärning av rundor, sammanfogning och enkel upprepning av stygn.",
+  "materials": [
+    "Bomullsgarn",
+    "4 till 5 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Magisk ring",
+    "enkelvirkad",
+    "slipsöm",
+    "arbetar i omgångar"
+  ],
+  "expectationText": "Ett snabbt runt projekt där du tränar på att bygga en platt cirkel, foga snyggt och avsluta något användbart i en kort sittning.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Gör en mittring",
+      "instruction": "Börja med en magisk ring eller kedja 4 och gå ihop till en slinga."
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 1",
+      "instruction": "Virka 8 fastmaskor i ringen och sy ihop med en smygmaska.",
+      "counterLabel": "runda",
+      "targetCount": 1
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 2",
+      "instruction": "Virka 2 fastmaskor i varje maska ​​runt för totalt 16 maskor.",
+      "counterLabel": "runda",
+      "targetCount": 2
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 3",
+      "instruction": "Varva 1 enkelvirkning, sedan 2 enkelmaskor i nästa maska ​​runt.",
+      "counterLabel": "runda",
+      "targetCount": 3
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Lyft stygn för att sammanfoga, fästa av och väva till slut."
+    }
+  ]
+}

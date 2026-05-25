@@ -1,0 +1,50 @@
+{
+  "title": "Podstawowy plac Babci",
+  "description": "Klasyczny motyw szydełkowy, który uczy kępek i rogów podwójnego szydełka.",
+  "materials": [
+    "Przędza czesankowa",
+    "Hak 5 mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Magiczny pierścień",
+    "podwójne szydełko",
+    "przestrzenie łańcuchowe",
+    "łączenie ściegiem poślizgowym"
+  ],
+  "expectationText": "Klasyczny motyw, który uczy narożników, skupisk i okrągłej struktury bez wchodzenia w ogromny projekt.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Pierścień środkowy",
+      "instruction": "Utwórz magiczny pierścień lub łańcuszek 4 i połącz go w pętlę."
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 1",
+      "instruction": "Utwórz 4 skupiska babci oddzielone spacjami łańcuchowymi i połącz, aby zamknąć kwadrat.",
+      "counterLabel": "okrągły",
+      "targetCount": 1
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 2",
+      "instruction": "Wsuń ścieg do przestrzeni narożnej, zbuduj następną warstwę klastrów babci i uformuj rogi z odstępami na łańcuszki.",
+      "counterLabel": "okrągły",
+      "targetCount": 2
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 3",
+      "instruction": "Powtarzaj skupienia babci wzdłuż boków i rogów, aż kwadrat osiągnie pożądany rozmiar.",
+      "counterLabel": "okrągły",
+      "targetCount": 3
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Połącz okrążenie, zamknij i splot na końcach."
+    }
+  ]
+}

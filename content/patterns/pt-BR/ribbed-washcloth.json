@@ -1,0 +1,50 @@
+{
+  "title": "Toalha com nervuras",
+  "description": "Um quadrado simples que transforma a prática apenas de back-loop em um tecido texturizado útil.",
+  "materials": [
+    "Fio de algodão",
+    "gancho de 5 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Cadeia de fundação",
+    "meio crochê duplo",
+    "apenas loop traseiro",
+    "virando linhas"
+  ],
+  "expectationText": "Um projeto prático do tamanho de uma amostra em que as nervuras são óbvias e rápidas, de modo que a técnica funciona antes de você passar para os wearables.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Fundação",
+      "instruction": "Corrente 19 pontos."
+    },
+    {
+      "type": "linha",
+      "title": "Linha 1",
+      "instruction": "Meio ponto alto duplo na terceira corrente a partir da agulha e em cada corrente.",
+      "counterLabel": "linha",
+      "targetCount": 1
+    },
+    {
+      "type": "linha",
+      "title": "Linha 2",
+      "instruction": "Corrente 2, vire e faça meio ponto alto duplo na alça de trás apenas transversalmente.",
+      "counterLabel": "linha",
+      "targetCount": 2
+    },
+    {
+      "type": "repita",
+      "title": "Linhas 3 a 16",
+      "instruction": "Continue encadeando 2, virando e trabalhando meio ponto alto duplo na alça de trás apenas transversalmente.",
+      "counterLabel": "linha",
+      "targetCount": 16
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Aperte e costure bem as duas pontas."
+    }
+  ]
+}

@@ -2,8 +2,8 @@ import { theme } from '@/constants/Theme';
 import { isLessonFree } from '@/constants/gates';
 import { useSubscription } from '@/context/SubscriptionContext';
 import { resolveLessonTranslations, type ResolvedLesson } from '@/db/translations';
+import { tap, warn } from '@/services/haptics';
 import { useDbStore } from '@/stores/dbStore';
-import { selectionAsync } from 'expo-haptics';
 import { Link, router } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
 import React, { useEffect, useState } from 'react';
@@ -93,10 +93,11 @@ function ToolCard({ tool, width, isLocked }: { tool: ToolItem; width: number; is
   return (
     <Pressable
       onPress={() => {
-        void selectionAsync();
         if (isLocked) {
+          warn();
           router.push('/(paywalls)');
         } else {
+          tap();
           if (tool.href) {
             router.push(tool.href);
           }
@@ -220,14 +221,15 @@ function LessonCard({
 
   const card = (
     <Pressable
-      onPress={
-        isLocked
-          ? () => {
-              void selectionAsync();
-              router.push('/(paywalls)');
-            }
-          : undefined
-      }
+      onPress={() => {
+        if (isLocked) {
+          warn();
+          router.push('/(paywalls)');
+          return;
+        }
+
+        tap();
+      }}
       accessibilityRole="button"
       accessibilityLabel={t('learn.accessibility.lessonCard', {
         action: isLocked ? t('learn.actions.unlock') : t('learn.actions.open'),

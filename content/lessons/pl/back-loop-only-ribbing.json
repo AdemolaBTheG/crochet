@@ -1,0 +1,19 @@
+{
+  "title": "Ściągacz tylko z pętlą tylną",
+  "description": "Twórz rozciągliwe i widoczne grzbiety, łącząc jedną pętlę zamiast obu.",
+  "content": {
+    "summary": "Tylna pętelka tylko na szydełku zmienia fakturę tkaniny i tworzy czysty, prążkowany wygląd.",
+    "whyItMatters": "Technikę tę stosuje się w czapkach, mankietach i teksturowanych materiałach podstawowych, w których liczy się rozciągliwość i kierunek.",
+    "steps": [
+      "Znajdź dwie górne pętle ściegu i zidentyfikuj tylną pętlę najdalej od ciebie.",
+      "Włóż haczyk tylko pod tę tylną pętlę, a nie obie pętle.",
+      "Przerabiaj ścieg normalnie, utrzymując luźny brzeg.",
+      "Powtarzaj w całym rzędzie, aby zbudować równe grzbiety."
+    ],
+    "practice": "Przerobić dwa krótkie rzędy zwykłymi oczkami, następnie dwa rzędy tylko w pętelkę z tyłu i porównać teksturę.",
+    "commonMistakes": [
+      "Przypadkowe złapanie obu pętli z przyzwyczajenia.",
+      "Zbyt ciasne naciąganie i sprawianie, że ściągacz staje się sztywny zamiast elastyczny."
+    ]
+  }
+}

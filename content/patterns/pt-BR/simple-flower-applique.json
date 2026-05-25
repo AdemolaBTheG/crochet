@@ -1,0 +1,47 @@
+{
+  "title": "Aplique de flor simples",
+  "description": "Um motivo floral de cinco pétalas para aprender formas repetidas em torno de um centro.",
+  "materials": [
+    "Fio de algodão",
+    "gancho de 4 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Anel mágico",
+    "espaços de cadeia",
+    "crochê duplo",
+    "ponto baixíssimo"
+  ],
+  "expectationText": "Um motivo alegre que repete a mesma sequência de pétalas para que a modelagem comece a parecer previsível.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Faça o centro",
+      "instruction": "Comece com um anel mágico e faça 10 pontos baixos no centro."
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 1",
+      "instruction": "Junte-se à volta central com um ponto baixíssimo e aperte o anel.",
+      "counterLabel": "redondo",
+      "targetCount": 1
+    },
+    {
+      "type": "repita",
+      "title": "Faça cinco pétalas",
+      "instruction": "Repita os pontos corrente e faça um ponto alto duplo no mesmo ponto para formar cada pétala.",
+      "targetCount": 5
+    },
+    {
+      "type": "instrução",
+      "title": "Dê forma às pétalas",
+      "instruction": "Puxe delicadamente cada pétala no lugar para que a flor fique plana."
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Aperte e trance as caudas na parte de trás da flor."
+    }
+  ]
+}

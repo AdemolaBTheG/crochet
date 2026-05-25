@@ -1,0 +1,45 @@
+{
+  "title": "Mini Plac Babci Dołącz do projektu",
+  "description": "Zamień cztery kwadraty babci w jeden mały, gotowy projekt, aby użytkownik mógł ukończyć coś prawdziwego.",
+  "materials": [
+    "Przędza czesankowa",
+    "Hak 5 mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Babcine kwadraty",
+    "łączenie ściegiem poślizgowym",
+    "zszywanie",
+    "tkanie się kończy"
+  ],
+  "expectationText": "Mały projekt wykończeniowy, w którym zamieniasz oddzielne kwadraty w jeden element i ćwiczysz proste łączenie.",
+  "steps": [
+    {
+      "type": "powtarzać",
+      "title": "Zrób cztery kwadraty",
+      "instruction": "Uzupełnij podstawowy kwadratowy wzór babci cztery razy.",
+      "targetCount": 4
+    },
+    {
+      "type": "instrukcja",
+      "title": "Ułóż kwadraty",
+      "instruction": "Ułóż cztery kwadraty w układzie 2 na 2, prawą stroną do góry."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Połącz pierwszy szew",
+      "instruction": "Użyj ściegu poślizgowego lub ściegu biczowego, aby połączyć dwa górne kwadraty."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Połącz drugi szew",
+      "instruction": "Połącz dwa dolne kwadraty, a następnie połącz rzędy ze sobą."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Splot na wszystkich końcach i lekko uformuj gotowy element."
+    }
+  ]
+}

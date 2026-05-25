@@ -1,0 +1,12 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Crochet",
+    "NSLocationWhenInUseUsageDescription": "Crochet nutzt Ihren Standort, um lokalisierte Musterempfehlungen und Vorschläge für Garngeschäfte bereitzustellen.",
+    "NSPhotoLibraryUsageDescription": "Crochet nutzt Ihre Fotobibliothek, sodass Sie Projektinspirationen, Fortschrittsfotos und Musterbilder importieren und speichern können.",
+    "NSPhotoLibraryAddUsageDescription": "Crochet speichert exportierte Musterbilder und Projektschnappschüsse in Ihrer Fotobibliothek.",
+    "NSCameraUsageDescription": "Crochet verwendet Ihre Kamera, damit Sie Maschen anhand eines Fotos identifizieren können."
+  },
+  "android": {
+    "app_name": "Crochet"
+  }
+}

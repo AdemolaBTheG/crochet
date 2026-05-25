@@ -1,0 +1,50 @@
+{
+  "title": "Okrągły Trivet",
+  "description": "Grubszy płaski okrąg, który opiera się na umiejętnościach kolejki i zapewnia bardziej użyteczny rozmiar końcowy.",
+  "materials": [
+    "Gruba przędza bawełniana",
+    "Hak 5,5 do 6 mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Magiczny pierścień",
+    "pojedynczy szydełko",
+    "wzrastający",
+    "łączenie ściegiem poślizgowym"
+  ],
+  "expectationText": "Solidna, płaska runda, w której ćwiczysz, nawet zwiększa się przez dłuższy czas, bez zbyt szybkiego powtarzania projektu.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Zrób środkowy pierścień",
+      "instruction": "Zacznij od magicznego pierścienia lub łańcucha 4 i połącz w pętlę."
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 1",
+      "instruction": "Przerobić 8 oczek ścisłych w pierścień podstawy i połączyć oczkiem zamykającym.",
+      "counterLabel": "okrągły",
+      "targetCount": 1
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 2",
+      "instruction": "Przerobić 2 oczka ścisłe w każde oczko, co daje w sumie 16 oczek.",
+      "counterLabel": "okrągły",
+      "targetCount": 2
+    },
+    {
+      "type": "powtarzać",
+      "title": "Rundy od 3 do 5",
+      "instruction": "Dodawać równomiernie w każdym okrążeniu, rozdzielając 2 oczka ścisłe w jedno oczko, tak aby okrąg pozostał płaski.",
+      "counterLabel": "okrągły",
+      "targetCount": 5
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Zsuń ścieg, aby go połączyć, zamknij i bezpiecznie splot na końcu."
+    }
+  ]
+}

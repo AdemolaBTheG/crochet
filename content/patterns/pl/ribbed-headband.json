@@ -1,0 +1,49 @@
+{
+  "title": "Prążkowana opaska na głowę",
+  "description": "Elastyczny, nadający się do noszenia prostokąt z rzędami z pętelkami z tyłu i prostym szwem.",
+  "materials": [
+    "Miękka przędza czesankowa",
+    "Hak 5 mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Łańcuch fundamentowy",
+    "pół szydełka",
+    "tylko pętla tylna",
+    "obracanie rzędów",
+    "zszywanie"
+  ],
+  "expectationText": "Poręczna wersja ćwiczeń ściągania, w której gotowy prostokąt staje się czymś użytecznym po jednym czystym połączeniu.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Fundacja",
+      "instruction": "Łańcuszek ma taką liczbę oczek, jaka odpowiada szerokości opaski, zwykle od 10 do 14 oczek."
+    },
+    {
+      "type": "wiersz",
+      "title": "Rząd 1",
+      "instruction": "Półsłupek w trzecim łańcuszku od szydełka i w poprzek każdego łańcuszka.",
+      "counterLabel": "wiersz",
+      "targetCount": 1
+    },
+    {
+      "type": "powtarzać",
+      "title": "Rzędy od 2 do 32",
+      "instruction": "Zrób 2 oczka łańcuszka, obróć i przerób półsłupek w tylnej pętelce tylko w poprzek każdego rzędu.",
+      "counterLabel": "wiersz",
+      "targetCount": 32
+    },
+    {
+      "type": "instrukcja",
+      "title": "Sprawdź dopasowanie",
+      "instruction": "Owiń pasek wokół głowy z lekkim rozciągnięciem i w razie potrzeby dodaj lub usuń rzędy."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Dołączyć",
+      "instruction": "Zszyć krótkie krawędzie, zapiąć i wplecić ogony w ściągacz."
+    }
+  ]
+}

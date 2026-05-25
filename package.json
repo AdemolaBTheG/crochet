@@ -89,6 +89,7 @@
     "react-native-mmkv": "^4.1.0",
     "react-native-nitro-modules": "^0.33.2",
     "react-native-onesignal": "^5.2.16",
+    "react-native-pulsar": "^1.5.0",
     "react-native-purchases": "^9.6.13",
     "react-native-purchases-ui": "^9.6.13",
     "react-native-reanimated": "~4.2.1",

@@ -1,0 +1,59 @@
+{
+  "title": "Amigurumi val",
+  "description": "En vänlig uppstoppad val som bygger vidare på grundkulan med enkel formning och finish.",
+  "materials": [
+    "Kamgarn",
+    "4 mm krok",
+    "stygnmarkör",
+    "fyllning",
+    "säkerhetsögon",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Magisk ring",
+    "enkelvirkad",
+    "ökande",
+    "osynlig minskning",
+    "arbetar i omgångar"
+  ],
+  "expectationText": "Ett leksaksprojekt för nybörjare där rundräkning och städning minskar materia, men formningen fortfarande är lättillgänglig.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Börja kroppen",
+      "instruction": "Börja med en magisk ring och placera en markör i den första maskan på varje varv."
+    },
+    {
+      "type": "upprepa",
+      "title": "Öka kroppen",
+      "instruction": "Öka jämnt över de första varven tills kroppen bildar en grund bägare.",
+      "counterLabel": "runda",
+      "targetCount": 4
+    },
+    {
+      "type": "upprepa",
+      "title": "Arbeta jämna varv",
+      "instruction": "Virka runt utan att öka för att bygga upp huvudkroppens längd.",
+      "counterLabel": "runda",
+      "targetCount": 8
+    },
+    {
+      "type": "instruktion",
+      "title": "Tillsätt ögon och fyllning",
+      "instruction": "Sätt in ögonen innan öppningen blir för tät, börja sedan fylla lätt."
+    },
+    {
+      "type": "upprepa",
+      "title": "Forma bakänden",
+      "instruction": "Använd osynliga minskningar för att avsmalna kroppen samtidigt som du håller sömmarna jämna.",
+      "counterLabel": "runda",
+      "targetCount": 11
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta fenorna och svansen",
+      "instruction": "Sy eller virka enkla sidfenor och en stjärtform, stäng sedan den sista öppningen och dölj änden."
+    }
+  ]
+}

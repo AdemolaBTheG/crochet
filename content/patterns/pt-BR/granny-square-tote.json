@@ -1,0 +1,51 @@
+{
+  "title": "Bolsa quadrada da vovó",
+  "description": "Junte os clássicos quadrados da vovó em uma bolsa simples que parece mais substancial do que uma amostra prática.",
+  "materials": [
+    "Fio penteado",
+    "gancho de 5 mm",
+    "agulha de fio",
+    "tesoura",
+    "marcadores de pontos"
+  ],
+  "skills": [
+    "Quadrados da vovó",
+    "juntando quadrados de vovó",
+    "mudanças de cor",
+    "tecendo pontas"
+  ],
+  "expectationText": "Um projeto modular onde quadrados repetidos se transformam em uma sacola acabada, proporcionando ao usuário uma recompensa clara pela prática do motivo.",
+  "steps": [
+    {
+      "type": "repita",
+      "title": "Faça os quadrados",
+      "instruction": "Crochetar 8 quadrados de vovó em uma ou duas cores e tecer nas caudas mais curtas à medida que avança.",
+      "targetCount": 8
+    },
+    {
+      "type": "instrução",
+      "title": "Bloquear e organizar",
+      "instruction": "Coloque os quadrados em dois painéis de quatro para que os cantos e o layout de cores permaneçam consistentes."
+    },
+    {
+      "type": "instrução",
+      "title": "Participe de cada painel",
+      "instruction": "Junte os quadrados painel por painel, combinando os cantos antes de fazer cada costura."
+    },
+    {
+      "type": "instrução",
+      "title": "Monte a bolsa",
+      "instruction": "Junte os dois painéis nas laterais e na parte inferior, deixando a borda superior aberta."
+    },
+    {
+      "type": "instrução",
+      "title": "Adicione as alças",
+      "instruction": "Faça crochê ou costure duas alças simples na borda superior e reforce a base de cada alça."
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Entrelace as pontas restantes e verifique se a borda superior e as alças estão firmes antes mesmo de usar a sacola."
+    }
+  ]
+}

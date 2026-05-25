@@ -1,0 +1,49 @@
+{
+  "title": "Wygodny rękaw na kubek",
+  "description": "Mały prostokątny projekt, który otula kubek i uczy prostego wykończenia.",
+  "materials": [
+    "Czesankowa przędza bawełniana",
+    "Hak 5 mm",
+    "igła do przędzy",
+    "nożyczki",
+    "przycisk"
+  ],
+  "skills": [
+    "Łańcuch fundamentowy",
+    "pół szydełka",
+    "obracanie rzędów",
+    "pętla na guziki"
+  ],
+  "expectationText": "Praktyczny prostokąt, który zamienia się w gotowy obiekt z jednym małym detalem łączącym na końcu.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Fundacja",
+      "instruction": "Przerobić 12 oczek łańcuszka na wysokość rękawa."
+    },
+    {
+      "type": "wiersz",
+      "title": "Rząd 1",
+      "instruction": "Półsłupek w trzecim łańcuszku od szydełka i w poprzek każdego łańcuszka.",
+      "counterLabel": "wiersz",
+      "targetCount": 1
+    },
+    {
+      "type": "powtarzać",
+      "title": "Rzędy od 2 do 18",
+      "instruction": "Zrób 2 łańcuszek, obróć i wykonaj pół słupka w poprzek, aż rękaw owinie się wokół kubka.",
+      "counterLabel": "wiersz",
+      "targetCount": 18
+    },
+    {
+      "type": "instrukcja",
+      "title": "Dodaj pętlę",
+      "instruction": "Zawiąż małą pętelkę na jednym krótkim brzegu, aby zapiąć guzik."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Przymocuj przycisk",
+      "instruction": "Przyszyć guzik do przeciwległej krawędzi, zapiąć i przeplatać końce."
+    }
+  ]
+}

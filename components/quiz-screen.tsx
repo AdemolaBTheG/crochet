@@ -1,4 +1,5 @@
 import { theme } from '@/constants/Theme';
+import { complete, softAdvance, tap } from '@/services/haptics';
 import {
   useOnboardingStore,
   type Goal,
@@ -14,7 +15,6 @@ import {
   monospacedDigit,
   animation as swiftAnimation,
 } from '@expo/ui/swift-ui/modifiers';
-import * as Haptics from 'expo-haptics';
 import { router, type Href } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
 import { type ComponentProps, useEffect, useMemo, useState } from 'react';
@@ -247,23 +247,23 @@ export default function QuizScreenView({
   }
 
   function handleSelect(value: QuizValue) {
-    void Haptics.selectionAsync();
+    tap();
     setSelected(value);
   }
 
   function handleContinue() {
     if (!selected) return;
-
-    void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
     persistAnswer(currentStep.field, selected);
 
     const isLastStep = stepIndex === steps.length - 1;
     if (isLastStep) {
+      complete();
       setOnboardingCompleted(true);
       router.replace(completeHref);
       return;
     }
 
+    softAdvance();
     setStepIndex((value) => value + 1);
   }
 

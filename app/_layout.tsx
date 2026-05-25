@@ -2,6 +2,7 @@ import { SubscriptionProvider } from '@/context/SubscriptionContext';
 import { useAppInitialization } from '@/hooks/useAppInitialization';
 import { useSubscriptionStatus } from '@/hooks/useSubscriptionStatus';
 import '@/i18n';
+import { initializeHaptics } from '@/services/haptics';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
@@ -26,6 +27,10 @@ SplashScreen.setOptions({
 export default function RootLayout() {
   const { isReady } = useAppInitialization();
   const subscription = useSubscriptionStatus(isReady);
+
+  useEffect(() => {
+    initializeHaptics();
+  }, []);
 
   useEffect(() => {
     if (!isReady) return;

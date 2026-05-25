@@ -1,0 +1,46 @@
+{
+  "title": "Tiny Heart Applique",
+  "description": "Ett litet dekorativt hjärta för att träna formning i en snabb varv.",
+  "materials": [
+    "Bomullsgarn",
+    "4 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Magisk ring",
+    "dubbelvirkning",
+    "diskant virkning",
+    "slipsöm"
+  ],
+  "expectationText": "Ett litet format motiv som lär ut hur stygnhöjden ändrar konturerna av en design.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Gör ringen",
+      "instruction": "Börja med en magisk ring och kedja 2 för att börja hjärtformen."
+    },
+    {
+      "type": "runda",
+      "title": "Bygg loberna",
+      "instruction": "Arbeta högre stygn i ringen för att bilda den rundade toppen av hjärtat.",
+      "counterLabel": "runda",
+      "targetCount": 1
+    },
+    {
+      "type": "instruktion",
+      "title": "Forma poängen",
+      "instruction": "Använd kortare stygn, sedan en högre stygn längst ner."
+    },
+    {
+      "type": "instruktion",
+      "title": "Stäng hjärtat",
+      "instruction": "Spegla den första sidan, smygstickning för att stänga och dra åt ringen."
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Fäst av och väv svansarna på baksidan av hjärtat."
+    }
+  ]
+}

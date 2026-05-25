@@ -1,11 +1,11 @@
 import { theme } from '@/constants/Theme';
+import { complete, cta } from '@/services/haptics';
 import {
   useOnboardingStore,
   type Goal,
   type Handedness,
   type SkillLevel,
 } from '@/stores/onboardingStore';
-import * as Haptics from 'expo-haptics';
 import { router } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
 import { type ComponentProps, useEffect, useMemo } from 'react';
@@ -111,7 +111,7 @@ export default function Loader() {
   const { goal, skillLevel, handedness } = useOnboardingStore();
 
   useEffect(() => {
-    void Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+    complete();
   }, []);
 
   const summaryRows = useMemo<SummaryRow[]>(
@@ -157,7 +157,7 @@ export default function Loader() {
   );
 
   function handleContinue() {
-    void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    cta();
     router.push('/(onboarding)/demo');
   }
 

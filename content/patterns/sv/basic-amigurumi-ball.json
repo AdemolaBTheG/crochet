@@ -1,0 +1,60 @@
+{
+  "title": "Basic Amigurumi Ball",
+  "description": "En liten fylld sfär för att öva på ökningar, minskningar och att arbeta i kontinuerliga omgångar.",
+  "materials": [
+    "Kamgarn",
+    "4 mm krok",
+    "stygnmarkör",
+    "fyllning",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Magisk ring",
+    "enkelvirkad",
+    "ökande",
+    "minskar",
+    "arbetar i omgångar"
+  ],
+  "expectationText": "Ett kompakt formningsprojekt där ökningar bygger kurvan, raka rundor ger höjd och minskar stänger formen.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Starta mitten",
+      "instruction": "Gör en magisk ring och placera en stygnmarkör i den första maskan på varje varv."
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 1",
+      "instruction": "Virka 6 fastmaskor i ringen och dra mitten stängd.",
+      "counterLabel": "runda",
+      "targetCount": 1
+    },
+    {
+      "type": "upprepa",
+      "title": "Omgångarna 2 till 4",
+      "instruction": "Öka jämnt varje varv tills biten börjar bli en rundad form.",
+      "counterLabel": "runda",
+      "targetCount": 4
+    },
+    {
+      "type": "upprepa",
+      "title": "Omgångar 5 till 7",
+      "instruction": "Virka runt utan att öka för att bygga upp mitten av kulan.",
+      "counterLabel": "runda",
+      "targetCount": 7
+    },
+    {
+      "type": "upprepa",
+      "title": "Omgångar 8 till 10",
+      "instruction": "Minska jämnt varje varv, tillsätt fyllning innan öppningen blir för liten.",
+      "counterLabel": "runda",
+      "targetCount": 10
+    },
+    {
+      "type": "instruktion",
+      "title": "Nära",
+      "instruction": "Fäst av, trä svansen genom de sista stygnen, dra stängd och göm änden inuti."
+    }
+  ]
+}

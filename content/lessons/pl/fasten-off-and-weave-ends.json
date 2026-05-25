@@ -1,0 +1,19 @@
+{
+  "title": "Zamocuj i splot na końcach",
+  "description": "Wykończ projekty w czystości, aby pozostały bezpieczne po umyciu i użytkowaniu.",
+  "content": {
+    "summary": "Zapinanie i wplatanie końcówek to ostatni etap, który sprawia, że ​​praca wydaje się kompletna.",
+    "whyItMatters": "Projekt nie jest ukończony, dopóki końce przędzy nie są zabezpieczone i uporządkowane.",
+    "steps": [
+      "Odetnij nitkę zostawiając ogon.",
+      "Przeciągnij ogon całkowicie przez ostatnią pętlę.",
+      "Nawlecz ogon na igłę przędzy.",
+      "Przeplataj ogon przez pobliskie oczka w więcej niż jednym kierunku."
+    ],
+    "practice": "Zamocuj jedną próbkę i starannie splot oba ogony.",
+    "commonMistakes": [
+      "Pozostawienie zbyt krótkich ogonów.",
+      "Tkanie wyłącznie w linii prostej, która z czasem może się poluzować."
+    ]
+  }
+}

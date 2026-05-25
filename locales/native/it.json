@@ -1,0 +1,12 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Crochet",
+    "NSLocationWhenInUseUsageDescription": "Crochet utilizza la tua posizione per fornire consigli sui modelli localizzati e suggerimenti sui negozi di filati.",
+    "NSPhotoLibraryUsageDescription": "Crochet utilizza la tua libreria di foto in modo da poter importare e salvare l'ispirazione del progetto, le foto dei progressi e le immagini dei modelli.",
+    "NSPhotoLibraryAddUsageDescription": "Crochet salva le immagini del modello esportato e le istantanee del progetto nella tua libreria di foto.",
+    "NSCameraUsageDescription": "Crochet utilizza la tua fotocamera in modo da poter identificare i punti da una foto."
+  },
+  "android": {
+    "app_name": "Crochet"
+  }
+}

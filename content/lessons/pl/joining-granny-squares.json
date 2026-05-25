@@ -1,0 +1,19 @@
+{
+  "title": "Dołączam do Babci Kwadratów",
+  "description": "Połącz gotowe kwadraty babci w większą część, stosując schludne szwy i równe wyrównanie.",
+  "content": {
+    "summary": "Dowiedz się, jak wyrównywać rogi, dopasowywać liczbę ściegów i łączyć kwadraty bez ich skręcania i rozciągania.",
+    "whyItMatters": "Wiele koców, toreb i poduszek przyjaznych początkującym to po prostu mniejsze, dobrze połączone motywy. Krok dołączenia sprawia, że ​​czują się skończeni.",
+    "steps": [
+      "Połóż kwadraty płasko, prawymi stronami skierowanymi w tym samym kierunku i najpierw dopasuj rogi.",
+      "Wybierz metodę łączenia, taką jak ścieg biczowy, ścieg poślizgowy lub łączenie pojedyncze szydełkowe, w zależności od pożądanego wyglądu.",
+      "Łącz po jednym szwie i sprawdzaj, czy liczba ściegów jest wyrównana na obu krawędziach.",
+      "Po połączeniu wygładź szew palcami i wpleć ogony przed dodaniem kolejnej sekcji."
+    ],
+    "practice": "Zrób dwa kwadraty babci i połącz jeden pełny bok ściegiem biczowym, a następnie porównaj to z drugą próbką połączoną ściegiem zamykającym.",
+    "commonMistakes": [
+      "Łączenie niedopasowanych narożników i tworzenie skręconego układu kwadratów.",
+      "Zaciągnij szew zbyt mocno, aby łączona krawędź się wygięła."
+    ]
+  }
+}

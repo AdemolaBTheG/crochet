@@ -1,0 +1,49 @@
+{
+  "title": "Mysig muggfodral",
+  "description": "Ett litet rektangelprojekt som virar runt en mugg och lär ut enkel efterbehandling.",
+  "materials": [
+    "Kamgarn i bomull",
+    "5 mm krok",
+    "garnnål",
+    "sax",
+    "knapp"
+  ],
+  "skills": [
+    "Foundation kedja",
+    "halv dubbelvirkad",
+    "vända rader",
+    "knappslinga"
+  ],
+  "expectationText": "En praktisk rektangel som förvandlas till ett färdigt föremål med en liten sammanfogningsdetalj i slutet.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Grund",
+      "instruction": "Kedja 12 maskor för höjden på ärmen."
+    },
+    {
+      "type": "rad",
+      "title": "Rad 1",
+      "instruction": "Halva dubbelvirka i den tredje kedjan från nålen och varje kedja tvärs över.",
+      "counterLabel": "rad",
+      "targetCount": 1
+    },
+    {
+      "type": "upprepa",
+      "title": "Rad 2 till 18",
+      "instruction": "Kedja 2, vänd och virka halvt tvärs över tills ärmen sveper runt din mugg.",
+      "counterLabel": "rad",
+      "targetCount": 18
+    },
+    {
+      "type": "instruktion",
+      "title": "Lägg till en slinga",
+      "instruction": "Kedja en liten ögla i ena kortsidan för knappstängning."
+    },
+    {
+      "type": "instruktion",
+      "title": "Fäst knappen",
+      "instruction": "Sy en knapp i motsatt kant, fäst av och väv in ändarna."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "title": "Prosta aplikacja kwiatowa",
+  "description": "Motyw pięciopłatkowego kwiatu do nauki wielokrotnego kształtowania wokół środka.",
+  "materials": [
+    "Przędza bawełniana",
+    "Hak 4 mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Magiczny pierścień",
+    "przestrzenie łańcuchowe",
+    "podwójne szydełko",
+    "ścieg poślizgowy"
+  ],
+  "expectationText": "Wesoły motyw, który powtarza tę samą sekwencję płatków, dzięki czemu kształtowanie staje się przewidywalne.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Zrób środek",
+      "instruction": "Zacznij od magicznego pierścienia i przerób 10 słupków na środku."
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 1",
+      "instruction": "Połącz środkowe okrążenie oczkiem zamykającym i zaciśnij pierścień.",
+      "counterLabel": "okrągły",
+      "targetCount": 1
+    },
+    {
+      "type": "powtarzać",
+      "title": "Zrób pięć płatków",
+      "instruction": "Powtarzaj oczka łańcuszka i słupki w to samo oczko, aby utworzyć każdy płatek.",
+      "targetCount": 5
+    },
+    {
+      "type": "instrukcja",
+      "title": "Uformuj płatki",
+      "instruction": "Delikatnie pociągnij każdy płatek na miejsce, tak aby kwiat leżał płasko."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Zapiąć i wplecić ogonki z tyłu kwiatka."
+    }
+  ]
+}

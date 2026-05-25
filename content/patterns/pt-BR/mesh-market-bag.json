@@ -1,0 +1,54 @@
+{
+  "title": "Bolsa de mercado de malha",
+  "description": "Uma bolsa leve e aberta que aumenta a confiança com espaços de corrente e seções repetidas.",
+  "materials": [
+    "Fio de algodão",
+    "gancho de 5 mm",
+    "marcador de ponto",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Cadeia de fundação",
+    "crochê duplo",
+    "espaços de cadeia",
+    "trabalhando em rodadas"
+  ],
+  "expectationText": "Um projeto prático com progresso visível, onde simples repetições de malha rapidamente se transformam em algo utilizável.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Comece a base",
+      "instruction": "Crochetar uma pequena base oval ou retangular e colocar um marcador no início de cada carreira."
+    },
+    {
+      "type": "repita",
+      "title": "Construa a malha",
+      "instruction": "Trabalhe espaços de corrente e pontos de ancoragem uniformemente para criar um tecido aberto.",
+      "counterLabel": "redondo",
+      "targetCount": 8
+    },
+    {
+      "type": "repita",
+      "title": "Adicionar altura",
+      "instruction": "Continue repetindo a malha até que o corpo da bolsa atinja um tamanho confortável para o dia a dia.",
+      "counterLabel": "redondo",
+      "targetCount": 14
+    },
+    {
+      "type": "instrução",
+      "title": "Dê forma às alças",
+      "instruction": "Pule seções para as aberturas da alça e, em seguida, prenda-as com longas correntes na próxima rodada."
+    },
+    {
+      "type": "instrução",
+      "title": "Reforce o topo",
+      "instruction": "Trabalhe uma ou duas voltas sólidas ao redor da abertura e das alças para que a bolsa fique mais resistente."
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Aperte, costure nas pontas e estique levemente a bolsa com as mãos para que a malha se abra por igual."
+    }
+  ]
+}

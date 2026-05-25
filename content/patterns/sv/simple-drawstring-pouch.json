@@ -1,0 +1,57 @@
+{
+  "title": "Enkel dragsko",
+  "description": "En liten väska arbetade från en rund bas till raka sidor med ett kedjat dragsko.",
+  "materials": [
+    "Bomullsgarn",
+    "4,5 mm krok",
+    "stygnmarkör",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Magisk ring",
+    "enkelvirkad",
+    "ökande",
+    "arbetar i omgångar",
+    "grundkedja"
+  ],
+  "expectationText": "En användbar liten behållare som lär dig att flytta från en platt cirkulär bas till enkla upprättstående sidor.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Starta basen",
+      "instruction": "Gör en magisk ring eller kedja 4 och anslut till en slinga."
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 1",
+      "instruction": "Virka 8 fastmaskor i mitten och markera första maskan.",
+      "counterLabel": "runda",
+      "targetCount": 1
+    },
+    {
+      "type": "upprepa",
+      "title": "Omgångarna 2 till 4",
+      "instruction": "Öka jämnt varje varv tills basen är tillräckligt bred för en liten påse.",
+      "counterLabel": "runda",
+      "targetCount": 4
+    },
+    {
+      "type": "upprepa",
+      "title": "Omgångar 5 till 14",
+      "instruction": "Virka runt utan att öka för att bygga upp sidorna.",
+      "counterLabel": "runda",
+      "targetCount": 14
+    },
+    {
+      "type": "instruktion",
+      "title": "Gör dragsnöret",
+      "instruction": "Kedja en lina som är tillräckligt lång för att lindas runt påsens öppning och väv den sedan genom utrymmen nära den övre kanten."
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Knyt små knutar vid dragsnörets ändar, fäst av och väv in de återstående svansarna."
+    }
+  ]
+}

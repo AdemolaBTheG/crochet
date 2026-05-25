@@ -1,0 +1,51 @@
+{
+  "title": "Ribbad Scrunchie",
+  "description": "Ett snabbt bärbart projekt gjort runt en hårresår med nybörjarvänliga upprepningar.",
+  "materials": [
+    "Mjukt garn",
+    "4,5 mm krok",
+    "hår elastisk",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Enkel virkning",
+    "halv dubbelvirkad",
+    "arbetar runt en resår",
+    "sammanfogning"
+  ],
+  "expectationText": "Ett lekfullt snabbt projekt där upprepning bygger självförtroende och det färdiga resultatet känns presentabelt.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Täck resåren",
+      "instruction": "Fäst garn runt hårresåren och virka jämnt runt det."
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 1",
+      "instruction": "Virka tillräckligt med enkelvirkning runt resåren så att bandet är helt täckt.",
+      "counterLabel": "runda",
+      "targetCount": 1
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 2",
+      "instruction": "Kedja 2, virka sedan en halv dubbelvirkning i varje maska ​​runt.",
+      "counterLabel": "runda",
+      "targetCount": 2
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 3",
+      "instruction": "Virka ett varv till med halvvirka för en fylligare scrunchie.",
+      "counterLabel": "runda",
+      "targetCount": 3
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Slipstygn för att sammanfoga, fäst av och väv svansen inuti vecken."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "title": "Siatkowa torba targowa",
+  "description": "Lekka otwarta torba, która buduje pewność siebie dzięki odstępom na łańcuszki i powtarzalnym sekcjom.",
+  "materials": [
+    "Przędza bawełniana",
+    "Hak 5 mm",
+    "znacznik ściegu",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Łańcuch fundamentowy",
+    "podwójne szydełko",
+    "przestrzenie łańcuchowe",
+    "pracując w rundach"
+  ],
+  "expectationText": "Praktyczny projekt z widocznym postępem, w którym proste powtórzenia siatki szybko zamieniają się w coś użytkowego.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Uruchom bazę",
+      "instruction": "Wykonaj krótką owalną lub prostokątną podstawę i umieść marker na początku każdej okrążenia."
+    },
+    {
+      "type": "powtarzać",
+      "title": "Zbuduj siatkę",
+      "instruction": "Przerobić łuki i równomiernie zakotwiczyć ściegi, aby uzyskać otwarty materiał.",
+      "counterLabel": "okrągły",
+      "targetCount": 8
+    },
+    {
+      "type": "powtarzać",
+      "title": "Dodaj wysokość",
+      "instruction": "Kontynuuj powtarzanie siatki, aż korpus torby osiągnie wygodny codzienny rozmiar.",
+      "counterLabel": "okrągły",
+      "targetCount": 14
+    },
+    {
+      "type": "instrukcja",
+      "title": "Uformuj uchwyty",
+      "instruction": "Pomiń sekcje otworów na uchwyty, a następnie w następnej rundzie połącz je długimi łańcuchami."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Wzmocnij górę",
+      "instruction": "Wykonaj jedno lub dwa pełne okrążenia wokół otworu i uchwytów, aby torba wydawała się solidniejsza."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Zapnij, splot na końcach i lekko rozciągnij torbę rękami, aby siatka otwierała się równomiernie."
+    }
+  ]
+}

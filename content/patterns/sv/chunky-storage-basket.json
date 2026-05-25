@@ -1,0 +1,51 @@
+{
+  "title": "Chunky förvaringskorg",
+  "description": "Ett robust hemprojekt för att träna rundor, sidor och enkel struktur.",
+  "materials": [
+    "Grovt bomullsgarn",
+    "6,5 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Magisk ring",
+    "enkelvirkad",
+    "ökande",
+    "arbetar i bakre öglor",
+    "rundor"
+  ],
+  "expectationText": "En användbar hempjäs där du flyttar från en platt bas till upprättstående sidor och ser struktur ta form.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Starta basen",
+      "instruction": "Gör en magisk ring och virka 8 fastmaskor in i mitten."
+    },
+    {
+      "type": "runda",
+      "title": "Omgångarna 1 till 4",
+      "instruction": "Öka jämnt varje varv tills basen når den bredd du vill ha.",
+      "counterLabel": "runda",
+      "targetCount": 4
+    },
+    {
+      "type": "runda",
+      "title": "Vänd åt sidan",
+      "instruction": "Sticka ett varv i de bakre öglorna endast för att skapa en ren kant.",
+      "counterLabel": "runda",
+      "targetCount": 5
+    },
+    {
+      "type": "upprepa",
+      "title": "Bygg väggarna",
+      "instruction": "Virka runt utan att öka tills korgen är tillräckligt hög.",
+      "counterLabel": "runda",
+      "targetCount": 10
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta fälgen",
+      "instruction": "Lyft söm runt den övre kanten, fäst av och väv in ändarna."
+    }
+  ]
+}

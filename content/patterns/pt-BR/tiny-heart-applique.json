@@ -1,0 +1,46 @@
+{
+  "title": "Aplique de coração minúsculo",
+  "description": "Um pequeno coração decorativo para praticar modelagem em uma rodada rápida.",
+  "materials": [
+    "Fio de algodão",
+    "gancho de 4 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Anel mágico",
+    "crochê duplo",
+    "crochê triplo",
+    "ponto baixíssimo"
+  ],
+  "expectationText": "Um motivo de formato minúsculo que ensina como a altura do ponto altera o contorno de um desenho.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Faça o anel",
+      "instruction": "Comece com um anel mágico e corrente 2 para iniciar o formato de coração."
+    },
+    {
+      "type": "redondo",
+      "title": "Construa os lóbulos",
+      "instruction": "Faça pontos mais altos no anel para formar o topo arredondado do coração.",
+      "counterLabel": "redondo",
+      "targetCount": 1
+    },
+    {
+      "type": "instrução",
+      "title": "Dê forma ao ponto",
+      "instruction": "Use pontos mais curtos e depois um ponto mais alto na ponta inferior."
+    },
+    {
+      "type": "instrução",
+      "title": "Feche o coração",
+      "instruction": "Espelhe o primeiro lado, faça ponto baixíssimo para fechar e puxe bem o anel."
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Aperte e entrelace as caudas na parte de trás do coração."
+    }
+  ]
+}

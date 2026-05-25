@@ -1,0 +1,48 @@
+{
+  "title": "Smal bokmärke",
+  "description": "Ett smalt radprojekt för att träna kanter, spänning och en liten tofsfinish.",
+  "materials": [
+    "Bomullsgarn",
+    "3,5 till 4 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Foundation kedja",
+    "enkelvirkad",
+    "vända rader",
+    "tofstillverkning"
+  ],
+  "expectationText": "Ett snyggt litet projekt som belönar noggrann spänning och ger dig en färdig present på under en timme.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Grund",
+      "instruction": "Kedja 8 stygn för en smal bokmärkesbredd."
+    },
+    {
+      "type": "rad",
+      "title": "Rad 1",
+      "instruction": "Virka i den andra kedjan från nålen och varje kedja tvärs över.",
+      "counterLabel": "rad",
+      "targetCount": 1
+    },
+    {
+      "type": "upprepa",
+      "title": "Rad 2 till 24",
+      "instruction": "Kedja 1, vänd och virka över varje varv.",
+      "counterLabel": "rad",
+      "targetCount": 24
+    },
+    {
+      "type": "instruktion",
+      "title": "Lägg till en tofs",
+      "instruction": "Klipp av några garntrådar och fäst dem i ena kortsidan."
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Putsa tofsen jämnt och väv in startsvansen."
+    }
+  ]
+}

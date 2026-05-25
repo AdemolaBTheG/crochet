@@ -1,0 +1,50 @@
+{
+  "title": "Rund underlägg",
+  "description": "En tjockare platt cirkel som bygger på underläggsfärdigheter och ger dig en mer användbar färdig storlek.",
+  "materials": [
+    "Tjockt bomullsgarn",
+    "5,5 till 6 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Magisk ring",
+    "enkelvirkad",
+    "ökande",
+    "smygfogning"
+  ],
+  "expectationText": "En stadig platt runda där du tränar ökar till och med längre utan att projektet blir repetitivt för snabbt.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Gör mittringen",
+      "instruction": "Börja med en magisk ring eller kedja 4 och gå ihop till en slinga."
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 1",
+      "instruction": "Virka 8 fastmaskor i ringen och sy ihop med en smygmaska.",
+      "counterLabel": "runda",
+      "targetCount": 1
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 2",
+      "instruction": "Virka 2 fastmaskor i varje maska ​​runt för totalt 16 maskor.",
+      "counterLabel": "runda",
+      "targetCount": 2
+    },
+    {
+      "type": "upprepa",
+      "title": "Omgångar 3 till 5",
+      "instruction": "Öka jämnt varje varv genom att dela ut 2 enkelvirkade i en maska ​​så att cirkeln förblir platt.",
+      "counterLabel": "runda",
+      "targetCount": 5
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Lyft söm för att sammanfoga, fästa av och väva i slutet säkert."
+    }
+  ]
+}

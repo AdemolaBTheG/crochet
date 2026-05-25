@@ -1,0 +1,19 @@
+{
+  "title": "Slip Knot och Håll Din Krok",
+  "description": "Lägg upp ditt garn och krok bekvämt innan du gör din första stygn.",
+  "content": {
+    "summary": "Lär dig hur du gör en slipknut och håller i kroken och garnet utan att bekämpa spänningen.",
+    "whyItMatters": "Varje virkprojekt börjar här. En smidig inställning gör varje söm enklare.",
+    "steps": [
+      "Linda garnet över sig själv för att göra en ögla.",
+      "Dra en tråd genom öglan för att skapa slipknuten.",
+      "Dra åt knuten försiktigt på kroken så att den fortfarande kan glida.",
+      "Öva på att hålla i kroken och styra garnet med jämn spänning."
+    ],
+    "practice": "Gör och ta bort slipknuten tre gånger tills det känns lätt.",
+    "commonMistakes": [
+      "Dra knuten för hårt på kroken.",
+      "Ta tag i garnet så hårt att kroken inte kan röra sig."
+    ]
+  }
+}

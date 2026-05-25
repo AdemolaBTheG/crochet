@@ -1,0 +1,422 @@
+{
+  "common": {
+    "continue": "Fortsätta",
+    "preparing": "Förbereder...",
+    "filters": {
+      "all": "Alla"
+    },
+    "badges": {
+      "pro": "Pro"
+    },
+    "time": {
+      "today": "I dag",
+      "yesterday": "I går",
+      "daysAgo": "{{count}} dagar sedan"
+    },
+    "counter": {
+      "rounds": "{{count}} omgångar",
+      "rows": "{{count}} rader",
+      "none": "Ingen räknare än"
+    },
+    "steps": {
+      "progress": "{{current}}/{{total}} steg",
+      "stepOnly": "Steg {{current}}",
+      "count": "{{count}} steg"
+    }
+  },
+  "shared": {
+    "close": "Nära",
+    "unlockPremium": "Lås upp Premium",
+    "stepOf": "Steg {{current}} av {{total}}"
+  },
+  "chat": {
+    "thinking": "Tänkande...",
+    "errorFallback": "Jag stötte på ett problem när jag genererade ett svar. Försök igen."
+  },
+  "tabs": {
+    "home": "Hem",
+    "learn": "Lära sig",
+    "projects": "Projekt"
+  },
+  "home": {
+    "sections": {
+      "activeProjects": "Aktiva projekt"
+    },
+    "accessibility": {
+      "continueProject": "Fortsätt {{name}}",
+      "showPatterns": "Visa {{category}} mönster"
+    },
+    "lastWorkedPrefix": "Senast fungerade",
+    "lastWorkedSeparator": "·"
+  },
+  "projects": {
+    "sections": {
+      "inProgress": "Pågår",
+      "completed": "Avslutad"
+    },
+    "empty": {
+      "title": "Inga projekt ännu",
+      "subtitle": "Välj ett mönster från Hem och tryck på Starta projekt."
+    },
+    "accessibility": {
+      "openProject": "Öppna {{name}}"
+    }
+  },
+  "learn": {
+    "toolsSectionTitle": "Verktyg",
+    "lessonLabel": "Lektion {{index}}",
+    "actions": {
+      "open": "Öppna",
+      "unlock": "Låsa upp"
+    },
+    "accessibility": {
+      "unlockTool": "Lås upp {{title}}",
+      "lessonCard": "{{action}} {{title}} lektion"
+    },
+    "empty": {
+      "title": "Inga lektioner än",
+      "subtitle": "Seed den lokala databasen för att visa nybörjarvägen här."
+    },
+    "tools": {
+      "row-counter": {
+        "title": "Radräknare",
+        "description": "Räkna rader, rundor och upprepningar utan att förlora din plats."
+      },
+      "stitch-fixes": {
+        "title": "Sömfixar",
+        "description": "Snabb hjälp för krullning, ojämna kanter, luckor och missade stygn."
+      },
+      "size-calculator": {
+        "title": "Storleksräknare",
+        "description": "Beräkna antalet stygn och rader från din mätare."
+      },
+      "identify-stitch": {
+        "title": "Identifiera stygn",
+        "description": "Använd ett foto för att förstå sömmen du tittar på."
+      }
+    }
+  },
+  "lessonDetail": {
+    "lesson": "Lektion",
+    "notFound": "Lektionen hittades inte.",
+    "difficulty": "Svårighet",
+    "steps": "Steg",
+    "practice": "Öva",
+    "practicePaceShort": "kort",
+    "whyItMatters": "Varför det spelar roll",
+    "commonMistakes": "Vanliga misstag",
+    "startPractice": "Börja öva",
+    "difficultyValues": {
+      "beginner": "Nybörjare",
+      "intermediate": "Mellanliggande",
+      "advanced": "Avancerad"
+    }
+  },
+  "settings": {
+    "sections": {
+      "support": "Stöd",
+      "legal": "Rättslig"
+    },
+    "rows": {
+      "sendFeedback": "Skicka feedback",
+      "rateApp": "Betygsätt appen",
+      "customerCenter": "Kundcenter",
+      "terms": "Villkor",
+      "privacyPolicy": "Sekretesspolicy"
+    },
+    "premium": {
+      "title": "Lås upp Premium",
+      "subtitle": "Få alla mönster, guider och kreativa verktyg när Crova växer.",
+      "cta": "Uppgradera"
+    },
+    "alerts": {
+      "customerCenterUnavailableTitle": "Kundcenter inte tillgängligt",
+      "customerCenterUnavailableMessage": "Försök igen efter att köpen har konfigurerats."
+    },
+    "accessibility": {
+      "openPremiumUpgrade": "Öppna premiumuppgradering"
+    }
+  },
+  "tools": {
+    "rowCounter": {
+      "mode": {
+        "rows": "Rader",
+        "rounds": "Omgångar"
+      },
+      "copy": {
+        "rows": {
+          "label": "Raderna är klara",
+          "helper": "Bäst för halsdukar, disktrasor, provbitar och platta plagg."
+        },
+        "rounds": {
+          "label": "Omgångar avklarade",
+          "helper": "Bäst för mormorsrutor, glasunderlägg, amigurumi och cirkulärt arbete."
+        }
+      },
+      "actions": {
+        "decreaseRows": "Minska rader",
+        "decreaseRounds": "Minska varv",
+        "increaseRows": "Öka rader",
+        "increaseRounds": "Öka rundorna",
+        "resetRows": "Återställ rader",
+        "resetRounds": "Återställ omgångar"
+      }
+    },
+    "sizeCalculator": {
+      "units": {
+        "cm": "cm",
+        "in": "i"
+      },
+      "sections": {
+        "gauge": "Spårvidd",
+        "targetSize": "Målstorlek",
+        "estimate": "Uppskatta"
+      },
+      "fields": {
+        "stitches": "Stygn",
+        "rows": "Rader",
+        "width": "Bredd",
+        "height": "Höjd"
+      },
+      "emptyHelp": "Ange din färgprovsmått och målstorlek för att uppskatta stygnen och raderna.",
+      "disclaimer": "Detta är en planeringsuppskattning. Kontrollera alltid din egen swatch innan du bestämmer dig för en färdig storlek."
+    },
+    "identifyStitch": {
+      "empty": {
+        "title": "Lägg till ett tydligt stygnfoto",
+        "subtitle": "Använd bra belysning och fyll ramen med stygnstrukturen."
+      },
+      "analysis": {
+        "title": "Analys",
+        "loading": "Kontrollerar stygnstruktur med AI...",
+        "noLikelyStitchDetected": "Jag kunde inte med säkerhet identifiera en virksöm från den här bilden.",
+        "noLikelyStitchHint": "Prova starkare ljus, flytta dig närmare och rama in en enda stygnstruktur för ett tydligare resultat.",
+        "bestMatch": "Bästa matchen",
+        "confidence": {
+          "high": "Hög",
+          "medium": "Medium",
+          "low": "Låg"
+        },
+        "photoReady": "Fotot är klart. Välj ett tydligare foto när som helst om stygnstrukturen är svår att se.",
+        "noPhoto": "Välj eller ta ett foto för att identifiera den troliga sömmen och få nybörjarvänliga ledtrådar.",
+        "visibleClues": "Synliga ledtrådar",
+        "nextSteps": "Nästa steg",
+        "aiResult": "AI-resultat",
+        "readyForAi": "Redo för AI"
+      },
+      "alerts": {
+        "cameraPermissionTitle": "Kameratillstånd krävs",
+        "cameraPermissionMessage": "Tillåt åtkomst till kameran för att ta ett stitch-foto.",
+        "photoPermissionTitle": "Fototillstånd krävs",
+        "photoPermissionMessage": "Tillåt fotoåtkomst för att välja en sömbild."
+      },
+      "actions": {
+        "takePhoto": "Ta foto",
+        "choosePhoto": "Välja"
+      },
+      "errors": {
+        "couldNotAnalyze": "Kunde inte analysera detta foto. Prova en ljusare närbild.",
+        "couldNotAnalyzeWithReason": "Kunde inte analysera det här fotot: {{reason}}"
+      }
+    }
+  },
+  "patternDetail": {
+    "pattern": "Mönster",
+    "opening": "Öppning...",
+    "resumeProject": "Återuppta projektet",
+    "startProject": "Starta projekt",
+    "projectInProgress": "Projekt pågår",
+    "difficulty": "Svårighet",
+    "category": "Kategori",
+    "general": "Allmän",
+    "time": "Tid",
+    "minutesShort": "{{count}} min",
+    "skillsNeeded": "Färdigheter som behövs",
+    "materials": "Material",
+    "patternOverview": "Mönsteröversikt",
+    "steps": "Steg",
+    "structure": "Strukturera",
+    "counters": "Räknare",
+    "basic": "grundläggande",
+    "whatToExpect": "Vad du kan förvänta dig",
+    "guided": "guidad",
+    "counterRows": "{{count}} rad",
+    "counterRows_plural": "{{count}} rader",
+    "counterRounds": "{{count}} runda",
+    "counterRounds_plural": "{{count}} omgångar",
+    "counterRowsTarget": "{{current}} / {{target}} rader",
+    "counterRoundsTarget": "{{current}} / {{target}} omgångar",
+    "lastWorkedToday": "Jobbade senast idag",
+    "lastWorkedYesterday": "Jobbade senast igår",
+    "lastWorkedDaysAgo": "Jobbade senast för {{count}} dagar sedan",
+    "lastWorkedOnDate": "Senast fungerade {{date}}"
+  },
+  "projectComplete": {
+    "title": "Projektet är klart",
+    "notFound": "Projektet hittades inte.",
+    "stepsDone": "Steg gjorda",
+    "counter": "Disk",
+    "done": "Gjort",
+    "finishedJustNow": "Avslutade nyss",
+    "finishedOn": "Klar {{date}}",
+    "backToProjects": "Tillbaka till projekt",
+    "starting": "Startande...",
+    "makeAnother": "Gör en annan"
+  },
+  "onboarding": {
+    "intro": {
+      "titlePrefix": "Lär dig snabbare med ett flöde byggt för",
+      "titleAccent": "nybörjare virkare",
+      "slides": {
+        "learnStitches": "Lär dig stygn",
+        "finishProjects": "Avsluta projekt",
+        "trackRows": "Spåra varje rad",
+        "buildHabit": "Bygg upp din vana",
+        "stayConsistent": "Håll dig konsekvent"
+      },
+      "rowProgress": "Rad {{current}} / {{total}}"
+    },
+    "quiz": {
+      "stepOf": "Steg {{current}} av {{total}}",
+      "steps": {
+        "skillLevel": {
+          "title": "Vilken virknivå har du?",
+          "subtitle": "Vi kommer att anpassa dina lektioner och startprojekt till var du är idag.",
+          "cta": "Fortsätta",
+          "options": {
+            "beginner": "Jag är helt ny",
+            "intermediate": "Jag kan grunderna",
+            "advanced": "Jag vill ha tuffare projekt"
+          }
+        },
+        "goal": {
+          "title": "Vad vill du ha hjälp med först?",
+          "subtitle": "Välj huvudorsaken till att du laddade ner Crova så att appen kan guida dig dit snabbare.",
+          "cta": "Fortsätta",
+          "options": {
+            "learnBasics": "Lär dig kärnstygnen",
+            "finishFirstProject": "Avsluta mitt första riktiga projekt",
+            "buildHabit": "Bygg upp en stadig virkvana"
+          }
+        },
+        "handedness": {
+          "title": "Vilken hand virkar du med?",
+          "subtitle": "Detta hjälper oss att visa den rätta undervisningsvinkeln när vänsterhänt innehåll läggs till.",
+          "cta": "Starta Crova",
+          "options": {
+            "right": "Högerhänt",
+            "left": "Vänsterhänt"
+          }
+        }
+      }
+    },
+    "loader": {
+      "titlePreparing": "Förbereder din upplevelse",
+      "titleReady": "Du är klar.",
+      "ctaPreview": "Prova en snabb demo",
+      "ctaReady": "Starta Crova",
+      "summaryEyebrow": "Personlig start",
+      "summarySubtitle": "Vi justerade dina första steg kring din nivå, fokus och inställning.",
+      "summaryCardTitle": "Din inställning",
+      "summaryCardSubtitle": "Det här är vägen som Crova kommer att börja med baserat på vad du berättade för oss.",
+      "summaryLabels": {
+        "skillLevel": "Uppleva",
+        "goal": "Fokus",
+        "handedness": "Handenhet"
+      },
+      "summaryFallbacks": {
+        "skillLevel": "Personlig",
+        "goal": "Din virkbana",
+        "handedness": "Standardinställning"
+      },
+      "nextTitle": "Vad händer härnäst",
+      "goalLabels": {
+        "learnBasics": "kärnsömmar",
+        "finishFirstProject": "ditt första projekt",
+        "buildHabit": "en stadig virkvana",
+        "default": "din virkbana"
+      },
+      "skillLabels": {
+        "beginner": "nybörjarvänlig",
+        "intermediate": "medelklar",
+        "advanced": "avancerad",
+        "default": "personliga"
+      },
+      "messages": {
+        "buildingPlan": "Bygger din {{skillLabel}} plan...",
+        "pickingLessons": "Väljer lektioner för {{goalLabel}}...",
+        "tracking": "Konfigurerar förloppsspårning...",
+        "finalizing": "Slutför din Crova-start..."
+      },
+      "nextSteps": {
+        "skillLevel": {
+          "beginner": "Du börjar med korta, steg-för-steg-lektioner som håller tempot lättillgängligt.",
+          "intermediate": "Du kommer att få en snabb uppfräschning och sedan gå in i guidad praktik direkt.",
+          "advanced": "Du kommer att hoppa in i mer krävande mönster och djupare teknikarbete.",
+          "default": "Du kommer att börja med en personlig lektionsbana anpassad till din nivå."
+        },
+        "goal": {
+          "learnBasics": "Dina första lektioner kommer att fokusera på kärnstygnen och hur de passar ihop.",
+          "finishFirstProject": "Din plan kommer att styra dig mot ett första färdigt projekt så snabbt som möjligt.",
+          "buildHabit": "Din plan kommer att gynna lättare sessioner som är lättare att upprepa konsekvent.",
+          "default": "Din plan kommer att fokusera på det resultat som är viktigast för dig."
+        },
+        "tracking": "Verktyg för radspårning och framsteg kommer att vara redo från dag ett."
+      }
+    },
+    "demo": {
+      "eyebrow": "Snabb övning",
+      "title": "Prova hur Crova lär",
+      "subtitle": "En liten guidad lektion för {{skillLabel}} fokuserad på {{goalLabel}}.",
+      "stepLabel": "Steg {{current}}",
+      "chips": {
+        "duration": "Under 30 sekunder",
+        "handedness": "{{value}} har sparats"
+      },
+      "actions": {
+        "previous": "Tidigare",
+        "next": "Nästa steg",
+        "finish": "Se min plan"
+      },
+      "skillAudience": {
+        "beginner": "nybörjare",
+        "intermediate": "virkare som kan grunderna",
+        "advanced": "virkare redo för en utmaning",
+        "default": "virkare"
+      },
+      "goalFocus": {
+        "learnBasics": "lära sig kärnsömmar",
+        "finishFirstProject": "avsluta ett första projekt",
+        "buildHabit": "bygga en stadig vana",
+        "default": "hitta din rytm"
+      },
+      "cards": {
+        "one": {
+          "title": "Börja med en tydlig rörelse"
+        },
+        "two": {
+          "title": "Håll dig synkroniserad med varje steg"
+        },
+        "three": {
+          "title": "Fortsätt gå mot ett verkligt resultat"
+        }
+      },
+      "stepBodies": {
+        "skill": {
+          "beginner": "Vi saktar ner lektionen och håller rörelsen enkel, så att du bara fokuserar på en sak i taget.",
+          "intermediate": "Vi håller förklaringen kort och flyttar dig till guidad praktik utan att dra i takt.",
+          "advanced": "Vi håller vägledningen lättare, så att du kan röra dig snabbt och lägga mer tid på att göra än att läsa.",
+          "default": "Vi matchar lektionstakten till din nivå, så vägledningen känns användbar istället för repetitiv."
+        },
+        "progress": "Framsteg förblir synliga medan du rör dig, så att du alltid vet vad som kommer härnäst och var du slutade.",
+        "goal": {
+          "learnBasics": "Din väg kommer att fokusera på kärnstygnen först, eftersom det är det snabbaste sättet att bygga självförtroende.",
+          "finishFirstProject": "Din väg kommer att fortsätta att driva mot ett färdigt projekt, så övningen förvandlas till något påtagligt.",
+          "buildHabit": "Din väg kommer att gynna korta vinster som är lätta att upprepa, så det känns naturligt att komma tillbaka imorgon.",
+          "default": "Din väg kommer att förbli centrerad kring det resultat som betyder mest för dig."
+        }
+      },
+      "note": "Detta är samma guidade steg-för-steg-rytm som du kommer att använda i dina första Crova-lektioner."
+    }
+  }
+}

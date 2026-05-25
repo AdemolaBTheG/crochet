@@ -1,0 +1,50 @@
+{
+  "title": "Minimalistyczna kolejka górska",
+  "description": "Szybki projekt okrężny do nauki rund, łączenia i prostego powtarzania ściegów.",
+  "materials": [
+    "Przędza bawełniana",
+    "Hak 4 do 5 mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Magiczny pierścień",
+    "pojedynczy szydełko",
+    "ścieg poślizgowy",
+    "pracując w rundach"
+  ],
+  "expectationText": "Szybki, okrągły projekt, w którym ćwiczysz budowanie płaskiego koła, staranne łączenie i wykończenie czegoś przydatnego podczas jednego krótkiego posiedzenia.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Zrób środkowy pierścień",
+      "instruction": "Zacznij od magicznego pierścienia lub łańcucha 4 i połącz w pętlę."
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 1",
+      "instruction": "Przerobić 8 oczek ścisłych w pierścień podstawy i połączyć oczkiem zamykającym.",
+      "counterLabel": "okrągły",
+      "targetCount": 1
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 2",
+      "instruction": "Przerobić 2 oczka ścisłe w każde oczko, co daje w sumie 16 oczek.",
+      "counterLabel": "okrągły",
+      "targetCount": 2
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 3",
+      "instruction": "Naprzemiennie 1 oczko ścisłe, następnie 2 oczka ścisłe w następne oczko.",
+      "counterLabel": "okrągły",
+      "targetCount": 3
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Zdjąć oczko, aby je połączyć, zapiąć i na końcu przeplatać."
+    }
+  ]
+}

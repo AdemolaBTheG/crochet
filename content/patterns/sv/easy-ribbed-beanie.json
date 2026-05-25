@@ -1,0 +1,48 @@
+{
+  "title": "Lätt ribbad mössa",
+  "description": "En nybörjarvänlig bärbar gjord av en räfflad rektangel och enkel söm.",
+  "materials": [
+    "Kamgarn",
+    "5,5 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Foundation kedja",
+    "halv dubbelvirkad",
+    "endast bakre slinga",
+    "sömmar"
+  ],
+  "expectationText": "Ett bärbart projekt byggt av enkla rader, sedan sömsat i form så att du kan avsluta en riktig hatt utan komplicerad formning.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Grund",
+      "instruction": "Kedja tillräckligt med stygn för att nå från kanten till hattens krona."
+    },
+    {
+      "type": "rad",
+      "title": "Rad 1",
+      "instruction": "Halva dubbelvirka i den tredje kedjan från nålen och varje kedja tvärs över.",
+      "counterLabel": "rad",
+      "targetCount": 1
+    },
+    {
+      "type": "upprepa",
+      "title": "Rad 2 till 36",
+      "instruction": "Kedja 2, vänd och virka halv dubbelvirkning i bakre maskbågen endast tvärs över.",
+      "counterLabel": "rad",
+      "targetCount": 36
+    },
+    {
+      "type": "instruktion",
+      "title": "Sy ihop sidan",
+      "instruction": "Vik rektangeln och sy ihop de första och sista raden."
+    },
+    {
+      "type": "instruktion",
+      "title": "Stäng kronan",
+      "instruction": "Väv garn runt den övre kanten, dra åt, fäst och väv i ändarna."
+    }
+  ]
+}

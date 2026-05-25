@@ -1,0 +1,19 @@
+{
+  "title": "Cadeia de Fundação",
+  "description": "Faça a corrente inicial usada para fileiras, lenços, panos de prato e muito mais.",
+  "content": {
+    "summary": "Aprenda o movimento do fio e crie pontos de corrente uniformes.",
+    "whyItMatters": "A cadeia de fundação determina a largura de muitos projetos iniciantes.",
+    "steps": [
+      "Comece com um nó corrediço na agulha.",
+      "Passe o fio de trás para frente.",
+      "Puxe o fio pela laçada da agulha.",
+      "Repita até que o comprimento da corrente pareça uniforme."
+    ],
+    "practice": "Corrente 15 pontos duas vezes e compare como eles ficam uniformes.",
+    "commonMistakes": [
+      "Fazer as correntes tão apertadas que o gancho não consiga passar por elas mais tarde.",
+      "Torcendo a corrente e perdendo a frente e a parte de trás dos pontos."
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Marcador fino",
+  "description": "Um projeto de linha estreita para praticar bordas, tensão e um acabamento de borla minúsculo.",
+  "materials": [
+    "Fio de algodão",
+    "Gancho de 3,5 a 4 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Cadeia de fundação",
+    "crochê simples",
+    "virando linhas",
+    "fabricação de borla"
+  ],
+  "expectationText": "Um pequeno projeto bacana que recompensa a tensão cuidadosa e oferece um presente finalizado em menos de uma hora.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Fundação",
+      "instruction": "Faça 8 pontos em cadeia para obter uma largura estreita do marcador."
+    },
+    {
+      "type": "linha",
+      "title": "Linha 1",
+      "instruction": "Ponto baixo na segunda corrente a partir da agulha e em cada corrente.",
+      "counterLabel": "linha",
+      "targetCount": 1
+    },
+    {
+      "type": "repita",
+      "title": "Linhas 2 a 24",
+      "instruction": "Corrente 1, volta e ponto baixo em cada carreira.",
+      "counterLabel": "linha",
+      "targetCount": 24
+    },
+    {
+      "type": "instrução",
+      "title": "Adicione uma borla",
+      "instruction": "Corte alguns fios de lã e prenda-os em uma borda curta."
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Apare a borla uniformemente e teca na cauda inicial."
+    }
+  ]
+}

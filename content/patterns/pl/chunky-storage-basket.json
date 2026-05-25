@@ -1,0 +1,51 @@
+{
+  "title": "Masywny kosz do przechowywania",
+  "description": "Solidny projekt domu do ćwiczenia zaokrągleń, boków i prostej konstrukcji.",
+  "materials": [
+    "Gruba bawełniana włóczka",
+    "Hak 6,5mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Magiczny pierścień",
+    "pojedynczy szydełko",
+    "wzrastający",
+    "pracując w pętlach tylnych",
+    "rundy"
+  ],
+  "expectationText": "Przydatny element domu, w którym możesz przejść od płaskiej podstawy do pionowych boków i zobaczyć, jak struktura nabiera kształtu.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Uruchom bazę",
+      "instruction": "Zrób magiczny pierścień i przerób 8 słupków na środku."
+    },
+    {
+      "type": "okrągły",
+      "title": "Rundy od 1 do 4",
+      "instruction": "Zwiększaj równomiernie każdą rundę, aż podstawa osiągnie żądaną szerokość.",
+      "counterLabel": "okrągły",
+      "targetCount": 4
+    },
+    {
+      "type": "okrągły",
+      "title": "Obróć bok",
+      "instruction": "Przerobić jedno okrążenie tylko z tyłu pętelek, aby uzyskać czysty brzeg.",
+      "counterLabel": "okrągły",
+      "targetCount": 5
+    },
+    {
+      "type": "powtarzać",
+      "title": "Zbuduj ściany",
+      "instruction": "Pojedynczy szydełko bez dodawania oczek, aż kosz będzie wystarczająco wysoki.",
+      "counterLabel": "okrągły",
+      "targetCount": 10
+    },
+    {
+      "type": "instrukcja",
+      "title": "Zakończ obręcz",
+      "instruction": "Zdjąć oczko wokół górnej krawędzi, zakończyć i przeplatać na końcach."
+    }
+  ]
+}

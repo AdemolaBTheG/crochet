@@ -1,0 +1,43 @@
+{
+  "title": "Lenço Iniciante",
+  "description": "Um projeto longo e repetitivo que torna o rastreamento de linhas genuinamente útil.",
+  "materials": [
+    "Fio penteado macio",
+    "Gancho de 5,5 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Cadeia de fundação",
+    "meio crochê duplo",
+    "virando linhas",
+    "contagem de linhas"
+  ],
+  "expectationText": "Um projeto de repetição mais longo, onde o aplicativo ajuda você a permanecer no caminho certo sem contar cada linha do zero.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Fundação",
+      "instruction": "Corrente 26 pontos."
+    },
+    {
+      "type": "linha",
+      "title": "Linha 1",
+      "instruction": "Meio ponto alto duplo na terceira corrente a partir da agulha e em cada corrente.",
+      "counterLabel": "linha",
+      "targetCount": 1
+    },
+    {
+      "type": "repita",
+      "title": "Linhas 2 a 40",
+      "instruction": "Corrente 2, vire e faça meio ponto alto duplo em cada carreira.",
+      "counterLabel": "linha",
+      "targetCount": 40
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Aperte, entrelace as pontas e bloqueie levemente, se necessário."
+    }
+  ]
+}

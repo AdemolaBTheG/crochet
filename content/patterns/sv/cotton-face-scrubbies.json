@@ -1,0 +1,50 @@
+{
+  "title": "Bomullsscrubbies för ansiktet",
+  "description": "En liten återanvändbar runda som ger nybörjare ytterligare en snabb vinst med ökningar.",
+  "materials": [
+    "Bomullsgarn",
+    "4 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Magisk ring",
+    "enkelvirkad",
+    "ökande",
+    "smygfogning"
+  ],
+  "expectationText": "Ett lågtrycks miniprojekt där du gör en mjuk återanvändbar runda och övar på att hålla ökar jämnt.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Gör centrum",
+      "instruction": "Börja med en magisk ring eller kedja 4 och gå ihop till en slinga."
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 1",
+      "instruction": "Virka 8 fastmaskor i mittringen och sy ihop med en smygmaska.",
+      "counterLabel": "runda",
+      "targetCount": 1
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 2",
+      "instruction": "Virka 2 fastmaskor i varje maska ​​runt för totalt 16 maskor.",
+      "counterLabel": "runda",
+      "targetCount": 2
+    },
+    {
+      "type": "runda",
+      "title": "Omgång 3",
+      "instruction": "Varva 1 enkelvirkning, sedan 2 enkelmaskor i nästa maska ​​runt.",
+      "counterLabel": "runda",
+      "targetCount": 3
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta kanten",
+      "instruction": "Sätt sömmen runt kanten, fäst av och väv i ändarna."
+    }
+  ]
+}

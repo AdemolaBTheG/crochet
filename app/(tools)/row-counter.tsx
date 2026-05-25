@@ -1,6 +1,7 @@
 import { PressableScale } from '@/components/pressable-scale';
 import { theme } from '@/constants/Theme';
 import { usePremiumGate } from '@/hooks/usePremiumGate';
+import { confirm, tap } from '@/services/haptics';
 import { Host, Picker, Text as SwiftText } from '@expo/ui/swift-ui';
 import {
   Animation,
@@ -12,7 +13,6 @@ import {
   pickerStyle,
   tag,
 } from '@expo/ui/swift-ui/modifiers';
-import * as Haptics from 'expo-haptics';
 import { SymbolView } from 'expo-symbols';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -234,12 +234,12 @@ export default function RowCounterScreen() {
   function changeCounter(counter: CounterKind) {
     if (counter === activeCounter) return;
 
-    void Haptics.selectionAsync();
+    tap();
     setActiveCounter(counter);
   }
 
   function updateActiveCounter(delta: number) {
-    void Haptics.selectionAsync();
+    tap();
 
     if (activeCounter === 'rows') {
       setRows((current) => Math.max(0, current + delta));
@@ -250,7 +250,7 @@ export default function RowCounterScreen() {
   }
 
   function resetActiveCounter() {
-    void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    confirm();
 
     if (activeCounter === 'rows') {
       setRows(0);

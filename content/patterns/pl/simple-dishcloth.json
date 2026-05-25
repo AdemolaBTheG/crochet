@@ -1,0 +1,43 @@
+{
+  "title": "Prosta ściereczka",
+  "description": "Praktyczny kwadratowy projekt do nauki rzędów i budowania równego napięcia.",
+  "materials": [
+    "Przędza bawełniana",
+    "Hak 5 mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Łańcuch fundamentowy",
+    "pojedynczy szydełko",
+    "obracanie rzędów",
+    "tkanie się kończy"
+  ],
+  "expectationText": "Stały projekt rząd po rzędzie do ćwiczenia równomiernego napięcia, czystych krawędzi i rytmu obracania pracy.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Fundacja",
+      "instruction": "Łańcuszek 21 oczek."
+    },
+    {
+      "type": "wiersz",
+      "title": "Rząd 1",
+      "instruction": "Pojedyncze szydełko w drugim łańcuszku od szydełka i w poprzek każdego łańcuszka.",
+      "counterLabel": "wiersz",
+      "targetCount": 1
+    },
+    {
+      "type": "powtarzać",
+      "title": "Rzędy od 2 do 18",
+      "instruction": "Zrób 1 łańcuszek, obróć i wykonaj oczko ścisłe w każde oczko w poprzek.",
+      "counterLabel": "wiersz",
+      "targetCount": 18
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Zapiąć i przeplatać na obu końcach."
+    }
+  ]
+}

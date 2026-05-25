@@ -7,11 +7,11 @@ import {
   type Pattern,
   type Project,
 } from '@/db/schema';
+import { complete, cta, tap } from '@/services/haptics';
 import { useDbStore } from '@/stores/dbStore';
 import { askForReview } from '@/utils/review';
 import { eq } from 'drizzle-orm';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
-import * as Haptics from 'expo-haptics';
 import { Image } from 'expo-image';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
@@ -102,6 +102,7 @@ export default function ProjectCompleteScreen() {
   const [isLoading, setIsLoading] = useState(true);
   const [isCreatingAnother, setIsCreatingAnother] = useState(false);
   const didRequestReviewRef = useRef(false);
+  const didPlayCompletionHapticRef = useRef(false);
   const projectId = Number(id);
 
   useEffect(() => {
@@ -156,6 +157,14 @@ export default function ProjectCompleteScreen() {
   const imageSource = pattern ? patternImages[pattern.coverImageKey as PatternImageKey] : undefined;
 
   useEffect(() => {
+    if (!project || didPlayCompletionHapticRef.current) return;
+    if (project.status !== 'completed') return;
+
+    didPlayCompletionHapticRef.current = true;
+    complete();
+  }, [project]);
+
+  useEffect(() => {
     if (!project || !pattern || didRequestReviewRef.current) return;
     if (project.status !== 'completed') return;
 
@@ -169,10 +178,7 @@ export default function ProjectCompleteScreen() {
 
   async function createAnotherProject() {
     if (!db || !pattern || isCreatingAnother) return;
-
-    if (process.env.EXPO_OS === 'ios') {
-      void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    }
+    cta();
 
     setIsCreatingAnother(true);
 
@@ -199,10 +205,7 @@ export default function ProjectCompleteScreen() {
   }
 
   function goToProjects() {
-    if (process.env.EXPO_OS === 'ios') {
-      void Haptics.selectionAsync();
-    }
-
+    tap();
     router.replace('/(tabs)/(projects)');
   }
 

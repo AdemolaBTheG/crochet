@@ -1,0 +1,50 @@
+{
+  "title": "Prążkowana myjka",
+  "description": "Prosty kwadrat, który zamienia praktykę z pętlą tylną w użyteczną teksturowaną tkaninę.",
+  "materials": [
+    "Przędza bawełniana",
+    "Hak 5 mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Łańcuch fundamentowy",
+    "pół szydełka",
+    "tylko pętla tylna",
+    "obracanie rzędów"
+  ],
+  "expectationText": "Praktyczny projekt wielkości próbki, w którym ściągacz jest szybko widoczny, więc technika sprawdza się, zanim przejdziesz do urządzeń do noszenia.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Fundacja",
+      "instruction": "Łańcuszek 19 oczek."
+    },
+    {
+      "type": "wiersz",
+      "title": "Rząd 1",
+      "instruction": "Półsłupek w trzecim łańcuszku od szydełka i w poprzek każdego łańcuszka.",
+      "counterLabel": "wiersz",
+      "targetCount": 1
+    },
+    {
+      "type": "wiersz",
+      "title": "Rząd 2",
+      "instruction": "Zrób 2 łańcuszek, obróć i przerób półsłupek w tylnej pętelce tylko w poprzek.",
+      "counterLabel": "wiersz",
+      "targetCount": 2
+    },
+    {
+      "type": "powtarzać",
+      "title": "Rzędy od 3 do 16",
+      "instruction": "Kontynuuj 2 łańcuszki, obracając i przerabiając półsłupek w tylnej pętelce tylko w poprzek.",
+      "counterLabel": "wiersz",
+      "targetCount": 16
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Zapiąć i starannie splatać oba końce."
+    }
+  ]
+}

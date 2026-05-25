@@ -1,0 +1,43 @@
+{
+  "title": "Enkel disktrasa",
+  "description": "Ett praktiskt fyrkantigt projekt för att lära sig rader och bygga jämn spänning.",
+  "materials": [
+    "Bomullsgarn",
+    "5 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Foundation kedja",
+    "enkelvirkad",
+    "vända rader",
+    "vävändar"
+  ],
+  "expectationText": "Ett stadigt rad-för-rad-projekt för att träna jämn spänning, rena kanter och rytmen att vända ditt arbete.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Grund",
+      "instruction": "Kedja 21 maskor."
+    },
+    {
+      "type": "rad",
+      "title": "Rad 1",
+      "instruction": "Virka in i den andra kedjan från nålen och varje kedja tvärs över.",
+      "counterLabel": "rad",
+      "targetCount": 1
+    },
+    {
+      "type": "upprepa",
+      "title": "Rad 2 till 18",
+      "instruction": "Kedja 1, vänd och virka i varje maska ​​tvärs över.",
+      "counterLabel": "rad",
+      "targetCount": 18
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Knäpp av och väv i båda ändar."
+    }
+  ]
+}

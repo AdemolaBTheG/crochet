@@ -1,0 +1,19 @@
+{
+  "title": "Trabalhando em linhas",
+  "description": "Aprenda quando virar seu trabalho e como manter a contagem de pontos estável.",
+  "content": {
+    "summary": "As linhas ensinam você a virar o trabalho, usar correntes giratórias e evitar crescer ou encolher acidentalmente.",
+    "whyItMatters": "Panos de cozinha e lenços dependem de contagens de fileiras constantes e bordas consistentes.",
+    "steps": [
+      "Termine uma carreira e faça a corrente de giro correta.",
+      "Vire o trabalho de forma que as costas fiquem voltadas para você.",
+      "Comece a próxima carreira no ponto correto para esse tipo de ponto.",
+      "Conte os pontos no final de cada carreira."
+    ],
+    "practice": "Faça uma amostra de 5 carreiras e conte os pontos após cada carreira.",
+    "commonMistakes": [
+      "Trabalhando na corrente de giro por acidente.",
+      "Pulando o ponto final na borda."
+    ]
+  }
+}

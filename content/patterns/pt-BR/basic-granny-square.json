@@ -1,0 +1,50 @@
+{
+  "title": "Praça Básica da Vovó",
+  "description": "Um motivo clássico de crochê que ensina grupos e cantos de crochê duplo.",
+  "materials": [
+    "Fio penteado",
+    "gancho de 5 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Anel mágico",
+    "crochê duplo",
+    "espaços de cadeia",
+    "junção de ponto baixíssimo"
+  ],
+  "expectationText": "Um motivo clássico que ensina cantos, aglomerados e estruturas redondas sem saltar para um projeto enorme.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Anel central",
+      "instruction": "Crie um anel mágico ou corrente 4 e junte-o em um laço."
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 1",
+      "instruction": "Faça 4 grupos de vovós separados por espaços de corrente e junte-os para fechar o quadrado.",
+      "counterLabel": "redondo",
+      "targetCount": 1
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 2",
+      "instruction": "Faça pontos baixíssimos em um espaço de canto, construa a próxima camada de cachos de avós e forme cantos com espaços de corrente.",
+      "counterLabel": "redondo",
+      "targetCount": 2
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 3",
+      "instruction": "Repita os cachos de avós nas laterais e nos cantos até que o quadrado atinja o tamanho desejado.",
+      "counterLabel": "redondo",
+      "targetCount": 3
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Junte-se à rodada, prenda e teca nas pontas."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "title": "Podstawowy kocyk dla dziecka",
+  "description": "Projekt miękkiego, powtarzalnego koca, zaprojektowany z myślą o stałych rzędach i łatwym śledzeniu postępów.",
+  "materials": [
+    "Miękka przędza czesankowa",
+    "Hak 5 mm",
+    "znaczniki ściegów",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Łańcuch fundamentowy",
+    "podwójne szydełko",
+    "pracując w rzędach",
+    "zmiany koloru"
+  ],
+  "expectationText": "Dłuższy projekt zapewniający komfort, który zamienia proste, powtarzające się rzędy w koc gotowy na prezent bez wprowadzania trudnych kształtów.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Łańcuch na szerokość",
+      "instruction": "Zrób łańcuszek fundamentowy wystarczająco szeroki, aby zmieścił się w nim kocyk dla dziecka i dokładnie policz przed pierwszym rzędem."
+    },
+    {
+      "type": "wiersz",
+      "title": "Rząd 1",
+      "instruction": "Przerobić rząd konfiguracji równomiernie w poprzek i zaznaczyć pierwsze i ostatnie oczka, jeśli liczenie brzegów jest jeszcze nowe.",
+      "counterLabel": "wiersz",
+      "targetCount": 1
+    },
+    {
+      "type": "powtarzać",
+      "title": "Rzędy od 2 do 20",
+      "instruction": "Powtórz główny wzór ściegu, sprawdzając krawędzie co kilka rzędów, aby koc pozostał prostokątny.",
+      "counterLabel": "wiersz",
+      "targetCount": 20
+    },
+    {
+      "type": "powtarzać",
+      "title": "Wiersze od 21 do 40",
+      "instruction": "Kontynuuj budowanie wysokości i zmieniaj kolory tylko na końcu rzędu, jeśli chcesz uzyskać miękkie paski.",
+      "counterLabel": "wiersz",
+      "targetCount": 40
+    },
+    {
+      "type": "instrukcja",
+      "title": "Dodaj granicę",
+      "instruction": "Wykonaj proste obramowanie wokół wszystkich czterech stron, aby uporządkować krawędzie i rogi."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Splot końce i połóż koc na płasko, aby sprawdzić, czy brzegi dobrze przylegają."
+    }
+  ]
+}

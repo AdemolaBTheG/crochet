@@ -1,0 +1,51 @@
+{
+  "title": "Scrunchie com nervuras",
+  "description": "Um projeto rápido e fácil de usar feito em torno de um elástico de cabelo com repetições para iniciantes.",
+  "materials": [
+    "Fio macio",
+    "Gancho de 4,5 mm",
+    "elástico de cabelo",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Crochê simples",
+    "meio crochê duplo",
+    "trabalhando em torno de um elástico",
+    "juntando-se"
+  ],
+  "expectationText": "Um projeto rápido e lúdico onde a repetição aumenta a confiança e o resultado final parece presenteável.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Cubra o elástico",
+      "instruction": "Junte o fio ao redor do elástico do cabelo e faça um ponto baixo uniformemente ao redor dele."
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 1",
+      "instruction": "Faça pontos baixos suficientes ao redor do elástico para que a faixa fique totalmente coberta.",
+      "counterLabel": "redondo",
+      "targetCount": 1
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 2",
+      "instruction": "Corrente 2 e, em seguida, faça meio ponto alto duplo em cada ponto ao redor.",
+      "counterLabel": "redondo",
+      "targetCount": 2
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 3",
+      "instruction": "Trabalhe mais uma rodada de meio ponto alto duplo para um elástico mais cheio.",
+      "counterLabel": "redondo",
+      "targetCount": 3
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Ponto baixíssimo para unir, prender e tecer a cauda dentro das dobras."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "title": "Prosta torebka ze sznurkiem",
+  "description": "Mała torebka ma okrągłą podstawę i proste boki za pomocą łańcuszkowego sznurka.",
+  "materials": [
+    "Przędza bawełniana",
+    "Hak 4,5mm",
+    "znacznik ściegu",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "Magiczny pierścień",
+    "pojedynczy szydełko",
+    "wzrastający",
+    "pracując w rundach",
+    "łańcuch fundamentowy"
+  ],
+  "expectationText": "Przydatny mały pojemnik, który uczy przechodzenia z płaskiej okrągłej podstawy w proste pionowe boki.",
+  "steps": [
+    {
+      "type": "instrukcja",
+      "title": "Uruchom bazę",
+      "instruction": "Zrób magiczny pierścień lub łańcuszek 4 i połącz go w pętlę."
+    },
+    {
+      "type": "okrągły",
+      "title": "Runda 1",
+      "instruction": "Przerobić 8 słupków na środku i zaznaczyć pierwsze oczko.",
+      "counterLabel": "okrągły",
+      "targetCount": 1
+    },
+    {
+      "type": "powtarzać",
+      "title": "Rundy od 2 do 4",
+      "instruction": "Zwiększaj równomiernie każdą rundę, aż podstawa będzie wystarczająco szeroka, aby zmieścić małą torebkę.",
+      "counterLabel": "okrągły",
+      "targetCount": 4
+    },
+    {
+      "type": "powtarzać",
+      "title": "Rundy od 5 do 14",
+      "instruction": "Pojedynczy szydełko wokół bez dodawania oczek, aby zbudować boki.",
+      "counterLabel": "okrągły",
+      "targetCount": 14
+    },
+    {
+      "type": "instrukcja",
+      "title": "Zrób sznurek",
+      "instruction": "Zawiąż sznurek wystarczająco długi, aby owinąć wokół otworu woreczka, a następnie przeplot go przez przestrzenie w pobliżu górnej krawędzi."
+    },
+    {
+      "type": "instrukcja",
+      "title": "Skończyć",
+      "instruction": "Zawiąż małe węzły na końcach sznurka, zapnij i wpleć pozostałe ogony."
+    }
+  ]
+}

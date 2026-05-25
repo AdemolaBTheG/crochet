@@ -1,0 +1,51 @@
+{
+  "title": "Granny Square Tote",
+  "description": "Slå ihop klassiska mormorsrutor till en enkel väska som känns mer rejäl än en övningsprov.",
+  "materials": [
+    "Kamgarn",
+    "5 mm krok",
+    "garnnål",
+    "sax",
+    "stygnmarkörer"
+  ],
+  "skills": [
+    "Mormors rutor",
+    "sammanfoga mormorsrutor",
+    "färgförändringar",
+    "vävändar"
+  ],
+  "expectationText": "Ett modulärt projekt där upprepade rutor förvandlas till en färdig väska, vilket ger användaren en tydlig utdelning för motivövning.",
+  "steps": [
+    {
+      "type": "upprepa",
+      "title": "Gör rutorna",
+      "instruction": "Virka 8 mormorsrutor i en eller två färger och väv in de kortaste svansarna allt eftersom.",
+      "targetCount": 8
+    },
+    {
+      "type": "instruktion",
+      "title": "Blockera och ordna",
+      "instruction": "Lägg rutorna platt i två paneler om fyra så att hörnen och färglayouten förblir konsekventa."
+    },
+    {
+      "type": "instruktion",
+      "title": "Gå med i varje panel",
+      "instruction": "Fäst rutorna panel för panel, matcha hörnen innan du stickar varje söm."
+    },
+    {
+      "type": "instruktion",
+      "title": "Sätt ihop väskan",
+      "instruction": "Förena de två panelerna längs sidorna och botten, lämna den övre kanten öppen."
+    },
+    {
+      "type": "instruktion",
+      "title": "Lägg till handtagen",
+      "instruction": "Virka eller sy två enkla handtag till överkanten och förstärk basen på varje handtag."
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Väv in de återstående ändarna och kontrollera att överkanten och handtagen känns även innan du använder väskan."
+    }
+  ]
+}

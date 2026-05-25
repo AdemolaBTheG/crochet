@@ -4,13 +4,13 @@ import { isLessonFree } from '@/constants/gates';
 import { useSubscription } from '@/context/SubscriptionContext';
 import { lessons as lessonsTable, type Lesson } from '@/db/schema';
 import { resolveLessonTranslation, type ResolvedLesson } from '@/db/translations';
+import { confirm } from '@/services/haptics';
 import { useDbStore } from '@/stores/dbStore';
 import { Host, Button as SwiftUIButton } from '@expo/ui/swift-ui';
 import { buttonStyle, controlSize, tint } from '@expo/ui/swift-ui/modifiers';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { eq } from 'drizzle-orm';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
-import * as Haptics from 'expo-haptics';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
 import React, { useEffect, useMemo, useState } from 'react';
@@ -253,10 +253,7 @@ export default function LessonDetailScreen() {
   );
 
   function handleStartPractice() {
-    if (process.env.EXPO_OS === 'ios') {
-      void Haptics.selectionAsync();
-    }
-
+    confirm();
     router.push({
       pathname: '/(lessons)/practice/[slug]',
       params: { slug },

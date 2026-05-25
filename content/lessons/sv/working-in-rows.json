@@ -1,0 +1,19 @@
+{
+  "title": "Arbeta i rader",
+  "description": "Lär dig när du ska vända ditt arbete och hur du håller ditt stygnantal stabilt.",
+  "content": {
+    "summary": "Rader lär dig att vända verket, använda vändkedjor och undvika att växa eller krympa av misstag.",
+    "whyItMatters": "Disktrasor och halsdukar är beroende av jämn antal rader och konsekventa kanter.",
+    "steps": [
+      "Avsluta en rad och gör rätt vändkedja.",
+      "Vänd arbetet så att baksidan är vänd mot dig.",
+      "Börja nästa rad i rätt söm för den sömtypen.",
+      "Räkna maskor i slutet av varje varv."
+    ],
+    "practice": "Gör en 5-rads swatch och räkna maskor efter varje varv.",
+    "commonMistakes": [
+      "Arbetar in i vändkedjan av misstag.",
+      "Hoppa över det sista stygnet i kanten."
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Praca w rzędach",
+  "description": "Dowiedz się, kiedy obrócić robótkę i jak utrzymać stałą liczbę ściegów.",
+  "content": {
+    "summary": "Wiersze uczą, jak obracać pracę, używać łańcuchów obracających i unikać przypadkowego wzrostu lub kurczenia się.",
+    "whyItMatters": "Ścierki i szaliki zależą od stałej liczby rzędów i spójnych krawędzi.",
+    "steps": [
+      "Zakończ rząd i wykonaj prawidłowy łańcuch skrętu.",
+      "Obróć pracę tak, aby tył był skierowany do Ciebie.",
+      "Rozpocznij następny rząd ściegiem właściwym dla tego typu ściegu.",
+      "Policz oczka na końcu każdego rzędu."
+    ],
+    "practice": "Wykonaj próbkę 5-rzędową i licz oczka po każdym rzędzie.",
+    "commonMistakes": [
+      "Przypadkowe włączenie się w łańcuch obrotowy.",
+      "Pomijam ostatnie oczko na krawędzi."
+    ]
+  }
+}

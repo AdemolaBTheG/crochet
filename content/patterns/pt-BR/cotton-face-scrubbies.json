@@ -1,0 +1,50 @@
+{
+  "title": "Esfoliantes faciais de algodão",
+  "description": "Uma pequena rodada reutilizável que dá aos iniciantes outra vitória rápida com aumentos.",
+  "materials": [
+    "Fio de algodão",
+    "gancho de 4 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Anel mágico",
+    "crochê simples",
+    "aumentando",
+    "junção de ponto baixíssimo"
+  ],
+  "expectationText": "Um miniprojeto de baixa pressão onde você faz uma rodada macia e reutilizável e pratica manter os aumentos uniformes.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Faça o centro",
+      "instruction": "Comece com um anel mágico ou corrente 4 e junte-o em um laço."
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 1",
+      "instruction": "Faça 8 pontos baixos no anel central e junte com um ponto baixíssimo.",
+      "counterLabel": "redondo",
+      "targetCount": 1
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 2",
+      "instruction": "Faça 2 pontos baixos em cada ponto ao redor, totalizando 16 pontos.",
+      "counterLabel": "redondo",
+      "targetCount": 2
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 3",
+      "instruction": "Alterne 1 ponto baixo e depois 2 pontos baixos no próximo ponto.",
+      "counterLabel": "redondo",
+      "targetCount": 3
+    },
+    {
+      "type": "instrução",
+      "title": "Finalize a borda",
+      "instruction": "Faça ponto baixíssimo ao redor da borda, prenda e costure nas pontas."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "title": "Trivet redondo",
+  "description": "Um círculo plano mais grosso que se baseia nas habilidades de montanha-russa e oferece um tamanho final mais útil.",
+  "materials": [
+    "Fio de algodão grosso",
+    "Gancho de 5,5 a 6 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "Anel mágico",
+    "crochê simples",
+    "aumentando",
+    "junção de ponto baixíssimo"
+  ],
+  "expectationText": "Uma rodada plana e robusta onde você pratica ainda aumenta por mais tempo sem que o projeto se torne repetitivo muito rápido.",
+  "steps": [
+    {
+      "type": "instrução",
+      "title": "Faça o anel central",
+      "instruction": "Comece com um anel mágico ou corrente 4 e junte-o em um laço."
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 1",
+      "instruction": "Faça 8 pontos baixos no anel e junte com ponto baixíssimo.",
+      "counterLabel": "redondo",
+      "targetCount": 1
+    },
+    {
+      "type": "redondo",
+      "title": "Rodada 2",
+      "instruction": "Faça 2 pontos baixos em cada ponto ao redor, totalizando 16 pontos.",
+      "counterLabel": "redondo",
+      "targetCount": 2
+    },
+    {
+      "type": "repita",
+      "title": "Rodadas 3 a 5",
+      "instruction": "Aumente uniformemente a cada rodada, espaçando 2 pontos baixos em um ponto para que o círculo permaneça plano.",
+      "counterLabel": "redondo",
+      "targetCount": 5
+    },
+    {
+      "type": "instrução",
+      "title": "Terminar",
+      "instruction": "Ponto baixíssimo para unir, prender e tecer no final com segurança."
+    }
+  ]
+}

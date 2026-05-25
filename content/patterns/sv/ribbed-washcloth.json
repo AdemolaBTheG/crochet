@@ -1,0 +1,50 @@
+{
+  "title": "Ribbstickad tvättlapp",
+  "description": "En enkel fyrkant som förvandlar övning med endast backloop till ett användbart texturerat tyg.",
+  "materials": [
+    "Bomullsgarn",
+    "5 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "Foundation kedja",
+    "halv dubbelvirkad",
+    "endast bakre slinga",
+    "vända rader"
+  ],
+  "expectationText": "Ett praktiskt projekt i swatchstorlek där ribbningen är uppenbar snabbt, så tekniken klickar innan du går vidare till wearables.",
+  "steps": [
+    {
+      "type": "instruktion",
+      "title": "Grund",
+      "instruction": "Kedje 19 maskor."
+    },
+    {
+      "type": "rad",
+      "title": "Rad 1",
+      "instruction": "Halva dubbelvirka i den tredje kedjan från nålen och varje kedja tvärs över.",
+      "counterLabel": "rad",
+      "targetCount": 1
+    },
+    {
+      "type": "rad",
+      "title": "Rad 2",
+      "instruction": "Kedja 2, vänd och virka halv dubbelvirkning i bakre maskbågen endast tvärs över.",
+      "counterLabel": "rad",
+      "targetCount": 2
+    },
+    {
+      "type": "upprepa",
+      "title": "Rad 3 till 16",
+      "instruction": "Fortsätt att kedja 2, vända och virka halv dubbelvirkning i bakre maskbågen endast tvärs över.",
+      "counterLabel": "rad",
+      "targetCount": 16
+    },
+    {
+      "type": "instruktion",
+      "title": "Avsluta",
+      "instruction": "Knäpp av och väv i båda ändarna snyggt."
+    }
+  ]
+}
