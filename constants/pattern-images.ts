@@ -34,15 +34,14 @@ const localImages = {
 
 export type PatternImageKey = keyof typeof localImages;
 
-export function getPatternImageSource(
-  coverImageKey: string,
-): ImageSource {
+export function getPatternImageSource(coverImageKey: string): ImageSource {
   const remoteUrl = getPatternImageUrl(coverImageKey);
 
   if (remoteUrl) {
     return { uri: remoteUrl };
   }
 
-  return (localImages as Record<string, ImageSource>)[coverImageKey]
-    ?? localImages['minimalist-coaster'];
+  return (
+    (localImages as Record<string, ImageSource>)[coverImageKey] ?? localImages['minimalist-coaster']
+  );
 }
