@@ -8,7 +8,7 @@ export default function ProjectsLayout() {
         name="index"
         options={{
           title: 'Projects',
-          headerLargeTitle: true,
+          headerLargeTitle: false,
           headerTransparent: isLiquidGlassAvailable(),
           headerStyle: {
             backgroundColor: isLiquidGlassAvailable() ? 'transparent' : theme.colors.background,

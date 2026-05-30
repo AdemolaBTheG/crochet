@@ -19,6 +19,11 @@ import {
 } from '@/db/schema';
 import { usePatternDetail } from '@/hooks/use-pattern-detail';
 import { cta, tap, warn } from '@/services/haptics';
+import {
+  endProjectActivity,
+  startProjectActivity,
+  updateProjectActivity,
+} from '@/services/live-activity';
 import { useDbStore } from '@/stores/dbStore';
 import { eq } from 'drizzle-orm';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
@@ -105,6 +110,77 @@ export default function ProjectDetailScreen() {
 
   const steps = pattern?.steps ?? [];
   const currentStepIndex = Math.min(selectedStepIndex, Math.max(steps.length - 1, 0));
+
+  const liveActivityCounterLabel =
+    steps.length > 0 && project
+      ? (steps[currentStepIndex]?.counterLabel as string | undefined) ?? ''
+      : '';
+  const liveActivityCounterValue =
+    liveActivityCounterLabel === 'row'
+      ? project?.rowCount ?? 0
+      : liveActivityCounterLabel === 'round'
+        ? project?.roundCount ?? 0
+        : 0;
+
+  const liveProjectId = project?.id;
+  const liveProjectName = project?.name;
+  const liveProjectStatus = project?.status;
+  const liveProjectStepIndex = project?.currentStepIndex;
+  const liveProjectRowCount = project?.rowCount;
+  const liveProjectRoundCount = project?.roundCount;
+
+  useEffect(() => {
+    if (Platform.OS !== 'ios') return;
+    if (!liveProjectId || !liveProjectName || isLoading) return;
+
+    if (liveProjectStatus !== 'active' || steps.length === 0) {
+      void endProjectActivity();
+      return;
+    }
+
+    startProjectActivity({
+      projectName: liveProjectName,
+      currentStep: (liveProjectStepIndex ?? 0) + 1,
+      totalSteps: steps.length,
+      counterLabel: liveActivityCounterLabel,
+      counterValue: liveActivityCounterValue,
+    });
+
+    return () => {
+      void endProjectActivity();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [liveProjectId, liveProjectStatus, steps.length, isLoading]);
+
+  useEffect(() => {
+    if (Platform.OS !== 'ios') return;
+    if (!liveProjectId || !liveProjectName || isLoading) return;
+
+    if (liveProjectStatus !== 'active' || steps.length === 0) {
+      void endProjectActivity();
+      return;
+    }
+
+    void updateProjectActivity({
+      projectName: liveProjectName,
+      currentStep: (liveProjectStepIndex ?? 0) + 1,
+      totalSteps: steps.length,
+      counterLabel: liveActivityCounterLabel,
+      counterValue: liveActivityCounterValue,
+    });
+  }, [
+    liveProjectId,
+    liveProjectName,
+    liveProjectStatus,
+    liveProjectStepIndex,
+    liveProjectRowCount,
+    liveProjectRoundCount,
+    liveActivityCounterLabel,
+    liveActivityCounterValue,
+    steps.length,
+    isLoading,
+  ]);
+
   const currentStep = steps[currentStepIndex] ?? null;
   const progress = steps.length > 0 ? (currentStepIndex + 1) / steps.length : 0;
   const stepCardGap = theme.spacing.md;
@@ -236,6 +312,14 @@ export default function ProjectDetailScreen() {
 
   async function finishProject() {
     if (!project) return;
+
+    await endProjectActivity({
+      projectName: project.name,
+      currentStep: steps.length,
+      totalSteps: steps.length,
+      counterLabel: liveActivityCounterLabel,
+      counterValue: liveActivityCounterValue,
+    });
 
     await updateProject({
       ...project,

@@ -8,7 +8,7 @@ export default function LearnLayout() {
         name="index"
         options={{
           title: 'Learn',
-          headerLargeTitle: true,
+          headerLargeTitle: false,
           headerTransparent: isLiquidGlassAvailable(),
           headerStyle: {
             backgroundColor: isLiquidGlassAvailable() ? 'transparent' : theme.colors.background,
