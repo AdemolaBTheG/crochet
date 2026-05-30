@@ -7,7 +7,7 @@ export default function Index() {
   const { isOnboardingCompleted } = useOnboardingStore();
   const { isPro, isLoading } = useSubscription();
 
-  if (isOnboardingCompleted) {
+  if (!isOnboardingCompleted) {
     return <Redirect href="/(onboarding)" />;
   }
 
