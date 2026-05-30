@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS patterns (
 CREATE TABLE IF NOT EXISTS pattern_translations (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   pattern_id BIGINT NOT NULL REFERENCES patterns(id) ON DELETE CASCADE,
-  locale TEXT NOT NULL CHECK (locale IN ('en', 'de', 'fr', 'es', 'nl')),
+  locale TEXT NOT NULL CHECK (locale IN ('en', 'de', 'fr', 'es', 'nl', 'it', 'ja', 'ko', 'pl', 'pt-BR', 'sv')),
   title TEXT NOT NULL,
   description TEXT,
   materials_json JSONB,
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS lessons (
 CREATE TABLE IF NOT EXISTS lesson_translations (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   lesson_id BIGINT NOT NULL REFERENCES lessons(id) ON DELETE CASCADE,
-  locale TEXT NOT NULL CHECK (locale IN ('en', 'de', 'fr', 'es', 'nl')),
+  locale TEXT NOT NULL CHECK (locale IN ('en', 'de', 'fr', 'es', 'nl', 'it', 'ja', 'ko', 'pl', 'pt-BR', 'sv')),
   title TEXT NOT NULL,
   description TEXT,
   content_json JSONB NOT NULL DEFAULT '{}',

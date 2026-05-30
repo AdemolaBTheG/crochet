@@ -51,7 +51,7 @@ const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY, {
   global: { fetch },
 });
 
-const LOCALES = ['en', 'de', 'fr', 'es', 'nl'];
+const LOCALES = ['en', 'de', 'fr', 'es', 'nl', 'it', 'ja', 'ko', 'pl', 'pt-BR', 'sv'];
 const CONTENT_DIR = resolve(__dirname, '..', 'content');
 
 const lessonMetadata = {
@@ -102,6 +102,16 @@ const patternMetadata = {
   'mini-cactus': { difficulty: 'beginner', category: 'toy', coverImageKey: 'mini-cactus', estimatedMinutes: 45 },
   'ear-warmer': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'ear-warmer', estimatedMinutes: 40 },
   'keychain-wristlet': { difficulty: 'beginner', category: 'gift', coverImageKey: 'keychain-wristlet', estimatedMinutes: 15 },
+  'phone-pouch': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'phone-pouch', estimatedMinutes: 35 },
+  'bobble-stitch-coaster': { difficulty: 'beginner', category: 'home', coverImageKey: 'bobble-stitch-coaster', estimatedMinutes: 30 },
+  'mini-pumpkin': { difficulty: 'beginner', category: 'toy', coverImageKey: 'mini-pumpkin', estimatedMinutes: 40 },
+  'chunky-infinity-scarf': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'chunky-infinity-scarf', estimatedMinutes: 90 },
+  'crochet-headband': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'crochet-headband', estimatedMinutes: 30 },
+  'hexagon-motif-blanket': { difficulty: 'intermediate', category: 'home', coverImageKey: 'hexagon-motif-blanket', estimatedMinutes: 240 },
+  'simple-cup-cozy': { difficulty: 'beginner', category: 'home', coverImageKey: 'simple-cup-cozy', estimatedMinutes: 25 },
+  'star-applique': { difficulty: 'beginner', category: 'gift', coverImageKey: 'star-applique', estimatedMinutes: 20 },
+  'chevron-washcloth': { difficulty: 'beginner', category: 'home', coverImageKey: 'chevron-washcloth', estimatedMinutes: 45 },
+  'envelope-pouch': { difficulty: 'beginner', category: 'gift', coverImageKey: 'envelope-pouch', estimatedMinutes: 50 },
 };
 
 function readJson(filePath) {

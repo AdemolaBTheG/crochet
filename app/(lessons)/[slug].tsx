@@ -2,18 +2,15 @@ import { PressableScale } from '@/components/pressable-scale';
 import { theme } from '@/constants/Theme';
 import { isLessonFree } from '@/constants/gates';
 import { useSubscription } from '@/context/SubscriptionContext';
-import { lessons as lessonsTable, type Lesson } from '@/db/schema';
-import { resolveLessonTranslation, type ResolvedLesson } from '@/db/translations';
-import { confirm } from '@/services/haptics';
-import { useDbStore } from '@/stores/dbStore';
+import { useLessonDetail } from '@/hooks/use-lesson-detail';
+import { tap } from '@/services/haptics';
 import { Host, Button as SwiftUIButton } from '@expo/ui/swift-ui';
 import { buttonStyle, controlSize, tint } from '@expo/ui/swift-ui/modifiers';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { eq } from 'drizzle-orm';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ActivityIndicator, ScrollView, Text, View, useWindowDimensions } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -181,58 +178,15 @@ export default function LessonDetailScreen() {
   const { t, i18n } = useTranslation();
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const router = useRouter();
-  const { db } = useDbStore();
   const { isPro } = useSubscription();
   const { width } = useWindowDimensions();
   const insets = useSafeAreaInsets();
-  const [lesson, setLesson] = useState<ResolvedLesson | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const { data: lesson, isLoading } = useLessonDetail(slug, i18n.language);
   const contentPadding = theme.spacing.xl;
   const metaGap = theme.spacing.sm;
   const metaCardSize = Math.floor((width - contentPadding * 2 - metaGap * 2) / 3);
   const ctaWidth = Math.min(width - contentPadding * 2, 236);
   const liquidGlassAvailable = useMemo(() => isLiquidGlassAvailable(), []);
-
-  useEffect(() => {
-    let isMounted = true;
-
-    async function loadLesson() {
-      if (!db || !slug) return;
-
-      setIsLoading(true);
-
-      try {
-        const result = await db
-          .select()
-          .from(lessonsTable)
-          .where(eq(lessonsTable.slug, slug))
-          .limit(1);
-
-        const baseLesson = result[0] ?? null;
-
-        if (isMounted && baseLesson) {
-          const resolved = await resolveLessonTranslation(
-            db,
-            baseLesson,
-            i18n.language,
-          );
-          setLesson(resolved);
-        } else if (isMounted) {
-          setLesson(null);
-        }
-      } finally {
-        if (isMounted) {
-          setIsLoading(false);
-        }
-      }
-    }
-
-    void loadLesson();
-
-    return () => {
-      isMounted = false;
-    };
-  }, [db, slug, i18n.language]);
 
   useEffect(() => {
     if (!lesson || isPro || isLessonFree(lesson)) return;

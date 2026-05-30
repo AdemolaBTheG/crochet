@@ -1,12 +1,11 @@
 import { theme } from '@/constants/Theme';
 import { isLessonFree } from '@/constants/gates';
 import { useSubscription } from '@/context/SubscriptionContext';
-import { resolveLessonTranslations, type ResolvedLesson } from '@/db/translations';
+import { useLessons, type ResolvedLesson } from '@/hooks/use-lessons';
 import { tap, warn } from '@/services/haptics';
-import { useDbStore } from '@/stores/dbStore';
 import { Link, router } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   ActivityIndicator,
@@ -393,11 +392,9 @@ function LessonCard({
 
 export default function LearnScreen() {
   const { t, i18n } = useTranslation();
-  const { db } = useDbStore();
   const { isPro } = useSubscription();
   const { width } = useWindowDimensions();
-  const [lessons, setLessons] = useState<ResolvedLesson[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const { data: lessons = [], isLoading } = useLessons(i18n.language);
   const cardWidth = Math.min(300, width - theme.spacing.xl * 2);
   const cardGap = theme.spacing.md;
   const snapInterval = cardWidth + cardGap;
@@ -410,34 +407,6 @@ export default function LearnScreen() {
       scrollX.value = event.contentOffset.x;
     },
   });
-
-  useEffect(() => {
-    let isMounted = true;
-
-    async function loadLessons() {
-      if (!db) return;
-
-      setIsLoading(true);
-
-      try {
-        const result = await resolveLessonTranslations(db, i18n.language);
-
-        if (isMounted) {
-          setLessons(result);
-        }
-      } finally {
-        if (isMounted) {
-          setIsLoading(false);
-        }
-      }
-    }
-
-    void loadLessons();
-
-    return () => {
-      isMounted = false;
-    };
-  }, [db, i18n.language]);
 
   const renderLesson: ListRenderItem<ResolvedLesson> = ({ item, index }) => (
     <LessonCard
