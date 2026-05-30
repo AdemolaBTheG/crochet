@@ -3,7 +3,9 @@ import { useAppInitialization } from '@/hooks/useAppInitialization';
 import { useSubscriptionStatus } from '@/hooks/useSubscriptionStatus';
 import '@/i18n';
 import { initializeHaptics } from '@/services/haptics';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { queryPersister } from '@/utils/query-persister';
+import { QueryClient } from '@tanstack/react-query';
+import { PersistQueryClientProvider } from '@tanstack/react-query-persist-client';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
@@ -12,7 +14,13 @@ import { KeyboardProvider } from 'react-native-keyboard-controller';
 import { enableScreens } from 'react-native-screens';
 import '../global.css';
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      gcTime: Infinity,
+    },
+  },
+});
 
 enableScreens();
 
@@ -43,7 +51,9 @@ export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SubscriptionProvider value={subscription}>
-        <QueryClientProvider client={queryClient}>
+        <PersistQueryClientProvider
+          client={queryClient}
+          persistOptions={{ persister: queryPersister }}>
           <KeyboardProvider>
             <Stack>
               <Stack.Screen name="index" options={{ headerShown: false }} />
@@ -60,7 +70,7 @@ export default function RootLayout() {
               />
             </Stack>
           </KeyboardProvider>
-        </QueryClientProvider>
+        </PersistQueryClientProvider>
       </SubscriptionProvider>
     </GestureHandlerRootView>
   );
