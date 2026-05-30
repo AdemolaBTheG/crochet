@@ -1,13 +1,13 @@
 import { theme } from '@/constants/Theme';
 import { isPatternFree } from '@/constants/gates';
-import { patternImages, type PatternImageKey } from '@/constants/pattern-images';
+import { getPatternImageSource } from '@/constants/pattern-images';
 import { useSubscription } from '@/context/SubscriptionContext';
 import {
-  patterns as patternsTable,
   projects as projectsTable,
-  type Pattern,
+  patterns as patternsTable,
   type Project,
 } from '@/db/schema';
+import { usePatterns } from '@/hooks/use-patterns';
 import { tap, warn } from '@/services/haptics';
 import { useDbStore } from '@/stores/dbStore';
 import { FlashList } from '@shopify/flash-list';
@@ -26,16 +26,18 @@ import {
 } from 'react-native';
 
 type ActiveProject = Project & {
-  pattern: Pattern | null;
+  patternSlug: string | null;
+  coverImageKey: string | null;
+  stepsJson: string | null;
 };
 
 type CategoryFilter = 'all' | string;
 
-function getStepCount(pattern: Pattern | null) {
-  if (!pattern?.stepsJson) return 0;
+function getStepCount(stepsJson: string | null) {
+  if (!stepsJson) return 0;
 
   try {
-    return (JSON.parse(pattern.stepsJson) as unknown[]).length;
+    return (JSON.parse(stepsJson) as unknown[]).length;
   } catch {
     return 0;
   }
@@ -80,9 +82,10 @@ function formatCategory(category: string) {
 
 function ActiveProjectCard({ project, width }: { project: ActiveProject; width: number }) {
   const { t } = useTranslation();
-  const pattern = project.pattern;
-  const source = pattern ? patternImages[pattern.coverImageKey as PatternImageKey] : undefined;
-  const stepCount = getStepCount(pattern);
+  const source = project.coverImageKey
+    ? getPatternImageSource(project.coverImageKey)
+    : undefined;
+  const stepCount = getStepCount(project.stepsJson);
   const completedStepCount =
     stepCount > 0
       ? Math.min(project.currentStepIndex + 1, stepCount)
@@ -309,69 +312,82 @@ function CategoryChips({
 
 export default function HomeScreen() {
   const { db } = useDbStore();
+  const { i18n } = useTranslation();
   const { isPro } = useSubscription();
   const { width } = useWindowDimensions();
-  const [patterns, setPatterns] = useState<Pattern[]>([]);
+  const {
+    data: patterns = [],
+    isLoading: isPatternsLoading,
+  } = usePatterns(i18n.language);
   const [activeProjects, setActiveProjects] = useState<ActiveProject[]>([]);
+  const [isLoadingProjects, setIsLoadingProjects] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<CategoryFilter>('all');
-  const [isLoading, setIsLoading] = useState(true);
+  const isLoading = isPatternsLoading || isLoadingProjects;
   const gridGap = 10;
   const horizontalPadding = 16;
   const itemWidth = Math.floor((width - horizontalPadding * 2 - gridGap) / 2);
   const activeProjectCardWidth = Math.min(width - horizontalPadding * 2, 360);
   const categories = Array.from(
-    new Set(patterns.map((pattern) => pattern.category).filter(Boolean) as string[]),
+    new Set(patterns.map((p) => p.category).filter(Boolean) as string[]),
   ).sort();
   const filteredPatterns =
     selectedCategory === 'all'
       ? patterns
-      : patterns.filter((pattern) => pattern.category === selectedCategory);
+      : patterns.filter((p) => p.category === selectedCategory);
 
   useFocusEffect(
     useCallback(() => {
       let isMounted = true;
 
-      async function loadHome() {
-        if (!db) {
-          return;
-        }
+      async function loadProjects() {
+        if (!db) return;
 
-        setIsLoading(true);
+        setIsLoadingProjects(true);
 
         try {
-          const [patternRows, activeRows] = await Promise.all([
-            db.select().from(patternsTable),
-            db
-              .select({
-                project: projectsTable,
-                pattern: patternsTable,
-              })
-              .from(projectsTable)
-              .leftJoin(patternsTable, eq(patternsTable.id, projectsTable.patternId))
-              .where(eq(projectsTable.status, 'active'))
-              .orderBy(desc(projectsTable.updatedAt))
-              .limit(8),
-          ]);
+          const activeRows = await db
+            .select({
+              project: {
+                id: projectsTable.id,
+                name: projectsTable.name,
+                status: projectsTable.status,
+                currentStepIndex: projectsTable.currentStepIndex,
+                rowCount: projectsTable.rowCount,
+                roundCount: projectsTable.roundCount,
+                updatedAt: projectsTable.updatedAt,
+              },
+              patternSlug: patternsTable.slug,
+              coverImageKey: patternsTable.coverImageKey,
+              stepsJson: patternsTable.stepsJson,
+            })
+            .from(projectsTable)
+            .leftJoin(patternsTable, eq(patternsTable.id, projectsTable.patternId))
+            .where(eq(projectsTable.status, 'active'))
+            .orderBy(desc(projectsTable.updatedAt))
+            .limit(8);
 
           if (isMounted) {
-            setPatterns(patternRows);
-            setActiveProjects(activeRows.map((row) => ({ ...row.project, pattern: row.pattern })));
-            setSelectedCategory((currentCategory) => {
-              if (currentCategory === 'all') return currentCategory;
-
-              return patternRows.some((pattern) => pattern.category === currentCategory)
-                ? currentCategory
-                : 'all';
-            });
+            setActiveProjects(
+              activeRows.map((row) => ({
+                ...row.project,
+                patternId: 0,
+                notes: null,
+                startedAt: new Date(),
+                completedAt: null,
+                patternSlug: row.patternSlug,
+                coverImageKey: row.coverImageKey,
+                stepsJson: row.stepsJson,
+              })),
+            );
           }
         } finally {
           if (isMounted) {
-            setIsLoading(false);
+            setIsLoadingProjects(false);
           }
         }
       }
 
-      void loadHome();
+      void loadProjects();
 
       return () => {
         isMounted = false;
@@ -416,7 +432,7 @@ export default function HomeScreen() {
         ) : null
       }
       renderItem={({ item, index }) => {
-        const source = patternImages[item.coverImageKey as PatternImageKey];
+        const source = getPatternImageSource(item.coverImageKey);
         const isLeftColumn = index % 2 === 0;
         const isLocked = !isPro && !isPatternFree(item);
         const card = (

@@ -1,10 +1,8 @@
 import { theme } from '@/constants/Theme';
 import { isLessonFree } from '@/constants/gates';
 import { useSubscription } from '@/context/SubscriptionContext';
-import { lessons as lessonsTable, type Lesson } from '@/db/schema';
-import { resolveLessonTranslation, type ResolvedLesson } from '@/db/translations';
+import { useLessonDetail } from '@/hooks/use-lesson-detail';
 import { logFirebaseEvent } from '@/services/firebaseAnalytics';
-import { useDbStore } from '@/stores/dbStore';
 import { askForReview } from '@/utils/review';
 import { Host, Text as SwiftText } from '@expo/ui/swift-ui';
 import {
@@ -16,7 +14,6 @@ import {
   monospacedDigit,
   animation as swiftAnimation,
 } from '@expo/ui/swift-ui/modifiers';
-import { eq } from 'drizzle-orm';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as Haptics from 'expo-haptics';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
@@ -328,58 +325,18 @@ export default function LessonPracticeScreen() {
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { width } = useWindowDimensions();
-  const { db } = useDbStore();
   const { isPro } = useSubscription();
   const { i18n } = useTranslation();
   const stepListRef = useRef<FlatList<string>>(null);
   const hasPositionedStepListRef = useRef(false);
   const isProgrammaticStepScrollRef = useRef(false);
-  const [resolvedLesson, setResolvedLesson] = useState<ResolvedLesson | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const { data: resolvedLesson, isLoading } = useLessonDetail(slug, i18n.language);
   const [selectedStepIndex, setSelectedStepIndex] = useState(0);
 
   useEffect(() => {
-    let isMounted = true;
-
-    async function loadLesson() {
-      if (!db || !slug) return;
-
-      setIsLoading(true);
-
-      try {
-        const result = await db
-          .select()
-          .from(lessonsTable)
-          .where(eq(lessonsTable.slug, slug))
-          .limit(1);
-
-        const baseLesson = result[0] ?? null;
-
-        if (isMounted && baseLesson) {
-          const resolved = await resolveLessonTranslation(
-            db,
-            baseLesson,
-            i18n.language,
-          );
-          setResolvedLesson(resolved);
-          setSelectedStepIndex(0);
-          hasPositionedStepListRef.current = false;
-        } else if (isMounted) {
-          setResolvedLesson(null);
-        }
-      } finally {
-        if (isMounted) {
-          setIsLoading(false);
-        }
-      }
-    }
-
-    void loadLesson();
-
-    return () => {
-      isMounted = false;
-    };
-  }, [db, slug, i18n.language]);
+    setSelectedStepIndex(0);
+    hasPositionedStepListRef.current = false;
+  }, [slug, i18n.language]);
 
   useEffect(() => {
     if (!resolvedLesson || isPro || isLessonFree(resolvedLesson)) return;
@@ -388,7 +345,6 @@ export default function LessonPracticeScreen() {
   }, [isPro, resolvedLesson, router]);
 
   const steps = resolvedLesson?.content.steps ?? [];
-  const content = resolvedLesson?.content;
   const currentStepIndex = Math.min(selectedStepIndex, Math.max(steps.length - 1, 0));
   const progress = steps.length > 0 ? (currentStepIndex + 1) / steps.length : 0;
   const stepCardGap = theme.spacing.md;

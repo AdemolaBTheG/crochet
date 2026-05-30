@@ -8,3 +8,15 @@ declare namespace NodeJS {
         EXPO_PUBLIC_POSTHOG_HOST: string;
     }
 }
+
+declare module 'react-native-pulsar' {
+  const Presets: Record<string, () => void>;
+  const HapticSupport: { NO_SUPPORT: number };
+  const Settings: {
+    enableHaptics(state: boolean): void;
+    enableSound(state: boolean): void;
+    enableCache(state: boolean): void;
+    preloadPresets(presets: readonly string[]): void;
+    getHapticsSupportLevel(): number;
+  };
+}

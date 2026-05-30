@@ -1,19 +1,14 @@
 import { FREE_ACTIVE_PROJECT_LIMIT, isPatternFree } from '@/constants/gates';
-import { patternImages, type PatternImageKey } from '@/constants/pattern-images';
+import { getPatternImageSource } from '@/constants/pattern-images';
 import { NavigationHeaderAction } from '@/components/navigation-header-action';
 import { PressableScale } from '@/components/pressable-scale';
 import { theme } from '@/constants/Theme';
 import { useSubscription } from '@/context/SubscriptionContext';
 import {
-  patterns as patternsTable,
   projects as projectsTable,
-  type Pattern,
   type Project,
 } from '@/db/schema';
-import {
-  resolvePatternTranslation,
-  type ResolvedPattern,
-} from '@/db/translations';
+import { usePatternDetail, type PatternStep } from '@/hooks/use-pattern-detail';
 import { logFirebaseEvent } from '@/services/firebaseAnalytics';
 import { useDbStore } from '@/stores/dbStore';
 import { Host, Button as SwiftUIButton } from '@expo/ui/swift-ui';
@@ -42,14 +37,6 @@ import {
 } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-
-type PatternStep = {
-  type?: 'instruction' | 'row' | 'round' | 'repeat';
-  title: string;
-  instruction: string;
-  counterLabel?: string;
-  targetCount?: number;
-};
 
 function DetailCard({
   children,
@@ -411,11 +398,14 @@ export default function PatternDetailScreen() {
   const { width } = useWindowDimensions();
   const { db } = useDbStore();
   const { isPro } = useSubscription();
-  const [pattern, setPattern] = useState<ResolvedPattern | null>(null);
-  const [patternBase, setPatternBase] = useState<Pattern | null>(null);
+  const { data: pattern, isLoading: isPatternLoading } = usePatternDetail(
+    slug,
+    i18n.language,
+  );
   const [activeProject, setActiveProject] = useState<Project | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoadingProject, setIsLoadingProject] = useState(true);
   const [isStartingProject, setIsStartingProject] = useState(false);
+  const isLoading = isPatternLoading || isLoadingProject;
   const contentPadding = theme.spacing.xl;
   const metaGap = theme.spacing.sm;
   const metaCardSize = Math.floor((width - contentPadding * 2 - metaGap * 2) / 3);
@@ -426,55 +416,39 @@ export default function PatternDetailScreen() {
   useEffect(() => {
     let isMounted = true;
 
-    async function loadPattern() {
-      if (!db || !slug) return;
+    async function loadProject() {
+      if (!db || !pattern) return;
 
-      setIsLoading(true);
+      setIsLoadingProject(true);
 
       try {
-        const result = await db
+        const projectResult = await db
           .select()
-          .from(patternsTable)
-          .where(eq(patternsTable.slug, slug))
+          .from(projectsTable)
+          .where(
+            and(
+              eq(projectsTable.patternId, pattern.id),
+              eq(projectsTable.status, 'active'),
+            ),
+          )
           .limit(1);
-        const patternRow = result[0] ?? null;
-        const projectResult = patternRow
-          ? await db
-              .select()
-              .from(projectsTable)
-              .where(
-                and(eq(projectsTable.patternId, patternRow.id), eq(projectsTable.status, 'active')),
-              )
-              .limit(1)
-          : [];
 
-        if (isMounted && patternRow) {
-          const resolved = await resolvePatternTranslation(
-            db,
-            patternRow,
-            i18n.language,
-          );
-          setPattern(resolved);
-          setPatternBase(patternRow);
+        if (isMounted) {
           setActiveProject(projectResult[0] ?? null);
-        } else if (isMounted) {
-          setPattern(null);
-          setPatternBase(null);
-          setActiveProject(null);
         }
       } finally {
         if (isMounted) {
-          setIsLoading(false);
+          setIsLoadingProject(false);
         }
       }
     }
 
-    void loadPattern();
+    void loadProject();
 
     return () => {
       isMounted = false;
     };
-  }, [db, slug, i18n.language]);
+  }, [db, pattern]);
 
   const steps = pattern?.steps ?? [];
   const materials = pattern?.materials ?? [];
@@ -637,7 +611,7 @@ export default function PatternDetailScreen() {
             <>
               <Link.AppleZoomTarget>
                 <Image
-                  source={patternImages[pattern.coverImageKey as PatternImageKey]}
+                  source={getPatternImageSource(pattern.coverImageKey)}
                   contentFit="cover"
                   style={{
                     width: '100%',

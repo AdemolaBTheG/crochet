@@ -12,7 +12,8 @@
     "clean": "rm -rf node_modules .expo && npm install",
     "generate": "npx drizzle-kit generate",
     "rename": "node scripts/rename.js",
-    "validate-translations": "node scripts/validate-translations.js"
+    "validate-translations": "node scripts/validate-translations.js",
+    "seed-supabase": "node scripts/seed-supabase.mjs"
   },
   "reanimated": {
     "staticFeatureFlags": {

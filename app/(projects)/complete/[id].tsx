@@ -1,5 +1,5 @@
 import { PressableScale } from '@/components/pressable-scale';
-import { patternImages, type PatternImageKey } from '@/constants/pattern-images';
+import { getPatternImageSource } from '@/constants/pattern-images';
 import { theme } from '@/constants/Theme';
 import {
   patterns as patternsTable,
@@ -154,7 +154,7 @@ export default function ProjectCompleteScreen() {
         ? `${project.rowCount} rows`
         : t('projectComplete.done');
   const completedText = formatCompletedDate(project?.completedAt ?? null, t);
-  const imageSource = pattern ? patternImages[pattern.coverImageKey as PatternImageKey] : undefined;
+  const imageSource = pattern ? getPatternImageSource(pattern.coverImageKey) : undefined;
 
   useEffect(() => {
     if (!project || didPlayCompletionHapticRef.current) return;

@@ -1,0 +1,298 @@
+import fetch from 'cross-fetch';
+import { createClient } from '@supabase/supabase-js';
+import { readFileSync, readdirSync, existsSync } from 'node:fs';
+import { resolve, join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+// Load .env file (Expo's .env uses standard KEY=value format)
+const envPath = resolve(__dirname, '..', '.env');
+if (existsSync(envPath)) {
+  const envContent = readFileSync(envPath, 'utf-8');
+  for (const line of envContent.split('\n')) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    const eqIdx = trimmed.indexOf('=');
+    if (eqIdx === -1) continue;
+    const key = trimmed.slice(0, eqIdx).trim();
+    let value = trimmed.slice(eqIdx + 1).trim();
+    // Strip surrounding quotes
+    if ((value.startsWith('"') && value.endsWith('"')) ||
+        (value.startsWith("'") && value.endsWith("'"))) {
+      value = value.slice(1, -1);
+    }
+    if (!process.env[key]) {
+      process.env[key] = value;
+    }
+  }
+}
+
+const SUPABASE_URL = process.env.EXPO_PUBLIC_SUPABASE_URL;
+const SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+if (!SUPABASE_URL) {
+  console.error('Missing EXPO_PUBLIC_SUPABASE_URL');
+  process.exit(1);
+}
+
+console.log(`Using Supabase URL: ${SUPABASE_URL}`);
+
+if (!SERVICE_ROLE_KEY) {
+  console.error(
+    'Missing SUPABASE_SERVICE_ROLE_KEY\n' +
+      'Get it from Supabase Dashboard > Project Settings > API > service_role key',
+  );
+  process.exit(1);
+}
+
+const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY, {
+  auth: { persistSession: false },
+  global: { fetch },
+});
+
+const LOCALES = ['en', 'de', 'fr', 'es', 'nl'];
+const CONTENT_DIR = resolve(__dirname, '..', 'content');
+
+const lessonMetadata = {
+  'slip-knot-and-hold': { sortOrder: 1, difficulty: 'beginner' },
+  'foundation-chain': { sortOrder: 2, difficulty: 'beginner' },
+  'single-crochet': { sortOrder: 3, difficulty: 'beginner' },
+  'slip-stitch-and-join': { sortOrder: 4, difficulty: 'beginner' },
+  'half-double-crochet': { sortOrder: 5, difficulty: 'beginner' },
+  'double-crochet': { sortOrder: 6, difficulty: 'beginner' },
+  'working-in-rows': { sortOrder: 7, difficulty: 'beginner' },
+  'working-in-rounds': { sortOrder: 8, difficulty: 'beginner' },
+  'magic-ring': { sortOrder: 9, difficulty: 'beginner' },
+  'fasten-off-and-weave-ends': { sortOrder: 10, difficulty: 'beginner' },
+  'increasing-and-decreasing': { sortOrder: 11, difficulty: 'beginner' },
+  'chain-spaces-and-corners': { sortOrder: 12, difficulty: 'beginner' },
+  'back-loop-only-ribbing': { sortOrder: 13, difficulty: 'beginner' },
+};
+
+const patternMetadata = {
+  'minimalist-coaster': { difficulty: 'beginner', category: 'home', coverImageKey: 'minimalist-coaster', estimatedMinutes: 20 },
+  'simple-dishcloth': { difficulty: 'beginner', category: 'home', coverImageKey: 'simple-dishcloth', estimatedMinutes: 45 },
+  'beginner-scarf': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'beginner-scarf', estimatedMinutes: 120 },
+  'basic-granny-square': { difficulty: 'beginner', category: 'motif', coverImageKey: 'basic-granny-square', estimatedMinutes: 35 },
+  'mini-granny-square-join': { difficulty: 'beginner', category: 'motif', coverImageKey: 'mini-granny-square-join', estimatedMinutes: 75 },
+  'cotton-face-scrubbies': { difficulty: 'beginner', category: 'home', coverImageKey: 'cotton-face-scrubbies', estimatedMinutes: 25 },
+  'cozy-mug-sleeve': { difficulty: 'beginner', category: 'home', coverImageKey: 'cozy-mug-sleeve', estimatedMinutes: 40 },
+  'ribbed-scrunchie': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'ribbed-scrunchie', estimatedMinutes: 35 },
+  'slim-bookmark': { difficulty: 'beginner', category: 'gift', coverImageKey: 'slim-bookmark', estimatedMinutes: 30 },
+  'tiny-heart-applique': { difficulty: 'beginner', category: 'gift', coverImageKey: 'tiny-heart-applique', estimatedMinutes: 20 },
+  'simple-flower-applique': { difficulty: 'beginner', category: 'gift', coverImageKey: 'simple-flower-applique', estimatedMinutes: 25 },
+  'chunky-storage-basket': { difficulty: 'intermediate', category: 'home', coverImageKey: 'chunky-storage-basket', estimatedMinutes: 90 },
+  'easy-ribbed-beanie': { difficulty: 'intermediate', category: 'wearable', coverImageKey: 'easy-ribbed-beanie', estimatedMinutes: 110 },
+  'round-trivet': { difficulty: 'beginner', category: 'home', coverImageKey: 'round-trivet', estimatedMinutes: 35 },
+  'granny-stripe-scarf': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'granny-stripe-scarf', estimatedMinutes: 135 },
+  'ribbed-washcloth': { difficulty: 'beginner', category: 'home', coverImageKey: 'ribbed-washcloth', estimatedMinutes: 40 },
+  'basic-amigurumi-ball': { difficulty: 'beginner', category: 'toy', coverImageKey: 'basic-amigurumi-ball', estimatedMinutes: 55 },
+  'ribbed-headband': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'ribbed-headband', estimatedMinutes: 65 },
+  'simple-drawstring-pouch': { difficulty: 'beginner', category: 'gift', coverImageKey: 'simple-drawstring-pouch', estimatedMinutes: 80 },
+};
+
+function readJson(filePath) {
+  return JSON.parse(readFileSync(filePath, 'utf-8'));
+}
+
+async function seedLessons() {
+  console.log('Seeding lessons...');
+
+  const enContentMap = {};
+
+  for (const locale of LOCALES) {
+    const dir = join(CONTENT_DIR, 'lessons', locale);
+    if (!existsSync(dir)) continue;
+
+    const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
+    for (const file of files) {
+      const slug = file.replace('.json', '');
+      const content = readJson(join(dir, file));
+      if (locale === 'en') enContentMap[slug] = content;
+    }
+  }
+
+  for (const [slug, content] of Object.entries(enContentMap)) {
+    const meta = lessonMetadata[slug];
+    if (!meta) {
+      console.warn(`  Skipping unknown lesson slug: ${slug}`);
+      continue;
+    }
+
+    const { error } = await supabase.from('lessons').upsert(
+      {
+        slug,
+        title: content.title,
+        description: content.description ?? null,
+        sort_order: meta.sortOrder,
+        difficulty: meta.difficulty,
+        content: content.content ?? {},
+        is_published: true,
+      },
+      { onConflict: 'slug' },
+    );
+
+    if (error) {
+      console.error(`  Error upserting lesson ${slug}:`, error.message);
+    } else {
+      console.log(`  OK lesson: ${slug}`);
+    }
+  }
+
+  const { data: lessonRows, error: fetchErr } = await supabase
+    .from('lessons')
+    .select('id, slug');
+
+  if (fetchErr) {
+    console.error('  Error fetching lesson IDs:', fetchErr.message);
+    return;
+  }
+
+  const idBySlug = new Map(lessonRows.map((l) => [l.slug, l.id]));
+
+  for (const locale of LOCALES) {
+    if (locale === 'en') continue;
+
+    const dir = join(CONTENT_DIR, 'lessons', locale);
+    if (!existsSync(dir)) continue;
+
+    const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
+    for (const file of files) {
+      const slug = file.replace('.json', '');
+      const lessonId = idBySlug.get(slug);
+      if (!lessonId) continue;
+
+      const content = readJson(join(dir, file));
+
+      const { error } = await supabase.from('lesson_translations').upsert(
+        {
+          lesson_id: lessonId,
+          locale,
+          title: content.title,
+          description: content.description ?? null,
+          content_json: content.content ?? {},
+        },
+        { onConflict: 'lesson_id, locale' },
+      );
+
+      if (error) {
+        console.error(`  Error upserting lesson translation ${slug}/${locale}:`, error.message);
+      } else {
+        console.log(`  OK lesson translation: ${slug}/${locale}`);
+      }
+    }
+  }
+}
+
+async function seedPatterns() {
+  console.log('Seeding patterns...');
+
+  const enContentMap = {};
+
+  for (const locale of LOCALES) {
+    const dir = join(CONTENT_DIR, 'patterns', locale);
+    if (!existsSync(dir)) continue;
+
+    const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
+    for (const file of files) {
+      const slug = file.replace('.json', '');
+      const content = readJson(join(dir, file));
+      if (locale === 'en') enContentMap[slug] = content;
+    }
+  }
+
+  for (const [slug, content] of Object.entries(enContentMap)) {
+    const meta = patternMetadata[slug];
+    if (!meta) {
+      console.warn(`  Skipping unknown pattern slug: ${slug}`);
+      continue;
+    }
+
+    const { error } = await supabase.from('patterns').upsert(
+      {
+        slug,
+        title: content.title,
+        description: content.description ?? null,
+        difficulty: meta.difficulty,
+        category: meta.category,
+        cover_image_key: meta.coverImageKey,
+        estimated_minutes: meta.estimatedMinutes,
+        materials_text: content.materials?.join(', ') ?? null,
+        skills_text: content.skills?.join(', ') ?? null,
+        expectation_text: content.expectationText ?? null,
+        steps_json: content.steps ?? [],
+        is_published: true,
+      },
+      { onConflict: 'slug' },
+    );
+
+    if (error) {
+      console.error(`  Error upserting pattern ${slug}:`, error.message);
+    } else {
+      console.log(`  OK pattern: ${slug}`);
+    }
+  }
+
+  const { data: patternRows, error: fetchErr } = await supabase
+    .from('patterns')
+    .select('id, slug');
+
+  if (fetchErr) {
+    console.error('  Error fetching pattern IDs:', fetchErr.message);
+    return;
+  }
+
+  const idBySlug = new Map(patternRows.map((p) => [p.slug, p.id]));
+
+  for (const locale of LOCALES) {
+    if (locale === 'en') continue;
+
+    const dir = join(CONTENT_DIR, 'patterns', locale);
+    if (!existsSync(dir)) continue;
+
+    const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
+    for (const file of files) {
+      const slug = file.replace('.json', '');
+      const patternId = idBySlug.get(slug);
+      if (!patternId) continue;
+
+      const content = readJson(join(dir, file));
+
+      const { error } = await supabase
+        .from('pattern_translations')
+        .upsert(
+          {
+            pattern_id: patternId,
+            locale,
+            title: content.title,
+            description: content.description ?? null,
+            materials_json: content.materials ?? [],
+            skills_json: content.skills ?? [],
+            expectation_text: content.expectationText ?? null,
+            steps_json: content.steps ?? [],
+          },
+          { onConflict: 'pattern_id, locale' },
+        );
+
+      if (error) {
+        console.error(`  Error upserting pattern translation ${slug}/${locale}:`, error.message);
+      } else {
+        console.log(`  OK pattern translation: ${slug}/${locale}`);
+      }
+    }
+  }
+}
+
+async function main() {
+  console.log('Starting Supabase seed...\n');
+  await seedLessons();
+  console.log();
+  await seedPatterns();
+  console.log('\nDone.');
+}
+
+main().catch((err) => {
+  console.error('Seed failed:', err);
+  process.exit(1);
+});

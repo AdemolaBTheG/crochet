@@ -1,5 +1,3 @@
-import type { Lesson, Pattern } from '@/db/schema';
-
 export const FREE_ACTIVE_PROJECT_LIMIT = 1;
 export const FREE_PATTERN_SLUGS = [
   'minimalist-coaster',
@@ -14,10 +12,20 @@ export const PREMIUM_TOOL_IDS = [
   'identify-stitch',
 ] as const;
 
-export function isPatternFree(pattern: Pick<Pattern, 'slug'> | null | undefined) {
-  return !!pattern && FREE_PATTERN_SLUGS.includes(pattern.slug as (typeof FREE_PATTERN_SLUGS)[number]);
+export function isPatternFree(pattern: { slug: string } | null | undefined) {
+  return (
+    !!pattern &&
+    FREE_PATTERN_SLUGS.includes(
+      pattern.slug as (typeof FREE_PATTERN_SLUGS)[number],
+    )
+  );
 }
 
-export function isLessonFree(lesson: Pick<Lesson, 'slug'> | null | undefined) {
-  return !!lesson && FREE_LESSON_SLUGS.includes(lesson.slug as (typeof FREE_LESSON_SLUGS)[number]);
+export function isLessonFree(lesson: { slug: string } | null | undefined) {
+  return (
+    !!lesson &&
+    FREE_LESSON_SLUGS.includes(
+      lesson.slug as (typeof FREE_LESSON_SLUGS)[number],
+    )
+  );
 }

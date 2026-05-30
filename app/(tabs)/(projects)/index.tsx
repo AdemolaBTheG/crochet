@@ -1,4 +1,4 @@
-import { patternImages, type PatternImageKey } from '@/constants/pattern-images';
+import { getPatternImageSource } from '@/constants/pattern-images';
 import { theme } from '@/constants/Theme';
 import {
   patterns as patternsTable,
@@ -71,7 +71,7 @@ function getLastWorkedText(
 function ProjectCard({ project }: { project: ProjectListItem }) {
   const { t } = useTranslation();
   const pattern = project.pattern;
-  const source = pattern ? patternImages[pattern.coverImageKey as PatternImageKey] : undefined;
+  const source = pattern ? getPatternImageSource(pattern.coverImageKey) : undefined;
   const stepCount = getStepCount(pattern);
   const completedStepCount =
     project.status === 'completed'
