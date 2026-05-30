@@ -171,7 +171,7 @@ export default function OnboardingDemoScreen() {
       goal: goal ?? null,
       skill_level: skillLevel ?? null,
     });
-    router.replace('/(paywalls)/onboardingPaywall');
+    router.replace('/(onboarding)/trial-offer');
   }
 
   return (

@@ -19,6 +19,7 @@ import {
 } from '@/db/schema';
 import { usePatternDetail } from '@/hooks/use-pattern-detail';
 import { cta, tap, warn } from '@/services/haptics';
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
 import {
   endProjectActivity,
   startProjectActivity,
@@ -30,7 +31,6 @@ import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
-  ActivityIndicator,
   Platform,
   ScrollView,
   Text,
@@ -367,15 +367,7 @@ export default function ProjectDetailScreen() {
       />
       <View style={{ flex: 1, backgroundColor: theme.colors.background }}>
         {isLoading ? (
-          <View
-            style={{
-              flex: 1,
-              alignItems: 'center',
-              justifyContent: 'center',
-              backgroundColor: theme.colors.background,
-            }}>
-            <ActivityIndicator color={theme.colors.primary} />
-          </View>
+          <LoadingShimmer />
         ) : null}
 
         {!isLoading && (!project || !pattern) ? (

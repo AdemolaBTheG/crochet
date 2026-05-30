@@ -15,11 +15,6 @@
     "validate-translations": "node scripts/validate-translations.js",
     "seed-supabase": "node scripts/seed-supabase.mjs"
   },
-  "reanimated": {
-    "staticFeatureFlags": {
-      "ENABLE_SHARED_ELEMENT_TRANSITIONS": true
-    }
-  },
   "overrides": {
     "framer-motion": "^11.0.0",
     "expo-dev-launcher": "55.0.25"

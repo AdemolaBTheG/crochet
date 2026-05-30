@@ -417,6 +417,15 @@
         }
       },
       "note": "Este es el mismo ritmo guiado paso a paso que usaras en tus primeras lecciones de Crova."
+    },
+    "trialOffer": {
+      "title": "We want you to try Crova\nfor Free",
+      "subtitle": "Desbloquea acceso ilimitado a lecciones guiadas, contadores de pasos y patrones de proyectos — todo diseñado para crocheteros que quieren aprender más rápido.",
+      "featureOne": "Acceso ilimitado a todas las lecciones",
+      "featureTwo": "Sigue cada hilera, punto y proyecto",
+      "featureThree": "Sigue patrones guiados paso a paso",
+      "cta": "Comenzar prueba gratuita",
+      "footer": "Sin compromiso. Cancela en cualquier momento antes de que termine la prueba."
     }
   }
 }

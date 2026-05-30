@@ -12,7 +12,8 @@ import { Image } from 'expo-image';
 import { Link, useFocusEffect } from 'expo-router';
 import React, { useCallback, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ActivityIndicator, Pressable, Text, View } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
 
 type ProjectListRow =
   | { type: 'loading' }
@@ -258,9 +259,7 @@ export default function ProjectsScreen() {
     ({ item }) => {
       if (item.type === 'loading') {
         return (
-          <View style={{ paddingVertical: theme.spacing['3xl'], alignItems: 'center' }}>
-            <ActivityIndicator color={theme.colors.primary} />
-          </View>
+          <LoadingShimmer />
         );
       }
 

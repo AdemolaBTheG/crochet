@@ -417,7 +417,15 @@
         }
       },
       "note": "Dit is hetzelfde begeleide, stapsgewijze ritme dat u tijdens uw eerste Crova-lessen zult gebruiken."
+    },
+    "trialOffer": {
+      "title": "We want you to try Crova\nfor Free",
+      "subtitle": "Ontgrendel onbeperkte toegang tot begeleide lessen, stappentellers en projectpatronen — allemaal gemaakt voor hakers die sneller willen leren.",
+      "featureOne": "Onbeperkte toegang tot alle lessen",
+      "featureTwo": "Volg elke rij, steek en project",
+      "featureThree": "Volg begeleide patronen stap voor stap",
+      "cta": "Start gratis proefperiode",
+      "footer": "Geen verplichting. Annuleer op elk moment voordat de proefperiode eindigt."
     }
   }
 }
-

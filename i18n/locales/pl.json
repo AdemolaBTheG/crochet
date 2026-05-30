@@ -417,6 +417,15 @@
         }
       },
       "note": "Jest to ten sam prowadzony, krok po kroku rytm, którego będziesz używać na pierwszych lekcjach Crova."
+    },
+    "trialOffer": {
+      "title": "We want you to try Crova\nfor Free",
+      "subtitle": "Odblokuj nieograniczony dostęp do lekcji z przewodnikiem, liczników kroków i wzorów projektów — wszystko stworzone dla szydełkujących, którzy chcą uczyć się szybciej.",
+      "featureOne": "Nieograniczony dostęp do wszystkich lekcji",
+      "featureTwo": "Śledź każdy rząd, ścieg i projekt",
+      "featureThree": "Postępuj zgodnie z wzorami krok po kroku",
+      "cta": "Rozpocznij bezpłatny okres próbny",
+      "footer": "Bez zobowiązań. Anuluj w dowolnym momencie przed końcem okresu próbnego."
     }
   }
 }

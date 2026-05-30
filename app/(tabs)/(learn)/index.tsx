@@ -8,7 +8,6 @@ import { SymbolView } from 'expo-symbols';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import {
-  ActivityIndicator,
   Pressable,
   ScrollView,
   Text,
@@ -16,6 +15,7 @@ import {
   View,
   type ListRenderItem,
 } from 'react-native';
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
 import Animated, {
   Extrapolation,
   interpolate,
@@ -431,16 +431,7 @@ export default function LearnScreen() {
         paddingVertical: theme.spacing.xl,
         gap: theme.spacing.xl,
       }}>
-      {isLoading ? (
-        <View
-          style={{
-            paddingVertical: 32,
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
-          <ActivityIndicator color={theme.colors.primary} />
-        </View>
-      ) : null}
+      {isLoading ? <LoadingShimmer /> : null}
 
       {!isLoading ? (
         <Animated.FlatList

@@ -6,7 +6,8 @@ import { LegendList } from '@legendapp/list';
 import { SymbolView } from 'expo-symbols';
 import React, { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ActivityIndicator, Text, TextInput, View } from 'react-native';
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
+import { Text, TextInput, View } from 'react-native';
 import { EnrichedMarkdownText, type MarkdownStyle } from 'react-native-enriched-markdown';
 import { KeyboardGestureArea, KeyboardStickyView } from 'react-native-keyboard-controller';
 import { PressableScale } from './pressable-scale';
@@ -318,7 +319,7 @@ export function ProjectChat({
             }}
             accessibilityRole="button">
             {isSending ? (
-              <ActivityIndicator size="small" color={theme.colors.white} />
+              <LoadingShimmer centered={false} width={20} height={20} />
             ) : (
               <SymbolView
                 name={{ ios: 'paperplane.fill', android: 'send', web: 'send' }}

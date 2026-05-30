@@ -20,7 +20,6 @@ import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
-  ActivityIndicator,
   Pressable,
   ScrollView,
   Text,
@@ -28,6 +27,7 @@ import {
   useWindowDimensions,
   type FlatList,
 } from 'react-native';
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
 import Animated, {
   Extrapolation,
   FadeInDown,
@@ -445,15 +445,7 @@ export default function LessonPracticeScreen() {
       />
       <View style={{ flex: 1, backgroundColor: theme.colors.background }}>
         {isLoading ? (
-          <View
-            style={{
-              flex: 1,
-              alignItems: 'center',
-              justifyContent: 'center',
-              backgroundColor: theme.colors.background,
-            }}>
-            <ActivityIndicator color={theme.colors.primary} />
-          </View>
+          <LoadingShimmer />
         ) : null}
 
         {!isLoading && !resolvedLesson ? (

@@ -6,23 +6,39 @@ let currentInstance: LiveActivity<ProjectActivityProps> | null = null;
 export function startProjectActivity(props: ProjectActivityProps) {
   if (currentInstance) {
     void currentInstance.end('immediate');
+    currentInstance = null;
   }
 
+  console.log('[LiveActivity] Starting with props:', JSON.stringify(props));
   currentInstance = ProjectActivity.start(props);
+  console.log('[LiveActivity] Started, instance:', !!currentInstance);
   return currentInstance;
 }
 
 export async function updateProjectActivity(props: ProjectActivityProps) {
   if (!currentInstance) return;
-  await currentInstance.update(props);
+  try {
+    console.log('[LiveActivity] Updating with props:', JSON.stringify(props));
+    await currentInstance.update(props);
+  } catch (e) {
+    console.warn('[LiveActivity] Update failed:', e);
+    currentInstance = null;
+  }
 }
 
 export async function endProjectActivity(props?: ProjectActivityProps) {
   if (!currentInstance) return;
-  await currentInstance.end(
-    after(new Date(Date.now() + 15 * 60 * 1000)),
-    props,
-    new Date(),
-  );
+  const instance = currentInstance;
   currentInstance = null;
+  try {
+    console.log('[LiveActivity] Ending...');
+    await instance.end(
+      after(new Date(Date.now() + 15 * 60 * 1000)),
+      props,
+      new Date(),
+    );
+    console.log('[LiveActivity] Ended successfully');
+  } catch (e) {
+    console.warn('[LiveActivity] End failed:', e);
+  }
 }

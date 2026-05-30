@@ -12,7 +12,8 @@ import { Image } from 'expo-image';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ActivityIndicator, ScrollView, Text, View } from 'react-native';
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
+import { ScrollView, Text, View } from 'react-native';
 import { Confetti } from 'react-native-fast-confetti';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -217,8 +218,8 @@ export default function ProjectCompleteScreen() {
           backgroundColor: theme.colors.background,
         }}>
         {isLoading ? (
-          <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-            <ActivityIndicator color={theme.colors.primary} />
+          <View style={{ alignItems: 'center', justifyContent: 'center', paddingVertical: theme.spacing['3xl'] }}>
+            <LoadingShimmer centered={false} />
           </View>
         ) : null}
 
