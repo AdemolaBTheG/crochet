@@ -17,7 +17,8 @@
         "NSPhotoLibraryUsageDescription": "Crochet uses your photo library so you can import and save project inspiration, progress photos, and pattern images.",
         "NSPhotoLibraryAddUsageDescription": "Crochet saves exported pattern images and project snapshots to your photo library.",
         "NSCameraUsageDescription": "Crochet uses your camera so you can identify stitches from a photo.",
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSSupportsLiveActivities": true
       }
     },
     "android": {
@@ -67,6 +68,20 @@
           "dark": {
             "backgroundColor": "#FAEDE1"
           }
+        }
+      ],
+      [
+        "expo-widgets",
+        {
+          "widgets": [
+            {
+              "name": "ProjectActivity",
+              "entry": "widgets/ProjectActivity.tsx",
+              "displayName": "Crochet Project",
+              "description": "Track your crochet project progress",
+              "supportedFamilies": ["systemSmall", "systemMedium"]
+            }
+          ]
         }
       ],
       "expo-font",
