@@ -13,13 +13,13 @@ import { Link, router, useFocusEffect } from 'expo-router';
 import React, { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
-  ActivityIndicator,
   FlatList,
   Pressable,
   Text,
   useWindowDimensions,
   View,
 } from 'react-native';
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
 
 type ActiveProject = Project & {
   patternSlug: string | null;
@@ -401,9 +401,7 @@ export default function HomeScreen() {
       ItemSeparatorComponent={() => <View style={{ height: gridGap }} />}
       ListEmptyComponent={
         isLoading ? (
-          <View style={{ paddingVertical: 32, alignItems: 'center' }}>
-            <ActivityIndicator color={theme.colors.primary} />
-          </View>
+          <LoadingShimmer />
         ) : null
       }
       renderItem={({ item, index }) => {

@@ -9,7 +9,8 @@ import * as ImagePicker from 'expo-image-picker';
 import { SymbolView } from 'expo-symbols';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ActivityIndicator, Alert, ScrollView, Text, View } from 'react-native';
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
+import { Alert, ScrollView, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 type SelectedImage = {
@@ -264,7 +265,7 @@ function ResultCard({
 
       {isAnalyzing ? (
         <View style={{ flexDirection: 'row', alignItems: 'center', gap: theme.spacing.sm }}>
-          <ActivityIndicator color={theme.colors.primary} />
+          <LoadingShimmer centered={false} width={20} height={20} />
           <Text
             selectable
             style={{

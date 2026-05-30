@@ -417,6 +417,15 @@
         }
       },
       "note": "C'est le meme rythme guide, etape par etape, que tu retrouveras dans tes premieres lecons Crova."
+    },
+    "trialOffer": {
+      "title": "We want you to try Crova\nfor Free",
+      "subtitle": "Débloquez un accès illimité à des leçons guidées, des compteurs de pas et des modèles de projets — tout est conçu pour les crocheteurs qui veulent apprendre plus vite.",
+      "featureOne": "Accès illimité à toutes les leçons",
+      "featureTwo": "Suivez chaque rang, point et projet",
+      "featureThree": "Suivez des modèles guidés étape par étape",
+      "cta": "Commencer l'essai gratuit",
+      "footer": "Sans engagement. Annulez à tout moment avant la fin de l'essai."
     }
   }
 }

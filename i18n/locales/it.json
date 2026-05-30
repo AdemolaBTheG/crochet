@@ -417,6 +417,15 @@
         }
       },
       "note": "Questo è lo stesso ritmo guidato, passo dopo passo, che utilizzerai nelle tue prime lezioni con Crova."
+    },
+    "trialOffer": {
+      "title": "We want you to try Crova\nfor Free",
+      "subtitle": "Sblocca l'accesso illimitato a lezioni guidate, contapassi e modelli di progetti — tutto pensato per chi lavora all'uncinetto e vuole imparare più velocemente.",
+      "featureOne": "Accesso illimitato a tutte le lezioni",
+      "featureTwo": "Tieni traccia di ogni riga, punto e progetto",
+      "featureThree": "Segui modelli guidati passo dopo passo",
+      "cta": "Inizia la prova gratuita",
+      "footer": "Nessun impegno. Annulla in qualsiasi momento prima della fine della prova."
     }
   }
 }

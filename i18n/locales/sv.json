@@ -417,6 +417,15 @@
         }
       },
       "note": "Detta är samma guidade steg-för-steg-rytm som du kommer att använda i dina första Crova-lektioner."
+    },
+    "trialOffer": {
+      "title": "We want you to try Crova\nfor Free",
+      "subtitle": "Lås upp obegränsad tillgång till guidade lektioner, stegräknare och projektmönster — allt skapat för virkare som vill lära sig snabbare.",
+      "featureOne": "Obegränsad tillgång till alla lektioner",
+      "featureTwo": "Spåra varje varv, maska och projekt",
+      "featureThree": "Följ guidade mönster steg för steg",
+      "cta": "Starta gratis provperiod",
+      "footer": "Inget åtagande. Avsluta när som helst innan provperioden tar slut."
     }
   }
 }

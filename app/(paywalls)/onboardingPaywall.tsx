@@ -1,10 +1,10 @@
-import { theme } from '@/constants/Theme';
 import { useSubscription } from '@/context/SubscriptionContext';
 import { logFirebaseEvent } from '@/services/firebaseAnalytics';
 import { Redirect, router } from 'expo-router';
 import { usePostHog } from 'posthog-react-native';
 import React, { useEffect } from 'react';
-import { ActivityIndicator, View } from 'react-native';
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
+import { View } from 'react-native';
 import RevenueCatUI from 'react-native-purchases-ui';
 
 export default function Paywall() {
@@ -16,17 +16,7 @@ export default function Paywall() {
   }, []);
 
   if (isLoading) {
-    return (
-      <View
-        style={{
-          flex: 1,
-          alignItems: 'center',
-          justifyContent: 'center',
-          backgroundColor: theme.colors.background,
-        }}>
-        <ActivityIndicator color={theme.colors.primary} />
-      </View>
-    );
+    return <LoadingShimmer />;
   }
 
   if (isPro) {

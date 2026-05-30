@@ -417,6 +417,15 @@
         }
       },
       "note": "Das ist derselbe gefuhrte Schritt-fur-Schritt-Rhythmus, den du auch in deinen ersten Crova Lektionen nutzen wirst."
+    },
+    "trialOffer": {
+      "title": "We want you to try Crova\nfor Free",
+      "subtitle": "Erhalte unbegrenzten Zugang zu geführten Lektionen, Schrittzählern und Projektanleitungen — alles für Häkler, die schneller lernen möchten.",
+      "featureOne": "Unbegrenzter Zugang zu allen Lektionen",
+      "featureTwo": "Verfolge jede Reihe, Masche und jedes Projekt",
+      "featureThree": "Folge geführten Mustern Schritt für Schritt",
+      "cta": "Kostenlose Testphase starten",
+      "footer": "Keine Verpflichtung. Jederzeit vor Ende der Testphase kündbar."
     }
   }
 }

@@ -1,18 +1,19 @@
 import { ProjectChat, type ProjectChatStep } from '@/components/project-chat';
 import { theme } from '@/constants/Theme';
-import { usePremiumGate } from '@/hooks/usePremiumGate';
 import {
   patterns as patternsTable,
   projects as projectsTable,
   type Pattern,
   type Project,
 } from '@/db/schema';
+import { usePremiumGate } from '@/hooks/usePremiumGate';
 import { useDbStore } from '@/stores/dbStore';
 import { eq } from 'drizzle-orm';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Stack, useLocalSearchParams } from 'expo-router';
 import React, { useEffect, useMemo, useState } from 'react';
-import { ActivityIndicator, Text, View } from 'react-native';
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
+import { Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 function parseSteps(stepsJson: string | null) {
@@ -105,15 +106,7 @@ export default function ProjectChatScreen() {
       />
       <View style={{ flex: 1, backgroundColor: theme.colors.background }}>
         {isLoading ? (
-          <View
-            style={{
-              flex: 1,
-              alignItems: 'center',
-              justifyContent: 'center',
-              backgroundColor: theme.colors.background,
-            }}>
-            <ActivityIndicator color={theme.colors.primary} />
-          </View>
+          <LoadingShimmer />
         ) : null}
 
         {!isLoading && !project ? (

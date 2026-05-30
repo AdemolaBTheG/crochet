@@ -28,13 +28,13 @@ import { SymbolView } from 'expo-symbols';
 import React, { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
-  ActivityIndicator,
   Platform,
   ScrollView,
   Text,
   View,
   useWindowDimensions,
 } from 'react-native';
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -604,11 +604,7 @@ export default function PatternDetailScreen() {
             gap: theme.spacing.lg,
             backgroundColor: theme.colors.background,
           }}>
-          {isLoading ? (
-            <View style={{ paddingVertical: theme.spacing['3xl'], alignItems: 'center' }}>
-              <ActivityIndicator color={theme.colors.primary} />
-            </View>
-          ) : null}
+          {isLoading ? <LoadingShimmer /> : null}
 
           {pattern ? (
             <>

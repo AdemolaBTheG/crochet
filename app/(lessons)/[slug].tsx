@@ -15,7 +15,8 @@ import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
 import React, { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ActivityIndicator, ScrollView, Text, View, useWindowDimensions } from 'react-native';
+import { ScrollView, Text, View, useWindowDimensions } from 'react-native';
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
@@ -273,11 +274,7 @@ export default function LessonDetailScreen() {
             gap: theme.spacing.lg,
             backgroundColor: theme.colors.background,
           }}>
-          {isLoading ? (
-            <View style={{ paddingVertical: theme.spacing['3xl'], alignItems: 'center' }}>
-              <ActivityIndicator color={theme.colors.primary} />
-            </View>
-          ) : null}
+          {isLoading ? <LoadingShimmer /> : null}
 
           {!isLoading && !lesson ? (
             <WhiteCard>
