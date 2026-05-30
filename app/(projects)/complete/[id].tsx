@@ -2,11 +2,10 @@ import { PressableScale } from '@/components/pressable-scale';
 import { getPatternImageSource } from '@/constants/pattern-images';
 import { theme } from '@/constants/Theme';
 import {
-  patterns as patternsTable,
   projects as projectsTable,
-  type Pattern,
   type Project,
 } from '@/db/schema';
+import { usePatternDetail } from '@/hooks/use-pattern-detail';
 import { complete, cta, tap } from '@/services/haptics';
 import { useDbStore } from '@/stores/dbStore';
 import { askForReview } from '@/utils/review';
@@ -92,14 +91,14 @@ function CompletionStat({ label, value }: { label: string; value: string }) {
 }
 
 export default function ProjectCompleteScreen() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { db } = useDbStore();
   const [project, setProject] = useState<Project | null>(null);
-  const [pattern, setPattern] = useState<Pattern | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [patternSlug, setPatternSlug] = useState<string | null>(null);
+  const [isLoadingProject, setIsLoadingProject] = useState(true);
   const [isCreatingAnother, setIsCreatingAnother] = useState(false);
   const didRequestReviewRef = useRef(false);
   const didPlayCompletionHapticRef = useRef(false);
@@ -111,7 +110,7 @@ export default function ProjectCompleteScreen() {
     async function loadProject() {
       if (!db || !Number.isFinite(projectId)) return;
 
-      setIsLoading(true);
+      setIsLoadingProject(true);
 
       try {
         const projectResult = await db
@@ -120,21 +119,14 @@ export default function ProjectCompleteScreen() {
           .where(eq(projectsTable.id, projectId))
           .limit(1);
         const projectRow = projectResult[0] ?? null;
-        const patternResult = projectRow
-          ? await db
-              .select()
-              .from(patternsTable)
-              .where(eq(patternsTable.id, projectRow.patternId))
-              .limit(1)
-          : [];
 
         if (isMounted) {
           setProject(projectRow);
-          setPattern(patternResult[0] ?? null);
+          setPatternSlug(projectRow?.patternSlug ?? null);
         }
       } finally {
         if (isMounted) {
-          setIsLoading(false);
+          setIsLoadingProject(false);
         }
       }
     }
@@ -146,7 +138,13 @@ export default function ProjectCompleteScreen() {
     };
   }, [db, projectId]);
 
-  const steps = useMemo(() => parseSteps(pattern?.stepsJson ?? null), [pattern]);
+  const { data: pattern, isLoading: isPatternLoading } = usePatternDetail(
+    patternSlug ?? undefined,
+    i18n.language,
+  );
+  const isLoading = isLoadingProject || isPatternLoading;
+
+  const steps = pattern?.steps ?? [];
   const counterSummary =
     project && project.roundCount > 0
       ? `${project.roundCount} rounds`
@@ -154,7 +152,9 @@ export default function ProjectCompleteScreen() {
         ? `${project.rowCount} rows`
         : t('projectComplete.done');
   const completedText = formatCompletedDate(project?.completedAt ?? null, t);
-  const imageSource = pattern ? getPatternImageSource(pattern.coverImageKey) : undefined;
+  const imageSource = project?.coverImageKey
+    ? getPatternImageSource(project.coverImageKey)
+    : undefined;
 
   useEffect(() => {
     if (!project || didPlayCompletionHapticRef.current) return;
@@ -187,6 +187,9 @@ export default function ProjectCompleteScreen() {
         .insert(projectsTable)
         .values({
           patternId: pattern.id,
+          patternSlug: pattern.slug,
+          coverImageKey: pattern.coverImageKey,
+          stepsJson: JSON.stringify(pattern.steps),
           name: pattern.title,
           status: 'active',
         })

@@ -14,11 +14,10 @@ import type { ProjectChatStep } from '@/components/project-chat';
 import { theme } from '@/constants/Theme';
 import { useSubscription } from '@/context/SubscriptionContext';
 import {
-  patterns as patternsTable,
   projects as projectsTable,
   type Project,
 } from '@/db/schema';
-import { resolvePatternTranslation, type ResolvedPattern } from '@/db/translations';
+import { usePatternDetail } from '@/hooks/use-pattern-detail';
 import { cta, tap, warn } from '@/services/haptics';
 import { useDbStore } from '@/stores/dbStore';
 import { eq } from 'drizzle-orm';
@@ -58,8 +57,8 @@ export default function ProjectDetailScreen() {
   const hasPositionedStepListRef = useRef(false);
   const isProgrammaticStepScrollRef = useRef(false);
   const [project, setProject] = useState<Project | null>(null);
-  const [pattern, setPattern] = useState<ResolvedPattern | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [patternSlug, setPatternSlug] = useState<string | null>(null);
+  const [isLoadingProject, setIsLoadingProject] = useState(true);
   const [selectedStepIndex, setSelectedStepIndex] = useState(0);
   const projectId = Number(id);
 
@@ -69,7 +68,7 @@ export default function ProjectDetailScreen() {
     async function loadProject() {
       if (!db || !Number.isFinite(projectId)) return;
 
-      setIsLoading(true);
+      setIsLoadingProject(true);
 
       try {
         const projectResult = await db
@@ -78,33 +77,15 @@ export default function ProjectDetailScreen() {
           .where(eq(projectsTable.id, projectId))
           .limit(1);
         const projectRow = projectResult[0] ?? null;
-        const patternResult = projectRow
-          ? await db
-              .select()
-              .from(patternsTable)
-              .where(eq(patternsTable.id, projectRow.patternId))
-              .limit(1)
-          : [];
 
-        const patternRow = patternResult[0] ?? null;
-
-        if (isMounted && patternRow) {
-          const resolved = await resolvePatternTranslation(
-            db,
-            patternRow,
-            i18n.language,
-          );
+        if (isMounted) {
           setProject(projectRow);
-          setPattern(resolved);
-          setSelectedStepIndex(projectRow?.currentStepIndex ?? 0);
-        } else if (isMounted) {
-          setProject(projectRow);
-          setPattern(null);
+          setPatternSlug(projectRow?.patternSlug ?? null);
           setSelectedStepIndex(projectRow?.currentStepIndex ?? 0);
         }
       } finally {
         if (isMounted) {
-          setIsLoading(false);
+          setIsLoadingProject(false);
         }
       }
     }
@@ -114,7 +95,13 @@ export default function ProjectDetailScreen() {
     return () => {
       isMounted = false;
     };
-  }, [db, projectId, i18n.language]);
+  }, [db, projectId]);
+
+  const { data: pattern, isLoading: isPatternLoading } = usePatternDetail(
+    patternSlug ?? undefined,
+    i18n.language,
+  );
+  const isLoading = isLoadingProject || isPatternLoading;
 
   const steps = pattern?.steps ?? [];
   const currentStepIndex = Math.min(selectedStepIndex, Math.max(steps.length - 1, 0));

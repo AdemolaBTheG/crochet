@@ -1,0 +1,17 @@
+{
+  "title": "Mini cactus",
+  "description": "Un petit cactus amigurumi dans un pot. Rapide, mignon et sans arrosage.",
+  "materials": ["Fil coton vert", "fil marron (pour le pot)", "Crochet 3 à 4 mm", "rembourrage", "aiguille à laine", "ciseaux"],
+  "skills": ["Anneau magique", "maille serrée", "augmentations", "diminutions", "travailler en rond", "rembourrage"],
+  "expectationText": "Un compagnon de bureau joyeux qui enseigne les augmentations pour le galbe et les diminutions pour fermer, le tout dans un projet compact réalisable en moins d'une heure.",
+  "steps": [
+    { "type": "instruction", "title": "Faire le corps du cactus", "instruction": "Commencez par un anneau magique en vert. Le corps se travaille en rond continu sans fermer." },
+    { "type": "round", "title": "Tour 1", "instruction": "6 mailles serrées dans l'anneau magique.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Tour 2", "instruction": "Augmentez dans chaque maille tout autour pour 12 mailles.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Tour 3", "instruction": "1 maille serrée, puis augmentez dans la maille suivante tout autour pour 18 mailles.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "round", "title": "Tours 4 à 9", "instruction": "Mailles serrées tout autour sans augmenter pour la hauteur.", "counterLabel": "round", "targetCount": 9 },
+    { "type": "instruction", "title": "Rembourrer et fermer", "instruction": "Rembourrez fermement le cactus. Puis faites des diminutions en crochetant 2 mailles ensemble jusqu'à fermeture. Arrêtez et rentrez le fil." },
+    { "type": "instruction", "title": "Faire le pot", "instruction": "Passez au fil marron. Anneau magique, 6 mailles serrées, puis augmentez à 12, puis 18. Faites 4 tours droits. Ne fermez pas complètement." },
+    { "type": "instruction", "title": "Assembler", "instruction": "Placez le cactus dans le pot. Cousez le bas du cactus à l'intérieur du pot. Brodez éventuellement de petites fleurs jaunes sur le dessus." }
+  ]
+}

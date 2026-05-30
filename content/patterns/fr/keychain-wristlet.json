@@ -1,0 +1,15 @@
+{
+  "title": "Dragonne porte-clés",
+  "description": "Un petit bracelet crocheté qui s'attache à vos clés. Le projet le plus rapide de la collection.",
+  "materials": ["Fil coton (couleur au choix)", "Crochet 3,5 à 4 mm", "anneau ou mousqueton", "aiguille à laine", "ciseaux"],
+  "skills": ["Chaînette de base", "maille serrée", "arrêter le fil", "rentrer les fils"],
+  "expectationText": "Le projet parfait pour débutant pour utiliser les restes de fil. En moins de 15 minutes, vous obtenez une dragonne pratique qui facilite le transport des clés.",
+  "steps": [
+    { "type": "instruction", "title": "Commencer la boucle", "instruction": "Chaînette de 6 pour la largeur de la dragonne. Fermez en anneau avec une maille coulée, sans tordre la chaînette." },
+    { "type": "round", "title": "Tours 1 à 3", "instruction": "Mailles serrées autour de l'anneau, dans chaque maille. Fermez chaque tour avec une maille coulée.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Allonger la bandoulière", "instruction": "Arrêtez de fermer les tours et faites une longue chaînette d'environ 40 mailles pour le tour de poignet." },
+    { "type": "row", "title": "Renforcer la bandoulière", "instruction": "Revenez en mailles serrées le long de la chaînette pour la solidité. Arrêtez le fil.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "instruction", "title": "Attacher l'anneau", "instruction": "Passez l'anneau de départ dans l'anneau porte-clés ou le mousqueton, puis tirez l'extrémité de la bandoulière à travers l'anneau pour faire un nœud de tête d'alouette. Serrez." },
+    { "type": "instruction", "title": "Finir", "instruction": "Rentrez tous les fils et attachez aux clés. Terminé." }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Set de table rayé",
+  "description": "Un set de table élégant en rangs de brides avec des changements de couleur nets.",
+  "materials": ["Fil coton (2 couleurs)", "Crochet 4,5 à 5,5 mm", "aiguille à laine", "ciseaux"],
+  "skills": ["Chaînette de base", "bride", "changement de couleur", "arrêter le fil", "rentrer les fils"],
+  "expectationText": "Un projet rythmé en rangs qui renforce votre confiance avec les changements de couleur et crée un bel ensemble pour votre table. Faites-en plusieurs pour un set assorti.",
+  "steps": [
+    { "type": "instruction", "title": "Commencer avec la couleur A", "instruction": "Chaînette de 42 avec la couleur A. Donne un set d'environ 30 cm de large." },
+    { "type": "row", "title": "Rangs 1 à 4 (couleur A)", "instruction": "Bride dans la 3e maille à partir du crochet et dans chaque maille suivante. 2 mailles en l'air et tourner.", "counterLabel": "row", "targetCount": 4 },
+    { "type": "instruction", "title": "Passer à la couleur B", "instruction": "Au dernier jeté de la dernière bride du rang 4, lâchez la couleur A et tirez la couleur B pour un changement net." },
+    { "type": "row", "title": "Rangs 5 à 8 (couleur B)", "instruction": "Brides avec la couleur B. 2 mailles en l'air et tourner.", "counterLabel": "row", "targetCount": 8 },
+    { "type": "repeat", "title": "Répéter les rayures", "instruction": "Alternez 4 rangs couleur A et 4 rangs couleur B jusqu'à environ 45 cm de long, environ 32 rangs au total.", "counterLabel": "row", "targetCount": 32 },
+    { "type": "instruction", "title": "Finir", "instruction": "Après le dernier rang, arrêtez le fil et rentrez tous les fils. Bloquez légèrement à la vapeur pour une finition plate." }
+  ]
+}

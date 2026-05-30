@@ -4,7 +4,6 @@ import { getPatternImageSource } from '@/constants/pattern-images';
 import { useSubscription } from '@/context/SubscriptionContext';
 import {
   projects as projectsTable,
-  patterns as patternsTable,
   type Project,
 } from '@/db/schema';
 import { usePatterns } from '@/hooks/use-patterns';
@@ -346,22 +345,8 @@ export default function HomeScreen() {
 
         try {
           const activeRows = await db
-            .select({
-              project: {
-                id: projectsTable.id,
-                name: projectsTable.name,
-                status: projectsTable.status,
-                currentStepIndex: projectsTable.currentStepIndex,
-                rowCount: projectsTable.rowCount,
-                roundCount: projectsTable.roundCount,
-                updatedAt: projectsTable.updatedAt,
-              },
-              patternSlug: patternsTable.slug,
-              coverImageKey: patternsTable.coverImageKey,
-              stepsJson: patternsTable.stepsJson,
-            })
+            .select()
             .from(projectsTable)
-            .leftJoin(patternsTable, eq(patternsTable.id, projectsTable.patternId))
             .where(eq(projectsTable.status, 'active'))
             .orderBy(desc(projectsTable.updatedAt))
             .limit(8);
@@ -369,14 +354,14 @@ export default function HomeScreen() {
           if (isMounted) {
             setActiveProjects(
               activeRows.map((row) => ({
-                ...row.project,
+                ...row,
                 patternId: 0,
                 notes: null,
                 startedAt: new Date(),
                 completedAt: null,
-                patternSlug: row.patternSlug,
-                coverImageKey: row.coverImageKey,
-                stepsJson: row.stepsJson,
+                patternSlug: row.patternSlug ?? null,
+                coverImageKey: row.coverImageKey ?? null,
+                stepsJson: row.stepsJson ?? null,
               })),
             );
           }

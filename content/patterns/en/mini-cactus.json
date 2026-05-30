@@ -1,0 +1,17 @@
+{
+  "title": "Mini Cactus",
+  "description": "A tiny amigurumi cactus in a small pot. Quick, cute, and no watering required.",
+  "materials": ["Green cotton yarn", "brown yarn (for pot)", "3 to 4 mm hook", "stuffing", "yarn needle", "scissors"],
+  "skills": ["Magic ring", "single crochet", "increasing", "decreasing", "working in rounds", "stuffing"],
+  "expectationText": "A cheerful desk companion that teaches increasing for shaping and decreasing for closing, all in a compact project you can finish in under an hour.",
+  "steps": [
+    { "type": "instruction", "title": "Make the cactus body", "instruction": "Start with a magic ring in green. The body is worked in continuous rounds without joining." },
+    { "type": "round", "title": "Round 1", "instruction": "Work 6 single crochet into the magic ring.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Round 2", "instruction": "Increase in each stitch around for 12 stitches.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Round 3", "instruction": "Work 1 single crochet, then increase in the next stitch around for 18 stitches.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "round", "title": "Rounds 4 to 9", "instruction": "Single crochet around without increasing to build height.", "counterLabel": "round", "targetCount": 9 },
+    { "type": "instruction", "title": "Stuff and close", "instruction": "Stuff the cactus firmly. Then work decreases by crocheting 2 stitches together around until closed. Fasten off and weave in." },
+    { "type": "instruction", "title": "Make the pot", "instruction": "Switch to brown yarn. Start with a magic ring, work 6 single crochet, then increase to 12, then to 18. Work 4 rounds even. Do not close fully." },
+    { "type": "instruction", "title": "Assemble", "instruction": "Place the cactus inside the pot. Sew the bottom of the cactus to the inside of the pot. Optionally embroider small yellow flowers on top." }
+  ]
+}

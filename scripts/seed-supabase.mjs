@@ -68,6 +68,9 @@ const lessonMetadata = {
   'increasing-and-decreasing': { sortOrder: 11, difficulty: 'beginner' },
   'chain-spaces-and-corners': { sortOrder: 12, difficulty: 'beginner' },
   'back-loop-only-ribbing': { sortOrder: 13, difficulty: 'beginner' },
+  'color-changes': { sortOrder: 14, difficulty: 'beginner' },
+  'joining-granny-squares': { sortOrder: 15, difficulty: 'beginner' },
+  'invisible-decrease-for-amigurumi': { sortOrder: 16, difficulty: 'beginner' },
 };
 
 const patternMetadata = {
@@ -90,6 +93,15 @@ const patternMetadata = {
   'basic-amigurumi-ball': { difficulty: 'beginner', category: 'toy', coverImageKey: 'basic-amigurumi-ball', estimatedMinutes: 55 },
   'ribbed-headband': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'ribbed-headband', estimatedMinutes: 65 },
   'simple-drawstring-pouch': { difficulty: 'beginner', category: 'gift', coverImageKey: 'simple-drawstring-pouch', estimatedMinutes: 80 },
+  'granny-square-tote': { difficulty: 'intermediate', category: 'wearable', coverImageKey: 'granny-square-tote', estimatedMinutes: 150 },
+  'mesh-market-bag': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'mesh-market-bag', estimatedMinutes: 90 },
+  'basic-baby-blanket': { difficulty: 'beginner', category: 'home', coverImageKey: 'basic-baby-blanket', estimatedMinutes: 180 },
+  'amigurumi-whale': { difficulty: 'intermediate', category: 'toy', coverImageKey: 'amigurumi-whale', estimatedMinutes: 75 },
+  'granny-square-bag': { difficulty: 'intermediate', category: 'wearable', coverImageKey: 'granny-square-bag', estimatedMinutes: 120 },
+  'striped-placemat': { difficulty: 'beginner', category: 'home', coverImageKey: 'striped-placemat', estimatedMinutes: 60 },
+  'mini-cactus': { difficulty: 'beginner', category: 'toy', coverImageKey: 'mini-cactus', estimatedMinutes: 45 },
+  'ear-warmer': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'ear-warmer', estimatedMinutes: 40 },
+  'keychain-wristlet': { difficulty: 'beginner', category: 'gift', coverImageKey: 'keychain-wristlet', estimatedMinutes: 15 },
 };
 
 function readJson(filePath) {

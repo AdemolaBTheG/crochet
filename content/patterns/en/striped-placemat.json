@@ -1,0 +1,15 @@
+{
+  "title": "Striped Placemat",
+  "description": "A stylish table placemat using double crochet rows with crisp colour changes.",
+  "materials": ["Cotton yarn (2 colours)", "4.5 to 5.5 mm hook", "yarn needle", "scissors"],
+  "skills": ["Foundation chain", "double crochet", "colour change", "fasten off", "weaving ends"],
+  "expectationText": "A rhythmic row project that builds your confidence with colour changes and creates a beautiful set for your dining table. Make multiples for a matching set.",
+  "steps": [
+    { "type": "instruction", "title": "Start with colour A", "instruction": "Chain 42 with colour A. This gives a placemat about 30 cm wide." },
+    { "type": "row", "title": "Rows 1 to 4 (colour A)", "instruction": "Double crochet into the third chain from hook and each chain across. Chain 2 and turn.", "counterLabel": "row", "targetCount": 4 },
+    { "type": "instruction", "title": "Switch to colour B", "instruction": "On the last yarn-over of the final stitch in row 4, drop colour A and pull through colour B to create a clean colour change." },
+    { "type": "row", "title": "Rows 5 to 8 (colour B)", "instruction": "Double crochet across with colour B. Chain 2 and turn.", "counterLabel": "row", "targetCount": 8 },
+    { "type": "repeat", "title": "Repeat colour stripes", "instruction": "Alternate 4 rows of colour A and 4 rows of colour B until the placemat reaches about 45 cm long, roughly 32 rows total.", "counterLabel": "row", "targetCount": 32 },
+    { "type": "instruction", "title": "Finish", "instruction": "After the final row, fasten off and weave in all ends. Block lightly with steam for a flat finish." }
+  ]
+}

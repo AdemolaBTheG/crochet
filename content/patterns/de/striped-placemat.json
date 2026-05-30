@@ -1,0 +1,15 @@
+{
+  "title": "Gestreiftes Platzset",
+  "description": "Ein stilvolles Tischset mit Stäbchenreihen und sauberen Farbwechseln.",
+  "materials": ["Baumwollgarn (2 Farben)", "4,5 bis 5,5 mm Nadel", "Wollnadel", "Schere"],
+  "skills": ["Lufmaschenanschlag", "Stäbchen", "Farbwechsel", "Abketten", "Enden vernähen"],
+  "expectationText": "Ein rhythmisches Reihenprojekt, das dein Vertrauen in Farbwechsel stärkt und ein schönes Set für den Esstisch ergibt. Mach mehrere für ein passendes Set.",
+  "steps": [
+    { "type": "instruction", "title": "Mit Farbe A starten", "instruction": "42 Luftmaschen mit Farbe A anschlagen. Ergibt ein Platzset von ca. 30 cm Breite." },
+    { "type": "row", "title": "Reihen 1 bis 4 (Farbe A)", "instruction": "Stäbchen in die dritte Masche von der Nadel und jede folgende Masche. 2 Luftmaschen und wenden.", "counterLabel": "row", "targetCount": 4 },
+    { "type": "instruction", "title": "Zu Farbe B wechseln", "instruction": "Beim letzten Umschlag des letzten Stäbchens in Reihe 4 Farbe A fallen lassen und mit Farbe B durchziehen für einen sauberen Farbwechsel." },
+    { "type": "row", "title": "Reihen 5 bis 8 (Farbe B)", "instruction": "Stäbchen mit Farbe B häkeln. 2 Luftmaschen und wenden.", "counterLabel": "row", "targetCount": 8 },
+    { "type": "repeat", "title": "Farbstreifen wiederholen", "instruction": "Wechsle 4 Reihen Farbe A und 4 Reihen Farbe B ab, bis das Platzset ca. 45 cm lang ist, etwa 32 Reihen insgesamt.", "counterLabel": "row", "targetCount": 32 },
+    { "type": "instruction", "title": "Fertigstellen", "instruction": "Nach der letzten Reihe abketten und alle Enden vernähen. Leicht mit Dampf spannen für ein flaches Finish." }
+  ]
+}

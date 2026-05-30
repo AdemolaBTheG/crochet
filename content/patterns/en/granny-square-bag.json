@@ -1,0 +1,16 @@
+{
+  "title": "Granny Square Bag",
+  "description": "Assemble classic granny squares into a colorful tote bag with a sturdy strap.",
+  "materials": ["Cotton or acrylic yarn (3 colours)", "4 to 5 mm hook", "yarn needle", "scissors"],
+  "skills": ["Granny square", "chain spaces", "double crochet", "slip stitch", "joining motifs"],
+  "expectationText": "A satisfying wearable project where you make granny squares, join them into panels, and add a strap to create a usable bag by the end.",
+  "steps": [
+    { "type": "instruction", "title": "Plan your colours", "instruction": "Choose 3 yarn colours: main colour for the bag body, a contrast colour, and a joining colour." },
+    { "type": "repeat", "title": "Make the granny squares", "instruction": "Crochet 12 classic granny squares using the main colour, switching contrast colour for the final round. Each square should be about 8 cm across.", "counterLabel": "repeat", "targetCount": 12 },
+    { "type": "instruction", "title": "Join the squares", "instruction": "Arrange the squares in a 3 by 4 grid. Use the joining colour and slip stitch to join squares together, creating one flat rectangle." },
+    { "type": "instruction", "title": "Fold into bag shape", "instruction": "Fold the rectangle in half (short side to short side) so you have a 3 by 2 grid on each side. Join the side seams." },
+    { "type": "instruction", "title": "Make the strap", "instruction": "Chain 80 with the joining colour. Work 3 rows of double crochet to create a sturdy strap. Repeat for the second strap." },
+    { "type": "instruction", "title": "Attach the straps", "instruction": "Sew one end of each strap to the inside front and the other end to the inside back of the bag. Reinforce with extra stitches." },
+    { "type": "instruction", "title": "Finish", "instruction": "Weave in all ends. Optionally add a button closure or leave it open for easy access." }
+  ]
+}

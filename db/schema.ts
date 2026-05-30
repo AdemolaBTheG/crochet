@@ -163,6 +163,9 @@ export const projects = sqliteTable(
     patternId: integer("pattern_id")
       .notNull()
       .references(() => patterns.id, { onDelete: "cascade" }),
+    patternSlug: text("pattern_slug"),
+    coverImageKey: text("cover_image_key"),
+    stepsJson: text("steps_json"),
     name: text("name").notNull(),
     status: text("status").notNull().default("active"),
     currentStepIndex: integer("current_step_index").notNull().default(0),

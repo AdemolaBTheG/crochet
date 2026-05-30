@@ -559,6 +559,9 @@ export default function PatternDetailScreen() {
           .insert(projectsTable)
           .values({
             patternId: pattern.id,
+            patternSlug: pattern.slug,
+            coverImageKey: pattern.coverImageKey,
+            stepsJson: JSON.stringify(pattern.steps),
             name: pattern.title,
             status: 'active',
           })

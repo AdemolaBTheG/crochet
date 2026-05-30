@@ -1,0 +1,15 @@
+{
+  "title": "Schlüsselanhänger-Armband",
+  "description": "Ein kleines gehäkeltes Handgelenkband für deine Schlüssel. Das schnellste Projekt der Sammlung.",
+  "materials": ["Baumwollgarn (beliebige Farbe)", "3,5 bis 4 mm Nadel", "Schlüsselring oder Karabiner", "Wollnadel", "Schere"],
+  "skills": ["Lufmaschenanschlag", "feste Maschen", "Abketten", "Enden vernähen"],
+  "expectationText": "Das perfekte Einsteigerprojekt, um Garnreste aufzubrauchen. In unter 15 Minuten hast du ein praktisches Handgelenkband, das Schlüsseltragen erleichtert.",
+  "steps": [
+    { "type": "instruction", "title": "Handgelenkschlaufe starten", "instruction": "6 Luftmaschen anschlagen für die Breite des Armbands. Mit Kettmasche zum Ring schließen, ohne die Kette zu verdrehen." },
+    { "type": "round", "title": "Runden 1 bis 3", "instruction": "Feste Maschen um den Ring häkeln, in jede Lufmasche einstechen. Am Ende jeder Runde mit Kettmasche schließen.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Band verlängern", "instruction": "Mit dem Verbinden aufhören und eine lange Lufmaschenkette von etwa 40 Maschen für das Handgelenkband anschlagen." },
+    { "type": "row", "title": "Band verstärken", "instruction": "Feste Maschen entlang der Kette zurückhäkeln für Stabilität. Abketten.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "instruction", "title": "Schlüsselring befestigen", "instruction": "Den Startring durch den Schlüsselring oder Karabiner fädeln, dann das Bandende durch den Ring ziehen für einen Ankerstich. Festziehen." },
+    { "type": "instruction", "title": "Fertigstellen", "instruction": "Alle Enden vernähen und an den Schlüsseln befestigen. Fertig." }
+  ]
+}

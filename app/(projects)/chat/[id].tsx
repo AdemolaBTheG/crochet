@@ -76,11 +76,11 @@ export default function ProjectChatScreen() {
     };
   }, [db, projectId]);
 
-  const steps = useMemo(() => parseSteps(pattern?.stepsJson ?? null), [pattern]);
-  const currentStepIndex = project
-    ? Math.min(project.currentStepIndex, Math.max(steps.length - 1, 0))
-    : 0;
-  const currentStep = steps[currentStepIndex] ?? null;
+  const steps = useMemo(() => parseSteps(project?.stepsJson ?? null), [project]);
+  const currentStep =
+    project && steps.length > 0
+      ? steps[Math.min(project.currentStepIndex, steps.length - 1)]
+      : null;
   const counterLabel = currentStep?.counterLabel;
   const counterValue =
     counterLabel === 'row'
@@ -95,7 +95,7 @@ export default function ProjectChatScreen() {
     <>
       <Stack.Screen
         options={{
-          title: currentStep?.title ?? pattern?.title ?? 'Ask AI',
+          title: currentStep?.title ?? project?.name ?? 'Ask AI',
           headerLargeTitle: false,
           headerTransparent: isLiquidGlassAvailable(),
           headerStyle: {
@@ -116,7 +116,7 @@ export default function ProjectChatScreen() {
           </View>
         ) : null}
 
-        {!isLoading && (!project || !pattern) ? (
+        {!isLoading && !project ? (
           <View
             style={{
               flex: 1,
@@ -139,9 +139,9 @@ export default function ProjectChatScreen() {
           </View>
         ) : null}
 
-        {project && pattern ? (
+        {project ? (
           <ProjectChat
-            pattern={pattern}
+            pattern={pattern ?? undefined}
             currentStep={currentStep}
             counterLabel={counterLabel}
             counterValue={counterValue}

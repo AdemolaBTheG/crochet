@@ -1,9 +1,7 @@
 import { getPatternImageSource } from '@/constants/pattern-images';
 import { theme } from '@/constants/Theme';
 import {
-  patterns as patternsTable,
   projects as projectsTable,
-  type Pattern,
   type Project,
 } from '@/db/schema';
 import { useDbStore } from '@/stores/dbStore';
@@ -15,21 +13,18 @@ import { Link, useFocusEffect } from 'expo-router';
 import React, { useCallback, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ActivityIndicator, Pressable, Text, View } from 'react-native';
-type ProjectListItem = Project & {
-  pattern: Pattern | null;
-};
 
 type ProjectListRow =
   | { type: 'loading' }
   | { type: 'empty' }
   | { type: 'section'; id: string; title: string }
-  | { type: 'project'; project: ProjectListItem };
+  | { type: 'project'; project: Project };
 
-function getStepCount(pattern: Pattern | null) {
-  if (!pattern?.stepsJson) return 0;
+function getStepCount(stepsJson: string | null) {
+  if (!stepsJson) return 0;
 
   try {
-    return (JSON.parse(pattern.stepsJson) as unknown[]).length;
+    return (JSON.parse(stepsJson) as unknown[]).length;
   } catch {
     return 0;
   }
@@ -68,11 +63,12 @@ function getLastWorkedText(
   }).format(updatedAt);
 }
 
-function ProjectCard({ project }: { project: ProjectListItem }) {
+function ProjectCard({ project }: { project: Project }) {
   const { t } = useTranslation();
-  const pattern = project.pattern;
-  const source = pattern ? getPatternImageSource(pattern.coverImageKey) : undefined;
-  const stepCount = getStepCount(pattern);
+  const source = project.coverImageKey
+    ? getPatternImageSource(project.coverImageKey)
+    : undefined;
+  const stepCount = getStepCount(project.stepsJson);
   const completedStepCount =
     project.status === 'completed'
       ? stepCount
@@ -199,7 +195,7 @@ function ProjectCard({ project }: { project: ProjectListItem }) {
 export default function ProjectsScreen() {
   const { t } = useTranslation();
   const { db } = useDbStore();
-  const [projects, setProjects] = useState<ProjectListItem[]>([]);
+  const [projects, setProjects] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   const loadProjects = useCallback(async () => {
@@ -209,15 +205,11 @@ export default function ProjectsScreen() {
 
     try {
       const rows = await db
-        .select({
-          project: projectsTable,
-          pattern: patternsTable,
-        })
+        .select()
         .from(projectsTable)
-        .leftJoin(patternsTable, eq(patternsTable.id, projectsTable.patternId))
         .orderBy(desc(projectsTable.updatedAt));
 
-      setProjects(rows.map((row) => ({ ...row.project, pattern: row.pattern })));
+      setProjects(rows);
     } finally {
       setIsLoading(false);
     }
@@ -245,8 +237,8 @@ export default function ProjectsScreen() {
     if (isLoading) return [{ type: 'loading' }];
     if (projects.length === 0) return [{ type: 'empty' }];
 
-    const activeProjects = projects.filter((project) => project.status !== 'completed');
-    const completedProjects = projects.filter((project) => project.status === 'completed');
+    const activeProjects = projects.filter((p) => p.status !== 'completed');
+    const completedProjects = projects.filter((p) => p.status === 'completed');
     const rows: ProjectListRow[] = [];
 
     if (activeProjects.length > 0) {

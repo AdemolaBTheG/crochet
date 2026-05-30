@@ -105,8 +105,7 @@ export function initializeHaptics() {
     module.Settings.enableSound(false);
     module.Settings.enableCache(true);
     module.Settings.preloadPresets([...PRELOADED_PRESETS]);
-    shouldUsePulsar =
-      module.Settings.getHapticsSupportLevel() > module.HapticSupport.NO_SUPPORT;
+    shouldUsePulsar = module.Settings.getHapticsSupportLevel() > module.HapticSupport.NO_SUPPORT;
   } catch {
     shouldUsePulsar = false;
   }

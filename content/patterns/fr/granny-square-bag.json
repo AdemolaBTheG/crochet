@@ -1,0 +1,16 @@
+{
+  "title": "Sac Granny Square",
+  "description": "Assemblez des granny squares classiques en un sac coloré avec une bandoulière solide.",
+  "materials": ["Fil coton ou acrylique (3 couleurs)", "Crochet 4 à 5 mm", "aiguille à laine", "ciseaux"],
+  "skills": ["Granny square", "espaces de chaînette", "bride", "maille coulée", "assemblage de motifs"],
+  "expectationText": "Un projet portable satisfaisant où vous créez des granny squares, les assemblez en panneaux et ajoutez une bandoulière pour obtenir un sac utilisable.",
+  "steps": [
+    { "type": "instruction", "title": "Planifiez vos couleurs", "instruction": "Choisissez 3 couleurs : couleur principale pour le corps du sac, une couleur contrastante et une couleur d'assemblage." },
+    { "type": "repeat", "title": "Faire les granny squares", "instruction": "Crochetez 12 granny squares classiques en couleur principale, en passant à la couleur contrastante pour le dernier tour. Chaque carré d'environ 8 cm de côté.", "counterLabel": "repeat", "targetCount": 12 },
+    { "type": "instruction", "title": "Assembler les carrés", "instruction": "Disposez les carrés en grille de 3 par 4. Utilisez la couleur d'assemblage et des mailles coulées pour joindre les carrés en un rectangle plat." },
+    { "type": "instruction", "title": "Plier en forme de sac", "instruction": "Pliez le rectangle en deux pour obtenir une grille de 3 par 2 de chaque côté. Assemblez les coutures latérales." },
+    { "type": "instruction", "title": "Faire la bandoulière", "instruction": "Chaînette de 80 avec la couleur d'assemblage. Crochetez 3 rangs de brides pour une bandoulière solide. Répétez pour la deuxième bandoulière." },
+    { "type": "instruction", "title": "Attacher les bandoulières", "instruction": "Cousez une extrémité de chaque bandoulière à l'intérieur devant et l'autre extrémité à l'intérieur derrière. Renforcez avec des points supplémentaires." },
+    { "type": "instruction", "title": "Finir", "instruction": "Rentrez tous les fils. Ajoutez éventuellement une fermeture boutonnée ou laissez ouvert." }
+  ]
+}

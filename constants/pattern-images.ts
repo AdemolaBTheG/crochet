@@ -25,6 +25,11 @@ const localImages = {
   'chunky-storage-basket': require('@/assets/images/patterns/chunky-storage-basket.png'),
   'easy-ribbed-beanie': require('@/assets/images/patterns/easy-ribbed-beanie.png'),
   'ribbed-headband': require('@/assets/images/patterns/ribbed-headband.png'),
+  'granny-square-bag': require('@/assets/images/patterns/granny-square-bag.png'),
+  'striped-placemat': require('@/assets/images/patterns/striped-placemat.png'),
+  'mini-cactus': require('@/assets/images/patterns/mini-cactus.png'),
+  'ear-warmer': require('@/assets/images/patterns/ear-warmer.png'),
+  'keychain-wristlet': require('@/assets/images/patterns/keychain-wristlet.png'),
 } as const;
 
 export type PatternImageKey = keyof typeof localImages;

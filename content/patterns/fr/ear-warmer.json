@@ -1,0 +1,15 @@
+{
+  "title": "Bandeau oreilles",
+  "description": "Un bandeau côtelé douillet travaillé à plat et cousu, parfait pour les promenades matinales froides.",
+  "materials": ["Fil worsted", "Crochet 5 à 6 mm", "aiguille à laine", "ciseaux"],
+  "skills": ["Chaînette de base", "demi-bride", "brin arrière seulement", "maille coulée", "couture"],
+  "expectationText": "Un accessoire rapide qui introduit les côtes en brin arrière pour un tissu extensible et texturé. Portez-le le jour même.",
+  "steps": [
+    { "type": "instruction", "title": "Commencer le bandeau", "instruction": "Chaînette de 14. Ce sera la largeur du bandeau, environ 10 cm. Ajustez le nombre de mailles pour plus large ou plus étroit." },
+    { "type": "row", "title": "Rang 1", "instruction": "Demi-bride dans la 3e maille à partir du crochet et dans chaque maille suivante. 2 mailles en l'air et tourner.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "row", "title": "Rangs 2 à 12", "instruction": "Demi-bride dans le brin arrière seulement de chaque maille. 2 mailles en l'air et tourner. Cela crée la texture côtelée.", "counterLabel": "row", "targetCount": 12 },
+    { "type": "repeat", "title": "Continuer les côtes", "instruction": "Continuez les demi-brides en brin arrière jusqu'à ce que le bandeau s'enroule confortablement autour de votre tête, environ 50 rangs pour taille adulte.", "counterLabel": "row", "targetCount": 50 },
+    { "type": "instruction", "title": "Coudre les extrémités", "instruction": "Posez le bandeau à plat sans le tordre. Rapprochez les deux extrémités courtes et cousez-les en maille coulée ou à l'aiguille pour former une boucle." },
+    { "type": "instruction", "title": "Finir", "instruction": "Arrêtez le fil et rentrez les fils. Essayez-le et profitez de la chaleur." }
+  ]
+}

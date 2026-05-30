@@ -1,0 +1,15 @@
+{
+  "title": "Ear Warmer",
+  "description": "A cosy ribbed headband worked flat and seamed, perfect for cold morning walks.",
+  "materials": ["Worsted weight yarn", "5 to 6 mm hook", "yarn needle", "scissors"],
+  "skills": ["Foundation chain", "half double crochet", "back loop only", "slip stitch", "seaming"],
+  "expectationText": "A quick accessory project that introduces back-loop-only ribbing for stretchy, textured fabric. Wear it the same day you start.",
+  "steps": [
+    { "type": "instruction", "title": "Start the band", "instruction": "Chain 14. This will be the width of the ear warmer, roughly 10 cm. Adjust chain count for a wider or narrower band." },
+    { "type": "row", "title": "Row 1", "instruction": "Half double crochet into the third chain from the hook and each chain across. Chain 2 and turn.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "row", "title": "Rows 2 to 12", "instruction": "Half double crochet in the back loop only of each stitch across. Chain 2 and turn. This creates the ribbed texture.", "counterLabel": "row", "targetCount": 12 },
+    { "type": "repeat", "title": "Continue ribbing", "instruction": "Keep working back-loop-only half double crochet rows until the band wraps comfortably around your head, roughly 50 rows for an adult size.", "counterLabel": "row", "targetCount": 50 },
+    { "type": "instruction", "title": "Seam the ends", "instruction": "Lay the band flat without twisting. Bring the two short ends together and slip stitch or sew them to form a loop." },
+    { "type": "instruction", "title": "Finish", "instruction": "Fasten off and weave in the ends. Try it on and enjoy the warmth." }
+  ]
+}

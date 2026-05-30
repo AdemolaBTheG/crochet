@@ -1,0 +1,15 @@
+{
+  "title": "Ohrenwärmer",
+  "description": "Ein kuscheliges geripptes Stirnband, flach gearbeitet und zusammengenäht, perfekt für kalte Morgenspaziergänge.",
+  "materials": ["Worsted-Garn", "5 bis 6 mm Nadel", "Wollnadel", "Schere"],
+  "skills": ["Lufmaschenanschlag", "halbe Stäbchen", "nur hinteres Maschenglied", "Kettmasche", "Nähte"],
+  "expectationText": "Ein schnelles Accessoire-Projekt, das Rippenmuster nur im hinteren Maschenglied für dehnbaren, strukturierten Stoff einführt. Noch am selben Tag tragbar.",
+  "steps": [
+    { "type": "instruction", "title": "Band starten", "instruction": "14 Luftmaschen anschlagen. Das ergibt die Breite des Ohrenwärmers, ca. 10 cm. Maschenzahl für breiteres oder schmaleres Band anpassen." },
+    { "type": "row", "title": "Reihe 1", "instruction": "Halbe Stäbchen in die dritte Masche von der Nadel und jede folgende Masche häkeln. 2 Luftmaschen und wenden.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "row", "title": "Reihen 2 bis 12", "instruction": "Halbe Stäbchen nur ins hintere Maschenglied jeder Masche häkeln. 2 Luftmaschen und wenden. Erzeugt die Rippenstruktur.", "counterLabel": "row", "targetCount": 12 },
+    { "type": "repeat", "title": "Rippen fortsetzen", "instruction": "Weiter halbe Stäbchen nur ins hintere Maschenglied häkeln, bis das Band bequem um deinen Kopf passt, etwa 50 Reihen für Erwachsenengröße.", "counterLabel": "row", "targetCount": 50 },
+    { "type": "instruction", "title": "Enden verbinden", "instruction": "Band flach und unverdreht hinlegen. Die beiden kurzen Enden zusammenbringen und mit Kettmaschen oder Nadel zu einer Schlaufe zusammennähen." },
+    { "type": "instruction", "title": "Fertigstellen", "instruction": "Abketten und Enden vernähen. Aufsetzen und die Wärme genießen." }
+  ]
+}

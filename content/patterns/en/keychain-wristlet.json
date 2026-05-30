@@ -1,0 +1,15 @@
+{
+  "title": "Keychain Wristlet",
+  "description": "A tiny crochet wrist strap that attaches to your keys. Fastest project in the collection.",
+  "materials": ["Cotton yarn (any colour)", "3.5 to 4 mm hook", "keyring or lobster clasp", "yarn needle", "scissors"],
+  "skills": ["Foundation chain", "single crochet", "fasten off", "weaving ends"],
+  "expectationText": "The perfect starter project to use up scrap yarn. In under 15 minutes you get a practical wristlet that makes carrying keys easier.",
+  "steps": [
+    { "type": "instruction", "title": "Start the wrist loop", "instruction": "Chain 6. This will be the width of the wristlet. Join with a slip stitch to form a ring, making sure the chain is not twisted." },
+    { "type": "round", "title": "Rounds 1 to 3", "instruction": "Single crochet around the ring, working into each chain. Join with a slip stitch at the end of each round.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "instruction", "title": "Extend the strap", "instruction": "Stop joining rounds and work a long foundation chain of about 40 chains for the wrist strap. This will be the loop that goes around your wrist." },
+    { "type": "row", "title": "Reinforce the strap", "instruction": "Single crochet back along the chain to make the strap sturdy. Fasten off.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "instruction", "title": "Attach the keyring", "instruction": "Thread the starting ring through the keyring or clasp, then pull the strap end through the ring to create a lark's head knot. Pull tight." },
+    { "type": "instruction", "title": "Finish", "instruction": "Weave in any ends and clip on your keys. Done." }
+  ]
+}

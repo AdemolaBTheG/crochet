@@ -22,6 +22,23 @@ function ensurePatternContentColumns(expoDb: ExpoDatabase) {
     }
 }
 
+function ensureProjectContentColumns(expoDb: ExpoDatabase) {
+    const columns = expoDb.getAllSync<{ name: string }>("PRAGMA table_info(projects)");
+    const columnNames = new Set(columns.map((column) => column.name));
+
+    if (!columnNames.has("pattern_slug")) {
+        expoDb.execSync("ALTER TABLE `projects` ADD `pattern_slug` text;");
+    }
+
+    if (!columnNames.has("cover_image_key")) {
+        expoDb.execSync("ALTER TABLE `projects` ADD `cover_image_key` text;");
+    }
+
+    if (!columnNames.has("steps_json")) {
+        expoDb.execSync("ALTER TABLE `projects` ADD `steps_json` text;");
+    }
+}
+
 interface DatabaseState {
     expoDb: ExpoDatabase | null;
     db: ExpoSQLiteDatabase<typeof schema> | null;
@@ -65,6 +82,7 @@ export const useDbStore = create<DatabaseState>((set, get) => ({
             const db = drizzle(expoDb, { schema });
             await migrate(db, migrations);
             ensurePatternContentColumns(expoDb);
+            ensureProjectContentColumns(expoDb);
             await seedDatabase(db);
 
             set({ expoDb, db, isLoading: false });

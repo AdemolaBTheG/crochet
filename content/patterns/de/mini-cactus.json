@@ -1,0 +1,17 @@
+{
+  "title": "Mini-Kaktus",
+  "description": "Ein kleiner Amigurumi-Kaktus im Töpfchen. Schnell, süß und ohne Gießen.",
+  "materials": ["Grünes Baumwollgarn", "braunes Garn (für Topf)", "3 bis 4 mm Nadel", "Füllmaterial", "Wollnadel", "Schere"],
+  "skills": ["Magischer Ring", "feste Maschen", "Zunahmen", "Abnahmen", "in Runden arbeiten", "Füllen"],
+  "expectationText": "Ein fröhlicher Schreibtischbegleiter, der Zu- und Abnahmen für Formgebung lehrt, alles in einem kompakten Projekt, das du in unter einer Stunde fertigstellst.",
+  "steps": [
+    { "type": "instruction", "title": "Kaktuskörper machen", "instruction": "Beginne mit einem magischen Ring in Grün. Der Körper wird in fortlaufenden Runden ohne Verbinden gearbeitet." },
+    { "type": "round", "title": "Runde 1", "instruction": "6 feste Maschen in den magischen Ring.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Runde 2", "instruction": "Zunahme in jede Masche rundherum für 12 Maschen.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Runde 3", "instruction": "1 feste Masche, dann Zunahme in die nächste Masche rundherum für 18 Maschen.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "round", "title": "Runden 4 bis 9", "instruction": "Feste Maschen rundherum ohne Zunahmen für Höhe.", "counterLabel": "round", "targetCount": 9 },
+    { "type": "instruction", "title": "Füllen und schließen", "instruction": "Kaktus fest ausstopfen. Dann Abnahmen arbeiten, indem du 2 Maschen zusammen abmaschst, bis geschlossen. Abketten und vernähen." },
+    { "type": "instruction", "title": "Topf machen", "instruction": "Zu braunem Garn wechseln. Beginne mit magischem Ring, 6 feste Maschen, dann auf 12 und 18 zunehmen. 4 Runden ohne Zunahmen. Nicht vollständig schließen." },
+    { "type": "instruction", "title": "Zusammenbauen", "instruction": "Kaktus in den Topf setzen. Die Unterseite des Kaktus an der Innenseite des Topfes festnähen. Optional kleine gelbe Blüten aufsticken." }
+  ]
+}

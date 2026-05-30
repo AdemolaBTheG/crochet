@@ -1,0 +1,16 @@
+{
+  "title": "Granny-Square-Tasche",
+  "description": "Setze klassische Granny Squares zu einer farbenfrohen Tragetasche mit stabilem Henkel zusammen.",
+  "materials": ["Baumwoll- oder Acrylgarn (3 Farben)", "4 bis 5 mm Nadel", "Wollnadel", "Schere"],
+  "skills": ["Granny Square", "Lufmaschenbögen", "Stäbchen", "Kettmasche", "Motive verbinden"],
+  "expectationText": "Ein befriedigendes Wearable-Projekt, bei dem du Granny Squares machst, sie zu Paneelen zusammenfügst und einen Henkel hinzufügst, um am Ende eine nutzbare Tasche zu haben.",
+  "steps": [
+    { "type": "instruction", "title": "Farben planen", "instruction": "Wähle 3 Garnfarben: Hauptfarbe für den Taschenkörper, eine Kontrastfarbe und eine Verbindungsfarbe." },
+    { "type": "repeat", "title": "Granny Squares machen", "instruction": "Häkle 12 klassische Granny Squares mit der Hauptfarbe, für die letzte Runde auf Kontrastfarbe wechseln. Jedes Quadrat etwa 8 cm breit.", "counterLabel": "repeat", "targetCount": 12 },
+    { "type": "instruction", "title": "Quadrate verbinden", "instruction": "Ordne die Quadrate in einem 3-mal-4-Raster an. Verwende die Verbindungsfarbe und Kettmaschen, um sie zu einem flachen Rechteck zusammenzufügen." },
+    { "type": "instruction", "title": "Zur Taschenform falten", "instruction": "Falte das Rechteck in der Hälfte, sodass du ein 3-mal-2-Raster pro Seite hast. Verbinde die Seitennähte." },
+    { "type": "instruction", "title": "Henkel machen", "instruction": "Schlage 80 Luftmaschen mit der Verbindungsfarbe an. Häkle 3 Reihen Stäbchen für einen stabilen Henkel. Wiederhole für den zweiten Henkel." },
+    { "type": "instruction", "title": "Henkel befestigen", "instruction": "Nähe ein Ende jedes Henkels innen vorne und das andere Ende innen hinten an der Tasche fest. Mit zusätzlichen Stichen verstärken." },
+    { "type": "instruction", "title": "Fertigstellen", "instruction": "Alle Enden vernähen. Optional einen Knopfverschluss hinzufügen oder für einfachen Zugang offen lassen." }
+  ]
+}
