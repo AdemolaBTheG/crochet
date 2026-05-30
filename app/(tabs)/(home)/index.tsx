@@ -2,10 +2,7 @@ import { theme } from '@/constants/Theme';
 import { isPatternFree } from '@/constants/gates';
 import { getPatternImageSource } from '@/constants/pattern-images';
 import { useSubscription } from '@/context/SubscriptionContext';
-import {
-  projects as projectsTable,
-  type Project,
-} from '@/db/schema';
+import { projects as projectsTable, type Project } from '@/db/schema';
 import { usePatterns } from '@/hooks/use-patterns';
 import { tap, warn } from '@/services/haptics';
 import { useDbStore } from '@/stores/dbStore';
@@ -81,9 +78,7 @@ function formatCategory(category: string) {
 
 function ActiveProjectCard({ project, width }: { project: ActiveProject; width: number }) {
   const { t } = useTranslation();
-  const source = project.coverImageKey
-    ? getPatternImageSource(project.coverImageKey)
-    : undefined;
+  const source = project.coverImageKey ? getPatternImageSource(project.coverImageKey) : undefined;
   const stepCount = getStepCount(project.stepsJson);
   const completedStepCount =
     stepCount > 0
@@ -314,10 +309,7 @@ export default function HomeScreen() {
   const { i18n } = useTranslation();
   const { isPro } = useSubscription();
   const { width } = useWindowDimensions();
-  const {
-    data: patterns = [],
-    isLoading: isPatternsLoading,
-  } = usePatterns(i18n.language);
+  const { data: patterns = [], isLoading: isPatternsLoading } = usePatterns(i18n.language);
   const [activeProjects, setActiveProjects] = useState<ActiveProject[]>([]);
   const [isLoadingProjects, setIsLoadingProjects] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<CategoryFilter>('all');
@@ -330,9 +322,7 @@ export default function HomeScreen() {
     new Set(patterns.map((p) => p.category).filter(Boolean) as string[]),
   ).sort();
   const filteredPatterns =
-    selectedCategory === 'all'
-      ? patterns
-      : patterns.filter((p) => p.category === selectedCategory);
+    selectedCategory === 'all' ? patterns : patterns.filter((p) => p.category === selectedCategory);
 
   useFocusEffect(
     useCallback(() => {

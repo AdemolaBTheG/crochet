@@ -1,10 +1,7 @@
 import { PressableScale } from '@/components/pressable-scale';
 import { getPatternImageSource } from '@/constants/pattern-images';
 import { theme } from '@/constants/Theme';
-import {
-  projects as projectsTable,
-  type Project,
-} from '@/db/schema';
+import { projects as projectsTable, type Project } from '@/db/schema';
 import { usePatternDetail } from '@/hooks/use-pattern-detail';
 import { complete, cta, tap } from '@/services/haptics';
 import { useDbStore } from '@/stores/dbStore';
@@ -13,29 +10,12 @@ import { eq } from 'drizzle-orm';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Image } from 'expo-image';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ActivityIndicator, ScrollView, Text, View } from 'react-native';
 import { Confetti } from 'react-native-fast-confetti';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-type PatternStep = {
-  type?: 'instruction' | 'row' | 'round' | 'repeat';
-  title: string;
-  instruction: string;
-  counterLabel?: string;
-  targetCount?: number;
-};
-
-function parseSteps(stepsJson: string | null) {
-  if (!stepsJson) return [];
-
-  try {
-    return JSON.parse(stepsJson) as PatternStep[];
-  } catch {
-    return [];
-  }
-}
 
 function formatCompletedDate(
   date: Date | null,
