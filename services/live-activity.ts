@@ -1,4 +1,4 @@
-import { after, type LiveActivity } from 'expo-widgets';
+import { type LiveActivity } from 'expo-widgets';
 import ProjectActivity, { type ProjectActivityProps } from '@/widgets/ProjectActivity';
 
 let currentInstance: LiveActivity<ProjectActivityProps> | null = null;
@@ -32,11 +32,7 @@ export async function endProjectActivity(props?: ProjectActivityProps) {
   currentInstance = null;
   try {
     console.log('[LiveActivity] Ending...');
-    await instance.end(
-      after(new Date(Date.now() + 15 * 60 * 1000)),
-      props,
-      new Date(),
-    );
+    await instance.end('default', props);
     console.log('[LiveActivity] Ended successfully');
   } catch (e) {
     console.warn('[LiveActivity] End failed:', e);

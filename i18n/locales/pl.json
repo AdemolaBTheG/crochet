@@ -426,6 +426,37 @@
       "featureThree": "Postępuj zgodnie z wzorami krok po kroku",
       "cta": "Rozpocznij bezpłatny okres próbny",
       "footer": "Bez zobowiązań. Anuluj w dowolnym momencie przed końcem okresu próbnego."
+    },
+    "dailyGoal": {
+      "stepOf": "Krok {{current}} z {{total}}",
+      "title": "Co wydaje się realistyczne na codzienną sesję szydełkowania?",
+      "subtitle": "Wybierz tempo, które możesz powtarzać. Crova lepiej buduje się wokół lekkiego nawyku niż ambitnego planu, którego nigdy nie otwierasz.",
+      "eyebrow": "Dzienny cel szydełkowania",
+      "minutesSuffix": "min / dzień",
+      "helper": "Będziemy dążyć do około {{minutes}} minut szydełkowania w normalny dzień.",
+      "minLabel": "5 min",
+      "maxLabel": "60 min",
+      "cta": "Dalej"
+    },
+    "yearlyGoal": {
+      "stepOf": "Krok {{current}} z {{total}}",
+      "title": "Ile ukończonych projektów chcesz w tym roku?",
+      "subtitle": "Ustal cel, który motywuje, a nie przesadza. To ma kształtować tempo twojego planu.",
+      "eyebrow": "Roczny cel projektów",
+      "selectedValue": "{{count}} ukończonych projektów",
+      "optionLabel": "{{count}} projektów",
+      "helperMonthly": "Dwanaście projektów oznacza mniej więcej jedno ukończone dzieło miesięcznie.",
+      "helperSteady": "{{count}} projektów to stałe tempo z miejscem na wolniejsze okresy.",
+      "helperAmbitious": "{{count}} projektów to ambitnie. Crova będzie kierować w stronę mniejszych sukcesów i regularnych postępów.",
+      "cta": "Zobacz mój plan"
     }
+  },
+  "goals": {
+    "dailyCraftingGoal": "Dzienny cel szydełkowania",
+    "dailyProgressTime": "{{completed}} min z {{target}} min",
+    "yearlyProjectGoal": "Cel projektów {{year}}",
+    "yearlyProgress_one": "1 z {{target}} projektu",
+    "yearlyProgress_other": "{{completed}} z {{target}} projektów",
+    "remainingHint": "Jeszcze {{remaining}} do zrobienia – około {{pace}} miesięcznie."
   }
 }

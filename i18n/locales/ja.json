@@ -426,6 +426,37 @@
       "featureThree": "ガイド付きパターンをステップバイステップで",
       "cta": "無料トライアルを開始",
       "footer": "契約の拘束なし。トライアル終了前であればいつでもキャンセルできます。"
+    },
+    "dailyGoal": {
+      "stepOf": "ステップ {{current}} / {{total}}",
+      "title": "毎日のかぎ針編みの時間として、現実的なのはどのくらいですか？",
+      "subtitle": "続けられるペースを選んでください。Crovaは開かない壮大な計画より、軽い習慣に合うよう作られています。",
+      "eyebrow": "毎日の編み物目標",
+      "minutesSuffix": "分 / 日",
+      "helper": "通常の日で約{{minutes}}分のかぎ針編みを目指します。",
+      "minLabel": "5分",
+      "maxLabel": "60分",
+      "cta": "次へ"
+    },
+    "yearlyGoal": {
+      "stepOf": "ステップ {{current}} / {{total}}",
+      "title": "今年はいくつの作品を完成させたいですか？",
+      "subtitle": "やる気が出る目標を設定してください。大げさではなく、計画のペースを形作るためのものです。",
+      "eyebrow": "年間プロジェクト目標",
+      "selectedValue": "{{count}}個の完成作品",
+      "optionLabel": "{{count}}作品",
+      "helperMonthly": "12作品は、毎月約1点の完成を意味します。",
+      "helperSteady": "{{count}}作品は安定したペースで、ゆっくりな時期にも対応できます。",
+      "helperAmbitious": "{{count}}作品は野心的です。Crovaは小さな成功と着実な進歩を重視します。",
+      "cta": "プランを見る"
     }
+  },
+  "goals": {
+    "dailyCraftingGoal": "毎日の編み物目標",
+    "dailyProgressTime": "{{target}}分のうち{{completed}}分",
+    "yearlyProjectGoal": "{{year}}年のプロジェクト目標",
+    "yearlyProgress_one": "{{target}}作品中 1作品完了",
+    "yearlyProgress_other": "{{target}}作品中 {{completed}}作品完了",
+    "remainingHint": "残り{{remaining}}作品 – 月約{{pace}}作品のペースです。"
   }
 }

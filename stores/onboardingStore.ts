@@ -15,10 +15,14 @@ interface OnboardingState {
   skillLevel: SkillLevel;
   goal: Goal;
   handedness: Handedness;
+  dailyGoalMinutes: number | null;
+  yearlyProjectGoal: number | null;
   setOnboardingCompleted: (completed: boolean) => void;
   setSkillLevel: (value: SkillLevel) => void;
   setGoal: (value: Goal) => void;
   setHandedness: (value: Handedness) => void;
+  setDailyGoalMinutes: (value: number | null) => void;
+  setYearlyProjectGoal: (value: number | null) => void;
   resetOnboarding: () => void;
 }
 
@@ -27,6 +31,8 @@ const initialState = {
   skillLevel: null as SkillLevel,
   goal: null as Goal,
   handedness: null as Handedness,
+  dailyGoalMinutes: null as number | null,
+  yearlyProjectGoal: null as number | null,
 };
 
 export const useOnboardingStore = create<OnboardingState>()(
@@ -38,6 +44,8 @@ export const useOnboardingStore = create<OnboardingState>()(
       setSkillLevel: (value) => set({ skillLevel: value }),
       setGoal: (value) => set({ goal: value }),
       setHandedness: (value) => set({ handedness: value }),
+      setDailyGoalMinutes: (value) => set({ dailyGoalMinutes: value }),
+      setYearlyProjectGoal: (value) => set({ yearlyProjectGoal: value }),
       resetOnboarding: () => set(initialState),
     }),
     {

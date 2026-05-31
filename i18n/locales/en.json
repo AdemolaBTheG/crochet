@@ -310,6 +310,29 @@
         }
       }
     },
+    "dailyGoal": {
+      "stepOf": "Step {{current}} of {{total}}",
+      "title": "What feels realistic for a daily crochet session?",
+      "subtitle": "Pick a pace you can repeat. Crova can build around a light habit better than an ambitious plan you never open.",
+      "eyebrow": "Daily crafting goal",
+      "minutesSuffix": "min / day",
+      "helper": "We will aim for about {{minutes}} minutes of crochet time on a normal day.",
+      "minLabel": "5 min",
+      "maxLabel": "60 min",
+      "cta": "Next"
+    },
+    "yearlyGoal": {
+      "stepOf": "Step {{current}} of {{total}}",
+      "title": "How many finished projects do you want this year?",
+      "subtitle": "Set a target that feels motivating, not theatrical. This is here to shape the pace of your plan.",
+      "eyebrow": "Yearly project goal",
+      "selectedValue": "{{count}} finished projects",
+      "optionLabel": "{{count}} projects",
+      "helperMonthly": "Twelve projects means roughly one finished piece each month.",
+      "helperSteady": "{{count}} projects is a steady pace that still leaves room for slower seasons.",
+      "helperAmbitious": "{{count}} projects is ambitious. Crova will bias toward smaller wins and more consistent progress.",
+      "cta": "See my plan"
+    },
     "loader": {
       "titlePreparing": "Preparing your experience",
       "titleReady": "You are all set.",
@@ -322,12 +345,20 @@
       "summaryLabels": {
         "skillLevel": "Experience",
         "goal": "Focus",
-        "handedness": "Handedness"
+        "handedness": "Handedness",
+        "dailyGoal": "Daily goal",
+        "yearlyGoal": "Yearly goal"
       },
       "summaryFallbacks": {
         "skillLevel": "Personalized",
         "goal": "Your crochet path",
-        "handedness": "Standard setup"
+        "handedness": "Standard setup",
+        "dailyGoal": "A manageable daily pace",
+        "yearlyGoal": "A realistic project target"
+      },
+      "summaryValues": {
+        "dailyGoal": "{{minutes}} min per day",
+        "yearlyGoal": "{{count}} projects this year"
       },
       "nextTitle": "What happens next",
       "goalLabels": {
@@ -361,7 +392,9 @@
           "buildHabit": "Your plan will favor lighter sessions that are easier to repeat consistently.",
           "default": "Your plan will focus on the outcome that matters most to you."
         },
-        "tracking": "Row tracking and progress tools will be ready from day one."
+        "tracking": "Row tracking and progress tools will be ready from day one.",
+        "dailyGoal": "Your plan will push for about {{minutes}} minutes of crochet on a normal day.",
+        "yearlyGoal": "Your plan will pace you toward about {{count}} finished projects over the year."
       }
     },
     "demo": {
@@ -427,5 +460,13 @@
       "cta": "Start free trial",
       "footer": "No commitment. Cancel anytime before the trial ends."
     }
+  },
+  "goals": {
+    "dailyCraftingGoal": "Daily Crafting Goal",
+    "dailyProgressTime": "{{completed}}m of {{target}}m",
+    "yearlyProjectGoal": "{{year}} Project Goal",
+    "yearlyProgress_one": "1 of {{target}} project",
+    "yearlyProgress_other": "{{completed}} of {{target}} projects",
+    "remainingHint": "{{remaining}} more to go - about {{pace}} per month."
   }
 }

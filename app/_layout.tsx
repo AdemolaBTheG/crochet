@@ -1,3 +1,4 @@
+import { Colors } from '@/constants/Theme';
 import { SubscriptionProvider } from '@/context/SubscriptionContext';
 import { useAppInitialization } from '@/hooks/useAppInitialization';
 import { useSubscriptionStatus } from '@/hooks/useSubscriptionStatus';
@@ -6,6 +7,7 @@ import { initializeHaptics } from '@/services/haptics';
 import { queryPersister } from '@/utils/query-persister';
 import { QueryClient } from '@tanstack/react-query';
 import { PersistQueryClientProvider } from '@tanstack/react-query-persist-client';
+import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
@@ -64,6 +66,20 @@ export default function RootLayout() {
               <Stack.Screen name="(projects)" options={{ headerShown: false }} />
               <Stack.Screen name="(tools)" options={{ headerShown: false }} />
               <Stack.Screen name="(lessons)" options={{ headerShown: false }} />
+              <Stack.Screen
+                name="goal"
+                options={{
+                  headerShown: true,
+                  headerTitle: 'Your Goals',
+                  headerTransparent: true,
+                  contentStyle: { backgroundColor: Colors.background },
+                  headerStyle: {
+                    backgroundColor: isLiquidGlassAvailable() ? 'transparent' : Colors.background,
+                  },
+                  presentation: 'modal',
+                }}
+              />
+
               <Stack.Screen
                 name="(paywalls)"
                 options={{ headerShown: false, presentation: 'fullScreenModal' }}

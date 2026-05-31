@@ -426,6 +426,37 @@
       "featureThree": "Suivez des modèles guidés étape par étape",
       "cta": "Commencer l'essai gratuit",
       "footer": "Sans engagement. Annulez à tout moment avant la fin de l'essai."
+    },
+    "dailyGoal": {
+      "stepOf": "Étape {{current}} sur {{total}}",
+      "title": "Qu'est-ce qui te semble réaliste pour une session quotidienne de crochet ?",
+      "subtitle": "Choisis un rythme que tu peux répéter. Crova peut mieux s'appuyer sur une petite habitude que sur un plan ambitieux que tu n'ouvres jamais.",
+      "eyebrow": "Objectif quotidien de crochet",
+      "minutesSuffix": "min / jour",
+      "helper": "Nous viserons environ {{minutes}} minutes de crochet lors d'une journée normale.",
+      "minLabel": "5 min",
+      "maxLabel": "60 min",
+      "cta": "Suivant"
+    },
+    "yearlyGoal": {
+      "stepOf": "Étape {{current}} sur {{total}}",
+      "title": "Combien de projets terminés veux-tu cette année ?",
+      "subtitle": "Fixe un objectif motivant, pas excessif. Cela sert à rythmer ton plan.",
+      "eyebrow": "Objectif annuel de projets",
+      "selectedValue": "{{count}} projets terminés",
+      "optionLabel": "{{count}} projets",
+      "helperMonthly": "Douze projets, c'est environ une pièce terminée chaque mois.",
+      "helperSteady": "{{count}} projets, c'est un rythme régulier qui laisse de la place pour les périodes plus calmes.",
+      "helperAmbitious": "{{count}} projets, c'est ambitieux. Crova misera sur de petites victoires et des progrès constants.",
+      "cta": "Voir mon plan"
     }
+  },
+  "goals": {
+    "dailyCraftingGoal": "Objectif quotidien de crochet",
+    "dailyProgressTime": "{{completed}} min sur {{target}} min",
+    "yearlyProjectGoal": "Objectif de projets {{year}}",
+    "yearlyProgress_one": "1 sur {{target}} projet",
+    "yearlyProgress_other": "{{completed}} sur {{target}} projets",
+    "remainingHint": "Encore {{remaining}} à faire – environ {{pace}} par mois."
   }
 }

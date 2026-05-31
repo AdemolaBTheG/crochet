@@ -187,6 +187,25 @@ export const projects = sqliteTable(
   ]
 );
 
+export const craftSessions = sqliteTable(
+  "craft_sessions",
+  {
+    id: integer("id").primaryKey({ autoIncrement: true }),
+    projectId: integer("project_id").references(() => projects.id, { onDelete: "set null" }),
+    source: text("source").notNull().default("project"),
+    startedAt: integer("started_at", { mode: "timestamp_ms" })
+      .notNull()
+      .default(now),
+    endedAt: integer("ended_at", { mode: "timestamp_ms" }),
+    durationSeconds: integer("duration_seconds").notNull().default(0),
+  },
+  (table) => [
+    index("craft_sessions_project_id_idx").on(table.projectId),
+    index("craft_sessions_started_at_idx").on(table.startedAt),
+    index("craft_sessions_ended_at_idx").on(table.endedAt),
+  ]
+);
+
 export type UserProfile = InferSelectModel<typeof userProfile>;
 export type NewUserProfile = InferInsertModel<typeof userProfile>;
 
@@ -204,3 +223,6 @@ export type NewPatternTranslation = InferInsertModel<typeof patternTranslations>
 
 export type Project = InferSelectModel<typeof projects>;
 export type NewProject = InferInsertModel<typeof projects>;
+
+export type CraftSession = InferSelectModel<typeof craftSessions>;
+export type NewCraftSession = InferInsertModel<typeof craftSessions>;

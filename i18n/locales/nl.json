@@ -426,6 +426,37 @@
       "featureThree": "Volg begeleide patronen stap voor stap",
       "cta": "Start gratis proefperiode",
       "footer": "Geen verplichting. Annuleer op elk moment voordat de proefperiode eindigt."
+    },
+    "dailyGoal": {
+      "stepOf": "Stap {{current}} van {{total}}",
+      "title": "Wat voelt realistisch voor een dagelijkse haaksessie?",
+      "subtitle": "Kies een tempo dat je kunt herhalen. Crova bouwt beter rond een lichte gewoonte dan rond een ambitieus plan dat je nooit opent.",
+      "eyebrow": "Dagelijks haakdoel",
+      "minutesSuffix": "min / dag",
+      "helper": "We streven naar ongeveer {{minutes}} minuten haaktijd op een normale dag.",
+      "minLabel": "5 min",
+      "maxLabel": "60 min",
+      "cta": "Volgende"
+    },
+    "yearlyGoal": {
+      "stepOf": "Stap {{current}} van {{total}}",
+      "title": "Hoeveel voltooide projecten wil je dit jaar?",
+      "subtitle": "Stel een doel dat motiverend voelt, niet overdreven. Dit geeft vorm aan het tempo van je plan.",
+      "eyebrow": "Jaarlijks projectdoel",
+      "selectedValue": "{{count}} voltooide projecten",
+      "optionLabel": "{{count}} projecten",
+      "helperMonthly": "Twaalf projecten betekent ongeveer één voltooid stuk per maand.",
+      "helperSteady": "{{count}} projecten is een gestaag tempo dat ruimte laat voor rustigere periodes.",
+      "helperAmbitious": "{{count}} projecten is ambitieus. Crova richt zich op kleinere overwinningen en consistentere vooruitgang.",
+      "cta": "Bekijk mijn plan"
     }
+  },
+  "goals": {
+    "dailyCraftingGoal": "Dagelijks haakdoel",
+    "dailyProgressTime": "{{completed}} min van {{target}} min",
+    "yearlyProjectGoal": "{{year}} projectdoel",
+    "yearlyProgress_one": "1 van {{target}} project",
+    "yearlyProgress_other": "{{completed}} van {{target}} projecten",
+    "remainingHint": "Nog {{remaining}} te gaan – ongeveer {{pace}} per maand."
   }
 }

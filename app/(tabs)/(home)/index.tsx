@@ -1,3 +1,4 @@
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
 import { theme } from '@/constants/Theme';
 import { isPatternFree } from '@/constants/gates';
 import { getPatternImageSource } from '@/constants/pattern-images';
@@ -6,20 +7,14 @@ import { projects as projectsTable, type Project } from '@/db/schema';
 import { usePatterns } from '@/hooks/use-patterns';
 import { tap, warn } from '@/services/haptics';
 import { useDbStore } from '@/stores/dbStore';
+import type { NativeStackHeaderItem } from '@react-navigation/native-stack';
 import { FlashList } from '@shopify/flash-list';
 import { desc, eq } from 'drizzle-orm';
 import { Image } from 'expo-image';
-import { Link, router, useFocusEffect } from 'expo-router';
-import React, { useCallback, useState } from 'react';
+import { Link, router, Stack, useFocusEffect } from 'expo-router';
+import { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import {
-  FlatList,
-  Pressable,
-  Text,
-  useWindowDimensions,
-  View,
-} from 'react-native';
-import LoadingShimmer from '@/components/shimmer/loading-shimmer';
+import { FlatList, Platform, Pressable, Text, useWindowDimensions, View } from 'react-native';
 
 type ActiveProject = Project & {
   patternSlug: string | null;
@@ -74,6 +69,39 @@ function getCounterSummary(
 
 function formatCategory(category: string) {
   return category.charAt(0).toUpperCase() + category.slice(1);
+}
+
+function getDayKey(date: Date) {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
+}
+
+function getProjectStreak(projects: Project[]) {
+  if (projects.length === 0) return 0;
+
+  const uniqueDayKeys = Array.from(
+    new Set(projects.map((project) => getDayKey(project.updatedAt))),
+  ).sort((a, b) => b - a);
+
+  if (uniqueDayKeys.length === 0) return 0;
+
+  const todayKey = getDayKey(new Date());
+  const yesterdayKey = todayKey - 86_400_000;
+
+  if (uniqueDayKeys[0] !== todayKey && uniqueDayKeys[0] !== yesterdayKey) {
+    return 0;
+  }
+
+  let streak = 1;
+  for (let index = 1; index < uniqueDayKeys.length; index += 1) {
+    const expectedNextDay = uniqueDayKeys[index - 1] - 86_400_000;
+    if (uniqueDayKeys[index] !== expectedNextDay) {
+      break;
+    }
+
+    streak += 1;
+  }
+
+  return streak;
 }
 
 function ActiveProjectCard({ project, width }: { project: ActiveProject; width: number }) {
@@ -311,6 +339,7 @@ export default function HomeScreen() {
   const { width } = useWindowDimensions();
   const { data: patterns = [], isLoading: isPatternsLoading } = usePatterns(i18n.language);
   const [activeProjects, setActiveProjects] = useState<ActiveProject[]>([]);
+  const [streakCount, setStreakCount] = useState(0);
   const [isLoadingProjects, setIsLoadingProjects] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<CategoryFilter>('all');
   const isLoading = isPatternsLoading || isLoadingProjects;
@@ -340,6 +369,10 @@ export default function HomeScreen() {
             .where(eq(projectsTable.status, 'active'))
             .orderBy(desc(projectsTable.updatedAt))
             .limit(8);
+          const allRows = await db
+            .select()
+            .from(projectsTable)
+            .orderBy(desc(projectsTable.updatedAt));
 
           if (isMounted) {
             setActiveProjects(
@@ -354,6 +387,7 @@ export default function HomeScreen() {
                 stepsJson: row.stepsJson ?? null,
               })),
             );
+            setStreakCount(getProjectStreak(allRows));
           }
         } finally {
           if (isMounted) {
@@ -371,123 +405,166 @@ export default function HomeScreen() {
   );
 
   return (
-    <FlashList
-      style={{ backgroundColor: theme.colors.background }}
-      contentInsetAdjustmentBehavior="automatic"
-      data={filteredPatterns}
-      numColumns={2}
-      keyExtractor={(item) => item.slug}
-      contentContainerStyle={{
-        paddingHorizontal: horizontalPadding,
-        paddingTop: 16,
-        paddingBottom: 32,
-        backgroundColor: theme.colors.background,
-      }}
-      ListHeaderComponent={
-        <>
-          <ActiveProjectsRail
-            projects={activeProjects}
-            cardWidth={activeProjectCardWidth}
-            horizontalInset={horizontalPadding}
-          />
-          <CategoryChips
-            categories={categories}
-            selectedCategory={selectedCategory}
-            onSelectCategory={setSelectedCategory}
-            horizontalInset={horizontalPadding}
-          />
-        </>
-      }
-      ItemSeparatorComponent={() => <View style={{ height: gridGap }} />}
-      ListEmptyComponent={
-        isLoading ? (
-          <LoadingShimmer />
-        ) : null
-      }
-      renderItem={({ item, index }) => {
-        const source = getPatternImageSource(item.coverImageKey);
-        const isLeftColumn = index % 2 === 0;
-        const isLocked = !isPro && !isPatternFree(item);
-        const card = (
-          <Pressable
-            onPress={() => {
-              if (isLocked) {
-                warn();
-                router.push('/(paywalls)');
-                return;
-              }
+    <>
+      <Stack.Screen
+        options={{
+          ...(Platform.OS === 'ios'
+            ? {
+                unstable_headerRightItems: () => {
+                  const items: NativeStackHeaderItem[] = [
+                    {
+                      type: 'button' as const,
+                      label: streakCount > 0 ? `${streakCount} day streak` : 'Streak',
+                      icon: { type: 'sfSymbol' as const, name: 'flame.fill' as const },
+                      badge:
+                        streakCount > 0
+                          ? {
+                              value: streakCount,
+                              style: {
+                                color: theme.colors.white,
+                                backgroundColor: theme.colors.primary,
+                                fontWeight: '700' as const,
+                              },
+                            }
+                          : undefined,
+                      tintColor: theme.colors.primary,
 
-              tap();
-            }}
-            style={{
-              borderRadius: 24,
-              borderCurve: 'continuous',
-              overflow: 'hidden',
-              backgroundColor: theme.colors.muted,
-            }}
-            accessibilityRole="button"
-            accessibilityLabel={`${isLocked ? 'Unlock' : 'Open'} ${item.title} pattern`}>
-            {isLocked ? (
-              <Image
-                source={source}
-                contentFit="cover"
-                style={{ width: '100%', aspectRatio: 4 / 5, opacity: 0.72 }}
-              />
-            ) : (
-              <Link.AppleZoom>
+                      hidesSharedBackground: false,
+                      onPress: () => router.push('/goal'),
+                    },
+                  ];
+
+                  if (!isPro) {
+                    items.push({
+                      type: 'button' as const,
+                      variant: 'prominent',
+                      label: 'Pro',
+                      icon: { type: 'sfSymbol' as const, name: 'crown.fill' as const },
+                      tintColor: theme.colors.primary,
+                      onPress: () => router.push('/(paywalls)'),
+                    });
+                  }
+
+                  return items;
+                },
+              }
+            : {}),
+        }}
+      />
+      <FlashList
+        style={{ backgroundColor: theme.colors.background }}
+        contentInsetAdjustmentBehavior="automatic"
+        data={filteredPatterns}
+        numColumns={2}
+        keyExtractor={(item) => item.slug}
+        contentContainerStyle={{
+          paddingHorizontal: horizontalPadding,
+          paddingTop: 16,
+          paddingBottom: 32,
+          backgroundColor: theme.colors.background,
+        }}
+        ListHeaderComponent={
+          <>
+            <ActiveProjectsRail
+              projects={activeProjects}
+              cardWidth={activeProjectCardWidth}
+              horizontalInset={horizontalPadding}
+            />
+            <CategoryChips
+              categories={categories}
+              selectedCategory={selectedCategory}
+              onSelectCategory={setSelectedCategory}
+              horizontalInset={horizontalPadding}
+            />
+          </>
+        }
+        ItemSeparatorComponent={() => <View style={{ height: gridGap }} />}
+        ListEmptyComponent={isLoading ? <LoadingShimmer /> : null}
+        renderItem={({ item, index }) => {
+          const source = getPatternImageSource(item.coverImageKey);
+          const isLeftColumn = index % 2 === 0;
+          const isLocked = !isPro && !isPatternFree(item);
+          const card = (
+            <Pressable
+              onPress={() => {
+                if (isLocked) {
+                  warn();
+                  router.push('/(paywalls)');
+                  return;
+                }
+
+                tap();
+              }}
+              style={{
+                borderRadius: 24,
+                borderCurve: 'continuous',
+                overflow: 'hidden',
+                backgroundColor: theme.colors.muted,
+              }}
+              accessibilityRole="button"
+              accessibilityLabel={`${isLocked ? 'Unlock' : 'Open'} ${item.title} pattern`}>
+              {isLocked ? (
                 <Image
                   source={source}
                   contentFit="cover"
-                  style={{ width: '100%', aspectRatio: 4 / 5 }}
+                  style={{ width: '100%', aspectRatio: 4 / 5, opacity: 0.72 }}
                 />
-              </Link.AppleZoom>
-            )}
-            {isLocked ? (
-              <View
-                style={{
-                  position: 'absolute',
-                  right: theme.spacing.sm,
-                  top: theme.spacing.sm,
-                  paddingVertical: theme.spacing.xs,
-                  paddingHorizontal: theme.spacing.sm,
-                  borderRadius: theme.radius.pill,
-                  backgroundColor: 'rgba(255, 255, 255, 0.86)',
-                }}>
-                <Text
-                  selectable
+              ) : (
+                <Link.AppleZoom>
+                  <Image
+                    source={source}
+                    contentFit="cover"
+                    style={{ width: '100%', aspectRatio: 4 / 5 }}
+                  />
+                </Link.AppleZoom>
+              )}
+              {isLocked ? (
+                <View
                   style={{
-                    fontSize: theme.size.sm,
-                    fontWeight: theme.weight.bold,
-                    color: theme.colors.primary,
+                    position: 'absolute',
+                    right: theme.spacing.sm,
+                    top: theme.spacing.sm,
+                    paddingVertical: theme.spacing.xs,
+                    paddingHorizontal: theme.spacing.sm,
+                    borderRadius: theme.radius.pill,
+                    backgroundColor: 'rgba(255, 255, 255, 0.86)',
                   }}>
-                  Pro
-                </Text>
-              </View>
-            ) : null}
-          </Pressable>
-        );
+                  <Text
+                    selectable
+                    style={{
+                      fontSize: theme.size.sm,
+                      fontWeight: theme.weight.bold,
+                      color: theme.colors.primary,
+                    }}>
+                    Pro
+                  </Text>
+                </View>
+              ) : null}
+            </Pressable>
+          );
 
-        return (
-          <View
-            style={{
-              width: itemWidth,
-              marginRight: isLeftColumn ? gridGap : 0,
-            }}>
-            {isLocked ? (
-              card
-            ) : (
-              <Link
-                href={{
-                  pathname: '/(patterns)/[slug]',
-                  params: { slug: item.slug },
-                }}
-                asChild>
-                {card}
-              </Link>
-            )}
-          </View>
-        );
-      }}
-    />
+          return (
+            <View
+              style={{
+                width: itemWidth,
+                marginRight: isLeftColumn ? gridGap : 0,
+              }}>
+              {isLocked ? (
+                card
+              ) : (
+                <Link
+                  href={{
+                    pathname: '/(patterns)/[slug]',
+                    params: { slug: item.slug },
+                  }}
+                  asChild>
+                  {card}
+                </Link>
+              )}
+            </View>
+          );
+        }}
+      />
+    </>
   );
 }

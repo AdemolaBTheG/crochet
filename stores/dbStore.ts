@@ -39,6 +39,23 @@ function ensureProjectContentColumns(expoDb: ExpoDatabase) {
     }
 }
 
+function ensureCraftSessionsTable(expoDb: ExpoDatabase) {
+    expoDb.execSync(`
+        CREATE TABLE IF NOT EXISTS \`craft_sessions\` (
+            \`id\` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+            \`project_id\` integer,
+            \`source\` text DEFAULT 'project' NOT NULL,
+            \`started_at\` integer NOT NULL,
+            \`ended_at\` integer,
+            \`duration_seconds\` integer DEFAULT 0 NOT NULL,
+            FOREIGN KEY (\`project_id\`) REFERENCES \`projects\`(\`id\`) ON UPDATE no action ON DELETE set null
+        );
+    `);
+    expoDb.execSync("CREATE INDEX IF NOT EXISTS `craft_sessions_project_id_idx` ON `craft_sessions` (`project_id`);");
+    expoDb.execSync("CREATE INDEX IF NOT EXISTS `craft_sessions_started_at_idx` ON `craft_sessions` (`started_at`);");
+    expoDb.execSync("CREATE INDEX IF NOT EXISTS `craft_sessions_ended_at_idx` ON `craft_sessions` (`ended_at`);");
+}
+
 interface DatabaseState {
     expoDb: ExpoDatabase | null;
     db: ExpoSQLiteDatabase<typeof schema> | null;
@@ -83,6 +100,7 @@ export const useDbStore = create<DatabaseState>((set, get) => ({
             await migrate(db, migrations);
             ensurePatternContentColumns(expoDb);
             ensureProjectContentColumns(expoDb);
+            ensureCraftSessionsTable(expoDb);
             await seedDatabase(db);
 
             set({ expoDb, db, isLoading: false });
@@ -112,6 +130,8 @@ export const useDbStore = create<DatabaseState>((set, get) => ({
             const newDb = drizzle(newExpoDb, { schema });
             await migrate(newDb, migrations);
             ensurePatternContentColumns(newExpoDb);
+            ensureProjectContentColumns(newExpoDb);
+            ensureCraftSessionsTable(newExpoDb);
             await seedDatabase(newDb);
 
             set({ expoDb: newExpoDb, db: newDb });

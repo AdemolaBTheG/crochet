@@ -5,5 +5,11 @@ import { useTranslation } from 'react-i18next';
 export default function OnboardingIndex() {
   const { t } = useTranslation();
 
-  return <QuizScreenView steps={getOnboardingQuizSteps(t)} completeHref="/(onboarding)/loader" />;
+  return (
+    <QuizScreenView
+      steps={getOnboardingQuizSteps(t)}
+      completeHref="/(onboarding)/daily-goal"
+      markCompletedOnFinish={false}
+    />
+  );
 }

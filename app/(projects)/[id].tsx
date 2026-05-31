@@ -20,6 +20,7 @@ import {
 import { usePatternDetail } from '@/hooks/use-pattern-detail';
 import { cta, tap, warn } from '@/services/haptics';
 import LoadingShimmer from '@/components/shimmer/loading-shimmer';
+import { endCraftSession, startCraftSession } from '@/services/craft-sessions';
 import {
   endProjectActivity,
   startProjectActivity,
@@ -27,10 +28,11 @@ import {
 } from '@/services/live-activity';
 import { useDbStore } from '@/stores/dbStore';
 import { eq } from 'drizzle-orm';
-import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
+import { Stack, useFocusEffect, useLocalSearchParams, useRouter } from 'expo-router';
 import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
+  AppState,
   Platform,
   ScrollView,
   Text,
@@ -61,6 +63,7 @@ export default function ProjectDetailScreen() {
   const stepListRef = useRef<FlatList<PatternStep>>(null);
   const hasPositionedStepListRef = useRef(false);
   const isProgrammaticStepScrollRef = useRef(false);
+  const activeSessionIdRef = useRef<number | null>(null);
   const [project, setProject] = useState<Project | null>(null);
   const [patternSlug, setPatternSlug] = useState<string | null>(null);
   const [isLoadingProject, setIsLoadingProject] = useState(true);
@@ -128,6 +131,9 @@ export default function ProjectDetailScreen() {
   const liveProjectStepIndex = project?.currentStepIndex;
   const liveProjectRowCount = project?.rowCount;
   const liveProjectRoundCount = project?.roundCount;
+  const sessionProjectId = project?.id ?? null;
+  const canTrackCraftSession =
+    !!db && !isLoading && sessionProjectId !== null && liveProjectStatus === 'active';
 
   useEffect(() => {
     if (Platform.OS !== 'ios') return;
@@ -180,6 +186,48 @@ export default function ProjectDetailScreen() {
     steps.length,
     isLoading,
   ]);
+
+  const stopCraftSession = React.useCallback(async () => {
+    if (!db || activeSessionIdRef.current == null) return;
+
+    const sessionId = activeSessionIdRef.current;
+    activeSessionIdRef.current = null;
+    await endCraftSession(db, sessionId);
+  }, [db]);
+
+  const beginCraftSession = React.useCallback(
+    async (nextProjectId: number) => {
+      if (!db || activeSessionIdRef.current != null) return;
+
+      const sessionId = await startCraftSession(db, nextProjectId);
+      activeSessionIdRef.current = sessionId;
+    },
+    [db],
+  );
+
+  useFocusEffect(
+    React.useCallback(() => {
+      if (!canTrackCraftSession || sessionProjectId == null) {
+        return undefined;
+      }
+
+      void beginCraftSession(sessionProjectId);
+
+      const subscription = AppState.addEventListener('change', (nextState) => {
+        if (nextState === 'active') {
+          void beginCraftSession(sessionProjectId);
+          return;
+        }
+
+        void stopCraftSession();
+      });
+
+      return () => {
+        subscription.remove();
+        void stopCraftSession();
+      };
+    }, [beginCraftSession, canTrackCraftSession, sessionProjectId, stopCraftSession]),
+  );
 
   const currentStep = steps[currentStepIndex] ?? null;
   const progress = steps.length > 0 ? (currentStepIndex + 1) / steps.length : 0;
@@ -312,6 +360,8 @@ export default function ProjectDetailScreen() {
 
   async function finishProject() {
     if (!project) return;
+
+    await stopCraftSession();
 
     await endProjectActivity({
       projectName: project.name,

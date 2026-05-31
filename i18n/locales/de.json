@@ -426,6 +426,37 @@
       "featureThree": "Folge geführten Mustern Schritt für Schritt",
       "cta": "Kostenlose Testphase starten",
       "footer": "Keine Verpflichtung. Jederzeit vor Ende der Testphase kündbar."
+    },
+    "dailyGoal": {
+      "stepOf": "Schritt {{current}} von {{total}}",
+      "title": "Wie viel Zeit fühlt sich realistisch für eine tägliche Häkelsession an?",
+      "subtitle": "Wähle ein Tempo, das du wiederholen kannst. Crova lässt sich besser um eine leichte Routine aufbauen als um einen ehrgeizigen Plan, den du nie öffnest.",
+      "eyebrow": "Tägliches Häkelziel",
+      "minutesSuffix": "Min. / Tag",
+      "helper": "Wir streben etwa {{minutes}} Minuten Häkelzeit an einem normalen Tag an.",
+      "minLabel": "5 Min.",
+      "maxLabel": "60 Min.",
+      "cta": "Weiter"
+    },
+    "yearlyGoal": {
+      "stepOf": "Schritt {{current}} von {{total}}",
+      "title": "Wie viele fertige Projekte möchtest du dieses Jahr schaffen?",
+      "subtitle": "Setze ein Ziel, das motivierend ist, nicht übertrieben. Das hilft, das Tempo deines Plans zu formen.",
+      "eyebrow": "Jahres-Projektziel",
+      "selectedValue": "{{count}} fertige Projekte",
+      "optionLabel": "{{count}} Projekte",
+      "helperMonthly": "Zwölf Projekte bedeuten ungefähr ein fertiges Stück pro Monat.",
+      "helperSteady": "{{count}} Projekte sind ein gleichmäßiges Tempo mit Raum für langsamere Phasen.",
+      "helperAmbitious": "{{count}} Projekte sind ambitioniert. Crova setzt auf kleinere Erfolge und stetigen Fortschritt.",
+      "cta": "Meinen Plan ansehen"
     }
+  },
+  "goals": {
+    "dailyCraftingGoal": "Tägliches Häkelziel",
+    "dailyProgressTime": "{{completed}} Min. von {{target}} Min.",
+    "yearlyProjectGoal": "{{year}} Projekt-Ziel",
+    "yearlyProgress_one": "1 von {{target}} Projekt",
+    "yearlyProgress_other": "{{completed}} von {{target}} Projekten",
+    "remainingHint": "Noch {{remaining}} vor dir – etwa {{pace}} pro Monat."
   }
 }

@@ -426,6 +426,37 @@
       "featureThree": "Siga padrões guiados passo a passo",
       "cta": "Começar teste grátis",
       "footer": "Sem compromisso. Cancele a qualquer momento antes do fim do teste."
+    },
+    "dailyGoal": {
+      "stepOf": "Etapa {{current}} de {{total}}",
+      "title": "O que parece realista para uma sessão diária de crochê?",
+      "subtitle": "Escolha um ritmo que você possa repetir. O Crova se adapta melhor a um hábito leve do que a um plano ambicioso que você nunca abre.",
+      "eyebrow": "Meta diária de crochê",
+      "minutesSuffix": "min / dia",
+      "helper": "Vamos buscar cerca de {{minutes}} minutos de crochê em um dia normal.",
+      "minLabel": "5 min",
+      "maxLabel": "60 min",
+      "cta": "Próximo"
+    },
+    "yearlyGoal": {
+      "stepOf": "Etapa {{current}} de {{total}}",
+      "title": "Quantos projetos concluídos você quer este ano?",
+      "subtitle": "Defina uma meta motivadora, não exagerada. Isso serve para moldar o ritmo do seu plano.",
+      "eyebrow": "Meta anual de projetos",
+      "selectedValue": "{{count}} projetos concluídos",
+      "optionLabel": "{{count}} projetos",
+      "helperMonthly": "Doze projetos significam aproximadamente uma peça pronta por mês.",
+      "helperSteady": "{{count}} projetos é um ritmo constante que ainda deixa espaço para épocas mais lentas.",
+      "helperAmbitious": "{{count}} projetos é ambicioso. O Crova vai favorecer pequenas vitórias e progresso consistente.",
+      "cta": "Ver meu plano"
     }
+  },
+  "goals": {
+    "dailyCraftingGoal": "Meta diária de crochê",
+    "dailyProgressTime": "{{completed}} min de {{target}} min",
+    "yearlyProjectGoal": "Meta de projetos de {{year}}",
+    "yearlyProgress_one": "1 de {{target}} projeto",
+    "yearlyProgress_other": "{{completed}} de {{target}} projetos",
+    "remainingHint": "Faltam {{remaining}} – cerca de {{pace}} por mês."
   }
 }

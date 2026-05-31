@@ -2,7 +2,7 @@
   "expo": {
     "name": "Crochet",
     "slug": "Crochet",
-    "version": "1.4",
+    "version": "1.5",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "crochet",
@@ -113,7 +113,7 @@
         "expo-build-properties",
         {
           "ios": {
-            "deploymentTarget": "16.2",
+            "deploymentTarget": "16.4",
             "useFrameworks": "static",
             "buildReactNativeFromSource": true
           }

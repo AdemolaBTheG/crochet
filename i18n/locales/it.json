@@ -426,6 +426,37 @@
       "featureThree": "Segui modelli guidati passo dopo passo",
       "cta": "Inizia la prova gratuita",
       "footer": "Nessun impegno. Annulla in qualsiasi momento prima della fine della prova."
+    },
+    "dailyGoal": {
+      "stepOf": "Passo {{current}} di {{total}}",
+      "title": "Cosa ti sembra realistico per una sessione quotidiana di uncinetto?",
+      "subtitle": "Scegli un ritmo che puoi ripetere. Crova si costruisce meglio attorno a una piccola abitudine che a un piano ambizioso che non apri mai.",
+      "eyebrow": "Obiettivo quotidiano di uncinetto",
+      "minutesSuffix": "min / giorno",
+      "helper": "Punteremo a circa {{minutes}} minuti di uncinetto in una giornata normale.",
+      "minLabel": "5 min",
+      "maxLabel": "60 min",
+      "cta": "Avanti"
+    },
+    "yearlyGoal": {
+      "stepOf": "Passo {{current}} di {{total}}",
+      "title": "Quanti progetti completati vuoi quest'anno?",
+      "subtitle": "Stabilisci un obiettivo motivante, non esagerato. Serve a dare forma al ritmo del tuo piano.",
+      "eyebrow": "Obiettivo annuale di progetti",
+      "selectedValue": "{{count}} progetti completati",
+      "optionLabel": "{{count}} progetti",
+      "helperMonthly": "Dodici progetti significano circa un pezzo finito al mese.",
+      "helperSteady": "{{count}} progetti sono un ritmo costante che lascia spazio alle stagioni più lente.",
+      "helperAmbitious": "{{count}} progetti è ambizioso. Crova tenderà verso obiettivi più piccoli e progressi costanti.",
+      "cta": "Vedi il mio piano"
     }
+  },
+  "goals": {
+    "dailyCraftingGoal": "Obiettivo quotidiano di uncinetto",
+    "dailyProgressTime": "{{completed}} min di {{target}} min",
+    "yearlyProjectGoal": "Obiettivo progetti {{year}}",
+    "yearlyProgress_one": "1 di {{target}} progetto",
+    "yearlyProgress_other": "{{completed}} di {{target}} progetti",
+    "remainingHint": "Ancora {{remaining}} da fare – circa {{pace}} al mese."
   }
 }

@@ -28,6 +28,22 @@ type NextStep = {
   text: string;
 };
 
+function getDailyGoalLabel(minutes: number | null, t: (key: string, options?: Record<string, unknown>) => string) {
+  if (!minutes) {
+    return t('onboarding.loader.summaryFallbacks.dailyGoal');
+  }
+
+  return t('onboarding.loader.summaryValues.dailyGoal', { minutes });
+}
+
+function getYearlyGoalLabel(count: number | null, t: (key: string, options?: Record<string, unknown>) => string) {
+  if (!count) {
+    return t('onboarding.loader.summaryFallbacks.yearlyGoal');
+  }
+
+  return t('onboarding.loader.summaryValues.yearlyGoal', { count });
+}
+
 function SummaryIcon({ name }: { name: SymbolName }) {
   return (
     <View style={styles.summaryIconWrap}>
@@ -108,7 +124,7 @@ function getGoalStep(goal: Goal, t: (key: string) => string) {
 export default function Loader() {
   const insets = useSafeAreaInsets();
   const { t } = useTranslation();
-  const { goal, skillLevel, handedness } = useOnboardingStore();
+  const { goal, skillLevel, handedness, dailyGoalMinutes, yearlyProjectGoal } = useOnboardingStore();
 
   useEffect(() => {
     complete();
@@ -134,8 +150,20 @@ export default function Loader() {
         value: getHandednessLabel(handedness, t),
         icon: { ios: 'arrow.left.and.right.circle.fill', android: 'swap_horiz', web: 'swap_horiz' },
       },
+      {
+        id: 'dailyGoal',
+        label: t('onboarding.loader.summaryLabels.dailyGoal'),
+        value: getDailyGoalLabel(dailyGoalMinutes, t),
+        icon: { ios: 'clock.fill', android: 'schedule', web: 'schedule' },
+      },
+      {
+        id: 'yearlyGoal',
+        label: t('onboarding.loader.summaryLabels.yearlyGoal'),
+        value: getYearlyGoalLabel(yearlyProjectGoal, t),
+        icon: { ios: 'calendar', android: 'calendar_month', web: 'calendar_month' },
+      },
     ],
-    [goal, handedness, skillLevel, t],
+    [dailyGoalMinutes, goal, handedness, skillLevel, t, yearlyProjectGoal],
   );
 
   const nextSteps = useMemo<NextStep[]>(
@@ -152,8 +180,20 @@ export default function Loader() {
         id: 'tracking',
         text: t('onboarding.loader.nextSteps.tracking'),
       },
+      {
+        id: 'dailyGoal',
+        text: t('onboarding.loader.nextSteps.dailyGoal', {
+          minutes: dailyGoalMinutes ?? 15,
+        }),
+      },
+      {
+        id: 'yearlyGoal',
+        text: t('onboarding.loader.nextSteps.yearlyGoal', {
+          count: yearlyProjectGoal ?? 8,
+        }),
+      },
     ],
-    [goal, skillLevel, t],
+    [dailyGoalMinutes, goal, skillLevel, t, yearlyProjectGoal],
   );
 
   function handleContinue() {

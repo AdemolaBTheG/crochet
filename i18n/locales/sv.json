@@ -426,6 +426,37 @@
       "featureThree": "Följ guidade mönster steg för steg",
       "cta": "Starta gratis provperiod",
       "footer": "Inget åtagande. Avsluta när som helst innan provperioden tar slut."
+    },
+    "dailyGoal": {
+      "stepOf": "Steg {{current}} av {{total}}",
+      "title": "Vad känns realistiskt för en daglig virksession?",
+      "subtitle": "Välj en takt du kan upprepa. Crova bygger bättre runt en lätt vana än en ambitiös plan du aldrig öppnar.",
+      "eyebrow": "Dagligt virkmål",
+      "minutesSuffix": "min / dag",
+      "helper": "Vi siktar på ungefär {{minutes}} minuters virktid en vanlig dag.",
+      "minLabel": "5 min",
+      "maxLabel": "60 min",
+      "cta": "Nästa"
+    },
+    "yearlyGoal": {
+      "stepOf": "Steg {{current}} av {{total}}",
+      "title": "Hur många färdiga projekt vill du ha i år?",
+      "subtitle": "Sätt ett mål som känns motiverande, inte teatraliskt. Det är för att forma takten i din plan.",
+      "eyebrow": "Årligt projektmål",
+      "selectedValue": "{{count}} färdiga projekt",
+      "optionLabel": "{{count}} projekt",
+      "helperMonthly": "Tolv projekt betyder ungefär ett färdigt arbete per månad.",
+      "helperSteady": "{{count}} projekt är en stadig takt som lämnar utrymme för långsammare perioder.",
+      "helperAmbitious": "{{count}} projekt är ambitiöst. Crova kommer att fokusera på mindre vinster och jämnare framsteg.",
+      "cta": "Se min plan"
     }
+  },
+  "goals": {
+    "dailyCraftingGoal": "Dagligt virkmål",
+    "dailyProgressTime": "{{completed}} min av {{target}} min",
+    "yearlyProjectGoal": "{{year}} projektmål",
+    "yearlyProgress_one": "1 av {{target}} projekt",
+    "yearlyProgress_other": "{{completed}} av {{target}} projekt",
+    "remainingHint": "{{remaining}} kvar – ungefär {{pace}} per månad."
   }
 }

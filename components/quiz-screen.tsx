@@ -191,9 +191,11 @@ function getStoredValue(
 export default function QuizScreenView({
   steps,
   completeHref = '/(tabs)/(home)',
+  markCompletedOnFinish = true,
 }: {
   steps: QuizScreenConfig[];
   completeHref?: Href;
+  markCompletedOnFinish?: boolean;
 }) {
   const insets = useSafeAreaInsets();
   const {
@@ -258,7 +260,9 @@ export default function QuizScreenView({
     const isLastStep = stepIndex === steps.length - 1;
     if (isLastStep) {
       complete();
-      setOnboardingCompleted(true);
+      if (markCompletedOnFinish) {
+        setOnboardingCompleted(true);
+      }
       router.replace(completeHref);
       return;
     }
