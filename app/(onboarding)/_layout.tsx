@@ -16,6 +16,7 @@ export default function OnboardingLayout() {
       <Stack.Screen name="yearly-goal" options={{ headerShown: false }} />
       <Stack.Screen name="loader" options={{ headerShown: false }} />
       <Stack.Screen name="demo" options={{ headerShown: false }} />
+      <Stack.Screen name="rating" options={{ headerShown: false }} />
       <Stack.Screen name="trial-offer" options={{ headerShown: false }} />
     </Stack>
   );

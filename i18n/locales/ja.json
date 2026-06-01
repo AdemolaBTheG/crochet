@@ -419,7 +419,7 @@
       "note": "これは、Crova の最初のレッスンで使用するものと同じ、ガイド付きのステップバイステップのリズムです。"
     },
     "trialOffer": {
-      "title": "We want you to try Crova\nfor Free",
+      "title": "Crovaを\n無料で試してほしい",
       "subtitle": "ガイド付きレッスン、ステップトラッカー、プロジェクトパターンに無制限にアクセスできます。すべては、より速く学びたい編み物愛好家のために作られています。",
       "featureOne": "すべてのレッスンに無制限アクセス",
       "featureTwo": "すべての段、ステッチ、プロジェクトを追跡",
@@ -449,6 +449,18 @@
       "helperSteady": "{{count}}作品は安定したペースで、ゆっくりな時期にも対応できます。",
       "helperAmbitious": "{{count}}作品は野心的です。Crovaは小さな成功と着実な進歩を重視します。",
       "cta": "プランを見る"
+    },
+    "rating": {
+      "eyebrow": "もう一つ簡単な質問です",
+      "title": "Crovaの使い心地はいかがですか？",
+      "body": "オファーを見る前に、簡単な評価をお願いします。良かったらApp Storeでも評価してください。",
+      "helpText": "今はスキップして先に進むこともできます。",
+      "continue": "続ける",
+      "skipForNow": "今はスキップ",
+      "accessibility": {
+        "rateStars_one": "{{count}}つ星で評価",
+        "rateStars_other": "{{count}}つ星で評価"
+      }
     }
   },
   "goals": {
@@ -458,5 +470,66 @@
     "yearlyProgress_one": "{{target}}作品中 1作品完了",
     "yearlyProgress_other": "{{target}}作品中 {{completed}}作品完了",
     "remainingHint": "残り{{remaining}}作品 – 月約{{pace}}作品のペースです。"
+  },
+  "addPattern": {
+    "screenTitles": {
+      "add": "パターンを追加",
+      "processing": "下書きを作成中",
+      "review": "下書きを確認"
+    },
+    "sourceCards": {
+      "file": "ファイル",
+      "photo": "写真",
+      "website": "ウェブサイト",
+      "youtube": "YouTube"
+    },
+    "photoSource": {
+      "chooseSource": "写真のソースを選択",
+      "cancel": "キャンセル",
+      "takePicture": "写真を撮る",
+      "photoLibrary": "フォトライブラリ",
+      "permissionTitle": "写真へのアクセスが必要です",
+      "permissionMessage": "パターン画像をインポートするためにフォトライブラリへのアクセスを許可してください。",
+      "cameraPermissionTitle": "カメラへのアクセスが必要です",
+      "cameraPermissionMessage": "パターンの写真を撮るためにカメラへのアクセスを許可してください。"
+    },
+    "processing": {
+      "stages": {
+        "uploading": "ソースをアップロード中",
+        "reading": "パターンを読み取り中",
+        "building": "下書きを作成中",
+        "preparing": "レビューを準備中"
+      },
+      "subtitle": "説明を抽出し、明確な手順を構築し、保存前に確認できる下書きを準備しています。",
+      "headline_file": "ファイルをパターンの下書きに変換しています",
+      "headline_photo": "写真をパターンの下書きに変換しています",
+      "headline_website": "ウェブサイトをパターンの下書きに変換しています",
+      "headline_youtube": "動画リンクをパターンの下書きに変換しています",
+      "error": {
+        "title": "インポートに失敗しました",
+        "fallbackMessage": "下書きを作成できませんでした。",
+        "retry": "戻ってもう一度試す"
+      }
+    },
+    "review": {
+      "sectionTitles": {
+        "needsReview": "確認が必要",
+        "materials": "材料",
+        "skills": "スキル",
+        "steps": "手順"
+      },
+      "empty": {
+        "materials": "材料が抽出されませんでした。",
+        "skills": "スキルが抽出されませんでした。"
+      },
+      "step": {
+        "targetLabel": "目標"
+      },
+      "timeSuffix": "分",
+      "button": {
+        "saving": "プロジェクトを保存中...",
+        "save": "保存してプロジェクトを開く"
+      }
+    }
   }
 }

@@ -432,6 +432,14 @@ export default function HomeScreen() {
                       hidesSharedBackground: false,
                       onPress: () => router.push('/goal'),
                     },
+                    {
+                      type: 'button' as const,
+                      label: 'Add',
+                      icon: { type: 'sfSymbol' as const, name: 'plus' as const },
+                      tintColor: theme.colors.primary,
+                      onPress: () => router.push('/(add)'),
+                      variant: 'prominent',
+                    },
                   ];
 
                   if (!isPro) {

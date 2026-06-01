@@ -419,7 +419,7 @@
       "note": "Detta är samma guidade steg-för-steg-rytm som du kommer att använda i dina första Crova-lektioner."
     },
     "trialOffer": {
-      "title": "We want you to try Crova\nfor Free",
+      "title": "Vi vill att du provar Crova\ngratis",
       "subtitle": "Lås upp obegränsad tillgång till guidade lektioner, stegräknare och projektmönster — allt skapat för virkare som vill lära sig snabbare.",
       "featureOne": "Obegränsad tillgång till alla lektioner",
       "featureTwo": "Spåra varje varv, maska och projekt",
@@ -449,6 +449,18 @@
       "helperSteady": "{{count}} projekt är en stadig takt som lämnar utrymme för långsammare perioder.",
       "helperAmbitious": "{{count}} projekt är ambitiöst. Crova kommer att fokusera på mindre vinster och jämnare framsteg.",
       "cta": "Se min plan"
+    },
+    "rating": {
+      "eyebrow": "En sista snabb fråga",
+      "title": "Hur känns Crova hittills?",
+      "body": "Ge ett snabbt betyg innan vi visar ditt erbjudande. Trivs du hittills kan du också betygsätta oss i App Store.",
+      "helpText": "Du kan hoppa över det här just nu och fortsätta.",
+      "continue": "Fortsätt",
+      "skipForNow": "Hoppa över",
+      "accessibility": {
+        "rateStars_one": "Betygsätt {{count}} stjärna",
+        "rateStars_other": "Betygsätt {{count}} stjärnor"
+      }
     }
   },
   "goals": {
@@ -458,5 +470,66 @@
     "yearlyProgress_one": "1 av {{target}} projekt",
     "yearlyProgress_other": "{{completed}} av {{target}} projekt",
     "remainingHint": "{{remaining}} kvar – ungefär {{pace}} per månad."
+  },
+  "addPattern": {
+    "screenTitles": {
+      "add": "Lägg till mönster",
+      "processing": "Skapar utkast",
+      "review": "Granska utkast"
+    },
+    "sourceCards": {
+      "file": "Fil",
+      "photo": "Foto",
+      "website": "Webbplats",
+      "youtube": "YouTube"
+    },
+    "photoSource": {
+      "chooseSource": "Välj fotokälla",
+      "cancel": "Avbryt",
+      "takePicture": "Ta foto",
+      "photoLibrary": "Fotobibliotek",
+      "permissionTitle": "Fotoåtkomst krävs",
+      "permissionMessage": "Tillåt åtkomst till fotobiblioteket för att importera en mönsterbild.",
+      "cameraPermissionTitle": "Kameraåtkomst krävs",
+      "cameraPermissionMessage": "Tillåt kameraåtkomst för att ta ett mönsterfoto."
+    },
+    "processing": {
+      "stages": {
+        "uploading": "Laddar upp källa",
+        "reading": "Läser mönster",
+        "building": "Bygger utkast",
+        "preparing": "Förbereder granskning"
+      },
+      "subtitle": "Vi extraherar instruktioner, bygger tydliga steg och förbereder ett utkast som du kan granska innan du sparar.",
+      "headline_file": "Omvandlar din fil till ett mönsterutkast",
+      "headline_photo": "Omvandlar ditt foto till ett mönsterutkast",
+      "headline_website": "Omvandlar din webbplats till ett mönsterutkast",
+      "headline_youtube": "Omvandlar din videolänk till ett mönsterutkast",
+      "error": {
+        "title": "Import misslyckades",
+        "fallbackMessage": "Vi kunde inte skapa ett utkast.",
+        "retry": "Gå tillbaka och försök igen"
+      }
+    },
+    "review": {
+      "sectionTitles": {
+        "needsReview": "Behöver granskas",
+        "materials": "Material",
+        "skills": "Färdigheter",
+        "steps": "Steg"
+      },
+      "empty": {
+        "materials": "Inga material extraherades.",
+        "skills": "Inga färdigheter extraherades."
+      },
+      "step": {
+        "targetLabel": "mål"
+      },
+      "timeSuffix": "min",
+      "button": {
+        "saving": "Sparar projekt...",
+        "save": "Spara och öppna projekt"
+      }
+    }
   }
 }

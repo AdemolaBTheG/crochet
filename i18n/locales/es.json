@@ -419,7 +419,7 @@
       "note": "Este es el mismo ritmo guiado paso a paso que usaras en tus primeras lecciones de Crova."
     },
     "trialOffer": {
-      "title": "We want you to try Crova\nfor Free",
+      "title": "Queremos que pruebes Crova\ngratis",
       "subtitle": "Desbloquea acceso ilimitado a lecciones guiadas, contadores de pasos y patrones de proyectos — todo diseñado para crocheteros que quieren aprender más rápido.",
       "featureOne": "Acceso ilimitado a todas las lecciones",
       "featureTwo": "Sigue cada hilera, punto y proyecto",
@@ -449,6 +449,18 @@
       "helperSteady": "{{count}} proyectos es un ritmo constante que aún deja espacio para temporadas más lentas.",
       "helperAmbitious": "{{count}} proyectos es ambicioso. Crova se enfocará en logros pequeños y progreso constante.",
       "cta": "Ver mi plan"
+    },
+    "rating": {
+      "eyebrow": "Una pregunta rápida más",
+      "title": "¿Cómo te parece Crova hasta ahora?",
+      "body": "Danos una valoración rápida antes de mostrarte tu oferta. Si te está gustando, puedes puntuarnos en la App Store también.",
+      "helpText": "Puedes saltarte esto por ahora y seguir avanzando.",
+      "continue": "Continuar",
+      "skipForNow": "Saltar por ahora",
+      "accessibility": {
+        "rateStars_one": "Valorar con {{count}} estrella",
+        "rateStars_other": "Valorar con {{count}} estrellas"
+      }
     }
   },
   "goals": {
@@ -458,5 +470,66 @@
     "yearlyProgress_one": "1 de {{target}} proyecto",
     "yearlyProgress_other": "{{completed}} de {{target}} proyectos",
     "remainingHint": "{{remaining}} más por hacer – aproximadamente {{pace}} por mes."
+  },
+  "addPattern": {
+    "screenTitles": {
+      "add": "Añadir patrón",
+      "processing": "Creando borrador",
+      "review": "Revisar borrador"
+    },
+    "sourceCards": {
+      "file": "Archivo",
+      "photo": "Foto",
+      "website": "Sitio web",
+      "youtube": "YouTube"
+    },
+    "photoSource": {
+      "chooseSource": "Elegir fuente de foto",
+      "cancel": "Cancelar",
+      "takePicture": "Tomar foto",
+      "photoLibrary": "Galería de fotos",
+      "permissionTitle": "Acceso a fotos necesario",
+      "permissionMessage": "Permite el acceso a la galería para importar una imagen de patrón.",
+      "cameraPermissionTitle": "Acceso a cámara necesario",
+      "cameraPermissionMessage": "Permite el acceso a la cámara para tomar una foto del patrón."
+    },
+    "processing": {
+      "stages": {
+        "uploading": "Subiendo fuente",
+        "reading": "Leyendo patrón",
+        "building": "Creando borrador",
+        "preparing": "Preparando revisión"
+      },
+      "subtitle": "Estamos extrayendo instrucciones, creando pasos claros y preparando un borrador que puedes revisar antes de guardar.",
+      "headline_file": "Convirtiendo tu archivo en un borrador de patrón",
+      "headline_photo": "Convirtiendo tu foto en un borrador de patrón",
+      "headline_website": "Convirtiendo tu sitio web en un borrador de patrón",
+      "headline_youtube": "Convirtiendo tu enlace de video en un borrador de patrón",
+      "error": {
+        "title": "Error al importar",
+        "fallbackMessage": "No pudimos crear un borrador.",
+        "retry": "Volver e intentar de nuevo"
+      }
+    },
+    "review": {
+      "sectionTitles": {
+        "needsReview": "Necesita revisión",
+        "materials": "Materiales",
+        "skills": "Habilidades",
+        "steps": "Pasos"
+      },
+      "empty": {
+        "materials": "No se extrajeron materiales.",
+        "skills": "No se extrajeron habilidades."
+      },
+      "step": {
+        "targetLabel": "objetivo"
+      },
+      "timeSuffix": "min",
+      "button": {
+        "saving": "Guardando proyecto...",
+        "save": "Guardar y abrir proyecto"
+      }
+    }
   }
 }

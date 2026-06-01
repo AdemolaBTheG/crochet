@@ -8,7 +8,9 @@ import { queryPersister } from '@/utils/query-persister';
 import { QueryClient } from '@tanstack/react-query';
 import { PersistQueryClientProvider } from '@tanstack/react-query-persist-client';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
-import { Stack } from 'expo-router';
+import * as QuickActions from 'expo-quick-actions';
+import { useQuickActionCallback } from 'expo-quick-actions/hooks';
+import { router, Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
@@ -34,9 +36,61 @@ SplashScreen.setOptions({
   fade: true,
 });
 
+function QuickActionBridge({
+  enabled,
+  isPro,
+}: {
+  enabled: boolean;
+  isPro: boolean;
+}) {
+  useQuickActionCallback((action) => {
+    const href = action.params?.href;
+    if (typeof href !== 'string' || href.length === 0) return;
+
+    router.push(href as '/(paywalls)/offeringPaywall');
+  });
+
+  useEffect(() => {
+    if (!enabled) return;
+
+    let active = true;
+
+    async function configureQuickActions() {
+      const supported = await QuickActions.isSupported().catch(() => false);
+      if (!supported || !active) return;
+
+      if (isPro) {
+        await QuickActions.setItems([]);
+        return;
+      }
+
+      await QuickActions.setItems([
+        {
+          id: 'discount-offer',
+          title: 'Limited Offer',
+          subtitle: 'Unlock Crova Pro',
+          icon: 'favorite',
+          params: {
+            href: '/(paywalls)/offeringPaywall',
+          },
+        },
+      ]);
+    }
+
+    void configureQuickActions();
+
+    return () => {
+      active = false;
+    };
+  }, [enabled, isPro]);
+
+  return null;
+}
+
 export default function RootLayout() {
   const { isReady } = useAppInitialization();
   const subscription = useSubscriptionStatus(isReady);
+  const liquidGlassAvailable = isLiquidGlassAvailable();
 
   useEffect(() => {
     initializeHaptics();
@@ -57,6 +111,7 @@ export default function RootLayout() {
           client={queryClient}
           persistOptions={{ persister: queryPersister }}>
           <KeyboardProvider>
+            <QuickActionBridge enabled={isReady && !subscription.isLoading} isPro={subscription.isPro} />
             <Stack>
               <Stack.Screen name="index" options={{ headerShown: false }} />
               <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
@@ -66,6 +121,20 @@ export default function RootLayout() {
               <Stack.Screen name="(projects)" options={{ headerShown: false }} />
               <Stack.Screen name="(tools)" options={{ headerShown: false }} />
               <Stack.Screen name="(lessons)" options={{ headerShown: false }} />
+              <Stack.Screen name="(add)" options={{ headerShown: false, presentation: 'modal' }} />
+              <Stack.Screen
+                name="link"
+                options={{
+                  headerShown: true,
+                  presentation: 'formSheet',
+                  sheetAllowedDetents: 'fitToContents',
+                  sheetGrabberVisible: true,
+                  headerTransparent: liquidGlassAvailable,
+                  headerStyle: {
+                    backgroundColor: liquidGlassAvailable ? 'transparent' : Colors.background,
+                  },
+                }}
+              />
               <Stack.Screen
                 name="goal"
                 options={{
@@ -74,7 +143,7 @@ export default function RootLayout() {
                   headerTransparent: true,
                   contentStyle: { backgroundColor: Colors.background },
                   headerStyle: {
-                    backgroundColor: isLiquidGlassAvailable() ? 'transparent' : Colors.background,
+                    backgroundColor: liquidGlassAvailable ? 'transparent' : Colors.background,
                   },
                   presentation: 'modal',
                 }}

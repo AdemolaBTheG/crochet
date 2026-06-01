@@ -14,7 +14,10 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 const YEARLY_PROJECT_OPTIONS = [2, 4, 6, 8, 12, 18, 24] as const;
 const DEFAULT_YEARLY_PROJECT_GOAL = 8;
 
-function getYearlyGoalCopy(value: number, t: (key: string, options?: Record<string, unknown>) => string) {
+function getYearlyGoalCopy(
+  value: number,
+  t: (key: string, options?: Record<string, unknown>) => string,
+) {
   if (value === 12) {
     return t('onboarding.yearlyGoal.helperMonthly');
   }
@@ -64,10 +67,8 @@ export default function YearlyGoalScreen() {
         showsVerticalScrollIndicator={false}
         contentInsetAdjustmentBehavior="automatic"
         contentContainerStyle={{
-          paddingTop: insets.top,
           paddingHorizontal: theme.spacing.lg,
-          paddingBottom: insets.bottom + 104,
-          flexGrow: 1,
+          paddingBottom: insets.bottom,
           gap: theme.spacing.xl,
         }}>
         <Animated.View entering={FadeInDown.duration(220)} style={styles.progressWrap}>

@@ -59,7 +59,7 @@ export default function DailyGoalScreen() {
         contentContainerStyle={{
           paddingTop: insets.top,
           paddingHorizontal: theme.spacing.lg,
-          paddingBottom: insets.bottom + 104,
+          paddingBottom: insets.bottom,
           flexGrow: 1,
           gap: theme.spacing.xl,
         }}>
@@ -79,7 +79,11 @@ export default function DailyGoalScreen() {
         <Animated.View entering={FadeInDown.delay(50).duration(220)} style={styles.hero}>
           <View style={styles.badge}>
             <SymbolView
-              name={{ ios: 'flame.fill', android: 'local_fire_department', web: 'local_fire_department' }}
+              name={{
+                ios: 'flame.fill',
+                android: 'local_fire_department',
+                web: 'local_fire_department',
+              }}
               size={22}
               weight="semibold"
               tintColor={theme.colors.primary}

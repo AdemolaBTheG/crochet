@@ -3,7 +3,6 @@ import { theme } from '@/constants/Theme';
 import { cta } from '@/services/haptics';
 import { Image } from 'expo-image';
 import { router } from 'expo-router';
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Text, View, useWindowDimensions } from 'react-native';
 import Animated, { FadeInDown, FadeInUp } from 'react-native-reanimated';
@@ -16,7 +15,7 @@ export default function TrialOfferScreen() {
 
   function goToPaywall() {
     cta();
-    router.replace('/(paywalls)/onboardingPaywall');
+    router.push('/(paywalls)');
   }
 
   return (

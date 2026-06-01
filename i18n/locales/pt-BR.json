@@ -419,7 +419,7 @@
       "note": "Este é o mesmo ritmo passo a passo guiado que você usará em suas primeiras aulas de Crova."
     },
     "trialOffer": {
-      "title": "We want you to try Crova\nfor Free",
+      "title": "Queremos que você experimente o Crova\ngratuitamente",
       "subtitle": "Desbloqueie acesso ilimitado a aulas guiadas, contadores de passos e padrões de projetos — tudo criado para crocheteiros que querem aprender mais rápido.",
       "featureOne": "Acesso ilimitado a todas as aulas",
       "featureTwo": "Acompanhe cada carreira, ponto e projeto",
@@ -449,6 +449,18 @@
       "helperSteady": "{{count}} projetos é um ritmo constante que ainda deixa espaço para épocas mais lentas.",
       "helperAmbitious": "{{count}} projetos é ambicioso. O Crova vai favorecer pequenas vitórias e progresso consistente.",
       "cta": "Ver meu plano"
+    },
+    "rating": {
+      "eyebrow": "Mais uma perguntinha rápida",
+      "title": "Como está sendo o Crova até agora?",
+      "body": "Dê uma nota rápida antes de vermos sua oferta. Se estiver gostando, pode nos avaliar na App Store também.",
+      "helpText": "Você pode pular isso e continuar agora.",
+      "continue": "Continuar",
+      "skipForNow": "Pular por enquanto",
+      "accessibility": {
+        "rateStars_one": "Avaliar com {{count}} estrela",
+        "rateStars_other": "Avaliar com {{count}} estrelas"
+      }
     }
   },
   "goals": {
@@ -458,5 +470,66 @@
     "yearlyProgress_one": "1 de {{target}} projeto",
     "yearlyProgress_other": "{{completed}} de {{target}} projetos",
     "remainingHint": "Faltam {{remaining}} – cerca de {{pace}} por mês."
+  },
+  "addPattern": {
+    "screenTitles": {
+      "add": "Adicionar padrão",
+      "processing": "Criando rascunho",
+      "review": "Revisar rascunho"
+    },
+    "sourceCards": {
+      "file": "Arquivo",
+      "photo": "Foto",
+      "website": "Site",
+      "youtube": "YouTube"
+    },
+    "photoSource": {
+      "chooseSource": "Escolher fonte da foto",
+      "cancel": "Cancelar",
+      "takePicture": "Tirar foto",
+      "photoLibrary": "Biblioteca de fotos",
+      "permissionTitle": "Acesso às fotos necessário",
+      "permissionMessage": "Permita o acesso à biblioteca de fotos para importar uma imagem de padrão.",
+      "cameraPermissionTitle": "Acesso à câmera necessário",
+      "cameraPermissionMessage": "Permita o acesso à câmera para tirar uma foto do padrão."
+    },
+    "processing": {
+      "stages": {
+        "uploading": "Enviando fonte",
+        "reading": "Lendo padrão",
+        "building": "Criando rascunho",
+        "preparing": "Preparando revisão"
+      },
+      "subtitle": "Estamos extraindo instruções, criando etapas claras e preparando um rascunho que você pode revisar antes de salvar.",
+      "headline_file": "Convertendo seu arquivo em um rascunho de padrão",
+      "headline_photo": "Convertendo sua foto em um rascunho de padrão",
+      "headline_website": "Convertendo seu site em um rascunho de padrão",
+      "headline_youtube": "Convertendo seu link de vídeo em um rascunho de padrão",
+      "error": {
+        "title": "Falha na importação",
+        "fallbackMessage": "Não foi possível criar um rascunho.",
+        "retry": "Voltar e tentar novamente"
+      }
+    },
+    "review": {
+      "sectionTitles": {
+        "needsReview": "Precisa de revisão",
+        "materials": "Materiais",
+        "skills": "Habilidades",
+        "steps": "Etapas"
+      },
+      "empty": {
+        "materials": "Nenhum material extraído.",
+        "skills": "Nenhuma habilidade extraída."
+      },
+      "step": {
+        "targetLabel": "meta"
+      },
+      "timeSuffix": "min",
+      "button": {
+        "saving": "Salvando projeto...",
+        "save": "Salvar e abrir projeto"
+      }
+    }
   }
 }

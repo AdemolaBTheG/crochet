@@ -419,7 +419,7 @@
       "note": "C'est le meme rythme guide, etape par etape, que tu retrouveras dans tes premieres lecons Crova."
     },
     "trialOffer": {
-      "title": "We want you to try Crova\nfor Free",
+      "title": "Nous voulons que tu essaies Crova\ngratuitement",
       "subtitle": "Débloquez un accès illimité à des leçons guidées, des compteurs de pas et des modèles de projets — tout est conçu pour les crocheteurs qui veulent apprendre plus vite.",
       "featureOne": "Accès illimité à toutes les leçons",
       "featureTwo": "Suivez chaque rang, point et projet",
@@ -449,6 +449,18 @@
       "helperSteady": "{{count}} projets, c'est un rythme régulier qui laisse de la place pour les périodes plus calmes.",
       "helperAmbitious": "{{count}} projets, c'est ambitieux. Crova misera sur de petites victoires et des progrès constants.",
       "cta": "Voir mon plan"
+    },
+    "rating": {
+      "eyebrow": "Encore une petite question",
+      "title": "Comment trouves-tu Crova jusqu'ici ?",
+      "body": "Donne vite ton avis avant qu'on te montre ton offre. Si l'expérience te plaît, tu pourras aussi nous noter sur l'App Store.",
+      "helpText": "Tu peux passer cette étape et continuer.",
+      "continue": "Continuer",
+      "skipForNow": "Passer pour l'instant",
+      "accessibility": {
+        "rateStars_one": "Noter {{count}} étoile",
+        "rateStars_other": "Noter {{count}} étoiles"
+      }
     }
   },
   "goals": {
@@ -458,5 +470,66 @@
     "yearlyProgress_one": "1 sur {{target}} projet",
     "yearlyProgress_other": "{{completed}} sur {{target}} projets",
     "remainingHint": "Encore {{remaining}} à faire – environ {{pace}} par mois."
+  },
+  "addPattern": {
+    "screenTitles": {
+      "add": "Ajouter un modèle",
+      "processing": "Création du brouillon",
+      "review": "Vérifier le brouillon"
+    },
+    "sourceCards": {
+      "file": "Fichier",
+      "photo": "Photo",
+      "website": "Site web",
+      "youtube": "YouTube"
+    },
+    "photoSource": {
+      "chooseSource": "Choisir la source de la photo",
+      "cancel": "Annuler",
+      "takePicture": "Prendre une photo",
+      "photoLibrary": "Photothèque",
+      "permissionTitle": "Accès aux photos nécessaire",
+      "permissionMessage": "Autorise l'accès à la photothèque pour importer une image de modèle.",
+      "cameraPermissionTitle": "Accès à la caméra nécessaire",
+      "cameraPermissionMessage": "Autorise l'accès à la caméra pour prendre une photo du modèle."
+    },
+    "processing": {
+      "stages": {
+        "uploading": "Téléchargement de la source",
+        "reading": "Lecture du modèle",
+        "building": "Création du brouillon",
+        "preparing": "Préparation de la révision"
+      },
+      "subtitle": "Nous extrayons les instructions, créons des étapes claires et préparons un brouillon que tu peux vérifier avant d'enregistrer.",
+      "headline_file": "Conversion de ton fichier en brouillon de modèle",
+      "headline_photo": "Conversion de ta photo en brouillon de modèle",
+      "headline_website": "Conversion de ton site web en brouillon de modèle",
+      "headline_youtube": "Conversion de ton lien vidéo en brouillon de modèle",
+      "error": {
+        "title": "Échec de l'importation",
+        "fallbackMessage": "Nous n'avons pas pu créer de brouillon.",
+        "retry": "Retourner et réessayer"
+      }
+    },
+    "review": {
+      "sectionTitles": {
+        "needsReview": "À vérifier",
+        "materials": "Matériaux",
+        "skills": "Compétences",
+        "steps": "Étapes"
+      },
+      "empty": {
+        "materials": "Aucun matériau extrait.",
+        "skills": "Aucune compétence extraite."
+      },
+      "step": {
+        "targetLabel": "objectif"
+      },
+      "timeSuffix": "min",
+      "button": {
+        "saving": "Enregistrement du projet...",
+        "save": "Enregistrer et ouvrir le projet"
+      }
+    }
   }
 }

@@ -419,7 +419,7 @@
       "note": "Jest to ten sam prowadzony, krok po kroku rytm, którego będziesz używać na pierwszych lekcjach Crova."
     },
     "trialOffer": {
-      "title": "We want you to try Crova\nfor Free",
+      "title": "Chcemy, żebyś wypróbował Crova\nza darmo",
       "subtitle": "Odblokuj nieograniczony dostęp do lekcji z przewodnikiem, liczników kroków i wzorów projektów — wszystko stworzone dla szydełkujących, którzy chcą uczyć się szybciej.",
       "featureOne": "Nieograniczony dostęp do wszystkich lekcji",
       "featureTwo": "Śledź każdy rząd, ścieg i projekt",
@@ -449,6 +449,18 @@
       "helperSteady": "{{count}} projektów to stałe tempo z miejscem na wolniejsze okresy.",
       "helperAmbitious": "{{count}} projektów to ambitnie. Crova będzie kierować w stronę mniejszych sukcesów i regularnych postępów.",
       "cta": "Zobacz mój plan"
+    },
+    "rating": {
+      "eyebrow": "Jeszcze jedno krótkie pytanie",
+      "title": "Jak na razie podoba Ci się Crova?",
+      "body": "Daj szybką ocenę, zanim pokażemy ofertę. Jeśli podoba Ci się początek, możesz później ocenić nas w App Store.",
+      "helpText": "Możesz to na razie pominąć i iść dalej.",
+      "continue": "Kontynuuj",
+      "skipForNow": "Pomiń na razie",
+      "accessibility": {
+        "rateStars_one": "Oceń na {{count}} gwiazdkę",
+        "rateStars_other": "Oceń na {{count}} gwiazdek"
+      }
     }
   },
   "goals": {
@@ -458,5 +470,66 @@
     "yearlyProgress_one": "1 z {{target}} projektu",
     "yearlyProgress_other": "{{completed}} z {{target}} projektów",
     "remainingHint": "Jeszcze {{remaining}} do zrobienia – około {{pace}} miesięcznie."
+  },
+  "addPattern": {
+    "screenTitles": {
+      "add": "Dodaj wzór",
+      "processing": "Tworzenie szkicu",
+      "review": "Sprawdź szkic"
+    },
+    "sourceCards": {
+      "file": "Plik",
+      "photo": "Zdjęcie",
+      "website": "Strona www",
+      "youtube": "YouTube"
+    },
+    "photoSource": {
+      "chooseSource": "Wybierz źródło zdjęcia",
+      "cancel": "Anuluj",
+      "takePicture": "Zrób zdjęcie",
+      "photoLibrary": "Galeria zdjęć",
+      "permissionTitle": "Wymagany dostęp do zdjęć",
+      "permissionMessage": "Zezwól na dostęp do galerii, aby zaimportować obraz wzoru.",
+      "cameraPermissionTitle": "Wymagany dostęp do aparatu",
+      "cameraPermissionMessage": "Zezwól na dostęp do aparatu, aby zrobić zdjęcie wzoru."
+    },
+    "processing": {
+      "stages": {
+        "uploading": "Przesyłanie źródła",
+        "reading": "Odczytywanie wzoru",
+        "building": "Tworzenie szkicu",
+        "preparing": "Przygotowanie podglądu"
+      },
+      "subtitle": "Wyodrębniamy instrukcje, tworzymy przejrzyste kroki i przygotowujemy szkic, który możesz sprawdzić przed zapisaniem.",
+      "headline_file": "Przekształcanie pliku w szkic wzoru",
+      "headline_photo": "Przekształcanie zdjęcia w szkic wzoru",
+      "headline_website": "Przekształcanie strony www w szkic wzoru",
+      "headline_youtube": "Przekształcanie linku wideo w szkic wzoru",
+      "error": {
+        "title": "Import nieudany",
+        "fallbackMessage": "Nie udało się utworzyć szkicu.",
+        "retry": "Wróć i spróbuj ponownie"
+      }
+    },
+    "review": {
+      "sectionTitles": {
+        "needsReview": "Wymaga sprawdzenia",
+        "materials": "Materiały",
+        "skills": "Umiejętności",
+        "steps": "Kroki"
+      },
+      "empty": {
+        "materials": "Nie wyodrębniono materiałów.",
+        "skills": "Nie wyodrębniono umiejętności."
+      },
+      "step": {
+        "targetLabel": "cel"
+      },
+      "timeSuffix": "min",
+      "button": {
+        "saving": "Zapisywanie projektu...",
+        "save": "Zapisz i otwórz projekt"
+      }
+    }
   }
 }

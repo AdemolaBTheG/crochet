@@ -52,6 +52,16 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 type PatternStep = ProjectChatStep;
 
+function parseProjectSteps(stepsJson: string | null): PatternStep[] {
+  if (!stepsJson) return [];
+
+  try {
+    return JSON.parse(stepsJson) as PatternStep[];
+  } catch {
+    return [];
+  }
+}
+
 export default function ProjectDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const router = useRouter();
@@ -59,7 +69,7 @@ export default function ProjectDetailScreen() {
   const { width } = useWindowDimensions();
   const { db } = useDbStore();
   const { isPro } = useSubscription();
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const stepListRef = useRef<FlatList<PatternStep>>(null);
   const hasPositionedStepListRef = useRef(false);
   const isProgrammaticStepScrollRef = useRef(false);
@@ -109,9 +119,27 @@ export default function ProjectDetailScreen() {
     patternSlug ?? undefined,
     i18n.language,
   );
-  const isLoading = isLoadingProject || isPatternLoading;
+  const fallbackPattern = project
+    ? {
+        id: project.patternId,
+        slug: patternSlug ?? `project-${project.id}`,
+        title: project.name,
+        description: null,
+        difficulty: 'unknown',
+        category: null,
+        coverImageKey: project.coverImageKey ?? '',
+        estimatedMinutes: null,
+        isPublished: false,
+        materials: [] as string[],
+        skills: [] as string[],
+        expectationText: null,
+        steps: parseProjectSteps(project.stepsJson ?? null),
+      }
+    : null;
+  const resolvedPattern = pattern ?? fallbackPattern;
+  const isLoading = isLoadingProject || (isPatternLoading && !fallbackPattern);
 
-  const steps = pattern?.steps ?? [];
+  const steps = resolvedPattern?.steps ?? [];
   const currentStepIndex = Math.min(selectedStepIndex, Math.max(steps.length - 1, 0));
 
   const liveActivityCounterLabel =
@@ -420,7 +448,7 @@ export default function ProjectDetailScreen() {
           <LoadingShimmer />
         ) : null}
 
-        {!isLoading && (!project || !pattern) ? (
+        {!isLoading && (!project || !resolvedPattern) ? (
           <View
             style={{
               flex: 1,
@@ -443,7 +471,7 @@ export default function ProjectDetailScreen() {
           </View>
         ) : null}
 
-        {project && pattern ? (
+        {project && resolvedPattern ? (
           <>
             <ScrollView
               contentInsetAdjustmentBehavior="automatic"
@@ -593,7 +621,7 @@ export default function ProjectDetailScreen() {
           </>
         ) : null}
 
-        {project && pattern ? (
+        {project && resolvedPattern ? (
           <StepNavigationBar
             currentStepIndex={currentStepIndex}
             stepCount={steps.length}
@@ -601,6 +629,9 @@ export default function ProjectDetailScreen() {
             onPrevious={() => void goToStep(-1)}
             onNext={() => void goToStep(1)}
             onComplete={() => void finishProject()}
+            previousLabel={t('patternDetail.actions.previous')}
+            nextLabel={t('patternDetail.actions.next')}
+            completeLabel={t('patternDetail.actions.complete')}
           />
         ) : null}
       </View>

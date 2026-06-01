@@ -15,7 +15,7 @@ export default function Index() {
     return <LoadingShimmer />;
   }
 
-  if (!isPro) {
+  if (isPro) {
     return <Redirect href="/(tabs)/(home)" />;
   }
 

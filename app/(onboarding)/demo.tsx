@@ -171,7 +171,7 @@ export default function OnboardingDemoScreen() {
       goal: goal ?? null,
       skill_level: skillLevel ?? null,
     });
-    router.replace('/(onboarding)/trial-offer');
+    router.replace('/(onboarding)/rating');
   }
 
   return (
@@ -276,6 +276,9 @@ export default function OnboardingDemoScreen() {
         onPrevious={() => void goToStepIndex(currentStepIndex - 1)}
         onNext={() => void goToStepIndex(currentStepIndex + 1)}
         onComplete={() => void finishDemo()}
+        previousLabel={t('onboarding.demo.actions.previous')}
+        nextLabel={t('onboarding.demo.actions.next')}
+        completeLabel={t('onboarding.demo.actions.finish')}
       />
     </View>
   );

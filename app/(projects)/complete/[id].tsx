@@ -18,6 +18,24 @@ import { Confetti } from 'react-native-fast-confetti';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+type LocalPatternStep = {
+  type?: 'instruction' | 'row' | 'round' | 'repeat';
+  title: string;
+  instruction: string;
+  counterLabel?: string;
+  targetCount?: number;
+};
+
+function parseProjectSteps(stepsJson: string | null): LocalPatternStep[] {
+  if (!stepsJson) return [];
+
+  try {
+    return JSON.parse(stepsJson) as LocalPatternStep[];
+  } catch {
+    return [];
+  }
+}
+
 function formatCompletedDate(
   date: Date | null,
   t: (key: string, options?: Record<string, unknown>) => string,
@@ -123,9 +141,27 @@ export default function ProjectCompleteScreen() {
     patternSlug ?? undefined,
     i18n.language,
   );
-  const isLoading = isLoadingProject || isPatternLoading;
+  const fallbackPattern = project
+    ? {
+        id: project.patternId,
+        slug: patternSlug ?? `project-${project.id}`,
+        title: project.name,
+        description: null,
+        difficulty: 'unknown',
+        category: null,
+        coverImageKey: project.coverImageKey ?? '',
+        estimatedMinutes: null,
+        isPublished: false,
+        materials: [] as string[],
+        skills: [] as string[],
+        expectationText: null,
+        steps: parseProjectSteps(project.stepsJson ?? null),
+      }
+    : null;
+  const resolvedPattern = pattern ?? fallbackPattern;
+  const isLoading = isLoadingProject || (isPatternLoading && !fallbackPattern);
 
-  const steps = pattern?.steps ?? [];
+  const steps = resolvedPattern?.steps ?? [];
   const counterSummary =
     project && project.roundCount > 0
       ? `${project.roundCount} rounds`
@@ -146,7 +182,7 @@ export default function ProjectCompleteScreen() {
   }, [project]);
 
   useEffect(() => {
-    if (!project || !pattern || didRequestReviewRef.current) return;
+    if (!project || !resolvedPattern || didRequestReviewRef.current) return;
     if (project.status !== 'completed') return;
 
     didRequestReviewRef.current = true;
@@ -155,10 +191,10 @@ export default function ProjectCompleteScreen() {
     }, 1400);
 
     return () => clearTimeout(timeout);
-  }, [pattern, project]);
+  }, [project, resolvedPattern]);
 
   async function createAnotherProject() {
-    if (!db || !pattern || isCreatingAnother) return;
+    if (!db || !resolvedPattern || isCreatingAnother) return;
     cta();
 
     setIsCreatingAnother(true);
@@ -167,11 +203,11 @@ export default function ProjectCompleteScreen() {
       const createdProject = await db
         .insert(projectsTable)
         .values({
-          patternId: pattern.id,
-          patternSlug: pattern.slug,
-          coverImageKey: pattern.coverImageKey,
-          stepsJson: JSON.stringify(pattern.steps),
-          name: pattern.title,
+          patternId: resolvedPattern.id,
+          patternSlug: resolvedPattern.slug,
+          coverImageKey: resolvedPattern.coverImageKey || null,
+          stepsJson: JSON.stringify(resolvedPattern.steps),
+          name: resolvedPattern.title,
           status: 'active',
         })
         .returning();
@@ -228,7 +264,7 @@ export default function ProjectCompleteScreen() {
           </View>
         ) : null}
 
-        {!isLoading && (!project || !pattern) ? (
+        {!isLoading && (!project || !resolvedPattern) ? (
           <View
             style={{
               padding: theme.spacing.lg,
@@ -243,7 +279,7 @@ export default function ProjectCompleteScreen() {
           </View>
         ) : null}
 
-        {project && pattern ? (
+        {project && resolvedPattern ? (
           <>
             <Animated.View
               entering={FadeInDown.duration(220)}

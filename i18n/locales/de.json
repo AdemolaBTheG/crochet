@@ -419,7 +419,7 @@
       "note": "Das ist derselbe gefuhrte Schritt-fur-Schritt-Rhythmus, den du auch in deinen ersten Crova Lektionen nutzen wirst."
     },
     "trialOffer": {
-      "title": "We want you to try Crova\nfor Free",
+      "title": "Wir möchten, dass du Crova\nkostenlos ausprobierst",
       "subtitle": "Erhalte unbegrenzten Zugang zu geführten Lektionen, Schrittzählern und Projektanleitungen — alles für Häkler, die schneller lernen möchten.",
       "featureOne": "Unbegrenzter Zugang zu allen Lektionen",
       "featureTwo": "Verfolge jede Reihe, Masche und jedes Projekt",
@@ -449,6 +449,18 @@
       "helperSteady": "{{count}} Projekte sind ein gleichmäßiges Tempo mit Raum für langsamere Phasen.",
       "helperAmbitious": "{{count}} Projekte sind ambitioniert. Crova setzt auf kleinere Erfolge und stetigen Fortschritt.",
       "cta": "Meinen Plan ansehen"
+    },
+    "rating": {
+      "eyebrow": "Noch eine kurze Frage",
+      "title": "Wie gefällt dir Crova bisher?",
+      "body": "Gib schnell eine Bewertung ab, bevor wir dein Angebot zeigen. Wenn dir der Einstieg gefällt, kannst du uns auch im App Store bewerten.",
+      "helpText": "Du kannst das vorerst überspringen und einfach weitermachen.",
+      "continue": "Weiter",
+      "skipForNow": "Erstmal überspringen",
+      "accessibility": {
+        "rateStars_one": "{{count}} Stern bewerten",
+        "rateStars_other": "{{count}} Sterne bewerten"
+      }
     }
   },
   "goals": {
@@ -458,5 +470,66 @@
     "yearlyProgress_one": "1 von {{target}} Projekt",
     "yearlyProgress_other": "{{completed}} von {{target}} Projekten",
     "remainingHint": "Noch {{remaining}} vor dir – etwa {{pace}} pro Monat."
+  },
+  "addPattern": {
+    "screenTitles": {
+      "add": "Muster hinzufügen",
+      "processing": "Entwurf wird erstellt",
+      "review": "Entwurf prüfen"
+    },
+    "sourceCards": {
+      "file": "Datei",
+      "photo": "Foto",
+      "website": "Website",
+      "youtube": "YouTube"
+    },
+    "photoSource": {
+      "chooseSource": "Fotoquelle wählen",
+      "cancel": "Abbrechen",
+      "takePicture": "Foto aufnehmen",
+      "photoLibrary": "Fotomediathek",
+      "permissionTitle": "Foto-Zugriff benötigt",
+      "permissionMessage": "Erlaube den Zugriff auf die Fotomediathek, um ein Musterbild zu importieren.",
+      "cameraPermissionTitle": "Kamera-Zugriff benötigt",
+      "cameraPermissionMessage": "Erlaube den Kamera-Zugriff, um ein Musterfoto aufzunehmen."
+    },
+    "processing": {
+      "stages": {
+        "uploading": "Quelle wird hochgeladen",
+        "reading": "Muster wird gelesen",
+        "building": "Entwurf wird erstellt",
+        "preparing": "Prüfung wird vorbereitet"
+      },
+      "subtitle": "Wir extrahieren Anleitungen, erstellen klare Schritte und bereiten einen Entwurf vor, den du vor dem Speichern prüfen kannst.",
+      "headline_file": "Deine Datei wird in einen Musterentwurf umgewandelt",
+      "headline_photo": "Dein Foto wird in einen Musterentwurf umgewandelt",
+      "headline_website": "Deine Website wird in einen Musterentwurf umgewandelt",
+      "headline_youtube": "Dein Video-Link wird in einen Musterentwurf umgewandelt",
+      "error": {
+        "title": "Import fehlgeschlagen",
+        "fallbackMessage": "Wir konnten keinen Entwurf erstellen.",
+        "retry": "Zurück und erneut versuchen"
+      }
+    },
+    "review": {
+      "sectionTitles": {
+        "needsReview": "Muss geprüft werden",
+        "materials": "Materialien",
+        "skills": "Fähigkeiten",
+        "steps": "Schritte"
+      },
+      "empty": {
+        "materials": "Keine Materialien extrahiert.",
+        "skills": "Keine Fähigkeiten extrahiert."
+      },
+      "step": {
+        "targetLabel": "Ziel"
+      },
+      "timeSuffix": "Min.",
+      "button": {
+        "saving": "Projekt wird gespeichert...",
+        "save": "Speichern und Projekt öffnen"
+      }
+    }
   }
 }

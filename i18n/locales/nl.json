@@ -419,7 +419,7 @@
       "note": "Dit is hetzelfde begeleide, stapsgewijze ritme dat u tijdens uw eerste Crova-lessen zult gebruiken."
     },
     "trialOffer": {
-      "title": "We want you to try Crova\nfor Free",
+      "title": "We willen dat je Crova\ngratis probeert",
       "subtitle": "Ontgrendel onbeperkte toegang tot begeleide lessen, stappentellers en projectpatronen — allemaal gemaakt voor hakers die sneller willen leren.",
       "featureOne": "Onbeperkte toegang tot alle lessen",
       "featureTwo": "Volg elke rij, steek en project",
@@ -449,6 +449,18 @@
       "helperSteady": "{{count}} projecten is een gestaag tempo dat ruimte laat voor rustigere periodes.",
       "helperAmbitious": "{{count}} projecten is ambitieus. Crova richt zich op kleinere overwinningen en consistentere vooruitgang.",
       "cta": "Bekijk mijn plan"
+    },
+    "rating": {
+      "eyebrow": "Nog één korte vraag",
+      "title": "Hoe bevalt Crova tot nu toe?",
+      "body": "Geef snel een beoordeling voordat we je aanbod laten zien. Als de opzet bevalt, kun je ons ook in de App Store beoordelen.",
+      "helpText": "Je kunt dit nu overslaan en verder gaan.",
+      "continue": "Doorgaan",
+      "skipForNow": "Nu overslaan",
+      "accessibility": {
+        "rateStars_one": "Beoordeel met {{count}} ster",
+        "rateStars_other": "Beoordeel met {{count}} sterren"
+      }
     }
   },
   "goals": {
@@ -458,5 +470,66 @@
     "yearlyProgress_one": "1 van {{target}} project",
     "yearlyProgress_other": "{{completed}} van {{target}} projecten",
     "remainingHint": "Nog {{remaining}} te gaan – ongeveer {{pace}} per maand."
+  },
+  "addPattern": {
+    "screenTitles": {
+      "add": "Patroon toevoegen",
+      "processing": "Concept aanmaken",
+      "review": "Concept controleren"
+    },
+    "sourceCards": {
+      "file": "Bestand",
+      "photo": "Foto",
+      "website": "Website",
+      "youtube": "YouTube"
+    },
+    "photoSource": {
+      "chooseSource": "Kies fotobron",
+      "cancel": "Annuleren",
+      "takePicture": "Foto maken",
+      "photoLibrary": "Fotobibliotheek",
+      "permissionTitle": "Fototoegang nodig",
+      "permissionMessage": "Sta toegang tot de fotobibliotheek toe om een patroonafbeelding te importeren.",
+      "cameraPermissionTitle": "Cameratoegang nodig",
+      "cameraPermissionMessage": "Sta cameratoegang toe om een patroonfoto te maken."
+    },
+    "processing": {
+      "stages": {
+        "uploading": "Bron uploaden",
+        "reading": "Patroon lezen",
+        "building": "Concept opbouwen",
+        "preparing": "Controle voorbereiden"
+      },
+      "subtitle": "We extraheren instructies, maken duidelijke stappen en bereiden een concept voor dat je kunt controleren voordat je het opslaat.",
+      "headline_file": "Je bestand omzetten naar een conceptpatroon",
+      "headline_photo": "Je foto omzetten naar een conceptpatroon",
+      "headline_website": "Je website omzetten naar een conceptpatroon",
+      "headline_youtube": "Je videolink omzetten naar een conceptpatroon",
+      "error": {
+        "title": "Import mislukt",
+        "fallbackMessage": "We konden geen concept aanmaken.",
+        "retry": "Ga terug en probeer opnieuw"
+      }
+    },
+    "review": {
+      "sectionTitles": {
+        "needsReview": "Moet gecontroleerd worden",
+        "materials": "Materialen",
+        "skills": "Vaardigheden",
+        "steps": "Stappen"
+      },
+      "empty": {
+        "materials": "Geen materialen geëxtraheerd.",
+        "skills": "Geen vaardigheden geëxtraheerd."
+      },
+      "step": {
+        "targetLabel": "doel"
+      },
+      "timeSuffix": "min",
+      "button": {
+        "saving": "Project opslaan...",
+        "save": "Opslaan en project openen"
+      }
+    }
   }
 }

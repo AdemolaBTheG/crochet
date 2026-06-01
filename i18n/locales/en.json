@@ -249,7 +249,12 @@
     "lastWorkedToday": "Last worked today",
     "lastWorkedYesterday": "Last worked yesterday",
     "lastWorkedDaysAgo": "Last worked {{count}} days ago",
-    "lastWorkedOnDate": "Last worked {{date}}"
+    "lastWorkedOnDate": "Last worked {{date}}",
+    "actions": {
+      "previous": "Previous",
+      "next": "Next",
+      "complete": "Complete"
+    }
   },
   "projectComplete": {
     "title": "Project complete",
@@ -332,6 +337,18 @@
       "helperSteady": "{{count}} projects is a steady pace that still leaves room for slower seasons.",
       "helperAmbitious": "{{count}} projects is ambitious. Crova will bias toward smaller wins and more consistent progress.",
       "cta": "See my plan"
+    },
+    "rating": {
+      "eyebrow": "One quick question",
+      "title": "How does Crova feel so far?",
+      "body": "Give a quick rating before we show your offer. If you are enjoying the setup, you can rate us in the App Store too.",
+      "helpText": "You can skip this for now and keep moving.",
+      "continue": "Continue",
+      "skipForNow": "Skip for now",
+      "accessibility": {
+        "rateStars_one": "Rate {{count}} star",
+        "rateStars_other": "Rate {{count}} stars"
+      }
     },
     "loader": {
       "titlePreparing": "Preparing your experience",
@@ -468,5 +485,66 @@
     "yearlyProgress_one": "1 of {{target}} project",
     "yearlyProgress_other": "{{completed}} of {{target}} projects",
     "remainingHint": "{{remaining}} more to go - about {{pace}} per month."
+  },
+  "addPattern": {
+    "screenTitles": {
+      "add": "Add Pattern",
+      "processing": "Creating Draft",
+      "review": "Review Draft"
+    },
+    "sourceCards": {
+      "file": "File",
+      "photo": "Photo",
+      "website": "Website",
+      "youtube": "YouTube"
+    },
+    "photoSource": {
+      "chooseSource": "Choose photo source",
+      "cancel": "Cancel",
+      "takePicture": "Take Picture",
+      "photoLibrary": "Photo Library",
+      "permissionTitle": "Photo access needed",
+      "permissionMessage": "Allow photo library access to import a pattern image.",
+      "cameraPermissionTitle": "Camera access needed",
+      "cameraPermissionMessage": "Allow camera access to take a pattern photo."
+    },
+    "processing": {
+      "stages": {
+        "uploading": "Uploading source",
+        "reading": "Reading pattern",
+        "building": "Building draft",
+        "preparing": "Preparing review"
+      },
+      "subtitle": "We are extracting instructions, building clean steps, and preparing a draft you can review before saving.",
+      "headline_file": "Turning your file into a draft pattern",
+      "headline_photo": "Turning your photo into a draft pattern",
+      "headline_website": "Turning your website into a draft pattern",
+      "headline_youtube": "Turning your video link into a draft pattern",
+      "error": {
+        "title": "Import failed",
+        "fallbackMessage": "We could not create a draft.",
+        "retry": "Go back and try again"
+      }
+    },
+    "review": {
+      "sectionTitles": {
+        "needsReview": "Needs review",
+        "materials": "Materials",
+        "skills": "Skills",
+        "steps": "Steps"
+      },
+      "empty": {
+        "materials": "No materials were extracted.",
+        "skills": "No skills were extracted."
+      },
+      "step": {
+        "targetLabel": "target"
+      },
+      "timeSuffix": "min",
+      "button": {
+        "saving": "Saving project...",
+        "save": "Save and open project"
+      }
+    }
   }
 }

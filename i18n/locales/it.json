@@ -419,7 +419,7 @@
       "note": "Questo è lo stesso ritmo guidato, passo dopo passo, che utilizzerai nelle tue prime lezioni con Crova."
     },
     "trialOffer": {
-      "title": "We want you to try Crova\nfor Free",
+      "title": "Vogliamo che tu provi Crova\ngratuitamente",
       "subtitle": "Sblocca l'accesso illimitato a lezioni guidate, contapassi e modelli di progetti — tutto pensato per chi lavora all'uncinetto e vuole imparare più velocemente.",
       "featureOne": "Accesso illimitato a tutte le lezioni",
       "featureTwo": "Tieni traccia di ogni riga, punto e progetto",
@@ -449,6 +449,18 @@
       "helperSteady": "{{count}} progetti sono un ritmo costante che lascia spazio alle stagioni più lente.",
       "helperAmbitious": "{{count}} progetti è ambizioso. Crova tenderà verso obiettivi più piccoli e progressi costanti.",
       "cta": "Vedi il mio piano"
+    },
+    "rating": {
+      "eyebrow": "Ancora una domanda veloce",
+      "title": "Come ti sembra Crova finora?",
+      "body": "Dacci un voto veloce prima di mostrarti l'offerta. Se ti piace, puoi valutarci anche sull'App Store.",
+      "helpText": "Puoi saltare questo passaggio e andare avanti.",
+      "continue": "Continua",
+      "skipForNow": "Salta per ora",
+      "accessibility": {
+        "rateStars_one": "Valuta {{count}} stella",
+        "rateStars_other": "Valuta {{count}} stelle"
+      }
     }
   },
   "goals": {
@@ -458,5 +470,66 @@
     "yearlyProgress_one": "1 di {{target}} progetto",
     "yearlyProgress_other": "{{completed}} di {{target}} progetti",
     "remainingHint": "Ancora {{remaining}} da fare – circa {{pace}} al mese."
+  },
+  "addPattern": {
+    "screenTitles": {
+      "add": "Aggiungi schema",
+      "processing": "Creazione bozza",
+      "review": "Rivedi bozza"
+    },
+    "sourceCards": {
+      "file": "File",
+      "photo": "Foto",
+      "website": "Sito web",
+      "youtube": "YouTube"
+    },
+    "photoSource": {
+      "chooseSource": "Scegli fonte foto",
+      "cancel": "Annulla",
+      "takePicture": "Scatta foto",
+      "photoLibrary": "Libreria foto",
+      "permissionTitle": "Accesso alle foto necessario",
+      "permissionMessage": "Consenti l'accesso alla libreria foto per importare un'immagine dello schema.",
+      "cameraPermissionTitle": "Accesso alla fotocamera necessario",
+      "cameraPermissionMessage": "Consenti l'accesso alla fotocamera per scattare una foto dello schema."
+    },
+    "processing": {
+      "stages": {
+        "uploading": "Caricamento sorgente",
+        "reading": "Lettura schema",
+        "building": "Creazione bozza",
+        "preparing": "Preparazione revisione"
+      },
+      "subtitle": "Stiamo estraendo le istruzioni, creando passaggi chiari e preparando una bozza che puoi rivedere prima di salvare.",
+      "headline_file": "Conversione del tuo file in una bozza di schema",
+      "headline_photo": "Conversione della tua foto in una bozza di schema",
+      "headline_website": "Conversione del tuo sito web in una bozza di schema",
+      "headline_youtube": "Conversione del tuo link video in una bozza di schema",
+      "error": {
+        "title": "Importazione fallita",
+        "fallbackMessage": "Non siamo riusciti a creare una bozza.",
+        "retry": "Torna indietro e riprova"
+      }
+    },
+    "review": {
+      "sectionTitles": {
+        "needsReview": "Da rivedere",
+        "materials": "Materiali",
+        "skills": "Competenze",
+        "steps": "Passaggi"
+      },
+      "empty": {
+        "materials": "Nessun materiale estratto.",
+        "skills": "Nessuna competenza estratta."
+      },
+      "step": {
+        "targetLabel": "obiettivo"
+      },
+      "timeSuffix": "min",
+      "button": {
+        "saving": "Salvataggio progetto...",
+        "save": "Salva e apri progetto"
+      }
+    }
   }
 }

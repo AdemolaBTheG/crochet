@@ -2,7 +2,15 @@ import type { ProjectChatStep } from '@/components/project-chat';
 import type { Pattern } from '@/db/schema';
 import { isSupabaseConfigured, supabase } from '@/utils/supabase';
 
-type FunctionName = 'project-chat' | 'stitch-fixes' | 'identify-stitch' | 'pattern-converter';
+type FunctionName =
+  | 'project-chat'
+  | 'stitch-fixes'
+  | 'identify-stitch'
+  | 'pattern-converter'
+  | 'pattern-import-file'
+  | 'pattern-import-photo'
+  | 'pattern-import-website'
+  | 'pattern-import-youtube';
 
 class AiFunctionError extends Error {
   constructor(
@@ -162,6 +170,32 @@ export type IdentifyStitchResult = {
   caution: string;
 };
 
+export type ImportedPatternDraft = {
+  title: string;
+  description: string;
+  craft: 'crochet' | 'knitting' | 'unknown';
+  difficulty: 'beginner' | 'intermediate' | 'advanced' | 'unknown';
+  category: string | null;
+  estimatedMinutes: number | null;
+  materials: string[];
+  skills: string[];
+  expectationText: string;
+  steps: Array<{
+    type: 'instruction' | 'row' | 'round' | 'repeat';
+    title: string;
+    instruction: string;
+    counterLabel: 'row' | 'round' | 'repeat' | null;
+    targetCount: number | null;
+  }>;
+  notes: string[];
+  warnings: string[];
+  source: {
+    type: 'file' | 'photo' | 'website' | 'youtube';
+    url: string | null;
+    title: string | null;
+  };
+};
+
 function asRecord(value: unknown): Record<string, unknown> | null {
   if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
   return value as Record<string, unknown>;
@@ -238,4 +272,101 @@ export async function identifyStitch({
   });
 
   return normalizeIdentifyStitchResult(result);
+}
+
+export async function importPatternFromFile({
+  sourceText,
+  dataUrl,
+  base64,
+  mimeType,
+  fileName,
+  sourceUrl,
+  craft,
+  notes,
+}: {
+  sourceText?: string;
+  dataUrl?: string;
+  base64?: string;
+  mimeType?: string;
+  fileName?: string;
+  sourceUrl?: string;
+  craft?: 'crochet' | 'knitting' | 'unknown';
+  notes?: string;
+}) {
+  return invokeFunction<ImportedPatternDraft>('pattern-import-file', {
+    sourceText,
+    dataUrl,
+    base64,
+    mimeType,
+    fileName,
+    sourceUrl,
+    craft,
+    notes,
+  });
+}
+
+export async function importPatternFromPhoto({
+  imageDataUrl,
+  imageBase64,
+  mimeType,
+  craft,
+  notes,
+}: {
+  imageDataUrl?: string;
+  imageBase64?: string;
+  mimeType?: string;
+  craft?: 'crochet' | 'knitting' | 'unknown';
+  notes?: string;
+}) {
+  return invokeFunction<ImportedPatternDraft>('pattern-import-photo', {
+    imageDataUrl,
+    imageBase64,
+    mimeType,
+    craft,
+    notes,
+  });
+}
+
+export async function importPatternFromWebsite({
+  url,
+  pageTitle,
+  pageText,
+  craft,
+  notes,
+}: {
+  url: string;
+  pageTitle?: string;
+  pageText?: string;
+  craft?: 'crochet' | 'knitting' | 'unknown';
+  notes?: string;
+}) {
+  return invokeFunction<ImportedPatternDraft>('pattern-import-website', {
+    url,
+    pageTitle,
+    pageText,
+    craft,
+    notes,
+  });
+}
+
+export async function importPatternFromYoutube({
+  url,
+  videoTitle,
+  transcriptText,
+  craft,
+  notes,
+}: {
+  url: string;
+  videoTitle?: string;
+  transcriptText?: string;
+  craft?: 'crochet' | 'knitting' | 'unknown';
+  notes?: string;
+}) {
+  return invokeFunction<ImportedPatternDraft>('pattern-import-youtube', {
+    url,
+    videoTitle,
+    transcriptText,
+    craft,
+    notes,
+  });
 }
