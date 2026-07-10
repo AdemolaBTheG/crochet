@@ -1,0 +1,15 @@
+{
+  "title": "Crochet Bunny",
+  "description": "A simple soft toy with a rounded body, long ears, and stitched facial details.",
+  "materials": ["DK or worsted yarn", "3.5 to 4 mm hook", "stuffing", "yarn needle", "stitch marker", "scissors"],
+  "skills": ["magic ring", "single crochet", "increasing", "decreasing", "amigurumi assembly"],
+  "expectationText": "A gentle amigurumi project that teaches you to shape basic body parts, stuff them evenly, and assemble a simple character cleanly.",
+  "steps": [
+    { "type": "instruction", "title": "Start the body", "instruction": "Begin with a magic ring and place a marker to track each round." },
+    { "type": "round", "title": "Round 1", "instruction": "Work 6 single crochet into the ring.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Increase for shape", "instruction": "Increase evenly over the next rounds until the body reaches the widest point.", "counterLabel": "round", "targetCount": 5 },
+    { "type": "round", "title": "Work even", "instruction": "Crochet several rounds with no increases to build height before stuffing lightly.", "counterLabel": "round", "targetCount": 9 },
+    { "type": "round", "title": "Decrease to close", "instruction": "Use invisible decreases to taper the top and close the body after stuffing firmly.", "counterLabel": "round", "targetCount": 12 },
+    { "type": "instruction", "title": "Add ears and face", "instruction": "Crochet two simple ear pieces, sew them on, then stitch the eyes and nose." }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Colete simples de crochê",
+  "description": "Um colete leve para sobrepor, feito com painéis simples, modelagem suave e acabamento limpo.",
+  "materials": [
+    "fio worsted",
+    "agulha de crochê de 5 mm",
+    "marcadores de ponto",
+    "fita métrica",
+    "agulha de tapeçaria",
+    "tesoura"
+  ],
+  "skills": [
+    "corrente de base",
+    "ponto alto",
+    "costura",
+    "bordas e acabamentos"
+  ],
+  "expectationText": "Uma primeira peça de roupa que ensina construção por painéis, checagem básica de caimento e montagem limpa sem modelagem complicada.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Meça e faça a amostra",
+      "instruction": "Meça o busto desejado e faça uma pequena amostra para prever a largura do colete."
+    },
+    {
+      "type": "row",
+      "title": "Painel das costas",
+      "instruction": "Trabalhe o painel das costas em carreiras até chegar ao comprimento do corpo e à profundidade da cava desejados.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "row",
+      "title": "Painéis da frente",
+      "instruction": "Faça dois painéis da frente iguais e confira se combinam com as costas.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Una ombros e laterais",
+      "instruction": "Costure primeiro os ombros e depois feche as laterais, deixando espaço para as cavas."
+    },
+    {
+      "type": "instruction",
+      "title": "Adicione o acabamento",
+      "instruction": "Trabalhe uma borda limpa ao redor do decote, das cavas e da abertura frontal para estabilizar a peça."
+    },
+    {
+      "type": "instruction",
+      "title": "Finalize",
+      "instruction": "Arremate os fios e bloqueie levemente para que os painéis assentem de forma uniforme."
+    }
+  ]
+}

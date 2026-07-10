@@ -1,0 +1,20 @@
+{
+  "title": "Conceptos básicos de la muestra",
+  "description": "Comprenda cómo el número de puntadas y filas afecta el ajuste, el tamaño y el éxito final del proyecto.",
+  "content": {
+    "summary": "El calibre es el número de puntadas y filas que obtienes en un área medida con un hilo, gancho y tensión específicos.",
+    "whyItMatters": "El calibre es lo que hace que un sombrero te quede bien, que una talla de suéter sea correcta y que una manta quede cerca de las dimensiones del patrón.",
+    "steps": [
+      "Lee la nota del calibre del patrón antes de comenzar.",
+      "Haz una muestra lo suficientemente grande como para medir el área central con precisión.",
+      "Cuenta puntos y filas sobre la misma sección medida que usa el patrón.",
+      "Si tu calibre no está bien, cambia el tamaño del anzuelo antes de comenzar el proyecto.",
+      "Vuelva a verificar el medidor después de lavarlo o bloquearlo si el proyecto es sensible al tamaño."
+    ],
+    "practice": "Haz una muestra de tu tamaño de anzuelo normal, luego otra con un tamaño mayor o menor y compara.",
+    "commonMistakes": [
+      "Midiendo el borde exterior de una muestra en lugar del centro.",
+      "Ignorando el calibre de hilera cuando la forma del proyecto depende de la altura."
+    ]
+  }
+}

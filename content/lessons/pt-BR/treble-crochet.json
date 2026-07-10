@@ -1,0 +1,20 @@
+{
+  "title": "Ponto alto triplo",
+  "description": "Aprenda um ponto alto que constrói tecido rapidamente para lenços abertos, envoltórios e repetições rendadas.",
+  "content": {
+    "summary": "Passe o fio duas vezes antes de inserir a agulha e, em seguida, faça duas laçadas de cada vez até que reste uma laçada.",
+    "whyItMatters": "O crochê agudo adiciona altura rapidamente, abre o tecido e ajuda você a entender a estrutura do ponto mais alto.",
+    "steps": [
+      "Enfiar duas vezes.",
+      "Insira a agulha no próximo ponto e puxe uma laçada.",
+      "Passe o fio e puxe as 2 primeiras voltas.",
+      "Passe o fio e puxe pelas próximas 2 voltas.",
+      "Passe o fio e puxe pelas 2 voltas finais."
+    ],
+    "practice": "Tricotar 2 carreiras de 12 pontos altos e comparar a altura com o ponto alto.",
+    "commonMistakes": [
+      "Esquecer a segunda laçada antes de inserir a agulha.",
+      "Puxar o ponto com muita força para que os laços altos caiam."
+    ]
+  }
+}

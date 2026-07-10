@@ -18,7 +18,7 @@ import {
   type Project,
 } from '@/db/schema';
 import { usePatternDetail } from '@/hooks/use-pattern-detail';
-import { cta, tap, warn } from '@/services/haptics';
+import { complete, cta, tap, warn } from '@/services/haptics';
 import LoadingShimmer from '@/components/shimmer/loading-shimmer';
 import { endCraftSession, startCraftSession } from '@/services/craft-sessions';
 import {
@@ -26,6 +26,7 @@ import {
   startProjectActivity,
   updateProjectActivity,
 } from '@/services/live-activity';
+import { syncCurrentProjectWidgetFromDb } from '@/services/project-widget';
 import { useDbStore } from '@/stores/dbStore';
 import { eq } from 'drizzle-orm';
 import { Stack, useFocusEffect, useLocalSearchParams, useRouter } from 'expo-router';
@@ -128,6 +129,7 @@ export default function ProjectDetailScreen() {
         difficulty: 'unknown',
         category: null,
         coverImageKey: project.coverImageKey ?? '',
+        youtubeVideoId: null,
         estimatedMinutes: null,
         isPublished: false,
         materials: [] as string[],
@@ -138,6 +140,9 @@ export default function ProjectDetailScreen() {
     : null;
   const resolvedPattern = pattern ?? fallbackPattern;
   const isLoading = isLoadingProject || (isPatternLoading && !fallbackPattern);
+  const tutorialVideoUrl = resolvedPattern?.youtubeVideoId
+    ? `https://www.youtube.com/watch?v=${resolvedPattern.youtubeVideoId}`
+    : null;
 
   const steps = resolvedPattern?.steps ?? [];
   const currentStepIndex = Math.min(selectedStepIndex, Math.max(steps.length - 1, 0));
@@ -215,6 +220,11 @@ export default function ProjectDetailScreen() {
     isLoading,
   ]);
 
+  useEffect(() => {
+    if (isLoading) return;
+    void syncCurrentProjectWidgetFromDb(db);
+  }, [db, isLoading, liveProjectId, liveProjectStatus, liveProjectStepIndex, liveProjectRowCount, liveProjectRoundCount]);
+
   const stopCraftSession = React.useCallback(async () => {
     if (!db || activeSessionIdRef.current == null) return;
 
@@ -275,6 +285,7 @@ export default function ProjectDetailScreen() {
     },
   });
   const counterLabel = currentStep?.counterLabel;
+  const targetCount = typeof currentStep?.targetCount === 'number' ? currentStep.targetCount : null;
   const counterValue =
     counterLabel === 'row'
       ? (project?.rowCount ?? 0)
@@ -316,24 +327,50 @@ export default function ProjectDetailScreen() {
         updatedAt: new Date(),
       })
       .where(eq(projectsTable.id, nextProject.id));
+    await syncCurrentProjectWidgetFromDb(db);
   }
 
   async function updateCounter(delta: number) {
-    tap();
     if (!project || !counterLabel) return;
 
     if (counterLabel === 'row') {
+      const nextValue = Math.max(0, project.rowCount + delta);
+      const reachedTarget =
+        delta > 0 &&
+        targetCount !== null &&
+        project.rowCount < targetCount &&
+        nextValue >= targetCount;
+
+      if (reachedTarget) {
+        complete();
+      } else {
+        tap();
+      }
+
       await updateProject({
         ...project,
-        rowCount: Math.max(0, project.rowCount + delta),
+        rowCount: nextValue,
       });
       return;
     }
 
     if (counterLabel === 'round') {
+      const nextValue = Math.max(0, project.roundCount + delta);
+      const reachedTarget =
+        delta > 0 &&
+        targetCount !== null &&
+        project.roundCount < targetCount &&
+        nextValue >= targetCount;
+
+      if (reachedTarget) {
+        complete();
+      } else {
+        tap();
+      }
+
       await updateProject({
         ...project,
-        roundCount: Math.max(0, project.roundCount + delta),
+        roundCount: nextValue,
       });
     }
   }
@@ -440,7 +477,46 @@ export default function ProjectDetailScreen() {
                     onPress={() => router.back()}
                   />
                 ),
+                headerRight: () =>
+                  tutorialVideoUrl ? (
+                    <NavigationHeaderAction
+                      label="Tutorial"
+                      icon="play-circle-outline"
+                      onPress={() =>
+                        router.push({
+                          pathname: '/video',
+                          params: {
+                            title: resolvedPattern?.title
+                              ? `${resolvedPattern.title} Tutorial`
+                              : 'Tutorial',
+                            videoUrl: tutorialVideoUrl,
+                          },
+                        })
+                      }
+                    />
+                  ) : null,
               }),
+          ...(Platform.OS === 'ios' && tutorialVideoUrl
+            ? {
+                unstable_headerRightItems: () => [
+                  {
+                    type: 'button' as const,
+                    label: 'Tutorial',
+                    icon: { type: 'sfSymbol' as const, name: 'play.rectangle' },
+                    onPress: () =>
+                      router.push({
+                        pathname: '/video',
+                        params: {
+                          title: resolvedPattern?.title
+                            ? `${resolvedPattern.title} Tutorial`
+                            : 'Tutorial',
+                          videoUrl: tutorialVideoUrl,
+                        },
+                      }),
+                    },
+                ],
+              }
+            : {}),
         }}
       />
       <View style={{ flex: 1, backgroundColor: theme.colors.background }}>

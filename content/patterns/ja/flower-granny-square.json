@@ -1,0 +1,57 @@
+{
+  "title": "フラワーグラニースクエア",
+  "description": "グラニー風のフレームの中にシンプルなフラワーセンターを重ねたフラワーモチーフのスクエアです。",
+  "materials": [
+    "2 つの糸の色",
+    "4.5 mm フック",
+    "糸針",
+    "ハサミ"
+  ],
+  "skills": [
+    "マジックリング",
+    "クラスターステッチ",
+    "チェーンスペース",
+    "ラウンドで作業"
+  ],
+  "expectationText": "実用的な正方形のフォーマットで終わりながら、色の変化とラウンドベースの構築を導入したモチーフプロジェクト。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "中央のリングを作ります",
+      "instruction": "花の中心の色の魔法のリングから始めます。"
+    },
+    {
+      "type": "round",
+      "title": "ラウンド 1",
+      "instruction": "花びらを固定する中央のステッチを行います。",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "ラウンド 2",
+      "instruction": "中心の周りに均等に花びらのグループを作成します。",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "モチーフを正方形にします",
+      "instruction": "色を変更し、隅のチェーン スペースを調整して、花が正方形になるようにします。",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "境界線をもう 1 つ追加します",
+      "instruction": "正方形の周りを均等に作業して、エッジをきれいにして結合しやすくします。",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "instruction",
+      "title": "仕上げ",
+      "instruction": "取り外して、すべての色の変更端をきれいに織り込みます。"
+    }
+  ]
+}

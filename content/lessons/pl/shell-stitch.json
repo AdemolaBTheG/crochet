@@ -1,0 +1,20 @@
+{
+  "title": "Ścieg muszlowy",
+  "description": "Stwórz miękki wachlarz, grupując ściegi w tej samej przestrzeni.",
+  "content": {
+    "summary": "Muszla składa się zwykle z kilku wysokich ściegów przerobionych w jedno oczko lub łuk, po których następuje ścieg pomijany lub ścieg kotwiczący.",
+    "whyItMatters": "Ścieg muszlowy wprowadza logikę ściegu grupowego i uczy czytać powtarzające się kształty dekoracyjne.",
+    "steps": [
+      "Zidentyfikuj ścieg lub przestrzeń, do której należy muszla.",
+      "Przerobić wymaganą liczbę wysokich oczek w tym samym miejscu.",
+      "Policz pełną skorupę, zanim przejdziesz dalej.",
+      "Pomiń lub zakotwicz ściegi dokładnie tak, jak mówi wzór.",
+      "Powtórz rytm rozstawu muszli w całym rzędzie."
+    ],
+    "practice": "Wykonaj krótką próbkę z 3 powtórzeniami, aby zobaczyć kształt wachlarza.",
+    "commonMistakes": [
+      "Tracę rachubę w powłoce i sprawiam, że jest ona nierówna.",
+      "Pomijanie niewłaściwej liczby ściegów pomiędzy muszlami."
+    ]
+  }
+}

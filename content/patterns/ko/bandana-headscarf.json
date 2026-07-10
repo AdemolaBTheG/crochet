@@ -1,0 +1,52 @@
+{
+  "title": "반다나 헤드스카프",
+  "description": "간단한 늘림으로 만드는 빠른 삼각 스카프로, 자연스러운 드레이프와 묶는 끈이 있어 착용이 쉽습니다.",
+  "materials": [
+    "면실",
+    "4.5 mm 코바늘",
+    "스티치 마커",
+    "돗바늘",
+    "가위"
+  ],
+  "skills": [
+    "기초 사슬",
+    "한길긴뜨기",
+    "사슬 공간과 코너",
+    "테두리와 마감"
+  ],
+  "expectationText": "삼각형 형태 만들기와 깔끔한 마감에 자신감을 주는 빠른 액세서리 프로젝트입니다.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "윗중앙에서 시작",
+      "instruction": "짧은 시작 사슬로 출발하고 늘림 위치를 표시해 형태를 쉽게 따라갑니다."
+    },
+    {
+      "type": "row",
+      "title": "삼각형 키우기",
+      "instruction": "가장자리나 중앙에서 늘리며 단을 떠서 스카프 폭을 고르게 넓힙니다.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "폭 확인",
+      "instruction": "긴 변이 머리 위에 원하는 폭이 되면 멈춥니다."
+    },
+    {
+      "type": "instruction",
+      "title": "끈 추가",
+      "instruction": "양쪽 모서리에서 가는 끈이나 긴 사슬끈을 만듭니다."
+    },
+    {
+      "type": "instruction",
+      "title": "테두리 뜨기",
+      "instruction": "삼각형과 끈 둘레에 깔끔한 테두리를 떠 윤곽을 정리합니다."
+    },
+    {
+      "type": "instruction",
+      "title": "마무리",
+      "instruction": "실끝을 숨기고 가볍게 블로킹해 자연스럽게 떨어지도록 합니다."
+    }
+  ]
+}

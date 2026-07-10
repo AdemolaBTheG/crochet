@@ -1,0 +1,20 @@
+{
+  "title": "Grundlagen der Maschenprobe",
+  "description": "Verstehe, wie sich Maschen- und Reihenzahl auf Passform, Größe und das Endergebnis eines Projekts auswirken.",
+  "content": {
+    "summary": "Die Maschenprobe beschreibt, wie viele Maschen und Reihen du mit einem bestimmten Garn, einer bestimmten Nadelstärke und deiner üblichen Spannung auf einer gemessenen Fläche erhältst.",
+    "whyItMatters": "Eine passende Maschenprobe sorgt dafür, dass eine Mütze sitzt, ein Pullover die richtige Größe bekommt und eine Decke nah an den Maßen der Anleitung bleibt.",
+    "steps": [
+      "Lies vor dem Start die Angaben zur Maschenprobe in der Anleitung.",
+      "Häkle ein Probestück, das groß genug ist, damit du die Mitte sauber messen kannst.",
+      "Zähle Maschen und Reihen über genau den Bereich, den die Anleitung vorgibt.",
+      "Wenn deine Werte nicht passen, ändere zuerst die Nadelstärke und miss erneut.",
+      "Prüfe die Maschenprobe nach dem Waschen oder Blocken noch einmal, wenn das Projekt größenempfindlich ist."
+    ],
+    "practice": "Häkle zwei kleine Probestücke mit unterschiedlicher Nadelstärke und vergleiche direkt, wie sich Maß und Griff verändern.",
+    "commonMistakes": [
+      "Am Rand des Probestücks zu messen statt in der Mitte.",
+      "Nur die Maschenzahl zu prüfen und die Reihenhöhe zu ignorieren."
+    ]
+  }
+}

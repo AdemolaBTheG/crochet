@@ -1,0 +1,51 @@
+{
+  "title": "Decke im Wellenmuster",
+  "description": "Ein sich wiederholendes Deckenmuster, das in jeder Reihe sanfte Spitzen und Täler erzeugt.",
+  "materials": [
+    "Kammgarn",
+    "Häkelnadel 5 mm",
+    "Maschenmarkierer",
+    "Garnnadel",
+    "Schere"
+  ],
+  "skills": [
+    "Stäbchen",
+    "Zunahme",
+    "Abnehmen",
+    "Wiederholungen zählen"
+  ],
+  "expectationText": "Ein längeres Wiederholungsprojekt, bei dem die Schlüsselkompetenz darin besteht, Zu- und Abnahmen im Gleichgewicht zu halten, damit die Wellen gleichmäßig und erkennbar bleiben.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Die Grundkette anschlagen.",
+      "instruction": "Machen Sie eine Basiskette in der für die Wellenwiederholung erforderlichen Anzahl plus Wendestiche."
+    },
+    {
+      "type": "row",
+      "title": "Reihe 1",
+      "instruction": "Arbeiten Sie die Vorbereitungsreihe ab und markieren Sie eine vollständige Wiederholung, damit Sie Ihren Rhythmus frühzeitig überprüfen können.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Reihe 2",
+      "instruction": "Zunahme an den Spitzen und Abnahme an den Tälern entsprechend dem Wellenmuster.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Wiederholen Sie die Welle",
+      "instruction": "Setzen Sie die Wellenreihen fort, bis die Decke Ihre gewünschte Länge erreicht hat.",
+      "counterLabel": "row",
+      "targetCount": 20
+    },
+    {
+      "type": "instruction",
+      "title": "Beenden Sie die letzte Kante.",
+      "instruction": "Arbeiten Sie einen einfachen Rand oder eine letzte Reihe, um die Oberkante zu stabilisieren, bevor Sie fertig sind."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "title": "Glasses Case",
+  "description": "A slim crochet case that protects glasses in your bag and closes with a simple button or loop.",
+  "materials": [
+    "cotton yarn",
+    "4 mm hook",
+    "stitch marker",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "working in rows",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "A compact useful project that teaches shaping by measurement and neat finishing.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Measure the glasses",
+      "instruction": "Check the width and height of the glasses so the case is easy to slide on and off."
+    },
+    {
+      "type": "row",
+      "title": "Crochet the body",
+      "instruction": "Work a rectangle long enough to fold into a pouch with a little flap.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Fold and check size",
+      "instruction": "Wrap the rectangle around the glasses and confirm the fit before joining."
+    },
+    {
+      "type": "instruction",
+      "title": "Seam the edges",
+      "instruction": "Join the sides neatly so the glasses stay protected and the case keeps its shape."
+    },
+    {
+      "type": "instruction",
+      "title": "Add the closure",
+      "instruction": "Crochet a loop or small buttonhole and pair it with a button if you want extra security."
+    },
+    {
+      "type": "instruction",
+      "title": "Finish the case",
+      "instruction": "Weave in ends and test the opening a few times so the case feels smooth to use."
+    }
+  ]
+}

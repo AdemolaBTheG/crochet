@@ -1,0 +1,58 @@
+{
+  "title": "Sac de plage en résille",
+  "description": "Un fourre-tout spacieux et ajouré pour les serviettes, le fil ou les vêtements légers de tous les jours.",
+  "materials": [
+    "fil de coton ou de raphia",
+    "Crochet de 5,5 mm",
+    "marqueur de maille",
+    "aiguille à fil",
+    "ciseaux"
+  ],
+  "skills": [
+    "chaîne de fondation",
+    "maille serrée",
+    "chaînes",
+    "façonnage de la sangle"
+  ],
+  "expectationText": "Un projet de transport plus vaste qui vise à maintenir la cohérence du maillage ouvert tout en renforçant suffisamment la base et les poignées pour un usage quotidien.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Réaliser la base",
+      "instruction": "Construire une base plate ovale ou rectangulaire avec quelques tours de points fermes."
+    },
+    {
+      "type": "round",
+      "title": "Tour 1",
+      "instruction": "Travaillez uniformément autour du bord de la base et placez un marqueur au début du tour.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Transition vers le maillage",
+      "instruction": "Travaillez un tour régulier avant d'ouvrir dans le maillage de l'espace de chaîne.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Agrandissez le corps du sac.",
+      "instruction": "Répétez le motif de maillage jusqu'à ce que le sac atteigne une hauteur de fourre-tout de plage spacieuse.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "round",
+      "title": "Ajoutez des poignées",
+      "instruction": "Chaînez les ouvertures des poignées et renforcez-les avec un ou deux tours finaux.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Terminer",
+      "instruction": "Attachez soigneusement et rentrez les extrémités là où elles ne s'accrocheront pas."
+    }
+  ]
+}

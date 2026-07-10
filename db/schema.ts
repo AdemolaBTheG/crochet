@@ -89,6 +89,7 @@ export const patterns = sqliteTable(
     difficulty: text("difficulty").notNull(),
     category: text("category"),
     coverImageKey: text("cover_image_key").notNull(),
+    youtubeVideoId: text("youtube_video_id"),
     estimatedMinutes: integer("estimated_minutes"),
     materialsText: text("materials_text"),
     skillsText: text("skills_text"),
@@ -187,6 +188,51 @@ export const projects = sqliteTable(
   ]
 );
 
+export const patternFolders = sqliteTable(
+  "pattern_folders",
+  {
+    id: integer("id").primaryKey({ autoIncrement: true }),
+    name: text("name").notNull(),
+    icon: text("icon").notNull().default("folder.fill"),
+    color: text("color").notNull().default("#2F6B5A"),
+    sortOrder: integer("sort_order").notNull().default(0),
+    createdAt: integer("created_at", { mode: "timestamp_ms" })
+      .notNull()
+      .default(now),
+    updatedAt: integer("updated_at", { mode: "timestamp_ms" })
+      .notNull()
+      .default(now),
+  },
+  (table) => [
+    index("pattern_folders_sort_order_idx").on(table.sortOrder),
+    index("pattern_folders_updated_at_idx").on(table.updatedAt),
+  ]
+);
+
+export const patternFolderItems = sqliteTable(
+  "pattern_folder_items",
+  {
+    id: integer("id").primaryKey({ autoIncrement: true }),
+    folderId: integer("folder_id")
+      .notNull()
+      .references(() => patternFolders.id, { onDelete: "cascade" }),
+    patternId: integer("pattern_id")
+      .notNull()
+      .references(() => patterns.id, { onDelete: "cascade" }),
+    createdAt: integer("created_at", { mode: "timestamp_ms" })
+      .notNull()
+      .default(now),
+  },
+  (table) => [
+    uniqueIndex("pattern_folder_items_folder_pattern_unique").on(
+      table.folderId,
+      table.patternId,
+    ),
+    index("pattern_folder_items_folder_id_idx").on(table.folderId),
+    index("pattern_folder_items_pattern_id_idx").on(table.patternId),
+  ]
+);
+
 export const craftSessions = sqliteTable(
   "craft_sessions",
   {
@@ -220,6 +266,12 @@ export type NewPattern = InferInsertModel<typeof patterns>;
 
 export type PatternTranslation = InferSelectModel<typeof patternTranslations>;
 export type NewPatternTranslation = InferInsertModel<typeof patternTranslations>;
+
+export type PatternFolder = InferSelectModel<typeof patternFolders>;
+export type NewPatternFolder = InferInsertModel<typeof patternFolders>;
+
+export type PatternFolderItem = InferSelectModel<typeof patternFolderItems>;
+export type NewPatternFolderItem = InferInsertModel<typeof patternFolderItems>;
 
 export type Project = InferSelectModel<typeof projects>;
 export type NewProject = InferInsertModel<typeof projects>;

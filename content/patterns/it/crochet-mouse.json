@@ -1,0 +1,60 @@
+{
+  "title": "Mouse all'uncinetto",
+  "description": "Un mouse amigurumi tascabile con un corpo semplice e orecchie minuscole.",
+  "materials": [
+    "Filato DK",
+    "Uncino da 3,5 mm",
+    "imbottitura",
+    "ago del filo",
+    "segnapunto",
+    "forbici"
+  ],
+  "skills": [
+    "anello magico",
+    "maglia bassa",
+    "aumento",
+    "diminuendo",
+    "assemblaggio di piccole parti"
+  ],
+  "expectationText": "Un piccolo giocattolo che mantiene la modellatura semplice in modo che tu possa concentrarti sulla struttura rotonda, sulle diminuzioni ordinate e sull'attaccare piccoli dettagli in modo pulito.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Avvia il corpo",
+      "instruction": "Crea un anello magico e segna il primo punto."
+    },
+    {
+      "type": "round",
+      "title": "Giro 1",
+      "instruction": "Lavora 6 maglie basse nell'anello.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Aumenta",
+      "instruction": "Aumenta in modo uniforme finché il corpo non raggiunge la larghezza desiderata.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "round",
+      "title": "Lavorare in modo uniforme",
+      "instruction": "Lavorare diversi giri senza aumentare per aumentare la lunghezza del corpo.",
+      "counterLabel": "round",
+      "targetCount": 7
+    },
+    {
+      "type": "round",
+      "title": "Diminuisci e riempi",
+      "instruction": "Riempi il mouse e diminuisci verso la fine della coda fino a quasi chiuderlo.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Aggiungi orecchie e coda",
+      "instruction": "Cuci due piccole orecchie e attacca una catenella o una coda di filo."
+    }
+  ]
+}

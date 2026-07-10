@@ -1,0 +1,57 @@
+{
+  "title": "Kwadrat Kwiatowej Babci",
+  "description": "Kwadrat z motywem kwiatowym, który składa się z prostego kwiatowego środka umieszczonego w ramce w stylu babci.",
+  "materials": [
+    "dwa kolory przędzy",
+    "haczyk 4,5 mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "magiczny pierścień",
+    "ściegi klastrowe",
+    "przestrzenie łańcuszkowe",
+    "praca w rundach"
+  ],
+  "expectationText": "Projekt motywu, który wprowadza zmiany kolorów i okrągłą konstrukcję, a jednocześnie kończy się praktycznym kwadratowym formatem.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Zrób środkowy pierścień",
+      "instruction": "Zacznij od magicznego pierścienia w kolorze środka kwiatu."
+    },
+    {
+      "type": "round",
+      "title": "Runda 1",
+      "instruction": "Przerobić środkowe oczka mocujące płatki kwiatów.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Runda 2",
+      "instruction": "Utwórz grupy płatków równomiernie wokół środka.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Kwadrat motywu",
+      "instruction": "Zmień kolor i przerabiaj łuki w narożnikach, tak aby kwiat zmienił się w kwadrat.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Dodaj jeszcze jedną obwódkę",
+      "instruction": "Pracuj równomiernie wokół kwadratu, aby krawędzie były czystsze i łatwiejsze do połączenia.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "instruction",
+      "title": "Zakończ",
+      "instruction": "Zapiąć i starannie wplecić wszystkie końcówki zmieniające kolor."
+    }
+  ]
+}

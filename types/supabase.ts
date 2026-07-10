@@ -18,6 +18,7 @@ export interface Database {
           difficulty: string;
           category: string | null;
           cover_image_key: string;
+          youtube_video_id: string | null;
           estimated_minutes: number | null;
           materials_text: string | null;
           skills_text: string | null;
@@ -35,6 +36,7 @@ export interface Database {
           difficulty: string;
           category?: string | null;
           cover_image_key: string;
+          youtube_video_id?: string | null;
           estimated_minutes?: number | null;
           materials_text?: string | null;
           skills_text?: string | null;
@@ -52,6 +54,7 @@ export interface Database {
           difficulty?: string;
           category?: string | null;
           cover_image_key?: string;
+          youtube_video_id?: string | null;
           estimated_minutes?: number | null;
           materials_text?: string | null;
           skills_text?: string | null;

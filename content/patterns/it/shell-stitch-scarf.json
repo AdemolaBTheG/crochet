@@ -1,0 +1,50 @@
+{
+  "title": "Sciarpa a conchiglia",
+  "description": "Una sciarpa drappeggiata realizzata con motivi a conchiglia ripetuti per ottenere texture senza modellature complicate.",
+  "materials": [
+    "filato pettinato leggero",
+    "uncinetto da 5 mm",
+    "ago del filo",
+    "forbici"
+  ],
+  "skills": [
+    "catenella di base",
+    "maglia alta",
+    "punto conchiglia",
+    "conteggio delle ripetizioni"
+  ],
+  "expectationText": "Un rilassante progetto di ripetizione in cui la sfida è mantenere ordinata la spaziatura delle conchiglie e costruire un ritmo che rimanga coerente su file lunghe.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Incatena la base",
+      "instruction": "Crea una catenella di base in un multiplo che si adatti alla ripetizione della conchiglia e alla larghezza della sciarpa."
+    },
+    {
+      "type": "row",
+      "title": "Riga 1",
+      "instruction": "Lavora la riga di installazione che crea spazi di ancoraggio per i gusci.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Riga 2",
+      "instruction": "Lavora le conchiglie in ogni spazio di ancoraggio, mantenendo lo stesso conteggio dei punti in ogni conchiglia.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Ripeti il ​​modello",
+      "instruction": "Alterna la riga di impostazione e la riga di conchiglia finché la sciarpa non raggiunge la lunghezza che preferisci.",
+      "counterLabel": "row",
+      "targetCount": 16
+    },
+    {
+      "type": "instruction",
+      "title": "Rifinisci il bordo",
+      "instruction": "Aggiungi un'ultima riga o bordo se necessario, quindi allaccia e intreccia le estremità."
+    }
+  ]
+}

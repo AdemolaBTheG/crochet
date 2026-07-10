@@ -1,0 +1,60 @@
+{
+  "title": "Häkelmaus",
+  "description": "Eine Amigurumi-Maus im Taschenformat mit einem einfachen Körper und winzigen Ohren.",
+  "materials": [
+    "DK-Garn",
+    "3,5-mm-Haken",
+    "Füllen",
+    "Garnnadel",
+    "Maschenmarkierer",
+    "Schere"
+  ],
+  "skills": [
+    "Magischer Ring",
+    "feste Masche",
+    "Zunahme",
+    "Abnehmen",
+    "Kleinteilemontage"
+  ],
+  "expectationText": "Ein kleines Spielzeug, das die Formung einfach hält, sodass Sie sich auf runde Strukturen, saubere Abnahmen und das saubere Anbringen kleiner Details konzentrieren können.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Beginnen Sie mit dem Körper.",
+      "instruction": "Machen Sie einen magischen Ring und markieren Sie den ersten Stich."
+    },
+    {
+      "type": "round",
+      "title": "Runde 1",
+      "instruction": "6 feste Maschen in den Ring einarbeiten.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Erhöhen",
+      "instruction": "Erhöhen Sie gleichmäßig, bis der Körper die gewünschte Breite erreicht.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "round",
+      "title": "Arbeiten Sie gleichmäßig",
+      "instruction": "Häkeln Sie mehrere Runden ohne Zunahmen, um die Körperlänge aufzubauen.",
+      "counterLabel": "round",
+      "targetCount": 7
+    },
+    {
+      "type": "round",
+      "title": "Verringern und stopfen",
+      "instruction": "Füllen Sie die Maus aus und verringern Sie sie zum hinteren Ende hin, bis sie fast geschlossen ist.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Ohren und Schwanz hinzufügen",
+      "instruction": "Zwei kleine Ohren annähen und eine Kette oder einen Fadenschwanz anbringen."
+    }
+  ]
+}

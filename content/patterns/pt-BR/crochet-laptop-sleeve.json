@@ -1,0 +1,53 @@
+{
+  "title": "Capa de notebook em crochê",
+  "description": "Uma capa simples com aba que protege o notebook e entra fácil dentro da bolsa.",
+  "materials": [
+    "worsted or aran yarn",
+    "5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "foundation chain",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "Um acessório prático para aprender medidas reais, tecido firme e um fechamento simples.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Medir o notebook",
+      "instruction": "Meça largura, altura e espessura do notebook para a capa ficar com uma pequena folga."
+    },
+    {
+      "type": "row",
+      "title": "Fazer o corpo",
+      "instruction": "Faça um retângulo firme ou uma peça dobrável com largura e comprimento suficientes.",
+      "counterLabel": "row",
+      "targetCount": 28
+    },
+    {
+      "type": "instruction",
+      "title": "Conferir o encaixe",
+      "instruction": "Dobre o tecido em volta do notebook e ajuste antes das últimas carreiras."
+    },
+    {
+      "type": "instruction",
+      "title": "Fechar as laterais",
+      "instruction": "Costure ou una as laterais para a capa ficar segura sem apertar demais."
+    },
+    {
+      "type": "instruction",
+      "title": "Adicionar aba e fechamento",
+      "instruction": "Finalize a aba superior e acrescente uma argola ou botão fácil de abrir e fechar."
+    },
+    {
+      "type": "instruction",
+      "title": "Reforçar e finalizar",
+      "instruction": "Esconda os fios e achate as costuras para a capa deslizar bem dentro da bolsa."
+    }
+  ]
+}

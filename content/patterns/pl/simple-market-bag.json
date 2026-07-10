@@ -1,0 +1,58 @@
+{
+  "title": "Prosta torba marketingowa",
+  "description": "Lekka torba na co dzień z solidną podstawą i otwartym korpusem z siateczki.",
+  "materials": [
+    "przędza bawełniana",
+    "haczyk 5 mm",
+    "znacznik ściegu",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "łańcuszek podstawowy",
+    "szydełko",
+    "łańcuszki",
+    "praca w rundach"
+  ],
+  "expectationText": "Przydatny projekt torby, który łączy w sobie solidną strukturę i otwartą siateczkę, dzięki czemu możesz ćwiczyć przechodzenie od gęstych rzędów do przewiewnych, powtarzających się okrążeń.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Zbuduj bazę",
+      "instruction": "Utwórz owalną lub prostokątną bazę, używając łańcuszków i dodawania pojedynczych oczek na końcach."
+    },
+    {
+      "type": "round",
+      "title": "Runda 1",
+      "instruction": "Przerobić pierwsze okrążenie równomiernie wokół podstawy i umieścić marker na początku.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Wzmocnij brzeg podstawy",
+      "instruction": "Pojedyncze szydełko jedno lub dwa okrążenia bez dodawania oczek, aby spód był bardziej stabilny.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Rozpocznij korpus siatki",
+      "instruction": "Naprzemiennie odstępy łańcuszków i ściegi kotwiące, aby utworzyć wzór otwartej siatki.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "round",
+      "title": "Dodaj paski",
+      "instruction": "Długie otwory na rączki łańcuszkiem i wzmocnij je jeszcze jedną rundą ściegów.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Zakończ",
+      "instruction": "Zapiąć po zaokrągleniu paska i dokładnie splatać końce."
+    }
+  ]
+}

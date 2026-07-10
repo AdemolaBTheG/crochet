@@ -1,0 +1,58 @@
+{
+  "title": "メッシュ ビーチ バッグ",
+  "description": "タオル、毛糸、または軽い毎日の持ち運びに適した広々とした透かし彫りのトートバッグ。",
+  "materials": [
+    "綿またはラフィア糸",
+    "5.5 mm フック",
+    "ステッチマーカー",
+    "糸針",
+    "ハサミ"
+  ],
+  "skills": [
+    "基礎チェーン",
+    "片かぎ針編み",
+    "チェーン",
+    "ストラップの成形"
+  ],
+  "expectationText": "オープンメッシュの一貫性を維持しながら、ベースとハンドルを日常使用に十分な強度を維持することに重点を置いた、より大きなキャリー プロジェクトです。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "ベースを作ります",
+      "instruction": "しっかりとしたステッチを数回繰り返して、平らな楕円形または長方形のベースを作ります。"
+    },
+    {
+      "type": "round",
+      "title": "ラウンド 1",
+      "instruction": "ベースエッジの周りを均等に作業し、ラウンドの開始時にマーカーを置きます。",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "メッシュへの移行",
+      "instruction": "チェーンスペース メッシュに入る前に、安定した 1 ラウンドを作業します。",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "バッグ本体を成長させます",
+      "instruction": "バッグがゆったりとしたビーチ トートの高さに達するまで、メッシュ パターンを繰り返します。",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "round",
+      "title": "ハンドルを追加します",
+      "instruction": "ハンドルの開口部をチェーンし、1 つまたは 2 つの最終ラウンドで補強します。",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "仕上げ",
+      "instruction": "慎重に留めて、端が引っかからないように織り込みます。"
+    }
+  ]
+}

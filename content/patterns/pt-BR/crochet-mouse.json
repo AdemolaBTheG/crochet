@@ -1,0 +1,60 @@
+{
+  "title": "Ratinho de crochê",
+  "description": "Um rato amigurumi de bolso com corpo simples e orelhas minúsculas.",
+  "materials": [
+    "Fio DK",
+    "Gancho de 3,5 mm",
+    "recheio",
+    "agulha de fio",
+    "marcador de ponto",
+    "tesoura"
+  ],
+  "skills": [
+    "anel mágico",
+    "ponto baixo",
+    "aumentos",
+    "diminuições",
+    "montagem de peças pequenas"
+  ],
+  "expectationText": "Um pequeno brinquedo que mantém a modelagem simples para que você possa se concentrar na estrutura redonda, diminuições perfeitas e anexar pequenos recursos de forma limpa.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Inicie o corpo",
+      "instruction": "Faça um anel mágico e marque o primeiro ponto."
+    },
+    {
+      "type": "round",
+      "title": "Rodada 1",
+      "instruction": "Tricotar 6 pontos baixos no anel.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Aumente",
+      "instruction": "Aumente uniformemente até que o corpo atinja a largura desejada.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "round",
+      "title": "Trabalhe uniformemente",
+      "instruction": "Crochetar várias voltas sem aumentar para aumentar o comprimento do corpo.",
+      "counterLabel": "round",
+      "targetCount": 7
+    },
+    {
+      "type": "round",
+      "title": "Diminuir e rechear",
+      "instruction": "Rechear o mouse e diminuir em direção ao final da cauda até quase fechar.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Adicione orelhas e cauda",
+      "instruction": "Costure duas orelhas minúsculas e prenda uma corrente ou cauda de fio."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Coniglietto all'uncinetto",
+  "description": "Un semplice peluche con un corpo arrotondato, orecchie lunghe e dettagli del viso cuciti.",
+  "materials": [
+    "Filato DK o pettinato",
+    "Gancio da 3,5 a 4 mm",
+    "imbottitura",
+    "ago del filo",
+    "segnapunto",
+    "forbici"
+  ],
+  "skills": [
+    "anello magico",
+    "maglia bassa",
+    "aumento",
+    "diminuendo",
+    "assemblaggio amigurumi"
+  ],
+  "expectationText": "Un delicato progetto amigurumi che ti insegna a modellare le parti base del corpo, imbottirle in modo uniforme e assemblare un personaggio semplice in modo pulito.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Avvia il corpo",
+      "instruction": "Inizia con un anello magico e posiziona un segnalino per tracciare ogni round."
+    },
+    {
+      "type": "round",
+      "title": "Giro 1",
+      "instruction": "Lavora 6 maglie basse nell'anello.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Aumenta per la forma",
+      "instruction": "Aumenta in modo uniforme nei giri successivi finché il corpo non raggiunge il punto più largo.",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "round",
+      "title": "Lavorare in modo uniforme",
+      "instruction": "Lavorare diversi giri senza aumenti per aumentare l'altezza prima di imbottire leggermente.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Diminuire per chiudere",
+      "instruction": "Usa le diminuzioni invisibili per assottigliare la parte superiore e chiudere il corpo dopo aver imbottito saldamente.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Aggiungi orecchie e viso",
+      "instruction": "Lavora all'uncinetto due semplici orecchini, cucili, quindi cuci gli occhi e il naso."
+    }
+  ]
+}

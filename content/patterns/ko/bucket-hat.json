@@ -1,0 +1,58 @@
+{
+  "title": "버킷햇",
+  "description": "평평한 크라운과 안정적인 옆면, 부드러운 챙이 돋보이는 캐주얼한 라운드 프로젝트입니다.",
+  "materials": [
+    "소모사 무게 실",
+    "5mm 후크",
+    "스티치 마커",
+    "실 바늘",
+    "가위"
+  ],
+  "skills": [
+    "매직 링",
+    "싱글 크로셰",
+    "증가",
+    "라운드 작업"
+  ],
+  "expectationText": "먼저 평평한 원을 형성한 다음 스티치 수를 잃지 않고 부드러운 측면과 짧은 챙을 성장시키는 웨어러블 프로젝트입니다.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "왕관 시작",
+      "instruction": "마법의 반지를 만들고 각 라운드의 첫 번째 스티치에 마커를 배치합니다."
+    },
+    {
+      "type": "round",
+      "title": "1 라운드",
+      "instruction": "8개의 싱글 크로셰를 링에 넣습니다.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "크라운을 늘립니다.",
+      "instruction": "원이 모자에 대해 원하는 상단 너비에 도달할 때까지 매 라운드마다 균등하게 늘립니다.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "측면 작업",
+      "instruction": "여러 라운드 동안 증가 없이 단일 크로셰를 균일하게 하여 모자가 아래로 떨어지기 시작합니다.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "round",
+      "title": "챙 모양을 만듭니다.",
+      "instruction": "챙이 바깥쪽으로 벌어지도록 몇 스티치마다 완만한 증가를 추가합니다.",
+      "counterLabel": "round",
+      "targetCount": 15
+    },
+    {
+      "type": "instruction",
+      "title": "마무리",
+      "instruction": "입어보고 필요한 경우 챙 깊이를 조정한 다음 고정하고 끝부분을 엮습니다."
+    }
+  ]
+}

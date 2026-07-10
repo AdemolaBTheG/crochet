@@ -1,0 +1,58 @@
+{
+  "title": "Netz-Strandtasche",
+  "description": "Eine geräumige, durchbrochene Tragetasche für Handtücher, Garn oder leichtes Tragen im Alltag.",
+  "materials": [
+    "Baumwoll- oder Bastgarn",
+    "5,5-mm-Haken",
+    "Maschenmarkierer",
+    "Garnnadel",
+    "Schere"
+  ],
+  "skills": [
+    "Grundkette",
+    "feste Masche",
+    "Ketten",
+    "Riemenformung"
+  ],
+  "expectationText": "Ein größeres Trageprojekt, das sich darauf konzentriert, das offene Netz konsistent zu halten und gleichzeitig die Basis und die Griffe ausreichend für den täglichen Gebrauch zu verstärken.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Machen Sie die Basis.",
+      "instruction": "Erstellen Sie eine flache ovale oder rechteckige Basis mit ein paar Runden fester Stiche."
+    },
+    {
+      "type": "round",
+      "title": "Runde 1",
+      "instruction": "Arbeiten Sie gleichmäßig um die Basiskante herum und platzieren Sie eine Markierung am Anfang der Runde.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Übergang zum Netz",
+      "instruction": "Arbeiten Sie eine gleichmäßige Runde, bevor Sie sich in das Luftmaschennetz öffnen.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Den Taschenkörper vergrößern",
+      "instruction": "Wiederholen Sie das Netzmuster, bis die Tasche die Höhe einer geräumigen Strandtasche erreicht.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "round",
+      "title": "Griffe hinzufügen",
+      "instruction": "Grifföffnungen verketten und mit ein oder zwei Abschlussrunden verstärken.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Fertig stellen",
+      "instruction": "Vorsichtig vernähen und die Enden so vernähen, dass sie nicht hängen bleiben."
+    }
+  ]
+}

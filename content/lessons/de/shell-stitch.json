@@ -1,0 +1,20 @@
+{
+  "title": "Muschelmuster",
+  "description": "Erzeuge eine weiche Fächerform, indem du mehrere Maschen in dieselbe Stelle arbeitest.",
+  "content": {
+    "summary": "Eine Muschel besteht normalerweise aus mehreren hohen Maschen, die in einen Stich oder Luftmaschenbogen eingearbeitet werden, gefolgt von einem Sprung- oder Ankerstich.",
+    "whyItMatters": "Das Muschelmuster führt in gruppierte Maschenfolgen ein und hilft dir, wiederkehrende dekorative Formen zu lesen.",
+    "steps": [
+      "Bestimme die Masche oder den Luftmaschenbogen, in den die Muschel gearbeitet wird.",
+      "Arbeite die geforderte Anzahl hoher Maschen in genau dieselbe Stelle.",
+      "Zähle die ganze Muschel vollständig, bevor du weitergehst.",
+      "Überspringe oder verankere Maschen genau so, wie es die Anleitung vorgibt.",
+      "Wiederhole diesen Rhythmus aus Muschel und Abstand über die ganze Reihe."
+    ],
+    "practice": "Arbeite ein kurzes Probestück mit Muschel-Wiederholungen, damit du sehen kannst, wie sich die Fächerform öffnet.",
+    "commonMistakes": [
+      "Innerhalb der Muschel falsch zu zählen, sodass die Gruppen ungleichmäßig werden.",
+      "Zwischen den Muscheln die falsche Anzahl an Maschen zu überspringen."
+    ]
+  }
+}

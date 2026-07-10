@@ -1,0 +1,20 @@
+{
+  "title": "Noções básicas de amostra de tensão",
+  "description": "Entenda como as contagens de pontos e linhas afetam o ajuste, o tamanho e o sucesso do projeto final.",
+  "content": {
+    "summary": "A amostra de tensão é a quantidade de pontos e carreiras que você obtém em uma área medida com um fio, agulha e tensão específicos.",
+    "whyItMatters": "É a amostra que faz um gorro vestir bem, um suéter sair no tamanho certo e uma manta ficar próxima das medidas da receita.",
+    "steps": [
+      "Leia a nota do medidor de padrão antes de começar.",
+      "Faça uma amostra grande o suficiente para medir a área central com precisão.",
+      "Conte pontos e linhas na mesma seção medida que o padrão usa.",
+      "Se o seu medidor estiver errado, altere o tamanho do gancho antes de iniciar o projeto.",
+      "Verifique novamente o medidor após a lavagem ou bloqueio se o projeto for sensível ao tamanho."
+    ],
+    "practice": "Faça uma amostra no tamanho normal da agulha, depois uma com um tamanho maior ou menor e compare.",
+    "commonMistakes": [
+      "Medindo a borda externa de uma amostra em vez do centro.",
+      "Ignorando o amostra de carreiras quando o formato do projeto depende da altura."
+    ]
+  }
+}

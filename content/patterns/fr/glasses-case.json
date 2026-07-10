@@ -1,0 +1,52 @@
+{
+  "title": "Étui à lunettes",
+  "description": "Un étui fin au crochet qui protège les lunettes dans le sac et se ferme avec une boucle ou un bouton.",
+  "materials": [
+    "cotton yarn",
+    "4 mm hook",
+    "stitch marker",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "working in rows",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "Un petit projet utile pour apprendre le travail sur mesure et une finition propre.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Mesurer les lunettes",
+      "instruction": "Vérifie la largeur et la hauteur des lunettes pour que l’étui soit facile à utiliser."
+    },
+    {
+      "type": "row",
+      "title": "Crocheter le corps",
+      "instruction": "Travaille un rectangle assez long pour être plié en pochette avec un petit rabat.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Plier et vérifier",
+      "instruction": "Enveloppe les lunettes avec le rectangle et contrôle la taille avant l’assemblage."
+    },
+    {
+      "type": "instruction",
+      "title": "Fermer les côtés",
+      "instruction": "Assemble les bords proprement pour bien protéger les lunettes."
+    },
+    {
+      "type": "instruction",
+      "title": "Ajouter la fermeture",
+      "instruction": "Crochète une boucle ou une petite boutonnière et ajoute un bouton si besoin."
+    },
+    {
+      "type": "instruction",
+      "title": "Terminer l’étui",
+      "instruction": "Rentre les fils et teste plusieurs fois l’ouverture pour un usage fluide."
+    }
+  ]
+}

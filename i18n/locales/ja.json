@@ -63,6 +63,7 @@
     }
   },
   "learn": {
+    "sectionTitle": "レッスン",
     "toolsSectionTitle": "ツール",
     "lessonLabel": "レッスン{{index}}",
     "actions": {
@@ -419,13 +420,13 @@
       "note": "これは、Crova の最初のレッスンで使用するものと同じ、ガイド付きのステップバイステップのリズムです。"
     },
     "trialOffer": {
-      "title": "Crovaを\n無料で試してほしい",
+      "title": "Crovaを試してみてほしい",
       "subtitle": "ガイド付きレッスン、ステップトラッカー、プロジェクトパターンに無制限にアクセスできます。すべては、より速く学びたい編み物愛好家のために作られています。",
       "featureOne": "すべてのレッスンに無制限アクセス",
       "featureTwo": "すべての段、ステッチ、プロジェクトを追跡",
       "featureThree": "ガイド付きパターンをステップバイステップで",
-      "cta": "無料トライアルを開始",
-      "footer": "契約の拘束なし。トライアル終了前であればいつでもキャンセルできます。"
+      "cta": "続ける",
+      "footer": "いつでもキャンセルできます。"
     },
     "dailyGoal": {
       "stepOf": "ステップ {{current}} / {{total}}",
@@ -463,10 +464,14 @@
       }
     }
   },
+  "stats": {
+    "streak": "{{count}} day streak"
+  },
   "goals": {
     "dailyCraftingGoal": "毎日の編み物目標",
     "dailyProgressTime": "{{target}}分のうち{{completed}}分",
     "yearlyProjectGoal": "{{year}}年のプロジェクト目標",
+    "yearlyProgress": "{{target}}作品中 {{completed}}作品完了",
     "yearlyProgress_one": "{{target}}作品中 1作品完了",
     "yearlyProgress_other": "{{target}}作品中 {{completed}}作品完了",
     "remainingHint": "残り{{remaining}}作品 – 月約{{pace}}作品のペースです。"
@@ -530,6 +535,56 @@
         "saving": "プロジェクトを保存中...",
         "save": "保存してプロジェクトを開く"
       }
+    }
+  },
+  "folders": {
+    "title": "フォルダ",
+    "addButton": "追加",
+    "empty": {
+      "title": "フォルダがありません",
+      "subtitle": "最初のフォルダを作成して、プロジェクトやギフトリストごとにパターンを整理しましょう。"
+    },
+    "patternCount_one": "{{count}} パターン",
+    "patternCount_other": "{{count}} パターン",
+    "accessibility": {
+      "addFolder": "フォルダを作成",
+      "folderTile": "{{name}}, {{count}} {{countLabel}}"
+    },
+    "detail": {
+      "fallbackTitle": "フォルダ",
+      "searchPlaceholder": "パターンを検索",
+      "patternCount_one": "{{count}} パターン",
+      "patternCount_other": "{{count}} パターン",
+      "emptyTitle": "このフォルダにはまだパターンがありません",
+      "emptySubtitle": "ここに表示するにはパターンを追加してください。",
+      "emptySearchTitle": "このフォルダに一致するものはありません",
+      "emptySearchSubtitle": "別の検索語をお試しください。",
+      "accessibility": {
+        "openPattern": "{{title}} パターンを開く",
+        "unlockPattern": "{{title}} パターンのロックを解除"
+      }
+    },
+    "create": {
+      "title": "フォルダを作成",
+      "back": "戻る",
+      "color": "色",
+      "colorLabel": "フォルダの色",
+      "nameLabel": "フォルダ名",
+      "namePlaceholder": "ギフトのアイデア",
+      "creating": "作成中…",
+      "submit": "フォルダを作成",
+      "errorTitle": "フォルダを作成できませんでした",
+      "errorMessage": "もう一度お試しください。"
+    }
+  },
+  "addToFolder": {
+    "title": "フォルダに追加",
+    "done": "完了",
+    "patternCount_one": "{{count}} パターン",
+    "patternCount_other": "{{count}} パターン",
+    "empty": {
+      "title": "フォルダがありません",
+      "subtitle": "パターンを整理するには、まずフォルダを作成してください。"
     }
   }
 }

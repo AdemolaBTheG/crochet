@@ -1,0 +1,58 @@
+{
+  "title": "Fischerhut",
+  "description": "Ein lässiges rundes Projekt mit flacher Krone, stabilen Seiten und weicher Krempe.",
+  "materials": [
+    "Kammgarn",
+    "Häkelnadel 5 mm",
+    "Maschenmarkierer",
+    "Garnnadel",
+    "Schere"
+  ],
+  "skills": [
+    "Magischer Ring",
+    "feste Masche",
+    "Zunahme",
+    "in Runden arbeiten"
+  ],
+  "expectationText": "Ein tragbares Projekt, bei dem zuerst ein flacher Kreis geformt wird, dann glatte Seiten und ein kurzer Rand wachsen, ohne dass die Maschenzahl verloren geht.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Beginnen Sie mit der Krone",
+      "instruction": "Machen Sie einen magischen Ring und platzieren Sie eine Markierung in der ersten Masche jeder Runde."
+    },
+    {
+      "type": "round",
+      "title": "Runde 1",
+      "instruction": "8 feste Maschen in den Ring einarbeiten.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Vergrößern Sie die Krone",
+      "instruction": "Erhöhen Sie jede Runde gleichmäßig, bis der Kreis die obere Breite erreicht, die Sie für den Hut haben möchten.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Die Seiten arbeiten",
+      "instruction": "Mehrere Runden lang gleichmäßig feste Maschen häkeln, ohne Zunahmen, sodass die Mütze nach unten zu fallen beginnt.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "round",
+      "title": "Formen Sie die Krempe.",
+      "instruction": "Fügen Sie alle paar Stiche leichte Zunahmen hinzu, damit die Krempe nach außen ausgestellt wird.",
+      "counterLabel": "round",
+      "targetCount": 15
+    },
+    {
+      "type": "instruction",
+      "title": "Fertig stellen",
+      "instruction": "Probieren Sie es an, passen Sie die Krempentiefe bei Bedarf an, befestigen Sie es dann und vernähen Sie die Enden."
+    }
+  ]
+}

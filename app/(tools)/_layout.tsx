@@ -69,6 +69,18 @@ export default function ToolsLayout() {
           },
         }}
       />
+      <Stack.Screen
+        name="pattern-video-review"
+        options={{
+          title: 'Pattern Video Review',
+        }}
+      />
+      <Stack.Screen
+        name="lesson-video-review"
+        options={{
+          title: 'Lesson Video Review',
+        }}
+      />
     </Stack>
   );
 }

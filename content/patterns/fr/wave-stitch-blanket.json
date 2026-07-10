@@ -1,0 +1,51 @@
+{
+  "title": "Couverture au point vague",
+  "description": "Un motif de couverture répétitif qui crée de doux pics et vallées sur chaque rangée.",
+  "materials": [
+    "fils peignés",
+    "crochet de 5 mm",
+    "marqueurs de points",
+    "aiguille à fil",
+    "ciseaux"
+  ],
+  "skills": [
+    "crochet double",
+    "augmentation",
+    "décroissant",
+    "comptage des répétitions"
+  ],
+  "expectationText": "Un projet répété plus long où la compétence clé consiste à maintenir les augmentations et les diminutions équilibrées afin que les vagues restent uniformes et reconnaissables.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Chaîner la base",
+      "instruction": "Réaliser une chaîne de base dans le multiple requis pour la répétition de la vague plus les points tournants."
+    },
+    {
+      "type": "row",
+      "title": "Ligne 1",
+      "instruction": "Travaillez la rangée de configuration et marquez une répétition complète afin de pouvoir vérifier votre rythme plus tôt.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Rangée 2",
+      "instruction": "Augmentation au niveau des sommets et diminution au niveau des vallées selon la configuration des vagues.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Répétez la vague.",
+      "instruction": "Continuez les rangées de vagues jusqu'à ce que la couverture atteigne la longueur souhaitée.",
+      "counterLabel": "row",
+      "targetCount": 20
+    },
+    {
+      "type": "instruction",
+      "title": "Terminez le bord final",
+      "instruction": "Travaillez une bordure simple ou une dernière rangée pour stabiliser le bord supérieur avant de terminer."
+    }
+  ]
+}

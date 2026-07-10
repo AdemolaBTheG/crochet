@@ -1,0 +1,52 @@
+{
+  "title": "Water Bottle Holder",
+  "description": "A lightweight bottle carrier with a mesh body and shoulder strap for walks, markets, and travel days.",
+  "materials": [
+    "cotton yarn",
+    "4.5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle"
+  ],
+  "skills": [
+    "working in rounds",
+    "chain spaces and corners",
+    "crochet cords and straps",
+    "single crochet"
+  ],
+  "expectationText": "A fast everyday project that teaches a fitted base, open mesh, and a wearable strap.",
+  "steps": [
+    {
+      "type": "round",
+      "title": "Make the base",
+      "instruction": "Crochet a flat circle or oval base that matches the bottom of your bottle.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "instruction",
+      "title": "Build the sides",
+      "instruction": "Work upward from the base in a mesh pattern so the holder stays light and flexible."
+    },
+    {
+      "type": "instruction",
+      "title": "Check the bottle fit",
+      "instruction": "Slide the bottle in and confirm the holder grips it without squeezing too hard."
+    },
+    {
+      "type": "instruction",
+      "title": "Add the strap",
+      "instruction": "Crochet a strap long enough for shoulder or crossbody wear and keep the tension firm."
+    },
+    {
+      "type": "instruction",
+      "title": "Attach securely",
+      "instruction": "Join the strap to strong points near the top edge with extra stitches if needed."
+    },
+    {
+      "type": "instruction",
+      "title": "Test and finish",
+      "instruction": "Put the bottle inside, test the weight, and weave in all ends securely."
+    }
+  ]
+}

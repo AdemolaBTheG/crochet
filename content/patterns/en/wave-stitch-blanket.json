@@ -1,0 +1,14 @@
+{
+  "title": "Wave Stitch Blanket",
+  "description": "A repeating blanket pattern that creates gentle peaks and valleys across each row.",
+  "materials": ["worsted yarn", "5 mm hook", "stitch markers", "yarn needle", "scissors"],
+  "skills": ["double crochet", "increasing", "decreasing", "counting repeats"],
+  "expectationText": "A longer repeat project where the key skill is keeping increases and decreases balanced so the waves stay even and recognizable.",
+  "steps": [
+    { "type": "instruction", "title": "Chain the foundation", "instruction": "Make a foundation chain in the multiple required for the wave repeat plus turning stitches." },
+    { "type": "row", "title": "Row 1", "instruction": "Work the setup row and mark one full repeat so you can check your rhythm early.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "row", "title": "Row 2", "instruction": "Increase at the peaks and decrease at the valleys according to the wave pattern.", "counterLabel": "row", "targetCount": 2 },
+    { "type": "repeat", "title": "Repeat the wave", "instruction": "Continue the wave rows until the blanket reaches your preferred length.", "counterLabel": "row", "targetCount": 20 },
+    { "type": "instruction", "title": "Finish the final edge", "instruction": "Work a simple border or final row to steady the top edge before finishing." }
+  ]
+}

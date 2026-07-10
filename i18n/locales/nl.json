@@ -63,6 +63,7 @@
     }
   },
   "learn": {
+    "sectionTitle": "Lessen",
     "toolsSectionTitle": "Hulpmiddelen",
     "lessonLabel": "Les {{index}}",
     "actions": {
@@ -419,13 +420,13 @@
       "note": "Dit is hetzelfde begeleide, stapsgewijze ritme dat u tijdens uw eerste Crova-lessen zult gebruiken."
     },
     "trialOffer": {
-      "title": "We willen dat je Crova\ngratis probeert",
+      "title": "We willen dat je Crova probeert",
       "subtitle": "Ontgrendel onbeperkte toegang tot begeleide lessen, stappentellers en projectpatronen — allemaal gemaakt voor hakers die sneller willen leren.",
       "featureOne": "Onbeperkte toegang tot alle lessen",
       "featureTwo": "Volg elke rij, steek en project",
       "featureThree": "Volg begeleide patronen stap voor stap",
-      "cta": "Start gratis proefperiode",
-      "footer": "Geen verplichting. Annuleer op elk moment voordat de proefperiode eindigt."
+      "cta": "Doorgaan",
+      "footer": "Je kunt altijd opzeggen."
     },
     "dailyGoal": {
       "stepOf": "Stap {{current}} van {{total}}",
@@ -463,10 +464,14 @@
       }
     }
   },
+  "stats": {
+    "streak": "{{count}} day streak"
+  },
   "goals": {
     "dailyCraftingGoal": "Dagelijks haakdoel",
     "dailyProgressTime": "{{completed}} min van {{target}} min",
     "yearlyProjectGoal": "{{year}} projectdoel",
+    "yearlyProgress": "{{completed}} van {{target}} projecten",
     "yearlyProgress_one": "1 van {{target}} project",
     "yearlyProgress_other": "{{completed}} van {{target}} projecten",
     "remainingHint": "Nog {{remaining}} te gaan – ongeveer {{pace}} per maand."
@@ -530,6 +535,56 @@
         "saving": "Project opslaan...",
         "save": "Opslaan en project openen"
       }
+    }
+  },
+  "folders": {
+    "title": "Mappen",
+    "addButton": "Toevoegen",
+    "empty": {
+      "title": "Nog geen mappen",
+      "subtitle": "Maak je eerste map om patronen te groeperen per project, cadeaulijst of collectie."
+    },
+    "patternCount_one": "{{count}} patroon",
+    "patternCount_other": "{{count}} patronen",
+    "accessibility": {
+      "addFolder": "Map maken",
+      "folderTile": "{{name}}, {{count}} {{countLabel}}"
+    },
+    "detail": {
+      "fallbackTitle": "Map",
+      "searchPlaceholder": "Patronen zoeken",
+      "patternCount_one": "{{count}} patroon",
+      "patternCount_other": "{{count}} patronen",
+      "emptyTitle": "Nog geen patronen in deze map",
+      "emptySubtitle": "Voeg patronen toe aan deze map om ze hier te zien.",
+      "emptySearchTitle": "Geen resultaten in deze map",
+      "emptySearchSubtitle": "Probeer een andere zoekterm.",
+      "accessibility": {
+        "openPattern": "{{title}} patroon openen",
+        "unlockPattern": "{{title}} patroon ontgrendelen"
+      }
+    },
+    "create": {
+      "title": "Map maken",
+      "back": "Terug",
+      "color": "Kleur",
+      "colorLabel": "Mapkleur",
+      "nameLabel": "Mapnaam",
+      "namePlaceholder": "Cadeau-ideeën",
+      "creating": "Maken…",
+      "submit": "Map maken",
+      "errorTitle": "Kan map niet maken",
+      "errorMessage": "Probeer het opnieuw."
+    }
+  },
+  "addToFolder": {
+    "title": "Aan map toevoegen",
+    "done": "Klaar",
+    "patternCount_one": "{{count}} patroon",
+    "patternCount_other": "{{count}} patronen",
+    "empty": {
+      "title": "Nog geen mappen",
+      "subtitle": "Maak eerst een map om je patronen te organiseren."
     }
   }
 }

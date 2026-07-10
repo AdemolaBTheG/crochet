@@ -1,0 +1,52 @@
+{
+  "title": "Porte-gourde",
+  "description": "Un porte-bouteille léger avec corps ajouré et bandoulière pour les sorties et le quotidien.",
+  "materials": [
+    "cotton yarn",
+    "4.5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle"
+  ],
+  "skills": [
+    "working in rounds",
+    "chain spaces and corners",
+    "crochet cords and straps",
+    "single crochet"
+  ],
+  "expectationText": "Un projet rapide et utile qui apprend une base ajustée, un filet léger et une sangle portable.",
+  "steps": [
+    {
+      "type": "round",
+      "title": "Faire la base",
+      "instruction": "Crochète un cercle ou un ovale plat qui correspond au fond de ta bouteille.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "instruction",
+      "title": "Monter les côtés",
+      "instruction": "Travaille vers le haut dans un point ajouré pour garder le porte-bouteille souple et léger."
+    },
+    {
+      "type": "instruction",
+      "title": "Tester la bouteille",
+      "instruction": "Glisse la bouteille à l’intérieur pour vérifier que le maintien est bon sans trop serrer."
+    },
+    {
+      "type": "instruction",
+      "title": "Ajouter la sangle",
+      "instruction": "Crochète une sangle assez longue pour l’épaule ou en bandoulière avec une tension ferme."
+    },
+    {
+      "type": "instruction",
+      "title": "Fixer solidement",
+      "instruction": "Attache la sangle sur des points solides près du bord supérieur."
+    },
+    {
+      "type": "instruction",
+      "title": "Tester et terminer",
+      "instruction": "Teste le poids avec la bouteille puis rentre soigneusement tous les fils."
+    }
+  ]
+}

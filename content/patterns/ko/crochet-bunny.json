@@ -1,0 +1,60 @@
+{
+  "title": "크로셰 토끼",
+  "description": "둥근 몸체, 긴 귀, 스티치된 얼굴 디테일을 갖춘 단순한 봉제인형입니다.",
+  "materials": [
+    "DK 또는 소모사",
+    "3.5 ~ 4mm 후크",
+    "채우기",
+    "실 바늘",
+    "스티치 마커",
+    "가위"
+  ],
+  "skills": [
+    "매직 링",
+    "싱글 크로셰",
+    "증가",
+    "감소",
+    "아미구루미 조립"
+  ],
+  "expectationText": "기본적인 신체 부위를 형성하고 균등하게 채우고 간단한 캐릭터를 조립하는 방법을 가르치는 부드러운 아미구루미 프로젝트 깨끗하게.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "본체 시작",
+      "instruction": "마법의 반지로 시작하고 마커를 배치하여 각 라운드를 추적하세요."
+    },
+    {
+      "type": "round",
+      "title": "1 라운드",
+      "instruction": "6개의 싱글 크로셰를 링에 넣습니다.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "모양에 따라 증가합니다.",
+      "instruction": "몸체가 가장 넓은 지점에 도달할 때까지 다음 라운드에 걸쳐 균등하게 증가합니다.",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "round",
+      "title": "작업",
+      "instruction": "가볍게 채우기 전에 높이를 늘리지 않고 여러 라운드를 뜨개질하십시오.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "감소하여 닫음",
+      "instruction": "눈에 보이지 않는 감소를 사용하여 상단을 테이퍼로 만들고 단단히 채운 후 몸체를 닫습니다.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "귀와 얼굴 추가",
+      "instruction": "두 개의 간단한 귀 부분을 코바늘로 꿰매고 꿰매고 눈과 코를 꿰매세요."
+    }
+  ]
+}

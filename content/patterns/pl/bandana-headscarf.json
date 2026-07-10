@@ -1,0 +1,52 @@
+{
+  "title": "Chusta bandana",
+  "description": "Szybka trójkątna chusta z prostymi dodawaniami, miękkim układaniem i wiązaniami dla łatwego dopasowania.",
+  "materials": [
+    "bawełniana włóczka",
+    "szydełko 4,5 mm",
+    "markery oczek",
+    "igła dziewiarska",
+    "nożyczki"
+  ],
+  "skills": [
+    "łańcuszek początkowy",
+    "słupek",
+    "przestrzenie z łańcuszków i rogi",
+    "obramowania i wykończenia"
+  ],
+  "expectationText": "Szybki dodatek, który daje pewność w pracy z trójkątnym kształtem i schludnym wykończeniem.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Zacznij od górnego środka",
+      "instruction": "Zacznij od krótkiej podstawy i zaznacz miejsca dodawania, aby łatwo śledzić kształt."
+    },
+    {
+      "type": "row",
+      "title": "Powiększaj trójkąt",
+      "instruction": "Pracuj rzędy z dodawaniami na brzegach lub w środku, aby równomiernie poszerzać chustę.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Sprawdź szerokość",
+      "instruction": "Zatrzymaj się, gdy długi bok osiągnie szerokość, jaką chcesz uzyskać na głowie."
+    },
+    {
+      "type": "instruction",
+      "title": "Dodaj wiązania",
+      "instruction": "Wykonaj wąskie paski lub długie łańcuszki od obu rogów."
+    },
+    {
+      "type": "instruction",
+      "title": "Dodaj brzeg",
+      "instruction": "Wykończ trójkąt i wiązania schludnym obramowaniem, aby wygładzić kontur."
+    },
+    {
+      "type": "instruction",
+      "title": "Wykończ",
+      "instruction": "Schowaj nitki i lekko zblokuj chustę, aby ładnie się układała."
+    }
+  ]
+}

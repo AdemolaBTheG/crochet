@@ -1,0 +1,54 @@
+{
+  "title": "Bonnet simple",
+  "description": "Un modèle de bonnet simple qui met l’accent sur l’ajustement, les côtes et une finition nette.",
+  "materials": [
+    "fil worsted",
+    "crochet de 5 mm",
+    "marqueur de maille",
+    "aiguille à fil",
+    "ciseaux"
+  ],
+  "skills": [
+    "chaînette de base",
+    "maille serrée",
+    "côtes en brin arrière",
+    "couture"
+  ],
+  "expectationText": "Un premier bonnet fiable pour apprendre à ajuster la taille, garder des rangs réguliers et assembler proprement un accessoire portable.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Monter la hauteur",
+      "instruction": "Faites une chaînette correspondant à la hauteur du bonnet, et non au tour de tête."
+    },
+    {
+      "type": "row",
+      "title": "Rang 1",
+      "instruction": "Travaillez dans la chaînette pour poser le premier bord du panneau en côtes.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Former les côtes",
+      "instruction": "Travaillez en brin arrière sur chaque rang jusqu’à ce que le panneau fasse confortablement le tour de la tête.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Assembler la couture",
+      "instruction": "Joignez les petits côtés pour transformer le panneau en tube."
+    },
+    {
+      "type": "instruction",
+      "title": "Fermer le sommet",
+      "instruction": "Resserrez le bord du haut avec le fil, tirez fermement puis sécurisez."
+    },
+    {
+      "type": "instruction",
+      "title": "Finitions",
+      "instruction": "Retournez le bonnet sur l’endroit puis rentrez soigneusement les fils."
+    }
+  ]
+}

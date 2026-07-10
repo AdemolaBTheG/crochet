@@ -1,0 +1,20 @@
+{
+  "title": "Punto concha",
+  "description": "Crea una forma de abanico suave agrupando puntadas en el mismo espacio.",
+  "content": {
+    "summary": "Un caparazón generalmente consta de varios puntos altos trabajados en un punto o espacio de cadena, seguidos de un salto o un punto de ancla.",
+    "whyItMatters": "La punto concha introduce la lógica de puntadas agrupadas y te enseña a leer formas decorativas repetidas.",
+    "steps": [
+      "Identifica el punto o espacio donde pertenece la concha.",
+      "Teje la cantidad requerida de puntos altos en ese mismo lugar.",
+      "Cuente el caparazón completo antes de continuar.",
+      "Salta o ancla puntos exactamente como dice el patrón.",
+      "Repite el ritmo de espaciado de las conchas a lo largo de la fila."
+    ],
+    "practice": "Haz una muestra corta con repeticiones de 3 capas para que puedas ver la forma del abanico abierta.",
+    "commonMistakes": [
+      "Perder la cuenta dentro del caparazón y hacerlo desigual.",
+      "Saltar el número incorrecto de puntos entre las conchas."
+    ]
+  }
+}

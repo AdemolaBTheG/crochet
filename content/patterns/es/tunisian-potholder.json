@@ -1,0 +1,50 @@
+{
+  "title": "Agarradera tunecina",
+  "description": "Un proyecto cuadrado denso que introduce el ritmo del crochet tunecino.",
+  "materials": [
+    "hilo de algodón",
+    "ganchillo tunecino de 6 mm",
+    "aguja lanera",
+    "tijeras"
+  ],
+  "skills": [
+    "cadena base",
+    "Puntada simple tunecina",
+    "pase de retorno",
+    "conteo de bucles"
+  ],
+  "expectationText": "Un cuadrado compacto que te ayuda a aprender los pases hacia adelante y hacia atrás mientras mantiene los bucles de borde visibles e incluso de una fila a otra.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Encadena el ancho",
+      "instruction": "Crea una cadena de base que coincida con el ancho que deseas para la agarradera."
+    },
+    {
+      "type": "row",
+      "title": "Pase adelantado",
+      "instruction": "Levante un bucle en cada cadena y déjelos en el gancho.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Pase de regreso",
+      "instruction": "Tejer y tejer las hebras según la secuencia del pase de regreso tunecino.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Construye la tela",
+      "instruction": "Repetir pasadas de ida y vuelta hasta que la pieza quede cuadrada.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Rematar",
+      "instruction": "Usar un remate simple en el borde superior, luego rematar y tejer los extremos."
+    }
+  ]
+}

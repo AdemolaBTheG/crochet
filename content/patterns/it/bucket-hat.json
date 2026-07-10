@@ -1,0 +1,58 @@
+{
+  "title": "Cappello da pescatore",
+  "description": "Un modello casual e rotondo con corona piatta, lati stabili e tesa morbida.",
+  "materials": [
+    "filato pettinato",
+    "uncinetto da 5 mm",
+    "segnapunto",
+    "ago del filo",
+    "forbici"
+  ],
+  "skills": [
+    "anello magico",
+    "maglia bassa",
+    "aumento",
+    "lavorare in tondo"
+  ],
+  "expectationText": "Un progetto indossabile che si esercita prima a modellare un cerchio piatto, poi a sviluppare i lati lisci e una tesa corta senza perdere il conteggio dei punti.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Inizia la corona",
+      "instruction": "Crea un anello magico e posiziona un segnapunti nella prima maglia di ogni giro."
+    },
+    {
+      "type": "round",
+      "title": "Giro 1",
+      "instruction": "Lavora 8 maglie basse nell'anello.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Aumenta la corona",
+      "instruction": "Aumenta uniformemente ogni giro finché il cerchio non raggiunge la larghezza superiore desiderata per il cappello.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Lavorare i lati",
+      "instruction": "Maglia bassa in modo uniforme senza aumenti per diversi giri in modo che il cappello inizi a scendere verso il basso.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "round",
+      "title": "Modella la tesa",
+      "instruction": "Aggiungi delicati aumenti ogni pochi punti per far svasare la tesa verso l'esterno.",
+      "counterLabel": "round",
+      "targetCount": 15
+    },
+    {
+      "type": "instruction",
+      "title": "Finisci",
+      "instruction": "Provalo, regola la profondità della tesa se necessario, poi allaccia il filo e intreccia le estremità."
+    }
+  ]
+}

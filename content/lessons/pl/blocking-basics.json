@@ -1,0 +1,20 @@
+{
+  "title": "Podstawy blokowania",
+  "description": "Starannie zakończ szydełko, nadając mu kształt, wygładzając i utrwalając.",
+  "content": {
+    "summary": "Blokowanie wykorzystuje wilgoć i kształtuje, aby rozluźnić szwy, poprawić drapowanie i oczyścić krawędzie.",
+    "whyItMatters": "Blokowanie pomaga otworzyć sznurowanie, babcine kwadraty lepiej dopasowują się do rozmiaru, a wykończone elementy wyglądają bardziej zamierzenie.",
+    "steps": [
+      "Sprawdź zawartość błonnika, aby wiedzieć, czy blokowanie wilgoci, pary lub sprayu jest bezpieczne.",
+      "Zwilż projekt równomiernie, nie mocząc go bardziej niż to konieczne.",
+      "Uformuj element zgodnie z zamierzonymi wymiarami na płaskiej powierzchni.",
+      "Przypnij krawędzie lub rogi, jeśli potrzebujesz ostrzejszej struktury.",
+      "Przed wyjęciem szpilek poczekaj, aż projekt całkowicie wyschnie."
+    ],
+    "practice": "Zablokuj jedną małą próbkę lub kwadrat, aby móc porównać kształt przed i po.",
+    "commonMistakes": [
+      "Zbyt agresywne rozciąganie materiału podczas przypinania.",
+      "Usuwanie elementu zanim całkowicie wyschnie."
+    ]
+  }
+}

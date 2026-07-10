@@ -1,0 +1,20 @@
+{
+  "title": "Leggere le abbreviazioni dei pattern",
+  "description": "Impara le abbreviazioni utilizzate dai pattern in modo che le istruzioni scritte smettano di sembrare codice.",
+  "content": {
+    "summary": "Le abbreviazioni dei motivi comprimono nomi di punti, azioni e ripetizioni in una linea compatta che puoi scansionare rapidamente.",
+    "whyItMatters": "Se riesci a decodificare le abbreviazioni, puoi seguire più modelli, confrontare designer e muoverti più velocemente attraverso le istruzioni.",
+    "steps": [
+      "Impara prima le abbreviazioni dei punti centrali: cat, mb, mma, ma, ma, m.bss.",
+      "Cerca parole d'azione come inc, dec, rep e sk.",
+      "Prima di iniziare, verifica se il designer utilizza termini statunitensi o britannici.",
+      "Leggi lentamente un'intera riga ed espandi ogni abbreviazione in un linguaggio semplice.",
+      "Segna le ripetizioni e conta prima di lavorare la riga all'uncinetto."
+    ],
+    "practice": "Prendi una breve riga del modello e riscrivila per intero prima di lavorarla.",
+    "commonMistakes": [
+      "Mescolare termini britannici e statunitensi nello stesso progetto.",
+      "Parentesi o parentesi ripetute mancanti durante la lettura veloce."
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "title": "Patucos para bebé",
+  "description": "Patucos suaves y pequeños para practicar una suela, subir laterales y cerrar una puntera limpia.",
+  "materials": [
+    "hilo DK o worsted ligero",
+    "ganchillo de 4 mm",
+    "marcador de punto",
+    "aguja lanera",
+    "tijeras"
+  ],
+  "skills": [
+    "trabajo en redondo",
+    "punto bajo",
+    "aumentos y disminuciones",
+    "punto deslizado y unión"
+  ],
+  "expectationText": "Un proyecto compacto para bebé que muestra cómo una suela plana se convierte en una forma tridimensional para usar.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Haz la suela",
+      "instruction": "Teje una cadena con la longitud base y forma una suela ovalada con aumentos en ambos extremos."
+    },
+    {
+      "type": "round",
+      "title": "Levanta los laterales",
+      "instruction": "Trabaja vueltas parejas alrededor de la suela para que el tejido empiece a subir.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Forma la puntera",
+      "instruction": "Disminuye en la parte delantera para redondear la puntera sin aplastar el talón.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Crea la abertura y el puño",
+      "instruction": "Haz vueltas o filas cortas y parejas para definir la abertura del tobillo y un puño suave.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Haz el segundo patuco",
+      "instruction": "Cuenta con cuidado para que el segundo patuco coincida con el primero."
+    },
+    {
+      "type": "instruction",
+      "title": "Termina",
+      "instruction": "Esconde bien las hebras y da forma suave a ambos patucos para que se vean parejos."
+    }
+  ]
+}

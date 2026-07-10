@@ -1,0 +1,20 @@
+{
+  "title": "Ponto concha",
+  "description": "Crie um formato de leque suave agrupando os pontos no mesmo espaço.",
+  "content": {
+    "summary": "Uma concha geralmente consiste em vários pontos altos trabalhados em um ponto ou espaço de corrente, seguidos por um salto ou ponto âncora.",
+    "whyItMatters": "O ponto concha introduz a lógica do ponto agrupado e ensina você a ler formas decorativas repetidas.",
+    "steps": [
+      "Identifique o ponto ou espaço onde a concha pertence.",
+      "Trabalhe o número necessário de pontos altos no mesmo local.",
+      "Conte o shell completo antes de prosseguir.",
+      "Pular ou ancorar pontos exatamente como diz o padrão.",
+      "Repita o ritmo de espaçamento entre conchas ao longo da linha."
+    ],
+    "practice": "Trabalhe uma amostra curta com repetições de 3 conchas para que você possa ver o formato do leque se abrindo.",
+    "commonMistakes": [
+      "Perder a conta dentro do shell e torná-lo irregular.",
+      "Ignorando o número errado de pontos entre as conchas."
+    ]
+  }
+}

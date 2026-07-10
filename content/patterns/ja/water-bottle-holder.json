@@ -1,0 +1,52 @@
+{
+  "title": "ボトルホルダー",
+  "description": "軽いメッシュ本体とストラップ付きで、散歩や外出に便利なボトルホルダーです。",
+  "materials": [
+    "cotton yarn",
+    "4.5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle"
+  ],
+  "skills": [
+    "working in rounds",
+    "chain spaces and corners",
+    "crochet cords and straps",
+    "single crochet"
+  ],
+  "expectationText": "底のサイズ合わせ、軽いメッシュ模様、持ち運び用ストラップを学べる日常向け作品です。",
+  "steps": [
+    {
+      "type": "round",
+      "title": "底を作る",
+      "instruction": "ボトルの底に合う平らな円または楕円を編みます。",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "instruction",
+      "title": "側面を編む",
+      "instruction": "軽さと柔軟さを保つため、底から上に向かってメッシュ模様で編み進めます。"
+    },
+    {
+      "type": "instruction",
+      "title": "ボトルを試す",
+      "instruction": "ボトルを入れて、きつすぎずしっかり支えられるか確認します。"
+    },
+    {
+      "type": "instruction",
+      "title": "ストラップを付ける",
+      "instruction": "肩掛けまたは斜め掛けできる長さで、しっかりした手加減で編みます。"
+    },
+    {
+      "type": "instruction",
+      "title": "しっかり固定する",
+      "instruction": "上端近くの強い位置にストラップを付け、必要なら補強します。"
+    },
+    {
+      "type": "instruction",
+      "title": "試して仕上げる",
+      "instruction": "ボトルを入れて重さを試し、最後に糸をしっかり始末します。"
+    }
+  ]
+}

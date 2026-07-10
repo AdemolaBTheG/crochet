@@ -1,0 +1,20 @@
+{
+  "title": "Reading Pattern Abbreviations",
+  "description": "Learn the shorthand that patterns use so written instructions stop feeling like code.",
+  "content": {
+    "summary": "Pattern abbreviations compress stitch names, actions, and repeats into a compact line you can scan quickly.",
+    "whyItMatters": "If you can decode abbreviations, you can follow more patterns, compare designers, and move faster through instructions.",
+    "steps": [
+      "Learn the core stitch abbreviations first: ch, sc, hdc, dc, tr, sl st.",
+      "Watch for action words like inc, dec, rep, and sk.",
+      "Check whether the designer is using US or UK terms before you start.",
+      "Read one full line slowly and expand each abbreviation into plain language.",
+      "Mark repeats and counts before crocheting the row."
+    ],
+    "practice": "Take one short pattern line and rewrite it in full words before working it.",
+    "commonMistakes": [
+      "Mixing UK and US terms in the same project.",
+      "Missing repeat brackets or parentheses while reading quickly."
+    ]
+  }
+}

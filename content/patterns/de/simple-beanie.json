@@ -1,0 +1,54 @@
+{
+  "title": "Einfache Mütze",
+  "description": "Ein unkompliziertes Mützenmuster, bei dem Passform, Rippung und saubere Verarbeitung im Vordergrund stehen.",
+  "materials": [
+    "Kammgarn",
+    "Häkelnadel 5 mm",
+    "Maschenmarkierer",
+    "Garnnadel",
+    "Schere"
+  ],
+  "skills": [
+    "Grundkette",
+    "feste Maschen",
+    "Rippen in das hintere Maschenglied",
+    "Zusammennähen"
+  ],
+  "expectationText": "Eine zuverlässige Mütze, mit der Sie üben können, die Passform Ihres Kopfes zu messen, Reihen konsistent zu wiederholen und ein tragbares Projekt sauber zusammenzustellen.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Luftmaschenkette für die Höhe",
+      "instruction": "Verketten Sie die Anzahl der Maschen, die für die Mützenhöhe benötigt werden, nicht den Kopfumfang."
+    },
+    {
+      "type": "row",
+      "title": "Reihe 1",
+      "instruction": "Arbeiten Sie über die Kette und legen Sie die Kante des Rippenfelds fest.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Erstellen Sie die Rippung.",
+      "instruction": "Stricken Sie nur Maschenreihen zurück, bis sich das Panel bequem um den Kopf legt.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Verbinden Sie die Naht",
+      "instruction": "Verbinden Sie die kurzen Enden miteinander, sodass das Panel zu einer Röhre wird."
+    },
+    {
+      "type": "instruction",
+      "title": "Krone schließen",
+      "instruction": "Die Oberkante mit Garn verschließen, festziehen und gut befestigen."
+    },
+    {
+      "type": "instruction",
+      "title": "Fertig stellen",
+      "instruction": "Drehen Sie die Mütze mit der rechten Seite nach außen und verweben Sie die letzten Enden."
+    }
+  ]
+}

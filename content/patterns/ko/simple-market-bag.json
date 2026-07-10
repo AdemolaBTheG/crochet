@@ -1,0 +1,58 @@
+{
+  "title": "심플마켓백",
+  "description": "견고한 베이스와 오픈된 메쉬 바디로 가벼운 데일리백입니다.",
+  "materials": [
+    "면사",
+    "5mm 후크",
+    "스티치 마커",
+    "실 바늘",
+    "가위"
+  ],
+  "skills": [
+    "파운데이션 체인",
+    "싱글 크로셰",
+    "체인",
+    "라운드 작업"
+  ],
+  "expectationText": "견고한 구조와 개방형 메쉬를 혼합하여 촘촘한 행에서 바람이 잘 통하는 반복 라운드로 변경하는 연습을 할 수 있는 유용한 가방 프로젝트입니다.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "베이스 만들기",
+      "instruction": "끝 부분에 체인과 단일 크로셰 증가를 사용하여 타원형 또는 직사각형 베이스를 만듭니다."
+    },
+    {
+      "type": "round",
+      "title": "1 라운드",
+      "instruction": "첫 번째 라운드를 베이스 주위에 균일하게 작업하고 시작 부분에 마커를 배치합니다.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "베이스 가장자리를 강화합니다.",
+      "instruction": "바닥을 더 안정적으로 만들기 위해 증가 없이 단일 코바늘을 1~2바퀴 엮습니다.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "메쉬 몸체 시작",
+      "instruction": "교대로 체인 공간과 앵커 스티치를 사용하여 열린 메쉬 패턴을 만듭니다.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "round",
+      "title": "스트랩을 추가하세요.",
+      "instruction": "긴 손잡이 구멍을 연결하고 한 번 더 스티치로 보강하세요.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "마무리",
+      "instruction": "스트랩을 둥글게 감은 후 고정하고 끝 부분을 단단히 엮습니다."
+    }
+  ]
+}

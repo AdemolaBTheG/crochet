@@ -1,0 +1,50 @@
+{
+  "title": "チュニジアの鍋つかみ",
+  "description": "チュニジアのかぎ針編みのリズムを紹介する緻密な正方形のプロジェクト。",
+  "materials": [
+    "綿糸",
+    "6 mm チュニジアン フック",
+    "糸針",
+    "ハサミ"
+  ],
+  "skills": [
+    "基礎チェーン",
+    "チュニジア シンプル ステッチ",
+    "リターン パス",
+    "カウンティング ループ"
+  ],
+  "expectationText": "エッジ ループを列から列まで均等に表示しながら、フォワード パスとリターン パスを学習するのに役立つコンパクトな正方形。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "チェーン幅",
+      "instruction": "鍋つかみに希望の幅に合わせて基礎チェーンを作成します。"
+    },
+    {
+      "type": "row",
+      "title": "フォワードパス",
+      "instruction": "各チェーンのループを 1 つずつ引き上げ、フックにつけたままにします。",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "リターン パス",
+      "instruction": "チュニジアのリターン パス シーケンスに従って、糸がオーバーし、ワーク ループがオフになります。",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "ファブリックを構築します",
+      "instruction": "ピースが正方形になるまで、往路と復路を繰り返します。",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "綴じる",
+      "instruction": "上端を単純に綴じて、端を留めて織り込みます。"
+    }
+  ]
+}

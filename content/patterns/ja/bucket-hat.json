@@ -1,0 +1,58 @@
+{
+  "title": "バケットハット",
+  "description": "フラットなクラウン、安定したサイド、柔らかなつばを備えたカジュアルなラウンドプロジェクト。",
+  "materials": [
+    "梳毛糸",
+    "5 mm フック",
+    "ステッチマーカー",
+    "糸針",
+    "ハサミ"
+  ],
+  "skills": [
+    "マジックリング",
+    "片かぎ針編み",
+    "増加",
+    "ラウンドで作業"
+  ],
+  "expectationText": "最初に平らな円の形を作り、次にステッチ数を失わずに滑らかな側面と短いつばを成長させることを練習するウェアラブル プロジェクト。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "クラウンを開始します",
+      "instruction": "魔法のリングを作り、各ラウンドの最初のステッチにマーカーを置きます。"
+    },
+    {
+      "type": "round",
+      "title": "ラウンド 1",
+      "instruction": "8 つのシングルかぎ針編みをリングに編み込みます。",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "クラウンを増やします",
+      "instruction": "円が帽子に必要な上部の幅に達するまで、各ラウンドで均等に増やします。",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "側面を作業します",
+      "instruction": "単一かぎ針編みを数回増やしずに均等に編み、帽子が下に下がり始めます。",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "round",
+      "title": "つばの形を整える",
+      "instruction": "数針ごとに緩やかな増加を加えて、つばを外側に広げます。",
+      "counterLabel": "round",
+      "targetCount": 15
+    },
+    {
+      "type": "instruction",
+      "title": "仕上げ",
+      "instruction": "試着し、必要に応じてつばの深さを調整し、留めて端を織り込みます。"
+    }
+  ]
+}

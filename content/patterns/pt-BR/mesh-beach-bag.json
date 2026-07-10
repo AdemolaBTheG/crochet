@@ -1,0 +1,58 @@
+{
+  "title": "Bolsa de praia em tela",
+  "description": "Uma bolsa espaçosa com aberturas para toalhas, fios ou transporte leve para o dia a dia.",
+  "materials": [
+    "fio de algodão ou ráfia",
+    "gancho de 5,5 mm",
+    "marcador de ponto",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "corrente de base",
+    "ponto baixo",
+    "correntes",
+    "modelagem da alça"
+  ],
+  "expectationText": "Um projeto de transporte maior que se concentra em manter a malha aberta consistente enquanto ainda reforça a base e as alças o suficiente para o uso diário.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Faça a base",
+      "instruction": "Construa uma base plana oval ou retangular com algumas rodadas de pontos firmes."
+    },
+    {
+      "type": "round",
+      "title": "Rodada 1",
+      "instruction": "Trabalhe uniformemente ao redor da borda da base e coloque um marcador no início da carreira.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Transição para a malha",
+      "instruction": "Trabalhe uma volta constante antes de abrir na malha do espaço da cadeia.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Aumente o corpo da bolsa",
+      "instruction": "Repita o padrão de malha até que a bolsa atinja uma altura espaçosa de bolsa de praia.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "round",
+      "title": "Adicione alças",
+      "instruction": "Encadeie as aberturas das alças e reforce-as com uma ou duas voltas finais.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Finalize",
+      "instruction": "Aperte com cuidado e entrelace as pontas onde não prendam."
+    }
+  ]
+}

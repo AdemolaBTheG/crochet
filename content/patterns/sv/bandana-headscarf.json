@@ -1,0 +1,52 @@
+{
+  "title": "Bandanasjal",
+  "description": "En snabb trekantssjal med enkla ökningar, mjukt fall och knytband för enkel passform.",
+  "materials": [
+    "bomullsgarn",
+    "4,5 mm virknål",
+    "markörer",
+    "stoppnål",
+    "sax"
+  ],
+  "skills": [
+    "luftmaskkedja",
+    "stolpar",
+    "luftmaskbågar och hörn",
+    "kanter och avslut"
+  ],
+  "expectationText": "Ett snabbt accessoarprojekt som ger trygghet i trekantsformning och snygg finish.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Börja mitt upptill",
+      "instruction": "Starta med en kort grund och markera ökningspunkterna så att formen blir lätt att följa."
+    },
+    {
+      "type": "row",
+      "title": "Låt triangeln växa",
+      "instruction": "Virka rader med ökningar i kanterna eller i mitten så att sjalen blir bredare jämnt.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Kontrollera bredden",
+      "instruction": "Stanna när den långa sidan har den bredd du vill ha över huvudet."
+    },
+    {
+      "type": "instruction",
+      "title": "Lägg till knytband",
+      "instruction": "Virka smala band eller långa luftmaskkedjor från båda hörnen."
+    },
+    {
+      "type": "instruction",
+      "title": "Virka kanten",
+      "instruction": "Avsluta med en ren kant runt triangeln och banden för att jämna ut konturen."
+    },
+    {
+      "type": "instruction",
+      "title": "Avsluta",
+      "instruction": "Fäst trådarna och blocka lätt så att sjalen faller fint."
+    }
+  ]
+}

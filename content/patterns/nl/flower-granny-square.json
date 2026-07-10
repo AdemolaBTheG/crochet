@@ -1,0 +1,57 @@
+{
+  "title": "Flower Granny Square",
+  "description": "Een vierkant met bloemenmotief met een eenvoudig bloemcentrum in een oma-stijl frame.",
+  "materials": [
+    "twee garenkleuren",
+    "4,5 mm haaknaald",
+    "garennaald",
+    "schaar"
+  ],
+  "skills": [
+    "magische ring",
+    "clustersteken",
+    "lossen",
+    "in toeren werken"
+  ],
+  "expectationText": "Een motiefproject dat kleurveranderingen en ronde constructie introduceert en toch eindigt in een praktisch vierkant formaat.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Maak de middenring",
+      "instruction": "Begin met een magische ring in de kleur van het bloemhart."
+    },
+    {
+      "type": "round",
+      "title": "Toer 1",
+      "instruction": "Bewerk de middelste steken die de bloemblaadjes verankeren.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Ronde 2",
+      "instruction": "Maak bloemblaadjes gelijkmatig rond het midden.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Maak het motief vierkant",
+      "instruction": "Verander van kleur en haak hoeklussen zodat de bloem in een vierkant verandert.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Voeg nog een rand rond toe",
+      "instruction": "Werk gelijkmatig rond het vierkant om de randen schoner en gemakkelijker te maken.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "instruction",
+      "title": "Afmaken",
+      "instruction": "Hecht af en weef alle van kleur veranderende uiteinden netjes weg."
+    }
+  ]
+}

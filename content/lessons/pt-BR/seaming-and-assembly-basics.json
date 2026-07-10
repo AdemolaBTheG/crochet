@@ -1,0 +1,20 @@
+{
+  "title": "Noções básicas de costura e montagem",
+  "description": "Una as partes de crochê com capricho para que o projeto final fique firme, alinhado e bem-acabado.",
+  "content": {
+    "summary": "A montagem une painéis ou motivos separados com um método que combina com a elasticidade e o acabamento desejado.",
+    "whyItMatters": "Uma montagem limpa faz até projetos simples parecerem mais refinados, melhora o caimento e ajuda a manter a forma.",
+    "steps": [
+      "Posicione as peças na orientação correta antes de unir qualquer parte.",
+      "Alinhe cantos, fins de carreira e contagens de pontos com marcadores.",
+      "Escolha um método como costura simples, costura tipo colchão, ponto baixíssimo ou borda em ponto baixo.",
+      "Una com tensão uniforme para que a costura fique segura sem endurecer o tecido.",
+      "Confira o lado direito com frequência para manter a costura reta e limpa."
+    ],
+    "practice": "Una duas amostras pequenas com dois métodos diferentes e compare elasticidade, espessura e aparência.",
+    "commonMistakes": [
+      "Torcer uma das peças antes de costurar.",
+      "Apertar a costura mais do que o próprio tecido."
+    ]
+  }
+}

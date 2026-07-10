@@ -1,0 +1,20 @@
+{
+  "title": "Czytanie skrótów wzorców",
+  "description": "Naucz się skrótu, którego używają wzorce, aby pisemne instrukcje przestały sprawiać wrażenie kodu.",
+  "content": {
+    "summary": "Skróty wzorów kompresują nazwy ściegów, czynności i powtórzenia w zwartą linię, którą można szybko zeskanować.",
+    "whyItMatters": "Jeśli potrafisz rozszyfrować skróty, możesz zastosować się do większej liczby wzorców, porównać projektantów i szybciej poruszać się po instrukcjach.",
+    "steps": [
+      "Najpierw naucz się skrótów ściegów podstawowych: ch, sc, hdc, dc, tr, sl st.",
+      "Uważaj na słowa akcji, takie jak inc, dec, rep i sk.",
+      "Przed rozpoczęciem sprawdź, czy projektant używa warunków amerykańskich czy brytyjskich.",
+      "Przeczytaj powoli jedną pełną linijkę i rozwiń każdy skrót na prosty język.",
+      "Zaznacz powtórzenie i liczy przed wykonaniem rzędu."
+    ],
+    "practice": "Weź jedną krótką linię wzoru i przepisz ją pełnymi słowami przed rozpoczęciem pracy.",
+    "commonMistakes": [
+      "Łączenie terminów brytyjskich i amerykańskich w tym samym projekcie.",
+      "Brak powtarzających się nawiasów lub nawiasów podczas szybkiego czytania."
+    ]
+  }
+}

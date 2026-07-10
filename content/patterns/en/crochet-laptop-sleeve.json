@@ -1,0 +1,53 @@
+{
+  "title": "Crochet Laptop Sleeve",
+  "description": "A padded-feel sleeve with a simple flap that protects your laptop and slips easily into a bag.",
+  "materials": [
+    "worsted or aran yarn",
+    "5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "foundation chain",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "A practical tech accessory that teaches measuring, sturdy fabric, and a simple closure.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Measure the laptop",
+      "instruction": "Measure the width, height, and thickness of your laptop so the sleeve fits with a little ease."
+    },
+    {
+      "type": "row",
+      "title": "Crochet the body panel",
+      "instruction": "Work a dense rectangle or folded panel wide enough for the laptop and long enough to wrap around it.",
+      "counterLabel": "row",
+      "targetCount": 28
+    },
+    {
+      "type": "instruction",
+      "title": "Check the fit",
+      "instruction": "Fold the fabric around the laptop and adjust before finishing the last rows."
+    },
+    {
+      "type": "instruction",
+      "title": "Join the sides",
+      "instruction": "Seam or slip stitch the sides, keeping the sleeve snug but not tight."
+    },
+    {
+      "type": "instruction",
+      "title": "Add the flap and closure",
+      "instruction": "Finish the top flap and add a loop or button closure that is easy to open and close."
+    },
+    {
+      "type": "instruction",
+      "title": "Reinforce and finish",
+      "instruction": "Weave in ends and press the seams flat so the sleeve slides in and out of a bag smoothly."
+    }
+  ]
+}

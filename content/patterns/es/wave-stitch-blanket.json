@@ -1,0 +1,51 @@
+{
+  "title": "Manta en punto onda",
+  "description": "Un patrón de manta repetitivo que crea suaves picos y valles en cada fila.",
+  "materials": [
+    "hilo worsted",
+    "ganchillo de 5 mm",
+    "marcadores de puntadas",
+    "aguja lanera",
+    "tijeras"
+  ],
+  "skills": [
+    "punto alto",
+    "aumentos",
+    "disminuciones",
+    "contar repeticiones"
+  ],
+  "expectationText": "Un proyecto repetido más largo donde la habilidad clave es mantener los aumentos y las disminuciones equilibrados para que las ondas permanezcan uniformes y reconocibles.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Encadena la base",
+      "instruction": "Haz una cadena de base en el múltiplo requerido para la repetición de la onda más los puntos de giro."
+    },
+    {
+      "type": "row",
+      "title": "Fila 1",
+      "instruction": "Trabaja la fila de preparación y marca una repetición completa para que puedas controlar tu ritmo temprano.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Fila 2",
+      "instruction": "Aumenta en los picos y disminuye en los valles según el patrón de onda.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Repite la onda",
+      "instruction": "Continúa las filas de ondas hasta que la manta alcance tu largo preferido.",
+      "counterLabel": "row",
+      "targetCount": 20
+    },
+    {
+      "type": "instruction",
+      "title": "Termina el borde final",
+      "instruction": "Trabaja un borde simple o una fila final para estabilizar el borde superior antes de terminar."
+    }
+  ]
+}

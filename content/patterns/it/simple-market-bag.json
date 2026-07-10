@@ -1,0 +1,58 @@
+{
+  "title": "Borsa Simple Market",
+  "description": "Una borsa leggera per tutti i giorni con una base robusta e un corpo a rete aperta.",
+  "materials": [
+    "filato di cotone",
+    "uncinetto da 5 mm",
+    "segnapunto",
+    "ago del filo",
+    "forbici"
+  ],
+  "skills": [
+    "catenella di base",
+    "maglia bassa",
+    "catenelle",
+    "lavorare in tondo"
+  ],
+  "expectationText": "Un utile progetto di borsa che mescola struttura solida e maglia aperta in modo da poter esercitarsi a passare da file fitte a ariosi giri ripetuti.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Costruisci la base",
+      "instruction": "Crea una base ovale o rettangolare utilizzando catenelle e aumenti di maglie basse attorno alle estremità."
+    },
+    {
+      "type": "round",
+      "title": "Giro 1",
+      "instruction": "Lavorare il primo giro in modo uniforme attorno alla base e posizionare un segnapunti all'inizio.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Rinforzare il bordo della base",
+      "instruction": "Maglia bassa uno o due giri senza aumenti per rendere il fondo più stabile.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Inizia il corpo a rete",
+      "instruction": "Alterna spazi di catenelle e punti di ancoraggio per creare un motivo a trama aperta.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "round",
+      "title": "Aggiungi le spalline",
+      "instruction": "Fai catenelle per le aperture dei manici lunghi e rinforzale con un altro giro di punti.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Finisci",
+      "instruction": "Affrancare dopo il giro della tracolla e intrecciare saldamente le estremità."
+    }
+  ]
+}

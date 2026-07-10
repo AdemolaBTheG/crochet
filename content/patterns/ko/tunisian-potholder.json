@@ -1,0 +1,50 @@
+{
+  "title": "튀니지 팟홀더",
+  "description": "튀니지 크로셰의 리듬을 소개하는 촘촘한 사각형 프로젝트입니다.",
+  "materials": [
+    "면사",
+    "6mm 튀니지 후크",
+    "실 바늘",
+    "가위"
+  ],
+  "skills": [
+    "파운데이션 체인",
+    "튀니지 심플 스티치",
+    "리턴 패스",
+    "카운팅 루프"
+  ],
+  "expectationText": "에지 루프를 표시하고 행에서 행으로 유지하면서 전진 및 리턴 패스를 배우는 데 도움이 되는 소형 사각형입니다.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "너비를 연결합니다.",
+      "instruction": "냄비 홀더에 원하는 너비와 일치하는 기초 체인을 만듭니다."
+    },
+    {
+      "type": "row",
+      "title": "전진 패스",
+      "instruction": "각 체인의 고리 하나를 당겨서 고리에 걸어 둡니다.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "리턴 패스",
+      "instruction": "튀니지 리턴 패스 순서에 따라 실을 오버하고 작업 루프를 종료합니다.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "직물 만들기",
+      "instruction": "조각이 정사각형이 될 때까지 앞으로 및 돌아가기 패스를 반복합니다.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "제본",
+      "instruction": "상단 가장자리를 가로질러 간단한 제본을 사용한 다음 고정하고 끝부분을 엮습니다."
+    }
+  ]
+}

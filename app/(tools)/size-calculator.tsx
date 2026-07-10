@@ -12,6 +12,7 @@ import {
   tag,
 } from '@expo/ui/swift-ui/modifiers';
 import * as Haptics from 'expo-haptics';
+import { usePreventZoomTransitionDismissal } from 'expo-router';
 import React, { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Animated, { Text, TextInput, View } from 'react-native';
@@ -69,10 +70,12 @@ function UnitPicker({ unit, onChange }: { unit: Unit; onChange: (unit: Unit) => 
         borderRadius: theme.radius.pill,
         backgroundColor: theme.colors.muted,
       }}>
-      {([
-        { value: 'cm', label: t('tools.sizeCalculator.units.cm') },
-        { value: 'in', label: t('tools.sizeCalculator.units.in') },
-      ] as const).map((option) => {
+      {(
+        [
+          { value: 'cm', label: t('tools.sizeCalculator.units.cm') },
+          { value: 'in', label: t('tools.sizeCalculator.units.in') },
+        ] as const
+      ).map((option) => {
         const isSelected = option.value === unit;
 
         return (
@@ -249,6 +252,8 @@ function FormCard({ title, children }: { title: string; children: React.ReactNod
 
 export default function SizeCalculatorScreen() {
   const { t } = useTranslation();
+  usePreventZoomTransitionDismissal();
+
   const isPro = usePremiumGate();
   const [unit, setUnit] = useState<Unit>('cm');
   const [values, setValues] = useState<CalculatorValues>(initialValues);
@@ -298,13 +303,15 @@ export default function SizeCalculatorScreen() {
     <KeyboardAwareScrollView
       contentInsetAdjustmentBehavior="automatic"
       keyboardDismissMode="interactive"
+      showsHorizontalScrollIndicator={false}
       keyboardShouldPersistTaps="handled"
-      style={{ backgroundColor: theme.colors.background }}
       contentContainerStyle={{
         padding: theme.spacing.xl,
         gap: theme.spacing.lg,
       }}>
-      <UnitPicker unit={unit} onChange={changeUnit} />
+      <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+        <UnitPicker unit={unit} onChange={changeUnit} />
+      </View>
 
       <FormCard title={t('tools.sizeCalculator.sections.gauge')}>
         <View style={{ flexDirection: 'row', gap: theme.spacing.md }}>

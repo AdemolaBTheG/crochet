@@ -1,0 +1,50 @@
+{
+  "title": "Tunische pannenlap",
+  "description": "Een dicht vierkant project dat het ritme van Tunesisch haakwerk introduceert.",
+  "materials": [
+    "katoenen garen",
+    "Tunesische haaknaald van 6 mm",
+    "garennaald",
+    "schaar"
+  ],
+  "skills": [
+    "basisketting",
+    "Tunesische eenvoudige steek",
+    "retourpas",
+    "lussen tellen"
+  ],
+  "expectationText": "Een compact vierkant waarmee je voorwaartse en achterwaartse passen kunt leren, terwijl de randlussen zichtbaar blijven en zelfs van rij tot rij.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Ketting in de breedte",
+      "instruction": "Maak een funderingsketting die overeenkomt met de gewenste breedte voor de pannenlap."
+    },
+    {
+      "type": "row",
+      "title": "Voorwaartse pass",
+      "instruction": "Trek één lus in elke ketting omhoog en laat ze aan de haak hangen.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Terugslag",
+      "instruction": "Sla de draad om en het werk loopt af volgens de Tunesische terugslagreeks.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Bouw de stof",
+      "instruction": "Herhaal de voorwaartse en achterwaartse passen totdat het stuk vierkant wordt.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Afkanten",
+      "instruction": "Gebruik eenvoudig afkanten over de bovenrand, hecht dan af en weef de uiteinden weg."
+    }
+  ]
+}

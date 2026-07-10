@@ -1,0 +1,20 @@
+{
+  "title": "Montante anteriore e montante posteriore",
+  "description": "Usa i punti montante per creare nervature, texture e colonne in rilievo nel tuo tessuto all'uncinetto.",
+  "content": {
+    "summary": "Invece di lavorare negli anelli superiori, avvolgi la maglia attorno al montante dal davanti o dal dietro.",
+    "whyItMatters": "I punti sul montante anteriore e sul montante posteriore creano una trama che i normali punti piatti non possono, soprattutto per polsini, cappelli e bordi.",
+    "steps": [
+      "Lavorare il filo come se fosse una maglia alta.",
+      "Per un punto sul montante anteriore, inserisci l'uncinetto da davanti a dietro attorno al montante.",
+      "Per un punto sul montante posteriore, inseriscilo da dietro in avanti fino a dietro attorno al montante.",
+      "Tirare su un cappio e finire la maglia come una maglia alta.",
+      "Alterna i punti del montante davanti e dietro per creare le coste."
+    ],
+    "practice": "Lavora una riga di maglie alte sul davanti e una riga di maglie alte alternate sul davanti e sul dietro.",
+    "commonMistakes": [
+      "Inserimento accidentale negli anelli superiori invece che attorno al palo.",
+      "Torcere il tessuto saltando i montanti e alternandoli."
+    ]
+  }
+}

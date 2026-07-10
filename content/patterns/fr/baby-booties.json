@@ -1,0 +1,56 @@
+{
+  "title": "Chaussons pour bébé",
+  "description": "De petits chaussons souples pour apprendre à former une semelle, monter les côtés et fermer une pointe nette.",
+  "materials": [
+    "fil DK ou worsted léger",
+    "crochet de 4 mm",
+    "marqueur de maille",
+    "aiguille à fil",
+    "ciseaux"
+  ],
+  "skills": [
+    "travail en rond",
+    "maille serrée",
+    "augmentations et diminutions",
+    "maille coulée et jonction"
+  ],
+  "expectationText": "Un petit projet bébé qui montre comment une semelle plate devient une forme portable en trois dimensions.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Faire la semelle",
+      "instruction": "Montez une chaînette de la longueur souhaitée puis formez une semelle ovale avec des augmentations aux extrémités."
+    },
+    {
+      "type": "round",
+      "title": "Monter les côtés",
+      "instruction": "Travaillez des tours réguliers autour de la semelle pour faire remonter le tissu.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Former la pointe",
+      "instruction": "Diminuez sur l’avant pour arrondir la pointe sans écraser le talon.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Créer l’ouverture et la tige",
+      "instruction": "Travaillez quelques tours ou rangs réguliers pour définir l’ouverture de cheville et une petite bordure douce.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Faire le second chausson",
+      "instruction": "Comptez soigneusement pour que le second chausson corresponde au premier."
+    },
+    {
+      "type": "instruction",
+      "title": "Finitions",
+      "instruction": "Rentrez bien les fils et remettez légèrement les deux chaussons en forme."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Gilet simple au crochet",
+  "description": "Un gilet souple à superposer, construit avec des panneaux faciles, une légère mise en forme et une finition nette.",
+  "materials": [
+    "fil worsted",
+    "crochet de 5 mm",
+    "marqueurs de maille",
+    "mètre ruban",
+    "aiguille à fil",
+    "ciseaux"
+  ],
+  "skills": [
+    "chaînette de base",
+    "bride",
+    "couture",
+    "bordures et finitions"
+  ],
+  "expectationText": "Un premier projet de vêtement qui apprend la construction en panneaux, le contrôle de l’ajustement et un assemblage propre sans mise en forme complexe.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Mesurer et faire un échantillon",
+      "instruction": "Mesurez le tour de poitrine souhaité et crochetez un petit échantillon pour prévoir correctement la largeur."
+    },
+    {
+      "type": "row",
+      "title": "Dos",
+      "instruction": "Travaillez le panneau du dos en rangs jusqu’à obtenir la bonne longueur et la bonne profondeur d’emmanchure.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "row",
+      "title": "Devants",
+      "instruction": "Travaillez deux panneaux de devant assortis en vérifiant qu’ils correspondent bien au dos.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Assembler épaules et côtés",
+      "instruction": "Assemblez d’abord les épaules puis fermez les côtés en laissant l’espace des emmanchures."
+    },
+    {
+      "type": "instruction",
+      "title": "Ajouter les bordures",
+      "instruction": "Travaillez une bordure propre autour de l’encolure, des emmanchures et de l’ouverture devant."
+    },
+    {
+      "type": "instruction",
+      "title": "Finitions",
+      "instruction": "Rentrez les fils puis bloquez légèrement pour détendre les panneaux et équilibrer le tombé."
+    }
+  ]
+}

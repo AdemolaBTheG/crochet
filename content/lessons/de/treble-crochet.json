@@ -1,0 +1,20 @@
+{
+  "title": "Dreifaches Stäbchen",
+  "description": "Lerne eine hohe Masche, mit der du offene Schals, Tücher und Spitzenmuster schnell aufbauen kannst.",
+  "content": {
+    "summary": "Mache zwei Umschläge, bevor du die Häkelnadel einführst, und arbeite dann immer zwei Schlaufen auf einmal ab, bis nur noch eine Schlaufe übrig ist.",
+    "whyItMatters": "Dreifachhäkeln erhöht schnell die Höhe, öffnet den Stoff und hilft Ihnen, die Struktur größerer Maschen zu verstehen.",
+    "steps": [
+      "Den Umschlag zweimal umschlagen.",
+      "Führen Sie die Häkelnadel in die nächste Masche ein und ziehen Sie eine Schlaufe hoch.",
+      "Den Faden umschlagen und durch die ersten beiden Maschen ziehen.",
+      "Den Faden umschlagen und durch die nächsten 2 Maschen ziehen.",
+      "Den Faden umschlagen und durch die letzten beiden Maschen ziehen."
+    ],
+    "practice": "Arbeiten Sie 2 Reihen mit je 12 Dreifachstäbchen und vergleichen Sie die Höhe mit Stäbchen.",
+    "commonMistakes": [
+      "Den zweiten Umschlag vor dem Einführen der Häkelnadel vergessen.",
+      "Die Masche zu fest ziehen, sodass die hohen Maschen zusammenfallen."
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Diskantvirkad",
+  "description": "Lär dig en hög söm som bygger tyg snabbt för öppna halsdukar, omlott och spetsupprepningar.",
+  "content": {
+    "summary": "Gör ett omslag två gånger innan du sätter i nålen, sticka sedan av två öglor åt gången tills en ögla återstår.",
+    "whyItMatters": "Diskant ger höjden snabbt, öppnar tyget och hjälper dig att förstå högre stygnstruktur.",
+    "steps": [
+      "Gör ett garn två gånger.",
+      "Sätt i nålen i nästa stygn och dra upp en ögla.",
+      "Slå om och dra igenom de första 2 öglorna.",
+      "Vänd om och dra genom de nästa 2 öglorna.",
+      "Gör om och dra genom de sista 2 öglorna."
+    ],
+    "practice": "Virka 2 varv med 12 stolpar och jämför höjden med dubbelvirkning.",
+    "commonMistakes": [
+      "Glöm det andra omslaget innan du sätter i kroken.",
+      "Dra sömmen för hårt så att de höga öglorna kollapsar."
+    ]
+  }
+}

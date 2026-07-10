@@ -1,0 +1,60 @@
+{
+  "title": "Conejo de crochet",
+  "description": "Un sencillo peluche con cuerpo redondeado, orejas largas y detalles faciales cosidos.",
+  "materials": [
+    "Hilo DK o estambre",
+    "ganchillo de 3,5 a 4 mm",
+    "relleno",
+    "aguja lanera",
+    "marcador de punto",
+    "tijeras"
+  ],
+  "skills": [
+    "anillo mágico",
+    "punto bajo",
+    "aumento",
+    "disminución",
+    "ensamblaje de amigurumi"
+  ],
+  "expectationText": "Un suave proyecto de amigurumi que te enseña a dar forma a partes básicas del cuerpo, rellenarlas uniformemente, y armar un personaje simple limpiamente.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Iniciar el cuerpo",
+      "instruction": "Comienza con un anillo mágico y coloca un marcador para seguir cada ronda."
+    },
+    {
+      "type": "round",
+      "title": "Ronda 1",
+      "instruction": "Teje 6 puntos bajos en el anillo.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Aumentar para darle forma",
+      "instruction": "Aumentar uniformemente durante las siguientes rondas hasta que el cuerpo alcance el punto más ancho.",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "round",
+      "title": "Tejer uniformemente",
+      "instruction": "Tejer varias vueltas sin aumentos para generar altura antes de rellenar ligeramente.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Disminuir para cerrar",
+      "instruction": "Usar disminuciones invisibles para estrechar la parte superior y cerrar el cuerpo después de rellenar firmemente.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Agrega orejas y cara",
+      "instruction": "Teje dos orejas simples, cóselas y luego cose los ojos y la nariz."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "title": "Buciki niemowlęce",
+  "description": "Miękkie małe buciki, na których przećwiczysz kształtowanie podeszwy, boków i zgrabnego noska.",
+  "materials": [
+    "włóczka DK lub lekka worsted",
+    "szydełko 4 mm",
+    "marker oczek",
+    "igła dziewiarska",
+    "nożyczki"
+  ],
+  "skills": [
+    "praca w okrążeniach",
+    "półsłupek",
+    "dodawanie i odejmowanie",
+    "oczko ścisłe i łączenie"
+  ],
+  "expectationText": "Mały projekt dla niemowląt, który pokazuje, jak płaska podeszwa zmienia się w przestrzenną formę do noszenia.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Wykonaj podeszwę",
+      "instruction": "Zrób łańcuszek bazowy i uformuj owalną podeszwę z dodawaniami na obu końcach."
+    },
+    {
+      "type": "round",
+      "title": "Nadbuduj boki",
+      "instruction": "Pracuj równe okrążenia wokół podeszwy, aby robótka zaczęła się unosić ku górze.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Uformuj nosek",
+      "instruction": "Odejmuj oczka z przodu, aby zaokrąglić nosek bez zapadania pięty.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Zrób otwór i mankiet",
+      "instruction": "Przerób krótkie rzędy lub okrążenia, aby ukształtować otwór przy kostce i miękki mankiet.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Zrób drugi bucik",
+      "instruction": "Licz dokładnie, aby drugi bucik pasował do pierwszego."
+    },
+    {
+      "type": "instruction",
+      "title": "Wykończ",
+      "instruction": "Dobrze schowaj nitki i delikatnie nadaj obu bucikom równy kształt."
+    }
+  ]
+}

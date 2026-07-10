@@ -1,0 +1,60 @@
+{
+  "title": "Virkad mus",
+  "description": "En amigurumi-mus i fickstorlek med en enkel kropp och små öron.",
+  "materials": [
+    "DK-garn",
+    "3,5 mm krok",
+    "fyllning",
+    "garnnål",
+    "stygnmarkör",
+    "sax"
+  ],
+  "skills": [
+    "magisk ring",
+    "enkelvirkad",
+    "ökande",
+    "minskande",
+    "smådelar"
+  ],
+  "expectationText": "En liten leksak som gör formningen enkel så att du kan fokusera på rund struktur, snygga avtag och snyggt fästa små detaljer.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Starta kroppen",
+      "instruction": "Gör en magisk ring och markera första stygnet."
+    },
+    {
+      "type": "round",
+      "title": "Varv 1",
+      "instruction": "Virka 6 fastmaskor i ringen.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Öka",
+      "instruction": "Öka jämnt tills kroppen når önskad bredd.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "round",
+      "title": "Virka jämnt",
+      "instruction": "Virka flera varv utan att öka för att bygga upp kroppslängden.",
+      "counterLabel": "round",
+      "targetCount": 7
+    },
+    {
+      "type": "round",
+      "title": "Minska och stoppa",
+      "instruction": "Stoppa musen och minska mot bakändan tills nästan stängd.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Lägg till öron och svans",
+      "instruction": "Sy på två små öron och fäst en kedja eller garnsvans."
+    }
+  ]
+}

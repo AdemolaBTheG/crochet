@@ -6,15 +6,22 @@ import { useSubscription } from '@/context/SubscriptionContext';
 import { projects as projectsTable, type Project } from '@/db/schema';
 import { usePatterns } from '@/hooks/use-patterns';
 import { tap, warn } from '@/services/haptics';
+import { syncCurrentProjectWidgetFromDb } from '@/services/project-widget';
 import { useDbStore } from '@/stores/dbStore';
 import type { NativeStackHeaderItem } from '@react-navigation/native-stack';
 import { FlashList } from '@shopify/flash-list';
 import { desc, eq } from 'drizzle-orm';
 import { Image } from 'expo-image';
-import { Link, router, Stack, useFocusEffect } from 'expo-router';
-import { useCallback, useState } from 'react';
+import { Link, router, Stack, useFocusEffect, useLocalSearchParams } from 'expo-router';
+import { useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FlatList, Platform, Pressable, Text, useWindowDimensions, View } from 'react-native';
+import Animated, {
+  interpolateColor,
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated';
 
 type ActiveProject = Project & {
   patternSlug: string | null;
@@ -271,6 +278,70 @@ function ActiveProjectsRail({
   );
 }
 
+function CategoryChip({
+  category,
+  isSelected,
+  onSelect,
+  t,
+}: {
+  category: CategoryFilter;
+  isSelected: boolean;
+  onSelect: (category: CategoryFilter) => void;
+  t: (key: string, options?: Record<string, unknown>) => string;
+}) {
+  const progress = useSharedValue(isSelected ? 1 : 0);
+
+  useEffect(() => {
+    progress.value = withTiming(isSelected ? 1 : 0, { duration: 280 });
+  }, [isSelected, progress]);
+
+  const animatedStyle = useAnimatedStyle(() => ({
+    backgroundColor: interpolateColor(
+      progress.value,
+      [0, 1],
+      [theme.colors.surface, theme.colors.primary],
+    ),
+  }));
+
+  const animatedTextStyle = useAnimatedStyle(() => ({
+    color: interpolateColor(progress.value, [0, 1], [theme.colors.primary, theme.colors.white]),
+  }));
+
+  return (
+    <Pressable
+      onPress={() => {
+        tap();
+        onSelect(category);
+      }}
+      accessibilityRole="button"
+      accessibilityLabel={t('home.accessibility.showPatterns', {
+        category: category === 'all' ? t('common.filters.all').toLowerCase() : category,
+      })}>
+      <Animated.View
+        style={[
+          {
+            paddingVertical: theme.spacing.xs + 2,
+            paddingHorizontal: theme.spacing.md,
+            borderRadius: theme.radius.pill,
+          },
+          animatedStyle,
+        ]}>
+        <Animated.Text
+          selectable
+          style={[
+            {
+              fontSize: theme.size.md,
+              fontWeight: theme.weight.semibold,
+            },
+            animatedTextStyle,
+          ]}>
+          {category === 'all' ? t('common.filters.all') : formatCategory(category)}
+        </Animated.Text>
+      </Animated.View>
+    </Pressable>
+  );
+}
+
 function CategoryChips({
   categories,
   selectedCategory,
@@ -296,38 +367,14 @@ function CategoryChips({
       ItemSeparatorComponent={() => <View style={{ width: theme.spacing.sm }} />}
       style={{ marginHorizontal: -horizontalInset, marginBottom: theme.spacing.lg }}
       contentContainerStyle={{ paddingHorizontal: horizontalInset }}
-      renderItem={({ item: category }) => {
-        const isSelected = selectedCategory === category;
-
-        return (
-          <Pressable
-            key={category}
-            onPress={() => {
-              tap();
-              onSelectCategory(category);
-            }}
-            style={{
-              paddingVertical: theme.spacing.xs + 2,
-              paddingHorizontal: theme.spacing.md,
-              borderRadius: theme.radius.pill,
-              backgroundColor: isSelected ? theme.colors.primary : theme.colors.surface,
-            }}
-            accessibilityRole="button"
-            accessibilityLabel={t('home.accessibility.showPatterns', {
-              category: category === 'all' ? t('common.filters.all').toLowerCase() : category,
-            })}>
-            <Text
-              selectable
-              style={{
-                fontSize: theme.size.md,
-                fontWeight: theme.weight.semibold,
-                color: isSelected ? theme.colors.white : theme.colors.primary,
-              }}>
-              {category === 'all' ? t('common.filters.all') : formatCategory(category)}
-            </Text>
-          </Pressable>
-        );
-      }}
+      renderItem={({ item: category }) => (
+        <CategoryChip
+          category={category}
+          isSelected={selectedCategory === category}
+          onSelect={onSelectCategory}
+          t={t}
+        />
+      )}
     />
   );
 }
@@ -337,11 +384,13 @@ export default function HomeScreen() {
   const { i18n } = useTranslation();
   const { isPro } = useSubscription();
   const { width } = useWindowDimensions();
+  const params = useLocalSearchParams<{ folder?: string }>();
   const { data: patterns = [], isLoading: isPatternsLoading } = usePatterns(i18n.language);
   const [activeProjects, setActiveProjects] = useState<ActiveProject[]>([]);
   const [streakCount, setStreakCount] = useState(0);
   const [isLoadingProjects, setIsLoadingProjects] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<CategoryFilter>('all');
+  const [searchQuery, setSearchQuery] = useState('');
   const isLoading = isPatternsLoading || isLoadingProjects;
   const gridGap = 10;
   const horizontalPadding = 16;
@@ -350,8 +399,19 @@ export default function HomeScreen() {
   const categories = Array.from(
     new Set(patterns.map((p) => p.category).filter(Boolean) as string[]),
   ).sort();
-  const filteredPatterns =
-    selectedCategory === 'all' ? patterns : patterns.filter((p) => p.category === selectedCategory);
+  const filteredPatterns = patterns
+    .filter((p) => {
+      if (selectedCategory === 'all') return true;
+      if (selectedCategory === 'unsorted') return !p.category;
+      return p.category === selectedCategory;
+    })
+    .filter((p) => {
+      if (!searchQuery.trim()) return true;
+      const q = searchQuery.toLowerCase();
+      return (
+        p.title.toLowerCase().includes(q) || (p.description?.toLowerCase().includes(q) ?? false)
+      );
+    });
 
   useFocusEffect(
     useCallback(() => {
@@ -389,6 +449,8 @@ export default function HomeScreen() {
             );
             setStreakCount(getProjectStreak(allRows));
           }
+
+          await syncCurrentProjectWidgetFromDb(db);
         } finally {
           if (isMounted) {
             setIsLoadingProjects(false);
@@ -404,14 +466,37 @@ export default function HomeScreen() {
     }, [db]),
   );
 
+  useEffect(() => {
+    const incomingFolder = typeof params.folder === 'string' ? params.folder : null;
+    if (!incomingFolder) return;
+
+    setSelectedCategory(incomingFolder);
+  }, [params.folder]);
+
   return (
     <>
       <Stack.Screen
         options={{
           ...(Platform.OS === 'ios'
             ? {
+                headerSearchBarOptions: {
+                  placeholder: 'Search patterns',
+                  onChangeText: (event) => {
+                    setSearchQuery(event.nativeEvent.text);
+                  },
+                  onCancelButtonPress: () => {
+                    setSearchQuery('');
+                  },
+                },
                 unstable_headerRightItems: () => {
                   const items: NativeStackHeaderItem[] = [
+                    {
+                      type: 'button' as const,
+                      label: 'Folders',
+                      icon: { type: 'sfSymbol' as const, name: 'folder.fill' as const },
+                      tintColor: theme.colors.primary,
+                      onPress: () => router.push('/(folders)'),
+                    },
                     {
                       type: 'button' as const,
                       label: streakCount > 0 ? `${streakCount} day streak` : 'Streak',
@@ -437,7 +522,7 @@ export default function HomeScreen() {
                       label: 'Add',
                       icon: { type: 'sfSymbol' as const, name: 'plus' as const },
                       tintColor: theme.colors.primary,
-                      onPress: () => router.push('/(add)'),
+                      onPress: () => router.push(isPro ? '/(add)' : '/(paywalls)'),
                       variant: 'prominent',
                     },
                   ];
@@ -515,6 +600,8 @@ export default function HomeScreen() {
                 <Image
                   source={source}
                   contentFit="cover"
+                  transition={300}
+                  cachePolicy={'memory-disk'}
                   style={{ width: '100%', aspectRatio: 4 / 5, opacity: 0.72 }}
                 />
               ) : (

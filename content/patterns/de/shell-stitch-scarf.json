@@ -1,0 +1,50 @@
+{
+  "title": "Muschelstich-Schal",
+  "description": "Ein drapierter Schal aus wiederholten Muschelmotiven für Textur ohne komplizierte Formgebung.",
+  "materials": [
+    "leichtes Kammgarn",
+    "Häkelnadel 5 mm",
+    "Garnnadel",
+    "Schere"
+  ],
+  "skills": [
+    "Grundkette",
+    "Stäbchen",
+    "Muschelstich",
+    "Wiederholungen zählen"
+  ],
+  "expectationText": "Ein entspannendes Wiederholungsprojekt, bei dem die Herausforderung darin besteht, die Abstände der Muscheln sauber zu halten und einen Rhythmus aufzubauen, der über lange Reihen hinweg konsistent bleibt.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Die Grundkette anschlagen",
+      "instruction": "Machen Sie eine Grundkette in mehreren Formen, die zu Ihrem Muschelrapport und Ihrer Schalbreite passt."
+    },
+    {
+      "type": "row",
+      "title": "Reihe 1",
+      "instruction": "Bearbeiten Sie die Aufbaureihe, die Ankerräume für die Muscheln schafft.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Reihe 2",
+      "instruction": "Muscheln in jeden Ankerraum einarbeiten, dabei die gleiche Stichzahl in jeder Muschel beibehalten.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Wiederholen Sie das Muster",
+      "instruction": "Wechseln Sie die Aufbaureihe und die Muschelreihe ab, bis der Schal die gewünschte Länge erreicht hat.",
+      "counterLabel": "row",
+      "targetCount": 16
+    },
+    {
+      "type": "instruction",
+      "title": "Beenden Sie die Kante.",
+      "instruction": "Fügen Sie bei Bedarf eine letzte Reihe oder einen Rand hinzu, vernähen Sie dann und verweben Sie die Enden."
+    }
+  ]
+}

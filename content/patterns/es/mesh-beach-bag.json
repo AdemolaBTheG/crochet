@@ -1,0 +1,58 @@
+{
+  "title": "Bolsa de playa de malla",
+  "description": "Un bolso amplio y calado para toallas, hilo o un bolso ligero de uso diario.",
+  "materials": [
+    "hilo de algodón o rafia",
+    "ganchillo de 5,5 mm",
+    "marcador de punto",
+    "aguja lanera",
+    "tijeras"
+  ],
+  "skills": [
+    "cadena base",
+    "punto bajo",
+    "cadenas",
+    "forma de correa"
+  ],
+  "expectationText": "Un proyecto de transporte más grande que se centra en mantener la malla abierta constante y al mismo tiempo reforzar la base y las asas lo suficiente para el uso diario.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Haz la base",
+      "instruction": "Construye una base plana ovalada o rectangular con algunas vueltas de puntos firmes."
+    },
+    {
+      "type": "round",
+      "title": "Ronda 1",
+      "instruction": "Trabaja uniformemente alrededor del borde de la base y coloca un marcador al comienzo de la ronda.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Transición a malla",
+      "instruction": "Tejer una vuelta constante antes de abrir a la malla de espacio de cadeneta.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Haz crecer el cuerpo del bolso",
+      "instruction": "Repite el patrón de malla hasta que el bolso alcance la altura de un bolso de playa espacioso.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "round",
+      "title": "Agrega manijas",
+      "instruction": "Encadena las aberturas de las manijas y refuérzalas con una o dos rondas finales.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Termina",
+      "instruction": "Rematar con cuidado y tejer los extremos donde no se enganchen."
+    }
+  ]
+}

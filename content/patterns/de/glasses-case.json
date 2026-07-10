@@ -1,0 +1,52 @@
+{
+  "title": "Brillenetui",
+  "description": "Ein schmales gehäkeltes Etui, das deine Brille in der Tasche schützt und mit Knopf oder Schlaufe schließt.",
+  "materials": [
+    "cotton yarn",
+    "4 mm hook",
+    "stitch marker",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "working in rows",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "Ein kleines nützliches Projekt zum Arbeiten nach Maß und für saubere Kanten.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Brille ausmessen",
+      "instruction": "Miss Breite und Höhe der Brille, damit das Etui leicht an- und ausgezogen werden kann."
+    },
+    {
+      "type": "row",
+      "title": "Etui-Körper häkeln",
+      "instruction": "Häkle ein Rechteck, das lang genug ist, um zu einer Tasche mit kleiner Klappe gefaltet zu werden.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Falten und prüfen",
+      "instruction": "Lege das Rechteck um die Brille und prüfe die Passform vor dem Zusammennähen."
+    },
+    {
+      "type": "instruction",
+      "title": "Kanten schließen",
+      "instruction": "Verbinde die Seiten sauber, damit die Brille geschützt bleibt und das Etui Form hält."
+    },
+    {
+      "type": "instruction",
+      "title": "Verschluss anbringen",
+      "instruction": "Häkle eine Schlaufe oder ein kleines Knopfloch und kombiniere es bei Bedarf mit einem Knopf."
+    },
+    {
+      "type": "instruction",
+      "title": "Etui fertigstellen",
+      "instruction": "Vernähe die Fäden und teste die Öffnung mehrmals, damit sich das Etui gut nutzen lässt."
+    }
+  ]
+}

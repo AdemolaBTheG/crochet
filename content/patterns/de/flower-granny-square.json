@@ -1,0 +1,57 @@
+{
+  "title": "Blumen-Granny-Square",
+  "description": "Ein Quadrat mit Blumenmotiv, das eine einfache Blumenmitte in einen Rahmen im Oma-Stil einfügt.",
+  "materials": [
+    "zwei Garnfarben",
+    "Häkelnadel 4,5 mm",
+    "Garnnadel",
+    "Schere"
+  ],
+  "skills": [
+    "Magischer Ring",
+    "Clustermaschen",
+    "Luftmaschenräume",
+    "in Runden arbeiten"
+  ],
+  "expectationText": "Ein Motivprojekt, das Farbwechsel und eine rundbasierte Konstruktion einführt und dennoch in einem praktischen quadratischen Format endet.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Machen Sie den Mittelring.",
+      "instruction": "Beginnen Sie mit einem magischen Ring in der Farbe der Blütenmitte."
+    },
+    {
+      "type": "round",
+      "title": "Runde 1",
+      "instruction": "Arbeiten Sie die Mittelstiche, die die Blütenblätter verankern.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Runde 2",
+      "instruction": "Bilden Sie Blütenblattgruppen gleichmäßig um die Mitte herum.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Platzieren Sie das Motiv",
+      "instruction": "Ändern Sie die Farbe und häkeln Sie Luftmaschen in den Ecken, sodass aus der Blume ein Quadrat entsteht.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Fügen Sie eine weitere Randrunde hinzu.",
+      "instruction": "Arbeiten Sie gleichmäßig um das Quadrat herum, um die Kanten sauberer und einfacher zu verbinden.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "instruction",
+      "title": "Fertig stellen",
+      "instruction": "Befestigen Sie alle Farbwechselenden und vernähen Sie sie sauber."
+    }
+  ]
+}

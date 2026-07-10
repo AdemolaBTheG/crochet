@@ -1,0 +1,53 @@
+{
+  "title": "Gehaakte laptophoes",
+  "description": "Een eenvoudige hoes met flap die je laptop beschermt en makkelijk in een tas schuift.",
+  "materials": [
+    "worsted or aran yarn",
+    "5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "foundation chain",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "Een praktisch accessoire om meten, stevige stof en een simpele sluiting te oefenen.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Laptop opmeten",
+      "instruction": "Meet de breedte, hoogte en dikte van je laptop zodat de hoes met wat speling past."
+    },
+    {
+      "type": "row",
+      "title": "Hoofddeel haken",
+      "instruction": "Haak een dicht rechthoekig paneel of een gevouwen deel dat breed en lang genoeg is.",
+      "counterLabel": "row",
+      "targetCount": 28
+    },
+    {
+      "type": "instruction",
+      "title": "Pasvorm controleren",
+      "instruction": "Vouw de stof rond de laptop en pas aan vóór de laatste toeren of rijen."
+    },
+    {
+      "type": "instruction",
+      "title": "Zijkanten sluiten",
+      "instruction": "Naai of haak de zijkanten dicht zodat de hoes stevig maar niet te strak zit."
+    },
+    {
+      "type": "instruction",
+      "title": "Flap en sluiting toevoegen",
+      "instruction": "Werk de bovenflap af en voeg een lus of knoop toe die makkelijk opent en sluit."
+    },
+    {
+      "type": "instruction",
+      "title": "Verstevigen en afwerken",
+      "instruction": "Werk de draadeinden weg en druk de naden plat zodat de hoes soepel in een tas glijdt."
+    }
+  ]
+}

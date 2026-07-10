@@ -1,0 +1,50 @@
+{
+  "title": "Cachecol em ponto concha",
+  "description": "Um lenço drapeado construído a partir de motivos de concha repetidos para obter textura sem modelagem complicada.",
+  "materials": [
+    "fio penteado leve",
+    "agulha de crochê de 5 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "corrente de base",
+    "ponto alto",
+    "ponto concha",
+    "contando repetições"
+  ],
+  "expectationText": "Um projeto de repetição relaxante onde o desafio é manter o espaçamento das conchas organizado e construir um ritmo que permaneça consistente em linhas longas.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Encadeie a base",
+      "instruction": "Faça uma corrente de base em um múltiplo que se ajuste à repetição da sua concha e à largura do lenço."
+    },
+    {
+      "type": "row",
+      "title": "Linha 1",
+      "instruction": "Trabalhe a linha de configuração que cria espaços de âncora para as cascas.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Linha 2",
+      "instruction": "Trabalhe as conchas em cada espaço de âncora, mantendo a mesma contagem de pontos em cada concha.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Repita o padrão",
+      "instruction": "Alterne a linha de configuração e a linha de concha até que o lenço atinja o comprimento preferido.",
+      "counterLabel": "row",
+      "targetCount": 16
+    },
+    {
+      "type": "instruction",
+      "title": "Finalize a borda",
+      "instruction": "Adicione uma linha ou borda final, se necessário, depois prenda e teça as pontas."
+    }
+  ]
+}

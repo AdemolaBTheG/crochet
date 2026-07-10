@@ -1,0 +1,60 @@
+{
+  "title": "Gehaakte muis",
+  "description": "Een amigurumi-muis in zakformaat met een eenvoudig lichaam en kleine oren.",
+  "materials": [
+    "DK-garen",
+    "3,5 mm haaknaald",
+    "vulling",
+    "garennaald",
+    "stekenmarkering",
+    "schaar"
+  ],
+  "skills": [
+    "magische ring",
+    "vasten",
+    "meerderen",
+    "minderen",
+    "assemblage van kleine onderdelen"
+  ],
+  "expectationText": "Een klein speeltje dat de vormgeving eenvoudig houdt, zodat u zich kunt concentreren op de ronde structuur, nette minderingen en het netjes bevestigen van kleine details.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Start het hoofdgedeelte",
+      "instruction": "Maak een magische ring en markeer de eerste steek."
+    },
+    {
+      "type": "round",
+      "title": "Toer 1",
+      "instruction": "Haak 6 vasten in de ring.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Vergroot",
+      "instruction": "Verhoog gelijkmatig totdat het lichaam de gewenste breedte heeft bereikt.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "round",
+      "title": "Werk gelijkmatig",
+      "instruction": "Haak meerdere toeren zonder te meerderen om de lichaamslengte op te bouwen.",
+      "counterLabel": "round",
+      "targetCount": 7
+    },
+    {
+      "type": "round",
+      "title": "Verkleinen en opvullen",
+      "instruction": "Vul de muis en verklein hem richting de staart tot hij bijna gesloten is.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Oren en staart toevoegen",
+      "instruction": "Naai twee kleine oren vast en bevestig een ketting of garenstaart."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "title": "Granny square fleur",
+  "description": "Un carré à motif floral qui superpose un simple centre de fleur à l'intérieur d'un cadre de style grand-mère.",
+  "materials": [
+    "deux couleurs de fil",
+    "Crochet de 4,5 mm",
+    "aiguille à fil",
+    "ciseaux"
+  ],
+  "skills": [
+    "anneau magique",
+    "points groupés",
+    "espaces en chaînette",
+    "travailler en rond"
+  ],
+  "expectationText": "Un projet de motif qui introduit des changements de couleur et une construction à base de rond tout en se terminant par un format carré pratique.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Créez l'anneau central",
+      "instruction": "Commencez avec un anneau magique de la couleur du centre de la fleur."
+    },
+    {
+      "type": "round",
+      "title": "Tour 1",
+      "instruction": "Travaillez les points centraux qui ancrent les pétales de fleurs.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Round 2",
+      "instruction": "Créez des groupes de pétales uniformément autour du centre.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Carrez le motif",
+      "instruction": "Changez la couleur et travaillez les espaces de chaînette des coins pour que la fleur se transforme en carré.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Ajoutez un tour de bordure supplémentaire.",
+      "instruction": "Travaillez uniformément autour du carré pour rendre les bords plus propres et plus faciles à joindre.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "instruction",
+      "title": "Terminer",
+      "instruction": "Attachez et tissez soigneusement toutes les extrémités qui changent de couleur."
+    }
+  ]
+}

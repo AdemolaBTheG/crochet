@@ -1,0 +1,52 @@
+{
+  "title": "Porta botella",
+  "description": "Un soporte ligero para botella con cuerpo de malla y correa para paseos, mercado y viajes.",
+  "materials": [
+    "cotton yarn",
+    "4.5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle"
+  ],
+  "skills": [
+    "working in rounds",
+    "chain spaces and corners",
+    "crochet cords and straps",
+    "single crochet"
+  ],
+  "expectationText": "Un proyecto rápido y útil que enseña base ajustada, malla abierta y correa para llevar.",
+  "steps": [
+    {
+      "type": "round",
+      "title": "Hacer la base",
+      "instruction": "Teje un círculo u óvalo plano que coincida con la base de tu botella.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "instruction",
+      "title": "Levantar los lados",
+      "instruction": "Trabaja hacia arriba con un punto de malla para que el soporte quede ligero y flexible."
+    },
+    {
+      "type": "instruction",
+      "title": "Probar la botella",
+      "instruction": "Coloca la botella dentro y confirma que el soporte la sujeta sin apretar demasiado."
+    },
+    {
+      "type": "instruction",
+      "title": "Agregar la correa",
+      "instruction": "Teje una correa del largo necesario para hombro o cruzada, con buena tensión."
+    },
+    {
+      "type": "instruction",
+      "title": "Fijar con seguridad",
+      "instruction": "Une la correa en puntos fuertes cerca del borde superior y refuerza si hace falta."
+    },
+    {
+      "type": "instruction",
+      "title": "Probar y terminar",
+      "instruction": "Prueba el peso con la botella adentro y esconde bien todas las hebras."
+    }
+  ]
+}

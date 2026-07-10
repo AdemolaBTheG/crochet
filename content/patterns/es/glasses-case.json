@@ -1,0 +1,52 @@
+{
+  "title": "Estuche para gafas",
+  "description": "Un estuche fino de crochet que protege las gafas dentro del bolso y cierra con botón o presilla.",
+  "materials": [
+    "cotton yarn",
+    "4 mm hook",
+    "stitch marker",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "working in rows",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "Un proyecto pequeño y útil para aprender medidas reales y acabados limpios.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Medir las gafas",
+      "instruction": "Comprueba el ancho y alto de las gafas para que el estuche sea fácil de usar."
+    },
+    {
+      "type": "row",
+      "title": "Tejer el cuerpo",
+      "instruction": "Haz un rectángulo lo bastante largo como para doblarlo en forma de bolsita con solapa.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Doblar y revisar",
+      "instruction": "Envuelve las gafas con el rectángulo y confirma el tamaño antes de unir."
+    },
+    {
+      "type": "instruction",
+      "title": "Cerrar los bordes",
+      "instruction": "Une los lados con cuidado para que las gafas queden protegidas y el estuche mantenga forma."
+    },
+    {
+      "type": "instruction",
+      "title": "Añadir el cierre",
+      "instruction": "Haz una presilla o pequeño ojal y combínalo con un botón si quieres más seguridad."
+    },
+    {
+      "type": "instruction",
+      "title": "Terminar el estuche",
+      "instruction": "Esconde las hebras y prueba varias veces la apertura para que resulte cómodo."
+    }
+  ]
+}

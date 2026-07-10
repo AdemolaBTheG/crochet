@@ -1,0 +1,56 @@
+{
+  "title": "Babytofflor",
+  "description": "Mjuka små tofflor där du övar på sula, uppbyggda sidor och en prydlig tåformning.",
+  "materials": [
+    "DK-garn eller lätt worsted-garn",
+    "4 mm virknål",
+    "markör",
+    "stoppnål",
+    "sax"
+  ],
+  "skills": [
+    "virka i varv",
+    "fasta maskor",
+    "ökningar och minskningar",
+    "smygmaskor och sammanfogning"
+  ],
+  "expectationText": "Ett kompakt babyprojekt som visar hur en platt sula blir till en tredimensionell bärbar form.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Gör sulan",
+      "instruction": "Virka en grundkedja och forma en oval sula med ökningar i båda ändarna."
+    },
+    {
+      "type": "round",
+      "title": "Bygg upp sidorna",
+      "instruction": "Arbeta jämna varv runt sulan så att tyget börjar resa sig uppåt.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Forma tån",
+      "instruction": "Minska framtill för att runda tån utan att platta till hälen.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Skapa öppning och kant",
+      "instruction": "Virka korta varv eller rundor för att forma vristöppningen och en mjuk kant.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Virka den andra tofflan",
+      "instruction": "Räkna noggrant så att den andra tofflan matchar den första."
+    },
+    {
+      "type": "instruction",
+      "title": "Avsluta",
+      "instruction": "Fäst trådarna ordentligt och forma båda tofflorna lätt så att de blir jämna."
+    }
+  ]
+}

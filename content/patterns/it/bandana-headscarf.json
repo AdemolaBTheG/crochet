@@ -1,0 +1,52 @@
+{
+  "title": "Foulard bandana",
+  "description": "Un foulard triangolare veloce con aumenti semplici, bella caduta e laccetti per una vestibilità facile.",
+  "materials": [
+    "filato di cotone",
+    "uncinetto da 4,5 mm",
+    "marcatori di punto",
+    "ago da lana",
+    "forbici"
+  ],
+  "skills": [
+    "catenella di base",
+    "maglia alta",
+    "spazi di catenelle e angoli",
+    "bordi e rifiniture"
+  ],
+  "expectationText": "Un accessorio rapido che dà sicurezza con la forma triangolare e con le finiture pulite.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Inizia dal centro superiore",
+      "instruction": "Parti con una base corta e marca i punti di aumento per seguire facilmente la forma."
+    },
+    {
+      "type": "row",
+      "title": "Allarga il triangolo",
+      "instruction": "Lavora righe con aumenti ai bordi o al centro per allargare il foulard in modo uniforme.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Controlla la larghezza",
+      "instruction": "Fermati quando il lato lungo raggiunge la larghezza desiderata sulla testa."
+    },
+    {
+      "type": "instruction",
+      "title": "Aggiungi i laccetti",
+      "instruction": "Lavora laccetti stretti o lunghe catenelle da entrambi gli angoli."
+    },
+    {
+      "type": "instruction",
+      "title": "Lavora il bordo",
+      "instruction": "Aggiungi una rifinitura pulita attorno al triangolo e ai laccetti per rendere il contorno regolare."
+    },
+    {
+      "type": "instruction",
+      "title": "Finitura",
+      "instruction": "Nascondi i fili e blocca leggermente per migliorare la caduta."
+    }
+  ]
+}

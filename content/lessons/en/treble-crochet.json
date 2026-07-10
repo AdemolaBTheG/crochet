@@ -1,0 +1,20 @@
+{
+  "title": "Treble Crochet",
+  "description": "Learn a tall stitch that builds fabric quickly for open scarves, wraps, and lacy repeats.",
+  "content": {
+    "summary": "Yarn over twice before inserting the hook, then work off two loops at a time until one loop remains.",
+    "whyItMatters": "Treble crochet adds height fast, opens the fabric, and helps you understand taller stitch structure.",
+    "steps": [
+      "Yarn over twice.",
+      "Insert the hook into the next stitch and pull up a loop.",
+      "Yarn over and pull through the first 2 loops.",
+      "Yarn over and pull through the next 2 loops.",
+      "Yarn over and pull through the final 2 loops."
+    ],
+    "practice": "Work 2 rows of 12 treble crochet stitches and compare the height to double crochet.",
+    "commonMistakes": [
+      "Forgetting the second yarn over before inserting the hook.",
+      "Pulling the stitch too tight so the tall loops collapse."
+    ]
+  }
+}

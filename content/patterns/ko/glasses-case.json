@@ -1,0 +1,52 @@
+{
+  "title": "안경 케이스",
+  "description": "가방 안에서 안경을 보호하고 단추나 고리로 닫을 수 있는 슬림한 코바늘 케이스입니다.",
+  "materials": [
+    "cotton yarn",
+    "4 mm hook",
+    "stitch marker",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "working in rows",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "실제 치수 맞추기와 깔끔한 마감을 연습하기 좋은 작은 실용 프로젝트입니다.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "안경 치수 재기",
+      "instruction": "케이스가 쉽게 열리고 닫히도록 안경의 가로와 세로를 확인합니다."
+    },
+    {
+      "type": "row",
+      "title": "몸판 뜨기",
+      "instruction": "작은 덮개가 달린 파우치로 접을 수 있을 만큼 긴 직사각형을 뜹니다.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "접어서 확인",
+      "instruction": "직사각형을 안경에 감싸 보며 연결 전에 크기를 확인합니다."
+    },
+    {
+      "type": "instruction",
+      "title": "옆면 막기",
+      "instruction": "안경을 보호하고 형태를 유지하도록 옆면을 깔끔하게 닫습니다."
+    },
+    {
+      "type": "instruction",
+      "title": "여밈 추가",
+      "instruction": "고리나 작은 단추구멍을 만들고 필요하면 단추를 달아 줍니다."
+    },
+    {
+      "type": "instruction",
+      "title": "케이스 마무리",
+      "instruction": "실 끝을 정리하고 여러 번 열고 닫아 사용감이 부드러운지 확인합니다."
+    }
+  ]
+}

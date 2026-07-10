@@ -1,0 +1,53 @@
+{
+  "title": "Szydełkowe etui na laptop",
+  "description": "Proste etui z klapką, które chroni laptop i łatwo mieści się w torbie.",
+  "materials": [
+    "worsted or aran yarn",
+    "5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "foundation chain",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "Praktyczny dodatek do nauki mierzenia, zwartej tkaniny i prostego zapięcia.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Zmierz laptop",
+      "instruction": "Zmierz szerokość, wysokość i grubość laptopa, aby etui miało niewielki luz."
+    },
+    {
+      "type": "row",
+      "title": "Zrób część główną",
+      "instruction": "Wykonaj gęsty prostokąt lub składany panel odpowiednio szeroki i długi.",
+      "counterLabel": "row",
+      "targetCount": 28
+    },
+    {
+      "type": "instruction",
+      "title": "Sprawdź dopasowanie",
+      "instruction": "Owiń tkaninę wokół laptopa i dopasuj rozmiar przed końcowymi rzędami."
+    },
+    {
+      "type": "instruction",
+      "title": "Połącz boki",
+      "instruction": "Zszyj lub połącz boki tak, aby etui było bezpieczne, ale nie za ciasne."
+    },
+    {
+      "type": "instruction",
+      "title": "Dodaj klapkę i zapięcie",
+      "instruction": "Wykończ górną klapkę i dodaj pętelkę lub guzik łatwy w użyciu."
+    },
+    {
+      "type": "instruction",
+      "title": "Wzmocnij i wykończ",
+      "instruction": "Schowaj nitki i spłaszcz szwy, aby etui łatwo wsunęło się do torby."
+    }
+  ]
+}

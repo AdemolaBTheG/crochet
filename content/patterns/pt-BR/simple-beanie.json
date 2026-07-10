@@ -1,0 +1,54 @@
+{
+  "title": "Gorro simples",
+  "description": "Um padrão de chapéu simples que se concentra no ajuste, nas nervuras e no acabamento limpo.",
+  "materials": [
+    "fio penteado",
+    "agulha de crochê de 5 mm",
+    "marcador de ponto",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "corrente de base",
+    "ponto baixo",
+    "laço traseiro apenas nervuras",
+    "costura"
+  ],
+  "expectationText": "Um primeiro chapéu confiável que ajuda você a praticar a medição do ajuste da cabeça, a repetição de linhas de forma consistente e a montagem organizada de um projeto vestível.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Encadeie a altura",
+      "instruction": "Encadeie o número de pontos necessários para a altura do gorro, não para o perímetro da cabeça."
+    },
+    {
+      "type": "row",
+      "title": "Linha 1",
+      "instruction": "Trabalhe ao longo da corrente e estabeleça a borda do painel de nervuras.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Construa as nervuras",
+      "instruction": "Trabalhe apenas em voltas até que o painel se enrole confortavelmente ao redor da cabeça.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Junte a costura",
+      "instruction": "Junte as pontas curtas para que o painel se torne um tubo."
+    },
+    {
+      "type": "instruction",
+      "title": "Feche a coroa",
+      "instruction": "Junte a borda superior fechada com fio, puxe bem e prenda bem."
+    },
+    {
+      "type": "instruction",
+      "title": "Finalize",
+      "instruction": "Vire o chapéu do lado direito e costure nas pontas finais."
+    }
+  ]
+}

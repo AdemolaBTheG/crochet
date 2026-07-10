@@ -1,0 +1,20 @@
+{
+  "title": "Bordures et finitions",
+  "description": "Ajoutez une bordure finale propre qui équilibre la forme, encadre l’ouvrage et lui donne un aspect fini.",
+  "content": {
+    "summary": "Les bordures et finitions sont des rangs ou des tours supplémentaires travaillés autour du projet pour stabiliser les bords ou ajouter un détail décoratif.",
+    "whyItMatters": "Une bordure simple peut masquer des côtés irréguliers, aider les angles à mieux se poser et rendre la pièce plus aboutie.",
+    "steps": [
+      "Décidez si le projet a besoin d’une bordure simple de stabilisation ou d’une finition décorative.",
+      "Répartissez les mailles régulièrement le long des côtés pour éviter les ondulations ou le resserrement.",
+      "Marquez les angles pour ne pas oublier les augmentations, les mailles en l’air ou les points spéciaux.",
+      "Travaillez d’abord un tour de base propre si le bord du projet est irrégulier.",
+      "Bloquez ou lissez l’ouvrage après la finition si vous voulez que la bordure repose plus à plat."
+    ],
+    "practice": "Ajoutez un tour de mailles serrées à un échantillon, puis un second tour décoratif pour comparer le rendu.",
+    "commonMistakes": [
+      "Mettre trop de mailles sur les côtés et créer des vagues.",
+      "Oublier les augmentations d’angle et faire rentrer la bordure."
+    ]
+  }
+}

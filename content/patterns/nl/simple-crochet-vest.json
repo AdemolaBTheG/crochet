@@ -1,0 +1,55 @@
+{
+  "title": "Eenvoudig gehaakt vest",
+  "description": "Een soepel vest in lagen, opgebouwd uit eenvoudige panden, lichte vormgeving en een nette afwerking.",
+  "materials": [
+    "worsted garen",
+    "haaknaald 5 mm",
+    "steekmarkeerders",
+    "meetlint",
+    "stopnaald",
+    "schaar"
+  ],
+  "skills": [
+    "lossenketting",
+    "stokjes",
+    "naden",
+    "randen en afwerkingen"
+  ],
+  "expectationText": "Een eerste kledingproject waarmee je paneelconstructie, basispasvorm en nette montage oefent zonder ingewikkelde vormgeving.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Meet en maak een proeflap",
+      "instruction": "Meet de gewenste borstwijdte en haak een kleine proeflap zodat de breedte voorspelbaar blijft."
+    },
+    {
+      "type": "row",
+      "title": "Achterpand",
+      "instruction": "Haak het achterpand in rijen tot de gewenste lichaamslengte en armsgatdiepte zijn bereikt.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "row",
+      "title": "Voorpanden",
+      "instruction": "Haak twee gelijke voorpanden en controleer dat ze passen bij het achterpand.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Schouders en zijkanten verbinden",
+      "instruction": "Naai eerst de schouders en sluit daarna de zijkanten terwijl je ruimte laat voor de armsgaten."
+    },
+    {
+      "type": "instruction",
+      "title": "Randen toevoegen",
+      "instruction": "Werk een nette rand rondom hals, armsgaten en voorpanden om de vorm te stabiliseren."
+    },
+    {
+      "type": "instruction",
+      "title": "Afwerken",
+      "instruction": "Werk de draden weg en block het vest licht zodat de panden mooi vallen."
+    }
+  ]
+}

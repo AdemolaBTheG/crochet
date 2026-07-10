@@ -1,0 +1,60 @@
+{
+  "title": "Virkad kanin",
+  "description": "En enkel mjukislek med rundad kropp, långa öron och sydda ansiktsdetaljer.",
+  "materials": [
+    "DK eller kamgarn",
+    "3,5 till 4 mm krok",
+    "fyllning",
+    "garnnål",
+    "stygnmarkör",
+    "sax"
+  ],
+  "skills": [
+    "magisk ring",
+    "enkelvirkad",
+    "ökande",
+    "minskande",
+    "amigurumi assembly"
+  ],
+  "expectationText": "Ett skonsamt amigurumi-projekt som lär dig att forma grundläggande kroppsdelar, stoppa dem jämnt och sätta ihop en enkel karaktär rent.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Starta kroppen",
+      "instruction": "Börja med en magisk ring och placera en markör för att spåra varje runda."
+    },
+    {
+      "type": "round",
+      "title": "Varv 1",
+      "instruction": "Virka 6 fastmaskor i ringen.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Öka för form",
+      "instruction": "Öka jämnt under nästa varv tills kroppen når den bredaste punkten.",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "round",
+      "title": "Virka jämnt",
+      "instruction": "Virka flera varv utan ökningar för att bygga höjden innan du stoppar lätt.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Minska för att stänga",
+      "instruction": "Använd osynliga minskningar för att avsmalna toppen och stänga kroppen efter att du har stoppat ordentligt.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Lägg till öron och ansikte",
+      "instruction": "Virka två enkla öronbitar, sy fast dem och sy sedan ögonen och näsan."
+    }
+  ]
+}

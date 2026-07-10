@@ -63,6 +63,7 @@
     }
   },
   "learn": {
+    "sectionTitle": "Lecciones",
     "toolsSectionTitle": "Herramientas",
     "lessonLabel": "Leccion {{index}}",
     "actions": {
@@ -419,13 +420,13 @@
       "note": "Este es el mismo ritmo guiado paso a paso que usaras en tus primeras lecciones de Crova."
     },
     "trialOffer": {
-      "title": "Queremos que pruebes Crova\ngratis",
+      "title": "Queremos que pruebes Crova",
       "subtitle": "Desbloquea acceso ilimitado a lecciones guiadas, contadores de pasos y patrones de proyectos — todo diseñado para crocheteros que quieren aprender más rápido.",
       "featureOne": "Acceso ilimitado a todas las lecciones",
       "featureTwo": "Sigue cada hilera, punto y proyecto",
       "featureThree": "Sigue patrones guiados paso a paso",
-      "cta": "Comenzar prueba gratuita",
-      "footer": "Sin compromiso. Cancela en cualquier momento antes de que termine la prueba."
+      "cta": "Continuar",
+      "footer": "Cancela en cualquier momento."
     },
     "dailyGoal": {
       "stepOf": "Paso {{current}} de {{total}}",
@@ -463,10 +464,14 @@
       }
     }
   },
+  "stats": {
+    "streak": "{{count}} day streak"
+  },
   "goals": {
     "dailyCraftingGoal": "Objetivo diario de crochet",
     "dailyProgressTime": "{{completed}} min de {{target}} min",
     "yearlyProjectGoal": "Objetivo de proyectos {{year}}",
+    "yearlyProgress": "{{completed}} de {{target}} proyectos",
     "yearlyProgress_one": "1 de {{target}} proyecto",
     "yearlyProgress_other": "{{completed}} de {{target}} proyectos",
     "remainingHint": "{{remaining}} más por hacer – aproximadamente {{pace}} por mes."
@@ -530,6 +535,56 @@
         "saving": "Guardando proyecto...",
         "save": "Guardar y abrir proyecto"
       }
+    }
+  },
+  "folders": {
+    "title": "Carpetas",
+    "addButton": "Añadir",
+    "empty": {
+      "title": "Aún no hay carpetas",
+      "subtitle": "Crea tu primera carpeta para agrupar patrones por proyecto, lista de regalos o colección."
+    },
+    "patternCount_one": "{{count}} patrón",
+    "patternCount_other": "{{count}} patrones",
+    "accessibility": {
+      "addFolder": "Crear carpeta",
+      "folderTile": "{{name}}, {{count}} {{countLabel}}"
+    },
+    "detail": {
+      "fallbackTitle": "Carpeta",
+      "searchPlaceholder": "Buscar patrones",
+      "patternCount_one": "{{count}} patrón",
+      "patternCount_other": "{{count}} patrones",
+      "emptyTitle": "Aún no hay patrones en esta carpeta",
+      "emptySubtitle": "Añade patrones a esta carpeta para verlos aquí.",
+      "emptySearchTitle": "Sin resultados en esta carpeta",
+      "emptySearchSubtitle": "Prueba con otro término de búsqueda.",
+      "accessibility": {
+        "openPattern": "Abrir patrón {{title}}",
+        "unlockPattern": "Desbloquear patrón {{title}}"
+      }
+    },
+    "create": {
+      "title": "Crear carpeta",
+      "back": "Volver",
+      "color": "Color",
+      "colorLabel": "Color de la carpeta",
+      "nameLabel": "Nombre de la carpeta",
+      "namePlaceholder": "Ideas para regalo",
+      "creating": "Creando…",
+      "submit": "Crear carpeta",
+      "errorTitle": "No se pudo crear la carpeta",
+      "errorMessage": "Inténtalo de nuevo."
+    }
+  },
+  "addToFolder": {
+    "title": "Añadir a carpeta",
+    "done": "Hecho",
+    "patternCount_one": "{{count}} patrón",
+    "patternCount_other": "{{count}} patrones",
+    "empty": {
+      "title": "Aún no hay carpetas",
+      "subtitle": "Crea una carpeta primero para organizar tus patrones."
     }
   }
 }

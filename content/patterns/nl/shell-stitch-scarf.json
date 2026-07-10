@@ -1,0 +1,50 @@
+{
+  "title": "Sjaal in schelpensteek",
+  "description": "Een soepelvallende sjaal opgebouwd uit herhaalde schelpmotieven voor textuur zonder ingewikkelde vormgeving.",
+  "materials": [
+    "licht kamgaren",
+    "5 mm haaknaald",
+    "garennaald",
+    "schaar"
+  ],
+  "skills": [
+    "basisketting",
+    "stokje",
+    "schelpsteek",
+    "herhalingen tellen"
+  ],
+  "expectationText": "Een ontspannend herhalingsproject waarbij het de uitdaging is om de afstand tussen de schelpen netjes te houden en een ritme op te bouwen dat consistent blijft over lange rijen.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Maak een ketting van de basis",
+      "instruction": "Maak een basisketting in een veelvoud die past bij je schaalherhaling en sjaalbreedte."
+    },
+    {
+      "type": "row",
+      "title": "Rij 1",
+      "instruction": "Bewerk de opzetrij die ankerruimten voor de schelpen creëert.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Rij 2",
+      "instruction": "Werk schelpen in elke ankerruimte, waarbij je in elke schaal hetzelfde aantal steken behoudt.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Herhaal het patroon",
+      "instruction": "Wissel de opzetrij en de schelprij af totdat de sjaal de gewenste lengte heeft bereikt.",
+      "counterLabel": "row",
+      "targetCount": 16
+    },
+    {
+      "type": "instruction",
+      "title": "Werk de rand af",
+      "instruction": "Voeg indien nodig een laatste rij of rand toe, hecht dan af en weef de uiteinden weg."
+    }
+  ]
+}

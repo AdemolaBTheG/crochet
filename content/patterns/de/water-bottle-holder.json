@@ -1,0 +1,52 @@
+{
+  "title": "Trinkflaschen-Halter",
+  "description": "Ein leichter Flaschenhalter mit Netzstruktur und Schulterriemen für Alltag, Markt und unterwegs.",
+  "materials": [
+    "cotton yarn",
+    "4.5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle"
+  ],
+  "skills": [
+    "working in rounds",
+    "chain spaces and corners",
+    "crochet cords and straps",
+    "single crochet"
+  ],
+  "expectationText": "Ein schnelles Alltagsprojekt mit passendem Boden, offenem Muster und tragbarem Riemen.",
+  "steps": [
+    {
+      "type": "round",
+      "title": "Boden häkeln",
+      "instruction": "Häkle einen flachen Kreis oder ein Oval, das zur Unterseite deiner Flasche passt.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "instruction",
+      "title": "Seiten aufbauen",
+      "instruction": "Arbeite vom Boden nach oben in einem luftigen Netzmuster, damit der Halter leicht bleibt."
+    },
+    {
+      "type": "instruction",
+      "title": "Flasche einsetzen",
+      "instruction": "Setze die Flasche ein und prüfe, ob der Halter sie gut hält, ohne zu stark zu drücken."
+    },
+    {
+      "type": "instruction",
+      "title": "Riemen häkeln",
+      "instruction": "Häkle einen Riemen in der gewünschten Länge für Schulter oder Crossbody und halte die Spannung fest."
+    },
+    {
+      "type": "instruction",
+      "title": "Sicher befestigen",
+      "instruction": "Befestige den Riemen an stabilen Punkten am oberen Rand und verstärke bei Bedarf."
+    },
+    {
+      "type": "instruction",
+      "title": "Testen und beenden",
+      "instruction": "Teste das Gewicht mit der Flasche und vernähe anschließend alle Fäden sicher."
+    }
+  ]
+}

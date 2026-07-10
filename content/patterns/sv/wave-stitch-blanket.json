@@ -1,0 +1,51 @@
+{
+  "title": "Wave Stitch Blanket",
+  "description": "Ett återkommande filtmönster som skapar mjuka toppar och dalar över varje rad.",
+  "materials": [
+    "kamgarn",
+    "5 mm krok",
+    "stygnmarkörer",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "dubbelvirkad",
+    "ökande",
+    "minskande",
+    "counting repeats"
+  ],
+  "expectationText": "Ett längre upprepningsprojekt där nyckelfärdigheten är att hålla balansen ökar och minskar så att vågorna förblir jämna och igenkännbara.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Kedja grunden",
+      "instruction": "Gör en grundkedja i den multipla som krävs för vågupprepningen plus vända stygn."
+    },
+    {
+      "type": "row",
+      "title": "rad 1",
+      "instruction": "Arbeta inställningsraden och markera en hel upprepning så att du kan kontrollera din rytm tidigt.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Rad 2",
+      "instruction": "Öka vid topparna och minska i dalarna enligt vågmönstret.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Upprepa vågen",
+      "instruction": "Fortsätt vågraderna tills filten når din önskade längd.",
+      "counterLabel": "row",
+      "targetCount": 20
+    },
+    {
+      "type": "instruction",
+      "title": "Avsluta den sista kanten",
+      "instruction": "Sticka en enkel bård eller sista varv för att stabilisera den övre kanten innan du avslutar."
+    }
+  ]
+}

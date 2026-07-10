@@ -1,0 +1,58 @@
+{
+  "title": "Mesh-strandväska",
+  "description": "En rymlig genombruten väska för handdukar, garn eller lätt vardagsbärande.",
+  "materials": [
+    "bomulls- eller raffiagarn",
+    "5,5 mm krok",
+    "stygnmarkör",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "grundkedja",
+    "enkelvirkad",
+    "kedjor",
+    "remformning"
+  ],
+  "expectationText": "Ett större bärprojekt som fokuserar på att hålla öppet nät konsekvent samtidigt som det förstärker basen och handtagen tillräckligt mycket för daglig användning.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Gör basen",
+      "instruction": "Bygg en platt oval eller rektangelbas med några varv fasta stygn."
+    },
+    {
+      "type": "round",
+      "title": "Varv 1",
+      "instruction": "Arbeta jämnt runt baskanten och sätt en markör i början av varvet.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Övergång till nät",
+      "instruction": "Virka ett stadigt varv innan du öppnar i kedjehålsnät.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Växa väskans kropp",
+      "instruction": "Upprepa nätmönstret tills väskan når en rymlig strandväska.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "round",
+      "title": "Lägg till handtag",
+      "instruction": "Kedjehandtagsöppningar och förstärk dem med en eller två sista omgångar.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Avsluta",
+      "instruction": "Fäst försiktigt och väv in ändarna där de inte kommer att haka."
+    }
+  ]
+}

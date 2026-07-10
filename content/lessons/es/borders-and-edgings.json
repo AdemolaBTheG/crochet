@@ -1,0 +1,20 @@
+{
+  "title": "Bordes y remates",
+  "description": "Añade un borde final limpio que suaviza la forma, enmarca la pieza y le da un aspecto terminado.",
+  "content": {
+    "summary": "Los bordes y remates son vueltas o filas extra alrededor del proyecto para estabilizar el contorno o añadir un detalle decorativo.",
+    "whyItMatters": "Un borde sencillo puede disimular lados irregulares, ayudar a que las esquinas queden planas y hacer que la pieza se vea más completa.",
+    "steps": [
+      "Decide si el proyecto necesita un borde sencillo de estabilización o un remate decorativo.",
+      "Distribuye los puntos de manera uniforme a lo largo de los laterales para que el borde no se ondule ni se encoja.",
+      "Usa marcadores en las esquinas para recordar aumentos, cadenas o puntos especiales.",
+      "Haz primero una vuelta base ordenada si el borde del proyecto es irregular.",
+      "Bloquea o acomoda la pieza después del remate si quieres que el borde repose más plano."
+    ],
+    "practice": "Añade una vuelta de punto bajo a una muestra y luego una segunda vuelta decorativa para comparar el resultado.",
+    "commonMistakes": [
+      "Poner demasiados puntos en los laterales y crear ondas.",
+      "Olvidar los aumentos de esquina y hacer que el borde se curve hacia dentro."
+    ]
+  }
+}

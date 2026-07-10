@@ -1,0 +1,60 @@
+{
+  "title": "Lapin au crochet",
+  "description": "Une peluche simple avec un corps arrondi, de longues oreilles et des détails cousus sur le visage.",
+  "materials": [
+    "Fil DK ou peigné",
+    "Crochet de 3,5 à 4 mm",
+    "rembourrage",
+    "aiguille à fil",
+    "marqueur de maille",
+    "ciseaux"
+  ],
+  "skills": [
+    "anneau magique",
+    "maille serrée",
+    "augmentation",
+    "décroissant",
+    "assemblage amigurumi"
+  ],
+  "expectationText": "Un projet amigurumi doux qui vous apprend à façonner les parties de base du corps, à les farcir uniformément et à les assembler. un personnage simple proprement.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Démarrer le corps",
+      "instruction": "Commencez avec un anneau magique et placez un marqueur pour suivre chaque tour."
+    },
+    {
+      "type": "round",
+      "title": "Tour 1",
+      "instruction": "Crocheter 6 mailles serrées dans l'anneau.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Augmenter pour la forme",
+      "instruction": "Augmenter uniformément au cours des tours suivants jusqu'à ce que le corps atteigne le point le plus large.",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "round",
+      "title": "Tricoter uniformément",
+      "instruction": "Crocheter plusieurs tours sans augmentation pour augmenter la hauteur avant de rembourrer légèrement.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Diminuer pour fermer",
+      "instruction": "Utiliser des diminutions invisibles pour effiler le haut et fermer le corps après avoir bien rembourré.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Ajoutez les oreilles et le visage",
+      "instruction": "Crochetez deux morceaux d'oreilles simples, cousez-les, puis cousez les yeux et le nez."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Lire les abréviations de patron",
+  "description": "Apprenez le raccourci que les modèles utilisent pour que les instructions écrites cessent de ressembler à du code.",
+  "content": {
+    "summary": "Les abréviations de motifs compressent les noms de points, les actions et les répétitions en une ligne compacte que vous pouvez numériser rapidement.",
+    "whyItMatters": "Si vous savez décoder les abréviations, vous pouvez suivre davantage de modèles, comparer les concepteurs et parcourir plus rapidement les instructions.",
+    "steps": [
+      "Apprenez d'abord les abréviations des points de base : ml, ms, hdc, br, B, mc.",
+      "Surveillez les mots d'action comme inc, dec, rep et sk.",
+      "Vérifiez si le concepteur utilise des termes américains ou britanniques avant de commencer.",
+      "Lisez lentement une ligne complète et développez chaque abréviation en langage simple.",
+      "Marquez les répétitions et comptez avant de crocheter le rang."
+    ],
+    "practice": "Prenez une courte ligne de modèle et réécrivez-la en mots complets avant de la travailler.",
+    "commonMistakes": [
+      "Mélange de termes britanniques et américains dans le même projet.",
+      "Parenthèses ou parenthèses répétées manquantes lors d'une lecture rapide."
+    ]
+  }
+}

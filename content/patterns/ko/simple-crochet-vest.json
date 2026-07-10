@@ -1,0 +1,55 @@
+{
+  "title": "심플 코바늘 베스트",
+  "description": "쉬운 패널 구조와 가벼운 형태 잡기, 깔끔한 마감으로 만드는 레이어드용 베스트입니다.",
+  "materials": [
+    "워스티드 굵기 실",
+    "5 mm 코바늘",
+    "스티치 마커",
+    "줄자",
+    "돗바늘",
+    "가위"
+  ],
+  "skills": [
+    "기초 사슬",
+    "한길긴뜨기",
+    "봉합",
+    "테두리와 마감"
+  ],
+  "expectationText": "복잡한 shaping 없이 패널 구성, 기본 핏 확인, 깔끔한 조립을 연습할 수 있는 첫 의류 프로젝트입니다.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "치수 재기와 게이지",
+      "instruction": "원하는 가슴둘레를 정하고 작은 게이지 스와치를 떠서 폭을 예측합니다."
+    },
+    {
+      "type": "row",
+      "title": "뒷판",
+      "instruction": "뒷판을 단으로 떠서 몸길이와 암홀 깊이가 알맞아질 때까지 진행합니다.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "row",
+      "title": "앞판",
+      "instruction": "앞판 두 장을 떠서 길이와 어깨 폭이 뒷판과 맞는지 확인합니다.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "어깨와 옆선 연결",
+      "instruction": "먼저 어깨를 연결하고, 암홀 공간을 남기면서 옆선을 닫습니다."
+    },
+    {
+      "type": "instruction",
+      "title": "테두리 추가",
+      "instruction": "목둘레, 암홀, 앞여밈 가장자리에 깔끔한 테두리를 떠서 형태를 안정시킵니다."
+    },
+    {
+      "type": "instruction",
+      "title": "마무리",
+      "instruction": "실끝을 정리하고 가볍게 블로킹해 패널이 고르게 떨어지도록 합니다."
+    }
+  ]
+}

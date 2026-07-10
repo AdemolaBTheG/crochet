@@ -1,0 +1,14 @@
+{
+  "title": "Tunisian Potholder",
+  "description": "A dense square project that introduces the rhythm of Tunisian crochet.",
+  "materials": ["cotton yarn", "6 mm Tunisian hook", "yarn needle", "scissors"],
+  "skills": ["foundation chain", "Tunisian simple stitch", "return pass", "counting loops"],
+  "expectationText": "A compact square that helps you learn forward and return passes while keeping edge loops visible and even from row to row.",
+  "steps": [
+    { "type": "instruction", "title": "Chain the width", "instruction": "Create a foundation chain that matches the width you want for the potholder." },
+    { "type": "row", "title": "Forward pass", "instruction": "Pull up one loop in each chain and leave them on the hook.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "row", "title": "Return pass", "instruction": "Yarn over and work loops off according to the Tunisian return pass sequence.", "counterLabel": "row", "targetCount": 2 },
+    { "type": "repeat", "title": "Build the fabric", "instruction": "Repeat forward and return passes until the piece becomes square.", "counterLabel": "row", "targetCount": 18 },
+    { "type": "instruction", "title": "Bind off", "instruction": "Use a simple bind off across the top edge, then fasten off and weave in ends." }
+  ]
+}

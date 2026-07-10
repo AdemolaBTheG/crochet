@@ -1,0 +1,50 @@
+{
+  "title": "Descanso de panela tunisiano",
+  "description": "Um projeto quadrado denso que introduz o ritmo do crochê tunisino.",
+  "materials": [
+    "fio de algodão",
+    "Gancho tunisino de 6 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "corrente de base",
+    "Ponto simples tunisino",
+    "passe de retorno",
+    "contando loops"
+  ],
+  "expectationText": "Um quadrado compacto que ajuda você a aprender passes para frente e para trás enquanto mantém os loops de borda visíveis e uniformes de linha em linha.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Encadeie a largura",
+      "instruction": "Crie uma corrente de base que corresponda à largura desejada para o porta-panelas."
+    },
+    {
+      "type": "row",
+      "title": "Passe para frente",
+      "instruction": "Puxe um laço em cada corrente e deixe-os no gancho.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Passe de retorno",
+      "instruction": "Passe o fio e faça as alças de acordo com a sequência de passe de retorno da Tunísia.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Construa o tecido",
+      "instruction": "Repita as passagens para frente e para trás até que a peça fique quadrada.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Arremate",
+      "instruction": "Use um arremate simples na borda superior, depois prenda e costure nas pontas."
+    }
+  ]
+}

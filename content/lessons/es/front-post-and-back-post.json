@@ -1,0 +1,20 @@
+{
+  "title": "Puntos en relieve por delante y por detrás",
+  "description": "Utilice puntadas de poste para crear nervaduras, textura y columnas elevadas en su tejido de crochet.",
+  "content": {
+    "summary": "En lugar de trabajar en los bucles superiores, envuelve la puntada alrededor del poste desde el frente o desde atrás.",
+    "whyItMatters": "Las puntadas delanteras y traseras crean una textura que las puntadas planas normales no pueden, especialmente para puños, sombreros y bordes.",
+    "steps": [
+      "Tejer como un punto alto.",
+      "Para una puntada de poste delantero, inserta el gancho de adelante hacia atrás alrededor del poste.",
+      "Para una puntada posterior, inserta de atrás hacia adelante hacia atrás alrededor del poste.",
+      "Levanta un bucle y termina el punto como si fuera un punto alto.",
+      "Alterne los puntos delanteros y traseros para construir el elástico."
+    ],
+    "practice": "Teje una hilera de puntos altos en el poste delantero y una hilera de puntos altos en el poste delantero y trasero alternados.",
+    "commonMistakes": [
+      "Insertando accidentalmente en los bucles superiores en lugar de alrededor del poste.",
+      "Torciendo la tela saltando postes mientras se alterna."
+    ]
+  }
+}

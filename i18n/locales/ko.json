@@ -63,6 +63,7 @@
     }
   },
   "learn": {
+    "sectionTitle": "레슨",
     "toolsSectionTitle": "도구",
     "lessonLabel": "수업 {{index}}",
     "actions": {
@@ -419,13 +420,13 @@
       "note": "이는 첫 번째 Crova 레슨에서 사용하게 될 것과 동일한 단계별 안내 리듬입니다."
     },
     "trialOffer": {
-      "title": "Crova를\n무료로 사용해 보세요",
+      "title": "Crova를 사용해 보세요",
       "subtitle": "가이드 레슨, 단계 추적기, 프로젝트 패턴에 무제한으로 액세스하세요. 모두 더 빨리 배우고 싶은 코바늘 뜨개인을 위해 제작되었습니다.",
       "featureOne": "모든 레슨 무제한 이용",
       "featureTwo": "모든 단, 스티치, 프로젝트 추적",
       "featureThree": "단계별 가이드 패턴 따라하기",
-      "cta": "무료 체험 시작하기",
-      "footer": "의무 없음. 체험 종료 전에 언제든지 취소하세요."
+      "cta": "계속하기",
+      "footer": "언제든지 취소할 수 있습니다."
     },
     "dailyGoal": {
       "stepOf": "{{total}}단계 중 {{current}}단계",
@@ -463,10 +464,14 @@
       }
     }
   },
+  "stats": {
+    "streak": "{{count}} day streak"
+  },
   "goals": {
     "dailyCraftingGoal": "일일 뜨기 목표",
     "dailyProgressTime": "{{target}}분 중 {{completed}}분",
     "yearlyProjectGoal": "{{year}}년 프로젝트 목표",
+    "yearlyProgress": "{{target}}개 중 {{completed}}개 완료",
     "yearlyProgress_one": "{{target}}개 중 1개 완료",
     "yearlyProgress_other": "{{target}}개 중 {{completed}}개 완료",
     "remainingHint": "{{remaining}}개 남음 – 월 약 {{pace}}개 페이스입니다."
@@ -530,6 +535,56 @@
         "saving": "프로젝트 저장 중...",
         "save": "저장하고 프로젝트 열기"
       }
+    }
+  },
+  "folders": {
+    "title": "폴더",
+    "addButton": "추가",
+    "empty": {
+      "title": "아직 폴더가 없습니다",
+      "subtitle": "첫 번째 폴더를 만들어 프로젝트, 선물 목록 또는 컬렉션별로 패턴을 그룹화하세요."
+    },
+    "patternCount_one": "패턴 {{count}}개",
+    "patternCount_other": "패턴 {{count}}개",
+    "accessibility": {
+      "addFolder": "폴더 만들기",
+      "folderTile": "{{name}}, {{count}} {{countLabel}}"
+    },
+    "detail": {
+      "fallbackTitle": "폴더",
+      "searchPlaceholder": "패턴 검색",
+      "patternCount_one": "패턴 {{count}}개",
+      "patternCount_other": "패턴 {{count}}개",
+      "emptyTitle": "이 폴더에 아직 패턴이 없습니다",
+      "emptySubtitle": "여기에 표시하려면 패턴을 추가하세요.",
+      "emptySearchTitle": "이 폴더에 일치하는 결과가 없습니다",
+      "emptySearchSubtitle": "다른 검색어를 시도해 보세요.",
+      "accessibility": {
+        "openPattern": "{{title}} 패턴 열기",
+        "unlockPattern": "{{title}} 패턴 잠금 해제"
+      }
+    },
+    "create": {
+      "title": "폴더 만들기",
+      "back": "뒤로",
+      "color": "색상",
+      "colorLabel": "폴더 색상",
+      "nameLabel": "폴더 이름",
+      "namePlaceholder": "선물 아이디어",
+      "creating": "생성 중…",
+      "submit": "폴더 만들기",
+      "errorTitle": "폴더를 만들 수 없습니다",
+      "errorMessage": "다시 시도해 주세요."
+    }
+  },
+  "addToFolder": {
+    "title": "폴더에 추가",
+    "done": "완료",
+    "patternCount_one": "패턴 {{count}}개",
+    "patternCount_other": "패턴 {{count}}개",
+    "empty": {
+      "title": "아직 폴더가 없습니다",
+      "subtitle": "패턴을 정리하려면 먼저 폴더를 만드세요."
     }
   }
 }

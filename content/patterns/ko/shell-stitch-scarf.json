@@ -1,0 +1,50 @@
+{
+  "title": "쉘 스티치 스카프",
+  "description": "복잡한 형태 없이 질감을 위해 반복되는 쉘 모티브로 제작한 드레이피한 스카프입니다.",
+  "materials": [
+    "가벼운 소모사",
+    "5mm 후크",
+    "실 바늘",
+    "가위"
+  ],
+  "skills": [
+    "파운데이션 체인",
+    "이중 크로셰",
+    "쉘 스티치",
+    "반복 계산"
+  ],
+  "expectationText": "쉘 간격을 깔끔하게 유지하고 긴 행에서 일관되게 유지되는 리듬을 구축하는 것이 과제인 편안한 반복 프로젝트입니다.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "베이스 체인을 연결합니다.",
+      "instruction": "쉘 반복과 스카프 너비에 맞는 여러 개의 기초 체인을 만듭니다."
+    },
+    {
+      "type": "row",
+      "title": "행 1",
+      "instruction": "쉘의 앵커 공간을 생성하는 설정 행을 작업합니다.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "행 2",
+      "instruction": "모든 쉘에서 동일한 스티치 수를 유지하면서 각 앵커 공간에 쉘을 작업합니다.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "패턴을 반복합니다.",
+      "instruction": "스카프가 원하는 길이에 도달할 때까지 설정 행과 쉘 행을 교대로 반복합니다.",
+      "counterLabel": "row",
+      "targetCount": 16
+    },
+    {
+      "type": "instruction",
+      "title": "가장자리 마무리",
+      "instruction": "필요한 경우 마지막 행이나 테두리를 추가한 다음 고정하고 끝을 엮습니다."
+    }
+  ]
+}

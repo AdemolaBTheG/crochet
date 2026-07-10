@@ -4,7 +4,10 @@ import { projects as projectsTable, type Project } from '@/db/schema';
 import { getTodayCraftSeconds } from '@/services/craft-sessions';
 import { useDbStore } from '@/stores/dbStore';
 import { useOnboardingStore } from '@/stores/onboardingStore';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { desc } from 'drizzle-orm';
+import { GlassView, isLiquidGlassAvailable } from 'expo-glass-effect';
 import { router, useFocusEffect } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
 import { useCallback, useMemo, useState } from 'react';
@@ -54,6 +57,55 @@ function getProjectStreak(projects: Project[]) {
   }
 
   return streak;
+}
+
+function getCurrentWeek(): { id: number; label: string; isToday: boolean }[] {
+  const today = new Date();
+  const todayKey = getDayKey(today);
+  const days: { id: number; label: string; isToday: boolean }[] = [];
+
+  for (let i = 6; i >= 0; i -= 1) {
+    const date = new Date(today);
+    date.setDate(date.getDate() - i);
+    const dayKey = getDayKey(date);
+    days.push({
+      id: dayKey,
+      label: date.toLocaleDateString(undefined, { weekday: 'short' }).charAt(0),
+      isToday: dayKey === todayKey,
+    });
+  }
+
+  return days;
+}
+
+function getStreakDayKeys(projects: Project[]): Set<number> {
+  const uniqueDays = Array.from(
+    new Set(
+      projects
+        .map((project) => project.updatedAt)
+        .filter((value): value is Date => value instanceof Date)
+        .map((date) => getDayKey(date)),
+    ),
+  ).sort((a, b) => b - a);
+
+  if (uniqueDays.length === 0) return new Set();
+
+  const todayKey = getDayKey(new Date());
+  const yesterdayKey = todayKey - 86_400_000;
+
+  if (uniqueDays[0] !== todayKey && uniqueDays[0] !== yesterdayKey) {
+    return new Set();
+  }
+
+  const streakDays = new Set<number>();
+  streakDays.add(uniqueDays[0]);
+
+  for (let index = 1; index < uniqueDays.length; index += 1) {
+    if (uniqueDays[index - 1] - uniqueDays[index] !== 86_400_000) break;
+    streakDays.add(uniqueDays[index]);
+  }
+
+  return streakDays;
 }
 
 function getCompletedProjectsThisYear(projects: Project[]) {
@@ -182,6 +234,9 @@ export default function GoalScreen() {
   );
 
   const completedThisYear = useMemo(() => getCompletedProjectsThisYear(projects), [projects]);
+  const currentStreak = useMemo(() => getProjectStreak(projects), [projects]);
+  const currentWeek = useMemo(() => getCurrentWeek(), []);
+  const currentStreakDayKeys = useMemo(() => getStreakDayKeys(projects), [projects]);
   const dailyGoalTarget = dailyGoalMinutes ?? 15;
   const dailyGoalProgressMinutes = Math.floor(todayCraftSeconds / 60);
   const yearlyGoalTarget = yearlyProjectGoal ?? 5;
@@ -208,6 +263,84 @@ export default function GoalScreen() {
         gap: theme.spacing['2xl'],
       }}>
       <View style={styles.cardsWrap}>
+        <GlassView
+          isInteractive
+          style={{
+            paddingHorizontal: theme.spacing.lg,
+            paddingVertical: theme.spacing.lg,
+            borderRadius: theme.radius.xl + 4,
+            borderCurve: 'continuous',
+            backgroundColor: !isLiquidGlassAvailable() ? theme.colors.surface : undefined,
+            gap: theme.spacing.xl,
+          }}>
+          <View
+            style={{
+              gap: theme.spacing.sm,
+              flexDirection: 'row',
+              alignItems: 'center',
+            }}>
+            <FontAwesome6 name="fire" size={32} color={theme.colors.primary} />
+            <Text
+              style={{
+                fontSize: theme.size.xl,
+                color: Colors.textPrimary,
+                fontWeight: theme.weight.semibold,
+                fontVariant: ['tabular-nums'],
+              }}>
+              {t('stats.streak', { count: currentStreak })}
+            </Text>
+          </View>
+
+          <View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              alignItems: 'flex-start',
+              gap: theme.spacing.xs,
+            }}>
+            {currentWeek.map((day) => {
+              const isStreaked = currentStreakDayKeys.has(day.id);
+
+              return (
+                <View
+                  key={day.id}
+                  style={{
+                    alignItems: 'center',
+                    gap: theme.spacing.xs,
+                    flex: 1,
+                  }}>
+                  <Text
+                    selectable
+                    style={{
+                      color: day.isToday ? theme.colors.textPrimary : theme.colors.textSecondary,
+                      fontSize: theme.size.sm,
+                      fontWeight: day.isToday ? theme.weight.semibold : theme.weight.medium,
+                    }}>
+                    {day.label}
+                  </Text>
+                  <View
+                    style={{
+                      width: 34,
+                      height: 34,
+                      borderRadius: 17,
+                      borderCurve: 'continuous',
+                      borderStyle: 'dashed',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      backgroundColor: isStreaked ? Colors.primary : undefined,
+                      borderWidth: isStreaked ? 0 : 2,
+                      borderColor: theme.colors.border,
+                    }}>
+                    {isStreaked ? (
+                      <Ionicons name="checkmark-sharp" size={18} color={Colors.white} />
+                    ) : null}
+                  </View>
+                </View>
+              );
+            })}
+          </View>
+        </GlassView>
+
         <GoalCard
           icon={{ ios: 'scissors', android: 'content_cut', web: 'content_cut' }}
           label={t('goals.dailyCraftingGoal')}
@@ -295,7 +428,7 @@ const styles = StyleSheet.create({
   cardLabel: {
     color: theme.colors.textSecondary,
     fontSize: theme.size.lg,
-    fontWeight: theme.weight.bold,
+    fontWeight: theme.weight.semibold,
   },
   cardLabelWrap: {
     alignItems: 'center',

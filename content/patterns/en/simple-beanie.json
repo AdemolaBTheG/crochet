@@ -1,0 +1,15 @@
+{
+  "title": "Simple Beanie",
+  "description": "A straightforward hat pattern that focuses on fit, ribbing, and clean finishing.",
+  "materials": ["worsted weight yarn", "5 mm hook", "stitch marker", "yarn needle", "scissors"],
+  "skills": ["foundation chain", "single crochet", "back loop only ribbing", "seaming"],
+  "expectationText": "A reliable first hat that helps you practice measuring head fit, repeating rows consistently, and assembling a wearable project neatly.",
+  "steps": [
+    { "type": "instruction", "title": "Chain the height", "instruction": "Chain the number of stitches needed for the beanie height, not the head circumference." },
+    { "type": "row", "title": "Row 1", "instruction": "Work across the chain and establish the edge of the ribbing panel.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "row", "title": "Build the ribbing", "instruction": "Work back loop only rows until the panel wraps comfortably around the head.", "counterLabel": "row", "targetCount": 24 },
+    { "type": "instruction", "title": "Join the seam", "instruction": "Join the short ends together so the panel becomes a tube." },
+    { "type": "instruction", "title": "Close the crown", "instruction": "Gather the top edge closed with yarn, pull tight, and secure it well." },
+    { "type": "instruction", "title": "Finish", "instruction": "Turn the hat right side out and weave in the final ends." }
+  ]
+}

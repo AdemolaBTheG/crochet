@@ -63,6 +63,7 @@
     }
   },
   "learn": {
+    "sectionTitle": "Leçons",
     "toolsSectionTitle": "Outils",
     "lessonLabel": "Lecon {{index}}",
     "actions": {
@@ -419,13 +420,13 @@
       "note": "C'est le meme rythme guide, etape par etape, que tu retrouveras dans tes premieres lecons Crova."
     },
     "trialOffer": {
-      "title": "Nous voulons que tu essaies Crova\ngratuitement",
+      "title": "Nous voulons que tu essaies Crova",
       "subtitle": "Débloquez un accès illimité à des leçons guidées, des compteurs de pas et des modèles de projets — tout est conçu pour les crocheteurs qui veulent apprendre plus vite.",
       "featureOne": "Accès illimité à toutes les leçons",
       "featureTwo": "Suivez chaque rang, point et projet",
       "featureThree": "Suivez des modèles guidés étape par étape",
-      "cta": "Commencer l'essai gratuit",
-      "footer": "Sans engagement. Annulez à tout moment avant la fin de l'essai."
+      "cta": "Continuer",
+      "footer": "Annulez à tout moment."
     },
     "dailyGoal": {
       "stepOf": "Étape {{current}} sur {{total}}",
@@ -463,10 +464,14 @@
       }
     }
   },
+  "stats": {
+    "streak": "{{count}} day streak"
+  },
   "goals": {
     "dailyCraftingGoal": "Objectif quotidien de crochet",
     "dailyProgressTime": "{{completed}} min sur {{target}} min",
     "yearlyProjectGoal": "Objectif de projets {{year}}",
+    "yearlyProgress": "{{completed}} sur {{target}} projets",
     "yearlyProgress_one": "1 sur {{target}} projet",
     "yearlyProgress_other": "{{completed}} sur {{target}} projets",
     "remainingHint": "Encore {{remaining}} à faire – environ {{pace}} par mois."
@@ -530,6 +535,56 @@
         "saving": "Enregistrement du projet...",
         "save": "Enregistrer et ouvrir le projet"
       }
+    }
+  },
+  "folders": {
+    "title": "Dossiers",
+    "addButton": "Ajouter",
+    "empty": {
+      "title": "Aucun dossier",
+      "subtitle": "Crée ton premier dossier pour regrouper les modèles par projet, liste de cadeaux ou collection."
+    },
+    "patternCount_one": "{{count}} modèle",
+    "patternCount_other": "{{count}} modèles",
+    "accessibility": {
+      "addFolder": "Créer un dossier",
+      "folderTile": "{{name}}, {{count}} {{countLabel}}"
+    },
+    "detail": {
+      "fallbackTitle": "Dossier",
+      "searchPlaceholder": "Rechercher des modèles",
+      "patternCount_one": "{{count}} modèle",
+      "patternCount_other": "{{count}} modèles",
+      "emptyTitle": "Aucun modèle dans ce dossier",
+      "emptySubtitle": "Ajoute des modèles à ce dossier pour les voir ici.",
+      "emptySearchTitle": "Aucun résultat dans ce dossier",
+      "emptySearchSubtitle": "Essaie un autre terme de recherche.",
+      "accessibility": {
+        "openPattern": "Ouvrir le modèle {{title}}",
+        "unlockPattern": "Débloquer le modèle {{title}}"
+      }
+    },
+    "create": {
+      "title": "Créer un dossier",
+      "back": "Retour",
+      "color": "Couleur",
+      "colorLabel": "Couleur du dossier",
+      "nameLabel": "Nom du dossier",
+      "namePlaceholder": "Idées cadeaux",
+      "creating": "Création…",
+      "submit": "Créer le dossier",
+      "errorTitle": "Impossible de créer le dossier",
+      "errorMessage": "Veuille réessayer."
+    }
+  },
+  "addToFolder": {
+    "title": "Ajouter au dossier",
+    "done": "Terminé",
+    "patternCount_one": "{{count}} modèle",
+    "patternCount_other": "{{count}} modèles",
+    "empty": {
+      "title": "Aucun dossier",
+      "subtitle": "Crée d'abord un dossier pour organiser tes modèles."
     }
   }
 }

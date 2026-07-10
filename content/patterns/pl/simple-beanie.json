@@ -1,0 +1,54 @@
+{
+  "title": "Prosta czapka",
+  "description": "Prosty wzór czapki, który skupia się na kroju, ściągaczu i prostym wykończeniu.",
+  "materials": [
+    "przędza czesankowa",
+    "haczyk 5 mm",
+    "znacznik ściegu",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "łańcuszek podstawowy",
+    "szydełko",
+    "Tylko ściągacz z pętelką z tyłu",
+    "szwy"
+  ],
+  "expectationText": "Niezawodna pierwsza czapka, która pomaga ćwiczyć mierzenie dopasowania głowy, konsekwentne powtarzanie rzędów i staranne składanie projektu do noszenia.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Łańcuszek na wysokość",
+      "instruction": "Łańcuszek na wysokość odpowiada liczbie oczek potrzebnych do wysokości czapki, a nie obwodu głowy."
+    },
+    {
+      "type": "row",
+      "title": "wiersz 1",
+      "instruction": "Pracuj w poprzek łańcucha i ustalaj krawędź panelu ściągającego.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Wykonaj ściągacz",
+      "instruction": "Przerabiaj tylko rzędy pętelek, aż panel będzie wygodnie owinął się wokół głowy.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Połącz szew",
+      "instruction": "Połącz krótkie końce tak, aby panel stał się rurą."
+    },
+    {
+      "type": "instruction",
+      "title": "Zamknij koronkę",
+      "instruction": "Zbierz górny brzeg zamknięty włóczką, mocno zaciągnij i dobrze zabezpiecz."
+    },
+    {
+      "type": "instruction",
+      "title": "Zakończ",
+      "instruction": "Wywróć czapkę na prawą stronę i spleć końce."
+    }
+  ]
+}

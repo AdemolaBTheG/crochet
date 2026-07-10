@@ -63,6 +63,7 @@
     }
   },
   "learn": {
+    "sectionTitle": "Lektioner",
     "toolsSectionTitle": "Verktyg",
     "lessonLabel": "Lektion {{index}}",
     "actions": {
@@ -419,13 +420,13 @@
       "note": "Detta är samma guidade steg-för-steg-rytm som du kommer att använda i dina första Crova-lektioner."
     },
     "trialOffer": {
-      "title": "Vi vill att du provar Crova\ngratis",
+      "title": "Vi vill att du provar Crova",
       "subtitle": "Lås upp obegränsad tillgång till guidade lektioner, stegräknare och projektmönster — allt skapat för virkare som vill lära sig snabbare.",
       "featureOne": "Obegränsad tillgång till alla lektioner",
       "featureTwo": "Spåra varje varv, maska och projekt",
       "featureThree": "Följ guidade mönster steg för steg",
-      "cta": "Starta gratis provperiod",
-      "footer": "Inget åtagande. Avsluta när som helst innan provperioden tar slut."
+      "cta": "Fortsätt",
+      "footer": "Avsluta när som helst."
     },
     "dailyGoal": {
       "stepOf": "Steg {{current}} av {{total}}",
@@ -463,10 +464,14 @@
       }
     }
   },
+  "stats": {
+    "streak": "{{count}} day streak"
+  },
   "goals": {
     "dailyCraftingGoal": "Dagligt virkmål",
     "dailyProgressTime": "{{completed}} min av {{target}} min",
     "yearlyProjectGoal": "{{year}} projektmål",
+    "yearlyProgress": "{{completed}} av {{target}} projekt",
     "yearlyProgress_one": "1 av {{target}} projekt",
     "yearlyProgress_other": "{{completed}} av {{target}} projekt",
     "remainingHint": "{{remaining}} kvar – ungefär {{pace}} per månad."
@@ -530,6 +535,56 @@
         "saving": "Sparar projekt...",
         "save": "Spara och öppna projekt"
       }
+    }
+  },
+  "folders": {
+    "title": "Mappar",
+    "addButton": "Lägg till",
+    "empty": {
+      "title": "Inga mappar än",
+      "subtitle": "Skapa din första mapp för att gruppera mönster efter projekt, presentlista eller samling."
+    },
+    "patternCount_one": "{{count}} mönster",
+    "patternCount_other": "{{count}} mönster",
+    "accessibility": {
+      "addFolder": "Skapa mapp",
+      "folderTile": "{{name}}, {{count}} {{countLabel}}"
+    },
+    "detail": {
+      "fallbackTitle": "Mapp",
+      "searchPlaceholder": "Sök mönster",
+      "patternCount_one": "{{count}} mönster",
+      "patternCount_other": "{{count}} mönster",
+      "emptyTitle": "Inga mönster i denna mapp än",
+      "emptySubtitle": "Lägg till mönster i denna mapp för att se dem här.",
+      "emptySearchTitle": "Inga träffar i denna mapp",
+      "emptySearchSubtitle": "Prova en annan sökterm.",
+      "accessibility": {
+        "openPattern": "Öppna {{title}} mönster",
+        "unlockPattern": "Lås upp {{title}} mönster"
+      }
+    },
+    "create": {
+      "title": "Skapa mapp",
+      "back": "Tillbaka",
+      "color": "Färg",
+      "colorLabel": "Mappfärg",
+      "nameLabel": "Mappnamn",
+      "namePlaceholder": "Presentidéer",
+      "creating": "Skapar…",
+      "submit": "Skapa mapp",
+      "errorTitle": "Kunde inte skapa mapp",
+      "errorMessage": "Försök igen."
+    }
+  },
+  "addToFolder": {
+    "title": "Lägg till i mapp",
+    "done": "Klar",
+    "patternCount_one": "{{count}} mönster",
+    "patternCount_other": "{{count}} mönster",
+    "empty": {
+      "title": "Inga mappar än",
+      "subtitle": "Skapa en mapp först för att organisera dina mönster."
     }
   }
 }

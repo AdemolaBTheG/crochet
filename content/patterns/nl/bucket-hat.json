@@ -1,0 +1,58 @@
+{
+  "title": "Bucket Hat",
+  "description": "Een casual rond project met een platte kroon, stevige zijkanten en een zachte rand.",
+  "materials": [
+    "kamgaren",
+    "5 mm haaknaald",
+    "stekenmarkering",
+    "garennaald",
+    "schaar"
+  ],
+  "skills": [
+    "magische ring",
+    "vasten",
+    "meerderen",
+    "in toeren werken"
+  ],
+  "expectationText": "Een draagbaar project waarbij je eerst oefent met het vormgeven van een platte cirkel en vervolgens de gladde zijkanten en een korte rand laat groeien zonder het aantal steken te verliezen.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Start de kroon",
+      "instruction": "Maak een magische ring en plaats een markeerdraad in de eerste steek van elke toer."
+    },
+    {
+      "type": "round",
+      "title": "Toer 1",
+      "instruction": "Haak 8 vasten in de ring.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Vergroot de kroon",
+      "instruction": "Vergroot elke ronde gelijkmatig totdat de cirkel de gewenste breedte voor de hoed bereikt.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Haak de zijkanten",
+      "instruction": "Vasten gelijkmatig, zonder meerderen gedurende meerdere toeren, zodat de muts naar beneden begint te zakken.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "round",
+      "title": "Vorm de rand",
+      "instruction": "Voeg lichte meerderingen toe om de paar steken, zodat de rand naar buiten uitloopt.",
+      "counterLabel": "round",
+      "targetCount": 15
+    },
+    {
+      "type": "instruction",
+      "title": "Afmaken",
+      "instruction": "Pas het aan, pas indien nodig de randdiepte aan, hecht dan af en weef de uiteinden in."
+    }
+  ]
+}

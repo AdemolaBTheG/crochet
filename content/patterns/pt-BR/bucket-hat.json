@@ -1,0 +1,58 @@
+{
+  "title": "Chapéu bucket",
+  "description": "Um projeto casual redondo com coroa plana, laterais firmes e aba macia.",
+  "materials": [
+    "fio penteado",
+    "agulha de crochê de 5 mm",
+    "marcador de ponto",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "anel mágico",
+    "ponto baixo",
+    "aumentos",
+    "trabalhando em rodadas"
+  ],
+  "expectationText": "Um projeto vestível que pratica moldar primeiro um círculo plano, depois deixar crescer lados lisos e uma aba curta sem perder a contagem de pontos.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Inicie a coroa",
+      "instruction": "Faça um anel mágico e coloque um marcador no primeiro ponto de cada rodada. Rodada"
+    },
+    {
+      "type": "round",
+      "title": "Rodada 1",
+      "instruction": "Tricotar 8 pontos baixos no anel.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Aumente a coroa",
+      "instruction": "Aumente uniformemente a cada rodada até que o círculo atinja a largura superior desejada para o chapéu.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Tricotar as laterais",
+      "instruction": "Ponto baixo uniformemente, sem aumentos, por várias carreiras, para que o gorro comece a cair para baixo.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "round",
+      "title": "Modele a aba",
+      "instruction": "Adicione aumentos suaves a cada poucos pontos para deixar a aba se alargar para fora.",
+      "counterLabel": "round",
+      "targetCount": 15
+    },
+    {
+      "type": "instruction",
+      "title": "Finalize",
+      "instruction": "Experimente, ajuste a profundidade da aba se necessário, depois prenda e costure nas pontas."
+    }
+  ]
+}

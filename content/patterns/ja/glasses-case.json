@@ -1,0 +1,52 @@
+{
+  "title": "メガネケース",
+  "description": "バッグの中でメガネを守り、ボタンやループで閉じられる細身のケースです。",
+  "materials": [
+    "cotton yarn",
+    "4 mm hook",
+    "stitch marker",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "working in rows",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "サイズを合わせて作る練習と、きれいな仕上げに向いた小さな実用品です。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "メガネを測る",
+      "instruction": "出し入れしやすいように、メガネの幅と高さを確認します。"
+    },
+    {
+      "type": "row",
+      "title": "本体を編む",
+      "instruction": "小さなフラップ付きポーチに折れる長さの長方形を編みます。",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "折って確認する",
+      "instruction": "長方形をメガネに巻いて、閉じる前にサイズを確認します。"
+    },
+    {
+      "type": "instruction",
+      "title": "脇を閉じる",
+      "instruction": "形を保ちながらメガネを守れるように、側面をきれいに閉じます。"
+    },
+    {
+      "type": "instruction",
+      "title": "留め具を付ける",
+      "instruction": "ループや小さなボタンホールを作り、必要ならボタンを合わせます。"
+    },
+    {
+      "type": "instruction",
+      "title": "ケースを仕上げる",
+      "instruction": "糸始末をして、開け閉めを何度か試して使いやすさを確認します。"
+    }
+  ]
+}

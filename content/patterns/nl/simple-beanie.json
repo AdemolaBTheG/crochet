@@ -1,0 +1,54 @@
+{
+  "title": "Eenvoudige muts",
+  "description": "Een eenvoudig hoedpatroon dat zich richt op pasvorm, ribbels en een strakke afwerking.",
+  "materials": [
+    "kamgaren",
+    "5 mm haaknaald",
+    "stekenmarkering",
+    "garennaald",
+    "schaar"
+  ],
+  "skills": [
+    "basisketting",
+    "vasten",
+    "alleen ribbels aan de achterkant",
+    "naden"
+  ],
+  "expectationText": "Een betrouwbare eerste hoed waarmee je kunt oefenen met het meten van de pasvorm van het hoofd, het consequent herhalen van rijen en het netjes in elkaar zetten van een draagbaar project.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Ketting de hoogte",
+      "instruction": "Ketting het aantal steken dat nodig is voor de hoogte van de muts, niet de hoofdomtrek."
+    },
+    {
+      "type": "row",
+      "title": "Rij 1",
+      "instruction": "Werk over de ketting en bevestig de rand van het ribbelpaneel.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Bouw de ribbels",
+      "instruction": "Brei rijen met alleen de achterste lus totdat het paneel comfortabel om het hoofd wikkelt.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Verbind de naad",
+      "instruction": "Verbind de korte uiteinden met elkaar zodat het paneel een buis wordt."
+    },
+    {
+      "type": "instruction",
+      "title": "Sluit de kroon",
+      "instruction": "Vouw de bovenrand dicht met garen, trek strak aan en zet hem goed vast."
+    },
+    {
+      "type": "instruction",
+      "title": "Afmaken",
+      "instruction": "Draai de hoed met de goede kant naar buiten en weef de laatste uiteinden erin."
+    }
+  ]
+}

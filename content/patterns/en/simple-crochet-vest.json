@@ -1,0 +1,55 @@
+{
+  "title": "Simple Crochet Vest",
+  "description": "A relaxed layering vest built from easy panels, light shaping, and tidy finishing.",
+  "materials": [
+    "worsted weight yarn",
+    "5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle",
+    "scissors"
+  ],
+  "skills": [
+    "foundation chain",
+    "double crochet",
+    "seaming",
+    "borders and edgings"
+  ],
+  "expectationText": "A first garment-style project that teaches panel construction, basic fit checks, and clean assembly without complex shaping.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Measure and swatch",
+      "instruction": "Measure the chest you want to fit and make a small swatch so the vest width is predictable."
+    },
+    {
+      "type": "row",
+      "title": "Back panel",
+      "instruction": "Work the back panel in rows until it reaches the desired body length and armhole depth.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "row",
+      "title": "Front panels",
+      "instruction": "Work two matching front panels, checking that they mirror the back length and shoulder width.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Join the shoulders and sides",
+      "instruction": "Seam the shoulders first, then close the sides while leaving room for the armholes."
+    },
+    {
+      "type": "instruction",
+      "title": "Add edging",
+      "instruction": "Work a clean border around the neckline, armholes, and front opening to stabilize the shape."
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Weave in the ends and block lightly so the panels relax and the vest hangs evenly."
+    }
+  ]
+}

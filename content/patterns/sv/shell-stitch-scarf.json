@@ -1,0 +1,50 @@
+{
+  "title": "Shell Stitch Scarf",
+  "description": "En draperad halsduk byggd av upprepade skalmotiv för struktur utan komplicerad formning.",
+  "materials": [
+    "lätt kamgarn",
+    "5 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "grundkedja",
+    "dubbelvirkad",
+    "skalsöm",
+    "counting repeats"
+  ],
+  "expectationText": "Ett avkopplande repetitionsprojekt där utmaningen är att hålla skalmellanrum snyggt och bygga en rytm som förblir konsekvent över långa rader.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Kedja basen",
+      "instruction": "Gör en foundationkedja i en multipel som passar din skalrepetition och halsduksbredd."
+    },
+    {
+      "type": "row",
+      "title": "rad 1",
+      "instruction": "Arbeta inställningsraden som skapar ankarutrymmen för skalen.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Rad 2",
+      "instruction": "Arbeta in skal i varje ankarutrymme, och håll samma stygnantal i varje skal.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Upprepa mönstret",
+      "instruction": "Alternera inställningsraden och skalraden tills halsduken når önskad längd.",
+      "counterLabel": "row",
+      "targetCount": 16
+    },
+    {
+      "type": "instruction",
+      "title": "Avsluta kanten",
+      "instruction": "Lägg till en sista rad eller kant om det behövs, fäst sedan av och väv in ändarna."
+    }
+  ]
+}

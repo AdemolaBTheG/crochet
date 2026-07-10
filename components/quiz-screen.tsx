@@ -17,7 +17,7 @@ import {
 } from '@expo/ui/swift-ui/modifiers';
 import { router, type Href } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
-import { type ComponentProps, useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, type ComponentProps } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, {
@@ -109,15 +109,13 @@ function QuizOptionCard({
         onSelect(option.id);
       }}
       style={[styles.optionCard, cardAnimatedStyle]}>
-      <Animated.View style={[styles.iconWrap, iconWrapAnimatedStyle]}>
-        <SymbolView
-          name={option.icon}
-          size={22}
-          weight="semibold"
-          tintColor={isSelected ? theme.colors.primary : theme.colors.textSecondary}
-          fallback={<View style={styles.iconFallback} />}
-        />
-      </Animated.View>
+      <SymbolView
+        name={option.icon}
+        size={22}
+        weight="semibold"
+        tintColor={isSelected ? theme.colors.primary : theme.colors.textSecondary}
+        fallback={<View style={styles.iconFallback} />}
+      />
       <AnimatedText selectable style={[styles.optionLabel, labelAnimatedStyle]}>
         {option.label}
       </AnimatedText>
@@ -312,11 +310,7 @@ export default function QuizScreenView({
                   layout={optionLayoutTransition}
                   entering={FadeInDown.duration(220).delay(index * 45)}
                   exiting={FadeOutUp.duration(140)}>
-                  <QuizOptionCard
-                    option={option}
-                    isSelected={isSelected}
-                    onSelect={handleSelect}
-                  />
+                  <QuizOptionCard option={option} isSelected={isSelected} onSelect={handleSelect} />
                 </Animated.View>
               );
             })}
@@ -376,14 +370,12 @@ const styles = StyleSheet.create({
     letterSpacing: 0.6,
   },
   title: {
-    fontSize: theme.size['3xl'],
-    lineHeight: 38,
-    fontWeight: theme.weight.bold,
+    fontSize: theme.size['2xl'],
+    fontWeight: theme.weight.semibold,
     color: theme.colors.textPrimary,
   },
   subtitle: {
-    fontSize: theme.size.lg,
-    lineHeight: 24,
+    fontSize: theme.size.md,
     color: theme.colors.textSecondary,
   },
   optionsContainer: {
@@ -395,12 +387,10 @@ const styles = StyleSheet.create({
     gap: theme.spacing.md,
     padding: theme.spacing.lg,
     borderRadius: theme.radius.lg,
+    paddingVertical: theme.spacing['2xl'],
     borderCurve: 'continuous',
-    borderWidth: 1,
   },
   iconWrap: {
-    width: 44,
-    height: 44,
     borderRadius: theme.radius.md,
     borderCurve: 'continuous',
     alignItems: 'center',

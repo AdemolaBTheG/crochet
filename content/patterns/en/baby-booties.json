@@ -1,0 +1,56 @@
+{
+  "title": "Baby Booties",
+  "description": "Soft small booties that practice shaping a sole, building sides, and closing a neat toe.",
+  "materials": [
+    "DK or light worsted yarn",
+    "4 mm hook",
+    "stitch marker",
+    "yarn needle",
+    "scissors"
+  ],
+  "skills": [
+    "working in rounds",
+    "single crochet",
+    "increasing and decreasing",
+    "slip stitch and join"
+  ],
+  "expectationText": "A compact baby project that helps you understand how a flat sole turns into a three-dimensional wearable shape.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Make the sole",
+      "instruction": "Chain the base length and work an oval sole with increases at both ends."
+    },
+    {
+      "type": "round",
+      "title": "Build the sides",
+      "instruction": "Work even rounds around the sole so the fabric starts to bend upward.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Shape the toe",
+      "instruction": "Decrease across the front section to round the toe without collapsing the heel area.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Create the opening and cuff",
+      "instruction": "Work short even rounds or rows to define the ankle opening and make a soft cuff.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Repeat for the second bootie",
+      "instruction": "Count carefully so the second bootie matches the first in length, toe depth, and cuff height."
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Weave in the ends securely and gently shape both booties so the pair looks even."
+    }
+  ]
+}

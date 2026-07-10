@@ -4,7 +4,11 @@ import { useAppInitialization } from '@/hooks/useAppInitialization';
 import { useSubscriptionStatus } from '@/hooks/useSubscriptionStatus';
 import '@/i18n';
 import { initializeHaptics } from '@/services/haptics';
+import { syncCurrentProjectWidgetFromDb } from '@/services/project-widget';
+import { useDbStore } from '@/stores/dbStore';
 import { queryPersister } from '@/utils/query-persister';
+import '@/widgets/CurrentProjectWidget';
+import '@/widgets/ProjectActivity';
 import { QueryClient } from '@tanstack/react-query';
 import { PersistQueryClientProvider } from '@tanstack/react-query-persist-client';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
@@ -36,13 +40,7 @@ SplashScreen.setOptions({
   fade: true,
 });
 
-function QuickActionBridge({
-  enabled,
-  isPro,
-}: {
-  enabled: boolean;
-  isPro: boolean;
-}) {
+function QuickActionBridge({ enabled, isPro }: { enabled: boolean; isPro: boolean }) {
   useQuickActionCallback((action) => {
     const href = action.params?.href;
     if (typeof href !== 'string' || href.length === 0) return;
@@ -89,6 +87,7 @@ function QuickActionBridge({
 
 export default function RootLayout() {
   const { isReady } = useAppInitialization();
+  const db = useDbStore((state) => state.db);
   const subscription = useSubscriptionStatus(isReady);
   const liquidGlassAvailable = isLiquidGlassAvailable();
 
@@ -102,6 +101,12 @@ export default function RootLayout() {
     SplashScreen.hide();
   }, [isReady]);
 
+  useEffect(() => {
+    if (!isReady || !db) return;
+
+    void syncCurrentProjectWidgetFromDb(db);
+  }, [db, isReady]);
+
   if (!isReady) return null;
 
   return (
@@ -111,7 +116,10 @@ export default function RootLayout() {
           client={queryClient}
           persistOptions={{ persister: queryPersister }}>
           <KeyboardProvider>
-            <QuickActionBridge enabled={isReady && !subscription.isLoading} isPro={subscription.isPro} />
+            <QuickActionBridge
+              enabled={isReady && !subscription.isLoading}
+              isPro={subscription.isPro}
+            />
             <Stack>
               <Stack.Screen name="index" options={{ headerShown: false }} />
               <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
@@ -133,6 +141,39 @@ export default function RootLayout() {
                   headerStyle: {
                     backgroundColor: liquidGlassAvailable ? 'transparent' : Colors.background,
                   },
+                }}
+              />
+              <Stack.Screen
+                name="addFolder"
+                options={{
+                  headerShown: true,
+                  presentation: 'formSheet',
+                  sheetAllowedDetents: 'fitToContents',
+                  sheetGrabberVisible: true,
+                  headerTransparent: liquidGlassAvailable,
+                  headerStyle: {
+                    backgroundColor: liquidGlassAvailable ? 'transparent' : Colors.background,
+                  },
+                }}
+              />
+              <Stack.Screen
+                name="video"
+                options={{
+                  headerShown: true,
+                  presentation: 'formSheet',
+                  sheetAllowedDetents: 'fitToContents',
+                  sheetGrabberVisible: true,
+                  headerTransparent: liquidGlassAvailable,
+                  headerStyle: {
+                    backgroundColor: liquidGlassAvailable ? 'transparent' : Colors.background,
+                  },
+                }}
+              />
+              <Stack.Screen
+                name="(folders)"
+                options={{
+                  headerShown: false,
+                  presentation: 'modal',
                 }}
               />
               <Stack.Screen

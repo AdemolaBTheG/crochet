@@ -1,0 +1,58 @@
+{
+  "title": "シンプルマーケットバッグ",
+  "description": "丈夫なベースとオープンメッシュボディを備えた軽量のデイリーバッグです。",
+  "materials": [
+    "綿糸",
+    "5 mm フック",
+    "ステッチマーカー",
+    "糸針",
+    "ハサミ"
+  ],
+  "skills": [
+    "基礎チェーン",
+    "片かぎ針編み",
+    "チェーン",
+    "ラウンドで作業"
+  ],
+  "expectationText": "固体構造とオープンメッシュを組み合わせた便利なバッグプロジェクトで、密集した列から風通しの良い繰り返しラウンドに切り替える練習ができます。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "ベースを構築する",
+      "instruction": "チェーンを使用して楕円形または長方形のベースを作成し、端の周りに単一のかぎ針編みを追加します。"
+    },
+    {
+      "type": "round",
+      "title": "ラウンド 1",
+      "instruction": "最初のラウンドはベースの周囲に均等に作業し、開始位置にマーカーを置きます。",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "ベースの端を強化します",
+      "instruction": "底をより安定させるために、増加せずに 1 ラウンドまたは 2 ラウンドかぎ針編みをします。",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "メッシュ ボディを開始します",
+      "instruction": "チェーン スペースとアンカー ステッチを交互に配置して、オープン メッシュ パターンを作成します。",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "round",
+      "title": "ストラップを追加します",
+      "instruction": "長いハンドルの開口部をチェーンにし、もう 1 周のステッチで補強します。",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "仕上げ",
+      "instruction": "ストラップを一周したら外し、端をしっかりと織り込みます。"
+    }
+  ]
+}

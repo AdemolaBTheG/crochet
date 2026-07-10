@@ -1,0 +1,56 @@
+{
+  "title": "Babyschühchen",
+  "description": "Weiche kleine Schühchen, bei denen du eine Sohle formst, Seiten aufbaust und eine saubere Spitze schließt.",
+  "materials": [
+    "DK-Garn oder leichtes Kammgarn",
+    "Häkelnadel 4 mm",
+    "Maschenmarkierer",
+    "Garnnadel",
+    "Schere"
+  ],
+  "skills": [
+    "in Runden arbeiten",
+    "feste Maschen",
+    "Zu- und Abnahmen",
+    "Kettmasche und Verbinden"
+  ],
+  "expectationText": "Ein kompaktes Babyprojekt, das zeigt, wie aus einer flachen Sohle eine dreidimensionale tragbare Form entsteht.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Sohle arbeiten",
+      "instruction": "Häkle eine Grundkette in Sohlenlänge und forme mit Zunahmen an beiden Enden eine ovale Sohle."
+    },
+    {
+      "type": "round",
+      "title": "Seiten aufbauen",
+      "instruction": "Arbeite gleichmäßige Runden um die Sohle, damit sich der Stoff nach oben biegt.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Spitze formen",
+      "instruction": "Nimm im Vorderfußbereich ab, damit die Spitze rund wird, ohne den Fersenbereich zusammenzuziehen.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Öffnung und Bündchen arbeiten",
+      "instruction": "Arbeite kurze gleichmäßige Runden oder Reihen, um die Knöchelöffnung und ein weiches Bündchen zu formen.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Zweites Schühchen arbeiten",
+      "instruction": "Zähle sorgfältig, damit das zweite Schühchen in Länge, Spitzentiefe und Bündchenhöhe zum ersten passt."
+    },
+    {
+      "type": "instruction",
+      "title": "Fertigstellen",
+      "instruction": "Vernähe die Fäden sicher und forme beide Schühchen leicht, damit das Paar gleichmäßig aussieht."
+    }
+  ]
+}

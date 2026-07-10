@@ -53,6 +53,8 @@ const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY, {
 
 const LOCALES = ['en', 'de', 'fr', 'es', 'nl', 'it', 'ja', 'ko', 'pl', 'pt-BR', 'sv'];
 const CONTENT_DIR = resolve(__dirname, '..', 'content');
+const PATTERN_VIDEOS_PATH = resolve(__dirname, '..', 'data', 'pattern-videos.json');
+const LESSON_VIDEOS_PATH = resolve(__dirname, '..', 'data', 'lesson-videos.json');
 
 const lessonMetadata = {
   'slip-knot-and-hold': { sortOrder: 1, difficulty: 'beginner' },
@@ -71,6 +73,16 @@ const lessonMetadata = {
   'color-changes': { sortOrder: 14, difficulty: 'beginner' },
   'joining-granny-squares': { sortOrder: 15, difficulty: 'beginner' },
   'invisible-decrease-for-amigurumi': { sortOrder: 16, difficulty: 'beginner' },
+  'treble-crochet': { sortOrder: 17, difficulty: 'beginner' },
+  'front-post-and-back-post': { sortOrder: 18, difficulty: 'beginner' },
+  'shell-stitch': { sortOrder: 19, difficulty: 'beginner' },
+  'reading-pattern-abbreviations': { sortOrder: 20, difficulty: 'beginner' },
+  'gauge-basics': { sortOrder: 21, difficulty: 'beginner' },
+  'blocking-basics': { sortOrder: 22, difficulty: 'beginner' },
+  'seaming-and-assembly-basics': { sortOrder: 23, difficulty: 'beginner' },
+  'borders-and-edgings': { sortOrder: 24, difficulty: 'beginner' },
+  'crochet-cords-and-straps': { sortOrder: 25, difficulty: 'beginner' },
+  'buttonholes-and-simple-closures': { sortOrder: 26, difficulty: 'beginner' },
 };
 
 const patternMetadata = {
@@ -112,16 +124,36 @@ const patternMetadata = {
   'star-applique': { difficulty: 'beginner', category: 'gift', coverImageKey: 'star-applique', estimatedMinutes: 20 },
   'chevron-washcloth': { difficulty: 'beginner', category: 'home', coverImageKey: 'chevron-washcloth', estimatedMinutes: 45 },
   'envelope-pouch': { difficulty: 'beginner', category: 'gift', coverImageKey: 'envelope-pouch', estimatedMinutes: 50 },
+  'bucket-hat': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'easy-ribbed-beanie', estimatedMinutes: 105 },
+  'crochet-bunny': { difficulty: 'intermediate', category: 'toy', coverImageKey: 'amigurumi-whale', estimatedMinutes: 120 },
+  'shell-stitch-scarf': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'granny-stripe-scarf', estimatedMinutes: 150 },
+  'simple-market-bag': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'mesh-market-bag', estimatedMinutes: 95 },
+  'tunisian-potholder': { difficulty: 'intermediate', category: 'home', coverImageKey: 'ribbed-washcloth', estimatedMinutes: 70 },
+  'crochet-mouse': { difficulty: 'beginner', category: 'toy', coverImageKey: 'basic-amigurumi-ball', estimatedMinutes: 80 },
+  'flower-granny-square': { difficulty: 'beginner', category: 'motif', coverImageKey: 'basic-granny-square', estimatedMinutes: 35 },
+  'simple-beanie': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'easy-ribbed-beanie', estimatedMinutes: 90 },
+  'wave-stitch-blanket': { difficulty: 'intermediate', category: 'home', coverImageKey: 'basic-baby-blanket', estimatedMinutes: 240 },
+  'mesh-beach-bag': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'mesh-market-bag', estimatedMinutes: 105 },
+  'simple-crochet-vest': { difficulty: 'intermediate', category: 'wearable', coverImageKey: 'simple-crochet-vest', estimatedMinutes: 180 },
+  'baby-booties': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'baby-booties', estimatedMinutes: 70 },
+  'bandana-headscarf': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'bandana-headscarf', estimatedMinutes: 75 },
+  'crochet-laptop-sleeve': { difficulty: 'beginner', category: 'gift', coverImageKey: 'crochet-laptop-sleeve', estimatedMinutes: 150 },
+  'water-bottle-holder': { difficulty: 'beginner', category: 'wearable', coverImageKey: 'water-bottle-holder', estimatedMinutes: 60 },
+  'glasses-case': { difficulty: 'beginner', category: 'gift', coverImageKey: 'glasses-case', estimatedMinutes: 45 },
 };
 
 function readJson(filePath) {
   return JSON.parse(readFileSync(filePath, 'utf-8'));
 }
 
+const patternVideoIds = existsSync(PATTERN_VIDEOS_PATH) ? readJson(PATTERN_VIDEOS_PATH) : {};
+const lessonVideoUrls = existsSync(LESSON_VIDEOS_PATH) ? readJson(LESSON_VIDEOS_PATH) : {};
+
 async function seedLessons() {
   console.log('Seeding lessons...');
 
   const enContentMap = {};
+  const localizedLessonContent = new Map();
 
   for (const locale of LOCALES) {
     const dir = join(CONTENT_DIR, 'lessons', locale);
@@ -132,6 +164,7 @@ async function seedLessons() {
       const slug = file.replace('.json', '');
       const content = readJson(join(dir, file));
       if (locale === 'en') enContentMap[slug] = content;
+      localizedLessonContent.set(`${locale}:${slug}`, content);
     }
   }
 
@@ -149,6 +182,7 @@ async function seedLessons() {
         description: content.description ?? null,
         sort_order: meta.sortOrder,
         difficulty: meta.difficulty,
+        video_url: lessonVideoUrls[slug] ?? null,
         content: content.content ?? {},
         is_published: true,
       },
@@ -175,17 +209,12 @@ async function seedLessons() {
 
   for (const locale of LOCALES) {
     if (locale === 'en') continue;
-
-    const dir = join(CONTENT_DIR, 'lessons', locale);
-    if (!existsSync(dir)) continue;
-
-    const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
-    for (const file of files) {
-      const slug = file.replace('.json', '');
+    for (const slug of Object.keys(enContentMap)) {
       const lessonId = idBySlug.get(slug);
       if (!lessonId) continue;
-
-      const content = readJson(join(dir, file));
+      const content =
+        localizedLessonContent.get(`${locale}:${slug}`) ??
+        enContentMap[slug];
 
       const { error } = await supabase.from('lesson_translations').upsert(
         {
@@ -211,6 +240,7 @@ async function seedPatterns() {
   console.log('Seeding patterns...');
 
   const enContentMap = {};
+  const localizedPatternContent = new Map();
 
   for (const locale of LOCALES) {
     const dir = join(CONTENT_DIR, 'patterns', locale);
@@ -221,6 +251,7 @@ async function seedPatterns() {
       const slug = file.replace('.json', '');
       const content = readJson(join(dir, file));
       if (locale === 'en') enContentMap[slug] = content;
+      localizedPatternContent.set(`${locale}:${slug}`, content);
     }
   }
 
@@ -239,6 +270,7 @@ async function seedPatterns() {
         difficulty: meta.difficulty,
         category: meta.category,
         cover_image_key: meta.coverImageKey,
+        youtube_video_id: patternVideoIds[slug] ?? null,
         estimated_minutes: meta.estimatedMinutes,
         materials_text: content.materials?.join(', ') ?? null,
         skills_text: content.skills?.join(', ') ?? null,
@@ -269,17 +301,12 @@ async function seedPatterns() {
 
   for (const locale of LOCALES) {
     if (locale === 'en') continue;
-
-    const dir = join(CONTENT_DIR, 'patterns', locale);
-    if (!existsSync(dir)) continue;
-
-    const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
-    for (const file of files) {
-      const slug = file.replace('.json', '');
+    for (const slug of Object.keys(enContentMap)) {
       const patternId = idBySlug.get(slug);
       if (!patternId) continue;
-
-      const content = readJson(join(dir, file));
+      const content =
+        localizedPatternContent.get(`${locale}:${slug}`) ??
+        enContentMap[slug];
 
       const { error } = await supabase
         .from('pattern_translations')

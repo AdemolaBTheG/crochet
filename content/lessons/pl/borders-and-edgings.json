@@ -1,0 +1,20 @@
+{
+  "title": "Obramowania i wykończenia",
+  "description": "Dodaj czystą krawędź końcową, która wyrówna formę, oprawi projekt i nada mu gotowy wygląd.",
+  "content": {
+    "summary": "Obramowania i wykończenia to dodatkowe okrążenia lub rzędy wokół projektu, które stabilizują brzegi lub dodają dekorację.",
+    "whyItMatters": "Proste obramowanie może ukryć nierówne boki, pomóc rogóm leżeć płasko i sprawić, że projekt będzie wyglądał bardziej kompletnie.",
+    "steps": [
+      "Zdecyduj, czy projekt potrzebuje prostego brzegu stabilizującego, czy dekoracyjnego wykończenia.",
+      "Rozkładaj oczka równomiernie wzdłuż boków, aby brzeg nie falował i nie ściągał się.",
+      "Używaj markerów w rogach, aby pamiętać o dodawaniach, łańcuszkach i specjalnych ściegach.",
+      "Jeśli brzeg projektu jest nierówny, najpierw wykonaj porządny rząd bazowy.",
+      "Po wykonaniu wykończenia zblokuj lub wygładź robótkę, jeśli chcesz, aby brzeg leżał bardziej płasko."
+    ],
+    "practice": "Dodaj jedno okrążenie półsłupków do próbki, a potem drugie bardziej ozdobne i porównaj efekt.",
+    "commonMistakes": [
+      "Dodawanie zbyt wielu oczek po bokach i tworzenie fal.",
+      "Zapominanie o zwiększeniach w rogach, przez co brzeg zawija się do środka."
+    ]
+  }
+}

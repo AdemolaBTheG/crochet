@@ -1,0 +1,54 @@
+{
+  "title": "심플한 비니",
+  "description": "핏과 골지, 깔끔한 마감에 중점을 둔 심플한 모자 패턴입니다.",
+  "materials": [
+    "소모사 무게 실",
+    "5mm 후크",
+    "스티치 마커",
+    "실 바늘",
+    "가위"
+  ],
+  "skills": [
+    "파운데이션 체인",
+    "싱글 크로셰",
+    "뒷고리 전용 골지",
+    "시밍"
+  ],
+  "expectationText": "머리 핏 측정, 행의 일관적인 반복, 웨어러블 프로젝트를 깔끔하게 조립하는 연습을 도와주는 믿을 수 있는 첫 모자입니다.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "높이를 연결합니다.",
+      "instruction": "머리 둘레가 아닌 비니 높이에 필요한 스티치 수를 연결합니다."
+    },
+    {
+      "type": "row",
+      "title": "행 1",
+      "instruction": "체인을 가로질러 작업하고 골지 패널의 가장자리를 설정합니다.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "골대를 만듭니다.",
+      "instruction": "패널이 머리 주위를 편안하게 감쌀 때까지 행만 다시 반복합니다.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "이음새를 연결합니다.",
+      "instruction": "짧은 끝부분을 함께 연결하여 패널이 튜브가 되도록 합니다."
+    },
+    {
+      "type": "instruction",
+      "title": "크라운을 닫습니다.",
+      "instruction": "닫힌 상단 가장자리를 실로 모아 팽팽하게 당겨서 잘 고정합니다."
+    },
+    {
+      "type": "instruction",
+      "title": "마무리",
+      "instruction": "모자를 오른쪽으로 돌리고 마지막 끝을 짜십시오."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "title": "Pañuelo bandana",
+  "description": "Un pañuelo triangular rápido con aumentos sencillos, caída suave y tiras para un ajuste fácil.",
+  "materials": [
+    "hilo de algodón",
+    "ganchillo de 4,5 mm",
+    "marcadores de punto",
+    "aguja lanera",
+    "tijeras"
+  ],
+  "skills": [
+    "cadena base",
+    "punto alto",
+    "espacios de cadena y esquinas",
+    "bordes y remates"
+  ],
+  "expectationText": "Un accesorio rápido que da confianza con la forma triangular y los acabados prolijos.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Empieza en el centro superior",
+      "instruction": "Comienza con una base corta y marca los puntos de aumento para seguir la forma con facilidad."
+    },
+    {
+      "type": "row",
+      "title": "Haz crecer el triángulo",
+      "instruction": "Trabaja filas con aumentos en los bordes o en el centro para ampliar el pañuelo de forma uniforme.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Comprueba el ancho",
+      "instruction": "Detente cuando el lado largo alcance el ancho que quieres sobre la cabeza."
+    },
+    {
+      "type": "instruction",
+      "title": "Añade las tiras",
+      "instruction": "Trabaja tiras estrechas o cadenas largas desde las dos esquinas."
+    },
+    {
+      "type": "instruction",
+      "title": "Haz el borde",
+      "instruction": "Añade un remate limpio alrededor del triángulo y de las tiras para suavizar el contorno."
+    },
+    {
+      "type": "instruction",
+      "title": "Termina",
+      "instruction": "Esconde las hebras y bloquea ligeramente para mejorar la caída."
+    }
+  ]
+}

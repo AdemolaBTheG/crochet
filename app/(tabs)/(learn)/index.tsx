@@ -1,21 +1,15 @@
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
 import { theme } from '@/constants/Theme';
 import { isLessonFree } from '@/constants/gates';
 import { useSubscription } from '@/context/SubscriptionContext';
 import { useLessons, type ResolvedLesson } from '@/hooks/use-lessons';
-import { tap, warn } from '@/services/haptics';
-import { Link, router } from 'expo-router';
+import { tap } from '@/services/haptics';
+import { useCompletedLessonsStore } from '@/stores/completedLessonsStore';
+import { Link } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import {
-  Pressable,
-  ScrollView,
-  Text,
-  useWindowDimensions,
-  View,
-  type ListRenderItem,
-} from 'react-native';
-import LoadingShimmer from '@/components/shimmer/loading-shimmer';
+import { Pressable, Text, useWindowDimensions, View, type ListRenderItem } from 'react-native';
 import Animated, {
   Extrapolation,
   interpolate,
@@ -90,94 +84,87 @@ function ToolCard({ tool, width, isLocked }: { tool: ToolItem; width: number; is
   const description = getToolDescription(tool.id, t);
 
   return (
-    <Pressable
-      onPress={() => {
-        if (isLocked) {
-          warn();
-          router.push('/(paywalls)');
-        } else {
+    <Link href={tool.href ?? '/(tabs)/(learn)'} asChild>
+      <Pressable
+        onPress={() => {
           tap();
-          if (tool.href) {
-            router.push(tool.href);
-          }
-        }
-      }}
-      accessibilityRole="button"
-      accessibilityLabel={t('learn.accessibility.unlockTool', { title })}
-      style={{
-        width,
-        alignSelf: 'flex-start',
-        flexDirection: 'row',
-        alignItems: 'center',
-        padding: theme.spacing.md,
-        borderRadius: theme.radius.lg,
-        borderCurve: 'continuous',
-        backgroundColor: theme.colors.surface,
-        gap: theme.spacing.md,
-      }}>
-      {isLocked && (
+        }}
+        accessibilityRole="button"
+        accessibilityLabel={t('learn.accessibility.unlockTool', { title })}
+        style={{
+          alignSelf: 'flex-start',
+          flexDirection: 'row',
+          alignItems: 'center',
+          padding: theme.spacing.md,
+          borderRadius: theme.radius.lg,
+          borderCurve: 'continuous',
+          backgroundColor: theme.colors.surface,
+          gap: theme.spacing.md,
+        }}>
+        {isLocked && (
+          <View
+            style={{
+              position: 'absolute',
+              right: theme.spacing.sm,
+              top: theme.spacing.sm,
+              paddingVertical: theme.spacing.xs,
+              paddingHorizontal: theme.spacing.sm,
+              borderRadius: theme.radius.pill,
+              backgroundColor: theme.colors.primarySoft,
+            }}>
+            <Text
+              selectable
+              style={{
+                fontSize: theme.size.sm,
+                fontWeight: theme.weight.bold,
+                color: theme.colors.primary,
+              }}>
+              {t('common.badges.pro')}
+            </Text>
+          </View>
+        )}
         <View
           style={{
-            position: 'absolute',
-            right: theme.spacing.sm,
-            top: theme.spacing.sm,
-            paddingVertical: theme.spacing.xs,
-            paddingHorizontal: theme.spacing.sm,
-            borderRadius: theme.radius.pill,
+            padding: theme.spacing.md,
+            borderRadius: theme.radius.md,
+            alignItems: 'center',
+            justifyContent: 'center',
             backgroundColor: theme.colors.primarySoft,
           }}>
+          <Link.AppleZoom>
+            <SymbolView
+              name={tool.icon}
+              size={22}
+              weight="semibold"
+              tintColor={theme.colors.primary}
+              fallback={<View style={{ width: 22, height: 22 }} />}
+            />
+          </Link.AppleZoom>
+        </View>
+        <View style={{ flex: 1, gap: theme.spacing.xs }}>
           <Text
             selectable
+            numberOfLines={1}
+            style={{
+              fontSize: theme.size.lg,
+              fontWeight: theme.weight.bold,
+              color: theme.colors.textPrimary,
+            }}>
+            {title}
+          </Text>
+          <Text
+            selectable
+            numberOfLines={2}
             style={{
               fontSize: theme.size.sm,
-              fontWeight: theme.weight.bold,
-              color: theme.colors.primary,
+              lineHeight: theme.size.sm + 5,
+              color: theme.colors.textSecondary,
             }}>
-            {t('common.badges.pro')}
+            {description}
           </Text>
         </View>
-      )}
-
-      <View
-        style={{
-          padding: theme.spacing.md,
-          borderRadius: theme.radius.md,
-          alignItems: 'center',
-          justifyContent: 'center',
-          backgroundColor: theme.colors.primarySoft,
-        }}>
-        <SymbolView
-          name={tool.icon}
-          size={22}
-          weight="semibold"
-          tintColor={theme.colors.primary}
-          fallback={<View style={{ width: 22, height: 22 }} />}
-        />
-      </View>
-
-      <View style={{ flex: 1, gap: theme.spacing.xs }}>
-        <Text
-          selectable
-          numberOfLines={1}
-          style={{
-            fontSize: theme.size.lg,
-            fontWeight: theme.weight.bold,
-            color: theme.colors.textPrimary,
-          }}>
-          {title}
-        </Text>
-        <Text
-          selectable
-          numberOfLines={2}
-          style={{
-            fontSize: theme.size.sm,
-            lineHeight: theme.size.sm + 5,
-            color: theme.colors.textSecondary,
-          }}>
-          {description}
-        </Text>
-      </View>
-    </Pressable>
+      </Pressable>
+    </Link>
   );
 }
 
@@ -185,16 +172,20 @@ function LessonCard({
   lesson,
   index,
   cardWidth,
+  cardHeight,
   snapInterval,
   scrollX,
   isLocked,
+  isCompleted,
 }: {
   lesson: ResolvedLesson;
   index: number;
   cardWidth: number;
+  cardHeight: number;
   snapInterval: number;
   scrollX: SharedValue<number>;
   isLocked: boolean;
+  isCompleted: boolean;
 }) {
   const { t } = useTranslation();
   const stepCount = getLessonStepCount(lesson);
@@ -221,12 +212,6 @@ function LessonCard({
   const card = (
     <Pressable
       onPress={() => {
-        if (isLocked) {
-          warn();
-          router.push('/(paywalls)');
-          return;
-        }
-
         tap();
       }}
       accessibilityRole="button"
@@ -238,13 +223,14 @@ function LessonCard({
         style={[
           {
             width: cardWidth,
+            height: cardHeight,
             alignSelf: 'flex-start',
             padding: theme.spacing.lg,
             borderRadius: theme.radius.xl,
             borderCurve: 'continuous',
+            justifyContent: 'space-between',
             backgroundColor: theme.colors.surface,
-            gap: theme.spacing.md,
-            opacity: isLocked ? 0.78 : 1,
+            opacity: isCompleted ? 0.5 : isLocked ? 0.78 : 1,
           },
           animatedStyle,
         ]}>
@@ -279,27 +265,31 @@ function LessonCard({
             }}>
             {t('learn.lessonLabel', { index: index + 1 })}
           </Text>
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: theme.spacing.md }}>
+            <Text
+              selectable
+              numberOfLines={2}
+              style={{
+                fontSize: theme.size.lg,
+                fontWeight: theme.weight.bold,
+                color: theme.colors.textPrimary,
+                textDecorationLine: isCompleted ? 'line-through' : undefined,
+              }}>
+              {lesson.title}
+            </Text>
+          </View>
+
           <Text
             selectable
-            numberOfLines={2}
+            numberOfLines={3}
             style={{
-              fontSize: theme.size.lg,
-              fontWeight: theme.weight.bold,
-              color: theme.colors.textPrimary,
+              fontSize: theme.size.md,
+              color: theme.colors.textSecondary,
+              textDecorationLine: isCompleted ? 'line-through' : undefined,
             }}>
-            {lesson.title}
+            {lesson.description}
           </Text>
         </View>
-
-        <Text
-          selectable
-          numberOfLines={3}
-          style={{
-            fontSize: theme.size.md,
-            color: theme.colors.textSecondary,
-          }}>
-          {lesson.description}
-        </Text>
 
         <View
           style={{
@@ -385,7 +375,7 @@ function LessonCard({
         params: { slug: lesson.slug },
       }}
       asChild>
-      {card}
+      <Link.AppleZoom>{card}</Link.AppleZoom>
     </Link>
   );
 }
@@ -393,14 +383,14 @@ function LessonCard({
 export default function LearnScreen() {
   const { t, i18n } = useTranslation();
   const { isPro } = useSubscription();
-  const { width } = useWindowDimensions();
+  const { width, height } = useWindowDimensions();
   const { data: lessons = [], isLoading } = useLessons(i18n.language);
+  const isLessonCompleted = useCompletedLessonsStore((s) => s.isCompleted);
   const cardWidth = Math.min(300, width - theme.spacing.xl * 2);
+  const cardHeight = Math.min(260, Math.round(height * 0.25));
   const cardGap = theme.spacing.md;
   const snapInterval = cardWidth + cardGap;
   const toolCardWidth = Math.min(280, width * 0.72);
-  const toolGap = theme.spacing.md;
-  const toolSnapInterval = toolCardWidth + toolGap;
   const scrollX = useSharedValue(0);
   const onLessonScroll = useAnimatedScrollHandler({
     onScroll: (event) => {
@@ -413,110 +403,143 @@ export default function LearnScreen() {
       lesson={item}
       index={index}
       cardWidth={cardWidth}
+      cardHeight={cardHeight}
       snapInterval={snapInterval}
       scrollX={scrollX}
       isLocked={!isPro && !isLessonFree(item)}
+      isCompleted={isLessonCompleted(item.slug)}
     />
   );
 
-  const renderTool: ListRenderItem<ToolItem> = ({ item }) => (
-    <ToolCard tool={item} width={toolCardWidth} isLocked={!isPro} />
-  );
-
   return (
-    <ScrollView
+    <Animated.FlatList
+      data={toolItems}
+      keyExtractor={(item) => item.id}
+      showsVerticalScrollIndicator={false}
       contentInsetAdjustmentBehavior="automatic"
       style={{ backgroundColor: theme.colors.background }}
       contentContainerStyle={{
-        paddingVertical: theme.spacing.xl,
-        gap: theme.spacing.xl,
-      }}>
-      {isLoading ? <LoadingShimmer /> : null}
-
-      {!isLoading ? (
-        <Animated.FlatList
-          horizontal
-          data={lessons}
-          renderItem={renderLesson}
-          keyExtractor={(item) => item.slug}
-          snapToInterval={snapInterval}
-          snapToAlignment="start"
-          decelerationRate="fast"
-          disableIntervalMomentum
-          scrollEventThrottle={16}
-          onScroll={onLessonScroll}
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={{
-            paddingHorizontal: theme.spacing.xl,
-          }}
-          ItemSeparatorComponent={() => <View style={{ width: cardGap }} />}
-          ListEmptyComponent={
-            <Animated.View
-              style={{
-                width: cardWidth,
-                alignSelf: 'flex-start',
-                padding: theme.spacing.xl,
-                borderRadius: theme.radius.xl,
-                borderCurve: 'continuous',
-                backgroundColor: theme.colors.surface,
-                borderWidth: 1,
-                borderColor: theme.colors.border,
-                gap: theme.spacing.sm,
-              }}>
-              <Text
-                selectable
-                style={{
-                  fontSize: theme.size.lg,
-                  fontWeight: theme.weight.semibold,
-                  color: theme.colors.textPrimary,
-                }}>
-                {t('learn.empty.title')}
-              </Text>
-              <Text
-                selectable
-                style={{
-                  fontSize: theme.size.md,
-                  lineHeight: theme.size.md + 6,
-                  color: theme.colors.textSecondary,
-                }}>
-                {t('learn.empty.subtitle')}
-              </Text>
-            </Animated.View>
-          }
-        />
-      ) : null}
-
-      <View
-        style={{
-          paddingHorizontal: theme.spacing.xl,
-          gap: theme.spacing.xs,
-        }}>
-        <Text
-          selectable
+        paddingBottom: theme.spacing.xl,
+      }}
+      ItemSeparatorComponent={() => <View style={{ height: theme.spacing.sm }} />}
+      renderItem={({ item }) => (
+        <View style={{ paddingHorizontal: theme.spacing.lg }}>
+          <ToolCard tool={item} width={toolCardWidth} isLocked={!isPro} />
+        </View>
+      )}
+      ListHeaderComponent={
+        <View
           style={{
-            fontSize: theme.size.xl,
-            fontWeight: theme.weight.bold,
-            color: theme.colors.textPrimary,
+            gap: theme.spacing.xl,
+            paddingTop: theme.spacing.xl,
+            paddingBottom: theme.spacing.xl,
           }}>
-          {t('learn.toolsSectionTitle')}
-        </Text>
-      </View>
+          {isLoading ? <LoadingShimmer /> : null}
 
-      <Animated.FlatList
-        horizontal
-        data={toolItems}
-        renderItem={renderTool}
-        keyExtractor={(item) => item.id}
-        snapToInterval={toolSnapInterval}
-        snapToAlignment="start"
-        decelerationRate="fast"
-        disableIntervalMomentum
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{
-          paddingHorizontal: theme.spacing.xl,
-        }}
-        ItemSeparatorComponent={() => <View style={{ width: toolGap }} />}
-      />
-    </ScrollView>
+          {!isLoading ? (
+            <>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  paddingHorizontal: theme.spacing.xl,
+                }}>
+                <Text
+                  selectable
+                  style={{
+                    fontSize: theme.size.xl,
+                    fontWeight: theme.weight.bold,
+                    color: theme.colors.textPrimary,
+                  }}>
+                  {t('learn.sectionTitle')}
+                </Text>
+                <Link href="/(lessons)/all" asChild>
+                  <Pressable onPress={() => tap()}>
+                    <SymbolView
+                      name={{
+                        ios: 'chevron.forward',
+                        android: 'chevron_right',
+                        web: 'chevron_right',
+                      }}
+                      size={18}
+                      weight="semibold"
+                      tintColor={theme.colors.textSecondary}
+                    />
+                  </Pressable>
+                </Link>
+              </View>
+              <Animated.FlatList
+                horizontal
+                data={lessons.slice(0, 5)}
+                renderItem={renderLesson}
+                keyExtractor={(item) => item.slug}
+                snapToInterval={snapInterval}
+                snapToAlignment="start"
+                decelerationRate="fast"
+                disableIntervalMomentum
+                scrollEventThrottle={16}
+                onScroll={onLessonScroll}
+                showsHorizontalScrollIndicator={false}
+                contentContainerStyle={{
+                  paddingHorizontal: theme.spacing.xl,
+                }}
+                ItemSeparatorComponent={() => <View style={{ width: cardGap }} />}
+                ListEmptyComponent={
+                  <Animated.View
+                    style={{
+                      width: cardWidth,
+                      height: cardHeight,
+                      alignSelf: 'flex-start',
+                      padding: theme.spacing.xl,
+                      borderRadius: theme.radius.xl,
+                      borderCurve: 'continuous',
+                      backgroundColor: theme.colors.surface,
+                      borderWidth: 1,
+                      borderColor: theme.colors.border,
+                      gap: theme.spacing.sm,
+                    }}>
+                    <Text
+                      selectable
+                      style={{
+                        fontSize: theme.size.lg,
+                        fontWeight: theme.weight.semibold,
+                        color: theme.colors.textPrimary,
+                      }}>
+                      {t('learn.empty.title')}
+                    </Text>
+                    <Text
+                      selectable
+                      style={{
+                        fontSize: theme.size.md,
+                        lineHeight: theme.size.md + 6,
+                        color: theme.colors.textSecondary,
+                      }}>
+                      {t('learn.empty.subtitle')}
+                    </Text>
+                  </Animated.View>
+                }
+              />
+            </>
+          ) : null}
+
+          <View
+            style={{
+              paddingHorizontal: theme.spacing.xl,
+              gap: theme.spacing.xs,
+            }}>
+            <Text
+              selectable
+              style={{
+                fontSize: theme.size.xl,
+                fontWeight: theme.weight.bold,
+                color: theme.colors.textPrimary,
+              }}>
+              {t('learn.toolsSectionTitle')}
+            </Text>
+          </View>
+        </View>
+      }
+    />
   );
 }

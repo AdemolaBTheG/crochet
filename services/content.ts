@@ -50,6 +50,7 @@ export type ResolvedPattern = {
   difficulty: string;
   category: string | null;
   coverImageKey: string;
+  youtubeVideoId: string | null;
   estimatedMinutes: number | null;
   isPublished: boolean;
   title: string;
@@ -112,6 +113,7 @@ function resolvePatternFromRow(
     difficulty: pattern.difficulty,
     category: pattern.category,
     coverImageKey: pattern.cover_image_key,
+    youtubeVideoId: pattern.youtube_video_id,
     estimatedMinutes: pattern.estimated_minutes,
     isPublished: pattern.is_published,
     title,

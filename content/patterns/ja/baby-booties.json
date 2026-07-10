@@ -1,0 +1,56 @@
+{
+  "title": "ベビーブーティ",
+  "description": "小さくやわらかいブーティで、底の形作り、側面の立ち上げ、つま先の減らし目を練習します。",
+  "materials": [
+    "DK 糸または軽めの並太糸",
+    "4 mm かぎ針",
+    "ステッチマーカー",
+    "とじ針",
+    "はさみ"
+  ],
+  "skills": [
+    "輪で編む",
+    "細編み",
+    "増し目と減らし目",
+    "引き抜き編みでつなぐ"
+  ],
+  "expectationText": "平らな底が立体的な履き物の形に変わる流れを学べる、コンパクトなベビー向け作品です。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "底を編む",
+      "instruction": "必要な長さの鎖を作り、両端で増し目をしながら楕円の底を作ります。"
+    },
+    {
+      "type": "round",
+      "title": "側面を立ち上げる",
+      "instruction": "底のまわりを均等に編み進めて、布地が上に立ち上がるようにします。",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "つま先を形作る",
+      "instruction": "前側で減らし目をして、かかとをつぶさずにつま先を丸く整えます。",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "履き口とカフを作る",
+      "instruction": "短い段または周回で足首まわりを整え、やわらかな履き口を作ります。",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "もう片方を編む",
+      "instruction": "長さやつま先の深さ、カフの高さがそろうよう丁寧に数えます。"
+    },
+    {
+      "type": "instruction",
+      "title": "仕上げ",
+      "instruction": "糸端をしっかり始末し、2足をやさしく整形します。"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "title": "Flower Granny Square",
+  "description": "Un quadrato con motivi floreali che sovrappone un semplice fiore centrale all'interno di una cornice in stile nonna.",
+  "materials": [
+    "due colori di filato",
+    "uncinetto da 4,5 mm",
+    "ago del filo",
+    "forbici"
+  ],
+  "skills": [
+    "anello magico",
+    "punti a grappolo",
+    "spazi di catenelle",
+    "lavorare in tondo"
+  ],
+  "expectationText": "Un progetto di motivi che introduce cambi di colore e una costruzione a base rotonda pur terminando in un pratico formato quadrato.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Realizza l'anello centrale",
+      "instruction": "Inizia con un anello magico nel colore centrale del fiore."
+    },
+    {
+      "type": "round",
+      "title": "Giro 1",
+      "instruction": "Lavora le maglie centrali che ancorano i petali del fiore.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Giro 2",
+      "instruction": "Crea gruppi di petali in modo uniforme attorno al centro.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Quadrata il motivo",
+      "instruction": "Cambia colore e lavora gli archi di catenelle negli angoli in modo che il fiore diventi un quadrato.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Aggiungi un altro bordo rotondo",
+      "instruction": "Lavora in modo uniforme attorno al quadrato per rendere i bordi più puliti e più facili da unire.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "instruction",
+      "title": "Finisci",
+      "instruction": "Allacciare e intrecciare ordinatamente tutte le estremità che cambiano colore."
+    }
+  ]
+}

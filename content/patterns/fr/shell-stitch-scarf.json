@@ -1,0 +1,50 @@
+{
+  "title": "Écharpe au point coquille",
+  "description": "Une écharpe drapée construite à partir de motifs de coquillages répétés pour une texture sans mise en forme compliquée.",
+  "materials": [
+    "fil worsted léger",
+    "crochet de 5 mm",
+    "aiguille à fil",
+    "ciseaux"
+  ],
+  "skills": [
+    "chaîne de fondation",
+    "crochet double",
+    "point de coquille",
+    "comptage des répétitions"
+  ],
+  "expectationText": "Un projet de répétition relaxant où le défi consiste à garder l'espacement des coquilles bien rangé et à construire un rythme qui reste cohérent sur les longues rangées.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Chaînez la base",
+      "instruction": "Créez une chaîne de base en multiple qui correspond à la répétition de votre coque et à la largeur de votre écharpe."
+    },
+    {
+      "type": "row",
+      "title": "Ligne 1",
+      "instruction": "Travaillez la ligne de configuration qui crée des espaces d'ancrage pour les coques.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Rangée 2",
+      "instruction": "Travaillez des coques dans chaque espace d'ancrage, en gardant le même nombre de points dans chaque coque.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Répéter le motif",
+      "instruction": "Alternez le rang de configuration et le rang de coque jusqu'à ce que l'écharpe atteigne la longueur souhaitée.",
+      "counterLabel": "row",
+      "targetCount": 16
+    },
+    {
+      "type": "instruction",
+      "title": "Terminer la bordure.",
+      "instruction": "Ajoutez un dernier rang ou une bordure si nécessaire, puis attachez et rentrez les extrémités."
+    }
+  ]
+}

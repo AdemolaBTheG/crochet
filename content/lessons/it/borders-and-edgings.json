@@ -1,0 +1,20 @@
+{
+  "title": "Bordi e rifiniture",
+  "description": "Aggiungi un bordo finale pulito che sistema la forma, incornicia il pezzo e gli dà un aspetto completo.",
+  "content": {
+    "summary": "Bordi e rifiniture sono giri o righe extra lavorati attorno al progetto per stabilizzare i lati o aggiungere un dettaglio decorativo.",
+    "whyItMatters": "Un bordo semplice può nascondere lati irregolari, aiutare gli angoli a stare più piatti e rendere il lavoro più rifinito.",
+    "steps": [
+      "Decidi se il progetto ha bisogno di un bordo semplice di stabilizzazione o di una rifinitura decorativa.",
+      "Distribuisci i punti in modo uniforme lungo i lati per evitare onde o tensione eccessiva.",
+      "Usa marcatori negli angoli per ricordare aumenti, catenelle o punti speciali.",
+      "Lavora prima un giro base ordinato se il bordo del progetto è irregolare.",
+      "Blocca o sistema il pezzo dopo la rifinitura se vuoi che il bordo stia più piatto."
+    ],
+    "practice": "Aggiungi un giro di maglie basse a un campione, poi un secondo giro decorativo e confronta il risultato.",
+    "commonMistakes": [
+      "Mettere troppi punti sui lati e creare onde.",
+      "Dimenticare gli aumenti negli angoli facendo incurvare il bordo verso l’interno."
+    ]
+  }
+}

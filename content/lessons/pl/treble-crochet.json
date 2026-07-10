@@ -1,0 +1,20 @@
+{
+  "title": "Szydełko potrójne",
+  "description": "Naucz się wysokiego ściegu, który pozwala szybko zbudować materiał na otwarte szaliki, szaliki i koronkowe powtórzenia.",
+  "content": {
+    "summary": "Przed wbiciem szydełka wykonaj dwa razy narzut, a następnie przerabiaj po dwie pętelki na raz, aż pozostanie jedna pętelka.",
+    "whyItMatters": "Szydełkowe słupki szybko zwiększają wysokość, otwierają materiał i pomagają zrozumieć strukturę wyższego ściegu.",
+    "steps": [
+      "Przełóż dwukrotnie.",
+      "Włóż szydełko w następne oczko i zaciągnij pętelkę.",
+      "Wykonaj narzut i przeciągnij przez 2 pierwsze pętelki.",
+      "Wykonaj narzut i przeciągnij przez 2 kolejne pętle.",
+      "Wykonaj narzut i przeciągnij przez 2 ostatnie pętle."
+    ],
+    "practice": "Przerobić 2 rzędy po 12 słupków podwójnych i porównać wysokość ze słupkiem.",
+    "commonMistakes": [
+      "Zapominanie o drugim narzucie przed wbiciem szydełka.",
+      "Zbyt mocne naciągnięcie ściegu powoduje zapadnięcie się wysokich pętelek."
+    ]
+  }
+}

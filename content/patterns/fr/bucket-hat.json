@@ -1,0 +1,58 @@
+{
+  "title": "Chapeau bob",
+  "description": "Un projet rond décontracté avec une couronne plate, des côtés stables et un bord souple.",
+  "materials": [
+    "fil worsted",
+    "crochet de 5 mm",
+    "marqueur de maille",
+    "aiguille à fil",
+    "ciseaux"
+  ],
+  "skills": [
+    "anneau magique",
+    "maille serrée",
+    "augmentation",
+    "travailler en rond"
+  ],
+  "expectationText": "Un projet portable qui s'entraîne d'abord à façonner un cercle plat, puis à faire pousser des côtés lisses et un bord court sans perdre le nombre de points.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Démarrez la couronne",
+      "instruction": "Réalisez un anneau magique et placez un marqueur dans la première maille de chaque tour."
+    },
+    {
+      "type": "round",
+      "title": "Tour 1",
+      "instruction": "Crocheter 8 mailles serrées dans l'anneau.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Augmentez la couronne.",
+      "instruction": "Augmentez uniformément à chaque tour jusqu'à ce que le cercle atteigne la largeur supérieure souhaitée pour le chapeau.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Crocheter les côtés",
+      "instruction": "Crocheter une maille serrée à intervalles réguliers sans augmentation pendant plusieurs tours pour que le bonnet commence à descendre vers le bas.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "round",
+      "title": "Façonner le bord",
+      "instruction": "Ajoutez de légères augmentations tous les quelques points pour laisser le bord s'évaser vers l'extérieur.",
+      "counterLabel": "round",
+      "targetCount": 15
+    },
+    {
+      "type": "instruction",
+      "title": "Terminer",
+      "instruction": "Essayez-le, ajustez la profondeur du bord si nécessaire, puis attachez et rentrez les extrémités."
+    }
+  ]
+}

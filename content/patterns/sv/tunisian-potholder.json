@@ -1,0 +1,50 @@
+{
+  "title": "Tunisisk grytlapp",
+  "description": "Ett tätt fyrkantigt projekt som introducerar rytmen för tunisisk virkning.",
+  "materials": [
+    "bomullsgarn",
+    "6 mm tunisisk krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "grundkedja",
+    "tunisisk enkel söm",
+    "returpass",
+    "räkneöglor"
+  ],
+  "expectationText": "En kompakt ruta som hjälper dig att lära dig fram och tillbaka från öglan till jämn ögla samtidigt som du behåller jämna öglor synliga.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Kedja bredden",
+      "instruction": "Skapa en grundkedja som matchar den bredd du vill ha på grytlappen."
+    },
+    {
+      "type": "row",
+      "title": "Framåtpassning",
+      "instruction": "Dra upp en ögla i varje kedja och låt dem sitta kvar på kroken.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Återgång",
+      "instruction": "Omslag och sticka av öglor enligt den tunisiska returpassordningen.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Bygg tyget",
+      "instruction": "Upprepa fram och tillbaka tills biten blir fyrkantig.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Maska av",
+      "instruction": "Använd en enkel avm över överkanten, fäst sedan av och väv in ändarna."
+    }
+  ]
+}

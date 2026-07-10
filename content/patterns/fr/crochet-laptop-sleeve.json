@@ -1,0 +1,53 @@
+{
+  "title": "Housse d’ordinateur au crochet",
+  "description": "Une housse simple à rabat qui protège ton ordinateur et se glisse facilement dans un sac.",
+  "materials": [
+    "worsted or aran yarn",
+    "5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "foundation chain",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "Un accessoire pratique qui apprend la prise de mesures, un tissu dense et une fermeture simple.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Mesurer l’ordinateur",
+      "instruction": "Mesure la largeur, la hauteur et l’épaisseur de l’ordinateur pour une housse avec un peu d’aisance."
+    },
+    {
+      "type": "row",
+      "title": "Crocheter le panneau principal",
+      "instruction": "Travaille un rectangle dense ou un panneau replié assez large et assez long pour envelopper l’ordinateur.",
+      "counterLabel": "row",
+      "targetCount": 28
+    },
+    {
+      "type": "instruction",
+      "title": "Vérifier la taille",
+      "instruction": "Plie le tissu autour de l’ordinateur et ajuste avant les derniers rangs."
+    },
+    {
+      "type": "instruction",
+      "title": "Assembler les côtés",
+      "instruction": "Assemble les côtés proprement pour que la housse soit ajustée sans être trop serrée."
+    },
+    {
+      "type": "instruction",
+      "title": "Ajouter le rabat et la fermeture",
+      "instruction": "Termine le rabat supérieur et ajoute une boucle ou un bouton facile à ouvrir."
+    },
+    {
+      "type": "instruction",
+      "title": "Renforcer et finir",
+      "instruction": "Rentre les fils et aplatis les coutures pour que la housse glisse bien dans un sac."
+    }
+  ]
+}

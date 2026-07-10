@@ -39,6 +39,8 @@ export default function LessonsLayout() {
               ),
             }),
       }}>
+      <Stack.Screen name="all" options={{ title: 'All Lessons' }} />
+
       <Stack.Screen name="[slug]" options={{ title: 'Lesson' }} />
       <Stack.Screen name="practice/[slug]" options={{ title: 'Practice' }} />
     </Stack>

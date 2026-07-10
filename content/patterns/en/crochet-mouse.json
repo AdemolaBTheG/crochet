@@ -1,0 +1,15 @@
+{
+  "title": "Crochet Mouse",
+  "description": "A pocket-sized amigurumi mouse with a simple body and tiny ears.",
+  "materials": ["DK yarn", "3.5 mm hook", "stuffing", "yarn needle", "stitch marker", "scissors"],
+  "skills": ["magic ring", "single crochet", "increasing", "decreasing", "small-part assembly"],
+  "expectationText": "A small toy that keeps the shaping simple so you can focus on round structure, neat decreases, and attaching tiny features cleanly.",
+  "steps": [
+    { "type": "instruction", "title": "Start the body", "instruction": "Make a magic ring and mark the first stitch." },
+    { "type": "round", "title": "Round 1", "instruction": "Work 6 single crochet into the ring.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Increase", "instruction": "Increase evenly until the body reaches the desired width.", "counterLabel": "round", "targetCount": 4 },
+    { "type": "round", "title": "Work even", "instruction": "Crochet several rounds without increasing to build the body length.", "counterLabel": "round", "targetCount": 7 },
+    { "type": "round", "title": "Decrease and stuff", "instruction": "Stuff the mouse and decrease toward the tail end until nearly closed.", "counterLabel": "round", "targetCount": 10 },
+    { "type": "instruction", "title": "Add ears and tail", "instruction": "Sew on two tiny ears and attach a chain or yarn tail." }
+  ]
+}

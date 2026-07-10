@@ -1,0 +1,20 @@
+{
+  "title": "Bride triple",
+  "description": "Apprenez un point haut qui permet de construire rapidement du tissu pour les écharpes ouvertes, les écharpes et les répétitions de dentelle.",
+  "content": {
+    "summary": "Faites deux jetés avant d'insérer le crochet, puis tricotez deux boucles à la fois jusqu'à ce qu'il ne reste qu'une boucle.",
+    "whyItMatters": "Le crochet triple ajoute rapidement de la hauteur, ouvre le tissu et vous aide à comprendre la structure des points plus hauts.",
+    "steps": [
+      "Jeter deux fois.",
+      "Insérez le crochet dans le point suivant et tirez une boucle.",
+      "Faites un jeté et passez les 2 premières boucles.",
+      "Faites un jeté et passez les 2 boucles suivantes.",
+      "Faites un jeté et passez les 2 dernières boucles."
+    ],
+    "practice": "Crocheter 2 rangs de 12 mailles au crochet double et comparer la hauteur à la maille serrée.",
+    "commonMistakes": [
+      "Oublier le deuxième jeté avant d'insérer le crochet.",
+      "Tirer le point trop fort pour que les boucles hautes s'effondrent."
+    ]
+  }
+}

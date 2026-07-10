@@ -1,0 +1,60 @@
+{
+  "title": "Crochet Mouse",
+  "description": "シンプルなボディと小さな耳が特徴のポケットサイズのあみぐるみマウス。",
+  "materials": [
+    "DK 糸",
+    "3.5 mm フック",
+    "詰め物",
+    "糸針",
+    "ステッチマーカー",
+    "ハサミ"
+  ],
+  "skills": [
+    "マジックリング",
+    "片かぎ針編み",
+    "増加",
+    "減少",
+    "小型部品アセンブリ"
+  ],
+  "expectationText": "成形をシンプルに保つための小さなおもちゃで、円形の構造、きちんとした減少、小さな機能をきれいに取り付けることに集中できます。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "本体を起動します",
+      "instruction": "マジックリングを作り、最初のステッチに印を付けます。"
+    },
+    {
+      "type": "round",
+      "title": "ラウンド 1",
+      "instruction": "リングに6つのシングルかぎ針編みを編みます。",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "増加",
+      "instruction": "ボディが希望の幅に達するまで均等に増加します。",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "round",
+      "title": "",
+      "instruction": "体の長さを増やすことなく、数ラウンドかぎ針編みをします。",
+      "counterLabel": "round",
+      "targetCount": 7
+    },
+    {
+      "type": "round",
+      "title": "減少させて詰める",
+      "instruction": "マウスを詰めて、ほぼ閉じるまで最後尾に向かって減少させます。",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "耳としっぽを追加する",
+      "instruction": "2 つの小さな耳を縫い付け、チェーンまたは毛糸の尻尾を取り付けます。"
+    }
+  ]
+}

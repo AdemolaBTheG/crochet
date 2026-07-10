@@ -1,0 +1,20 @@
+{
+  "title": "Lendo abreviações de receitas",
+  "description": "Aprenda a abreviação que os padrões usam para que as instruções escritas parem de parecer código.",
+  "content": {
+    "summary": "As abreviações dos padrões compactam nomes de pontos, ações e repetições em uma linha compacta que você pode digitalizar rapidamente.",
+    "whyItMatters": "Se você puder decodificar abreviações, poderá seguir mais padrões, comparar designers e avançar mais rapidamente nas instruções.",
+    "steps": [
+      "Aprenda primeiro as abreviações dos pontos principais: pc, sc, hdc, dc, tr, pbx.",
+      "Fique atento a palavras de ação como inc, dez, rep e sk.",
+      "Verifique se o designer está usando os termos dos EUA ou do Reino Unido antes de começar.",
+      "Leia lentamente uma linha completa e expanda cada abreviatura para uma linguagem simples.",
+      "Marque as repetições e contagens antes de fazer a carreira em crochê."
+    ],
+    "practice": "Pegue uma linha curta do padrão e reescreva-a com palavras completas antes de trabalhá-la.",
+    "commonMistakes": [
+      "Combinação de termos do Reino Unido e dos EUA no mesmo projeto.",
+      "Falta de repetição de colchetes ou parênteses durante a leitura rápida."
+    ]
+  }
+}

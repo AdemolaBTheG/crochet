@@ -1,12 +1,12 @@
 import { ProjectChat } from '@/components/project-chat';
 import { usePremiumGate } from '@/hooks/usePremiumGate';
-import React from 'react';
+import { usePreventZoomTransitionDismissal } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 export default function StitchFixesScreen() {
   const isPro = usePremiumGate();
   const insets = useSafeAreaInsets();
-
+  usePreventZoomTransitionDismissal();
   if (!isPro) return null;
 
   return (

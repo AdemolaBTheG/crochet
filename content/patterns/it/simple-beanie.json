@@ -1,0 +1,54 @@
+{
+  "title": "Berretto semplice",
+  "description": "Un modello di cappello semplice che si concentra su vestibilità, coste e finiture pulite.",
+  "materials": [
+    "filato pettinato",
+    "uncinetto da 5 mm",
+    "segnapunto",
+    "ago del filo",
+    "forbici"
+  ],
+  "skills": [
+    "catenella di base",
+    "maglia bassa",
+    "solo passante posteriore, coste",
+    "cucitura"
+  ],
+  "expectationText": "Un primo cappello affidabile che ti aiuta a esercitarti a misurare la vestibilità della testa, a ripetere le righe in modo coerente e ad assemblare un progetto indossabile in modo ordinato.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Incatena l'altezza",
+      "instruction": "Incatena il numero di maglie necessarie per l'altezza del berretto, non per la circonferenza della testa."
+    },
+    {
+      "type": "row",
+      "title": "Riga 1",
+      "instruction": "Lavorare lungo la catenella e definire il bordo del pannello delle nervature.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Costruisci le coste",
+      "instruction": "Lavora solo le righe del filo indietro finché il pannello non si avvolge comodamente attorno alla testa.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Unisci la cucitura",
+      "instruction": "Unisci insieme le estremità corte in modo che il pannello diventi un tubo."
+    },
+    {
+      "type": "instruction",
+      "title": "Chiudi la corona.",
+      "instruction": "Raccogli il bordo superiore chiuso con il filo, tira bene e fissalo bene."
+    },
+    {
+      "type": "instruction",
+      "title": "Finisci",
+      "instruction": "Rivolta il cappello sul diritto e intreccia le estremità finali."
+    }
+  ]
+}

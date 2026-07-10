@@ -1,0 +1,52 @@
+{
+  "title": "Portaborraccia",
+  "description": "Un portabottiglia leggero con corpo a rete e tracolla per passeggiate, mercati e viaggi.",
+  "materials": [
+    "cotton yarn",
+    "4.5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle"
+  ],
+  "skills": [
+    "working in rounds",
+    "chain spaces and corners",
+    "crochet cords and straps",
+    "single crochet"
+  ],
+  "expectationText": "Un progetto veloce e utile che insegna fondo su misura, rete aperta e tracolla da portare.",
+  "steps": [
+    {
+      "type": "round",
+      "title": "Crea il fondo",
+      "instruction": "Lavora un cerchio o un ovale piatto che corrisponda alla base della bottiglia.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "instruction",
+      "title": "Costruisci i lati",
+      "instruction": "Prosegui verso l’alto con un motivo a rete per mantenere il supporto leggero e flessibile."
+    },
+    {
+      "type": "instruction",
+      "title": "Prova la bottiglia",
+      "instruction": "Inserisci la bottiglia e controlla che il supporto la tenga bene senza stringere troppo."
+    },
+    {
+      "type": "instruction",
+      "title": "Aggiungi la tracolla",
+      "instruction": "Lavora una tracolla abbastanza lunga per spalla o crossbody con tensione ferma."
+    },
+    {
+      "type": "instruction",
+      "title": "Fissa bene",
+      "instruction": "Attacca la tracolla in punti forti vicino al bordo superiore, rinforzando se serve."
+    },
+    {
+      "type": "instruction",
+      "title": "Prova e termina",
+      "instruction": "Controlla il peso con la bottiglia dentro e nascondi bene tutti i fili."
+    }
+  ]
+}

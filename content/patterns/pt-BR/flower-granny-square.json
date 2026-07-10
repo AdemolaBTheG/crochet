@@ -1,0 +1,57 @@
+{
+  "title": "Flower Granny Square",
+  "description": "Um quadrado com motivo floral que coloca um centro de flor simples dentro de uma moldura estilo vovó.",
+  "materials": [
+    "duas cores de fio",
+    "agulha de 4,5 mm",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "anel mágico",
+    "pontos agrupados",
+    "espaços de corrente",
+    "trabalhando em rodadas"
+  ],
+  "expectationText": "Um projeto de motivo que introduz mudanças de cores e construção redonda, ao mesmo tempo que termina em um prático formato quadrado.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Faça o anel central",
+      "instruction": "Comece com um anel mágico na cor do centro da flor."
+    },
+    {
+      "type": "round",
+      "title": "Rodada 1",
+      "instruction": "Trabalhe os pontos centrais que fixam as pétalas das flores.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Rodada 2",
+      "instruction": "Crie grupos de pétalas uniformemente ao redor do centro.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Quadrar o motivo",
+      "instruction": "Mude a cor e trabalhe os espaços da corrente dos cantos para que a flor se transforme em um quadrado.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Adicione mais uma borda redonda",
+      "instruction": "Trabalhe uniformemente ao redor do quadrado para deixar as bordas mais limpas e fáceis de unir.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "instruction",
+      "title": "Finalize",
+      "instruction": "Aperte e teca todas as pontas que mudam de cor com cuidado."
+    }
+  ]
+}

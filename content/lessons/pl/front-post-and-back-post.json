@@ -1,0 +1,20 @@
+{
+  "title": "Słupek przedni i słupek tylny",
+  "description": "Użyj ściegów końcowych, aby utworzyć ściągacze, teksturę i wypukłe kolumny w szydełku.",
+  "content": {
+    "summary": "Zamiast wrabiać w górne pętelki, owiń oczko wokół słupka od przodu lub tyłu.",
+    "whyItMatters": "Ściegi słupków przednich i tylnych tworzą teksturę, której nie potrafią zwykłe płaskie ściegi, szczególnie w przypadku mankietów, czapek i lamówek.",
+    "steps": [
+      "Przerobić jak słupek.",
+      "Aby wykonać ścieg przedni, włóż szydełko od przodu do tyłu i do przodu wokół słupka.",
+      "Aby wykonać ścieg tylny, włóż go od tyłu do przodu i do tyłu wokół słupka.",
+      "Zaciągnij pętelkę i zakończ oczko jak słupek.",
+      "Naprzemienne oczka przednie i tylne, aby zbudować ściągacz."
+    ],
+    "practice": "Przerobić jeden rząd słupków przednich i jeden rząd słupków przednich i tylnych, naprzemiennie.",
+    "commonMistakes": [
+      "Przypadkowe włożenie w górne pętle zamiast wokół słupka.",
+      "Skręcanie tkaniny poprzez pomijanie słupków na zmianę."
+    ]
+  }
+}

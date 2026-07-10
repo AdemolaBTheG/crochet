@@ -1,0 +1,56 @@
+{
+  "title": "Babyslofjes",
+  "description": "Zachte kleine slofjes waarmee je een zool vormt, zijkanten opbouwt en een nette teen sluit.",
+  "materials": [
+    "DK-garen of licht worsted garen",
+    "haaknaald 4 mm",
+    "steekmarkeerder",
+    "stopnaald",
+    "schaar"
+  ],
+  "skills": [
+    "in toeren werken",
+    "vaste",
+    "meerderen en minderen",
+    "halve vaste en sluiten"
+  ],
+  "expectationText": "Een compact babyproject dat laat zien hoe een platte zool verandert in een draagbare driedimensionale vorm.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Maak de zool",
+      "instruction": "Haak een basislossenketting en vorm een ovale zool met meerderingen aan beide uiteinden."
+    },
+    {
+      "type": "round",
+      "title": "Bouw de zijkanten op",
+      "instruction": "Werk gelijkmatige toeren rond de zool zodat de stof omhoog begint te komen.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Vorm de teen",
+      "instruction": "Minder aan de voorkant om de teen rond te maken zonder de hiel in te drukken.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Maak opening en boord",
+      "instruction": "Werk korte gelijkmatige toeren of rijen om de enkelopening en een zachte boord te vormen.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Haak het tweede slofje",
+      "instruction": "Tel zorgvuldig zodat het tweede slofje overeenkomt met het eerste."
+    },
+    {
+      "type": "instruction",
+      "title": "Afwerken",
+      "instruction": "Werk de draden goed weg en breng beide slofjes licht in vorm."
+    }
+  ]
+}

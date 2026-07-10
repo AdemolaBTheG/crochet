@@ -27,7 +27,8 @@
   "shared": {
     "close": "Close",
     "unlockPremium": "Unlock Premium",
-    "stepOf": "Step {{current}} of {{total}}"
+    "stepOf": "Step {{current}} of {{total}}",
+    "addToFolder": "Add to folder"
   },
   "chat": {
     "thinking": "Thinking...",
@@ -63,6 +64,7 @@
     }
   },
   "learn": {
+    "sectionTitle": "Lessons",
     "toolsSectionTitle": "Tools",
     "lessonLabel": "Lesson {{index}}",
     "actions": {
@@ -469,22 +471,76 @@
       "note": "This is the same guided, step-by-step rhythm you will use in your first Crova lessons."
     },
     "trialOffer": {
-      "title": "We want you to try Crova\nfor Free",
+      "title": "We want you to try Crova",
       "subtitle": "Unlock unlimited access to guided lessons, step trackers, and project patterns — all crafted for crocheters who want to learn faster.",
       "featureOne": "Unlimited access to all lessons",
       "featureTwo": "Track every row, stitch, and project",
       "featureThree": "Follow guided patterns step by step",
-      "cta": "Start free trial",
-      "footer": "No commitment. Cancel anytime before the trial ends."
+      "cta": "Continue",
+      "footer": "Cancel anytime."
     }
+  },
+  "stats": {
+    "streak": "{{count}} day streak"
   },
   "goals": {
     "dailyCraftingGoal": "Daily Crafting Goal",
     "dailyProgressTime": "{{completed}}m of {{target}}m",
     "yearlyProjectGoal": "{{year}} Project Goal",
+    "yearlyProgress": "{{completed}} of {{target}} projects",
     "yearlyProgress_one": "1 of {{target}} project",
     "yearlyProgress_other": "{{completed}} of {{target}} projects",
     "remainingHint": "{{remaining}} more to go - about {{pace}} per month."
+  },
+  "folders": {
+    "title": "Folders",
+    "addButton": "Add",
+    "empty": {
+      "title": "No folders yet",
+      "subtitle": "Create your first folder to group patterns by project, gift list, or collection."
+    },
+    "patternCount_one": "{{count}} pattern",
+    "patternCount_other": "{{count}} patterns",
+    "accessibility": {
+      "addFolder": "Create folder",
+      "folderTile": "{{name}}, {{count}} {{countLabel}}"
+    },
+    "detail": {
+      "fallbackTitle": "Folder",
+      "searchPlaceholder": "Search patterns",
+      "patternCount_one": "{{count}} pattern",
+      "patternCount_other": "{{count}} patterns",
+      "emptyTitle": "No patterns in this folder yet",
+      "emptySubtitle": "Add patterns to this folder to see them here.",
+      "emptySearchTitle": "No matches in this folder",
+      "emptySearchSubtitle": "Try a different search term.",
+      "accessibility": {
+        "openPattern": "Open {{title}} pattern",
+        "unlockPattern": "Unlock {{title}} pattern"
+      }
+    },
+    "create": {
+      "title": "Create Folder",
+      "back": "Back",
+      "color": "Color",
+      "colorLabel": "Folder color",
+      "nameLabel": "Folder name",
+      "namePlaceholder": "Gift ideas",
+      "creating": "Creating…",
+      "submit": "Create Folder",
+      "errorTitle": "Could not create folder",
+      "errorMessage": "Please try again."
+    }
+  },
+  "addToFolder": {
+    "title": "Add to folder",
+    "done": "Done",
+    "patternCount_one": "{{count}} pattern",
+    "patternCount_other": "{{count}} patterns",
+    "empty": {
+      "title": "No folders yet",
+      "subtitle": "Create a folder first to organize your patterns."
+    }
   },
   "addPattern": {
     "screenTitles": {

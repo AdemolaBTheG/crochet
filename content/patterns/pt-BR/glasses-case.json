@@ -1,0 +1,52 @@
+{
+  "title": "Estojo para óculos",
+  "description": "Um estojo fino em crochê que protege os óculos dentro da bolsa e fecha com botão ou argola.",
+  "materials": [
+    "cotton yarn",
+    "4 mm hook",
+    "stitch marker",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "working in rows",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "Um projeto pequeno e útil para aprender medida personalizada e acabamento limpo.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Medir os óculos",
+      "instruction": "Veja a largura e a altura dos óculos para o estojo ficar fácil de usar."
+    },
+    {
+      "type": "row",
+      "title": "Fazer o corpo",
+      "instruction": "Faça um retângulo longo o bastante para dobrar em formato de bolsinha com aba.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Dobrar e conferir",
+      "instruction": "Envolva os óculos com o retângulo e confirme o tamanho antes de unir."
+    },
+    {
+      "type": "instruction",
+      "title": "Fechar as bordas",
+      "instruction": "Una as laterais com cuidado para proteger os óculos e manter o formato do estojo."
+    },
+    {
+      "type": "instruction",
+      "title": "Adicionar o fechamento",
+      "instruction": "Faça uma argola ou pequena casa de botão e combine com um botão se quiser mais segurança."
+    },
+    {
+      "type": "instruction",
+      "title": "Finalizar o estojo",
+      "instruction": "Esconda os fios e teste a abertura algumas vezes para o uso ficar suave."
+    }
+  ]
+}

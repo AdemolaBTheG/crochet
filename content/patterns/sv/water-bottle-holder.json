@@ -1,0 +1,52 @@
+{
+  "title": "Vattenflaskhållare",
+  "description": "En lätt flaskhållare med nätkropp och rem för promenader, marknader och resdagar.",
+  "materials": [
+    "cotton yarn",
+    "4.5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle"
+  ],
+  "skills": [
+    "working in rounds",
+    "chain spaces and corners",
+    "crochet cords and straps",
+    "single crochet"
+  ],
+  "expectationText": "Ett snabbt vardagsprojekt som lär ut anpassad botten, öppen mesh och bärrem.",
+  "steps": [
+    {
+      "type": "round",
+      "title": "Gör botten",
+      "instruction": "Virka en platt cirkel eller oval som matchar botten på din flaska.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "instruction",
+      "title": "Bygg sidorna",
+      "instruction": "Arbeta uppåt i ett nätmönster så att hållaren blir lätt och flexibel."
+    },
+    {
+      "type": "instruction",
+      "title": "Testa flaskan",
+      "instruction": "Sätt i flaskan och kontrollera att hållaren håller den utan att klämma för hårt."
+    },
+    {
+      "type": "instruction",
+      "title": "Lägg till remmen",
+      "instruction": "Virka en rem som är lagom lång för axel eller crossbody med fast spänning."
+    },
+    {
+      "type": "instruction",
+      "title": "Fäst ordentligt",
+      "instruction": "Sätt fast remmen i starka punkter nära överkanten och förstärk vid behov."
+    },
+    {
+      "type": "instruction",
+      "title": "Testa och avsluta",
+      "instruction": "Prova vikten med flaskan i och fäst alla trådar ordentligt."
+    }
+  ]
+}

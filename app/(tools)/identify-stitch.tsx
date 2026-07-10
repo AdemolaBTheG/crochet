@@ -1,4 +1,5 @@
 import { PressableScale } from '@/components/pressable-scale';
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
 import { theme } from '@/constants/Theme';
 import { usePremiumGate } from '@/hooks/usePremiumGate';
 import { identifyStitch, type IdentifyStitchResult } from '@/services/ai';
@@ -6,10 +7,10 @@ import * as Haptics from 'expo-haptics';
 import { Image } from 'expo-image';
 import { manipulateAsync, SaveFormat } from 'expo-image-manipulator';
 import * as ImagePicker from 'expo-image-picker';
+import { usePreventZoomTransitionDismissal } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import LoadingShimmer from '@/components/shimmer/loading-shimmer';
 import { Alert, ScrollView, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -590,7 +591,7 @@ export default function IdentifyStitchScreen() {
   const [analysisResult, setAnalysisResult] = useState<IdentifyStitchResult | null>(null);
   const [analysisError, setAnalysisError] = useState<string | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
-
+  usePreventZoomTransitionDismissal();
   async function analyzeImage(image: SelectedImage) {
     setIsAnalyzing(true);
     setAnalysisError(null);

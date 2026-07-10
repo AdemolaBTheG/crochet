@@ -1,0 +1,53 @@
+{
+  "title": "Custodia laptop all’uncinetto",
+  "description": "Una custodia semplice con patta che protegge il laptop e scivola facilmente in borsa.",
+  "materials": [
+    "worsted or aran yarn",
+    "5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "foundation chain",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "Un accessorio pratico per imparare misure, tessuto compatto e una chiusura semplice.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Misura il laptop",
+      "instruction": "Misura larghezza, altezza e spessore del laptop per ottenere una custodia con un po’ di agio."
+    },
+    {
+      "type": "row",
+      "title": "Lavora il corpo",
+      "instruction": "Realizza un rettangolo compatto o un pannello piegato abbastanza largo e lungo.",
+      "counterLabel": "row",
+      "targetCount": 28
+    },
+    {
+      "type": "instruction",
+      "title": "Controlla la vestibilità",
+      "instruction": "Piega il tessuto attorno al laptop e correggi la misura prima delle ultime righe."
+    },
+    {
+      "type": "instruction",
+      "title": "Chiudi i lati",
+      "instruction": "Cuci o unisci i lati in modo che la custodia sia stabile ma non troppo stretta."
+    },
+    {
+      "type": "instruction",
+      "title": "Aggiungi patta e chiusura",
+      "instruction": "Completa la patta superiore e aggiungi un’asola o un bottone facile da usare."
+    },
+    {
+      "type": "instruction",
+      "title": "Rifinisci",
+      "instruction": "Nascondi i fili e appiattisci le cuciture perché la custodia entri bene in borsa."
+    }
+  ]
+}

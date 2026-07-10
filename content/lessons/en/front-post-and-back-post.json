@@ -1,0 +1,20 @@
+{
+  "title": "Front Post and Back Post",
+  "description": "Use post stitches to create ribbing, texture, and raised columns in your crochet fabric.",
+  "content": {
+    "summary": "Instead of working into the top loops, wrap the stitch around the post from the front or back.",
+    "whyItMatters": "Front post and back post stitches create texture that regular flat stitches cannot, especially for cuffs, hats, and borders.",
+    "steps": [
+      "Yarn over like a double crochet.",
+      "For a front post stitch, insert the hook from front to back to front around the post.",
+      "For a back post stitch, insert from back to front to back around the post.",
+      "Pull up a loop and finish the stitch like a double crochet.",
+      "Alternate front and back post stitches to build ribbing."
+    ],
+    "practice": "Work one row of front post double crochet and one row of alternating front and back post double crochet.",
+    "commonMistakes": [
+      "Accidentally inserting into the top loops instead of around the post.",
+      "Twisting the fabric by skipping posts while alternating."
+    ]
+  }
+}

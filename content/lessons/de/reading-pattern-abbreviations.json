@@ -1,0 +1,20 @@
+{
+  "title": "Musterabkürzungen lesen",
+  "description": "Lernen Sie die Kurzschrift, die Muster verwenden, damit sich geschriebene Anweisungen nicht mehr wie Code anfühlen.",
+  "content": {
+    "summary": "Musterabkürzungen komprimieren Stichnamen, Aktionen und Wiederholungen in einer kompakten Linie, die Sie schnell scannen können.",
+    "whyItMatters": "Wenn Sie Abkürzungen entschlüsseln können, können Sie mehr Mustern folgen, Designer vergleichen und schneller durch Anweisungen vorankommen.",
+    "steps": [
+      "Lerne zuerst die wichtigsten Abkürzungen: Lm, fM, hStb, Stb, dStb, Kettm.",
+      "Achte auf Aktionswörter wie zun, abn, wdh und überspr.",
+      "Prüfe vor dem Start, ob die Anleitung US- oder UK-Begriffe verwendet.",
+      "Lies eine ganze Zeile langsam und formuliere jede Abkürzung in Klartext aus.",
+      "Markiere Wiederholungen und Maschenzahlen, bevor du die Reihe häkelst."
+    ],
+    "practice": "Nehmen Sie eine kurze Musterzeile und schreiben Sie sie in vollständigen Worten um, bevor Sie sie bearbeiten.",
+    "commonMistakes": [
+      "Vermischung britischer und US-amerikanischer Begriffe im selben Projekt.",
+      "Fehlende Wiederholungsklammern beim schnellen Lesen."
+    ]
+  }
+}

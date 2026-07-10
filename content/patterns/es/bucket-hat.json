@@ -1,0 +1,58 @@
+{
+  "title": "Sombrero bucket",
+  "description": "Un proyecto informal y redondo con copa plana, lados firmes y ala suave.",
+  "materials": [
+    "hilo de estambre",
+    "ganchillo de 5 mm",
+    "marcador de punto",
+    "aguja lanera",
+    "tijeras"
+  ],
+  "skills": [
+    "anillo mágico",
+    "punto bajo",
+    "aumento",
+    "trabajo en redondo"
+  ],
+  "expectationText": "Un proyecto portátil que practica dar forma a un círculo plano primero y luego hacer crecer los lados lisos y un ala corta sin perder el número de puntadas.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Comienza la corona",
+      "instruction": "Haz un anillo mágico y coloca un marcador en el primer punto de cada vuelta."
+    },
+    {
+      "type": "round",
+      "title": "Ronda 1",
+      "instruction": "Teje 8 puntos bajos en el anillo.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Aumenta la corona",
+      "instruction": "Aumenta uniformemente en cada vuelta hasta que el círculo alcance el ancho superior que deseas para el sombrero.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Tejer los lados",
+      "instruction": "Puntos bajos uniformemente sin aumentos durante varias vueltas para que el gorro comience a caer hacia abajo.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "round",
+      "title": "Dale forma al ala",
+      "instruction": "Agrega aumentos suaves cada pocos puntos para dejar que el ala se ensanche hacia afuera.",
+      "counterLabel": "round",
+      "targetCount": 15
+    },
+    {
+      "type": "instruction",
+      "title": "Termina",
+      "instruction": "Pruébalo, ajusta la profundidad del ala si es necesario, luego remata y teje los extremos."
+    }
+  ]
+}

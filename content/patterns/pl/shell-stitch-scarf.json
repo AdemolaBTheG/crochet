@@ -1,0 +1,50 @@
+{
+  "title": "Szalik ze ściegiem muszlowym",
+  "description": "Drapowany szal zbudowany z powtarzających się motywów muszli, aby uzyskać teksturę bez skomplikowanego kształtowania.",
+  "materials": [
+    "lekka przędza czesankowa",
+    "haczyk 5 mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "łańcuszek podstawowy",
+    "szydełko podwójne",
+    "ścieg muszlowy",
+    "liczenie powtórzeń"
+  ],
+  "expectationText": "Relaksujący projekt z powtarzaniem, w którym wyzwaniem jest utrzymanie porządku w odstępach między muszlami i budowanie rytmu, który pozostaje spójny w długich rzędach.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Łańcuch podstawy",
+      "instruction": "Utwórz łańcuszek podstawowy w wielokrotnościach pasujących do powtórzeń muszli i szerokości szalika."
+    },
+    {
+      "type": "row",
+      "title": "wiersz 1",
+      "instruction": "Wykonaj rząd ustawień, który tworzy przestrzenie na kotwice dla muszli.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Rząd 2",
+      "instruction": "Przerabiaj muszle w każdym miejscu kotwicy, zachowując tę ​​samą liczbę oczek w każdym muszli.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "powtórz wzór",
+      "instruction": "zmieniaj rząd konfiguracji i rząd muszli, aż szalik osiągnie preferowaną długość.",
+      "counterLabel": "row",
+      "targetCount": 16
+    },
+    {
+      "type": "instruction",
+      "title": "Zakończ brzeg",
+      "instruction": "Dodaj ostatni rząd lub brzeg, jeśli to konieczne, następnie zakończ i splot na końcach."
+    }
+  ]
+}

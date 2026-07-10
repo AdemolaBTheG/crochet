@@ -1,0 +1,58 @@
+{
+  "title": "Bolsa de feira simples",
+  "description": "Uma bolsa leve para o dia a dia com uma base resistente e corpo de malha aberta.",
+  "materials": [
+    "fio de algodão",
+    "agulha de crochê de 5 mm",
+    "marcador de ponto",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "corrente de base",
+    "ponto baixo",
+    "correntes",
+    "trabalhando em rodadas"
+  ],
+  "expectationText": "Um projeto de bolsa útil que mistura estrutura sólida e malha aberta para que você possa praticar a mudança de linhas densas para rodadas repetidas e arejadas.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Construa a base",
+      "instruction": "Crie uma base oval ou retangular usando correntes e aumentos de pontos baixos nas pontas."
+    },
+    {
+      "type": "round",
+      "title": "Rodada 1",
+      "instruction": "Tricotar a primeira carreira uniformemente à volta da base e colocar um marcador no início.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Reforçar a borda da base",
+      "instruction": "Faça um ponto baixo uma ou duas carreiras sem aumentos para deixar a parte de baixo mais estável.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Inicie o corpo da malha",
+      "instruction": "Alterne espaços de corrente e pontos de ancoragem para criar um padrão de malha aberta.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "round",
+      "title": "Adicione alças",
+      "instruction": "Faça uma corrente nas aberturas das alças longas e reforce-as com mais uma rodada de pontos.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Finalize",
+      "instruction": "Aperte depois de enrolar a alça e entrelace bem as pontas."
+    }
+  ]
+}

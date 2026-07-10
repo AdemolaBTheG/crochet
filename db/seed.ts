@@ -18,6 +18,16 @@ const lessonSlugs = [
   "color-changes",
   "joining-granny-squares",
   "invisible-decrease-for-amigurumi",
+  "treble-crochet",
+  "front-post-and-back-post",
+  "shell-stitch",
+  "reading-pattern-abbreviations",
+  "gauge-basics",
+  "blocking-basics",
+  "seaming-and-assembly-basics",
+  "borders-and-edgings",
+  "crochet-cords-and-straps",
+  "buttonholes-and-simple-closures",
 ];
 
 const lessonMetadata: Record<
@@ -40,6 +50,16 @@ const lessonMetadata: Record<
   "color-changes": { sortOrder: 14, difficulty: "beginner", videoUrl: null },
   "joining-granny-squares": { sortOrder: 15, difficulty: "beginner", videoUrl: null },
   "invisible-decrease-for-amigurumi": { sortOrder: 16, difficulty: "beginner", videoUrl: null },
+  "treble-crochet": { sortOrder: 17, difficulty: "beginner", videoUrl: "https://www.youtube.com/watch?v=-u1EUGyD5Mg" },
+  "front-post-and-back-post": { sortOrder: 18, difficulty: "beginner", videoUrl: "https://www.youtube.com/watch?v=fvBkU5Yl3qA" },
+  "shell-stitch": { sortOrder: 19, difficulty: "beginner", videoUrl: "https://www.youtube.com/watch?v=F4ZKmRwBGR4" },
+  "reading-pattern-abbreviations": { sortOrder: 20, difficulty: "beginner", videoUrl: "https://www.youtube.com/watch?v=jOdPCill7OE" },
+  "gauge-basics": { sortOrder: 21, difficulty: "beginner", videoUrl: "https://www.youtube.com/watch?v=AnT89huAi6E" },
+  "blocking-basics": { sortOrder: 22, difficulty: "beginner", videoUrl: "https://www.youtube.com/watch?v=jrMVQGQiQlc" },
+  "seaming-and-assembly-basics": { sortOrder: 23, difficulty: "beginner", videoUrl: null },
+  "borders-and-edgings": { sortOrder: 24, difficulty: "beginner", videoUrl: null },
+  "crochet-cords-and-straps": { sortOrder: 25, difficulty: "beginner", videoUrl: "https://www.youtube.com/watch?v=HVkY0ZpKqyM" },
+  "buttonholes-and-simple-closures": { sortOrder: 26, difficulty: "beginner", videoUrl: "https://www.youtube.com/watch?v=UFUvEyXfsCY" },
 };
 
 const patternSlugs = [
@@ -81,6 +101,22 @@ const patternSlugs = [
   "star-applique",
   "chevron-washcloth",
   "envelope-pouch",
+  "bucket-hat",
+  "crochet-bunny",
+  "shell-stitch-scarf",
+  "simple-market-bag",
+  "tunisian-potholder",
+  "crochet-mouse",
+  "flower-granny-square",
+  "simple-beanie",
+  "wave-stitch-blanket",
+  "mesh-beach-bag",
+  "simple-crochet-vest",
+  "baby-booties",
+  "bandana-headscarf",
+  "crochet-laptop-sleeve",
+  "water-bottle-holder",
+  "glasses-case",
 ];
 
 const patternMetadata: Record<
@@ -130,6 +166,22 @@ const patternMetadata: Record<
   "star-applique": { difficulty: "beginner", category: "gift", coverImageKey: "star-applique", estimatedMinutes: 20 },
   "chevron-washcloth": { difficulty: "beginner", category: "home", coverImageKey: "chevron-washcloth", estimatedMinutes: 45 },
   "envelope-pouch": { difficulty: "beginner", category: "gift", coverImageKey: "envelope-pouch", estimatedMinutes: 50 },
+  "bucket-hat": { difficulty: "beginner", category: "wearable", coverImageKey: "easy-ribbed-beanie", estimatedMinutes: 105 },
+  "crochet-bunny": { difficulty: "intermediate", category: "toy", coverImageKey: "amigurumi-whale", estimatedMinutes: 120 },
+  "shell-stitch-scarf": { difficulty: "beginner", category: "wearable", coverImageKey: "granny-stripe-scarf", estimatedMinutes: 150 },
+  "simple-market-bag": { difficulty: "beginner", category: "wearable", coverImageKey: "mesh-market-bag", estimatedMinutes: 95 },
+  "tunisian-potholder": { difficulty: "intermediate", category: "home", coverImageKey: "ribbed-washcloth", estimatedMinutes: 70 },
+  "crochet-mouse": { difficulty: "beginner", category: "toy", coverImageKey: "basic-amigurumi-ball", estimatedMinutes: 80 },
+  "flower-granny-square": { difficulty: "beginner", category: "motif", coverImageKey: "basic-granny-square", estimatedMinutes: 35 },
+  "simple-beanie": { difficulty: "beginner", category: "wearable", coverImageKey: "easy-ribbed-beanie", estimatedMinutes: 90 },
+  "wave-stitch-blanket": { difficulty: "intermediate", category: "home", coverImageKey: "basic-baby-blanket", estimatedMinutes: 240 },
+  "mesh-beach-bag": { difficulty: "beginner", category: "wearable", coverImageKey: "mesh-market-bag", estimatedMinutes: 105 },
+  "simple-crochet-vest": { difficulty: "intermediate", category: "wearable", coverImageKey: "simple-crochet-vest", estimatedMinutes: 180 },
+  "baby-booties": { difficulty: "beginner", category: "wearable", coverImageKey: "baby-booties", estimatedMinutes: 70 },
+  "bandana-headscarf": { difficulty: "beginner", category: "wearable", coverImageKey: "bandana-headscarf", estimatedMinutes: 75 },
+  "crochet-laptop-sleeve": { difficulty: "beginner", category: "gift", coverImageKey: "crochet-laptop-sleeve", estimatedMinutes: 150 },
+  "water-bottle-holder": { difficulty: "beginner", category: "wearable", coverImageKey: "water-bottle-holder", estimatedMinutes: 60 },
+  "glasses-case": { difficulty: "beginner", category: "gift", coverImageKey: "glasses-case", estimatedMinutes: 45 },
 };
 
 export async function seedDatabase(db: ExpoSQLiteDatabase<typeof schema>) {

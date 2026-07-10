@@ -1,0 +1,52 @@
+{
+  "title": "Waterfleshouder",
+  "description": "Een lichte flessenhouder met open netstructuur en draagriem voor onderweg en dagelijks gebruik.",
+  "materials": [
+    "cotton yarn",
+    "4.5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle"
+  ],
+  "skills": [
+    "working in rounds",
+    "chain spaces and corners",
+    "crochet cords and straps",
+    "single crochet"
+  ],
+  "expectationText": "Een snel praktisch project met passende bodem, open patroon en draagbare riem.",
+  "steps": [
+    {
+      "type": "round",
+      "title": "Bodem maken",
+      "instruction": "Haak een platte cirkel of ovaal die past bij de onderkant van je fles.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "instruction",
+      "title": "Zijkanten opbouwen",
+      "instruction": "Werk omhoog in een open netpatroon zodat de houder licht en flexibel blijft."
+    },
+    {
+      "type": "instruction",
+      "title": "Fles passen",
+      "instruction": "Schuif de fles erin en controleer of de houder goed vastzit zonder te knellen."
+    },
+    {
+      "type": "instruction",
+      "title": "Riem toevoegen",
+      "instruction": "Haak een riem op de juiste lengte voor schouder of crossbody met stevige spanning."
+    },
+    {
+      "type": "instruction",
+      "title": "Stevig bevestigen",
+      "instruction": "Zet de riem vast op sterke punten bij de bovenrand en verstevig indien nodig."
+    },
+    {
+      "type": "instruction",
+      "title": "Testen en afwerken",
+      "instruction": "Test het gewicht met de fles erin en werk alle draadeinden goed weg."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Einfache Markttasche",
+  "description": "Eine leichte Alltagstasche mit stabilem Boden und offenem Netzkörper.",
+  "materials": [
+    "Baumwollgarn",
+    "Häkelnadel 5 mm",
+    "Maschenmarkierer",
+    "Garnnadel",
+    "Schere"
+  ],
+  "skills": [
+    "Grundkette",
+    "feste Masche",
+    "Ketten",
+    "in Runden arbeiten"
+  ],
+  "expectationText": "Ein nützliches Taschenprojekt, das solide Struktur und offene Maschen kombiniert, sodass Sie den Wechsel von dichten Reihen zu luftigen, wiederholten Runden üben können.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Den Boden arbeiten",
+      "instruction": "Arbeite einen ovalen oder rechteckigen Boden mit Luftmaschen und Zunahmen aus festen Maschen an den Enden."
+    },
+    {
+      "type": "round",
+      "title": "Runde 1",
+      "instruction": "Arbeite die erste Runde gleichmäßig um den Boden und setze am Anfang einen Maschenmarkierer.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Den Bodenrand verstärken",
+      "instruction": "Häkle ein bis zwei Runden feste Maschen ohne Zunahmen, damit der Boden stabiler wird.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Mit dem Netzmuster beginnen",
+      "instruction": "Wechsle Luftmaschenräume und Verankerungsmaschen ab, um ein offenes Netzmuster zu bilden.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "round",
+      "title": "Henkel hinzufügen",
+      "instruction": "Arbeite Luftmaschenketten für die Henkelöffnungen und verstärke sie mit einer weiteren Runde.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Fertigstellen",
+      "instruction": "Nach der Henkelrunde abketten und die Fäden sicher vernähen."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Einfache Häkelweste",
+  "description": "Eine lockere Weste zum Überziehen aus einfachen Paneelen, leichter Formgebung und sauberem Finish.",
+  "materials": [
+    "Kammgarn",
+    "Häkelnadel 5 mm",
+    "Maschenmarkierer",
+    "Maßband",
+    "Garnnadel",
+    "Schere"
+  ],
+  "skills": [
+    "Grundkette",
+    "Stäbchen",
+    "Zusammennähen",
+    "Ränder und Abschlusskanten"
+  ],
+  "expectationText": "Ein erstes Kleidungsstück, mit dem du Paneele, einfache Passformkontrollen und sauberes Zusammensetzen ohne komplizierte Formgebung übst.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Messen und Maschenprobe arbeiten",
+      "instruction": "Miss den gewünschten Brustumfang und häkle eine kleine Maschenprobe, damit die Breite planbar bleibt."
+    },
+    {
+      "type": "row",
+      "title": "Rückenteil",
+      "instruction": "Arbeite das Rückenteil in Reihen, bis Körperlänge und Armausschnitttiefe passen.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "row",
+      "title": "Vorderteile",
+      "instruction": "Arbeite zwei passende Vorderteile und achte darauf, dass Länge und Schultern zum Rückenteil passen.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Schultern und Seiten verbinden",
+      "instruction": "Nähe zuerst die Schultern zusammen und schließe dann die Seiten, wobei Platz für die Armausschnitte bleibt."
+    },
+    {
+      "type": "instruction",
+      "title": "Abschlusskanten arbeiten",
+      "instruction": "Häkle eine saubere Kante um Halsausschnitt, Armlöcher und Vorderkante, damit die Form stabil bleibt."
+    },
+    {
+      "type": "instruction",
+      "title": "Fertigstellen",
+      "instruction": "Vernähe alle Fäden und blocke die Weste leicht, damit die Teile sich entspannen und gleichmäßig fallen."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Gauge Basics",
+  "description": "Understand how stitch and row counts affect fit, size, and final project success.",
+  "content": {
+    "summary": "Gauge is the number of stitches and rows you get in a measured area with a specific yarn, hook, and tension.",
+    "whyItMatters": "Gauge is what makes a hat fit, a sweater size correctly, and a blanket turn out close to the pattern dimensions.",
+    "steps": [
+      "Read the pattern gauge note before starting.",
+      "Make a swatch large enough to measure the center area accurately.",
+      "Count stitches and rows over the same measured section the pattern uses.",
+      "If your gauge is off, change hook size before starting the project.",
+      "Recheck gauge after washing or blocking if the project is size-sensitive."
+    ],
+    "practice": "Make one swatch in your normal hook size, then one with a size up or down and compare.",
+    "commonMistakes": [
+      "Measuring the outer edge of a swatch instead of the center.",
+      "Ignoring row gauge when the project shape depends on height."
+    ]
+  }
+}

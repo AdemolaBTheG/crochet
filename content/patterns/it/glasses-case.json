@@ -1,0 +1,52 @@
+{
+  "title": "Astuccio per occhiali",
+  "description": "Un astuccio sottile all’uncinetto che protegge gli occhiali in borsa e si chiude con bottone o asola.",
+  "materials": [
+    "cotton yarn",
+    "4 mm hook",
+    "stitch marker",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "working in rows",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "Un piccolo progetto utile per lavorare su misura e rifinire con precisione.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Misura gli occhiali",
+      "instruction": "Controlla larghezza e altezza degli occhiali per usare l’astuccio con facilità."
+    },
+    {
+      "type": "row",
+      "title": "Lavora il corpo",
+      "instruction": "Realizza un rettangolo abbastanza lungo da piegarsi in una pochette con piccola patta.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Piega e controlla",
+      "instruction": "Avvolgi gli occhiali con il rettangolo e verifica la misura prima di unire i lati."
+    },
+    {
+      "type": "instruction",
+      "title": "Chiudi i bordi",
+      "instruction": "Unisci i lati con cura per proteggere gli occhiali e mantenere la forma."
+    },
+    {
+      "type": "instruction",
+      "title": "Aggiungi la chiusura",
+      "instruction": "Lavora un’asola o un piccolo occhiello e abbinalo a un bottone se vuoi più sicurezza."
+    },
+    {
+      "type": "instruction",
+      "title": "Termina l’astuccio",
+      "instruction": "Nascondi i fili e prova più volte l’apertura per un uso fluido."
+    }
+  ]
+}

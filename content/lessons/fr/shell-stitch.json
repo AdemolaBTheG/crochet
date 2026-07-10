@@ -1,0 +1,20 @@
+{
+  "title": "Point coquille",
+  "description": "Créez une forme d'éventail douce en regroupant les points dans le même espace.",
+  "content": {
+    "summary": "Une coque est généralement constituée de plusieurs points hauts travaillés dans un seul point ou espace de chaînette, suivis d'un saut ou d'un point d'ancrage.",
+    "whyItMatters": "Le point coquille introduit la logique des points groupés et vous apprend à lire les formes décoratives répétées.",
+    "steps": [
+      "Identifiez le point ou l'espace auquel appartient la coque.",
+      "Tricotez le nombre requis de points hauts au même endroit.",
+      "Comptez la coque complète avant de continuer.",
+      "Sauter ou ancrer des points exactement comme le dit le modèle.",
+      "Répétez le rythme d'espacement des coques sur toute la rangée."
+    ],
+    "practice": "Travaillez un court échantillon avec des répétitions de 3 coques pour que vous puissiez voir la forme de l'éventail s'ouvrir.",
+    "commonMistakes": [
+      "Perte de compte à l'intérieur du shell et le rendant inégal.",
+      "Sauter le mauvais nombre de points entre les coques."
+    ]
+  }
+}

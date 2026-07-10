@@ -1,0 +1,51 @@
+{
+  "title": "Manta em ponto ondulado",
+  "description": "Um padrão de manta repetitivo que cria picos e vales suaves em cada linha.",
+  "materials": [
+    "fio penteado",
+    "agulha de crochê de 5 mm",
+    "marcadores de pontos",
+    "agulha de fio",
+    "tesoura"
+  ],
+  "skills": [
+    "ponto alto",
+    "aumentos",
+    "diminuições",
+    "contagem de repetições"
+  ],
+  "expectationText": "Um projeto de repetição mais longo onde a habilidade principal é manter os aumentos e diminuições equilibrados para que as ondas permaneçam uniformes e reconhecíveis.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Encadeie a base",
+      "instruction": "Faça uma corrente de base no múltiplo necessário para a repetição da onda mais pontos virados."
+    },
+    {
+      "type": "row",
+      "title": "Linha 1",
+      "instruction": "Trabalhe a linha de configuração e marque uma repetição completa para poder verificar seu ritmo antecipadamente.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Linha 2",
+      "instruction": "Aumenta nos picos e diminui nos vales de acordo com o padrão das ondas.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Repita a onda",
+      "instruction": "Continue as linhas de onda até que a manta atinja o comprimento preferido.",
+      "counterLabel": "row",
+      "targetCount": 20
+    },
+    {
+      "type": "instruction",
+      "title": "Finalize a borda final",
+      "instruction": "Trabalhe uma borda simples ou uma carreira final para firmar a borda superior antes de terminar."
+    }
+  ]
+}

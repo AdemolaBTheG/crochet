@@ -1,0 +1,58 @@
+{
+  "title": "Kapelusz typu Bucket",
+  "description": "Swobodny okrągły projekt z płaską koroną, stabilnymi bokami i miękkim rondem.",
+  "materials": [
+    "przędza czesankowa",
+    "haczyk 5 mm",
+    "znacznik ściegu",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "magiczny pierścień",
+    "szydełko",
+    "zwiększanie",
+    "praca w rundach"
+  ],
+  "expectationText": "Projekt do noszenia, który ćwiczy najpierw kształtowanie płaskiego koła, a następnie wyrastanie gładkich boków i krótkiego ronda bez utraty liczby ściegów.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Rozpocznij koronę",
+      "instruction": "Zrób magiczny pierścień i umieść znacznik w pierwszym oczku każdej rundy."
+    },
+    {
+      "type": "round",
+      "title": "Runda 1",
+      "instruction": "Przerobić 8 oczek ścisłych w pierścień podstawy.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Zwiększaj koronę",
+      "instruction": "Dodawaj równomiernie w każdym okrążeniu, aż okrąg osiągnie żądaną szerokość kapelusza.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Przerabiać boki.",
+      "instruction": "Równo oczko ścisłe, bez dodawania oczek przez kilka okrążeń, tak aby czapka zaczęła opadać.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "round",
+      "title": "Uformuj rondo",
+      "instruction": "Dodawaj delikatne dodawanie oczek co kilka oczek, aby rondo rozszerzało się na zewnątrz.",
+      "counterLabel": "round",
+      "targetCount": 15
+    },
+    {
+      "type": "instruction",
+      "title": "Zakończ",
+      "instruction": "Przymierz, w razie potrzeby dopasuj głębokość daszka, następnie zapnij i splot na końcach."
+    }
+  ]
+}

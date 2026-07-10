@@ -1,0 +1,20 @@
+{
+  "title": "Maglia alta",
+  "description": "Impara un punto alto che costruisce rapidamente il tessuto per sciarpe aperte, stole e ripetizioni di pizzo.",
+  "content": {
+    "summary": "Filati due volte prima di inserire l'uncinetto, poi lavora due anelli alla volta fino a quando rimane un anello.",
+    "whyItMatters": "La maglia alta aggiunge altezza velocemente, apre il tessuto e ti aiuta a capire la struttura dei punti più alti.",
+    "steps": [
+      "Filato due volte.",
+      "Inserisci l'uncinetto nel punto successivo e tira su un cappio.",
+      "Getta il filo e passa attraverso i primi 2 anelli.",
+      "Getta il filo e passa attraverso i 2 anelli successivi.",
+      "Getta il filo e passa attraverso gli ultimi 2 anelli."
+    ],
+    "practice": "Lavora 2 righe da 12 maglie alte e confronta l'altezza con la maglia alta.",
+    "commonMistakes": [
+      "Dimenticare il secondo gettato prima di inserire l'uncinetto.",
+      "Tirare troppo la maglia facendo crollare gli anelli alti."
+    ]
+  }
+}

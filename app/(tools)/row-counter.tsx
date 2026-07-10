@@ -13,6 +13,7 @@ import {
   pickerStyle,
   tag,
 } from '@expo/ui/swift-ui/modifiers';
+import { usePreventZoomTransitionDismissal } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -54,10 +55,12 @@ function CounterModePicker({
         borderRadius: theme.radius.pill,
         backgroundColor: theme.colors.muted,
       }}>
-      {([
-        { value: 'rows', label: t('tools.rowCounter.mode.rows') },
-        { value: 'rounds', label: t('tools.rowCounter.mode.rounds') },
-      ] as const).map((option) => {
+      {(
+        [
+          { value: 'rows', label: t('tools.rowCounter.mode.rows') },
+          { value: 'rounds', label: t('tools.rowCounter.mode.rounds') },
+        ] as const
+      ).map((option) => {
         const isSelected = option.value === activeCounter;
 
         return (
@@ -223,6 +226,7 @@ function CounterCard({ activeCounter, value }: { activeCounter: CounterKind; val
 }
 
 export default function RowCounterScreen() {
+  usePreventZoomTransitionDismissal();
   const { t } = useTranslation();
   const isPro = usePremiumGate();
   const insets = useSafeAreaInsets();
@@ -282,6 +286,7 @@ export default function RowCounterScreen() {
           paddingHorizontal: theme.spacing.xl,
           paddingTop: theme.spacing.xl,
           gap: theme.spacing.lg,
+          alignItems: 'center',
         }}>
         <CounterModePicker activeCounter={activeCounter} onChange={changeCounter} />
 

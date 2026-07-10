@@ -1,0 +1,52 @@
+{
+  "title": "Etui na okulary",
+  "description": "Smukłe szydełkowe etui, które chroni okulary w torbie i zamyka się na guzik lub pętelkę.",
+  "materials": [
+    "cotton yarn",
+    "4 mm hook",
+    "stitch marker",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "working in rows",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "Mały praktyczny projekt do nauki dopasowania na wymiar i schludnego wykończenia.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Zmierz okulary",
+      "instruction": "Sprawdź szerokość i wysokość okularów, aby etui łatwo się zakładało i zdejmowało."
+    },
+    {
+      "type": "row",
+      "title": "Zrób korpus",
+      "instruction": "Wykonaj prostokąt na tyle długi, aby można go było złożyć w kieszonkę z klapką.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Złóż i sprawdź",
+      "instruction": "Owiń prostokąt wokół okularów i sprawdź rozmiar przed zszyciem."
+    },
+    {
+      "type": "instruction",
+      "title": "Zamknij boki",
+      "instruction": "Połącz boki starannie, aby okulary były dobrze chronione, a etui trzymało kształt."
+    },
+    {
+      "type": "instruction",
+      "title": "Dodaj zapięcie",
+      "instruction": "Zrób pętelkę lub małą dziurkę na guzik i dodaj guzik dla większego bezpieczeństwa."
+    },
+    {
+      "type": "instruction",
+      "title": "Wykończ etui",
+      "instruction": "Schowaj nitki i kilka razy sprawdź otwieranie, aby etui było wygodne w użyciu."
+    }
+  ]
+}

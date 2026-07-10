@@ -1,0 +1,55 @@
+{
+  "title": "Chaleco sencillo de crochet",
+  "description": "Un chaleco ligero para superponer, hecho con paneles simples, una forma suave y un acabado limpio.",
+  "materials": [
+    "hilo worsted",
+    "ganchillo de 5 mm",
+    "marcadores de punto",
+    "cinta métrica",
+    "aguja lanera",
+    "tijeras"
+  ],
+  "skills": [
+    "cadena base",
+    "punto alto",
+    "costura",
+    "bordes y remates"
+  ],
+  "expectationText": "Una primera prenda que enseña construcción por paneles, control básico del ajuste y ensamblaje limpio sin formas complicadas.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Mide y haz una muestra",
+      "instruction": "Mide el contorno de pecho que quieres cubrir y teje una muestra pequeña para prever bien el ancho."
+    },
+    {
+      "type": "row",
+      "title": "Espalda",
+      "instruction": "Trabaja el panel de la espalda en filas hasta lograr el largo del cuerpo y la profundidad de sisa deseados.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "row",
+      "title": "Delanteros",
+      "instruction": "Trabaja dos paneles delanteros iguales y comprueba que coincidan con la espalda.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Une hombros y costados",
+      "instruction": "Une primero los hombros y luego cierra los costados dejando el espacio de las sisas."
+    },
+    {
+      "type": "instruction",
+      "title": "Añade remates",
+      "instruction": "Haz un borde limpio alrededor del cuello, las sisas y la abertura delantera para estabilizar la forma."
+    },
+    {
+      "type": "instruction",
+      "title": "Termina",
+      "instruction": "Esconde las hebras y bloquea ligeramente para que los paneles caigan de forma uniforme."
+    }
+  ]
+}

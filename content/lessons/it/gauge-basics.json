@@ -1,0 +1,20 @@
+{
+  "title": "Nozioni di base sulla sagoma",
+  "description": "Comprendi come il conteggio dei punti e delle righe influisce sulla vestibilità, sulle dimensioni e sul successo finale del progetto.",
+  "content": {
+    "summary": "La tensione è il numero di punti e righe che ottieni in un'area misurata con un filato, un gancio e una tensione specifici.",
+    "whyItMatters": "La sagoma è ciò che fa sì che un cappello si adatti, che la taglia di un maglione sia corretta e che una coperta risulti vicina alle dimensioni del cartamodello.",
+    "steps": [
+      "Leggere la nota sulla sagoma del modello prima di iniziare.",
+      "Crea un campione abbastanza grande da misurare con precisione l'area centrale.",
+      "Conta i punti e le righe sulla stessa sezione misurata utilizzata dal modello.",
+      "Se il tuo indicatore è spento, cambia la dimensione del gancio prima di iniziare il progetto.",
+      "Ricontrolla il calibro dopo il lavaggio o il bloccaggio se il progetto è sensibile alle dimensioni."
+    ],
+    "practice": "Crea un campione con la misura del tuo gancio normale, poi uno con una misura più o meno grande e confronta.",
+    "commonMistakes": [
+      "Misurazione del bordo esterno di un campione anziché del centro.",
+      "Ignora il calibro delle righe quando la forma del progetto dipende dall'altezza."
+    ]
+  }
+}

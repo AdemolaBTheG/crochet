@@ -1,0 +1,57 @@
+{
+  "title": "Flower Granny Square",
+  "description": "En kvadrat med blommotiv som lägger en enkel blomma i mitten i en ram i mormorsstil.",
+  "materials": [
+    "två garnfärger",
+    "4,5 mm krok",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "magisk ring",
+    "klusterstygn",
+    "kedjemellanrum",
+    "arbeta i varv"
+  ],
+  "expectationText": "Ett motivprojekt som introducerar en färgförändring och en praktisk konstruktion i kvadratiskt format.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Gör mittringen",
+      "instruction": "Börja med en magisk ring i blommans mittfärg."
+    },
+    {
+      "type": "round",
+      "title": "Varv 1",
+      "instruction": "Arbeta mittstygnen som förankrar blombladen.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Omgång 2",
+      "instruction": "Skapa kronbladsgrupper jämnt runt mitten.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Kvadra motivet",
+      "instruction": "Ändra färg och arbeta hörnkedjeutrymmen så att blomman förvandlas till en kvadrat.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Lägg till ytterligare en bårdvarv",
+      "instruction": "Arbeta jämnt runt fyrkanten för att göra kanterna renare och lättare att sammanfoga.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "instruction",
+      "title": "Avsluta",
+      "instruction": "Knäpp av och väv in alla färgskiftande ändar snyggt."
+    }
+  ]
+}

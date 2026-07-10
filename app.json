@@ -2,7 +2,7 @@
   "expo": {
     "name": "Crochet",
     "slug": "Crochet",
-    "version": "1.6",
+    "version": "1.9",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "crochet",
@@ -75,11 +75,17 @@
         {
           "widgets": [
             {
-              "name": "ProjectActivity",
-              "entry": "widgets/ProjectActivity.tsx",
-              "displayName": "Crochet Project",
-              "description": "Track your crochet project progress",
-              "supportedFamilies": ["systemSmall", "systemMedium"]
+              "name": "CurrentProjectWidget",
+              "entry": "widgets/CurrentProjectWidget.tsx",
+              "displayName": "Current Project",
+              "description": "Resume your active crochet project at a glance",
+              "supportedFamilies": [
+                "systemSmall",
+                "systemMedium",
+                "accessoryCircular",
+                "accessoryRectangular",
+                "accessoryInline"
+              ]
             }
           ]
         }

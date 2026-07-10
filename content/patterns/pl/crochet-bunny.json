@@ -1,0 +1,60 @@
+{
+  "title": "Szydełkowy króliczek",
+  "description": "Prosta miękka zabawka z zaokrąglonym korpusem, długimi uszami i wyszytymi detalami twarzy.",
+  "materials": [
+    "Przędza DK lub czesankowa",
+    "Haczyk 3,5 do 4 mm",
+    "farsz",
+    "igła do przędzy",
+    "znacznik ściegu",
+    "nożyczki"
+  ],
+  "skills": [
+    "magiczny pierścień",
+    "szydełko",
+    "zwiększanie",
+    "zmniejszanie",
+    "montaż amigurumi"
+  ],
+  "expectationText": "Delikatny projekt amigurumi, który uczy kształtowania podstawowych części ciała, wypełniania ich równomiernie i czysto złożyć prostą postać.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Uruchom ciało",
+      "instruction": "Zacznij od magicznego pierścienia i umieść znacznik, aby śledzić każdą rundę."
+    },
+    {
+      "type": "round",
+      "title": "Runda 1",
+      "instruction": "Przerobić 6 oczek ścisłych w pierścień podstawy.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Dodawaj dla uzyskania kształtu",
+      "instruction": "Dodawaj równomiernie w kolejnych okrążeniach, aż tułów osiągnie najszerszy punkt.",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "round",
+      "title": "Równomiernie przerabiać",
+      "instruction": "Przerobić kilka okrążeń bez dodawania dodatków na wysokość, a następnie lekko wypchać.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Zamykaj, aby zamknąć",
+      "instruction": "Użyj niewidocznych zamknięć, aby zwęzić górę i zamknąć korpus po mocnym wypchaniu.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Dodaj uszy i twarz",
+      "instruction": "Zrób na szydełku dwie proste końcówki uszu, przyszyj je, a następnie zszyj oczy i nos."
+    }
+  ]
+}

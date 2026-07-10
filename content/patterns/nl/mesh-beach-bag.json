@@ -1,0 +1,58 @@
+{
+  "title": "Strandtas van mesh",
+  "description": "Een ruime opengewerkte draagtas voor handdoeken, garen of lichte dagelijkse spullen.",
+  "materials": [
+    "katoen- of raffiagaren",
+    "5,5 mm haak",
+    "stekenmarkering",
+    "garennaald",
+    "schaar"
+  ],
+  "skills": [
+    "basisketting",
+    "vasten",
+    "kettingen",
+    "bandvormgeving"
+  ],
+  "expectationText": "Een groter draagproject dat zich richt op het consistent houden van open mesh en toch de basis en handvatten voldoende verstevigt voor dagelijks gebruik.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Maak de basis",
+      "instruction": "Bouw een platte ovale of rechthoekige basis met een paar rondes stevige steken."
+    },
+    {
+      "type": "round",
+      "title": "Toer 1",
+      "instruction": "Werk gelijkmatig langs de basisrand en plaats een markeerder aan het begin van de toer.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Overgang naar mesh",
+      "instruction": "Werk één vaste toer voordat je de mesh met kettingruimte opent.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Laat de tas groter worden",
+      "instruction": "Herhaal het maaspatroon totdat de tas een ruime strandtashoogte heeft bereikt.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "round",
+      "title": "Handvatten toevoegen",
+      "instruction": "Vergrendel de handvatopeningen en verstevig ze met een of twee laatste rondes.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Afmaken",
+      "instruction": "Hecht voorzichtig af en weef de uiteinden in waar ze niet blijven haken."
+    }
+  ]
+}

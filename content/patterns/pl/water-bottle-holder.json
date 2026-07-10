@@ -1,0 +1,52 @@
+{
+  "title": "Uchwyt na butelkę",
+  "description": "Lekki uchwyt na butelkę z siateczkowym korpusem i paskiem na spacer, zakupy i podróż.",
+  "materials": [
+    "cotton yarn",
+    "4.5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle"
+  ],
+  "skills": [
+    "working in rounds",
+    "chain spaces and corners",
+    "crochet cords and straps",
+    "single crochet"
+  ],
+  "expectationText": "Szybki codzienny projekt uczący dopasowanego dna, lekkiej siatki i wygodnego paska.",
+  "steps": [
+    {
+      "type": "round",
+      "title": "Zrób dno",
+      "instruction": "Wykonaj płaskie koło lub owal pasujące do spodu twojej butelki.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "instruction",
+      "title": "Zbuduj boki",
+      "instruction": "Pracuj do góry ażurowym wzorem, aby uchwyt był lekki i elastyczny."
+    },
+    {
+      "type": "instruction",
+      "title": "Sprawdź butelkę",
+      "instruction": "Włóż butelkę i upewnij się, że uchwyt trzyma ją dobrze, ale nie ściska zbyt mocno."
+    },
+    {
+      "type": "instruction",
+      "title": "Dodaj pasek",
+      "instruction": "Wykonaj pasek odpowiedniej długości na ramię lub crossbody z równym napięciem."
+    },
+    {
+      "type": "instruction",
+      "title": "Przymocuj solidnie",
+      "instruction": "Przyszyj lub dołącz pasek w mocnych punktach przy górnej krawędzi."
+    },
+    {
+      "type": "instruction",
+      "title": "Przetestuj i wykończ",
+      "instruction": "Sprawdź ciężar z butelką w środku i dokładnie schowaj wszystkie nitki."
+    }
+  ]
+}

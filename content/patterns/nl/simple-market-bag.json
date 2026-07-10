@@ -1,0 +1,58 @@
+{
+  "title": "Eenvoudige markttas",
+  "description": "Een lichtgewicht tas voor dagelijks gebruik met een stevige basis en een open mesh-body.",
+  "materials": [
+    "katoenen garen",
+    "5 mm haaknaald",
+    "stekenmarkering",
+    "garennaald",
+    "schaar"
+  ],
+  "skills": [
+    "basisketting",
+    "vasten",
+    "kettingen",
+    "in toeren werken"
+  ],
+  "expectationText": "Een handig tassenproject dat een stevige structuur en open mesh combineert, zodat je kunt oefenen met het veranderen van dichte rijen naar luchtige, herhaalde rondes.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Bouw de basis",
+      "instruction": "Maak een ovale of rechthoekige basis met behulp van lossen en vaste meerderingen rond de uiteinden."
+    },
+    {
+      "type": "round",
+      "title": "Toer 1",
+      "instruction": "Werk de eerste toer gelijkmatig rond de basis en plaats een markeerder aan het begin.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Verstevig de basisrand",
+      "instruction": "Haak één of twee toeren zonder meerderingen om de onderkant stabieler te maken.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Start het mesh-lichaam",
+      "instruction": "Wissel kettingruimtes en ankersteken af ​​om een ​​open mesh-patroon te creëren.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "round",
+      "title": "Voeg riemen toe",
+      "instruction": "Maak lange hengselopeningen aan elkaar vast en verstevig ze met nog een ronde steken.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Afmaken",
+      "instruction": "Hecht af na de band rond en weef de uiteinden stevig vast."
+    }
+  ]
+}

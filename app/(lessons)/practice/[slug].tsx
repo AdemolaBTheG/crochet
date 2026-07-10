@@ -3,6 +3,7 @@ import { isLessonFree } from '@/constants/gates';
 import { useSubscription } from '@/context/SubscriptionContext';
 import { useLessonDetail } from '@/hooks/use-lesson-detail';
 import { logFirebaseEvent } from '@/services/firebaseAnalytics';
+import { useCompletedLessonsStore } from '@/stores/completedLessonsStore';
 import { askForReview } from '@/utils/review';
 import { Host, Text as SwiftText } from '@expo/ui/swift-ui';
 import {
@@ -16,10 +17,12 @@ import {
 } from '@expo/ui/swift-ui/modifiers';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as Haptics from 'expo-haptics';
+import { NavigationHeaderAction } from '@/components/navigation-header-action';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
+  Platform,
   Pressable,
   ScrollView,
   Text,
@@ -332,6 +335,8 @@ export default function LessonPracticeScreen() {
   const isProgrammaticStepScrollRef = useRef(false);
   const { data: resolvedLesson, isLoading } = useLessonDetail(slug, i18n.language);
   const [selectedStepIndex, setSelectedStepIndex] = useState(0);
+  const markLessonCompleted = useCompletedLessonsStore((s) => s.markCompleted);
+  const tutorialVideoUrl = resolvedLesson?.videoUrl ?? null;
 
   useEffect(() => {
     setSelectedStepIndex(0);
@@ -419,6 +424,8 @@ export default function LessonPracticeScreen() {
 
   async function finishPractice() {
     if (resolvedLesson) {
+      markLessonCompleted(resolvedLesson.slug);
+
       void logFirebaseEvent('lesson_complete', {
         lesson_slug: resolvedLesson.slug,
         lesson_title: resolvedLesson.title,
@@ -441,6 +448,49 @@ export default function LessonPracticeScreen() {
           headerStyle: {
             backgroundColor: isLiquidGlassAvailable() ? 'transparent' : theme.colors.background,
           },
+          ...(Platform.OS === 'ios' && tutorialVideoUrl
+            ? {
+                unstable_headerRightItems: () => [
+                  {
+                    type: 'button' as const,
+                    label: 'Tutorial',
+                    icon: { type: 'sfSymbol' as const, name: 'play.rectangle' },
+                    onPress: () =>
+                      router.push({
+                        pathname: '/video',
+                        params: {
+                          title: resolvedLesson?.title
+                            ? `${resolvedLesson.title} Tutorial`
+                            : 'Tutorial',
+                          videoUrl: tutorialVideoUrl,
+                        },
+                      }),
+                  },
+                ],
+              }
+            : {}),
+          ...(Platform.OS !== 'ios'
+            ? {
+                headerRight: () =>
+                  tutorialVideoUrl ? (
+                    <NavigationHeaderAction
+                      label="Tutorial"
+                      icon="play-circle-outline"
+                      onPress={() =>
+                        router.push({
+                          pathname: '/video',
+                          params: {
+                            title: resolvedLesson?.title
+                              ? `${resolvedLesson.title} Tutorial`
+                              : 'Tutorial',
+                            videoUrl: tutorialVideoUrl,
+                          },
+                        })
+                      }
+                    />
+                  ) : null,
+              }
+            : {}),
         }}
       />
       <View style={{ flex: 1, backgroundColor: theme.colors.background }}>

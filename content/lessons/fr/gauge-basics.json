@@ -1,0 +1,20 @@
+{
+  "title": "Notions d’échantillon",
+  "description": "Comprendre comment le nombre de points et de rangs affecte l'ajustement, la taille et la réussite finale du projet.",
+  "content": {
+    "summary": "La jauge est le nombre de points et de rangs que vous obtenez dans une zone mesurée avec un fil, un crochet et une tension spécifiques.",
+    "whyItMatters": "La jauge est ce qui permet qu'un chapeau soit ajusté, qu'un pull soit à la bonne taille et qu'une couverture soit proche des dimensions du patron.",
+    "steps": [
+      "Lisez la note de la jauge de modèle avant de commencer.",
+      "Créez un échantillon suffisamment grand pour mesurer la zone centrale avec précision.",
+      "Comptez les points et les rangs sur la même section mesurée que le modèle utilise.",
+      "Si votre jauge est éteinte, changez la taille de l'hameçon avant de démarrer le projet.",
+      "Revérifiez la jauge après lavage ou blocage si le projet est sensible à la taille."
+    ],
+    "practice": "Faites un échantillon de votre taille de crochet normale, puis un autre avec une taille au-dessus ou en dessous et comparez.",
+    "commonMistakes": [
+      "Mesure du bord extérieur d'un échantillon au lieu du centre.",
+      "Ignorer la jauge de rangée lorsque la forme du projet dépend de la hauteur."
+    ]
+  }
+}

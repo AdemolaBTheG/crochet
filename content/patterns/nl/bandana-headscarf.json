@@ -1,0 +1,52 @@
+{
+  "title": "Bandana-hoofddoek",
+  "description": "Een snelle driehoekige sjaal met eenvoudige meerderingen, soepele valling en strikbanden voor een makkelijke pasvorm.",
+  "materials": [
+    "katoengaren",
+    "haaknaald 4,5 mm",
+    "steekmarkeerders",
+    "stopnaald",
+    "schaar"
+  ],
+  "skills": [
+    "lossenketting",
+    "stokjes",
+    "lossenruimtes en hoeken",
+    "randen en afwerkingen"
+  ],
+  "expectationText": "Een snel accessoireproject dat vertrouwen geeft in driehoekige vormgeving en nette afwerking.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Begin bovenaan in het midden",
+      "instruction": "Start met een korte basis en markeer de meerderpunten zodat de vorm gemakkelijk te volgen is."
+    },
+    {
+      "type": "row",
+      "title": "Laat de driehoek groeien",
+      "instruction": "Werk rijen met meerderingen aan de randen of in het midden zodat de sjaal gelijkmatig breder wordt.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Controleer de breedte",
+      "instruction": "Stop wanneer de lange zijde de gewenste breedte over het hoofd heeft."
+    },
+    {
+      "type": "instruction",
+      "title": "Voeg strikbanden toe",
+      "instruction": "Werk smalle banden of lange lossenkettingen vanaf beide hoeken."
+    },
+    {
+      "type": "instruction",
+      "title": "Werk een rand",
+      "instruction": "Maak een nette rand rondom de driehoek en banden om de omtrek te verzachten."
+    },
+    {
+      "type": "instruction",
+      "title": "Afwerken",
+      "instruction": "Werk de draden weg en block licht voor een mooie valling."
+    }
+  ]
+}

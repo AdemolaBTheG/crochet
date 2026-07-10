@@ -1,0 +1,58 @@
+{
+  "title": "Borsa da spiaggia in rete",
+  "description": "Una spaziosa borsa traforata per asciugamani, filati o per il trasporto leggero di tutti i giorni.",
+  "materials": [
+    "filato di cotone o rafia",
+    "gancio da 5,5 mm",
+    "segnapunto",
+    "ago del filo",
+    "forbici"
+  ],
+  "skills": [
+    "catenella di base",
+    "maglia bassa",
+    "catenelle",
+    "modellatura della cinghia"
+  ],
+  "expectationText": "Un progetto di trasporto più ampio che si concentra sul mantenimento della coerenza della rete aperta, rinforzando allo stesso tempo la base e le maniglie a sufficienza per l'uso quotidiano.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Realizza la base",
+      "instruction": "Costruisci una base piatta ovale o rettangolare con alcuni giri di punti fermi."
+    },
+    {
+      "type": "round",
+      "title": "Giro 1",
+      "instruction": "Lavorare in modo uniforme attorno al bordo della base e posizionare un segnapunti all'inizio del giro.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Transizione alla maglia",
+      "instruction": "Lavorare un giro costante prima di aprire nella maglia dell'arco di catenelle.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Allarga il corpo della borsa",
+      "instruction": "Ripeti il ​​motivo a rete finché la borsa non raggiunge l'altezza di una borsa da spiaggia.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "round",
+      "title": "Aggiungi maniglie",
+      "instruction": "Incatena le aperture delle maniglie e rinforzale con uno o due giri finali.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Finisci",
+      "instruction": "Allacciare con attenzione e intrecciare le estremità dove non si impigliano."
+    }
+  ]
+}

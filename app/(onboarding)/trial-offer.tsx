@@ -68,6 +68,7 @@ export default function TrialOfferScreen() {
               aspectRatio: 1,
               borderRadius: theme.radius.lg,
             }}
+            transition={300}
             contentFit="contain"
           />
         </Animated.View>

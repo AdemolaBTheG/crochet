@@ -1,0 +1,20 @@
+{
+  "title": "Podstawy zszywania i składania",
+  "description": "Łącz szydełkowe elementy starannie, aby gotowy projekt był stabilny, gładki i dopracowany.",
+  "content": {
+    "summary": "Zszywanie łączy osobne panele lub motywy metodą dopasowaną do elastyczności i wyglądu robótki.",
+    "whyItMatters": "Czyste łączenie sprawia, że nawet prosty projekt wygląda lepiej, lepiej leży i dłużej trzyma kształt.",
+    "steps": [
+      "Ułóż elementy we właściwym kierunku, zanim zaczniesz je łączyć.",
+      "Dopasuj rogi, końce rzędów i liczbę oczek za pomocą markerów.",
+      "Wybierz metodę, na przykład ścieg overlockowy, szew materacowy, łączenie oczkami ścisłymi albo obramowanie półsłupkami.",
+      "Pracuj z równym napięciem, aby szew był mocny, ale nie sztywny.",
+      "Często sprawdzaj prawą stronę, żeby szew był prosty i schludny."
+    ],
+    "practice": "Połącz dwa małe próbki dwiema różnymi metodami i porównaj rozciągliwość, grubość oraz wygląd.",
+    "commonMistakes": [
+      "Skręcenie jednego elementu przed zszyciem.",
+      "Zaciąganie szwu mocniej niż samej robótki."
+    ]
+  }
+}

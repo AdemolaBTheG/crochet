@@ -1,0 +1,60 @@
+{
+  "title": "Szydełkowa mysz",
+  "description": "Kieszonkowa mysz amigurumi o prostym korpusie i małych uszach.",
+  "materials": [
+    "Przędza DK",
+    "Haczyk 3,5 mm",
+    "farsz",
+    "igła do przędzy",
+    "znacznik ściegu",
+    "nożyczki"
+  ],
+  "skills": [
+    "magiczny pierścień",
+    "szydełko",
+    "zwiększanie",
+    "zmniejszanie",
+    "Składanie małych części"
+  ],
+  "expectationText": "Mała zabawka, która ułatwia kształtowanie, dzięki czemu możesz skupić się na okrągłej strukturze, schludnych spadkach i czystym dołączaniu drobnych elementów.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Uruchom ciało",
+      "instruction": "Zrób magiczny pierścień i zaznacz pierwsze oczko."
+    },
+    {
+      "type": "round",
+      "title": "Runda 1",
+      "instruction": "Przerobić 6 oczek ścisłych w pierścień podstawy.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Zwiększaj",
+      "instruction": "Zwiększaj równomiernie, aż korpus osiągnie pożądaną szerokość.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "round",
+      "title": "Równomiernie przerabiać",
+      "instruction": "Wykonaj kilka okrążeń na szydełku, nie dodając oczek, aby zwiększyć długość korpusu.",
+      "counterLabel": "round",
+      "targetCount": 7
+    },
+    {
+      "type": "round",
+      "title": "Zmniejszanie i wypełnianie",
+      "instruction": "Wypełnianie myszy i zmniejszanie w kierunku końca, aż będzie prawie zamknięte.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Dodaj uszy i ogon",
+      "instruction": "Przyszyj dwa małe uszy i dołącz łańcuszek lub ogonek z włóczki."
+    }
+  ]
+}

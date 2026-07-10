@@ -8,9 +8,10 @@ import {
 } from '@/stores/onboardingStore';
 import { router } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
-import { type ComponentProps, useEffect, useMemo } from 'react';
+import { PressableScale } from 'pressto';
+import { useEffect, useMemo, type ComponentProps } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -28,7 +29,10 @@ type NextStep = {
   text: string;
 };
 
-function getDailyGoalLabel(minutes: number | null, t: (key: string, options?: Record<string, unknown>) => string) {
+function getDailyGoalLabel(
+  minutes: number | null,
+  t: (key: string, options?: Record<string, unknown>) => string,
+) {
   if (!minutes) {
     return t('onboarding.loader.summaryFallbacks.dailyGoal');
   }
@@ -36,7 +40,10 @@ function getDailyGoalLabel(minutes: number | null, t: (key: string, options?: Re
   return t('onboarding.loader.summaryValues.dailyGoal', { minutes });
 }
 
-function getYearlyGoalLabel(count: number | null, t: (key: string, options?: Record<string, unknown>) => string) {
+function getYearlyGoalLabel(
+  count: number | null,
+  t: (key: string, options?: Record<string, unknown>) => string,
+) {
   if (!count) {
     return t('onboarding.loader.summaryFallbacks.yearlyGoal');
   }
@@ -124,7 +131,8 @@ function getGoalStep(goal: Goal, t: (key: string) => string) {
 export default function Loader() {
   const insets = useSafeAreaInsets();
   const { t } = useTranslation();
-  const { goal, skillLevel, handedness, dailyGoalMinutes, yearlyProjectGoal } = useOnboardingStore();
+  const { goal, skillLevel, handedness, dailyGoalMinutes, yearlyProjectGoal } =
+    useOnboardingStore();
 
   useEffect(() => {
     complete();
@@ -302,11 +310,9 @@ export default function Loader() {
             paddingBottom: insets.bottom + theme.spacing.md,
           },
         ]}>
-        <Pressable onPress={handleContinue} style={styles.ctaButton}>
-          <Text selectable style={styles.ctaLabel}>
-            {t('onboarding.loader.ctaPreview')}
-          </Text>
-        </Pressable>
+        <PressableScale onPress={handleContinue} style={styles.ctaButton}>
+          <Text style={styles.ctaLabel}>{t('onboarding.loader.ctaPreview')}</Text>
+        </PressableScale>
       </View>
     </View>
   );

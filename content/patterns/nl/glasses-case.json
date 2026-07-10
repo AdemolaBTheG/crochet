@@ -1,0 +1,52 @@
+{
+  "title": "Brillenkoker",
+  "description": "Een smalle gehaakte koker die je bril in je tas beschermt en sluit met lus of knoop.",
+  "materials": [
+    "cotton yarn",
+    "4 mm hook",
+    "stitch marker",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "working in rows",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "Een klein nuttig project om op maat te werken en netjes af te werken.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Bril opmeten",
+      "instruction": "Controleer de breedte en hoogte van de bril zodat de koker makkelijk aan en uit gaat."
+    },
+    {
+      "type": "row",
+      "title": "Lichaam haken",
+      "instruction": "Haak een rechthoek die lang genoeg is om te vouwen tot een hoesje met kleine flap.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Vouwen en controleren",
+      "instruction": "Vouw de rechthoek om de bril en controleer de maat vóór je hem sluit."
+    },
+    {
+      "type": "instruction",
+      "title": "Randen sluiten",
+      "instruction": "Werk de zijkanten netjes af zodat de bril beschermd blijft en de koker zijn vorm houdt."
+    },
+    {
+      "type": "instruction",
+      "title": "Sluiting toevoegen",
+      "instruction": "Haak een lus of klein knoopsgat en combineer dit eventueel met een knoop."
+    },
+    {
+      "type": "instruction",
+      "title": "Koker afwerken",
+      "instruction": "Werk de uiteinden weg en test de opening een paar keer voor soepel gebruik."
+    }
+  ]
+}

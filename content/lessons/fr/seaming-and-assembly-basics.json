@@ -1,0 +1,20 @@
+{
+  "title": "Bases des coutures et de l’assemblage",
+  "description": "Assemblez vos pièces au crochet proprement pour un résultat solide, lisse et soigné.",
+  "content": {
+    "summary": "L’assemblage relie des panneaux ou des motifs séparés avec une méthode adaptée à l’élasticité du tissu et au rendu souhaité.",
+    "whyItMatters": "Un assemblage net donne un aspect plus abouti, améliore l’ajustement et aide la pièce à garder sa forme.",
+    "steps": [
+      "Placez les pièces dans la bonne orientation avant de les assembler.",
+      "Alignez coins, fins de rang et nombres de mailles avec des marqueurs.",
+      "Choisissez une méthode adaptée comme le point de surjet, une couture façon matelas, la maille coulée ou une bordure en mailles serrées.",
+      "Assemblez avec une tension régulière pour que la couture soit solide sans devenir rigide.",
+      "Vérifiez souvent l’endroit de l’ouvrage pour garder une couture droite et propre."
+    ],
+    "practice": "Assemblez deux petits échantillons avec deux méthodes différentes pour comparer souplesse, épaisseur et apparence.",
+    "commonMistakes": [
+      "Tordre une pièce avant de la coudre.",
+      "Serrer la couture plus fort que le tissu lui-même."
+    ]
+  }
+}

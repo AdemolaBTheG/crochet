@@ -4,6 +4,7 @@ import {
   projects as projectsTable,
   type Project,
 } from '@/db/schema';
+import { syncCurrentProjectWidgetFromDb } from '@/services/project-widget';
 import { useDbStore } from '@/stores/dbStore';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FlashList, type ListRenderItem } from '@shopify/flash-list';
@@ -211,6 +212,7 @@ export default function ProjectsScreen() {
         .orderBy(desc(projectsTable.updatedAt));
 
       setProjects(rows);
+      await syncCurrentProjectWidgetFromDb(db);
     } finally {
       setIsLoading(false);
     }

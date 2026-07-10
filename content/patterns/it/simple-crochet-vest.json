@@ -1,0 +1,55 @@
+{
+  "title": "Gilet semplice all’uncinetto",
+  "description": "Un gilet morbido da sovrapporre, costruito con pannelli semplici, una leggera sagomatura e una finitura pulita.",
+  "materials": [
+    "filato worsted",
+    "uncinetto da 5 mm",
+    "marcatori di punto",
+    "metro da sarta",
+    "ago da lana",
+    "forbici"
+  ],
+  "skills": [
+    "catenella di base",
+    "maglia alta",
+    "cucitura",
+    "bordi e rifiniture"
+  ],
+  "expectationText": "Un primo progetto di abbigliamento che insegna costruzione a pannelli, controllo della vestibilità e assemblaggio pulito senza sagomature complesse.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Misura e fai un campione",
+      "instruction": "Misura il torace desiderato e lavora un piccolo campione così la larghezza del gilet sarà prevedibile."
+    },
+    {
+      "type": "row",
+      "title": "Pannello dietro",
+      "instruction": "Lavora il pannello dietro in righe fino alla lunghezza del corpo e alla profondità giromanica desiderate.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "row",
+      "title": "Pannelli davanti",
+      "instruction": "Lavora due pannelli davanti uguali controllando che corrispondano al dietro.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Unisci spalle e lati",
+      "instruction": "Cuci prima le spalle e poi chiudi i lati lasciando spazio per i giromanica."
+    },
+    {
+      "type": "instruction",
+      "title": "Aggiungi le rifiniture",
+      "instruction": "Lavora un bordo pulito attorno a scollo, giromanica e apertura davanti per stabilizzare la forma."
+    },
+    {
+      "type": "instruction",
+      "title": "Finitura",
+      "instruction": "Nascondi i fili e blocca leggermente il gilet così i pannelli cadono in modo uniforme."
+    }
+  ]
+}

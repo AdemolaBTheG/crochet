@@ -1,0 +1,53 @@
+{
+  "title": "코바늘 노트북 슬리브",
+  "description": "심플한 플랩이 달려 있어 노트북을 보호하고 가방에도 쉽게 넣을 수 있는 슬리브입니다.",
+  "materials": [
+    "worsted or aran yarn",
+    "5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "foundation chain",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "실측, 탄탄한 원단, 간단한 여밈을 배우기 좋은 실용적인 소품입니다.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "노트북 치수 재기",
+      "instruction": "노트북의 가로, 세로, 두께를 재서 약간의 여유가 있는 사이즈로 맞춥니다."
+    },
+    {
+      "type": "row",
+      "title": "몸판 뜨기",
+      "instruction": "노트북을 감쌀 만큼 넓고 긴 촘촘한 직사각형이나 접는 형태의 본체를 뜹니다.",
+      "counterLabel": "row",
+      "targetCount": 28
+    },
+    {
+      "type": "instruction",
+      "title": "맞춤 확인",
+      "instruction": "노트북에 감싸 보고 마지막 단을 마무리하기 전에 크기를 조정합니다."
+    },
+    {
+      "type": "instruction",
+      "title": "옆면 연결",
+      "instruction": "너무 조이지 않으면서 안정감 있게 옆면을 봉제하거나 빼뜨기로 연결합니다."
+    },
+    {
+      "type": "instruction",
+      "title": "플랩과 여밈 추가",
+      "instruction": "윗부분 플랩을 마무리하고 쉽게 여닫을 수 있는 고리나 단추를 답니다."
+    },
+    {
+      "type": "instruction",
+      "title": "보강하고 마무리",
+      "instruction": "실 끝을 숨기고 솔기를 정리해 가방에 넣고 빼기 편하게 만듭니다."
+    }
+  ]
+}

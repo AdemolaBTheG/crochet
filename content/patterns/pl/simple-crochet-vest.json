@@ -1,0 +1,55 @@
+{
+  "title": "Prosta kamizelka na szydełku",
+  "description": "Luźna kamizelka warstwowa z prostych paneli, lekkiego modelowania i schludnego wykończenia.",
+  "materials": [
+    "włóczka worsted",
+    "szydełko 5 mm",
+    "markery oczek",
+    "miarka",
+    "igła dziewiarska",
+    "nożyczki"
+  ],
+  "skills": [
+    "łańcuszek początkowy",
+    "słupek",
+    "zszywanie",
+    "obramowania i wykończenia"
+  ],
+  "expectationText": "Pierwszy projekt ubraniowy, który uczy pracy z panelami, podstawowego dopasowania i czystego składania bez trudnego modelowania.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Zmierz i wykonaj próbkę",
+      "instruction": "Zmierz docelowy obwód klatki piersiowej i zrób małą próbkę, aby przewidzieć szerokość kamizelki."
+    },
+    {
+      "type": "row",
+      "title": "Tył",
+      "instruction": "Pracuj tylny panel w rzędach, aż osiągnie odpowiednią długość i głębokość pach.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "row",
+      "title": "Przody",
+      "instruction": "Wykonaj dwa pasujące przednie panele i sprawdź, czy zgadzają się z tyłem.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Połącz ramiona i boki",
+      "instruction": "Najpierw zszyj ramiona, a potem zamknij boki, zostawiając miejsce na pachy."
+    },
+    {
+      "type": "instruction",
+      "title": "Dodaj wykończenie",
+      "instruction": "Wykonaj schludny brzeg wokół dekoltu, pach i przedniego otwarcia, aby ustabilizować kształt."
+    },
+    {
+      "type": "instruction",
+      "title": "Wykończ",
+      "instruction": "Schowaj nitki i lekko zblokuj kamizelkę, aby panele ułożyły się równo."
+    }
+  ]
+}

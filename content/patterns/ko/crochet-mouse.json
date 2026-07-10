@@ -1,0 +1,60 @@
+{
+  "title": "크로셰 쥐",
+  "description": "단순한 몸체와 작은 귀를 가진 주머니 크기의 아미구루미 쥐입니다.",
+  "materials": [
+    "DK 원사",
+    "3.5mm 후크",
+    "채우기",
+    "실 바늘",
+    "스티치 마커",
+    "가위"
+  ],
+  "skills": [
+    "매직 링",
+    "싱글 크로셰",
+    "증가",
+    "감소",
+    "작은 부품 조립"
+  ],
+  "expectationText": "둥근 구조, 깔끔한 감소, 작은 기능을 깔끔하게 부착하는 데 집중할 수 있도록 모양을 단순하게 유지하는 작은 장난감.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "본체 시작",
+      "instruction": "마법의 반지를 만들고 첫 번째 스티치를 표시하세요."
+    },
+    {
+      "type": "round",
+      "title": "1 라운드",
+      "instruction": "6개의 싱글 크로셰를 링에 넣습니다.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "증가",
+      "instruction": "몸체가 원하는 너비에 도달할 때까지 균일하게 증가합니다.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "round",
+      "title": "작업",
+      "instruction": "몸 길이를 늘리기 위해 늘리지 않고 여러 라운드를 뜨개질하세요.",
+      "counterLabel": "round",
+      "targetCount": 7
+    },
+    {
+      "type": "round",
+      "title": "감소 및 채우기",
+      "instruction": "마우스를 채우고 거의 닫힐 때까지 꼬리 끝쪽으로 감소합니다.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "귀와 꼬리 추가",
+      "instruction": "두 개의 작은 귀를 꿰매고 체인이나 실 꼬리를 부착합니다."
+    }
+  ]
+}

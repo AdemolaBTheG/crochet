@@ -63,6 +63,7 @@
     }
   },
   "learn": {
+    "sectionTitle": "Lições",
     "toolsSectionTitle": "Ferramentas",
     "lessonLabel": "Lição {{index}}",
     "actions": {
@@ -419,13 +420,13 @@
       "note": "Este é o mesmo ritmo passo a passo guiado que você usará em suas primeiras aulas de Crova."
     },
     "trialOffer": {
-      "title": "Queremos que você experimente o Crova\ngratuitamente",
+      "title": "Queremos que você experimente o Crova",
       "subtitle": "Desbloqueie acesso ilimitado a aulas guiadas, contadores de passos e padrões de projetos — tudo criado para crocheteiros que querem aprender mais rápido.",
       "featureOne": "Acesso ilimitado a todas as aulas",
       "featureTwo": "Acompanhe cada carreira, ponto e projeto",
       "featureThree": "Siga padrões guiados passo a passo",
-      "cta": "Começar teste grátis",
-      "footer": "Sem compromisso. Cancele a qualquer momento antes do fim do teste."
+      "cta": "Continuar",
+      "footer": "Cancele a qualquer momento."
     },
     "dailyGoal": {
       "stepOf": "Etapa {{current}} de {{total}}",
@@ -463,10 +464,14 @@
       }
     }
   },
+  "stats": {
+    "streak": "{{count}} day streak"
+  },
   "goals": {
     "dailyCraftingGoal": "Meta diária de crochê",
     "dailyProgressTime": "{{completed}} min de {{target}} min",
     "yearlyProjectGoal": "Meta de projetos de {{year}}",
+    "yearlyProgress": "{{completed}} de {{target}} projetos",
     "yearlyProgress_one": "1 de {{target}} projeto",
     "yearlyProgress_other": "{{completed}} de {{target}} projetos",
     "remainingHint": "Faltam {{remaining}} – cerca de {{pace}} por mês."
@@ -530,6 +535,56 @@
         "saving": "Salvando projeto...",
         "save": "Salvar e abrir projeto"
       }
+    }
+  },
+  "folders": {
+    "title": "Pastas",
+    "addButton": "Adicionar",
+    "empty": {
+      "title": "Nenhuma pasta ainda",
+      "subtitle": "Crie sua primeira pasta para agrupar padrões por projeto, lista de presentes ou coleção."
+    },
+    "patternCount_one": "{{count}} padrão",
+    "patternCount_other": "{{count}} padrões",
+    "accessibility": {
+      "addFolder": "Criar pasta",
+      "folderTile": "{{name}}, {{count}} {{countLabel}}"
+    },
+    "detail": {
+      "fallbackTitle": "Pasta",
+      "searchPlaceholder": "Buscar padrões",
+      "patternCount_one": "{{count}} padrão",
+      "patternCount_other": "{{count}} padrões",
+      "emptyTitle": "Nenhum padrão nesta pasta ainda",
+      "emptySubtitle": "Adicione padrões a esta pasta para vê-los aqui.",
+      "emptySearchTitle": "Nenhum resultado nesta pasta",
+      "emptySearchSubtitle": "Tente outro termo de busca.",
+      "accessibility": {
+        "openPattern": "Abrir padrão {{title}}",
+        "unlockPattern": "Desbloquear padrão {{title}}"
+      }
+    },
+    "create": {
+      "title": "Criar pasta",
+      "back": "Voltar",
+      "color": "Cor",
+      "colorLabel": "Cor da pasta",
+      "nameLabel": "Nome da pasta",
+      "namePlaceholder": "Ideias de presente",
+      "creating": "Criando…",
+      "submit": "Criar pasta",
+      "errorTitle": "Não foi possível criar a pasta",
+      "errorMessage": "Tente novamente."
+    }
+  },
+  "addToFolder": {
+    "title": "Adicionar à pasta",
+    "done": "Concluído",
+    "patternCount_one": "{{count}} padrão",
+    "patternCount_other": "{{count}} padrões",
+    "empty": {
+      "title": "Nenhuma pasta ainda",
+      "subtitle": "Crie uma pasta primeiro para organizar seus padrões."
     }
   }
 }

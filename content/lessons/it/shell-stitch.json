@@ -1,0 +1,20 @@
+{
+  "title": "Punto conchiglia",
+  "description": "Crea una morbida forma a ventaglio raggruppando i punti nello stesso spazio.",
+  "content": {
+    "summary": "Un guscio è solitamente composto da diverse maglie alte lavorate in un punto o arco di catenelle, seguite da un salto o un punto di ancoraggio.",
+    "whyItMatters": "Il punto conchiglia introduce la logica dei punti raggruppati e ti insegna a leggere forme decorative ripetute.",
+    "steps": [
+      "Identifica il punto o lo spazio a cui appartiene la conchiglia.",
+      "Lavora il numero richiesto di maglie alte nello stesso punto.",
+      "Conta l'intero guscio prima di proseguire.",
+      "Salta o ancora i punti esattamente come indicato nel modello.",
+      "Ripeti il ​​ritmo della spaziatura delle conchiglie su tutta la riga."
+    ],
+    "practice": "Lavora un breve campione con ripetizioni di 3 shell in modo da poter vedere la forma a ventaglio aperta.",
+    "commonMistakes": [
+      "Perdita del conteggio all'interno della shell e resa irregolare.",
+      "Saltare il numero sbagliato di punti tra i gusci."
+    ]
+  }
+}

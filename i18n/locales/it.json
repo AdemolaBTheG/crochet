@@ -63,6 +63,7 @@
     }
   },
   "learn": {
+    "sectionTitle": "Lezioni",
     "toolsSectionTitle": "Utensili",
     "lessonLabel": "Lezione {{index}}",
     "actions": {
@@ -419,13 +420,13 @@
       "note": "Questo è lo stesso ritmo guidato, passo dopo passo, che utilizzerai nelle tue prime lezioni con Crova."
     },
     "trialOffer": {
-      "title": "Vogliamo che tu provi Crova\ngratuitamente",
+      "title": "Vogliamo che tu provi Crova",
       "subtitle": "Sblocca l'accesso illimitato a lezioni guidate, contapassi e modelli di progetti — tutto pensato per chi lavora all'uncinetto e vuole imparare più velocemente.",
       "featureOne": "Accesso illimitato a tutte le lezioni",
       "featureTwo": "Tieni traccia di ogni riga, punto e progetto",
       "featureThree": "Segui modelli guidati passo dopo passo",
-      "cta": "Inizia la prova gratuita",
-      "footer": "Nessun impegno. Annulla in qualsiasi momento prima della fine della prova."
+      "cta": "Continua",
+      "footer": "Annulla in qualsiasi momento."
     },
     "dailyGoal": {
       "stepOf": "Passo {{current}} di {{total}}",
@@ -463,10 +464,14 @@
       }
     }
   },
+  "stats": {
+    "streak": "{{count}} day streak"
+  },
   "goals": {
     "dailyCraftingGoal": "Obiettivo quotidiano di uncinetto",
     "dailyProgressTime": "{{completed}} min di {{target}} min",
     "yearlyProjectGoal": "Obiettivo progetti {{year}}",
+    "yearlyProgress": "{{completed}} di {{target}} progetti",
     "yearlyProgress_one": "1 di {{target}} progetto",
     "yearlyProgress_other": "{{completed}} di {{target}} progetti",
     "remainingHint": "Ancora {{remaining}} da fare – circa {{pace}} al mese."
@@ -530,6 +535,56 @@
         "saving": "Salvataggio progetto...",
         "save": "Salva e apri progetto"
       }
+    }
+  },
+  "folders": {
+    "title": "Cartelle",
+    "addButton": "Aggiungi",
+    "empty": {
+      "title": "Nessuna cartella",
+      "subtitle": "Crea la tua prima cartella per raggruppare i modelli per progetto, lista regali o collezione."
+    },
+    "patternCount_one": "{{count}} modello",
+    "patternCount_other": "{{count}} modelli",
+    "accessibility": {
+      "addFolder": "Crea cartella",
+      "folderTile": "{{name}}, {{count}} {{countLabel}}"
+    },
+    "detail": {
+      "fallbackTitle": "Cartella",
+      "searchPlaceholder": "Cerca modelli",
+      "patternCount_one": "{{count}} modello",
+      "patternCount_other": "{{count}} modelli",
+      "emptyTitle": "Nessun modello in questa cartella",
+      "emptySubtitle": "Aggiungi modelli a questa cartella per vederli qui.",
+      "emptySearchTitle": "Nessun risultato in questa cartella",
+      "emptySearchSubtitle": "Prova un altro termine di ricerca.",
+      "accessibility": {
+        "openPattern": "Apri modello {{title}}",
+        "unlockPattern": "Sblocca modello {{title}}"
+      }
+    },
+    "create": {
+      "title": "Crea cartella",
+      "back": "Indietro",
+      "color": "Colore",
+      "colorLabel": "Colore cartella",
+      "nameLabel": "Nome cartella",
+      "namePlaceholder": "Idee regalo",
+      "creating": "Creazione…",
+      "submit": "Crea cartella",
+      "errorTitle": "Impossibile creare la cartella",
+      "errorMessage": "Riprova."
+    }
+  },
+  "addToFolder": {
+    "title": "Aggiungi a cartella",
+    "done": "Fatto",
+    "patternCount_one": "{{count}} modello",
+    "patternCount_other": "{{count}} modelli",
+    "empty": {
+      "title": "Nessuna cartella",
+      "subtitle": "Crea prima una cartella per organizzare i tuoi modelli."
     }
   }
 }

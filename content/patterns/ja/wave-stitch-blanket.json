@@ -1,0 +1,51 @@
+{
+  "title": "ウェーブ ステッチ ブランケット",
+  "description": "各列に緩やかな山と谷を作り出す、繰り返しのブランケット パターン。",
+  "materials": [
+    "梳毛糸",
+    "5 mm フック",
+    "ステッチマーカー",
+    "糸針",
+    "ハサミ"
+  ],
+  "skills": [
+    "ダブルかぎ針編み",
+    "増加",
+    "減少",
+    "リピート数のカウント"
+  ],
+  "expectationText": "より長い繰り返しプロジェクトでは、波が均一で認識できるように増減のバランスを保つことが重要なスキルとなります。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "基礎チェーンを作成します",
+      "instruction": "ウェーブリピートと回転ステッチに必要な倍数で基礎チェーンを作成します。"
+    },
+    {
+      "type": "row",
+      "title": "行 1",
+      "instruction": "セットアップ行を作業し、1 つの完全な繰り返しをマークして、リズムを早い段階でチェックできるようにします。",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "行 2",
+      "instruction": "波形に応じて山で増加し、谷で減少します。",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "ウェーブを繰り返します",
+      "instruction": "ブランケットがお好みの長さに達するまでウェーブを繰り返します。",
+      "counterLabel": "row",
+      "targetCount": 20
+    },
+    {
+      "type": "instruction",
+      "title": "最後のエッジを仕上げる",
+      "instruction": "仕上げる前に、単純な境界線または最後の行を加工して上端を安定させます。"
+    }
+  ]
+}

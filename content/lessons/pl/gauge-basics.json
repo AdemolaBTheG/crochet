@@ -1,0 +1,20 @@
+{
+  "title": "Podstawy miernika",
+  "description": "Dowiedz się, jak liczba ściegów i rzędów wpływa na dopasowanie, rozmiar i końcowy sukces projektu.",
+  "content": {
+    "summary": "Miernik to liczba oczek i rzędów uzyskanych na mierzonym obszarze przy użyciu określonej włóczki, szydełka i naprężenia.",
+    "whyItMatters": "Grubość sprawia, że ​​czapka pasuje, rozmiar swetra jest prawidłowy, a wymiary koca są zbliżone do wymiarów wzoru.",
+    "steps": [
+      "Przeczytaj uwagę dotyczącą wzorca wzorca przed rozpoczęciem.",
+      "Utwórz próbkę wystarczająco dużą, aby dokładnie zmierzyć środkowy obszar.",
+      "Policz oczka i rzędy w tej samej zmierzonej części, której używa wzór.",
+      "Jeśli wskaźnik nie działa, zmień rozmiar szydełka przed rozpoczęciem projektu.",
+      "Sprawdź ponownie miernik po umyciu lub zablokowaniu, jeśli w projekcie zależy od rozmiaru."
+    ],
+    "practice": "Zrób jedną próbkę w swoim normalnym rozmiarze szydełka, a następnie jedną o większym lub mniejszym rozmiarze i porównaj.",
+    "commonMistakes": [
+      "Pomiar zewnętrznej krawędzi próbki zamiast środka.",
+      "Ignorowanie skrajni rzędów, gdy kształt projektu zależy od wysokości."
+    ]
+  }
+}

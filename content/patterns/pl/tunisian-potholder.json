@@ -1,0 +1,50 @@
+{
+  "title": "Tunezyjski uchwyt na garnki",
+  "description": "Zwarty kwadratowy projekt wprowadzający rytm tunezyjskiego szydełka.",
+  "materials": [
+    "przędza bawełniana",
+    "Hak tunezyjski 6 mm",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "łańcuszek podstawowy",
+    "Ścieg prosty tunezyjski",
+    "podanie powrotne",
+    "liczenie pętli"
+  ],
+  "expectationText": "Kompaktowy kwadrat, który pomaga uczyć się podań w przód i w tył, jednocześnie utrzymując pętle krawędziowe widoczne i równe między rzędami.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Szerokość łańcuszka",
+      "instruction": "Utwórz łańcuszek podstawowy odpowiadający szerokości, jaką chcesz mieć dla uchwytu na doniczkę."
+    },
+    {
+      "type": "row",
+      "title": "Podanie w przód",
+      "instruction": "Pociągnij jedną pętlę w każdym łańcuszku i zostaw je na haczyku.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Przeróbka powrotna",
+      "instruction": "Przerobić narzut i zamknąć pętelki zgodnie z tunezyjską sekwencją powrotną.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Zbuduj tkaninę",
+      "instruction": "Powtarzaj przejścia do przodu i do tyłu, aż element stanie się kwadratowy.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Zakończ",
+      "instruction": "Za pomocą prostego zamknięcia wzdłuż górnej krawędzi, następnie zakończ i splot na końcach."
+    }
+  ]
+}

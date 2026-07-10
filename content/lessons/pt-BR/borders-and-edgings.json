@@ -1,0 +1,20 @@
+{
+  "title": "Bordas e acabamentos",
+  "description": "Adicione uma borda final limpa que organiza a forma, emoldura a peça e dá um aspecto mais acabado.",
+  "content": {
+    "summary": "Bordas e acabamentos são carreiras ou voltas extras ao redor do projeto para estabilizar as laterais ou acrescentar um detalhe decorativo.",
+    "whyItMatters": "Uma borda simples pode esconder laterais irregulares, ajudar os cantos a assentarem melhor e deixar a peça com aparência mais completa.",
+    "steps": [
+      "Decida se o projeto precisa de uma borda simples de estabilização ou de um acabamento decorativo.",
+      "Distribua os pontos de forma uniforme nas laterais para que a borda não ondue nem repuxe.",
+      "Use marcadores nos cantos para lembrar de aumentos, correntes ou pontos especiais.",
+      "Faça primeiro uma volta base bem organizada se a borda do projeto estiver irregular.",
+      "Bloqueie ou acomode a peça depois do acabamento se quiser que a borda fique mais reta."
+    ],
+    "practice": "Faça uma volta de ponto baixo em uma amostra e depois acrescente uma segunda volta decorativa para comparar o efeito.",
+    "commonMistakes": [
+      "Colocar pontos demais nas laterais e criar ondas.",
+      "Esquecer os aumentos dos cantos e fazer a borda curvar para dentro."
+    ]
+  }
+}

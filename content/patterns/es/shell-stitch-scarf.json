@@ -1,0 +1,50 @@
+{
+  "title": "Bufanda en punto concha",
+  "description": "Una bufanda drapeada confeccionada con motivos de conchas repetidos para darle textura sin formas complicadas.",
+  "materials": [
+    "hilo de estambre ligero",
+    "ganchillo de 5 mm",
+    "aguja lanera",
+    "tijeras"
+  ],
+  "skills": [
+    "cadena base",
+    "punto alto",
+    "punto concha",
+    "contar repeticiones"
+  ],
+  "expectationText": "Un proyecto de repetición relajante donde el desafío es mantener ordenado el espaciado de las conchas y crear un ritmo que se mantenga constante en filas largas.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Encadena la base",
+      "instruction": "Haz una cadena de base en un múltiplo que se ajuste a la repetición de tu caparazón y al ancho de la bufanda."
+    },
+    {
+      "type": "row",
+      "title": "Fila 1",
+      "instruction": "Trabaja la fila de configuración que crea espacios de anclaje para las conchas.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Fila 2",
+      "instruction": "Teje las conchas en cada espacio de anclaje, manteniendo el mismo número de puntadas en cada concha.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Repite el patrón",
+      "instruction": "Alterna la fila de configuración y la fila de concha hasta que la bufanda alcance tu largo preferido.",
+      "counterLabel": "row",
+      "targetCount": 16
+    },
+    {
+      "type": "instruction",
+      "title": "Termina el borde",
+      "instruction": "Agrega una fila o borde final si es necesario, luego remata y teje los extremos."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "title": "Enkel mössa",
+  "description": "Ett enkelt hattmönster som fokuserar på passform, ribb och ren finish.",
+  "materials": [
+    "kamgarn",
+    "5 mm krok",
+    "stygnmarkör",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "grundkedja",
+    "enkelvirkad",
+    "bakre ögla endast ribb",
+    "sömmar"
+  ],
+  "expectationText": "En pålitlig första mössa som hjälper dig att träna på att mäta huvudets passform, upprepa rader konsekvent och prydligt montera ihop ett bärbart projekt.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Kedja höjden",
+      "instruction": "Kedja det antal stygn som behövs för mössans höjd, inte huvudets omkrets."
+    },
+    {
+      "type": "row",
+      "title": "rad 1",
+      "instruction": "Arbeta tvärs över kedjan och etablera kanten på ribbpanelen.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Bygg ribban",
+      "instruction": "Arbeta bakre öglan endast rader tills panelen sveper sig bekvämt runt huvudet.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Sätt ihop sömmen",
+      "instruction": "Sätt ihop kortändarna så att panelen blir ett rör."
+    },
+    {
+      "type": "instruction",
+      "title": "Stäng kronan",
+      "instruction": "Samla den övre kanten stängd med garn, dra åt och fäst den väl."
+    },
+    {
+      "type": "instruction",
+      "title": "Avsluta",
+      "instruction": "Vänd hatten rät ut och väv in de sista ändarna."
+    }
+  ]
+}

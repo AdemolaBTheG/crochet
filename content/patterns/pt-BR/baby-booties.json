@@ -1,0 +1,56 @@
+{
+  "title": "Sapatinhos de bebê",
+  "description": "Sapatinhos macios e pequenos para praticar sola, laterais e um fechamento de bico bem-feito.",
+  "materials": [
+    "fio DK ou worsted leve",
+    "agulha de crochê de 4 mm",
+    "marcador de ponto",
+    "agulha de tapeçaria",
+    "tesoura"
+  ],
+  "skills": [
+    "trabalho em voltas",
+    "ponto baixo",
+    "aumentos e diminuições",
+    "ponto baixíssimo e união"
+  ],
+  "expectationText": "Um projeto compacto de bebê que mostra como uma sola plana se transforma em uma peça tridimensional para vestir.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Faça a sola",
+      "instruction": "Monte a corrente de base e forme uma sola oval com aumentos nas duas extremidades."
+    },
+    {
+      "type": "round",
+      "title": "Suba as laterais",
+      "instruction": "Trabalhe voltas uniformes ao redor da sola para que o tecido comece a subir.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Modele o bico",
+      "instruction": "Faça diminuições na parte da frente para arredondar o bico sem achatar o calcanhar.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Crie a abertura e o cano",
+      "instruction": "Trabalhe voltas ou carreiras curtas para definir a abertura do tornozelo e um acabamento macio.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Faça o segundo sapatinho",
+      "instruction": "Conte com atenção para que o segundo sapatinho combine com o primeiro."
+    },
+    {
+      "type": "instruction",
+      "title": "Finalize",
+      "instruction": "Esconda bem os fios e modele os dois sapatinhos com delicadeza."
+    }
+  ]
+}

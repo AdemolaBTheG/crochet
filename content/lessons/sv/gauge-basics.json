@@ -1,0 +1,20 @@
+{
+  "title": "Grundläggande mätare",
+  "description": "Förstå hur antalet stygn och rader påverkar passform, storlek och framgång i slutprojektet.",
+  "content": {
+    "summary": "Mätstyrkan är antalet maskor och rader du får i ett uppmätt område med ett specifikt garn, krok och spänning.",
+    "whyItMatters": "Gauge är det som gör att en hatt passar, en tröja i rätt storlek och en filt blir nära mönstret.",
+    "steps": [
+      "Läs mönstermätaranteckningen innan du börjar.",
+      "Gör en provbit som är tillräckligt stor för att mäta mittområdet exakt.",
+      "Räkna maskor och varv över samma uppmätta avsnitt som mönstret använder.",
+      "Om din mätare är avstängd, ändra krokstorlek innan du startar projektet.",
+      "Kontrollera mätaren igen efter tvätt eller blockering om projektet är storlekskänsligt."
+    ],
+    "practice": "Gör en swatch i din normala krokstorlek, sedan en med en storlek upp eller ner och jämför.",
+    "commonMistakes": [
+      "Mätning av den yttre kanten av en färgruta istället för mitten.",
+      "Ignorerar radmått när projektformen beror på höjden."
+    ]
+  }
+}

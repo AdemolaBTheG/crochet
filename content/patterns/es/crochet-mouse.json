@@ -1,0 +1,60 @@
+{
+  "title": "Ratón de crochet",
+  "description": "Un ratón amigurumi de bolsillo con cuerpo sencillo y orejas diminutas.",
+  "materials": [
+    "Hilo DK",
+    "ganchillo de 3,5 mm",
+    "relleno",
+    "aguja lanera",
+    "marcador de punto",
+    "tijeras"
+  ],
+  "skills": [
+    "anillo mágico",
+    "punto bajo",
+    "aumento",
+    "disminución",
+    "ensamblaje de piezas pequeñas"
+  ],
+  "expectationText": "Un juguete pequeño que mantiene la forma simple para que puedas concentrarte en la estructura redonda, las disminuciones prolijas y la fijación de detalles pequeños de manera limpia.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Iniciar el cuerpo",
+      "instruction": "Haz un anillo mágico y marca el primer punto."
+    },
+    {
+      "type": "round",
+      "title": "Ronda 1",
+      "instruction": "Teje 6 puntos bajos en el anillo.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Aumentar",
+      "instruction": "Aumentar uniformemente hasta que el cuerpo alcance el ancho deseado.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "round",
+      "title": "Tejer uniformemente",
+      "instruction": "Tejer varias vueltas sin aumentar para construir el largo del cuerpo.",
+      "counterLabel": "round",
+      "targetCount": 7
+    },
+    {
+      "type": "round",
+      "title": "Disminuir y rellenar",
+      "instruction": "Rellenar el ratón y disminuir hacia el final hasta casi cerrar.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Añade orejas y cola",
+      "instruction": "Cose dos orejas pequeñas y coloca una cadena o una cola de hilo."
+    }
+  ]
+}

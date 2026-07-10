@@ -1,0 +1,20 @@
+{
+  "title": "Shell Stitch",
+  "description": "Create a soft fan shape by grouping stitches into the same space.",
+  "content": {
+    "summary": "A shell is usually several tall stitches worked into one stitch or chain space, followed by a skip or anchor stitch.",
+    "whyItMatters": "Shell stitch introduces grouped stitch logic and teaches you to read repeated decorative shapes.",
+    "steps": [
+      "Identify the stitch or space where the shell belongs.",
+      "Work the required number of tall stitches into that same spot.",
+      "Count the full shell before moving on.",
+      "Skip or anchor stitches exactly as the pattern says.",
+      "Repeat the shell spacing rhythm across the row."
+    ],
+    "practice": "Work a short swatch with 3-shell repeats so you can see the fan shape open up.",
+    "commonMistakes": [
+      "Losing count inside the shell and making it uneven.",
+      "Skipping the wrong number of stitches between shells."
+    ]
+  }
+}

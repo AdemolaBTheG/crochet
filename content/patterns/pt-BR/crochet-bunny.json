@@ -1,0 +1,60 @@
+{
+  "title": "Coelho de crochê",
+  "description": "Um peluche simples com corpo arredondado, orelhas compridas e detalhes faciais costurados.",
+  "materials": [
+    "DK ou fio penteado",
+    "agulha de 3,5 a 4 mm",
+    "recheio",
+    "agulha de fio",
+    "marcador de ponto",
+    "tesoura"
+  ],
+  "skills": [
+    "anel mágico",
+    "ponto baixo",
+    "aumentos",
+    "diminuições",
+    "montagem de amigurumi"
+  ],
+  "expectationText": "Um projeto de amigurumi suave que ensina você a modelar partes básicas do corpo, enchê-las uniformemente e montar um personagem simples de forma limpa.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Inicie o corpo",
+      "instruction": "Comece com um anel mágico e coloque um marcador para acompanhar cada rodada."
+    },
+    {
+      "type": "round",
+      "title": "Rodada 1",
+      "instruction": "Tricotar 6 pontos baixos no anel.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Aumente para modelar",
+      "instruction": "Aumente uniformemente nas próximas rodadas até que o corpo atinja o ponto mais largo.",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "round",
+      "title": "Trabalhe uniformemente",
+      "instruction": "Faça várias voltas sem aumentos para aumentar a altura antes de rechear levemente.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Diminua para fechar",
+      "instruction": "Use diminuições invisíveis para afunilar a parte superior e fechar o corpo depois de encher com firmeza.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Adicione orelhas e rosto",
+      "instruction": "Crochete duas orelhas simples, costure-as e costure os olhos e o nariz."
+    }
+  ]
+}

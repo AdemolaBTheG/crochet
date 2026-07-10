@@ -1,0 +1,20 @@
+{
+  "title": "Punto alto triple",
+  "description": "Aprenda una puntada alta que construye tejido rápidamente para bufandas abiertas, abrigos y repeticiones de encaje.",
+  "content": {
+    "summary": "Teje dos lazadas antes de insertar el ganchillo, luego teje dos bucles a la vez hasta que quede un bucle.",
+    "whyItMatters": "El crochet alto agrega altura rápidamente, abre la tela y te ayuda a comprender la estructura de puntada más alta.",
+    "steps": [
+      "Tejer dos veces.",
+      "Inserta el ganchillo en el siguiente punto y levanta un bucle.",
+      "Tejer y pasar los primeros 2 bucles.",
+      "Tejer y pasar los siguientes 2 bucles.",
+      "Tejer y pasar los últimos 2 bucles."
+    ],
+    "practice": "Trabajar 2 hileras de 12 puntos altos y comparar la altura con el punto alto.",
+    "commonMistakes": [
+      "Olvidar la segunda lazada antes de insertar el ganchillo.",
+      "Tirar demasiado de la puntada para que los bucles altos colapsen."
+    ]
+  }
+}

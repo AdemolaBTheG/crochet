@@ -1,0 +1,51 @@
+{
+  "title": "Koc ze ściegiem falowanym",
+  "description": "Powtarzający się wzór koca, który tworzy delikatne szczyty i doliny w każdym rzędzie.",
+  "materials": [
+    "przędza czesankowa",
+    "haczyk 5 mm",
+    "znaczniki ściegów",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "szydełko podwójne",
+    "zwiększanie",
+    "zmniejszanie",
+    "liczenie powtórzeń"
+  ],
+  "expectationText": "Dłuższy, powtarzalny projekt, w którym kluczową umiejętnością jest utrzymywanie równowagi między wzrostami i spadkami, aby fale pozostały równe i rozpoznawalne.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Łańcuch fundamentowy",
+      "instruction": "Wykonaj łańcuch fundamentowy w liczbie wymaganej do powtórzenia fali plus oczka zwrotne."
+    },
+    {
+      "type": "row",
+      "title": "wiersz 1",
+      "instruction": "Wykonaj rząd przygotowawczy i zaznacz jedno pełne powtórzenie, abyś mógł wcześniej sprawdzić swój rytm.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Rząd 2",
+      "instruction": "Wzrost na szczytach i spadek w dolinach, zgodnie z układem fal.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Powtórz falę",
+      "instruction": "Kontynuuj rzędy fal, aż koc osiągnie preferowaną długość.",
+      "counterLabel": "row",
+      "targetCount": 20
+    },
+    {
+      "type": "instruction",
+      "title": "Zakończ ostatnią krawędź",
+      "instruction": "Wykonaj proste obramowanie lub ostatni rząd, aby zabezpieczyć górną krawędź przed zakończeniem."
+    }
+  ]
+}

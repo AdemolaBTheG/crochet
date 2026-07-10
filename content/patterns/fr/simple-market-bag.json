@@ -1,0 +1,58 @@
+{
+  "title": "Sac de marché simple",
+  "description": "Un sac léger de tous les jours avec une base robuste et un corps en maille ouverte.",
+  "materials": [
+    "fil de coton",
+    "crochet de 5 mm",
+    "marqueur de maille",
+    "aiguille à fil",
+    "ciseaux"
+  ],
+  "skills": [
+    "chaîne de fondation",
+    "maille serrée",
+    "chaînes",
+    "travailler en rond"
+  ],
+  "expectationText": "Un projet de sac utile qui mélange une structure solide et une maille ouverte afin que vous puissiez vous entraîner à passer de rangées denses à des tours répétés aérés.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Construire la base",
+      "instruction": "Créez une base ovale ou rectangulaire en utilisant des chaînes et des augmentations en mailles serrées autour des extrémités."
+    },
+    {
+      "type": "round",
+      "title": "Tour 1",
+      "instruction": "Réalisez le premier tour uniformément autour de la base et placez un marqueur au début.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Renforcez le bord de base.",
+      "instruction": "Crochetez un ou deux tours sans augmentation pour rendre le bas plus stable.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Démarrez le corps du maillage.",
+      "instruction": "Alternez les espaces de chaînette et les points d'ancrage pour créer un motif de maillage ouvert.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "round",
+      "title": "Ajoutez des sangles",
+      "instruction": "Enchaînez les ouvertures des longues poignées et renforcez-les avec un tour de points supplémentaire.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Terminer",
+      "instruction": "Attachez après le tour de la sangle et rentrez solidement les extrémités."
+    }
+  ]
+}

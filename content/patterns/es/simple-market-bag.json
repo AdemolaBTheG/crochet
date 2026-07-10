@@ -1,0 +1,58 @@
+{
+  "title": "Bolsa de mercado sencilla",
+  "description": "Un bolso diario liviano con una base resistente y un cuerpo de malla abierto.",
+  "materials": [
+    "hilo de algodón",
+    "ganchillo de 5 mm",
+    "marcador de punto",
+    "aguja lanera",
+    "tijeras"
+  ],
+  "skills": [
+    "cadena base",
+    "punto bajo",
+    "cadenas",
+    "trabajo en redondo"
+  ],
+  "expectationText": "Un proyecto de bolso útil que combina una estructura sólida y una malla abierta para que puedas practicar el cambio de filas densas a vueltas repetidas y aireadas.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Construye la base",
+      "instruction": "Crea una base ovalada o rectangular usando cadenas y aumentos de puntos bajos alrededor de los extremos."
+    },
+    {
+      "type": "round",
+      "title": "Ronda 1",
+      "instruction": "Trabaja la primera vuelta de manera uniforme alrededor de la base y coloca un marcador al inicio.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Fortalece el borde de la base",
+      "instruction": "Punto bajo una o dos vueltas sin aumentos para hacer la parte inferior más estable.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Comienza el cuerpo de malla",
+      "instruction": "Alterne espacios de cadeneta y puntadas de ancla para crear un patrón de malla abierto.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "round",
+      "title": "Agrega asas",
+      "instruction": "Encadena las aberturas del asa larga y refuérzalas con una ronda más de puntos.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Termina",
+      "instruction": "Rematar después de la vuelta de tiras y tejer los extremos de forma segura."
+    }
+  ]
+}

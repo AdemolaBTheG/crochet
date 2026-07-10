@@ -1,0 +1,53 @@
+{
+  "title": "ノートパソコン用スリーブ",
+  "description": "シンプルなフラップ付きで、パソコンを守りながらバッグにも入れやすいスリーブです。",
+  "materials": [
+    "worsted or aran yarn",
+    "5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "foundation chain",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "実寸で測り、しっかりした編み地と簡単な留め具を学べる実用アクセサリーです。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "パソコンを測る",
+      "instruction": "幅、高さ、厚みを測って、少しゆとりのあるサイズにします。"
+    },
+    {
+      "type": "row",
+      "title": "本体を編む",
+      "instruction": "十分な幅と長さのある、しっかりした長方形または折りたたみ式の本体を編みます.",
+      "counterLabel": "row",
+      "targetCount": 28
+    },
+    {
+      "type": "instruction",
+      "title": "サイズ確認",
+      "instruction": "パソコンに巻いてみて、最後の段を編み終える前に調整します。"
+    },
+    {
+      "type": "instruction",
+      "title": "脇を閉じる",
+      "instruction": "きつすぎず安心感が出るように、脇をとじるか引き抜きで閉じます。"
+    },
+    {
+      "type": "instruction",
+      "title": "フラップと留め具を付ける",
+      "instruction": "上のフラップを仕上げ、開け閉めしやすいループやボタンを付けます。"
+    },
+    {
+      "type": "instruction",
+      "title": "仕上げる",
+      "instruction": "糸始末をし、縫い目を整えてバッグに出し入れしやすくします。"
+    }
+  ]
+}

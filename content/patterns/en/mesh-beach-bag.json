@@ -1,0 +1,15 @@
+{
+  "title": "Mesh Beach Bag",
+  "description": "A roomy openwork tote for towels, yarn, or light everyday carrying.",
+  "materials": ["cotton or raffia yarn", "5.5 mm hook", "stitch marker", "yarn needle", "scissors"],
+  "skills": ["foundation chain", "single crochet", "chains", "strap shaping"],
+  "expectationText": "A larger carry project that focuses on keeping open mesh consistent while still reinforcing the base and handles enough for everyday use.",
+  "steps": [
+    { "type": "instruction", "title": "Make the base", "instruction": "Build a flat oval or rectangle base with a few rounds of firm stitches." },
+    { "type": "round", "title": "Round 1", "instruction": "Work evenly around the base edge and place a marker at the start of the round.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Transition to mesh", "instruction": "Work one steady round before opening into chain-space mesh.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Grow the bag body", "instruction": "Repeat the mesh pattern until the bag reaches a roomy beach-tote height.", "counterLabel": "round", "targetCount": 10 },
+    { "type": "round", "title": "Add handles", "instruction": "Chain handle openings and reinforce them with one or two final rounds.", "counterLabel": "round", "targetCount": 12 },
+    { "type": "instruction", "title": "Finish", "instruction": "Fasten off carefully and weave in ends where they will not snag." }
+  ]
+}

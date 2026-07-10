@@ -1,15 +1,14 @@
-import { FREE_ACTIVE_PROJECT_LIMIT, isPatternFree } from '@/constants/gates';
-import { getPatternImageSource } from '@/constants/pattern-images';
 import { NavigationHeaderAction } from '@/components/navigation-header-action';
 import { PressableScale } from '@/components/pressable-scale';
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
+import { FREE_ACTIVE_PROJECT_LIMIT, isPatternFree } from '@/constants/gates';
+import { getPatternImageSource } from '@/constants/pattern-images';
 import { theme } from '@/constants/Theme';
 import { useSubscription } from '@/context/SubscriptionContext';
-import {
-  projects as projectsTable,
-  type Project,
-} from '@/db/schema';
+import { projects as projectsTable, type Project } from '@/db/schema';
 import { usePatternDetail, type PatternStep } from '@/hooks/use-pattern-detail';
 import { logFirebaseEvent } from '@/services/firebaseAnalytics';
+import { confirm } from '@/services/haptics';
 import { useDbStore } from '@/stores/dbStore';
 import { Host, Button as SwiftUIButton } from '@expo/ui/swift-ui';
 import { buttonStyle, controlSize, disabled, tint } from '@expo/ui/swift-ui/modifiers';
@@ -27,14 +26,7 @@ import {
 import { SymbolView } from 'expo-symbols';
 import React, { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import {
-  Platform,
-  ScrollView,
-  Text,
-  View,
-  useWindowDimensions,
-} from 'react-native';
-import LoadingShimmer from '@/components/shimmer/loading-shimmer';
+import { Alert, Platform, ScrollView, Text, View, useWindowDimensions } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -396,12 +388,9 @@ export default function PatternDetailScreen() {
   const insets = useSafeAreaInsets();
   usePreventZoomTransitionDismissal();
   const { width } = useWindowDimensions();
-  const { db } = useDbStore();
+  const { db, initializeDb } = useDbStore();
   const { isPro } = useSubscription();
-  const { data: pattern, isLoading: isPatternLoading } = usePatternDetail(
-    slug,
-    i18n.language,
-  );
+  const { data: pattern, isLoading: isPatternLoading } = usePatternDetail(slug, i18n.language);
   const [activeProject, setActiveProject] = useState<Project | null>(null);
   const [isLoadingProject, setIsLoadingProject] = useState(true);
   const [isStartingProject, setIsStartingProject] = useState(false);
@@ -417,7 +406,18 @@ export default function PatternDetailScreen() {
     let isMounted = true;
 
     async function loadProject() {
-      if (!db || !pattern) return;
+      if (!pattern) {
+        if (isMounted) setIsLoadingProject(false);
+        return;
+      }
+
+      if (!db) {
+        if (isMounted) {
+          setActiveProject(null);
+          setIsLoadingProject(false);
+        }
+        return;
+      }
 
       setIsLoadingProject(true);
 
@@ -425,12 +425,7 @@ export default function PatternDetailScreen() {
         const projectResult = await db
           .select()
           .from(projectsTable)
-          .where(
-            and(
-              eq(projectsTable.patternId, pattern.id),
-              eq(projectsTable.status, 'active'),
-            ),
-          )
+          .where(and(eq(projectsTable.patternId, pattern.id), eq(projectsTable.status, 'active')))
           .limit(1);
 
         if (isMounted) {
@@ -495,6 +490,23 @@ export default function PatternDetailScreen() {
                 onPress: () => router.back(),
               },
             ],
+            unstable_headerRightItems: () =>
+              pattern
+                ? [
+                    {
+                      type: 'button' as const,
+                      label: t('shared.addToFolder'),
+                      tintColor: theme.colors.primary,
+                      variant: 'prominent',
+                      icon: { type: 'sfSymbol' as const, name: 'folder.badge.plus' },
+                      onPress: () =>
+                        router.push({
+                          pathname: '/addFolder',
+                          params: { patternId: String(pattern.id), patternName: pattern.title },
+                        }),
+                    },
+                  ]
+                : [],
           }
         : {
             headerLeft: () => (
@@ -504,9 +516,22 @@ export default function PatternDetailScreen() {
                 onPress={() => router.back()}
               />
             ),
+            headerRight: () =>
+              pattern ? (
+                <NavigationHeaderAction
+                  label={t('shared.addToFolder')}
+                  icon="folder-plus-outline"
+                  onPress={() =>
+                    router.push({
+                      pathname: '/addFolder',
+                      params: { patternId: String(pattern.id), patternName: pattern.title },
+                    })
+                  }
+                />
+              ) : null,
           }),
     }),
-    [liquidGlassAvailable, pattern?.title, router, t],
+    [liquidGlassAvailable, pattern?.title, router, t, pattern],
   );
   const ctaModifiers = useMemo(
     () => [
@@ -519,7 +544,27 @@ export default function PatternDetailScreen() {
   );
 
   async function handleStartProject() {
-    if (!db || !pattern || isStartingProject) return;
+    confirm();
+    if (!pattern || isStartingProject) return;
+
+    let activeDb = db;
+
+    if (!activeDb) {
+      try {
+        await initializeDb();
+        activeDb = useDbStore.getState().db;
+      } catch (error) {
+        console.warn('Failed to initialize database before starting project', error);
+      }
+    }
+
+    if (!activeDb) {
+      Alert.alert(
+        'Local database unavailable',
+        'Crova could not open its local project database. Please restart the app and try again.',
+      );
+      return;
+    }
 
     if (isPatternLocked) {
       router.push('/(paywalls)');
@@ -532,7 +577,7 @@ export default function PatternDetailScreen() {
       let project = activeProject;
 
       if (!project) {
-        const existingProject = await db
+        const existingProject = await activeDb
           .select()
           .from(projectsTable)
           .where(and(eq(projectsTable.patternId, pattern.id), eq(projectsTable.status, 'active')))
@@ -543,7 +588,7 @@ export default function PatternDetailScreen() {
 
       if (!project) {
         if (!isPro) {
-          const activeProjects = await db
+          const activeProjects = await activeDb
             .select({ id: projectsTable.id })
             .from(projectsTable)
             .where(eq(projectsTable.status, 'active'))
@@ -555,7 +600,7 @@ export default function PatternDetailScreen() {
           }
         }
 
-        const createdProject = await db
+        const createdProject = await activeDb
           .insert(projectsTable)
           .values({
             patternId: pattern.id,
@@ -593,7 +638,9 @@ export default function PatternDetailScreen() {
 
   return (
     <>
-      <Stack.Screen options={stackOptions} />
+      <Stack.Screen
+        options={stackOptions as React.ComponentProps<typeof Stack.Screen>['options']}
+      />
       <View style={{ flex: 1, backgroundColor: theme.colors.background }}>
         <ScrollView
           showsVerticalScrollIndicator={false}
@@ -907,9 +954,7 @@ export default function PatternDetailScreen() {
                   style={{
                     fontSize: theme.size.md,
                     fontWeight: theme.weight.semibold,
-                    color: isStartingProject
-                      ? theme.colors.textTertiary
-                      : theme.colors.white,
+                    color: isStartingProject ? theme.colors.textTertiary : theme.colors.white,
                   }}>
                   {ctaLabel}
                 </Text>

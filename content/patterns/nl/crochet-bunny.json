@@ -1,0 +1,60 @@
+{
+  "title": "Gehaakt konijn",
+  "description": "Een eenvoudig zacht speeltje met een rond lichaam, lange oren en gestikte gezichtsdetails.",
+  "materials": [
+    "DK- of kamgaren",
+    "3,5 tot 4 mm haaknaald",
+    "vulling",
+    "garennaald",
+    "stekenmarkering",
+    "schaar"
+  ],
+  "skills": [
+    "magische ring",
+    "vasten",
+    "meerderen",
+    "minderen",
+    "amigurumi-montage"
+  ],
+  "expectationText": "Een zacht amigurumi-project dat je leert basislichaamsdelen vorm te geven, ze gelijkmatig te vullen en een eenvoudig karakter netjes.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Start het hoofdgedeelte",
+      "instruction": "Begin met een magische ring en plaats een marker om elke ronde te volgen."
+    },
+    {
+      "type": "round",
+      "title": "Toer 1",
+      "instruction": "Haak 6 vasten in de ring.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Meerdering voor vorm",
+      "instruction": "Meerder gelijkmatig over de volgende toeren tot het lijfje het breedste punt bereikt.",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "round",
+      "title": "Werk gelijkmatig",
+      "instruction": "Haak meerdere toeren zonder meerderingen om hoogte op te bouwen voordat je het lichtjes opvult.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Minderen om te sluiten",
+      "instruction": "Gebruik onzichtbare minderingen om de bovenkant taps toe te lopen en het lijfje te sluiten nadat je het stevig hebt gevuld.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Oren en gezicht toevoegen",
+      "instruction": "Haak twee eenvoudige oorstukken, naai ze vast en naai vervolgens de ogen en neus."
+    }
+  ]
+}

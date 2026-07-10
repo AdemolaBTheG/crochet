@@ -1,0 +1,15 @@
+{
+  "title": "Flower Granny Square",
+  "description": "A floral motif square that layers a simple flower center inside a granny-style frame.",
+  "materials": ["two yarn colors", "4.5 mm hook", "yarn needle", "scissors"],
+  "skills": ["magic ring", "cluster stitches", "chain spaces", "working in rounds"],
+  "expectationText": "A motif project that introduces color changes and round-based construction while still ending in a practical square format.",
+  "steps": [
+    { "type": "instruction", "title": "Make the center ring", "instruction": "Start with a magic ring in the flower center color." },
+    { "type": "round", "title": "Round 1", "instruction": "Work the center stitches that anchor the flower petals.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Round 2", "instruction": "Create petal groups evenly around the center.", "counterLabel": "round", "targetCount": 2 },
+    { "type": "round", "title": "Square the motif", "instruction": "Change color and work corner chain spaces so the flower turns into a square.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "round", "title": "Add one more border round", "instruction": "Work evenly around the square to make the edges cleaner and easier to join.", "counterLabel": "round", "targetCount": 4 },
+    { "type": "instruction", "title": "Finish", "instruction": "Fasten off and weave in all color-change ends neatly." }
+  ]
+}

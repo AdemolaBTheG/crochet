@@ -5,7 +5,6 @@ import { theme } from '@/constants/Theme';
 import { cta, tap } from '@/services/haptics';
 import { useOnboardingStore } from '@/stores/onboardingStore';
 import { router, useLocalSearchParams } from 'expo-router';
-import { SymbolView } from 'expo-symbols';
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
@@ -77,20 +76,6 @@ export default function DailyGoalScreen() {
         </Animated.View>
 
         <Animated.View entering={FadeInDown.delay(50).duration(220)} style={styles.hero}>
-          <View style={styles.badge}>
-            <SymbolView
-              name={{
-                ios: 'flame.fill',
-                android: 'local_fire_department',
-                web: 'local_fire_department',
-              }}
-              size={22}
-              weight="semibold"
-              tintColor={theme.colors.primary}
-              fallback={<View style={styles.badgeFallback} />}
-            />
-          </View>
-
           <View style={styles.heroTextWrap}>
             <Text selectable style={styles.title}>
               {t('onboarding.dailyGoal.title')}
@@ -307,13 +292,11 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     color: theme.colors.textSecondary,
-    fontSize: theme.size.lg,
-    lineHeight: 26,
+    fontSize: theme.size.md,
   },
   title: {
     color: theme.colors.textPrimary,
-    fontSize: theme.size['3xl'],
-    fontWeight: theme.weight.bold,
-    lineHeight: 38,
+    fontSize: theme.size['2xl'],
+    fontWeight: theme.weight.semibold,
   },
 });

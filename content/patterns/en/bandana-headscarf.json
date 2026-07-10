@@ -1,0 +1,52 @@
+{
+  "title": "Bandana Headscarf",
+  "description": "A quick triangle scarf with simple increases, soft drape, and ties for an easy fit.",
+  "materials": [
+    "cotton yarn",
+    "4.5 mm hook",
+    "stitch markers",
+    "yarn needle",
+    "scissors"
+  ],
+  "skills": [
+    "foundation chain",
+    "double crochet",
+    "chain spaces and corners",
+    "borders and edgings"
+  ],
+  "expectationText": "A fast accessory project that builds confidence with triangular shaping and polished finishing details.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Start the center top",
+      "instruction": "Begin with a short foundation and place markers so the increase points stay easy to track."
+    },
+    {
+      "type": "row",
+      "title": "Grow the triangle",
+      "instruction": "Work rows with increases at the edges or center so the scarf widens evenly.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Check the fit width",
+      "instruction": "Pause once the long edge reaches the width you want across the head."
+    },
+    {
+      "type": "instruction",
+      "title": "Add the ties",
+      "instruction": "Work narrow tie sections or long chain ties from both corners."
+    },
+    {
+      "type": "instruction",
+      "title": "Add a border",
+      "instruction": "Finish with a neat edge around the triangle and ties to smooth the outline."
+    },
+    {
+      "type": "instruction",
+      "title": "Finish",
+      "instruction": "Weave in the ends and block lightly so the scarf drapes cleanly."
+    }
+  ]
+}

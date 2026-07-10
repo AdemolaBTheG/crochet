@@ -1,0 +1,20 @@
+{
+  "title": "Läsmönsterförkortningar",
+  "description": "Lär dig stenografin som mönster använder så att skrivna instruktioner slutar kännas som kod.",
+  "content": {
+    "summary": "Mönsterförkortningar komprimerar stygnnamn, åtgärder och upprepningar till en kompakt linje som du kan skanna snabbt.",
+    "whyItMatters": "Om du kan avkoda förkortningar kan du följa fler mönster, jämföra designers och gå snabbare genom instruktionerna.",
+    "steps": [
+      "Lär dig först förkortningarna av kärnstygnen: lm, fm, hst, st, st, sm.",
+      "Håll utkik efter actionord som inc, dec, rep och sk.",
+      "Kontrollera om designern använder amerikanska eller brittiska termer innan du börjar.",
+      "Läs en hel rad långsamt och utöka varje förkortning till vanligt språk.",
+      "Markera upprepningar och räkningar innan du virkar varvet."
+    ],
+    "practice": "Ta en kort mönsterlinje och skriv om den i hela ord innan du arbetar med den.",
+    "commonMistakes": [
+      "Blandar brittiska och amerikanska termer i samma projekt.",
+      "Upprepningsparenteser eller parenteser saknas vid snabb läsning."
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Simple Market Bag",
+  "description": "A lightweight everyday bag with a sturdy base and open mesh body.",
+  "materials": ["cotton yarn", "5 mm hook", "stitch marker", "yarn needle", "scissors"],
+  "skills": ["foundation chain", "single crochet", "chains", "working in rounds"],
+  "expectationText": "A useful bag project that mixes solid structure and open mesh so you can practice changing from dense rows into airy repeated rounds.",
+  "steps": [
+    { "type": "instruction", "title": "Build the base", "instruction": "Create an oval or rectangle base using chains and single crochet increases around the ends." },
+    { "type": "round", "title": "Round 1", "instruction": "Work the first round evenly around the base and place a marker at the start.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Strengthen the base edge", "instruction": "Single crochet one or two rounds with no increases to make the bottom more stable.", "counterLabel": "round", "targetCount": 3 },
+    { "type": "round", "title": "Start the mesh body", "instruction": "Alternate chain spaces and anchor stitches to create an open mesh pattern.", "counterLabel": "round", "targetCount": 8 },
+    { "type": "round", "title": "Add straps", "instruction": "Chain long handle openings and reinforce them with one more round of stitches.", "counterLabel": "round", "targetCount": 10 },
+    { "type": "instruction", "title": "Finish", "instruction": "Fasten off after the strap round and weave in the ends securely." }
+  ]
+}

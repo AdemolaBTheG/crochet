@@ -1,0 +1,51 @@
+{
+  "title": "Coperta con punto ondulato",
+  "description": "Un motivo di coperta ripetuto che crea delicati picchi e avvallamenti su ogni riga.",
+  "materials": [
+    "filato pettinato",
+    "uncinetto da 5 mm",
+    "segnapunti",
+    "ago del filo",
+    "forbici"
+  ],
+  "skills": [
+    "maglia alta",
+    "aumento",
+    "diminuendo",
+    "conteggio delle ripetizioni"
+  ],
+  "expectationText": "Un progetto da ripetere più a lungo in cui l'abilità chiave è mantenere gli aumenti e le diminuzioni bilanciati in modo che le onde rimangano uniformi e riconoscibili.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Catena per la fondazione",
+      "instruction": "Crea una catenella per la fondazione nel multiplo richiesto per la ripetizione dell'onda più i punti rotanti."
+    },
+    {
+      "type": "row",
+      "title": "Riga 1",
+      "instruction": "Lavora sulla riga di impostazione e segna una ripetizione completa in modo da poter controllare il ritmo in anticipo.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Riga 2",
+      "instruction": "Aumenta ai picchi e diminuisce alle valli secondo il modello d'onda.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Ripeti l'onda",
+      "instruction": "Continua le righe dell'onda finché la coperta non raggiunge la lunghezza che preferisci.",
+      "counterLabel": "row",
+      "targetCount": 20
+    },
+    {
+      "type": "instruction",
+      "title": "Rifinisci il bordo finale",
+      "instruction": "Lavora un bordo semplice o una riga finale per stabilizzare il bordo superiore prima di finire."
+    }
+  ]
+}

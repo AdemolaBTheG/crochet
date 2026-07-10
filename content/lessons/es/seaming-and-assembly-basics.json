@@ -1,0 +1,20 @@
+{
+  "title": "Conceptos básicos de costura y ensamblaje",
+  "description": "Une piezas de crochet con limpieza para que el proyecto final se sienta firme, suave y bien resuelto.",
+  "content": {
+    "summary": "El ensamblaje une paneles o motivos separados con un método que acompaña la elasticidad y el acabado que buscas.",
+    "whyItMatters": "Una unión limpia hace que los proyectos sencillos se vean más pulidos, mejora el ajuste y ayuda a mantener la forma.",
+    "steps": [
+      "Coloca las piezas en la orientación correcta antes de unir nada.",
+      "Haz coincidir esquinas, finales de fila o conteos de puntos con marcadores.",
+      "Elige un método como costura simple, costura tipo colchón, punto deslizado o un borde en punto bajo.",
+      "Une con tensión uniforme para que la costura quede firme sin volverse rígida.",
+      "Revisa a menudo el derecho del tejido para mantener la costura recta y prolija."
+    ],
+    "practice": "Une dos muestras pequeñas con dos métodos distintos y compara elasticidad, grosor y aspecto.",
+    "commonMistakes": [
+      "Torcer una pieza antes de coserla.",
+      "Apretar la costura más que el propio tejido."
+    ]
+  }
+}

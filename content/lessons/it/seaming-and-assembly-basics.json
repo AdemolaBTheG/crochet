@@ -1,0 +1,20 @@
+{
+  "title": "Basi di cucitura e assemblaggio",
+  "description": "Unisci i pezzi all’uncinetto con cura così il progetto finito risulta solido, liscio e ben rifinito.",
+  "content": {
+    "summary": "L’assemblaggio collega pannelli o motivi separati con un metodo adatto all’elasticità del tessuto e all’effetto desiderato.",
+    "whyItMatters": "Un assemblaggio pulito rende anche i progetti semplici più curati, migliora la vestibilità e aiuta il lavoro a mantenere la forma.",
+    "steps": [
+      "Disponi i pezzi con l’orientamento corretto prima di unirli.",
+      "Allinea angoli, fine riga e conteggi con dei marcatori.",
+      "Scegli un metodo come punto sopraggitto, cucitura tipo materasso, maglia bassissima o bordatura a maglia bassa.",
+      "Unisci con tensione uniforme così la cucitura resta sicura senza irrigidirsi.",
+      "Controlla spesso il diritto del lavoro per mantenere la cucitura dritta e ordinata."
+    ],
+    "practice": "Unisci due piccoli campioni con due metodi diversi e confronta elasticità, spessore e aspetto.",
+    "commonMistakes": [
+      "Girare un pezzo prima di cucirlo.",
+      "Stringere la cucitura più del tessuto stesso."
+    ]
+  }
+}

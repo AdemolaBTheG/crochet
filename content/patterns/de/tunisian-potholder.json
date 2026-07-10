@@ -1,0 +1,50 @@
+{
+  "title": "Tunesischer Topflappen",
+  "description": "Ein dichtes quadratisches Projekt, das den Rhythmus des tunesischen Häkelns vorstellt.",
+  "materials": [
+    "Baumwollgarn",
+    "Tunesische Häkelnadel 6 mm",
+    "Garnnadel",
+    "Schere"
+  ],
+  "skills": [
+    "Grundkette",
+    "Tunesischer einfacher Stich",
+    "Rückpass",
+    "Schlaufen zählen"
+  ],
+  "expectationText": "Ein kompaktes Quadrat, das Ihnen hilft, Vorwärts- und Rückpässe zu lernen und dabei Randschlaufen sichtbar und gleichmäßig von Reihe zu Reihe zu halten.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Verketten Sie die Breite",
+      "instruction": "Erstellen Sie eine Fundamentkette, die der gewünschten Breite für den Topflappen entspricht."
+    },
+    {
+      "type": "row",
+      "title": "Vorwärtspass",
+      "instruction": "Ziehen Sie eine Schlaufe in jeder Kette hoch und lassen Sie sie am Haken.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Rückpass",
+      "instruction": "Den Umschlag umschlagen und die Maschen entsprechend der tunesischen Rückpasssequenz abstricken.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Bauen Sie den Stoff auf",
+      "instruction": "Wiederholen Sie die Vorwärts- und Rückwärtsgänge, bis das Stück quadratisch wird.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Abketten",
+      "instruction": "Verwenden Sie ein einfaches Abketten über die Oberkante, vernähen Sie es dann und verweben Sie die Enden."
+    }
+  ]
+}

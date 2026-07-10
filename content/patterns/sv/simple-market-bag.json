@@ -1,0 +1,58 @@
+{
+  "title": "Simple Market Bag",
+  "description": "En lätt vardagsväska med en robust bas och öppen nätkropp.",
+  "materials": [
+    "bomullsgarn",
+    "5 mm krok",
+    "stygnmarkör",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "grundkedja",
+    "enkelvirkad",
+    "kedjor",
+    "arbeta i varv"
+  ],
+  "expectationText": "Ett användbart påsprojekt som blandar solid struktur och öppet nät så att du kan träna på att byta från täta rader till luftiga upprepade varv.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Bygg basen",
+      "instruction": "Skapa en oval eller rektangelbas med hjälp av kedjor och en virkad ökning runt ändarna."
+    },
+    {
+      "type": "round",
+      "title": "Varv 1",
+      "instruction": "Sticka första varvet jämnt runt basen och sätt en markör i början.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Förstärk baskanten",
+      "instruction": "Enkelvirka ett eller två varv utan ökningar för att göra bottnen mer stabil.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Starta nätkroppen",
+      "instruction": "Alternera kedjemellanrum och ankarsömmar för att skapa ett öppet nätmönster.",
+      "counterLabel": "round",
+      "targetCount": 8
+    },
+    {
+      "type": "round",
+      "title": "Lägg till remmar",
+      "instruction": "Kedja långa handtagsöppningar och förstärk dem med ytterligare en varv stygn.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Avsluta",
+      "instruction": "Fäst av efter bandrundan och väv i ändarna ordentligt."
+    }
+  ]
+}

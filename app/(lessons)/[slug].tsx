@@ -1,20 +1,26 @@
 import { PressableScale } from '@/components/pressable-scale';
+import LoadingShimmer from '@/components/shimmer/loading-shimmer';
 import { theme } from '@/constants/Theme';
 import { isLessonFree } from '@/constants/gates';
 import { useSubscription } from '@/context/SubscriptionContext';
 import { useLessonDetail } from '@/hooks/use-lesson-detail';
-import { tap } from '@/services/haptics';
+import { confirm } from '@/services/haptics';
 import { Host, Button as SwiftUIButton } from '@expo/ui/swift-ui';
 import { buttonStyle, controlSize, tint } from '@expo/ui/swift-ui/modifiers';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
-import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
+import {
+  Stack,
+  useLocalSearchParams,
+  usePreventZoomTransitionDismissal,
+  useRouter,
+} from 'expo-router';
 import { SymbolView } from 'expo-symbols';
 import React, { useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ScrollView, Text, View, useWindowDimensions } from 'react-native';
-import LoadingShimmer from '@/components/shimmer/loading-shimmer';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import YoutubePlayer from 'react-native-youtube-iframe';
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
@@ -175,8 +181,25 @@ function formatDifficulty(
   return map[normalized] ?? difficulty.charAt(0).toUpperCase() + difficulty.slice(1);
 }
 
+function extractYoutubeVideoId(value: string | null | undefined) {
+  if (!value) return null;
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+
+  const directMatch = trimmed.match(/^[\w-]{11}$/);
+  if (directMatch) return directMatch[0];
+
+  const urlMatch =
+    trimmed.match(/[?&]v=([\w-]{11})/) ??
+    trimmed.match(/youtu\.be\/([\w-]{11})/) ??
+    trimmed.match(/embed\/([\w-]{11})/);
+
+  return urlMatch?.[1] ?? null;
+}
+
 export default function LessonDetailScreen() {
   const { t, i18n } = useTranslation();
+  usePreventZoomTransitionDismissal();
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const router = useRouter();
   const { isPro } = useSubscription();
@@ -187,7 +210,9 @@ export default function LessonDetailScreen() {
   const metaGap = theme.spacing.sm;
   const metaCardSize = Math.floor((width - contentPadding * 2 - metaGap * 2) / 3);
   const ctaWidth = Math.min(width - contentPadding * 2, 236);
+  const videoHeight = Math.min(width - contentPadding * 2, 360) * 0.5625;
   const liquidGlassAvailable = useMemo(() => isLiquidGlassAvailable(), []);
+  const youtubeVideoId = lesson?.videoUrl ? extractYoutubeVideoId(lesson.videoUrl) : null;
 
   useEffect(() => {
     if (!lesson || isPro || isLessonFree(lesson)) return;
@@ -240,6 +265,27 @@ export default function LessonDetailScreen() {
 
           {lesson ? (
             <>
+              {youtubeVideoId ? (
+                <View style={{ gap: theme.spacing.sm + 2 }}>
+                  <View
+                    style={{
+                      overflow: 'hidden',
+                      borderRadius: theme.radius.xl,
+                      borderCurve: 'continuous',
+                    }}>
+                    <YoutubePlayer
+                      height={videoHeight}
+                      play={false}
+                      videoId={youtubeVideoId}
+                      initialPlayerParams={{
+                        modestbranding: true,
+                        rel: false,
+                      }}
+                    />
+                  </View>
+                </View>
+              ) : null}
+
               <View style={{ gap: theme.spacing.sm }}>
                 <Text
                   selectable

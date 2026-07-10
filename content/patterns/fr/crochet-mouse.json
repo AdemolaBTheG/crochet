@@ -1,0 +1,60 @@
+{
+  "title": "Souris au crochet",
+  "description": "Une souris amigurumi de poche avec un corps simple et de petites oreilles.",
+  "materials": [
+    "Fil DK",
+    "Crochet 3,5 mm",
+    "rembourrage",
+    "aiguille à fil",
+    "marqueur de maille",
+    "ciseaux"
+  ],
+  "skills": [
+    "anneau magique",
+    "maille serrée",
+    "augmentation",
+    "décroissant",
+    "assemblage en petites pièces"
+  ],
+  "expectationText": "Un petit jouet qui simplifie la mise en forme afin que vous puissiez vous concentrer sur la structure ronde, les diminutions soignées et la fixation proprement des petits détails.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Démarrer le corps",
+      "instruction": "Faites un anneau magique et marquez le premier point."
+    },
+    {
+      "type": "round",
+      "title": "Tour 1",
+      "instruction": "Crocheter 6 mailles serrées dans l'anneau.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Augmenter",
+      "instruction": "Augmenter uniformément jusqu'à ce que le corps atteigne la largeur souhaitée.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "round",
+      "title": "Tricoter uniformément",
+      "instruction": "Crochetez plusieurs tours sans augmenter pour augmenter la longueur du corps.",
+      "counterLabel": "round",
+      "targetCount": 7
+    },
+    {
+      "type": "round",
+      "title": "Diminuer et bourrer",
+      "instruction": "Rembourrer la souris et diminuer vers l'extrémité arrière jusqu'à ce qu'elle soit presque fermée.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "instruction",
+      "title": "Ajoutez des oreilles et une queue",
+      "instruction": "Cousez deux petites oreilles et attachez une chaîne ou une queue de fil."
+    }
+  ]
+}

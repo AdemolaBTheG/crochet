@@ -1,0 +1,20 @@
+{
+  "title": "Leer abreviaturas de patrones",
+  "description": "Aprenda la taquigrafía que utilizan los patrones para que las instrucciones escritas dejen de parecer código.",
+  "content": {
+    "summary": "Las abreviaturas de patrones comprimen nombres de puntadas, acciones y repeticiones en una línea compacta que puedes escanear rápidamente.",
+    "whyItMatters": "Si puedes decodificar abreviaturas, puedes seguir más patrones, comparar diseñadores y avanzar más rápido a través de las instrucciones.",
+    "steps": [
+      "Aprende primero las abreviaturas básicas: cad, pb, mpa, pa, pat, pe.",
+      "Fíjate en acciones como aum, dism, rep y saltar.",
+      "Comprueba si la diseñadora usa términos de EE. UU. o del Reino Unido antes de empezar.",
+      "Lee una línea completa despacio y desarrolla cada abreviatura en lenguaje claro.",
+      "Marca las repeticiones y los conteos antes de trabajar la fila."
+    ],
+    "practice": "Toma una línea corta del patrón y reescríbela con palabras completas antes de trabajarla.",
+    "commonMistakes": [
+      "Mezclando términos de Reino Unido y Estados Unidos en un mismo proyecto.",
+      "Faltan repetir corchetes o paréntesis al leer rápidamente."
+    ]
+  }
+}

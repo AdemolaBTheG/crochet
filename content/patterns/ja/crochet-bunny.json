@@ -1,0 +1,60 @@
+{
+  "title": "かぎ針編みのバニー",
+  "description": "丸い体、長い耳、ステッチされた顔のディテールが特徴のシンプルなぬいぐるみです。",
+  "materials": [
+    "DK または梳毛糸",
+    "3.5 ～ 4 mm のフック",
+    "詰め物",
+    "糸針",
+    "ステッチマーカー",
+    "ハサミ"
+  ],
+  "skills": [
+    "マジックリング",
+    "片かぎ針編み",
+    "増加",
+    "減少",
+    "あみぐるみの組み立て"
+  ],
+  "expectationText": "基本的な体のパーツの形を作り、均等に詰めて、簡単なキャラクターを組み立てる方法を学ぶ、優しいあみぐるみプロジェクトきれいに。",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "本体を起動します",
+      "instruction": "魔法のリングから始めて、各ラウンドを追跡するマーカーを配置します。"
+    },
+    {
+      "type": "round",
+      "title": "ラウンド 1",
+      "instruction": "リングに6つのシングルかぎ針編みを編みます。",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "シェイプの増加",
+      "instruction": "ボディが最も広い点に達するまで、次のラウンドにわたって均等に増加します。",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "round",
+      "title": "",
+      "instruction": "でも作業できます。軽く詰める前に、高さを上げずに数ラウンドかぎ針編みをします。",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "減少して閉じる",
+      "instruction": "目に見えない減少を使用して、上部をテーパーにし、しっかりと詰めた後本体を閉じます。",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "耳と顔を追加する",
+      "instruction": "2 つのシンプルな耳の部分をかぎ針編みして縫い付け、目と鼻を縫います。"
+    }
+  ]
+}

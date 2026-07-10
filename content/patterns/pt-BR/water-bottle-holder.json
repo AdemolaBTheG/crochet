@@ -1,0 +1,52 @@
+{
+  "title": "Porta-garrafa",
+  "description": "Um suporte leve para garrafa com corpo vazado e alça para passeio, mercado e viagem.",
+  "materials": [
+    "cotton yarn",
+    "4.5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle"
+  ],
+  "skills": [
+    "working in rounds",
+    "chain spaces and corners",
+    "crochet cords and straps",
+    "single crochet"
+  ],
+  "expectationText": "Um projeto rápido e útil para aprender base ajustada, malha aberta e alça para carregar.",
+  "steps": [
+    {
+      "type": "round",
+      "title": "Fazer a base",
+      "instruction": "Faça um círculo ou oval plano que combine com o fundo da sua garrafa.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "instruction",
+      "title": "Subir as laterais",
+      "instruction": "Trabalhe para cima em um ponto vazado para manter o suporte leve e flexível."
+    },
+    {
+      "type": "instruction",
+      "title": "Testar a garrafa",
+      "instruction": "Coloque a garrafa dentro e confirme que o suporte segura sem apertar demais."
+    },
+    {
+      "type": "instruction",
+      "title": "Adicionar a alça",
+      "instruction": "Faça uma alça longa o suficiente para usar no ombro ou transversal, com tensão firme."
+    },
+    {
+      "type": "instruction",
+      "title": "Prender com segurança",
+      "instruction": "Fixe a alça em pontos fortes perto da borda superior e reforce se precisar."
+    },
+    {
+      "type": "instruction",
+      "title": "Testar e finalizar",
+      "instruction": "Teste o peso com a garrafa dentro e esconda bem todos os fios."
+    }
+  ]
+}

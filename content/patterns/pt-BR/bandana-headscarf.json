@@ -1,0 +1,52 @@
+{
+  "title": "Lenço bandana",
+  "description": "Um lenço triangular rápido com aumentos simples, caimento macio e tiras para um ajuste fácil.",
+  "materials": [
+    "fio de algodão",
+    "agulha de crochê de 4,5 mm",
+    "marcadores de ponto",
+    "agulha de tapeçaria",
+    "tesoura"
+  ],
+  "skills": [
+    "corrente de base",
+    "ponto alto",
+    "espaços de corrente e cantos",
+    "bordas e acabamentos"
+  ],
+  "expectationText": "Um acessório rápido que dá segurança com a modelagem triangular e com os detalhes finais do acabamento.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Comece pelo centro superior",
+      "instruction": "Inicie com uma base curta e marque os pontos de aumento para acompanhar a forma com facilidade."
+    },
+    {
+      "type": "row",
+      "title": "Aumente o triângulo",
+      "instruction": "Trabalhe carreiras com aumentos nas bordas ou no centro para ampliar o lenço de forma uniforme.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Confira a largura",
+      "instruction": "Pare quando o lado maior atingir a largura desejada sobre a cabeça."
+    },
+    {
+      "type": "instruction",
+      "title": "Adicione as tiras",
+      "instruction": "Faça tiras estreitas ou correntes longas em cada ponta."
+    },
+    {
+      "type": "instruction",
+      "title": "Trabalhe a borda",
+      "instruction": "Finalize o triângulo e as tiras com uma borda limpa para suavizar o contorno."
+    },
+    {
+      "type": "instruction",
+      "title": "Finalize",
+      "instruction": "Arremate os fios e bloqueie levemente para melhorar o caimento."
+    }
+  ]
+}

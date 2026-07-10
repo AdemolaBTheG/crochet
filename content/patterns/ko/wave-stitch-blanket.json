@@ -1,0 +1,51 @@
+{
+  "title": "웨이브 스티치 담요",
+  "description": "각 행에 완만한 봉우리와 골짜기를 만드는 반복 담요 패턴입니다.",
+  "materials": [
+    "소모사",
+    "5mm 후크",
+    "스티치 마커",
+    "실 바늘",
+    "가위"
+  ],
+  "skills": [
+    "이중 크로셰",
+    "증가",
+    "감소",
+    "반복 계산"
+  ],
+  "expectationText": "파도가 균일하고 알아볼 수 있도록 증가 및 감소의 균형을 유지하는 것이 핵심 기술인 장기 반복 프로젝트입니다.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "기초 체인을 만듭니다.",
+      "instruction": "웨이브 반복과 터닝 스티치에 필요한 여러 개의 기초 체인을 만듭니다."
+    },
+    {
+      "type": "row",
+      "title": "행 1",
+      "instruction": "설정 행을 작업하고 한 번의 전체 반복을 표시하면 리듬을 일찍 확인할 수 있습니다.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "행 2",
+      "instruction": "물결 패턴에 따라 최고점에서 증가하고 최저점에서 감소합니다.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "웨이브를 반복하세요.",
+      "instruction": "담요가 원하는 길이에 도달할 때까지 웨이브 행을 계속하세요.",
+      "counterLabel": "row",
+      "targetCount": 20
+    },
+    {
+      "type": "instruction",
+      "title": "마지막 가장자리 마무리",
+      "instruction": "마무리하기 전에 상단 가장자리를 안정시키기 위해 간단한 테두리나 마지막 행을 작업합니다."
+    }
+  ]
+}

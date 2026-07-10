@@ -1,0 +1,15 @@
+{
+  "title": "Bucket Hat",
+  "description": "A casual round project with a flat crown, steady sides, and a soft brim.",
+  "materials": ["worsted weight yarn", "5 mm hook", "stitch marker", "yarn needle", "scissors"],
+  "skills": ["magic ring", "single crochet", "increasing", "working in rounds"],
+  "expectationText": "A wearable project that practices shaping a flat circle first, then growing smooth sides and a short brim without losing stitch count.",
+  "steps": [
+    { "type": "instruction", "title": "Start the crown", "instruction": "Make a magic ring and place a marker in the first stitch of each round." },
+    { "type": "round", "title": "Round 1", "instruction": "Work 8 single crochet into the ring.", "counterLabel": "round", "targetCount": 1 },
+    { "type": "round", "title": "Increase the crown", "instruction": "Increase evenly each round until the circle reaches the top width you want for the hat.", "counterLabel": "round", "targetCount": 6 },
+    { "type": "round", "title": "Work the sides", "instruction": "Single crochet evenly with no increases for several rounds so the hat starts to drop downward.", "counterLabel": "round", "targetCount": 12 },
+    { "type": "round", "title": "Shape the brim", "instruction": "Add gentle increases every few stitches to let the brim flare outward.", "counterLabel": "round", "targetCount": 15 },
+    { "type": "instruction", "title": "Finish", "instruction": "Try it on, adjust brim depth if needed, then fasten off and weave in ends." }
+  ]
+}

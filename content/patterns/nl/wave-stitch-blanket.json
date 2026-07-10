@@ -1,0 +1,51 @@
+{
+  "title": "Deken in golfsteek",
+  "description": "Een zich herhalend dekenpatroon dat zachte pieken en dalen over elke rij creëert.",
+  "materials": [
+    "kamgaren",
+    "5 mm haaknaald",
+    "steekmarkeringen",
+    "garennaald",
+    "schaar"
+  ],
+  "skills": [
+    "stokje",
+    "meerderen",
+    "minderen",
+    "herhalingen tellen"
+  ],
+  "expectationText": "Een langer herhalingsproject waarbij de belangrijkste vaardigheid het in evenwicht houden van de stijgingen en dalingen is, zodat de golven gelijkmatig en herkenbaar blijven.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Maak een ketting van de fundering",
+      "instruction": "Maak een funderingsketting in het veelvoud dat nodig is voor de golfherhaling plus keersteken."
+    },
+    {
+      "type": "row",
+      "title": "Rij 1",
+      "instruction": "Werk aan de opzetrij en markeer één volledige herhaling, zodat u uw ritme vroegtijdig kunt controleren.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Rij 2",
+      "instruction": "Verhogen bij de pieken en verlagen bij de dalen volgens het golfpatroon.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Herhaal de golf",
+      "instruction": "Ga door met de golfrijen totdat de deken de gewenste lengte heeft bereikt.",
+      "counterLabel": "row",
+      "targetCount": 20
+    },
+    {
+      "type": "instruction",
+      "title": "Werk de laatste rand af",
+      "instruction": "Maak een eenvoudige rand of laatste rij om de bovenrand stabiel te maken voordat je verdergaat."
+    }
+  ]
+}

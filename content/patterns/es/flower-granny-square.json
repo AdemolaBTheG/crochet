@@ -1,0 +1,57 @@
+{
+  "title": "Granny square floral",
+  "description": "Un cuadrado con motivos florales que coloca un centro de flores simple dentro de un marco estilo abuelita.",
+  "materials": [
+    "dos colores de hilo",
+    "gancho de 4,5 mm",
+    "aguja lanera",
+    "tijeras"
+  ],
+  "skills": [
+    "anillo mágico",
+    "puntadas en racimo",
+    "espacios de cadena",
+    "trabajo en redondo"
+  ],
+  "expectationText": "Un proyecto de motivo que introduce cambios de color y una construcción de base redonda sin dejar de terminar en un práctico formato cuadrado.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Haz el anillo central",
+      "instruction": "Comienza con un anillo mágico del color del centro de la flor."
+    },
+    {
+      "type": "round",
+      "title": "Ronda 1",
+      "instruction": "Trabaja los puntos centrales que anclan los pétalos de las flores.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Ronda 2",
+      "instruction": "Crea grupos de pétalos uniformemente alrededor del centro.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Cuadra el motivo",
+      "instruction": "Cambia de color y trabaja los espacios de cadena de las esquinas para que la flor se convierta en un cuadrado.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "Agrega una ronda de borde más",
+      "instruction": "Trabaja uniformemente alrededor del cuadrado para que los bordes estén más limpios y sean más fáciles de unir.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "instruction",
+      "title": "Termina",
+      "instruction": "Rematar y tejer cuidadosamente todos los extremos que cambian de color."
+    }
+  ]
+}

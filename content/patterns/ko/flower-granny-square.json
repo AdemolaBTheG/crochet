@@ -1,0 +1,57 @@
+{
+  "title": "꽃할머니 스퀘어",
+  "description": "할머니 스타일 프레임 안에 심플한 꽃 센터를 레이어링한 꽃모티프 스퀘어입니다.",
+  "materials": [
+    "두 가지 실 색상",
+    "4.5mm 후크",
+    "실 바늘",
+    "가위"
+  ],
+  "skills": [
+    "매직 링",
+    "클러스터 스티치",
+    "체인 공간",
+    "라운드 작업"
+  ],
+  "expectationText": "실용적인 사각형 형식으로 끝나면서도 색상 변경과 라운드 기반 구성을 도입하는 모티브 프로젝트입니다.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "중앙 링을 만듭니다.",
+      "instruction": "꽃 중앙 색상의 매직 링으로 시작합니다."
+    },
+    {
+      "type": "round",
+      "title": "1 라운드",
+      "instruction": "꽃잎을 고정하는 중앙 스티치를 작업하십시오.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "2라운드",
+      "instruction": "중앙을 중심으로 꽃잎 그룹을 고르게 만듭니다.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "모티브를 사각형으로 만듭니다.",
+      "instruction": "색상을 변경하고 모서리 체인 공간을 작업하여 꽃이 사각형으로 변하도록 합니다.",
+      "counterLabel": "round",
+      "targetCount": 3
+    },
+    {
+      "type": "round",
+      "title": "테두리 라운드를 하나 더 추가합니다.",
+      "instruction": "사각형 주위에 균등하게 작업하여 가장자리를 더 깔끔하고 결합하기 쉽게 만듭니다.",
+      "counterLabel": "round",
+      "targetCount": 4
+    },
+    {
+      "type": "instruction",
+      "title": "마무리",
+      "instruction": "모든 색상 변경 끝 부분을 고정하고 깔끔하게 짜십시오."
+    }
+  ]
+}

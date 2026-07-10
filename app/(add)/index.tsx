@@ -1,22 +1,23 @@
 import { PressableScale } from '@/components/pressable-scale';
 import { theme } from '@/constants/Theme';
+import { tap } from '@/services/haptics';
 import { usePatternImportStore } from '@/stores/patternImportStore';
 import * as DocumentPicker from 'expo-document-picker';
 import * as FileSystem from 'expo-file-system';
 import * as ImagePicker from 'expo-image-picker';
 import { router } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
-import {
-    ActionSheetIOS,
-    Alert,
-    Platform,
-    ScrollView,
-    StyleSheet,
-    Text,
-    View,
-    useWindowDimensions,
-} from 'react-native';
 import { useTranslation } from 'react-i18next';
+import {
+  ActionSheetIOS,
+  Alert,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+  useWindowDimensions,
+} from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 type SourceCard = {
@@ -71,7 +72,10 @@ export default function AddPatternScreen() {
   async function pickPhotoFromLibrary() {
     const permission = await ImagePicker.requestMediaLibraryPermissionsAsync();
     if (!permission.granted) {
-      Alert.alert(t('addPattern.photoSource.permissionTitle'), t('addPattern.photoSource.permissionMessage'));
+      Alert.alert(
+        t('addPattern.photoSource.permissionTitle'),
+        t('addPattern.photoSource.permissionMessage'),
+      );
       return;
     }
 
@@ -96,7 +100,10 @@ export default function AddPatternScreen() {
   async function takePhoto() {
     const permission = await ImagePicker.requestCameraPermissionsAsync();
     if (!permission.granted) {
-      Alert.alert(t('addPattern.photoSource.cameraPermissionTitle'), t('addPattern.photoSource.cameraPermissionMessage'));
+      Alert.alert(
+        t('addPattern.photoSource.cameraPermissionTitle'),
+        t('addPattern.photoSource.cameraPermissionMessage'),
+      );
       return;
     }
 
@@ -122,7 +129,11 @@ export default function AddPatternScreen() {
     if (Platform.OS === 'ios') {
       ActionSheetIOS.showActionSheetWithOptions(
         {
-          options: [t('addPattern.photoSource.cancel'), t('addPattern.photoSource.takePicture'), t('addPattern.photoSource.photoLibrary')],
+          options: [
+            t('addPattern.photoSource.cancel'),
+            t('addPattern.photoSource.takePicture'),
+            t('addPattern.photoSource.photoLibrary'),
+          ],
           cancelButtonIndex: 0,
         },
         (buttonIndex) => {
@@ -142,7 +153,10 @@ export default function AddPatternScreen() {
     Alert.alert(t('addPattern.photoSource.chooseSource'), undefined, [
       { text: t('addPattern.photoSource.cancel'), style: 'cancel' },
       { text: t('addPattern.photoSource.takePicture'), onPress: () => void takePhoto() },
-      { text: t('addPattern.photoSource.photoLibrary'), onPress: () => void pickPhotoFromLibrary() },
+      {
+        text: t('addPattern.photoSource.photoLibrary'),
+        onPress: () => void pickPhotoFromLibrary(),
+      },
     ]);
   }
 
@@ -188,7 +202,10 @@ export default function AddPatternScreen() {
         {sourceCards.map((card) => (
           <View key={card.id} style={[styles.sourceCardWrap, { width: cardWidth }]}>
             <PressableScale
-              onPress={() => void handleSourcePress(card.id)}
+              onPress={() => {
+                tap();
+                void handleSourcePress(card.id);
+              }}
               style={[styles.sourceCard, { backgroundColor: card.backgroundColor }]}>
               <SymbolView
                 name={card.icon}
@@ -257,8 +274,8 @@ const styles = StyleSheet.create({
     minWidth: 0,
   },
   sourceLabel: {
-    fontSize: theme.size.xl,
-    fontWeight: theme.weight.bold,
+    fontSize: theme.size.lg,
+    fontWeight: theme.weight.semibold,
   },
   title: {
     color: theme.colors.textPrimary,

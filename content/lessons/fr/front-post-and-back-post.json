@@ -1,0 +1,20 @@
+{
+  "title": "Bride relief avant et arrière",
+  "description": "Utilisez les brides relief pour créer des côtes, de la texture et des colonnes en relief dans votre ouvrage.",
+  "content": {
+    "summary": "Au lieu de piquer dans les brins du haut, on travaille la maille autour du corps de la bride, par l’avant ou par l’arrière.",
+    "whyItMatters": "Les points avant et arrière créent une texture que les points plats ordinaires ne peuvent pas créer, en particulier pour les poignets, les chapeaux et les bordures.",
+    "steps": [
+      "Faites un jeté comme pour une bride.",
+      "Pour une bride relief avant, passez le crochet de l’avant vers l’arrière puis revenez vers l’avant autour de la bride.",
+      "Pour une bride relief arrière, passez le crochet de l’arrière vers l’avant puis revenez vers l’arrière autour de la bride.",
+      "Ramenez une boucle et terminez la maille comme une bride classique.",
+      "Alternez brides relief avant et arrière pour former des côtes."
+    ],
+    "practice": "Crochetez un rang de brides relief avant puis un rang en alternant brides relief avant et arrière.",
+    "commonMistakes": [
+      "Insertion accidentelle dans les boucles supérieures plutôt qu'autour du poteau.",
+      "Torsion du tissu en sautant les poteaux en alternant."
+    ]
+  }
+}

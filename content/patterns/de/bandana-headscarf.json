@@ -1,0 +1,52 @@
+{
+  "title": "Bandana-Kopftuch",
+  "description": "Ein schnelles dreieckiges Tuch mit einfachen Zunahmen, weichem Fall und Bindebändern für eine unkomplizierte Passform.",
+  "materials": [
+    "Baumwollgarn",
+    "Häkelnadel 4,5 mm",
+    "Maschenmarkierer",
+    "Garnnadel",
+    "Schere"
+  ],
+  "skills": [
+    "Grundkette",
+    "Stäbchen",
+    "Luftmaschen und Ecken",
+    "Ränder und Abschlusskanten"
+  ],
+  "expectationText": "Ein schnelles Accessoireprojekt, das Sicherheit bei Dreiecksform, gleichmäßigen Zunahmen und sauberem Finish gibt.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Obere Mitte beginnen",
+      "instruction": "Starte mit einer kurzen Grundlage und markiere die Zunahmestellen, damit das Dreieck leicht zu verfolgen ist."
+    },
+    {
+      "type": "row",
+      "title": "Dreieck wachsen lassen",
+      "instruction": "Arbeite Reihen mit Zunahmen an den Rändern oder in der Mitte, damit das Tuch gleichmäßig breiter wird.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Breite prüfen",
+      "instruction": "Halte an, sobald die lange Kante die gewünschte Breite über dem Kopf erreicht."
+    },
+    {
+      "type": "instruction",
+      "title": "Bindebänder anfügen",
+      "instruction": "Arbeite schmale Bänder oder lange Luftmaschenketten an beiden Ecken."
+    },
+    {
+      "type": "instruction",
+      "title": "Kante häkeln",
+      "instruction": "Arbeite zum Abschluss eine saubere Kante um Dreieck und Bänder, damit die Form ruhig wirkt."
+    },
+    {
+      "type": "instruction",
+      "title": "Fertigstellen",
+      "instruction": "Vernähe die Fäden und blocke das Tuch leicht, damit es schön fällt."
+    }
+  ]
+}

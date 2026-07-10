@@ -63,6 +63,7 @@
     }
   },
   "learn": {
+    "sectionTitle": "Lektionen",
     "toolsSectionTitle": "Werkzeuge",
     "lessonLabel": "Lektion {{index}}",
     "actions": {
@@ -419,13 +420,13 @@
       "note": "Das ist derselbe gefuhrte Schritt-fur-Schritt-Rhythmus, den du auch in deinen ersten Crova Lektionen nutzen wirst."
     },
     "trialOffer": {
-      "title": "Wir möchten, dass du Crova\nkostenlos ausprobierst",
+      "title": "Wir möchten, dass du Crova ausprobierst",
       "subtitle": "Erhalte unbegrenzten Zugang zu geführten Lektionen, Schrittzählern und Projektanleitungen — alles für Häkler, die schneller lernen möchten.",
       "featureOne": "Unbegrenzter Zugang zu allen Lektionen",
       "featureTwo": "Verfolge jede Reihe, Masche und jedes Projekt",
       "featureThree": "Folge geführten Mustern Schritt für Schritt",
-      "cta": "Kostenlose Testphase starten",
-      "footer": "Keine Verpflichtung. Jederzeit vor Ende der Testphase kündbar."
+      "cta": "Weiter",
+      "footer": "Jederzeit kündbar."
     },
     "dailyGoal": {
       "stepOf": "Schritt {{current}} von {{total}}",
@@ -463,10 +464,14 @@
       }
     }
   },
+  "stats": {
+    "streak": "{{count}} day streak"
+  },
   "goals": {
     "dailyCraftingGoal": "Tägliches Häkelziel",
     "dailyProgressTime": "{{completed}} Min. von {{target}} Min.",
     "yearlyProjectGoal": "{{year}} Projekt-Ziel",
+    "yearlyProgress": "{{completed}} von {{target}} Projekten",
     "yearlyProgress_one": "1 von {{target}} Projekt",
     "yearlyProgress_other": "{{completed}} von {{target}} Projekten",
     "remainingHint": "Noch {{remaining}} vor dir – etwa {{pace}} pro Monat."
@@ -530,6 +535,56 @@
         "saving": "Projekt wird gespeichert...",
         "save": "Speichern und Projekt öffnen"
       }
+    }
+  },
+  "folders": {
+    "title": "Ordner",
+    "addButton": "Hinzufügen",
+    "empty": {
+      "title": "Noch keine Ordner",
+      "subtitle": "Erstelle deinen ersten Ordner, um Muster nach Projekt, Geschenkliste oder Sammlung zu gruppieren."
+    },
+    "patternCount_one": "{{count}} Muster",
+    "patternCount_other": "{{count}} Muster",
+    "accessibility": {
+      "addFolder": "Ordner erstellen",
+      "folderTile": "{{name}}, {{count}} {{countLabel}}"
+    },
+    "detail": {
+      "fallbackTitle": "Ordner",
+      "searchPlaceholder": "Muster suchen",
+      "patternCount_one": "{{count}} Muster",
+      "patternCount_other": "{{count}} Muster",
+      "emptyTitle": "Noch keine Muster in diesem Ordner",
+      "emptySubtitle": "Füge Muster hinzu, um sie hier zu sehen.",
+      "emptySearchTitle": "Keine Treffer in diesem Ordner",
+      "emptySearchSubtitle": "Probiere einen anderen Suchbegriff.",
+      "accessibility": {
+        "openPattern": "{{title}} Muster öffnen",
+        "unlockPattern": "{{title}} Muster freischalten"
+      }
+    },
+    "create": {
+      "title": "Ordner erstellen",
+      "back": "Zurück",
+      "color": "Farbe",
+      "colorLabel": "Ordnerfarbe",
+      "nameLabel": "Ordnername",
+      "namePlaceholder": "Geschenkideen",
+      "creating": "Wird erstellt…",
+      "submit": "Ordner erstellen",
+      "errorTitle": "Ordner konnte nicht erstellt werden",
+      "errorMessage": "Bitte versuche es erneut."
+    }
+  },
+  "addToFolder": {
+    "title": "Zum Ordner hinzufügen",
+    "done": "Fertig",
+    "patternCount_one": "{{count}} Muster",
+    "patternCount_other": "{{count}} Muster",
+    "empty": {
+      "title": "Noch keine Ordner",
+      "subtitle": "Erstelle zuerst einen Ordner, um deine Muster zu organisieren."
     }
   }
 }

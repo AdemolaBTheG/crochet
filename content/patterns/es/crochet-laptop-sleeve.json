@@ -1,0 +1,53 @@
+{
+  "title": "Funda de laptop a crochet",
+  "description": "Una funda sencilla con solapa que protege tu laptop y entra fácilmente en un bolso.",
+  "materials": [
+    "worsted or aran yarn",
+    "5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "foundation chain",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "Un accesorio práctico para aprender a medir, tejer una tela firme y hacer un cierre simple.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Medir la laptop",
+      "instruction": "Mide el ancho, alto y grosor de la laptop para que la funda tenga un poco de holgura."
+    },
+    {
+      "type": "row",
+      "title": "Tejer el cuerpo",
+      "instruction": "Haz un rectángulo denso o una pieza doblada que tenga el ancho y largo necesarios.",
+      "counterLabel": "row",
+      "targetCount": 28
+    },
+    {
+      "type": "instruction",
+      "title": "Comprobar el ajuste",
+      "instruction": "Dobla la tela alrededor de la laptop y ajusta antes de cerrar las últimas filas."
+    },
+    {
+      "type": "instruction",
+      "title": "Unir los lados",
+      "instruction": "Cose o une con punto raso los lados para que la funda quede firme pero no apretada."
+    },
+    {
+      "type": "instruction",
+      "title": "Añadir solapa y cierre",
+      "instruction": "Termina la solapa superior y agrega una presilla o botón fácil de abrir y cerrar."
+    },
+    {
+      "type": "instruction",
+      "title": "Reforzar y terminar",
+      "instruction": "Esconde las hebras y aplana las costuras para que la funda se deslice bien en el bolso."
+    }
+  ]
+}

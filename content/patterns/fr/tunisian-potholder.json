@@ -1,0 +1,50 @@
+{
+  "title": "Manique tunisienne",
+  "description": "Un projet de carrés denses qui introduit le rythme du crochet tunisien.",
+  "materials": [
+    "fil de coton",
+    "Crochet tunisien 6 mm",
+    "aiguille à fil",
+    "ciseaux"
+  ],
+  "skills": [
+    "chaîne de fondation",
+    "Point simple tunisien",
+    "passe retour",
+    "comptage des boucles"
+  ],
+  "expectationText": "Un carré compact qui vous aide à apprendre les passes aller et retour tout en gardant les boucles de bord visibles et même d'un rang à l'autre.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Chaînez la largeur",
+      "instruction": "Créez une chaîne de fondation qui correspond à la largeur souhaitée pour la manique."
+    },
+    {
+      "type": "row",
+      "title": "Passe avant",
+      "instruction": "Tirez une boucle dans chaque chaîne et laissez-la sur le crochet.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Passe-retour",
+      "instruction": "Jetés et boucles d'ouvrage selon l'ordre tunisien de la passe-retour.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Construisez le tissu.",
+      "instruction": "Répétez les passes aller et retour jusqu'à ce que la pièce devienne carrée.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Rabattre",
+      "instruction": "Rabattre simplement le tout sur le bord supérieur, puis arrêter et rentrer les extrémités."
+    }
+  ]
+}

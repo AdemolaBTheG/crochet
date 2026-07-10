@@ -1,0 +1,14 @@
+{
+  "title": "Shell Stitch Scarf",
+  "description": "A drapey scarf built from repeated shell motifs for texture without complicated shaping.",
+  "materials": ["light worsted yarn", "5 mm hook", "yarn needle", "scissors"],
+  "skills": ["foundation chain", "double crochet", "shell stitch", "counting repeats"],
+  "expectationText": "A relaxing repeat project where the challenge is keeping shell spacing tidy and building a rhythm that stays consistent across long rows.",
+  "steps": [
+    { "type": "instruction", "title": "Chain the base", "instruction": "Make a foundation chain in a multiple that fits your shell repeat and scarf width." },
+    { "type": "row", "title": "Row 1", "instruction": "Work the setup row that creates anchor spaces for the shells.", "counterLabel": "row", "targetCount": 1 },
+    { "type": "row", "title": "Row 2", "instruction": "Work shells into each anchor space, keeping the same stitch count in every shell.", "counterLabel": "row", "targetCount": 2 },
+    { "type": "repeat", "title": "Repeat the pattern", "instruction": "Alternate the setup row and shell row until the scarf reaches your preferred length.", "counterLabel": "row", "targetCount": 16 },
+    { "type": "instruction", "title": "Finish the edge", "instruction": "Add a final row or border if needed, then fasten off and weave in ends." }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "title": "Glasögonfodral",
+  "description": "Ett smalt virkat fodral som skyddar glasögon i väskan och stängs med knapp eller ögla.",
+  "materials": [
+    "cotton yarn",
+    "4 mm hook",
+    "stitch marker",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "working in rows",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "Ett litet användbart projekt för att arbeta efter mått och få snygga avslut.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Mät glasögonen",
+      "instruction": "Kontrollera bredd och höjd så att fodralet blir lätt att ta av och på."
+    },
+    {
+      "type": "row",
+      "title": "Virka kroppen",
+      "instruction": "Arbeta en rektangel som är tillräckligt lång för att vikas till en ficka med liten klaff.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Vik och kontrollera",
+      "instruction": "Vik rektangeln runt glasögonen och kontrollera storleken innan du stänger sidorna."
+    },
+    {
+      "type": "instruction",
+      "title": "Stäng kanterna",
+      "instruction": "Foga ihop sidorna prydligt så att glasögonen skyddas och fodralet håller formen."
+    },
+    {
+      "type": "instruction",
+      "title": "Lägg till stängningen",
+      "instruction": "Virka en ögla eller ett litet knapphål och kombinera med knapp om du vill."
+    },
+    {
+      "type": "instruction",
+      "title": "Avsluta fodralet",
+      "instruction": "Fäst trådändarna och testa öppningen flera gånger så att det känns smidigt att använda."
+    }
+  ]
+}

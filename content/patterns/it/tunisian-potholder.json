@@ -1,0 +1,50 @@
+{
+  "title": "Presina tunisina",
+  "description": "Un fitto progetto quadrato che introduce il ritmo dell'uncinetto tunisino.",
+  "materials": [
+    "filato di cotone",
+    "Uncino tunisino da 6 mm",
+    "ago del filo",
+    "forbici"
+  ],
+  "skills": [
+    "catenella di base",
+    "Punto tunisino semplice",
+    "passaggio di ritorno",
+    "conteggio degli anelli"
+  ],
+  "expectationText": "Un quadrato compatto che ti aiuta a imparare i passaggi in avanti e di ritorno mantenendo gli anelli dei bordi visibili e uniformi da riga a riga.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Catena della larghezza",
+      "instruction": "Crea una catena di fondazione che corrisponda alla larghezza che desideri per la presina."
+    },
+    {
+      "type": "row",
+      "title": "Passaggio in avanti",
+      "instruction": "Tirare su un anello di ciascuna catenella e lasciarli attaccati all'uncinetto.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Passaggio di ritorno",
+      "instruction": "Gettare il filo e chiudere il filo secondo la sequenza del passaggio di ritorno tunisino.",
+      "counterLabel": "row",
+      "targetCount": 2
+    },
+    {
+      "type": "repeat",
+      "title": "Costruisci il tessuto",
+      "instruction": "Ripeti i passaggi avanti e indietro finché il pezzo non diventa quadrato.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Intrecciare",
+      "instruction": "Intrecciare semplicemente lungo il bordo superiore, poi affrancare e intrecciare le estremità."
+    }
+  ]
+}

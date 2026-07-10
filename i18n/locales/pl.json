@@ -63,6 +63,7 @@
     }
   },
   "learn": {
+    "sectionTitle": "Lekcje",
     "toolsSectionTitle": "Narzędzia",
     "lessonLabel": "Lekcja {{index}}",
     "actions": {
@@ -419,13 +420,13 @@
       "note": "Jest to ten sam prowadzony, krok po kroku rytm, którego będziesz używać na pierwszych lekcjach Crova."
     },
     "trialOffer": {
-      "title": "Chcemy, żebyś wypróbował Crova\nza darmo",
+      "title": "Chcemy, żebyś wypróbował Crova",
       "subtitle": "Odblokuj nieograniczony dostęp do lekcji z przewodnikiem, liczników kroków i wzorów projektów — wszystko stworzone dla szydełkujących, którzy chcą uczyć się szybciej.",
       "featureOne": "Nieograniczony dostęp do wszystkich lekcji",
       "featureTwo": "Śledź każdy rząd, ścieg i projekt",
       "featureThree": "Postępuj zgodnie z wzorami krok po kroku",
-      "cta": "Rozpocznij bezpłatny okres próbny",
-      "footer": "Bez zobowiązań. Anuluj w dowolnym momencie przed końcem okresu próbnego."
+      "cta": "Kontynuuj",
+      "footer": "Możesz anulować w dowolnym momencie."
     },
     "dailyGoal": {
       "stepOf": "Krok {{current}} z {{total}}",
@@ -463,10 +464,14 @@
       }
     }
   },
+  "stats": {
+    "streak": "{{count}} day streak"
+  },
   "goals": {
     "dailyCraftingGoal": "Dzienny cel szydełkowania",
     "dailyProgressTime": "{{completed}} min z {{target}} min",
     "yearlyProjectGoal": "Cel projektów {{year}}",
+    "yearlyProgress": "{{completed}} z {{target}} projektów",
     "yearlyProgress_one": "1 z {{target}} projektu",
     "yearlyProgress_other": "{{completed}} z {{target}} projektów",
     "remainingHint": "Jeszcze {{remaining}} do zrobienia – około {{pace}} miesięcznie."
@@ -530,6 +535,56 @@
         "saving": "Zapisywanie projektu...",
         "save": "Zapisz i otwórz projekt"
       }
+    }
+  },
+  "folders": {
+    "title": "Foldery",
+    "addButton": "Dodaj",
+    "empty": {
+      "title": "Brak folderów",
+      "subtitle": "Utwórz pierwszy folder, aby pogrupować wzory według projektu, listy prezentów lub kolekcji."
+    },
+    "patternCount_one": "{{count}} wzór",
+    "patternCount_other": "{{count}} wzorów",
+    "accessibility": {
+      "addFolder": "Utwórz folder",
+      "folderTile": "{{name}}, {{count}} {{countLabel}}"
+    },
+    "detail": {
+      "fallbackTitle": "Folder",
+      "searchPlaceholder": "Szukaj wzorów",
+      "patternCount_one": "{{count}} wzór",
+      "patternCount_other": "{{count}} wzorów",
+      "emptyTitle": "Brak wzorów w tym folderze",
+      "emptySubtitle": "Dodaj wzory do tego folderu, aby je tutaj zobaczyć.",
+      "emptySearchTitle": "Brak wyników w tym folderze",
+      "emptySearchSubtitle": "Spróbuj innego wyszukiwanego hasła.",
+      "accessibility": {
+        "openPattern": "Otwórz wzór {{title}}",
+        "unlockPattern": "Odblokuj wzór {{title}}"
+      }
+    },
+    "create": {
+      "title": "Utwórz folder",
+      "back": "Wstecz",
+      "color": "Kolor",
+      "colorLabel": "Kolor folderu",
+      "nameLabel": "Nazwa folderu",
+      "namePlaceholder": "Pomysły na prezenty",
+      "creating": "Tworzenie…",
+      "submit": "Utwórz folder",
+      "errorTitle": "Nie można utworzyć folderu",
+      "errorMessage": "Spróbuj ponownie."
+    }
+  },
+  "addToFolder": {
+    "title": "Dodaj do folderu",
+    "done": "Gotowe",
+    "patternCount_one": "{{count}} wzór",
+    "patternCount_other": "{{count}} wzorów",
+    "empty": {
+      "title": "Brak folderów",
+      "subtitle": "Najpierw utwórz folder, aby uporządkować swoje wzory."
     }
   }
 }

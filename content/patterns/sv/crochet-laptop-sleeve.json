@@ -1,0 +1,53 @@
+{
+  "title": "Virkat laptopfodral",
+  "description": "Ett enkelt fodral med klaff som skyddar din laptop och lätt glider ner i en väska.",
+  "materials": [
+    "worsted or aran yarn",
+    "5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "foundation chain",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "En praktisk accessoar för att öva måttagning, tät struktur och en enkel stängning.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Mät datorn",
+      "instruction": "Mät bredd, höjd och tjocklek så att fodralet får lite rörelsemån."
+    },
+    {
+      "type": "row",
+      "title": "Virka huvudstycket",
+      "instruction": "Virka en tät rektangel eller ett vikstycke som är tillräckligt brett och långt.",
+      "counterLabel": "row",
+      "targetCount": 28
+    },
+    {
+      "type": "instruction",
+      "title": "Kontrollera passformen",
+      "instruction": "Vik tyget runt datorn och justera innan de sista varven eller raderna."
+    },
+    {
+      "type": "instruction",
+      "title": "Stäng sidorna",
+      "instruction": "Sy eller virka ihop sidorna så att fodralet sitter säkert men inte för hårt."
+    },
+    {
+      "type": "instruction",
+      "title": "Lägg till klaff och stängning",
+      "instruction": "Avsluta den övre klaffen och lägg till en ögla eller knapp som är lätt att använda."
+    },
+    {
+      "type": "instruction",
+      "title": "Förstärk och avsluta",
+      "instruction": "Fäst trådändar och platta till sömmarna så att fodralet glider lätt i väskan."
+    }
+  ]
+}

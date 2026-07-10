@@ -1,0 +1,60 @@
+{
+  "title": "Häkelhase",
+  "description": "Ein einfaches Stofftier mit rundem Körper, langen Ohren und aufgenähten Gesichtsdetails.",
+  "materials": [
+    "DK oder Kammgarn",
+    "Häkelnadel 3,5 bis 4 mm",
+    "Füllen",
+    "Garnnadel",
+    "Maschenmarkierer",
+    "Schere"
+  ],
+  "skills": [
+    "Magischer Ring",
+    "feste Masche",
+    "Zunahme",
+    "Abnehmen",
+    "Amigurumi-Zusammenbau"
+  ],
+  "expectationText": "Ein sanftes Amigurumi-Projekt, das Ihnen beibringt, grundlegende Körperteile zu formen, sie gleichmäßig zu stopfen, und einen einfachen Charakter sauber zusammenbauen.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Beginnen Sie mit dem Körper.",
+      "instruction": "Beginnen Sie mit einem magischen Ring und platzieren Sie einen Marker, um jede Runde zu verfolgen."
+    },
+    {
+      "type": "round",
+      "title": "Runde 1",
+      "instruction": "6 feste Maschen in den Ring einarbeiten.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Zunahmen für die Form",
+      "instruction": "In den nächsten Runden gleichmäßig zunehmen, bis der Körper die breiteste Stelle erreicht.",
+      "counterLabel": "round",
+      "targetCount": 5
+    },
+    {
+      "type": "round",
+      "title": "Arbeiten Sie gleichmäßig",
+      "instruction": "Häkeln Sie mehrere Runden ohne Zunahmen, um die Höhe aufzubauen, bevor Sie es leicht stopfen.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Abnahmen zum Schließen",
+      "instruction": "Verwenden Sie unsichtbare Abnahmen, um das Oberteil schmaler zu machen und den Körper zu schließen, nachdem Sie ihn fest gestopft haben.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Ohren und Gesicht hinzufügen",
+      "instruction": "Zwei einfache Ohrstücke häkeln, annähen, dann die Augen und die Nase festnähen."
+    }
+  ]
+}

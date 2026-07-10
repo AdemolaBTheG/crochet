@@ -1,0 +1,53 @@
+{
+  "title": "Laptop-Hülle häkeln",
+  "description": "Eine schlichte Hülle mit Klappe, die deinen Laptop schützt und leicht in eine Tasche passt.",
+  "materials": [
+    "worsted or aran yarn",
+    "5 mm hook",
+    "stitch markers",
+    "tape measure",
+    "yarn needle",
+    "optional button"
+  ],
+  "skills": [
+    "foundation chain",
+    "single crochet",
+    "buttonholes and simple closures",
+    "seaming and assembly basics"
+  ],
+  "expectationText": "Ein praktisches Technik-Projekt zum Messen, für festes Gewebe und einen einfachen Verschluss.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Laptop ausmessen",
+      "instruction": "Miss Breite, Höhe und Dicke deines Laptops, damit die Hülle mit etwas Spiel passt."
+    },
+    {
+      "type": "row",
+      "title": "Hauptteil häkeln",
+      "instruction": "Häkle ein dichtes Rechteck oder ein gefaltetes Teil, das breit genug ist und den Laptop gut umschließt.",
+      "counterLabel": "row",
+      "targetCount": 28
+    },
+    {
+      "type": "instruction",
+      "title": "Passform prüfen",
+      "instruction": "Lege den Stoff um den Laptop und passe die Größe an, bevor du die letzten Reihen beendest."
+    },
+    {
+      "type": "instruction",
+      "title": "Seiten verbinden",
+      "instruction": "Verbinde die Seiten mit Naht oder Kettmaschen, damit die Hülle sicher, aber nicht zu eng sitzt."
+    },
+    {
+      "type": "instruction",
+      "title": "Klappe und Verschluss anbringen",
+      "instruction": "Beende die obere Klappe und füge eine Schlaufe oder einen Knopf hinzu, der sich leicht öffnen lässt."
+    },
+    {
+      "type": "instruction",
+      "title": "Verstärken und beenden",
+      "instruction": "Vernähe die Fäden und streiche die Nähte flach, damit die Hülle gut in eine Tasche gleitet."
+    }
+  ]
+}

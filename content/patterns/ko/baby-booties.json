@@ -1,0 +1,56 @@
+{
+  "title": "아기 부티",
+  "description": "바닥을 만들고 옆면을 세우고 앞코를 오므리는 과정을 연습할 수 있는 부드러운 아기 신발입니다.",
+  "materials": [
+    "DK 또는 가벼운 워스티드 실",
+    "4 mm 코바늘",
+    "스티치 마커",
+    "돗바늘",
+    "가위"
+  ],
+  "skills": [
+    "원형 뜨기",
+    "짧은뜨기",
+    "늘림과 줄임",
+    "빼뜨기와 연결"
+  ],
+  "expectationText": "평평한 바닥이 입체적인 신발 모양으로 바뀌는 흐름을 이해할 수 있는 아기용 소품 프로젝트입니다.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "바닥 만들기",
+      "instruction": "기본 길이의 사슬을 만들고 양끝에서 늘려 타원형 바닥을 만듭니다."
+    },
+    {
+      "type": "round",
+      "title": "옆면 세우기",
+      "instruction": "바닥 둘레를 고르게 떠서 원단이 위로 올라오게 합니다.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "앞코 모양 만들기",
+      "instruction": "앞부분에서 줄임을 해 앞코를 둥글게 만들고 뒤꿈치는 납작해지지 않게 유지합니다.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "입구와 커프 만들기",
+      "instruction": "짧은 단이나 라운드를 떠서 발목 입구와 부드러운 커프를 만듭니다.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "한 짝 더 뜨기",
+      "instruction": "길이와 앞코 깊이, 커프 높이가 같도록 꼼꼼히 세어 뜹니다."
+    },
+    {
+      "type": "instruction",
+      "title": "마무리",
+      "instruction": "실끝을 단단히 정리하고 두 짝의 모양을 가볍게 잡아줍니다."
+    }
+  ]
+}

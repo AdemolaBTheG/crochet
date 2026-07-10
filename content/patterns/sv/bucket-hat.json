@@ -1,0 +1,58 @@
+{
+  "title": "Bucket Hat",
+  "description": "Ett avslappnat runt projekt med en platt krona, stadiga sidor och en mjuk brätte.",
+  "materials": [
+    "kamgarn",
+    "5 mm krok",
+    "stygnmarkör",
+    "garnnål",
+    "sax"
+  ],
+  "skills": [
+    "magisk ring",
+    "enkelvirkad",
+    "ökande",
+    "arbeta i varv"
+  ],
+  "expectationText": "Ett bärbart projekt som tränar på att forma en platt cirkel först och sedan växa släta sidor och en kort brätte utan att tappa antalet stygn.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Starta kronan",
+      "instruction": "Gör en magisk ring och placera en markör i den första maskan i varje varv."
+    },
+    {
+      "type": "round",
+      "title": "Varv 1",
+      "instruction": "Virka 8 fastmaskor in i ringen.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Öka kronan",
+      "instruction": "Öka jämnt varje varv tills cirkeln når den övre bredd du vill ha för hatten.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Virka sidorna",
+      "instruction": "Virka jämnt jämnt utan ökningar på flera varv så mössan börjar falla nedåt.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "round",
+      "title": "Forma brättet",
+      "instruction": "Lägg till försiktiga ökningar med några stygn för att låta brättet flacka utåt.",
+      "counterLabel": "round",
+      "targetCount": 15
+    },
+    {
+      "type": "instruction",
+      "title": "Avsluta",
+      "instruction": "Prova, justera brättedjupet om det behövs, fäst sedan av och väv in ändarna."
+    }
+  ]
+}

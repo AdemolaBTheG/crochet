@@ -1,0 +1,56 @@
+{
+  "title": "Scarpine per neonato",
+  "description": "Piccole scarpine morbide per imparare a modellare la suola, costruire i lati e chiudere una punta ordinata.",
+  "materials": [
+    "filato DK o worsted leggero",
+    "uncinetto da 4 mm",
+    "marcatore di punto",
+    "ago da lana",
+    "forbici"
+  ],
+  "skills": [
+    "lavorazione in tondo",
+    "maglia bassa",
+    "aumenti e diminuzioni",
+    "maglia bassissima e chiusura"
+  ],
+  "expectationText": "Un progetto compatto per neonati che mostra come una suola piatta diventi una forma tridimensionale da indossare.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Lavora la suola",
+      "instruction": "Crea una catenella della lunghezza base e forma una suola ovale con aumenti a entrambe le estremità."
+    },
+    {
+      "type": "round",
+      "title": "Costruisci i lati",
+      "instruction": "Lavora giri regolari attorno alla suola così il tessuto inizia a salire.",
+      "counterLabel": "round",
+      "targetCount": 6
+    },
+    {
+      "type": "round",
+      "title": "Modella la punta",
+      "instruction": "Diminuisci nella parte anteriore per arrotondare la punta senza schiacciare il tallone.",
+      "counterLabel": "round",
+      "targetCount": 9
+    },
+    {
+      "type": "round",
+      "title": "Crea apertura e bordo",
+      "instruction": "Lavora giri o righe corte e regolari per definire l’apertura alla caviglia e un piccolo bordo morbido.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Lavora la seconda scarpina",
+      "instruction": "Conta con attenzione così la seconda scarpina corrisponde alla prima."
+    },
+    {
+      "type": "instruction",
+      "title": "Finitura",
+      "instruction": "Nascondi bene i fili e rimodella delicatamente entrambe le scarpine."
+    }
+  ]
+}

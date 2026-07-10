@@ -1,0 +1,54 @@
+{
+  "title": "Gorro sencillo",
+  "description": "Un patrón de gorro sencillo que se centra en el ajuste, el canalé y el acabado limpio.",
+  "materials": [
+    "hilo de estambre",
+    "ganchillo de 5 mm",
+    "marcador de punto",
+    "aguja lanera",
+    "tijeras"
+  ],
+  "skills": [
+    "cadena base",
+    "punto bajo",
+    "canalé en hebra trasera",
+    "costura"
+  ],
+  "expectationText": "Un primer gorro fiable para practicar el ajuste a la cabeza, mantener filas parejas y montar con limpieza un proyecto pequeño y portátil.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Haz la cadena de altura",
+      "instruction": "Haz una cadena con la altura del gorro, no con la circunferencia de la cabeza."
+    },
+    {
+      "type": "row",
+      "title": "Fila 1",
+      "instruction": "Trabaja sobre la cadena para formar el primer borde del panel acanalado.",
+      "counterLabel": "row",
+      "targetCount": 1
+    },
+    {
+      "type": "row",
+      "title": "Forma el canalé",
+      "instruction": "Trabaja en hebra trasera fila tras fila hasta que el panel rodee la cabeza con comodidad.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Cierra la costura",
+      "instruction": "Une los lados cortos para convertir el panel en un tubo."
+    },
+    {
+      "type": "instruction",
+      "title": "Cierra la corona",
+      "instruction": "Frunce el borde superior con la hebra, tira con firmeza y asegura bien."
+    },
+    {
+      "type": "instruction",
+      "title": "Remata",
+      "instruction": "Da la vuelta al gorro al derecho y esconde las hebras finales."
+    }
+  ]
+}

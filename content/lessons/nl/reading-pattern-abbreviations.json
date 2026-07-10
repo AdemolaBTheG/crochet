@@ -1,0 +1,20 @@
+{
+  "title": "Patroonafkortingen lezen",
+  "description": "Leer de afkorting die patronen gebruiken, zodat geschreven instructies niet langer als code aanvoelen.",
+  "content": {
+    "summary": "Patroonafkortingen comprimeren steeknamen, acties en herhalingen tot een compacte lijn die u snel kunt scannen.",
+    "whyItMatters": "Als u afkortingen kunt decoderen, kunt u meer patronen volgen, ontwerpers vergelijken en sneller door de instructies gaan.",
+    "steps": [
+      "Leer eerst de kernsteekafkortingen: ch, sc, hdc, dc, tr, hv.",
+      "Let op actiewoorden zoals inc, dec, rep en sk.",
+      "Controleer of de ontwerper Amerikaanse of Britse termen gebruikt voordat u begint.",
+      "Lees één volledige regel langzaam en breid elke afkorting uit in duidelijke taal.",
+      "Markeer herhalingen en telt voordat u de toer haakt."
+    ],
+    "practice": "Neem een ​​korte patroonlijn en herschrijf deze in volledige woorden voordat u eraan werkt.",
+    "commonMistakes": [
+      "Britse en Amerikaanse termen gecombineerd in hetzelfde project.",
+      "Ontbrekende herhaalde haakjes of haakjes tijdens snel lezen."
+    ]
+  }
+}

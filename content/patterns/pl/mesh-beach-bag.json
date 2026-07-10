@@ -1,0 +1,58 @@
+{
+  "title": "Siatkowa torba plażowa",
+  "description": "Pojemna ażurowa torba na ręczniki, włóczkę lub lekkie noszenie na co dzień.",
+  "materials": [
+    "przędza bawełniana lub rafia",
+    "haczyk 5,5 mm",
+    "znacznik ściegu",
+    "igła do przędzy",
+    "nożyczki"
+  ],
+  "skills": [
+    "łańcuszek podstawowy",
+    "szydełko",
+    "łańcuszki",
+    "formowanie paska"
+  ],
+  "expectationText": "Większy projekt noszenia, który koncentruje się na utrzymaniu spójnej otwartej siatki, a jednocześnie wzmacnia podstawę i uchwyty wystarczające do codziennego użytku.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Wykonaj podstawę",
+      "instruction": "Zbuduj płaską owalną lub prostokątną podstawę za pomocą kilku rund mocnych ściegów."
+    },
+    {
+      "type": "round",
+      "title": "Runda 1",
+      "instruction": "Przerabiać równomiernie wokół brzegu podstawy i umieszczać marker na początku okrążenia.",
+      "counterLabel": "round",
+      "targetCount": 1
+    },
+    {
+      "type": "round",
+      "title": "Przejście do siatki",
+      "instruction": "Przerobić jedno ciągłe okrążenie przed przejściem do siatki w łuku.",
+      "counterLabel": "round",
+      "targetCount": 2
+    },
+    {
+      "type": "round",
+      "title": "Wyhoduj korpus torby",
+      "instruction": "Powtarzaj wzór siatki, aż torba osiągnie obszerną wysokość torby plażowej.",
+      "counterLabel": "round",
+      "targetCount": 10
+    },
+    {
+      "type": "round",
+      "title": "Dodaj uchwyty",
+      "instruction": "Łańcuch otworów na uchwyty i wzmocnij je jednym lub dwoma ostatnimi rundami.",
+      "counterLabel": "round",
+      "targetCount": 12
+    },
+    {
+      "type": "instruction",
+      "title": "Zakończ",
+      "instruction": "Zapnij ostrożnie i wpleć na końcach, gdzie nie będą się zaczepiać."
+    }
+  ]
+}

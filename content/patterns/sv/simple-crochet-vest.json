@@ -1,0 +1,55 @@
+{
+  "title": "Enkel virkad väst",
+  "description": "En mjuk lager-på-lager-väst byggd av enkla paneler, lätt formning och ett rent avslut.",
+  "materials": [
+    "worsted-garn",
+    "5 mm virknål",
+    "markörer",
+    "måttband",
+    "stoppnål",
+    "sax"
+  ],
+  "skills": [
+    "luftmaskkedja",
+    "stolpar",
+    "ihopsömnad",
+    "kanter och avslut"
+  ],
+  "expectationText": "Ett första plaggprojekt som lär dig panelkonstruktion, grundläggande passformskontroll och snygg montering utan svår formning.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Mät och gör provlapp",
+      "instruction": "Mät önskat bystmått och virka en liten provlapp så att västens bredd blir förutsägbar."
+    },
+    {
+      "type": "row",
+      "title": "Bakstycke",
+      "instruction": "Virka bakstycket i rader tills du når rätt kroppslängd och lagom djup för ärmhålen.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "row",
+      "title": "Framstycken",
+      "instruction": "Virka två matchande framstycken och kontrollera att de stämmer mot bakstycket.",
+      "counterLabel": "row",
+      "targetCount": 24
+    },
+    {
+      "type": "instruction",
+      "title": "Sy ihop axlar och sidor",
+      "instruction": "Sy först ihop axlarna och stäng sedan sidorna medan du lämnar öppning för ärmhålen."
+    },
+    {
+      "type": "instruction",
+      "title": "Lägg till kant",
+      "instruction": "Virka en ren kant runt halsringning, ärmhål och framkant för att stabilisera formen."
+    },
+    {
+      "type": "instruction",
+      "title": "Avsluta",
+      "instruction": "Fäst trådarna och blocka västen lätt så att panelerna faller jämnt."
+    }
+  ]
+}

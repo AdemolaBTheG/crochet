@@ -1,0 +1,52 @@
+{
+  "title": "Foulard bandana",
+  "description": "Un foulard triangulaire rapide avec des augmentations simples, un beau tombé et des liens faciles à ajuster.",
+  "materials": [
+    "fil coton",
+    "crochet de 4,5 mm",
+    "marqueurs de maille",
+    "aiguille à fil",
+    "ciseaux"
+  ],
+  "skills": [
+    "chaînette de base",
+    "bride",
+    "arceaux et angles",
+    "bordures et finitions"
+  ],
+  "expectationText": "Un accessoire rapide qui donne confiance avec la construction triangulaire et des finitions soignées.",
+  "steps": [
+    {
+      "type": "instruction",
+      "title": "Commencer au centre du haut",
+      "instruction": "Montez une petite base et marquez les points d’augmentation pour suivre facilement la forme."
+    },
+    {
+      "type": "row",
+      "title": "Agrandir le triangle",
+      "instruction": "Travaillez des rangs avec des augmentations aux bords ou au centre pour élargir le foulard régulièrement.",
+      "counterLabel": "row",
+      "targetCount": 18
+    },
+    {
+      "type": "instruction",
+      "title": "Vérifier la largeur",
+      "instruction": "Arrêtez-vous lorsque le grand côté atteint la largeur souhaitée sur la tête."
+    },
+    {
+      "type": "instruction",
+      "title": "Ajouter les liens",
+      "instruction": "Travaillez des liens étroits ou de longues chaînettes depuis les deux coins."
+    },
+    {
+      "type": "instruction",
+      "title": "Ajouter une bordure",
+      "instruction": "Faites une finition propre autour du triangle et des liens pour lisser le contour."
+    },
+    {
+      "type": "instruction",
+      "title": "Finitions",
+      "instruction": "Rentrez les fils et bloquez légèrement pour obtenir un beau tombé."
+    }
+  ]
+}
